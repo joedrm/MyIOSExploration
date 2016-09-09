@@ -13,6 +13,7 @@
 		16DBC0661D7D673E006F4784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0641D7D673E006F4784 /* Main.storyboard */; };
 		16DBC0681D7D673E006F4784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0671D7D673E006F4784 /* Assets.xcassets */; };
 		16DBC06B1D7D673E006F4784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0691D7D673E006F4784 /* LaunchScreen.storyboard */; };
+		16E899161D825FCA00D14346 /* SingleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E899151D825FCA00D14346 /* SingleTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		16DBC0671D7D673E006F4784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16DBC06A1D7D673E006F4784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16DBC06C1D7D673E006F4784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16E899141D825FCA00D14346 /* SingleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTool.h; sourceTree = "<group>"; };
+		16E899151D825FCA00D14346 /* SingleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				16DBC05F1D7D673E006F4784 /* AppDelegate.m */,
 				16DBC0611D7D673E006F4784 /* ViewController.h */,
 				16DBC0621D7D673E006F4784 /* ViewController.m */,
+				16E899141D825FCA00D14346 /* SingleTool.h */,
+				16E899151D825FCA00D14346 /* SingleTool.m */,
 				16DBC0641D7D673E006F4784 /* Main.storyboard */,
 				16DBC0671D7D673E006F4784 /* Assets.xcassets */,
 				16DBC0691D7D673E006F4784 /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				16DBC0631D7D673E006F4784 /* ViewController.m in Sources */,
 				16DBC0601D7D673E006F4784 /* AppDelegate.m in Sources */,
 				16DBC05D1D7D673E006F4784 /* main.m in Sources */,
+				16E899161D825FCA00D14346 /* SingleTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,7 @@
 				16DBC0711D7D673E006F4784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
