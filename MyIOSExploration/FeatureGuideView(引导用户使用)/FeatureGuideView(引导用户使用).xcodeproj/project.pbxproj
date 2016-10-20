@@ -36,10 +36,18 @@
 		167EF4DA1DB89A0F00EECA79 /* UIView+EAFeatureGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EAFeatureGuideView.m"; sourceTree = "<group>"; };
 		167EF4DD1DB89A3200EECA79 /* bottom_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom_bg@2x.png"; sourceTree = "<group>"; };
 		167EF4DE1DB89A3200EECA79 /* bottom_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom_bg@3x.png"; sourceTree = "<group>"; };
+		167EF4E51DB8C63100EECA79 /* XML解析.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XML解析.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		167EF4B91DB899EB00EECA79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167EF4E21DB8C63100EECA79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				167EF4BC1DB899EB00EECA79 /* FeatureGuideView(引导用户使用).app */,
+				167EF4E51DB8C63100EECA79 /* XML解析.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +132,23 @@
 			productReference = 167EF4BC1DB899EB00EECA79 /* FeatureGuideView(引导用户使用).app */;
 			productType = "com.apple.product-type.application";
 		};
+		167EF4E41DB8C63100EECA79 /* XML解析 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167EF4FB1DB8C63200EECA79 /* Build configuration list for PBXNativeTarget "XML解析" */;
+			buildPhases = (
+				167EF4E11DB8C63100EECA79 /* Sources */,
+				167EF4E21DB8C63100EECA79 /* Frameworks */,
+				167EF4E31DB8C63100EECA79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XML解析";
+			productName = "XML解析";
+			productReference = 167EF4E51DB8C63100EECA79 /* XML解析.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -133,6 +159,11 @@
 				ORGANIZATIONNAME = com.wdy.MyIOSExploration;
 				TargetAttributes = {
 					167EF4BB1DB899EB00EECA79 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2T6XGQJFJM;
+						ProvisioningStyle = Automatic;
+					};
+					167EF4E41DB8C63100EECA79 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2T6XGQJFJM;
 						ProvisioningStyle = Automatic;
@@ -153,6 +184,7 @@
 			projectRoot = "";
 			targets = (
 				167EF4BB1DB899EB00EECA79 /* FeatureGuideView(引导用户使用) */,
+				167EF4E41DB8C63100EECA79 /* XML解析 */,
 			);
 		};
 /* End PBXProject section */
@@ -170,6 +202,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		167EF4E31DB8C63100EECA79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -182,6 +221,13 @@
 				167EF4C41DB899EB00EECA79 /* AppDelegate.m in Sources */,
 				167EF4C11DB899EB00EECA79 /* main.m in Sources */,
 				167EF4DB1DB89A0F00EECA79 /* EAFeatureItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167EF4E11DB8C63100EECA79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +365,30 @@
 			};
 			name = Release;
 		};
+		167EF4F91DB8C63200EECA79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				INFOPLIST_FILE = "XML解析/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy..XML--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		167EF4FA1DB8C63200EECA79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				INFOPLIST_FILE = "XML解析/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy..XML--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +406,15 @@
 			buildConfigurations = (
 				167EF4D41DB899EB00EECA79 /* Debug */,
 				167EF4D51DB899EB00EECA79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		167EF4FB1DB8C63200EECA79 /* Build configuration list for PBXNativeTarget "XML解析" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167EF4F91DB8C63200EECA79 /* Debug */,
+				167EF4FA1DB8C63200EECA79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

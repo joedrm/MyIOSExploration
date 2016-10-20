@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NavigationBarTransition&#x8f6c;&#x573a;&#x52a8;&#x753b;/NavigationBarTransition&#x8f6c;&#x573a;&#x52a8;&#x753b;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XML&#x89e3;&#x6790;/XML&#x89e3;&#x6790;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:FeatureGuideView(&#x5f15;&#x5bfc;&#x7528;&#x6237;&#x4f7f;&#x7528;)/FeatureGuideView(&#x5f15;&#x5bfc;&#x7528;&#x6237;&#x4f7f;&#x7528;).xcodeproj">
    </FileRef>
    <FileRef
