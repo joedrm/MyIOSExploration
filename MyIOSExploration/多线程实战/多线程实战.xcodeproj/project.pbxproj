@@ -15,7 +15,6 @@
 		16E899601D82B6BC00D14346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E8995E1D82B6BC00D14346 /* LaunchScreen.storyboard */; };
 		16E899681D82BAFA00D14346 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16E899671D82BAFA00D14346 /* apps.plist */; };
 		16E8996B1D82BB0E00D14346 /* itemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E8996A1D82BB0E00D14346 /* itemModel.m */; };
-		16E8996D1D82E9B000D14346 /* apple-touch-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E8996C1D82E9B000D14346 /* apple-touch-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		16E899671D82BAFA00D14346 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
 		16E899691D82BB0E00D14346 /* itemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itemModel.h; sourceTree = "<group>"; };
 		16E8996A1D82BB0E00D14346 /* itemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = itemModel.m; sourceTree = "<group>"; };
-		16E8996C1D82E9B000D14346 /* apple-touch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +74,6 @@
 				16E8995E1D82B6BC00D14346 /* LaunchScreen.storyboard */,
 				16E899611D82B6BC00D14346 /* Info.plist */,
 				16E899671D82BAFA00D14346 /* apps.plist */,
-				16E8996C1D82E9B000D14346 /* apple-touch-icon.png */,
 				16E899501D82B6BC00D14346 /* Supporting Files */,
 			);
 			path = "多线程实战";
@@ -149,7 +146,6 @@
 			files = (
 				16E899681D82BAFA00D14346 /* apps.plist in Resources */,
 				16E899601D82B6BC00D14346 /* LaunchScreen.storyboard in Resources */,
-				16E8996D1D82E9B000D14346 /* apple-touch-icon.png in Resources */,
 				16E8995D1D82B6BC00D14346 /* Assets.xcassets in Resources */,
 				16E8995B1D82B6BC00D14346 /* Main.storyboard in Resources */,
 			);

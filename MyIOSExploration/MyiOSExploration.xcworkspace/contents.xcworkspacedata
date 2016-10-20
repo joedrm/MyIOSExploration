@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FeatureGuideView(&#x5f15;&#x5bfc;&#x7528;&#x6237;&#x4f7f;&#x7528;)/FeatureGuideView(&#x5f15;&#x5bfc;&#x7528;&#x6237;&#x4f7f;&#x7528;).xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:&#x591a;&#x7ebf;&#x7a0b;&#x5b9e;&#x6218;/&#x591a;&#x7ebf;&#x7a0b;&#x5b9e;&#x6218;.xcodeproj">
    </FileRef>
    <FileRef
