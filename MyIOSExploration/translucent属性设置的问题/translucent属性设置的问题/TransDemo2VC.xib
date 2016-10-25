@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransDemo2VC">
+            <connections>
+                <outlet property="tableView" destination="M6z-Fj-gqF" id="9zt-Fv-kkc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M6z-Fj-gqF">
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="576" id="q7y-hZ-j00"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOG-wk-Ef1">
+                    <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="91" id="fSI-Es-u5p"/>
+                    </constraints>
+                    <state key="normal" title="顶部按钮">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pOG-wk-Ef1" secondAttribute="trailing" id="0Df-IR-ko5"/>
+                <constraint firstAttribute="trailing" secondItem="M6z-Fj-gqF" secondAttribute="trailing" id="JeT-p2-TZe"/>
+                <constraint firstItem="pOG-wk-Ef1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MIt-zl-f4w"/>
+                <constraint firstItem="M6z-Fj-gqF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fgT-wS-ikO"/>
+                <constraint firstItem="M6z-Fj-gqF" firstAttribute="top" secondItem="pOG-wk-Ef1" secondAttribute="bottom" id="mJG-GO-ib3"/>
+                <constraint firstAttribute="bottom" secondItem="M6z-Fj-gqF" secondAttribute="bottom" id="nnc-ti-Bez"/>
+            </constraints>
+            <point key="canvasLocation" x="-517" y="421"/>
+        </view>
+    </objects>
+</document>

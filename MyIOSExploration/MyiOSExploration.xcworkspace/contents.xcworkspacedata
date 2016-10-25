@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:translucent&#x5c5e;&#x6027;&#x8bbe;&#x7f6e;&#x7684;&#x95ee;&#x9898;/translucent&#x5c5e;&#x6027;&#x8bbe;&#x7f6e;&#x7684;&#x95ee;&#x9898;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UITableView&#x652f;&#x6301;&#x4e0d;&#x540c;&#x7c7b;&#x578b;&#x7684;Cell/UITableView&#x652f;&#x6301;&#x4e0d;&#x540c;&#x7c7b;&#x578b;&#x7684;Cell.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NavigationBarTransition&#x8f6c;&#x573a;&#x52a8;&#x753b;/NavigationBarTransition&#x8f6c;&#x573a;&#x52a8;&#x753b;.xcodeproj">
    </FileRef>
    <FileRef
