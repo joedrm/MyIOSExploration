@@ -33,7 +33,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self singleTest];
+    [self lockTest];
 }
 
 // 异步函数 + 并行队列 会开启多个子线程，队列中的任务是并发执行的
@@ -269,6 +269,14 @@
         NSLog(@"action03 --> %@",[NSThread currentThread]);
     });
     NSLog(@" --------- end ----------- ");
+    /*
+     2016-11-26 12:11:14.085 GCD实践[7104:295024]  --------- start -----------
+     2016-11-26 12:11:14.086 GCD实践[7104:295344] action01 --> <NSThread: 0x60000026ca40>{number = 3, name = (null)}
+     2016-11-26 12:11:14.086 GCD实践[7104:296118] action02 --> <NSThread: 0x608000269a40>{number = 4, name = (null)}
+     2016-11-26 12:11:14.086 GCD实践[7104:295024]  --------- 栅栏函数 -----------
+     2016-11-26 12:11:14.087 GCD实践[7104:295024]  --------- end -----------
+     2016-11-26 12:11:14.087 GCD实践[7104:296118] action03 --> <NSThread: 0x608000269a40>{number = 4, name = (null)}
+     */
 }
 
 // 快速迭代：开启主线程和子线程一起执行，任务是并发的
@@ -417,6 +425,98 @@
     });
 }
 
+/*上面有可能出现的问题：第三步操作(合并图片操作)有可能比要第一步或第二步操作快一些：
+    其实这个道理很简单，我们开启的网络请求，是一个异步线程，所谓的异步线程，就是告诉系统你不要管我是否完成了，你尽管执行其他操作，开一个线程让我到外面操作去执行就行了，所以我们傻 
+    傻的  dispatch_group_async 自然就不会管网络操作是否完成，是否有数据了，直接执行下面操作，告诉 dispatch_group_notify 它已经完成就行了
+ */
+
+// 解决办法就是：多线程的信号量 dispatch_semaphore_t
+// ` dispatch_semaphore_t` ：通俗的说我们可以理解成他是一个红绿灯的信号，当它的信号量为0时(红灯)等待，当信号量为1或大于1时(绿灯)走。
+/*
+ 创建一个信号，value：信号量
+ dispatch_semaphore_create(<#long value#>)
+ 使某个信号的信号量+1
+ dispatch_semaphore_signal(<#dispatch_semaphore_t dsema#>)
+ 某个信号进行等待， timeout：等待时间，永远等待为 DISPATCH_TIME_FOREVER
+ dispatch_semaphore_wait(<#dispatch_semaphore_t dsema#>, <#dispatch_time_t timeout#>)
+ */
+
+- (void)semaphoreTest
+{
+    // 设置一个异步线程组
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, dispatch_queue_create("com.dispatch.test", DISPATCH_QUEUE_CONCURRENT), ^{
+        // 设置一个网络请求
+        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.github.com"]];
+        // 创建一个信号量为0的信号(红灯)
+        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+        NSURLSessionDownloadTask *task = [[NSURLSession sharedSession] downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            NSLog(@"第一步操作");
+            // 使信号的信号量+1，这里的信号量本来为0，+1信号量为1(绿灯),此时网络请求完成返回数据，才继续执行下一个请求或操作
+            dispatch_semaphore_signal(sema);
+        }];
+        [task resume];
+        // 以下还要进行一些其他的耗时操作
+        NSLog(@"耗时操作继续进行");
+        // 开启信号等待，设置等待时间为永久，直到信号的信号量大于等于1（绿灯）
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+    });
+    
+    dispatch_group_async(group, dispatch_queue_create("com.dispatch.test", DISPATCH_QUEUE_CONCURRENT), ^{
+        // 设置一个网络请求
+        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.github.com"]];
+        // 创建一个信号量为0的信号(红灯)
+        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+        NSURLSessionDownloadTask *task = [[NSURLSession sharedSession] downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            NSLog(@"第二步操作");
+            // 使信号的信号量+1，这里的信号量本来为0，+1信号量为1(绿灯),此时网络请求完成返回数据，才继续执行下一个请求或操作
+            dispatch_semaphore_signal(sema);
+        }];
+        [task resume];
+        // 以下还要进行一些其他的耗时操作
+        NSLog(@"耗时操作继续进行");
+        // 开启信号等待，设置等待时间为永久，直到信号的信号量大于等于1（绿灯）
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+    });
+    /*
+     当线程执行到 dispatch_semaphore_wait 的时候如果网络请求还没有完成，那么信号就会继续等待，这个异步线程组就不会执行完毕。直到上网络请求完成使信号量+1,线程解除阻塞
+     2016-11-26 12:18:07.051 GCD实践[7185:300394] 耗时操作继续进行
+     2016-11-26 12:18:07.051 GCD实践[7185:300381] 耗时操作继续进行
+     2016-11-26 12:18:09.761 GCD实践[7185:300507] 第一步操作
+     2016-11-26 12:18:10.837 GCD实践[7185:300507] 第二步操作
+     */
+}
+
+// 条件锁: 条件锁可以控制线程的执行次序，相当于NSOperation中的依赖关系
+
+- (void)lockTest{
+    /*     
+     常见的锁：
+     1.@synchronized(对象) 对象锁
+     2.NSLock 互斥锁
+     3.NSConditionLock 条件锁
+     4.NSRecursiveLock 递归锁
+     */
+    //条件锁,条件是整数值
+    NSConditionLock *lock = [[NSConditionLock alloc] initWithCondition:3];
+    //不要在外面加锁，那样锁的是主线程
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //加锁
+        [lock lockWhenCondition:3];
+        NSLog(@"111111111111");
+        //解锁
+        [lock unlockWithCondition:4];
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //加锁
+        [lock lockWhenCondition:4];
+        NSLog(@"222222222222");
+        //解锁
+        [lock unlock];
+    });
+}
+
+
 // 补充: 与之前是一样的，只不过调用方式不一样
 - (void)supplyTest
 {
@@ -451,7 +551,22 @@ void task(void* param){
 @end
 
 
-
+/* 几个概念：
+ 串行队列：在队列中，采用先进先出（FIFO）的方式从RunLoop取出任务
+ 并行队行：同样，在并行队列当中，依然也是采用先进先出(FIFO)的方式从RunLoop取出来
+ 
+ 异步执行：不会阻塞当前线程
+ 同步执行：会阻塞当前线程，直到当前的block任务执行完毕
+ 
+ 小结
+ 1、同步和异步决定了是否开启新的线程。main队列除外，在main队列中，同步或者异步执行都会阻塞当线的main线程，且不会另开线程。当然，永远不要使用sync向主队列中添加任务，这样子会线程卡死，具体原因看main线程。
+ 2、串行和并行，决定了任务是否同时执行。
+ 
+ 参考资料：
+ 
+ iOS多线程之GCD：http://www.jianshu.com/p/456672967e75
+ iOS笔记(一)GCD多线程：信号量和条件锁: https://my.oschina.net/u/2436242/blog/518318
+ */
 
 
 
