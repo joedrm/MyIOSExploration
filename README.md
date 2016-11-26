@@ -10,6 +10,27 @@ IOS知识点总结和实践
 - [SwiftGuide](https://github.com/ipader/SwiftGuide)
 - [awesome-ios](https://github.com/vsouza/awesome-ios)
 
+### KVO进阶
+[KVO进阶 —— 源码实现探究](http://www.cocoachina.com/ios/20161117/18110.html)
+
+### 多线程和RunLoop
+- [深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
+- [深入理解iOS开发中的锁](https://bestswifter.com/ios-lock/?utm_source=tuicool&utm_medium=referral)
+- [iOS中保证线程安全的几种方式与性能对比](http://www.jianshu.com/p/ddbe44064ca4)
+
+### Runtime相关
+- [神经病院Objective-C Runtime入院第一天——isa和Class](http://www.jianshu.com/p/9d649ce6d0b8)
+- [神经病院Objective-C Runtime住院第二天——消息发送与转发](http://www.jianshu.com/p/4d619b097e20)
+- [神经病院Objective-C Runtime出院第三天——如何正确使用Runtime](http://www.jianshu.com/p/db6dc23834e3)
+
+### ReactiveCocoa相关
+- [ReactiveCocoa 中 RACSignal 所有变换操作底层实现分析2](http://www.jianshu.com/p/9c4459ae71c5)
+- [ReactiveCocoa 中 RACSignal 是如何发送信号的](http://www.jianshu.com/p/d7d951a99db8)
+- [MVVM With ReactiveCocoa](http://blog.leichunfeng.com/blog/2016/02/27/mvvm-with-reactivecocoa/)
+
+### 解析开源项目
+- [深入解析 iOS 开源项目](https://github.com/Draveness/iOS-Source-Code-Analyze)
+
 ### 面试
 - [iOSInterviewQuestions](https://github.com/ChenYilong/iOSInterviewQuestions) - iOS面试题集锦
 - [Developer-Interview-Questions](https://github.com/lzyy/iOS-Developer-Interview-Questions) - iOS 开发面试问题
