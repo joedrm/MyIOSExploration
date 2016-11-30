@@ -34,6 +34,7 @@ IOS知识点总结和实践
 ### 优化文章
 - [微信读书 iOS 性能优化总结](http://wereadteam.github.io/2016/05/03/WeRead-Performance/?f=tt)
 - [iOS 保持界面流畅的技巧](http://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/)
+- [WWDC心得与延伸:iOS图形性能](http://www.cocoachina.com/ios/20150429/11712.html)
 
 ### 面试
 - [iOSInterviewQuestions](https://github.com/ChenYilong/iOSInterviewQuestions) - iOS面试题集锦
