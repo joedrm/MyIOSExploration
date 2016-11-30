@@ -31,6 +31,10 @@ IOS知识点总结和实践
 ### 解析开源项目
 - [深入解析 iOS 开源项目](https://github.com/Draveness/iOS-Source-Code-Analyze)
 
+### 优化文章
+- [微信读书 iOS 性能优化总结](http://wereadteam.github.io/2016/05/03/WeRead-Performance/?f=tt)
+- [iOS 保持界面流畅的技巧](http://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/)
+
 ### 面试
 - [iOSInterviewQuestions](https://github.com/ChenYilong/iOSInterviewQuestions) - iOS面试题集锦
 - [Developer-Interview-Questions](https://github.com/lzyy/iOS-Developer-Interview-Questions) - iOS 开发面试问题
