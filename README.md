@@ -17,6 +17,7 @@ IOS知识点总结和实践
 - [深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
 - [深入理解iOS开发中的锁](https://bestswifter.com/ios-lock/?utm_source=tuicool&utm_medium=referral)
 - [iOS中保证线程安全的几种方式与性能对比](http://www.jianshu.com/p/ddbe44064ca4)
+- [GCD介绍](http://www.jianshu.com/p/2d1c9d76153b) - 翻译文章
 
 ### Runtime相关
 - [Objective-C Runtime 运行时](http://southpeak.github.io/categories/objectivec/)
