@@ -36,6 +36,7 @@ IOS知识点总结和实践
 - [南峰子](http://southpeak.github.io/)
 - [kenshincui](http://www.cnblogs.com/kenshincui/)
 - [雷纯锋](http://blog.leichunfeng.com/)
+- [MrPeak杂货铺](http://mrpeak.cn/)
 
 ### 优化文章
 - [微信读书 iOS 性能优化总结](http://wereadteam.github.io/2016/05/03/WeRead-Performance/?f=tt)
