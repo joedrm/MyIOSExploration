@@ -11,7 +11,7 @@ IOS知识点总结和实践
 - [awesome-ios](https://github.com/vsouza/awesome-ios)
 
 ### KVO进阶
-[KVO进阶 —— 源码实现探究](http://www.cocoachina.com/ios/20161117/18110.html)
+- [KVO进阶 —— 源码实现探究](http://www.cocoachina.com/ios/20161117/18110.html)
 
 ### 多线程和RunLoop
 - [深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
