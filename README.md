@@ -1,7 +1,7 @@
 # MyIOSExploration
 IOS知识点总结和实践
 
-### Boos&文档
+### Books&文档
 - [objc-zen-book-cn](https://github.com/oa414/objc-zen-book-cn) - 禅与 Objective-C 编程艺术
 - [the-swift-programming-language-in-chinese](https://github.com/numbbbbb/the-swift-programming-language-in-chinese) - 中文版 Apple 官方 Swift 教程《The Swift Programming Language》
 - [Welcome-to-Swift](https://github.com/CocoaChina-editors/Welcome-to-Swift) - Swift中文文档
@@ -42,6 +42,7 @@ IOS知识点总结和实践
 - [kenshincui](http://www.cnblogs.com/kenshincui/)
 - [雷纯锋](http://blog.leichunfeng.com/)
 - [MrPeak杂货铺](http://mrpeak.cn/)
+- [我的博客](https://wangdongyang.github.io/)
 
 ### 优化文章
 - [微信读书 iOS 性能优化总结](http://wereadteam.github.io/2016/05/03/WeRead-Performance/?f=tt)
