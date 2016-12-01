@@ -22,7 +22,6 @@ IOS知识点总结和实践
 - [Objective-C Runtime 运行时](http://southpeak.github.io/categories/objectivec/)
 - [神经病院Objective-C Runtime出院第三天——如何正确使用Runtime](http://www.jianshu.com/p/db6dc23834e3)
 
-
 ### ReactiveCocoa相关
 - [ReactiveCocoa 中 RACSignal 所有变换操作底层实现分析2](http://www.jianshu.com/p/9c4459ae71c5)
 - [ReactiveCocoa 中 RACSignal 是如何发送信号的](http://www.jianshu.com/p/d7d951a99db8)
@@ -31,6 +30,12 @@ IOS知识点总结和实践
 ### 解析开源项目
 - [深入解析 iOS 开源项目](https://github.com/Draveness/iOS-Source-Code-Analyze)
 - [源码分析](http://southpeak.github.io/categories/sourcecode/)
+
+### 博客
+- [ibireme](http://blog.ibireme.com/)
+- [南峰子](http://southpeak.github.io/)
+- [kenshincui](http://www.cnblogs.com/kenshincui/)
+- [雷纯锋](http://blog.leichunfeng.com/)
 
 ### 优化文章
 - [微信读书 iOS 性能优化总结](http://wereadteam.github.io/2016/05/03/WeRead-Performance/?f=tt)
