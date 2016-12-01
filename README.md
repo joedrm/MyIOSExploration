@@ -30,6 +30,7 @@ IOS知识点总结和实践
 
 ### 解析开源项目
 - [深入解析 iOS 开源项目](https://github.com/Draveness/iOS-Source-Code-Analyze)
+- [源码分析](http://southpeak.github.io/categories/sourcecode/)
 
 ### 优化文章
 - [微信读书 iOS 性能优化总结](http://wereadteam.github.io/2016/05/03/WeRead-Performance/?f=tt)
