@@ -1,0 +1,11 @@
+workspace 'MyiOSExploration'
+project 'Masonry实践/Masonry实践.xcodeproj'
+
+use_frameworks!
+target :Masonry实践 do
+platform :ios, '8.0'
+pod 'Masonry'
+pod 'MJExtension'
+pod 'SDWebImage'
+project 'Masonry实践/Masonry实践.xcodeproj'
+end

@@ -1,0 +1,17 @@
+//
+//  MasonryPrefixHeader.pch
+//  Masonry实践
+//
+//  Created by fang wang on 16/12/2.
+//  Copyright © 2016年 com.LBE.Photo. All rights reserved.
+//
+
+#ifndef MasonryPrefixHeader_pch
+#define MasonryPrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Masonry/Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#endif /* MasonryPrefixHeader_pch */
