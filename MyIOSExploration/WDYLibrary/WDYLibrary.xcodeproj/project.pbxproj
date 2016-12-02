@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20AC98C41DF17B4800C761FA /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AC98BA1DF17B4800C761FA /* WDYLibrary.framework */; };
+		20AC98C91DF17B4800C761FA /* WDYLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC98C81DF17B4800C761FA /* WDYLibraryTests.m */; };
+		20AC98CB1DF17B4800C761FA /* WDYLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AC98BD1DF17B4800C761FA /* WDYLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AC98D71DF17C1800C761FA /* UIImageView+WDYWebImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AC98D51DF17C1800C761FA /* UIImageView+WDYWebImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AC98D81DF17C1800C761FA /* UIImageView+WDYWebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC98D61DF17C1800C761FA /* UIImageView+WDYWebImageView.m */; };
+		20AC98DB1DF180F300C761FA /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AC98D91DF180F300C761FA /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AC98DC1DF180F300C761FA /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC98DA1DF180F300C761FA /* Test.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20AC98C51DF17B4800C761FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20AC98B11DF17B4800C761FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20AC98B91DF17B4800C761FA;
+			remoteInfo = WDYLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20AC98BA1DF17B4800C761FA /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AC98BD1DF17B4800C761FA /* WDYLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYLibrary.h; sourceTree = "<group>"; };
+		20AC98BE1DF17B4800C761FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AC98C31DF17B4800C761FA /* WDYLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDYLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AC98C81DF17B4800C761FA /* WDYLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYLibraryTests.m; sourceTree = "<group>"; };
+		20AC98CA1DF17B4800C761FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AC98D51DF17C1800C761FA /* UIImageView+WDYWebImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WDYWebImageView.h"; sourceTree = "<group>"; };
+		20AC98D61DF17C1800C761FA /* UIImageView+WDYWebImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WDYWebImageView.m"; sourceTree = "<group>"; };
+		20AC98D91DF180F300C761FA /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		20AC98DA1DF180F300C761FA /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20AC98B61DF17B4800C761FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AC98C01DF17B4800C761FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AC98C41DF17B4800C761FA /* WDYLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20AC98B01DF17B4800C761FA = {
+			isa = PBXGroup;
+			children = (
+				20AC98BC1DF17B4800C761FA /* WDYLibrary */,
+				20AC98C71DF17B4800C761FA /* WDYLibraryTests */,
+				20AC98BB1DF17B4800C761FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20AC98BB1DF17B4800C761FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20AC98BA1DF17B4800C761FA /* WDYLibrary.framework */,
+				20AC98C31DF17B4800C761FA /* WDYLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20AC98BC1DF17B4800C761FA /* WDYLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				20AC98D41DF17BC600C761FA /* Category */,
+				20AC98BD1DF17B4800C761FA /* WDYLibrary.h */,
+				20AC98BE1DF17B4800C761FA /* Info.plist */,
+				20AC98D91DF180F300C761FA /* Test.h */,
+				20AC98DA1DF180F300C761FA /* Test.m */,
+			);
+			path = WDYLibrary;
+			sourceTree = "<group>";
+		};
+		20AC98C71DF17B4800C761FA /* WDYLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				20AC98C81DF17B4800C761FA /* WDYLibraryTests.m */,
+				20AC98CA1DF17B4800C761FA /* Info.plist */,
+			);
+			path = WDYLibraryTests;
+			sourceTree = "<group>";
+		};
+		20AC98D41DF17BC600C761FA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				20AC98D51DF17C1800C761FA /* UIImageView+WDYWebImageView.h */,
+				20AC98D61DF17C1800C761FA /* UIImageView+WDYWebImageView.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20AC98B71DF17B4800C761FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AC98DB1DF180F300C761FA /* Test.h in Headers */,
+				20AC98D71DF17C1800C761FA /* UIImageView+WDYWebImageView.h in Headers */,
+				20AC98CB1DF17B4800C761FA /* WDYLibrary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		20AC98B91DF17B4800C761FA /* WDYLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20AC98CE1DF17B4800C761FA /* Build configuration list for PBXNativeTarget "WDYLibrary" */;
+			buildPhases = (
+				20AC98B51DF17B4800C761FA /* Sources */,
+				20AC98B61DF17B4800C761FA /* Frameworks */,
+				20AC98B71DF17B4800C761FA /* Headers */,
+				20AC98B81DF17B4800C761FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WDYLibrary;
+			productName = WDYLibrary;
+			productReference = 20AC98BA1DF17B4800C761FA /* WDYLibrary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		20AC98C21DF17B4800C761FA /* WDYLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20AC98D11DF17B4800C761FA /* Build configuration list for PBXNativeTarget "WDYLibraryTests" */;
+			buildPhases = (
+				20AC98BF1DF17B4800C761FA /* Sources */,
+				20AC98C01DF17B4800C761FA /* Frameworks */,
+				20AC98C11DF17B4800C761FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20AC98C61DF17B4800C761FA /* PBXTargetDependency */,
+			);
+			name = WDYLibraryTests;
+			productName = WDYLibraryTests;
+			productReference = 20AC98C31DF17B4800C761FA /* WDYLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20AC98B11DF17B4800C761FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = com.wdy.library;
+				TargetAttributes = {
+					20AC98B91DF17B4800C761FA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2T6XGQJFJM;
+						ProvisioningStyle = Automatic;
+					};
+					20AC98C21DF17B4800C761FA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2T6XGQJFJM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 20AC98B41DF17B4800C761FA /* Build configuration list for PBXProject "WDYLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 20AC98B01DF17B4800C761FA;
+			productRefGroup = 20AC98BB1DF17B4800C761FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20AC98B91DF17B4800C761FA /* WDYLibrary */,
+				20AC98C21DF17B4800C761FA /* WDYLibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20AC98B81DF17B4800C761FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AC98C11DF17B4800C761FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20AC98B51DF17B4800C761FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AC98D81DF17C1800C761FA /* UIImageView+WDYWebImageView.m in Sources */,
+				20AC98DC1DF180F300C761FA /* Test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20AC98BF1DF17B4800C761FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AC98C91DF17B4800C761FA /* WDYLibraryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20AC98C61DF17B4800C761FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20AC98B91DF17B4800C761FA /* WDYLibrary */;
+			targetProxy = 20AC98C51DF17B4800C761FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20AC98CC1DF17B4800C761FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		20AC98CD1DF17B4800C761FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		20AC98CF1DF17B4800C761FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WDYLibrary/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LBE.WDYLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		20AC98D01DF17B4800C761FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WDYLibrary/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LBE.WDYLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		20AC98D21DF17B4800C761FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				INFOPLIST_FILE = WDYLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LBE.WDYLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20AC98D31DF17B4800C761FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				INFOPLIST_FILE = WDYLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LBE.WDYLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20AC98B41DF17B4800C761FA /* Build configuration list for PBXProject "WDYLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AC98CC1DF17B4800C761FA /* Debug */,
+				20AC98CD1DF17B4800C761FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20AC98CE1DF17B4800C761FA /* Build configuration list for PBXNativeTarget "WDYLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AC98CF1DF17B4800C761FA /* Debug */,
+				20AC98D01DF17B4800C761FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20AC98D11DF17B4800C761FA /* Build configuration list for PBXNativeTarget "WDYLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AC98D21DF17B4800C761FA /* Debug */,
+				20AC98D31DF17B4800C761FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20AC98B11DF17B4800C761FA /* Project object */;
+}
