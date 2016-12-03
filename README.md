@@ -13,6 +13,7 @@ IOS知识点总结和实践
 ### KVO进阶
 - [谈谈 KVO](http://www.jianshu.com/p/2d1c9d76153b)
 - [KVO进阶 —— 源码实现探究](http://www.cocoachina.com/ios/20161117/18110.html)
+- [KVC和KVO](http://ppsheep.com/categories/KVC%E5%92%8CKVO/)
 
 ### Autolayout
 - [AutolayoutExampleWithMasonry](https://github.com/zekunyan/AutolayoutExampleWithMasonry)
