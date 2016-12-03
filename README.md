@@ -9,6 +9,9 @@ IOS知识点总结和实践
 ### IOS Awsome
 - [SwiftGuide](https://github.com/ipader/SwiftGuide)
 - [awesome-ios](https://github.com/vsouza/awesome-ios)
+- [awesome-iOS-blog-article](https://github.com/Jiar/awesome-iOS-blog-article) - 比较好的一些博客和文章
+- [ming1016/study](https://github.com/ming1016/study) - 学习记录
+- [TimLiu-iOS](https://github.com/Tim9Liu9/TimLiu-iOS) - iOS开发常用三方库、插件、知名博客等等
 
 ### KVO进阶
 - [谈谈 KVO](http://www.jianshu.com/p/2d1c9d76153b)
@@ -33,9 +36,14 @@ IOS知识点总结和实践
 - [Runtime 10种用法（没有比这更全的了）](http://www.jianshu.com/p/3182646001d1)
 
 ### ReactiveCocoa相关
+- [RAC中文资源列表](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
+- [Awesome-ReactiveCocoa](https://github.com/hsavit1/Awesome-ReactiveCocoa)
 - [ReactiveCocoa 中 RACSignal 所有变换操作底层实现分析2](http://www.jianshu.com/p/9c4459ae71c5)
 - [ReactiveCocoa 中 RACSignal 是如何发送信号的](http://www.jianshu.com/p/d7d951a99db8)
 - [MVVM With ReactiveCocoa](http://blog.leichunfeng.com/blog/2016/02/27/mvvm-with-reactivecocoa/)
+
+### 动画
+- [CoreAnimation编程指南](http://www.dreamingwish.com/article/the-concept-of-coreanimation-programming-guide.html) 
 
 ### 解析开源项目
 - [深入解析 iOS 开源项目](https://github.com/Draveness/iOS-Source-Code-Analyze)
@@ -47,6 +55,9 @@ IOS知识点总结和实践
 - [kenshincui](http://www.cnblogs.com/kenshincui/)
 - [雷纯锋](http://blog.leichunfeng.com/)
 - [MrPeak杂货铺](http://mrpeak.cn/)
+- [Kitten's 时间胶囊](http://kittenyang.com/#blog)
+- [岁寒](https://lvwenhan.com/sort/ios)
+- [刚刚在线](http://www.superqq.com/)
 - [我的博客](https://wangdongyang.github.io/)
 
 ### 优化文章
