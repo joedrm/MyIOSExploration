@@ -25,8 +25,12 @@ IOS知识点总结和实践
 - [GCD介绍](http://www.jianshu.com/p/2d1c9d76153b) - 翻译文章
 
 ### Runtime相关
+- [Objective-C中的Runtime](http://www.jianshu.com/p/3e050ec3b759)
 - [Objective-C Runtime 运行时](http://southpeak.github.io/categories/objectivec/)
 - [神经病院Objective-C Runtime出院第三天——如何正确使用Runtime](http://www.jianshu.com/p/db6dc23834e3)
+- [OC最实用的runtime总结，面试、工作你看我就足够了！](http://www.jianshu.com/p/ab966e8a82e2#)
+- [详解Runtime运行时机制](http://www.jianshu.com/p/1e06bfee99d0#)
+- [Runtime 10种用法（没有比这更全的了）](http://www.jianshu.com/p/3182646001d1)
 
 ### ReactiveCocoa相关
 - [ReactiveCocoa 中 RACSignal 所有变换操作底层实现分析2](http://www.jianshu.com/p/9c4459ae71c5)
