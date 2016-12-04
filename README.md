@@ -31,6 +31,7 @@ IOS知识点总结和实践
 - [GCD介绍](http://www.jianshu.com/p/2d1c9d76153b) - 翻译文章
 - [Cocoa深入学习:NSOperationQueue、NSRunLoop和线程安全](https://blog.cnbluebox.com/blog/2014/07/01/cocoashen-ru-xue-xi-nsoperationqueuehe-nsoperationyuan-li-he-shi-yong/)
 - [Concurrency](http://www.devtalking.com/tags/Concurrency/)、[Thread](http://www.devtalking.com/tags/Thread/)
+- [iOS多线程操作时一些要注意的安全问题](http://www.starming.com/index.php?v=index&view=102)
 
 ### Runtime相关
 - [Objective-C中的Runtime](http://www.jianshu.com/p/3e050ec3b759)
@@ -46,6 +47,7 @@ IOS知识点总结和实践
 - [ReactiveCocoa 中 RACSignal 所有变换操作底层实现分析2](http://www.jianshu.com/p/9c4459ae71c5)
 - [ReactiveCocoa 中 RACSignal 是如何发送信号的](http://www.jianshu.com/p/d7d951a99db8)
 - [MVVM With ReactiveCocoa](http://blog.leichunfeng.com/blog/2016/02/27/mvvm-with-reactivecocoa/)
+- [iOS函数响应式编程以及ReactiveCocoa的使用](http://www.starming.com/index.php?v=index&view=101) - 一些常用的实践范例和比较完整的api说明
 
 ### 动画
 - [CoreAnimation编程指南](http://www.dreamingwish.com/article/the-concept-of-coreanimation-programming-guide.html) 
@@ -67,7 +69,7 @@ IOS知识点总结和实践
 - [岁寒](https://lvwenhan.com/sort/ios)
 - [刚刚在线](http://www.superqq.com/)
 - [刘坤的技术博客](https://blog.cnbluebox.com/)
-- [casatwy](http://casatwy.com/)
+- [casatwy](http://casatwy.com/) - iOS应用架构经典文章
 - [limboy](http://limboy.me/)
 - [程序员说](http://www.devtalking.com/) - 关于多线程和动画的文章多，也深入
 - [我的博客](https://wangdongyang.github.io/)
@@ -76,6 +78,13 @@ IOS知识点总结和实践
 - [微信读书 iOS 性能优化总结](http://wereadteam.github.io/2016/05/03/WeRead-Performance/?f=tt)
 - [iOS 保持界面流畅的技巧](http://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/)
 - [WWDC心得与延伸:iOS图形性能](http://www.cocoachina.com/ios/20150429/11712.html)
+
+### 组件化
+- [《iOS应用架构谈 组件化方案》](http://casatwy.com/iOS-Modulization.html)
+- [蘑菇街 App 的组件化之路](http://limboy.me/tech/2016/03/10/mgj-components.html)
+- [蘑菇街 App 的组件化之路·续](http://limboy.me/tech/2016/03/14/mgj-components-continued.html)
+- [iOS 组件化方案探索](http://blog.cnbang.net/tech/3080/)
+- [围观神仙打架，反革命工程师《iOS应用架构谈 组件化方案》和蘑菇街Limboy的《蘑菇街 App 的组件化之路》的阅读指导](http://reviewcode.cn/article.html?reviewId=20)
 
 ### 面试
 - [iOSInterviewQuestions](https://github.com/ChenYilong/iOSInterviewQuestions) - iOS面试题集锦
