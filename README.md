@@ -5,6 +5,7 @@ IOS知识点总结和实践
 - [objc-zen-book-cn](https://github.com/oa414/objc-zen-book-cn) - 禅与 Objective-C 编程艺术
 - [the-swift-programming-language-in-chinese](https://github.com/numbbbbb/the-swift-programming-language-in-chinese) - 中文版 Apple 官方 Swift 教程《The Swift Programming Language》
 - [Welcome-to-Swift](https://github.com/CocoaChina-editors/Welcome-to-Swift) - Swift中文文档
+- [iOS Developer Library](https://developer.apple.com/library/content/navigation/)
 
 ### IOS Awsome
 - [SwiftGuide](https://github.com/ipader/SwiftGuide)
@@ -17,6 +18,7 @@ IOS知识点总结和实践
 - [谈谈 KVO](http://www.jianshu.com/p/2d1c9d76153b)
 - [KVO进阶 —— 源码实现探究](http://www.cocoachina.com/ios/20161117/18110.html)
 - [KVC和KVO](http://ppsheep.com/categories/KVC%E5%92%8CKVO/)
+- [KVC 和 KVO](https://www.objccn.io/issue-7-3/)
 
 ### Autolayout
 - [AutolayoutExampleWithMasonry](https://github.com/zekunyan/AutolayoutExampleWithMasonry)
@@ -26,6 +28,7 @@ IOS知识点总结和实践
 - [深入理解iOS开发中的锁](https://bestswifter.com/ios-lock/?utm_source=tuicool&utm_medium=referral)
 - [iOS中保证线程安全的几种方式与性能对比](http://www.jianshu.com/p/ddbe44064ca4)
 - [GCD介绍](http://www.jianshu.com/p/2d1c9d76153b) - 翻译文章
+- [Cocoa深入学习:NSOperationQueue、NSRunLoop和线程安全](https://blog.cnbluebox.com/blog/2014/07/01/cocoashen-ru-xue-xi-nsoperationqueuehe-nsoperationyuan-li-he-shi-yong/)
 
 ### Runtime相关
 - [Objective-C中的Runtime](http://www.jianshu.com/p/3e050ec3b759)
@@ -50,6 +53,8 @@ IOS知识点总结和实践
 - [源码分析](http://southpeak.github.io/categories/sourcecode/)
 
 ### 博客
+- [Objc.io 中文版](https://www.objccn.io/issues/)
+- [NSHipster 中文版](http://nshipster.cn/)
 - [ibireme](http://blog.ibireme.com/)
 - [南峰子](http://southpeak.github.io/)
 - [kenshincui](http://www.cnblogs.com/kenshincui/)
@@ -58,6 +63,9 @@ IOS知识点总结和实践
 - [Kitten's 时间胶囊](http://kittenyang.com/#blog)
 - [岁寒](https://lvwenhan.com/sort/ios)
 - [刚刚在线](http://www.superqq.com/)
+- [刘坤的技术博客](https://blog.cnbluebox.com/)
+- [casatwy](http://casatwy.com/)
+- [limboy](http://limboy.me/)
 - [我的博客](https://wangdongyang.github.io/)
 
 ### 优化文章
