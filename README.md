@@ -13,6 +13,7 @@ IOS知识点总结和实践
 - [awesome-iOS-blog-article](https://github.com/Jiar/awesome-iOS-blog-article) - 比较好的一些博客和文章
 - [ming1016/study](https://github.com/ming1016/study) - 学习记录
 - [TimLiu-iOS](https://github.com/Tim9Liu9/TimLiu-iOS) - iOS开发常用三方库、插件、知名博客等等
+- [nixzhu/dev-blog](https://github.com/nixzhu/dev-blog) - 翻译、开发心得或学习笔记
 
 ### KVO进阶
 - [谈谈 KVO](http://www.jianshu.com/p/2d1c9d76153b)
@@ -29,6 +30,7 @@ IOS知识点总结和实践
 - [iOS中保证线程安全的几种方式与性能对比](http://www.jianshu.com/p/ddbe44064ca4)
 - [GCD介绍](http://www.jianshu.com/p/2d1c9d76153b) - 翻译文章
 - [Cocoa深入学习:NSOperationQueue、NSRunLoop和线程安全](https://blog.cnbluebox.com/blog/2014/07/01/cocoashen-ru-xue-xi-nsoperationqueuehe-nsoperationyuan-li-he-shi-yong/)
+- [Concurrency](http://www.devtalking.com/tags/Concurrency/)、[Thread](http://www.devtalking.com/tags/Thread/)
 
 ### Runtime相关
 - [Objective-C中的Runtime](http://www.jianshu.com/p/3e050ec3b759)
@@ -47,6 +49,7 @@ IOS知识点总结和实践
 
 ### 动画
 - [CoreAnimation编程指南](http://www.dreamingwish.com/article/the-concept-of-coreanimation-programming-guide.html) 
+- [程序员说Animation](http://www.devtalking.com/tags/Animation/)
 
 ### 解析开源项目
 - [深入解析 iOS 开源项目](https://github.com/Draveness/iOS-Source-Code-Analyze)
@@ -66,6 +69,7 @@ IOS知识点总结和实践
 - [刘坤的技术博客](https://blog.cnbluebox.com/)
 - [casatwy](http://casatwy.com/)
 - [limboy](http://limboy.me/)
+- [程序员说](http://www.devtalking.com/) - 关于多线程和动画的文章多，也深入
 - [我的博客](https://wangdongyang.github.io/)
 
 ### 优化文章
