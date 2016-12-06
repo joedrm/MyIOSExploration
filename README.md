@@ -70,7 +70,7 @@ IOS知识点总结和实践
 - [岁寒](https://lvwenhan.com/sort/ios)
 - [刚刚在线](http://www.superqq.com/)
 - [刘坤的技术博客](https://blog.cnbluebox.com/)
-- [casatwy](http://casatwy.com/) - iOS应用架构经典文章
+- [casatwy](http://casatwy.com/) - 田伟宇，架构大牛，iOS应用架构经典文章
 - [limboy](http://limboy.me/)
 - [程序员说](http://www.devtalking.com/) - 关于多线程和动画的文章多，也深入
 - [draveness](http://draveness.me/) - 不知哪位大神，很多不错的文章
