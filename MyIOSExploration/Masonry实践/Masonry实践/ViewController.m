@@ -26,13 +26,17 @@ static NSString* identifier = @"cell";
                       @"Case3: 子View的宽度始终是父级View的一半（或者任意百分比）",
                       @"Case4: 动态计算cell高度",
                       @"Case5: Header头部拉伸效果",
-                      @"Case6: Cell的展开和收缩"];
+                      @"Case6: Cell的展开和收缩",
+                      @"Case7: 两种方式实现等间距",
+                      @"Case8: 约束动画"];
     self.vcArr = @[@"Case1ViewController",
                    @"Case2ViewController",
                    @"Case3ViewController",
                    @"Case4ViewController",
                    @"Case5ViewController",
-                   @"Case6ViewController"
+                   @"Case6ViewController",
+                   @"Case7ViewController",
+                   @"Case8ViewController"
                    ];
     self.tableView.rowHeight = 55;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
@@ -63,6 +67,9 @@ static NSString* identifier = @"cell";
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+/*
+参考地址：http://tutuge.me/tags/Autolayout/
+*/
 
 @end
 

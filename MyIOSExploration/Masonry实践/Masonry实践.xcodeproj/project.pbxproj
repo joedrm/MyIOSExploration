@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2090DE681DF6656600650BCC /* Case6Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE671DF6656600650BCC /* Case6Cell.m */; };
+		2090DE6B1DF6659C00650BCC /* Case6Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE6A1DF6659C00650BCC /* Case6Model.m */; };
+		2090DE6F1DF66EA800650BCC /* Case7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE6E1DF66EA800650BCC /* Case7ViewController.m */; };
+		2090DE731DF6934F00650BCC /* Case8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE721DF6934F00650BCC /* Case8ViewController.m */; };
 		20AC98381DF10CFE00C761FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC98371DF10CFE00C761FA /* main.m */; };
 		20AC983B1DF10CFE00C761FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC983A1DF10CFE00C761FA /* AppDelegate.m */; };
 		20AC983E1DF10CFE00C761FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC983D1DF10CFE00C761FA /* ViewController.m */; };
@@ -53,6 +57,14 @@
 
 /* Begin PBXFileReference section */
 		03401E1A5735B91FBAE4D716 /* Pods_Masonry__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Masonry__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2090DE661DF6656600650BCC /* Case6Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case6Cell.h; sourceTree = "<group>"; };
+		2090DE671DF6656600650BCC /* Case6Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case6Cell.m; sourceTree = "<group>"; };
+		2090DE691DF6659C00650BCC /* Case6Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case6Model.h; sourceTree = "<group>"; };
+		2090DE6A1DF6659C00650BCC /* Case6Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case6Model.m; sourceTree = "<group>"; };
+		2090DE6D1DF66EA800650BCC /* Case7ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case7ViewController.h; sourceTree = "<group>"; };
+		2090DE6E1DF66EA800650BCC /* Case7ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case7ViewController.m; sourceTree = "<group>"; };
+		2090DE711DF6934F00650BCC /* Case8ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case8ViewController.h; sourceTree = "<group>"; };
+		2090DE721DF6934F00650BCC /* Case8ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case8ViewController.m; sourceTree = "<group>"; };
 		20AC98331DF10CFE00C761FA /* Masonry实践.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Masonry实践.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AC98371DF10CFE00C761FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20AC98391DF10CFE00C761FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +137,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2090DE6C1DF66E0E00650BCC /* 两种方式实现等间距 */ = {
+			isa = PBXGroup;
+			children = (
+				2090DE6D1DF66EA800650BCC /* Case7ViewController.h */,
+				2090DE6E1DF66EA800650BCC /* Case7ViewController.m */,
+			);
+			path = "两种方式实现等间距";
+			sourceTree = "<group>";
+		};
+		2090DE701DF6933600650BCC /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				2090DE711DF6934F00650BCC /* Case8ViewController.h */,
+				2090DE721DF6934F00650BCC /* Case8ViewController.m */,
+			);
+			path = "动画";
+			sourceTree = "<group>";
+		};
 		20AC982A1DF10CFE00C761FA = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +184,8 @@
 				20AC983A1DF10CFE00C761FA /* AppDelegate.m */,
 				20AC983C1DF10CFE00C761FA /* ViewController.h */,
 				20AC983D1DF10CFE00C761FA /* ViewController.m */,
+				2090DE701DF6933600650BCC /* 动画 */,
+				2090DE6C1DF66E0E00650BCC /* 两种方式实现等间距 */,
 				20AC98AC1DF177B200C761FA /* Cell的展开和收缩 */,
 				20AC989F1DF15AB100C761FA /* Header拉伸效果 */,
 				20AC98931DF15A7100C761FA /* 百分比宽度 */,
@@ -267,6 +299,10 @@
 			children = (
 				20AC98AD1DF177F100C761FA /* Case6ViewController.h */,
 				20AC98AE1DF177F100C761FA /* Case6ViewController.m */,
+				2090DE661DF6656600650BCC /* Case6Cell.h */,
+				2090DE671DF6656600650BCC /* Case6Cell.m */,
+				2090DE691DF6659C00650BCC /* Case6Model.h */,
+				2090DE6A1DF6659C00650BCC /* Case6Model.m */,
 			);
 			path = "Cell的展开和收缩";
 			sourceTree = "<group>";
@@ -485,9 +521,13 @@
 				20AC989C1DF15A7100C761FA /* Case3ViewController.m in Sources */,
 				20AC983E1DF10CFE00C761FA /* ViewController.m in Sources */,
 				20AC98A21DF15AE900C761FA /* Case5ViewController.m in Sources */,
+				2090DE731DF6934F00650BCC /* Case8ViewController.m in Sources */,
 				20AC983B1DF10CFE00C761FA /* AppDelegate.m in Sources */,
+				2090DE681DF6656600650BCC /* Case6Cell.m in Sources */,
 				20AC98861DF14C2D00C761FA /* Case4ViewController.m in Sources */,
+				2090DE6B1DF6659C00650BCC /* Case6Model.m in Sources */,
 				20AC988D1DF14D2700C761FA /* Case4Cell.m in Sources */,
+				2090DE6F1DF66EA800650BCC /* Case7ViewController.m in Sources */,
 				20AC989D1DF15A7100C761FA /* Case2ViewController.m in Sources */,
 				20AC989E1DF15A7100C761FA /* Case1ViewController.m in Sources */,
 				20AC98AB1DF1672800C761FA /* TesViewController.m in Sources */,
