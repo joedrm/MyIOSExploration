@@ -68,7 +68,10 @@ static NSString* identifier = @"cell";
 }
 
 /*
-参考地址：http://tutuge.me/tags/Autolayout/
+参考地址：
+
+http://tutuge.me/tags/Autolayout/ 
+https://github.com/zekunyan/AutolayoutExampleWithMasonry
 */
 
 @end

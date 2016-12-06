@@ -9,3 +9,10 @@ pod 'MJExtension'
 pod 'SDWebImage'
 project 'Masonry实践/Masonry实践.xcodeproj'
 end
+
+use_frameworks!
+target :'ReactiveCocoa & MVVM' do
+    platform :ios, '8.0'
+    pod 'ReactiveCocoa'
+    project 'ReactiveCocoa & MVVM/ReactiveCocoa & MVVM.xcodeproj'
+end
