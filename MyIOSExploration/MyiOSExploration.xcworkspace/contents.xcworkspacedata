@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:&#x52a8;&#x6001;&#x5e93;&#x6d4b;&#x8bd5;/&#x52a8;&#x6001;&#x5e93;&#x6d4b;&#x8bd5;.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:WDYLibrary/WDYLibrary.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Masonry&#x5b9e;&#x8df5;/Masonry&#x5b9e;&#x8df5;.xcodeproj">
    </FileRef>
    <FileRef
