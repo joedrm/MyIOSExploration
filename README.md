@@ -48,6 +48,8 @@ IOS知识点总结和实践
 - [ReactiveCocoa 中 RACSignal 是如何发送信号的](http://www.jianshu.com/p/d7d951a99db8)
 - [MVVM With ReactiveCocoa](http://blog.leichunfeng.com/blog/2016/02/27/mvvm-with-reactivecocoa/)
 - [iOS函数响应式编程以及ReactiveCocoa的使用](http://www.starming.com/index.php?v=index&view=101) - 一些常用的实践范例和比较完整的api说明
+- [MVVMFramework](https://github.com/lovemo/MVVMFramework)
+- [EasyIOS](https://github.com/zhuchaowe/EasyIOS)
 
 ### 动画
 - [CoreAnimation编程指南](http://www.dreamingwish.com/article/the-concept-of-coreanimation-programming-guide.html) 
