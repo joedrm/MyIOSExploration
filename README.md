@@ -53,7 +53,8 @@ IOS知识点总结和实践
 
 ### 动画 & 绘图
 - [CoreAnimation编程指南](http://www.dreamingwish.com/article/the-concept-of-coreanimation-programming-guide.html) 
-- [IOS核心动画高级技巧](https://zsisme.gitbooks.io/ios-/content/)
+- [IOS核心动画高级技巧](https://zsisme.gitbooks.io/ios-/content/) 、[演示代码1](https://github.com/huang303513/HCDCoreAnimation) 、[演示代码2](https://github.com/ReviewCodeWorkshop1/CoreAnimationCode)
+- [iOS开发系列--让你的应用“动”起来](http://www.cnblogs.com/kenshincui/p/3972100.html)
 - [程序员说Animation](http://www.devtalking.com/tags/Animation/)
 - [awesome-ios-animation](https://github.com/ameizi/awesome-ios-animation)
 - [LayerPlayer](https://github.com/scotteg/LayerPlayer)
