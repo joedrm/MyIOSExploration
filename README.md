@@ -5,7 +5,7 @@ IOS知识点总结和实践
 - [objc-zen-book-cn](https://github.com/oa414/objc-zen-book-cn) - 禅与 Objective-C 编程艺术
 - [the-swift-programming-language-in-chinese](https://github.com/numbbbbb/the-swift-programming-language-in-chinese) - 中文版 Apple 官方 Swift 教程《The Swift Programming Language》
 - [Welcome-to-Swift](https://github.com/CocoaChina-editors/Welcome-to-Swift) - Swift中文文档
-- [iOS Developer Library](https://developer.apple.com/library/content/navigation/)
+- [iOS Developer Library](https://developer.apple.com/library/content/navigation/) - Guides and Sample Code
 
 ### IOS Awsome
 - [SwiftGuide](https://github.com/ipader/SwiftGuide)
