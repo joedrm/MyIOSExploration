@@ -51,13 +51,14 @@ IOS知识点总结和实践
 - [MVVMFramework](https://github.com/lovemo/MVVMFramework)
 - [EasyIOS](https://github.com/zhuchaowe/EasyIOS)
 
-### 动画
+### 动画 & 绘图
 - [CoreAnimation编程指南](http://www.dreamingwish.com/article/the-concept-of-coreanimation-programming-guide.html) 
 - [IOS核心动画高级技巧](https://zsisme.gitbooks.io/ios-/content/)
 - [程序员说Animation](http://www.devtalking.com/tags/Animation/)
 - [awesome-ios-animation](https://github.com/ameizi/awesome-ios-animation)
 - [LayerPlayer](https://github.com/scotteg/LayerPlayer)
 - [iOS开发 - 动画-CALayer-Core Animation-UIView封装](http://yimouleng.com/2014/11/23/CALayer-Animation/)
+- [Quartz 2D编程指南](http://southpeak.github.io/2014/11/10/quartz2d-1/) - 南峰子翻译官方的文档
 
 ### 解析开源项目
 - [深入解析 iOS 开源项目](https://github.com/Draveness/iOS-Source-Code-Analyze)
