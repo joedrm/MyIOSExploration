@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16B17CCF1DFBEC2F00373D3C /* CurvingLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CCB1DFBEC2F00373D3C /* CurvingLineView.m */; };
+		16B17CD01DFBEC2F00373D3C /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CCE1DFBEC2F00373D3C /* LineView.m */; };
+		16B17CD41DFBEC9900373D3C /* RectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CD31DFBEC9900373D3C /* RectangleView.m */; };
+		16B17CD81DFBEFAD00373D3C /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CD71DFBEFAD00373D3C /* CircleView.m */; };
+		16B17CE01DFBF78600373D3C /* RadianView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CDF1DFBF78600373D3C /* RadianView.m */; };
+		16B17CE41DFBF83800373D3C /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CE31DFBF83800373D3C /* ProgressView.m */; };
+		16B17CE81DFBF8B300373D3C /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CE61DFBF8B300373D3C /* ProgressViewController.m */; };
+		16B17CE91DFBF8B300373D3C /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B17CE71DFBF8B300373D3C /* ProgressViewController.xib */; };
+		16B17CEE1DFC00CF00373D3C /* PieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CEC1DFC00CF00373D3C /* PieChartViewController.m */; };
+		16B17CEF1DFC00CF00373D3C /* PieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B17CED1DFC00CF00373D3C /* PieChartViewController.xib */; };
+		16B17CF21DFC00EE00373D3C /* PieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CF11DFC00EE00373D3C /* PieChartView.m */; };
+		16B17CF61DFC073C00373D3C /* DrawImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CF51DFC073C00373D3C /* DrawImageView.m */; };
+		16B17CF91DFC074F00373D3C /* DrawTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17CF81DFC074F00373D3C /* DrawTextView.m */; };
+		16B17CFB1DFC0DE200373D3C /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16B17CFA1DFC0DE200373D3C /* apple.jpg */; };
+		16B17D021DFC0F0200373D3C /* DrawImageAndTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17D001DFC0F0200373D3C /* DrawImageAndTextVC.m */; };
+		16B17D031DFC0F0200373D3C /* DrawImageAndTextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B17D011DFC0F0200373D3C /* DrawImageAndTextVC.xib */; };
+		16B17D091DFC154000373D3C /* BaseDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17D071DFC154000373D3C /* BaseDrawViewController.m */; };
+		16B17D0A1DFC154000373D3C /* BaseDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B17D081DFC154000373D3C /* BaseDrawViewController.xib */; };
+		16B17D0F1DFC227300373D3C /* ContextStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17D0D1DFC227300373D3C /* ContextStackViewController.m */; };
+		16B17D101DFC227300373D3C /* ContextStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B17D0E1DFC227300373D3C /* ContextStackViewController.xib */; };
+		16B17D131DFC228B00373D3C /* ContextStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17D121DFC228B00373D3C /* ContextStackView.m */; };
+		16B17D171DFC29CB00373D3C /* ImageStampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17D161DFC29CB00373D3C /* ImageStampViewController.m */; };
 		2090DF0E1DFA78B700650BCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DF0D1DFA78B700650BCC /* main.m */; };
 		2090DF111DFA78B700650BCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DF101DFA78B700650BCC /* AppDelegate.m */; };
 		2090DF141DFA78B700650BCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DF131DFA78B700650BCC /* ViewController.m */; };
@@ -27,6 +49,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16B17CCA1DFBEC2F00373D3C /* CurvingLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurvingLineView.h; sourceTree = "<group>"; };
+		16B17CCB1DFBEC2F00373D3C /* CurvingLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurvingLineView.m; sourceTree = "<group>"; };
+		16B17CCD1DFBEC2F00373D3C /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		16B17CCE1DFBEC2F00373D3C /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		16B17CD21DFBEC9900373D3C /* RectangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleView.h; sourceTree = "<group>"; };
+		16B17CD31DFBEC9900373D3C /* RectangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleView.m; sourceTree = "<group>"; };
+		16B17CD61DFBEFAD00373D3C /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		16B17CD71DFBEFAD00373D3C /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		16B17CDE1DFBF78600373D3C /* RadianView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadianView.h; sourceTree = "<group>"; };
+		16B17CDF1DFBF78600373D3C /* RadianView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadianView.m; sourceTree = "<group>"; };
+		16B17CE21DFBF83800373D3C /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		16B17CE31DFBF83800373D3C /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		16B17CE51DFBF8B300373D3C /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		16B17CE61DFBF8B300373D3C /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		16B17CE71DFBF8B300373D3C /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
+		16B17CEB1DFC00CF00373D3C /* PieChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartViewController.h; sourceTree = "<group>"; };
+		16B17CEC1DFC00CF00373D3C /* PieChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartViewController.m; sourceTree = "<group>"; };
+		16B17CED1DFC00CF00373D3C /* PieChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PieChartViewController.xib; sourceTree = "<group>"; };
+		16B17CF01DFC00EE00373D3C /* PieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartView.h; sourceTree = "<group>"; };
+		16B17CF11DFC00EE00373D3C /* PieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartView.m; sourceTree = "<group>"; };
+		16B17CF41DFC073C00373D3C /* DrawImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawImageView.h; sourceTree = "<group>"; };
+		16B17CF51DFC073C00373D3C /* DrawImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawImageView.m; sourceTree = "<group>"; };
+		16B17CF71DFC074F00373D3C /* DrawTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTextView.h; sourceTree = "<group>"; };
+		16B17CF81DFC074F00373D3C /* DrawTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTextView.m; sourceTree = "<group>"; };
+		16B17CFA1DFC0DE200373D3C /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
+		16B17CFF1DFC0F0200373D3C /* DrawImageAndTextVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawImageAndTextVC.h; sourceTree = "<group>"; };
+		16B17D001DFC0F0200373D3C /* DrawImageAndTextVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawImageAndTextVC.m; sourceTree = "<group>"; };
+		16B17D011DFC0F0200373D3C /* DrawImageAndTextVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawImageAndTextVC.xib; sourceTree = "<group>"; };
+		16B17D061DFC154000373D3C /* BaseDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDrawViewController.h; sourceTree = "<group>"; };
+		16B17D071DFC154000373D3C /* BaseDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawViewController.m; sourceTree = "<group>"; };
+		16B17D081DFC154000373D3C /* BaseDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseDrawViewController.xib; sourceTree = "<group>"; };
+		16B17D0C1DFC227300373D3C /* ContextStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextStackViewController.h; sourceTree = "<group>"; };
+		16B17D0D1DFC227300373D3C /* ContextStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextStackViewController.m; sourceTree = "<group>"; };
+		16B17D0E1DFC227300373D3C /* ContextStackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContextStackViewController.xib; sourceTree = "<group>"; };
+		16B17D111DFC228B00373D3C /* ContextStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextStackView.h; sourceTree = "<group>"; };
+		16B17D121DFC228B00373D3C /* ContextStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextStackView.m; sourceTree = "<group>"; };
+		16B17D151DFC29CB00373D3C /* ImageStampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStampViewController.h; sourceTree = "<group>"; };
+		16B17D161DFC29CB00373D3C /* ImageStampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStampViewController.m; sourceTree = "<group>"; };
 		2090DF091DFA78B700650BCC /* Quartz 2D实践.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quartz 2D实践.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2090DF0D1DFA78B700650BCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2090DF0F1DFA78B700650BCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +120,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B17CC91DFBEC2F00373D3C /* 画曲线 */ = {
+			isa = PBXGroup;
+			children = (
+				16B17CCA1DFBEC2F00373D3C /* CurvingLineView.h */,
+				16B17CCB1DFBEC2F00373D3C /* CurvingLineView.m */,
+			);
+			path = "画曲线";
+			sourceTree = "<group>";
+		};
+		16B17CCC1DFBEC2F00373D3C /* 画直线 */ = {
+			isa = PBXGroup;
+			children = (
+				16B17CCD1DFBEC2F00373D3C /* LineView.h */,
+				16B17CCE1DFBEC2F00373D3C /* LineView.m */,
+			);
+			path = "画直线";
+			sourceTree = "<group>";
+		};
+		16B17CD11DFBEC6800373D3C /* 画矩形 */ = {
+			isa = PBXGroup;
+			children = (
+				16B17CD21DFBEC9900373D3C /* RectangleView.h */,
+				16B17CD31DFBEC9900373D3C /* RectangleView.m */,
+			);
+			path = "画矩形";
+			sourceTree = "<group>";
+		};
+		16B17CD51DFBEEAE00373D3C /* 画圆和椭圆 */ = {
+			isa = PBXGroup;
+			children = (
+				16B17CD61DFBEFAD00373D3C /* CircleView.h */,
+				16B17CD71DFBEFAD00373D3C /* CircleView.m */,
+			);
+			path = "画圆和椭圆";
+			sourceTree = "<group>";
+		};
+		16B17CDD1DFBF78600373D3C /* 画弧和扇形 */ = {
+			isa = PBXGroup;
+			children = (
+				16B17CDE1DFBF78600373D3C /* RadianView.h */,
+				16B17CDF1DFBF78600373D3C /* RadianView.m */,
+			);
+			path = "画弧和扇形";
+			sourceTree = "<group>";
+		};
+		16B17CE11DFBF81200373D3C /* 实例1：下载进度条 */ = {
+			isa = PBXGroup;
+			children = (
+				16B17CE21DFBF83800373D3C /* ProgressView.h */,
+				16B17CE31DFBF83800373D3C /* ProgressView.m */,
+				16B17CE51DFBF8B300373D3C /* ProgressViewController.h */,
+				16B17CE61DFBF8B300373D3C /* ProgressViewController.m */,
+				16B17CE71DFBF8B300373D3C /* ProgressViewController.xib */,
+			);
+			path = "实例1：下载进度条";
+			sourceTree = "<group>";
+		};
+		16B17CEA1DFC004B00373D3C /* 实例2：饼状图 */ = {
+			isa = PBXGroup;
+			children = (
+				16B17CEB1DFC00CF00373D3C /* PieChartViewController.h */,
+				16B17CEC1DFC00CF00373D3C /* PieChartViewController.m */,
+				16B17CED1DFC00CF00373D3C /* PieChartViewController.xib */,
+				16B17CF01DFC00EE00373D3C /* PieChartView.h */,
+				16B17CF11DFC00EE00373D3C /* PieChartView.m */,
+			);
+			path = "实例2：饼状图";
+			sourceTree = "<group>";
+		};
+		16B17CF31DFC06E500373D3C /* 画图片和文字 */ = {
+			isa = PBXGroup;
+			children = (
+				16B17CF41DFC073C00373D3C /* DrawImageView.h */,
+				16B17CF51DFC073C00373D3C /* DrawImageView.m */,
+				16B17CFA1DFC0DE200373D3C /* apple.jpg */,
+				16B17CF71DFC074F00373D3C /* DrawTextView.h */,
+				16B17CF81DFC074F00373D3C /* DrawTextView.m */,
+				16B17CFF1DFC0F0200373D3C /* DrawImageAndTextVC.h */,
+				16B17D001DFC0F0200373D3C /* DrawImageAndTextVC.m */,
+				16B17D011DFC0F0200373D3C /* DrawImageAndTextVC.xib */,
+			);
+			path = "画图片和文字";
+			sourceTree = "<group>";
+		};
+		16B17D0B1DFC225500373D3C /* 上下文状态栈 */ = {
+			isa = PBXGroup;
+			children = (
+				16B17D0C1DFC227300373D3C /* ContextStackViewController.h */,
+				16B17D0D1DFC227300373D3C /* ContextStackViewController.m */,
+				16B17D0E1DFC227300373D3C /* ContextStackViewController.xib */,
+				16B17D111DFC228B00373D3C /* ContextStackView.h */,
+				16B17D121DFC228B00373D3C /* ContextStackView.m */,
+			);
+			path = "上下文状态栈";
+			sourceTree = "<group>";
+		};
+		16B17D141DFC295300373D3C /* 实例3：图片加水印 */ = {
+			isa = PBXGroup;
+			children = (
+				16B17D151DFC29CB00373D3C /* ImageStampViewController.h */,
+				16B17D161DFC29CB00373D3C /* ImageStampViewController.m */,
+			);
+			path = "实例3：图片加水印";
+			sourceTree = "<group>";
+		};
 		2090DF001DFA78B700650BCC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +250,19 @@
 				2090DF101DFA78B700650BCC /* AppDelegate.m */,
 				2090DF121DFA78B700650BCC /* ViewController.h */,
 				2090DF131DFA78B700650BCC /* ViewController.m */,
+				16B17D141DFC295300373D3C /* 实例3：图片加水印 */,
+				16B17CEA1DFC004B00373D3C /* 实例2：饼状图 */,
+				16B17CE11DFBF81200373D3C /* 实例1：下载进度条 */,
+				16B17D0B1DFC225500373D3C /* 上下文状态栈 */,
+				16B17CF31DFC06E500373D3C /* 画图片和文字 */,
+				16B17CDD1DFBF78600373D3C /* 画弧和扇形 */,
+				16B17CD51DFBEEAE00373D3C /* 画圆和椭圆 */,
+				16B17CD11DFBEC6800373D3C /* 画矩形 */,
+				16B17CC91DFBEC2F00373D3C /* 画曲线 */,
+				16B17CCC1DFBEC2F00373D3C /* 画直线 */,
+				16B17D061DFC154000373D3C /* BaseDrawViewController.h */,
+				16B17D071DFC154000373D3C /* BaseDrawViewController.m */,
+				16B17D081DFC154000373D3C /* BaseDrawViewController.xib */,
 				2090DF151DFA78B700650BCC /* Main.storyboard */,
 				2090DF181DFA78B700650BCC /* Assets.xcassets */,
 				2090DF1A1DFA78B700650BCC /* LaunchScreen.storyboard */,
@@ -195,9 +373,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B17D101DFC227300373D3C /* ContextStackViewController.xib in Resources */,
+				16B17CEF1DFC00CF00373D3C /* PieChartViewController.xib in Resources */,
 				2090DF1C1DFA78B700650BCC /* LaunchScreen.storyboard in Resources */,
 				2090DF191DFA78B700650BCC /* Assets.xcassets in Resources */,
 				2090DF171DFA78B700650BCC /* Main.storyboard in Resources */,
+				16B17D031DFC0F0200373D3C /* DrawImageAndTextVC.xib in Resources */,
+				16B17D0A1DFC154000373D3C /* BaseDrawViewController.xib in Resources */,
+				16B17CFB1DFC0DE200373D3C /* apple.jpg in Resources */,
+				16B17CE91DFBF8B300373D3C /* ProgressViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,8 +399,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B17CCF1DFBEC2F00373D3C /* CurvingLineView.m in Sources */,
+				16B17D131DFC228B00373D3C /* ContextStackView.m in Sources */,
+				16B17D091DFC154000373D3C /* BaseDrawViewController.m in Sources */,
+				16B17D171DFC29CB00373D3C /* ImageStampViewController.m in Sources */,
+				16B17D021DFC0F0200373D3C /* DrawImageAndTextVC.m in Sources */,
+				16B17CE41DFBF83800373D3C /* ProgressView.m in Sources */,
+				16B17CE01DFBF78600373D3C /* RadianView.m in Sources */,
+				16B17CE81DFBF8B300373D3C /* ProgressViewController.m in Sources */,
+				16B17CF61DFC073C00373D3C /* DrawImageView.m in Sources */,
+				16B17CF21DFC00EE00373D3C /* PieChartView.m in Sources */,
+				16B17CD01DFBEC2F00373D3C /* LineView.m in Sources */,
+				16B17CF91DFC074F00373D3C /* DrawTextView.m in Sources */,
 				2090DF141DFA78B700650BCC /* ViewController.m in Sources */,
+				16B17CD81DFBEFAD00373D3C /* CircleView.m in Sources */,
+				16B17D0F1DFC227300373D3C /* ContextStackViewController.m in Sources */,
+				16B17CD41DFBEC9900373D3C /* RectangleView.m in Sources */,
 				2090DF111DFA78B700650BCC /* AppDelegate.m in Sources */,
+				16B17CEE1DFC00CF00373D3C /* PieChartViewController.m in Sources */,
 				2090DF0E1DFA78B700650BCC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +614,7 @@
 				2090DF2D1DFA78B700650BCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2090DF2E1DFA78B700650BCC /* Build configuration list for PBXNativeTarget "Quartz 2D实践UITests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +623,7 @@
 				2090DF301DFA78B700650BCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  DrawImageAndTextVC.h
 //  Quartz 2D实践
 //
-//  Created by fang wang on 16/12/9.
+//  Created by wdy on 2016/12/10.
 //  Copyright © 2016年 wdy. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
+@interface DrawImageAndTextVC : UIViewController
 
 @end
-

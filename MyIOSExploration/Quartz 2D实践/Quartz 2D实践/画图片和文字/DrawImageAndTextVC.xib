@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawImageAndTextVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQG-Ke-Zc7" customClass="DrawImageView">
+                    <rect key="frame" x="30" y="80" width="315" height="315"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="315" id="37n-a2-zDM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X05-82-3X1" customClass="DrawTextView">
+                    <rect key="frame" x="30" y="425" width="315" height="200"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="7xg-At-udu"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="PTS-NS-ZWO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="X05-82-3X1" firstAttribute="trailing" secondItem="jQG-Ke-Zc7" secondAttribute="trailing" id="Axv-s1-DVj"/>
+                <constraint firstAttribute="trailing" secondItem="jQG-Ke-Zc7" secondAttribute="trailing" constant="30" id="BfF-Wh-4DD"/>
+                <constraint firstItem="X05-82-3X1" firstAttribute="leading" secondItem="jQG-Ke-Zc7" secondAttribute="leading" id="IoG-eH-xev"/>
+                <constraint firstItem="X05-82-3X1" firstAttribute="centerX" secondItem="jQG-Ke-Zc7" secondAttribute="centerX" id="MRp-cE-zgr"/>
+                <constraint firstItem="X05-82-3X1" firstAttribute="top" secondItem="jQG-Ke-Zc7" secondAttribute="bottom" constant="30" id="XB1-5s-prs"/>
+                <constraint firstItem="jQG-Ke-Zc7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="hDr-Vn-eSx"/>
+                <constraint firstItem="jQG-Ke-Zc7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="jBm-xB-if1"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="64.5"/>
+        </view>
+    </objects>
+</document>
