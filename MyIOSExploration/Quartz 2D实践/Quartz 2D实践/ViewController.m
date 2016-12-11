@@ -27,13 +27,21 @@ static NSString* identifier = @"cell";
                       @"上下文状态栈",
                       @"实例1：下载进度条",
                       @"实例2：饼状图",
-                      @"实例3：图片加水印"];
+                      @"实例3：图片加水印",
+                      @"实例4：截屏",
+                      @"实例5：图片截取",
+                      @"实例6：图片擦除(撕衣服小游戏)",
+                      @"实例7：手势解锁"];
     self.vcArr = @[@"BaseDrawViewController",
                    @"DrawImageAndTextVC",
                    @"ContextStackViewController",
                    @"ProgressViewController",
                    @"PieChartViewController",
-                   @"ImageStampViewController"
+                   @"ImageStampViewController",
+                   @"ScreenshotViewController",
+                   @"ImageCropViewController",
+                   @"WipeImageViewController",
+                   @"GestureUnlockVC"
                    ];
     self.tableView.rowHeight = 44;
     self.tableView.tableFooterView = [[UIView alloc] init];
