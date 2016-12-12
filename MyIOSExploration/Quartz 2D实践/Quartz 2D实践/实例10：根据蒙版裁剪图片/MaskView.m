@@ -53,21 +53,11 @@
     CGContextDrawImage(ctx, rect, maskRef);
     CGContextDrawImage(ctx, rect, bgImageRef);
     
+    UIImage* newImg = UIGraphicsGetImageFromCurrentImageContext();
+    
+    NSLog(@"%@",newImg);
+    
 //    CGContextClearRect(ctx, CGRectMake(100, 0, _maskImage.size.width, _maskImage.size.height));
-    CGFloat lines[] = {rect.size.width, rect.size.width*2};
-    
-    CGFloat grey[4] = {0.6f, 0.6f, 0.6f, 1.0f};
-    CGContextSetStrokeColor(ctx, grey);
-    CGContextSetFillColorWithColor(ctx, [[UIColor clearColor] CGColor]);
-    
-    CGContextSetLineDash(ctx, 0, lines, 2);
-    CGContextSetLineWidth(ctx, self.frame.size.width);
-    
-    CGContextBeginPath(ctx);
-    CGContextMoveToPoint(ctx, 0, 0);
-    CGContextAddLineToPoint(ctx, 0, self.frame.size.height);
-    
-    CGContextDrawPath(ctx, kCGPathFillStroke);
     
     
     

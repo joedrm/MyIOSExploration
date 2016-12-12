@@ -17,5 +17,8 @@
 + (UIImage *)maskImage:(UIImage *)baseImage withImage:(UIImage *)theMaskImage;
 + (UIImage*) mask5Image:(UIImage *)image withMask:(UIImage *)maskImage;
 
+//黑色替换成对应颜色
+- (UIImage*)imageBlackToTransparentWithColor:(UIColor *)color;
+
 - (UIImage *)inverseMaskImage;
 @end
