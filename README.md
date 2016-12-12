@@ -61,6 +61,7 @@ IOS知识点总结和实践
 - [LayerPlayer](https://github.com/scotteg/LayerPlayer)
 - [iOS开发 - 动画-CALayer-Core Animation-UIView封装](http://yimouleng.com/2014/11/23/CALayer-Animation/)
 - [Quartz 2D编程指南](http://southpeak.github.io/2014/11/10/quartz2d-1/) - 南峰子翻译官方的文档
+- [iOS开发系列--打造自己的“美图秀秀”](http://www.cnblogs.com/kenshincui/p/3959951.html)
 
 ### 解析开源项目
 - [深入解析 iOS 开源项目](https://github.com/Draveness/iOS-Source-Code-Analyze)
