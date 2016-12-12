@@ -40,6 +40,7 @@
     }else if (sender.state == UIGestureRecognizerStateEnded){
         // 把超出cover的frame以外的裁剪掉
         // 生成一张图片。把原来的图片替换掉
+        
         UIGraphicsBeginImageContextWithOptions(self.imageV.bounds.size, NO, 0);
         
         // 把imageV绘制到上下文之前，设置一个裁剪区域

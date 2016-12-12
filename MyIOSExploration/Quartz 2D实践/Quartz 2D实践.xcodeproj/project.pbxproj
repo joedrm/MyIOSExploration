@@ -46,6 +46,14 @@
 		16B17D101DFC227300373D3C /* ContextStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B17D0E1DFC227300373D3C /* ContextStackViewController.xib */; };
 		16B17D131DFC228B00373D3C /* ContextStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17D121DFC228B00373D3C /* ContextStackView.m */; };
 		16B17D171DFC29CB00373D3C /* ImageStampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B17D161DFC29CB00373D3C /* ImageStampViewController.m */; };
+		2006F9801DFE399D0055F1BA /* MaskImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2006F97E1DFE399D0055F1BA /* MaskImageVC.m */; };
+		2006F9841DFE39BF0055F1BA /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2006F9831DFE39BF0055F1BA /* MaskView.m */; };
+		2006F9881DFE3D540055F1BA /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 2006F9851DFE3D540055F1BA /* mask.png */; };
+		2006F9891DFE3D540055F1BA /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 2006F9861DFE3D540055F1BA /* cover.png */; };
+		2006F98A1DFE3D540055F1BA /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2006F9871DFE3D540055F1BA /* back.png */; };
+		2006F98D1DFE3E2E0055F1BA /* mask01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2006F98B1DFE3E2E0055F1BA /* mask01.png */; };
+		2006F98E1DFE3E2E0055F1BA /* bg01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2006F98C1DFE3E2E0055F1BA /* bg01.png */; };
+		2006F9911DFE56A20055F1BA /* UIImage+AlphaMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2006F9901DFE56A20055F1BA /* UIImage+AlphaMask.m */; };
 		2090DF0E1DFA78B700650BCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DF0D1DFA78B700650BCC /* main.m */; };
 		2090DF111DFA78B700650BCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DF101DFA78B700650BCC /* AppDelegate.m */; };
 		2090DF141DFA78B700650BCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DF131DFA78B700650BCC /* ViewController.m */; };
@@ -53,6 +61,8 @@
 		2090DF191DFA78B700650BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2090DF181DFA78B700650BCC /* Assets.xcassets */; };
 		2090DF1C1DFA78B700650BCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2090DF1A1DFA78B700650BCC /* LaunchScreen.storyboard */; };
 		2090DF271DFA78B700650BCC /* Quartz_2D__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DF261DFA78B700650BCC /* Quartz_2D__UITests.m */; };
+		20C642E31DFEAF7F00A6D722 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C642E21DFEAF7F00A6D722 /* ImageUtil.m */; };
+		BE2F8CA80C0D633ABF8D959C /* Pods_Quartz_2D__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96B53F1D9B729AE750531C7 /* Pods_Quartz_2D__.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14D4C7B575D7A4F7042F6664 /* Pods-Quartz 2D实践.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quartz 2D实践.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Quartz 2D实践/Pods-Quartz 2D实践.release.xcconfig"; sourceTree = "<group>"; };
 		168DA42E1DFC48D000BB9916 /* ScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenshotViewController.h; sourceTree = "<group>"; };
 		168DA42F1DFC48D000BB9916 /* ScreenshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenshotViewController.m; sourceTree = "<group>"; };
 		168DA4301DFC48D000BB9916 /* ScreenshotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenshotViewController.xib; sourceTree = "<group>"; };
@@ -126,6 +137,17 @@
 		16B17D121DFC228B00373D3C /* ContextStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextStackView.m; sourceTree = "<group>"; };
 		16B17D151DFC29CB00373D3C /* ImageStampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStampViewController.h; sourceTree = "<group>"; };
 		16B17D161DFC29CB00373D3C /* ImageStampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStampViewController.m; sourceTree = "<group>"; };
+		2006F97D1DFE399D0055F1BA /* MaskImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskImageVC.h; sourceTree = "<group>"; };
+		2006F97E1DFE399D0055F1BA /* MaskImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskImageVC.m; sourceTree = "<group>"; };
+		2006F9821DFE39BF0055F1BA /* MaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
+		2006F9831DFE39BF0055F1BA /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
+		2006F9851DFE3D540055F1BA /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
+		2006F9861DFE3D540055F1BA /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
+		2006F9871DFE3D540055F1BA /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		2006F98B1DFE3E2E0055F1BA /* mask01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask01.png; sourceTree = "<group>"; };
+		2006F98C1DFE3E2E0055F1BA /* bg01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg01.png; sourceTree = "<group>"; };
+		2006F98F1DFE56A20055F1BA /* UIImage+AlphaMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaMask.h"; sourceTree = "<group>"; };
+		2006F9901DFE56A20055F1BA /* UIImage+AlphaMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaMask.m"; sourceTree = "<group>"; };
 		2090DF091DFA78B700650BCC /* Quartz 2D实践.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quartz 2D实践.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2090DF0D1DFA78B700650BCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2090DF0F1DFA78B700650BCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +161,12 @@
 		2090DF221DFA78B700650BCC /* Quartz 2D实践UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quartz 2D实践UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2090DF261DFA78B700650BCC /* Quartz_2D__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quartz_2D__UITests.m; sourceTree = "<group>"; };
 		2090DF281DFA78B700650BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C642E01DFEA2A900A6D722 /* Quartz2D_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quartz2D_PrefixHeader.pch; sourceTree = "<group>"; };
+		20C642E11DFEAF7F00A6D722 /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		20C642E21DFEAF7F00A6D722 /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
+		20C642E41DFEB2C200A6D722 /* ColorMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatrix.h; sourceTree = "<group>"; };
+		371903975C5BD19D7D6E2173 /* Pods-Quartz 2D实践.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quartz 2D实践.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Quartz 2D实践/Pods-Quartz 2D实践.debug.xcconfig"; sourceTree = "<group>"; };
+		B96B53F1D9B729AE750531C7 /* Pods_Quartz_2D__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quartz_2D__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2F8CA80C0D633ABF8D959C /* Pods_Quartz_2D__.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,12 +357,35 @@
 			path = "实例3：图片加水印";
 			sourceTree = "<group>";
 		};
+		2006F97C1DFE39620055F1BA /* 实例10：根据蒙版裁剪图片 */ = {
+			isa = PBXGroup;
+			children = (
+				2006F97D1DFE399D0055F1BA /* MaskImageVC.h */,
+				2006F97E1DFE399D0055F1BA /* MaskImageVC.m */,
+				2006F9821DFE39BF0055F1BA /* MaskView.h */,
+				2006F9831DFE39BF0055F1BA /* MaskView.m */,
+				2006F98F1DFE56A20055F1BA /* UIImage+AlphaMask.h */,
+				2006F9901DFE56A20055F1BA /* UIImage+AlphaMask.m */,
+				20C642E41DFEB2C200A6D722 /* ColorMatrix.h */,
+				20C642E11DFEAF7F00A6D722 /* ImageUtil.h */,
+				20C642E21DFEAF7F00A6D722 /* ImageUtil.m */,
+				2006F9851DFE3D540055F1BA /* mask.png */,
+				2006F9861DFE3D540055F1BA /* cover.png */,
+				2006F9871DFE3D540055F1BA /* back.png */,
+				2006F98B1DFE3E2E0055F1BA /* mask01.png */,
+				2006F98C1DFE3E2E0055F1BA /* bg01.png */,
+			);
+			path = "实例10：根据蒙版裁剪图片";
+			sourceTree = "<group>";
+		};
 		2090DF001DFA78B700650BCC = {
 			isa = PBXGroup;
 			children = (
 				2090DF0B1DFA78B700650BCC /* Quartz 2D实践 */,
 				2090DF251DFA78B700650BCC /* Quartz 2D实践UITests */,
 				2090DF0A1DFA78B700650BCC /* Products */,
+				2AAE7707DF536E362BE107C6 /* Pods */,
+				B37796B7387228C9B2D1256A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -353,6 +405,7 @@
 				2090DF101DFA78B700650BCC /* AppDelegate.m */,
 				2090DF121DFA78B700650BCC /* ViewController.h */,
 				2090DF131DFA78B700650BCC /* ViewController.m */,
+				2006F97C1DFE39620055F1BA /* 实例10：根据蒙版裁剪图片 */,
 				168DA43E1DFC599200BB9916 /* 实例9：圆形头像裁剪 */,
 				168DA43D1DFC599200BB9916 /* 实例8：画板 */,
 				168DA43C1DFC599200BB9916 /* 实例7：手势解锁 */,
@@ -376,6 +429,7 @@
 				2090DF181DFA78B700650BCC /* Assets.xcassets */,
 				2090DF1A1DFA78B700650BCC /* LaunchScreen.storyboard */,
 				2090DF1D1DFA78B700650BCC /* Info.plist */,
+				20C642E01DFEA2A900A6D722 /* Quartz2D_PrefixHeader.pch */,
 				2090DF0C1DFA78B700650BCC /* Supporting Files */,
 			);
 			path = "Quartz 2D实践";
@@ -398,6 +452,23 @@
 			path = "Quartz 2D实践UITests";
 			sourceTree = "<group>";
 		};
+		2AAE7707DF536E362BE107C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				371903975C5BD19D7D6E2173 /* Pods-Quartz 2D实践.debug.xcconfig */,
+				14D4C7B575D7A4F7042F6664 /* Pods-Quartz 2D实践.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B37796B7387228C9B2D1256A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B96B53F1D9B729AE750531C7 /* Pods_Quartz_2D__.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,9 +476,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2090DF2B1DFA78B700650BCC /* Build configuration list for PBXNativeTarget "Quartz 2D实践" */;
 			buildPhases = (
+				BE09F52873178DCF661BF8A3 /* [CP] Check Pods Manifest.lock */,
 				2090DF051DFA78B700650BCC /* Sources */,
 				2090DF061DFA78B700650BCC /* Frameworks */,
 				2090DF071DFA78B700650BCC /* Resources */,
+				A0A4AD39BC35C0FF65B19FD5 /* [CP] Embed Pods Frameworks */,
+				A7F8B0BA03FD655A11BA4645 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -484,22 +558,27 @@
 			files = (
 				168DA4561DFD5E2F00BB9916 /* gesture_node_highlighted@2x.png in Resources */,
 				168DA4571DFD5E2F00BB9916 /* gesture_node_highlighted@3x.png in Resources */,
+				2006F98E1DFE3E2E0055F1BA /* bg01.png in Resources */,
 				16B17D101DFC227300373D3C /* ContextStackViewController.xib in Resources */,
+				2006F9891DFE3D540055F1BA /* cover.png in Resources */,
 				168DA43A1DFC4EB500BB9916 /* your_name.jpeg in Resources */,
 				16B17CEF1DFC00CF00373D3C /* PieChartViewController.xib in Resources */,
 				2090DF1C1DFA78B700650BCC /* LaunchScreen.storyboard in Resources */,
 				168DA4551DFD5E2F00BB9916 /* bg.png in Resources */,
 				168DA4461DFD157500BB9916 /* after19.jpg in Resources */,
 				168DA4471DFD157500BB9916 /* pre19.jpg in Resources */,
+				2006F98A1DFE3D540055F1BA /* back.png in Resources */,
 				2090DF191DFA78B700650BCC /* Assets.xcassets in Resources */,
 				2090DF171DFA78B700650BCC /* Main.storyboard in Resources */,
 				168DA4591DFD5E2F00BB9916 /* gesture_node_normal@3x.png in Resources */,
 				168DA4581DFD5E2F00BB9916 /* gesture_node_normal@2x.png in Resources */,
+				2006F9881DFE3D540055F1BA /* mask.png in Resources */,
 				168DA44C1DFD1C7B00BB9916 /* GestureUnlockVC.xib in Resources */,
 				16B17D031DFC0F0200373D3C /* DrawImageAndTextVC.xib in Resources */,
 				168DA4321DFC48D000BB9916 /* ScreenshotViewController.xib in Resources */,
 				16B17D0A1DFC154000373D3C /* BaseDrawViewController.xib in Resources */,
 				16B17CFB1DFC0DE200373D3C /* apple.jpg in Resources */,
+				2006F98D1DFE3E2E0055F1BA /* mask01.png in Resources */,
 				168DA4381DFC4CB500BB9916 /* ImageCropViewController.xib in Resources */,
 				168DA4431DFD0D1C00BB9916 /* WipeImageViewController.xib in Resources */,
 				16B17CE91DFBF8B300373D3C /* ProgressViewController.xib in Resources */,
@@ -515,12 +594,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0A4AD39BC35C0FF65B19FD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Quartz 2D实践/Pods-Quartz 2D实践-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7F8B0BA03FD655A11BA4645 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Quartz 2D实践/Pods-Quartz 2D实践-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE09F52873178DCF661BF8A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2090DF051DFA78B700650BCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2006F9841DFE39BF0055F1BA /* MaskView.m in Sources */,
 				16B17CCF1DFBEC2F00373D3C /* CurvingLineView.m in Sources */,
+				2006F9801DFE399D0055F1BA /* MaskImageVC.m in Sources */,
 				16B17D131DFC228B00373D3C /* ContextStackView.m in Sources */,
 				168DA4311DFC48D000BB9916 /* ScreenshotViewController.m in Sources */,
 				16B17D091DFC154000373D3C /* BaseDrawViewController.m in Sources */,
@@ -529,7 +658,9 @@
 				16B17CE41DFBF83800373D3C /* ProgressView.m in Sources */,
 				168DA4421DFD0D1C00BB9916 /* WipeImageViewController.m in Sources */,
 				16B17CE01DFBF78600373D3C /* RadianView.m in Sources */,
+				20C642E31DFEAF7F00A6D722 /* ImageUtil.m in Sources */,
 				16B17CE81DFBF8B300373D3C /* ProgressViewController.m in Sources */,
+				2006F9911DFE56A20055F1BA /* UIImage+AlphaMask.m in Sources */,
 				16B17CF61DFC073C00373D3C /* DrawImageView.m in Sources */,
 				16B17CF21DFC00EE00373D3C /* PieChartView.m in Sources */,
 				168DA4371DFC4CB500BB9916 /* ImageCropViewController.m in Sources */,
@@ -675,9 +806,11 @@
 		};
 		2090DF2C1DFA78B700650BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 371903975C5BD19D7D6E2173 /* Pods-Quartz 2D实践.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				GCC_PREFIX_HEADER = "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/Quartz 2D实践/Quartz 2D实践/Quartz2D_PrefixHeader.pch";
 				INFOPLIST_FILE = "Quartz 2D实践/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.Quartz-2D--";
@@ -687,9 +820,11 @@
 		};
 		2090DF2D1DFA78B700650BCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14D4C7B575D7A4F7042F6664 /* Pods-Quartz 2D实践.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				GCC_PREFIX_HEADER = "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/Quartz 2D实践/Quartz 2D实践/Quartz2D_PrefixHeader.pch";
 				INFOPLIST_FILE = "Quartz 2D实践/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.Quartz-2D--";

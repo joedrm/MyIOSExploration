@@ -31,7 +31,8 @@ static NSString* identifier = @"cell";
                       @"实例4：截屏",
                       @"实例5：图片截取",
                       @"实例6：图片擦除(撕衣服小游戏)",
-                      @"实例7：手势解锁"];
+                      @"实例7：手势解锁",
+                      @"实例10：根据蒙版裁剪图片"];
     self.vcArr = @[@"BaseDrawViewController",
                    @"DrawImageAndTextVC",
                    @"ContextStackViewController",
@@ -41,7 +42,8 @@ static NSString* identifier = @"cell";
                    @"ScreenshotViewController",
                    @"ImageCropViewController",
                    @"WipeImageViewController",
-                   @"GestureUnlockVC"
+                   @"GestureUnlockVC",
+                   @"MaskImageVC"
                    ];
     self.tableView.rowHeight = 44;
     self.tableView.tableFooterView = [[UIView alloc] init];
