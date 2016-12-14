@@ -266,15 +266,12 @@ typedef CF_OPTIONS(CFOptionFlags, CFRunLoopActivity) {
 
 
 9. Runloop应用
-
-    1）NSTimer
-    2）ImageView显示：控制方法在特定的模式下可用
-    3）PerformSelector
-    4）常驻线程：在子线程中开启一个runloop
-    5）自动释放池
-        第一次创建：进入runloop的时候
-        最后一次释放：runloop退出的时候
-        其它创建和释放：当runloop即将休眠的时候会把之前的自动释放池释放，然后重新创建一个新的释放池
+ 
+ * NSTimer
+ * ImageView显示：控制方法在特定的模式下可用
+ * PerformSelector
+ * 常驻线程：在子线程中开启一个runloop
+ * 自动释放池：第一次创建：进入runloop的时候；最后一次释放：runloop退出的时候；其它创建和释放：当runloop即将休眠的时候会把之前的自动释放池释放，然后重新创建一个新的释放池
 
 ---
 
