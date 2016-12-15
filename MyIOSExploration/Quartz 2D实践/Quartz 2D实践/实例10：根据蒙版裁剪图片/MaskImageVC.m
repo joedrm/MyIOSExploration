@@ -20,7 +20,7 @@
 
 @interface MaskImageVC ()
 @property (weak, nonatomic) MaskView *maskView;
-
+@property (weak, nonatomic) UIImageView* imageView;
 @end
 
 @implementation MaskImageVC
@@ -35,22 +35,41 @@
     UIImage* bgImage = [UIImage imageNamed:@"bg01.png"];
     
     CGSize screen_size = [UIScreen mainScreen].bounds.size;
+    CGSize size = CGSizeMake(screen_size.width - 60, screen_size.width - 60);
     
-    MaskView* maskView = [[MaskView alloc] init];
-    [maskView configBgImage:maskImage maskImg:bgImage];
-    maskView.backgroundColor = [UIColor redColor];
-    [self.view addSubview:maskView];
-    [maskView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.view);
-        make.left.mas_equalTo(20);
-        make.right.mas_equalTo(-20);
-        make.height.mas_equalTo(screen_size.width - 40);
+    UIImageView* imageView = [[UIImageView alloc] init];
+    self.imageView = imageView;
+    imageView.image = [UIImage imageNamed:@"pre19.jpg"];
+    [self.view addSubview:imageView];
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(size);
+        make.left.mas_equalTo(@30);
+        make.top.mas_equalTo(@80);
     }];
+
+    CGFloat y = size.height + 80 + 20;
+    CGRect rect = CGRectMake(30, y, size.width, size.height);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
     
+    CGImageRef maskRef = maskImage.CGImage;
+    CGImageRef bgImageRef = bgImage.CGImage;
     
-//    UIImage* image = [UIImage maskImage:bgImage withMask:maskImage];
-//    self.bgImageView.image = image;
+    CGContextDrawImage(ctx, rect, maskRef);
+    CGContextDrawImage(ctx, rect, bgImageRef);
     
+    UIImage* newImg = UIGraphicsGetImageFromCurrentImageContext();
+    
+    NSLog(@"newImg = %@", newImg);
+    
+    UIImageView* mask = [[UIImageView alloc] initWithImage:newImg];
+    mask.frame = rect;
+    [self.view addSubview:mask];
+    
+
+    
+//    self.imageView.maskView = mask;
+
 }
 
 
