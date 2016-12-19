@@ -22,6 +22,9 @@
 		16DD640B1E06848E00926E50 /* CATransformVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DD64091E06848E00926E50 /* CATransformVC.xib */; };
 		16DD640D1E06870300926E50 /* your_name.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16DD640C1E06870300926E50 /* your_name.jpg */; };
 		16DD64111E068E4100926E50 /* CustomLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DD64101E068E4100926E50 /* CustomLayerVC.m */; };
+		16F2013E1E08289100D3A869 /* 心.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F2013D1E08289100D3A869 /* 心.png */; };
+		16F201431E082BDB00D3A869 /* CAKeyframeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */; };
+		16F201451E082C4C00D3A869 /* name.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16F201441E082C4C00D3A869 /* name.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,10 @@
 		16DD640C1E06870300926E50 /* your_name.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = your_name.jpg; sourceTree = "<group>"; };
 		16DD640F1E068E4100926E50 /* CustomLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayerVC.h; sourceTree = "<group>"; };
 		16DD64101E068E4100926E50 /* CustomLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayerVC.m; sourceTree = "<group>"; };
+		16F2013D1E08289100D3A869 /* 心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "心.png"; sourceTree = "<group>"; };
+		16F201411E082BDB00D3A869 /* CAKeyframeAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationVC.h; sourceTree = "<group>"; };
+		16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationVC.m; sourceTree = "<group>"; };
+		16F201441E082C4C00D3A869 /* name.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +92,7 @@
 		16DB1B351E06DBE2000147BB /* 心跳效果 */ = {
 			isa = PBXGroup;
 			children = (
+				16F2013D1E08289100D3A869 /* 心.png */,
 				16DB1B361E06DC4F000147BB /* HeartBeatEffectVC.h */,
 				16DB1B371E06DC4F000147BB /* HeartBeatEffectVC.m */,
 			);
@@ -114,6 +122,7 @@
 				16DD63F31E0649AA00926E50 /* AppDelegate.m */,
 				16DD63F51E0649AA00926E50 /* ViewController.h */,
 				16DD63F61E0649AA00926E50 /* ViewController.m */,
+				16F201401E082B3B00D3A869 /* CAKeyframeAnimation(图片抖动) */,
 				16DB1B351E06DBE2000147BB /* 心跳效果 */,
 				16DB1B311E06D85C000147BB /* CABasicAnimation(基础核心动画) */,
 				16DB1B291E06BF9D000147BB /* 隐式动画：时钟 */,
@@ -154,6 +163,16 @@
 				16DD64101E068E4100926E50 /* CustomLayerVC.m */,
 			);
 			path = "自定义Layer";
+			sourceTree = "<group>";
+		};
+		16F201401E082B3B00D3A869 /* CAKeyframeAnimation(图片抖动) */ = {
+			isa = PBXGroup;
+			children = (
+				16F201441E082C4C00D3A869 /* name.jpeg */,
+				16F201411E082BDB00D3A869 /* CAKeyframeAnimationVC.h */,
+				16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */,
+			);
+			path = "CAKeyframeAnimation(图片抖动)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +234,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F201451E082C4C00D3A869 /* name.jpeg in Resources */,
 				16DD63FF1E0649AA00926E50 /* LaunchScreen.storyboard in Resources */,
 				16DD63FC1E0649AA00926E50 /* Assets.xcassets in Resources */,
 				16DB1B301E06C81F000147BB /* ClockViewController.xib in Resources */,
+				16F2013E1E08289100D3A869 /* 心.png in Resources */,
 				16DB1B2B1E06C6E7000147BB /* 钟表.png in Resources */,
 				16DD63FA1E0649AA00926E50 /* Main.storyboard in Resources */,
 				16DD640B1E06848E00926E50 /* CATransformVC.xib in Resources */,
@@ -238,6 +259,7 @@
 				16DB1B2F1E06C81F000147BB /* ClockViewController.m in Sources */,
 				16DB1B381E06DC4F000147BB /* HeartBeatEffectVC.m in Sources */,
 				16DD640A1E06848E00926E50 /* CATransformVC.m in Sources */,
+				16F201431E082BDB00D3A869 /* CAKeyframeAnimationVC.m in Sources */,
 				16DB1B341E06D8A8000147BB /* CABasicAnimationVC.m in Sources */,
 				16DD64111E068E4100926E50 /* CustomLayerVC.m in Sources */,
 			);

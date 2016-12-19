@@ -26,13 +26,15 @@ static NSString* AnimationIdentifier = @"AnimationIdentifier";
                       @"自定义Layer",
                       @"时钟动画",
                       @"CABasicAnimation(基础核心动画)",
-                      @"心跳效果"];
+                      @"心跳效果",
+                      @"CAKeyframeAnimation(图片抖动)"];
     
     self.vcArr = @[@"CATransformVC",
                    @"CustomLayerVC",
                    @"ClockViewController",
                    @"CABasicAnimationVC",
-                   @"HeartBeatEffectVC"
+                   @"HeartBeatEffectVC",
+                   @"CAKeyframeAnimationVC"
                    ];
     self.tableView.rowHeight = 44;
     self.tableView.tableFooterView = [[UIView alloc] init];
