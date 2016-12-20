@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165EEB021E0964A100C39F80 /* CATransitionDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB011E0964A100C39F80 /* CATransitionDemoVC.m */; };
+		165EEB071E0967AD00C39F80 /* name01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 165EEB031E0967AD00C39F80 /* name01.jpeg */; };
+		165EEB081E0967AD00C39F80 /* name02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 165EEB041E0967AD00C39F80 /* name02.jpeg */; };
+		165EEB091E0967AD00C39F80 /* name03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 165EEB051E0967AD00C39F80 /* name03.jpeg */; };
+		165EEB0A1E0967AD00C39F80 /* name04.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 165EEB061E0967AD00C39F80 /* name04.jpeg */; };
+		165EEB0E1E096C1700C39F80 /* CAAnimationGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB0D1E096C1700C39F80 /* CAAnimationGroupVC.m */; };
+		165EEB121E0978B500C39F80 /* WheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB111E0978B500C39F80 /* WheelViewController.m */; };
+		165EEB151E0978D600C39F80 /* WheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB141E0978D600C39F80 /* WheelView.m */; };
 		16DB1B2B1E06C6E7000147BB /* 钟表.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DB1B2A1E06C6E7000147BB /* 钟表.png */; };
 		16DB1B2F1E06C81F000147BB /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DB1B2D1E06C81F000147BB /* ClockViewController.m */; };
 		16DB1B301E06C81F000147BB /* ClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DB1B2E1E06C81F000147BB /* ClockViewController.xib */; };
@@ -28,6 +36,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		165EEB001E0964A100C39F80 /* CATransitionDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionDemoVC.h; sourceTree = "<group>"; };
+		165EEB011E0964A100C39F80 /* CATransitionDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionDemoVC.m; sourceTree = "<group>"; };
+		165EEB031E0967AD00C39F80 /* name01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name01.jpeg; sourceTree = "<group>"; };
+		165EEB041E0967AD00C39F80 /* name02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name02.jpeg; sourceTree = "<group>"; };
+		165EEB051E0967AD00C39F80 /* name03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name03.jpeg; sourceTree = "<group>"; };
+		165EEB061E0967AD00C39F80 /* name04.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name04.jpeg; sourceTree = "<group>"; };
+		165EEB0C1E096C1700C39F80 /* CAAnimationGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationGroupVC.h; sourceTree = "<group>"; };
+		165EEB0D1E096C1700C39F80 /* CAAnimationGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationGroupVC.m; sourceTree = "<group>"; };
+		165EEB101E0978B500C39F80 /* WheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelViewController.h; sourceTree = "<group>"; };
+		165EEB111E0978B500C39F80 /* WheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelViewController.m; sourceTree = "<group>"; };
+		165EEB131E0978D600C39F80 /* WheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelView.h; sourceTree = "<group>"; };
+		165EEB141E0978D600C39F80 /* WheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelView.m; sourceTree = "<group>"; };
 		16DB1B2A1E06C6E7000147BB /* 钟表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "钟表.png"; sourceTree = "<group>"; };
 		16DB1B2C1E06C81F000147BB /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		16DB1B2D1E06C81F000147BB /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
@@ -69,6 +89,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		165EEAFF1E09648000C39F80 /* CATransition转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				165EEB031E0967AD00C39F80 /* name01.jpeg */,
+				165EEB041E0967AD00C39F80 /* name02.jpeg */,
+				165EEB051E0967AD00C39F80 /* name03.jpeg */,
+				165EEB061E0967AD00C39F80 /* name04.jpeg */,
+				165EEB001E0964A100C39F80 /* CATransitionDemoVC.h */,
+				165EEB011E0964A100C39F80 /* CATransitionDemoVC.m */,
+			);
+			path = "CATransition转场动画";
+			sourceTree = "<group>";
+		};
+		165EEB0B1E096BE800C39F80 /* CAAnimationGroup(动画组) */ = {
+			isa = PBXGroup;
+			children = (
+				165EEB0C1E096C1700C39F80 /* CAAnimationGroupVC.h */,
+				165EEB0D1E096C1700C39F80 /* CAAnimationGroupVC.m */,
+			);
+			path = "CAAnimationGroup(动画组)";
+			sourceTree = "<group>";
+		};
+		165EEB0F1E09788800C39F80 /* 转盘动画 */ = {
+			isa = PBXGroup;
+			children = (
+				165EEB101E0978B500C39F80 /* WheelViewController.h */,
+				165EEB111E0978B500C39F80 /* WheelViewController.m */,
+				165EEB131E0978D600C39F80 /* WheelView.h */,
+				165EEB141E0978D600C39F80 /* WheelView.m */,
+			);
+			path = "转盘动画";
+			sourceTree = "<group>";
+		};
 		16DB1B291E06BF9D000147BB /* 隐式动画：时钟 */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +175,9 @@
 				16DD63F31E0649AA00926E50 /* AppDelegate.m */,
 				16DD63F51E0649AA00926E50 /* ViewController.h */,
 				16DD63F61E0649AA00926E50 /* ViewController.m */,
+				165EEB0F1E09788800C39F80 /* 转盘动画 */,
+				165EEB0B1E096BE800C39F80 /* CAAnimationGroup(动画组) */,
+				165EEAFF1E09648000C39F80 /* CATransition转场动画 */,
 				16F201401E082B3B00D3A869 /* CAKeyframeAnimation(图片抖动) */,
 				16DB1B351E06DBE2000147BB /* 心跳效果 */,
 				16DB1B311E06D85C000147BB /* CABasicAnimation(基础核心动画) */,
@@ -238,11 +294,15 @@
 				16DD63FF1E0649AA00926E50 /* LaunchScreen.storyboard in Resources */,
 				16DD63FC1E0649AA00926E50 /* Assets.xcassets in Resources */,
 				16DB1B301E06C81F000147BB /* ClockViewController.xib in Resources */,
+				165EEB081E0967AD00C39F80 /* name02.jpeg in Resources */,
 				16F2013E1E08289100D3A869 /* 心.png in Resources */,
 				16DB1B2B1E06C6E7000147BB /* 钟表.png in Resources */,
 				16DD63FA1E0649AA00926E50 /* Main.storyboard in Resources */,
 				16DD640B1E06848E00926E50 /* CATransformVC.xib in Resources */,
+				165EEB091E0967AD00C39F80 /* name03.jpeg in Resources */,
+				165EEB0A1E0967AD00C39F80 /* name04.jpeg in Resources */,
 				16DD640D1E06870300926E50 /* your_name.jpg in Resources */,
+				165EEB071E0967AD00C39F80 /* name01.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +313,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165EEB0E1E096C1700C39F80 /* CAAnimationGroupVC.m in Sources */,
 				16DD63F71E0649AA00926E50 /* ViewController.m in Sources */,
+				165EEB151E0978D600C39F80 /* WheelView.m in Sources */,
 				16DD63F41E0649AA00926E50 /* AppDelegate.m in Sources */,
 				16DD63F11E0649AA00926E50 /* main.m in Sources */,
 				16DB1B2F1E06C81F000147BB /* ClockViewController.m in Sources */,
 				16DB1B381E06DC4F000147BB /* HeartBeatEffectVC.m in Sources */,
 				16DD640A1E06848E00926E50 /* CATransformVC.m in Sources */,
+				165EEB021E0964A100C39F80 /* CATransitionDemoVC.m in Sources */,
+				165EEB121E0978B500C39F80 /* WheelViewController.m in Sources */,
 				16F201431E082BDB00D3A869 /* CAKeyframeAnimationVC.m in Sources */,
 				16DB1B341E06D8A8000147BB /* CABasicAnimationVC.m in Sources */,
 				16DD64111E068E4100926E50 /* CustomLayerVC.m in Sources */,
