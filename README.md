@@ -43,6 +43,7 @@ IOS知识点总结和实践
 - [详解Runtime运行时机制](http://www.jianshu.com/p/1e06bfee99d0#)
 - [Runtime 10种用法（没有比这更全的了）](http://www.jianshu.com/p/3182646001d1)
 - [Runtime Method Swizzling开发实例汇总](http://www.jianshu.com/p/f6dad8e1b848)
+- [手把手带你撸一个 YYModel 的精简版](http://www.jianshu.com/p/b822285f73ac)
 
 ### ReactiveCocoa相关
 - [RAC中文资源列表](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
