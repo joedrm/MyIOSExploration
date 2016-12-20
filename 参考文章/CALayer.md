@@ -13,5 +13,6 @@
 ### position和anchorPoint
 ![position和anchorPoint](http://ohgbgkbn4.bkt.clouddn.com/position%E5%92%8CanchorPoint.png)
 
-
+### 涉及到角度的问题，起始角和结束角，这里的角度使使用弧度制来表示
+![π](http://ohgbgkbn4.bkt.clouddn.com/2%CF%80.png)
 
