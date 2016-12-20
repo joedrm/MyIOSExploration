@@ -487,6 +487,27 @@
      */
 }
 
+/*
+ * 发动态的实现，有多张图片和文字，先将这多张图上传到服务器并返回图片对应的url，然后再把这些图片url和文字作为动态的属性发布到服务器，如何利用GCD来提高效率
+ */
+- (void)enterAndLeaveGroup{
+    // imageURLs
+    NSMutableArray *imageURLs= [NSMutableArray array];
+    dispatch_group_t group = dispatch_group_create();                    // 1
+    for (UIImage *image in images) {
+        dispatch_group_enter(group);                                    // 2
+//        sendPhoto(image, success:^(NSString *url) {  // 这里开始上传图片操作
+//            [imageURLs addObject:url];                // 上传图片完成
+            dispatch_group_leave(group);                                 // 3
+//        });
+    }
+    dispatch_group_notify(group, dispatch_get_global_queue(), ^{         // 4
+        // 最后再把这些图片url和文字上传到服务器
+//        postFeed(imageURLs, text);
+    });
+}
+
+
 // 条件锁: 条件锁可以控制线程的执行次序，相当于NSOperation中的依赖关系
 
 - (void)lockTest{
