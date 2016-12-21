@@ -1,0 +1,27 @@
+{
+  "name": "WDYLibrary",
+  "version": "0.1.0",
+  "summary": "模块化私有库",
+  "description": "主要收集平时开发中需要的分类、工具类",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/WDYLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "冬日暖阳": "877197753@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/WDYLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "subspecs": [
+    {
+      "name": "Category",
+      "source_files": "WDYLibrary/Category/**"
+    }
+  ]
+}
