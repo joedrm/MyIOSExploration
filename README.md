@@ -104,6 +104,9 @@ IOS知识点总结和实践
 - [iOS 组件化方案探索](http://blog.cnbang.net/tech/3080/)
 - [围观神仙打架，反革命工程师《iOS应用架构谈 组件化方案》和蘑菇街Limboy的《蘑菇街 App 的组件化之路》的阅读指导](http://reviewcode.cn/article.html?reviewId=20)
 
+### Git SVN
+- [Git常用命令清单](https://github.com/jaywcjlove/handbook/blob/master/other/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95.md#%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3)
+
 ### 面试
 - [iOSInterviewQuestions](https://github.com/ChenYilong/iOSInterviewQuestions) - iOS面试题集锦
 - [chenyufeng-interview](http://blog.csdn.net/column/details/chenyufeng-interview.html) - iOS笔试面试题
