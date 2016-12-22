@@ -36,6 +36,7 @@ IOS知识点总结和实践
 - [APP 缓存数据线程安全问题探讨](http://blog.cnbang.net/tech/3262/)
 - [底层并发 API](https://objccn.io/issue-2-3/)
 - [常见的后台实践](https://objccn.io/issue-2-2/)
+- [Facebook开源的Parse源码分析【系列】](https://github.com/ChenYilong/ParseSourceCodeStudy)
 
 ### Runtime相关
 - [Objective-C中的Runtime](http://www.jianshu.com/p/3e050ec3b759)

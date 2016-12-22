@@ -14,6 +14,10 @@
 		16DBC0681D7D673E006F4784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0671D7D673E006F4784 /* Assets.xcassets */; };
 		16DBC06B1D7D673E006F4784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0691D7D673E006F4784 /* LaunchScreen.storyboard */; };
 		16E899161D825FCA00D14346 /* SingleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E899151D825FCA00D14346 /* SingleTool.m */; };
+		20ACF1D31E0BC6DA00916787 /* SemaphoreTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1D21E0BC6DA00916787 /* SemaphoreTestVC.m */; };
+		20ACF1D71E0BCF2000916787 /* DispatchSourceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1D61E0BCF2000916787 /* DispatchSourceVC.m */; };
+		20ACF1DB1E0BD86100916787 /* GDCTimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1DA1E0BD86100916787 /* GDCTimerVC.m */; };
+		20ACF1E11E0BE3EF00916787 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1E01E0BE3EF00916787 /* GCDTimer.m */; };
 		45E79326AA36848ACC44147F /* Pods_GCD__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC99BDCC9BEB5FECA07424A /* Pods_GCD__.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +36,14 @@
 		16E899141D825FCA00D14346 /* SingleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTool.h; sourceTree = "<group>"; };
 		16E899151D825FCA00D14346 /* SingleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTool.m; sourceTree = "<group>"; };
 		1BC99BDCC9BEB5FECA07424A /* Pods_GCD__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCD__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20ACF1D11E0BC6DA00916787 /* SemaphoreTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaphoreTestVC.h; sourceTree = "<group>"; };
+		20ACF1D21E0BC6DA00916787 /* SemaphoreTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemaphoreTestVC.m; sourceTree = "<group>"; };
+		20ACF1D51E0BCF2000916787 /* DispatchSourceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchSourceVC.h; sourceTree = "<group>"; };
+		20ACF1D61E0BCF2000916787 /* DispatchSourceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchSourceVC.m; sourceTree = "<group>"; };
+		20ACF1D91E0BD86100916787 /* GDCTimerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDCTimerVC.h; sourceTree = "<group>"; };
+		20ACF1DA1E0BD86100916787 /* GDCTimerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDCTimerVC.m; sourceTree = "<group>"; };
+		20ACF1DF1E0BE3EF00916787 /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		20ACF1E01E0BE3EF00916787 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
 		7A7021E8FDDA9AD0B74875ED /* Pods-GCD实践.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCD实践.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GCD实践/Pods-GCD实践.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +84,9 @@
 				16DBC05F1D7D673E006F4784 /* AppDelegate.m */,
 				16DBC0611D7D673E006F4784 /* ViewController.h */,
 				16DBC0621D7D673E006F4784 /* ViewController.m */,
+				20ACF1D81E0BD67200916787 /* 更精准的定时器 */,
+				20ACF1D41E0BCEF100916787 /* Dispatch source */,
+				20ACF1D01E0BC69100916787 /* 多网络异步回调：信号量 */,
 				16E899141D825FCA00D14346 /* SingleTool.h */,
 				16E899151D825FCA00D14346 /* SingleTool.m */,
 				16DBC0641D7D673E006F4784 /* Main.storyboard */,
@@ -89,6 +104,35 @@
 				16DBC05C1D7D673E006F4784 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20ACF1D01E0BC69100916787 /* 多网络异步回调：信号量 */ = {
+			isa = PBXGroup;
+			children = (
+				20ACF1D11E0BC6DA00916787 /* SemaphoreTestVC.h */,
+				20ACF1D21E0BC6DA00916787 /* SemaphoreTestVC.m */,
+			);
+			path = "多网络异步回调：信号量";
+			sourceTree = "<group>";
+		};
+		20ACF1D41E0BCEF100916787 /* Dispatch source */ = {
+			isa = PBXGroup;
+			children = (
+				20ACF1D51E0BCF2000916787 /* DispatchSourceVC.h */,
+				20ACF1D61E0BCF2000916787 /* DispatchSourceVC.m */,
+			);
+			path = "Dispatch source";
+			sourceTree = "<group>";
+		};
+		20ACF1D81E0BD67200916787 /* 更精准的定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				20ACF1D91E0BD86100916787 /* GDCTimerVC.h */,
+				20ACF1DA1E0BD86100916787 /* GDCTimerVC.m */,
+				20ACF1DF1E0BE3EF00916787 /* GCDTimer.h */,
+				20ACF1E01E0BE3EF00916787 /* GCDTimer.m */,
+			);
+			path = "更精准的定时器";
 			sourceTree = "<group>";
 		};
 		7F6514F4E2F6164F13B08EF4 /* Pods */ = {
@@ -230,7 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16DBC0631D7D673E006F4784 /* ViewController.m in Sources */,
+				20ACF1D71E0BCF2000916787 /* DispatchSourceVC.m in Sources */,
+				20ACF1D31E0BC6DA00916787 /* SemaphoreTestVC.m in Sources */,
 				16DBC0601D7D673E006F4784 /* AppDelegate.m in Sources */,
+				20ACF1E11E0BE3EF00916787 /* GCDTimer.m in Sources */,
+				20ACF1DB1E0BD86100916787 /* GDCTimerVC.m in Sources */,
 				16DBC05D1D7D673E006F4784 /* main.m in Sources */,
 				16E899161D825FCA00D14346 /* SingleTool.m in Sources */,
 			);

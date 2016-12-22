@@ -15,6 +15,21 @@
  https://github.com/wangtongke/WTKTransitionAnimation
  https://github.com/weng1250/WZLBadge
  https://github.com/a130785/iosAnimationDemo
+ https://github.com/huang303513/HCDCoreAnimation
+ https://github.com/KittenYang/A-GUIDE-TO-iOS-ANIMATION - The source code of my new eBook —— A GUIDE TO IOS ANIMATION
+ 
+ 
+ Facebook-POP
+ 
+ intro
+ http://www.cocoachina.com/industry/20140704/9034.html
+ http://www.cocoachina.com/design/20140210/7791.html
+ http://www.cocoachina.com/industry/20140527/8565.html
+ github
+ https://github.com/facebook/pop
+ https://github.com/schneiderandre/popping
+ https://github.com/hossamghareeb/Facebook-POP-Tutorial
+ https://github.com/ColinEberhardt/VCTransitionsLibrary
  */
 
 #import "ViewController.h"

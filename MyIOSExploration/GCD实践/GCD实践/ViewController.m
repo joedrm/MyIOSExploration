@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "SingleTool.h"
 #import <FMDB/FMDB.h>
+#import "SemaphoreTestVC.h"
+#import "GDCTimerVC.h"
 
 @interface ViewController ()
 {
@@ -30,11 +32,25 @@
     imageView.center = self.view.center;
     [self.view addSubview:imageView];
     self.imageView = imageView;
+    
+    UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(10, 100, 100, 30);
+    [btn setTitle:@"多网络异步回调：信号量" forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:11];
+    [btn setBackgroundColor:[UIColor blueColor]];
+    [btn addTarget:self action:@selector(semaphoreTest2) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)semaphoreTest2{
+    
+    SemaphoreTestVC* vc = [[SemaphoreTestVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self lockTest];
+    [self recursionLock];
 }
 
 // 异步函数 + 并行队列 会开启多个子线程，队列中的任务是并发执行的
@@ -207,12 +223,12 @@
 - (void)customQueueClass{
     //dipatch_queue_attr_make_with_qos_class
     dispatch_queue_attr_t attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_UTILITY, -1);
-    dispatch_queue_t queue = dispatch_queue_create("com.starming.gcddemo.qosqueue", attr);
+    dispatch_queue_t queue1 = dispatch_queue_create("com.starming.gcddemo.qosqueue", attr);
     
     //dispatch_set_target_queue
-    dispatch_queue_t queue = dispatch_queue_create("com.starming.gcddemo.settargetqueue",NULL); //需要设置优先级的queue
+    dispatch_queue_t queue2 = dispatch_queue_create("com.starming.gcddemo.settargetqueue",NULL); //需要设置优先级的queue
     dispatch_queue_t referQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0); //参考优先级
-    dispatch_set_target_queue(queue, referQueue); //设置queue和referQueue的优先级一样
+    dispatch_set_target_queue(queue2, referQueue); //设置queue和referQueue的优先级一样
 }
 
 // 线程通讯
@@ -269,7 +285,7 @@
     double delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t) (delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [self bar];
+//        [self bar];
     });
 }
 
@@ -378,6 +394,8 @@
      2016-09-09 10:03:40.426 GCD实践[32665:693649] 9, <NSThread: 0x7ff118e09140>{number = 2, name = (null)}
      */
 }
+
+#pragma mark - GCD blcok
 
 //create dispatch block
 - (void)dispatchCreateBlockDemo {
@@ -572,6 +590,25 @@
     });
 }
 
+/*
+ * 发动态的实现，有多张图片和文字，先将这多张图上传到服务器并返回图片对应的url，然后再把这些图片url和文字作为动态的属性发布到服务器，如何利用GCD来提高效率
+ */
+- (void)groupDemo2:(NSArray*)images{
+    // imageURLs
+    NSMutableArray *imageURLs= [NSMutableArray array];
+    dispatch_group_t group = dispatch_group_create();                    // 1
+    for (UIImage *image in images) {
+        dispatch_group_enter(group);                                    // 2
+        //        sendPhoto(image, success:^(NSString *url) {  // 这里开始上传图片操作
+        //            [imageURLs addObject:url];                // 上传图片完成
+        dispatch_group_leave(group);                                 // 3
+        //        });
+    }
+    dispatch_group_notify(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{         // 4
+        // 最后再把这些图片url和文字上传到服务器
+        //        postFeed(imageURLs, text);
+    });
+}
 
 
 #pragma mark - 信号量
@@ -635,26 +672,6 @@
      2016-11-26 12:18:09.761 GCD实践[7185:300507] 第一步操作
      2016-11-26 12:18:10.837 GCD实践[7185:300507] 第二步操作
      */
-}
-
-/*
- * 发动态的实现，有多张图片和文字，先将这多张图上传到服务器并返回图片对应的url，然后再把这些图片url和文字作为动态的属性发布到服务器，如何利用GCD来提高效率
- */
-- (void)enterAndLeaveGroup{
-    // imageURLs
-    NSMutableArray *imageURLs= [NSMutableArray array];
-    dispatch_group_t group = dispatch_group_create();                    // 1
-    for (UIImage *image in images) {
-        dispatch_group_enter(group);                                    // 2
-//        sendPhoto(image, success:^(NSString *url) {  // 这里开始上传图片操作
-//            [imageURLs addObject:url];                // 上传图片完成
-            dispatch_group_leave(group);                                 // 3
-//        });
-    }
-    dispatch_group_notify(group, dispatch_get_global_queue(), ^{         // 4
-        // 最后再把这些图片url和文字上传到服务器
-//        postFeed(imageURLs, text);
-    });
 }
 
 
@@ -751,6 +768,7 @@ void task(void* param){
     //还要注意需要用DISPATCH_VNODE_DELETE 去检查监视的文件或文件夹是否被删除，如果删除了就停止监听
 }
 
+
 #pragma mark - dispatch source timer demo
 - (void)dispatchSourceTimerDemo {
     //NSTimer在主线程的runloop里会在runloop切换其它模式时停止，这时就需要手动在子线程开启一个模式为NSRunLoopCommonModes的runloop，如果不想开启一个新的runloop可以用不跟runloop关联的dispatch source timer
@@ -835,6 +853,37 @@ static const void * const kDispatchQueueSpecificKey = &kDispatchQueueSpecificKey
     assert(currentSyncQueue != self && "inDatabase: was called reentrantly on the same queue, which would lead to a deadlock");
 }
 
+#pragma mark - 递归锁使用
+- (void)recursionLock{
+    
+    NSRecursiveLock *lock =[[NSRecursiveLock alloc]init];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        static void (^RecursiveMethod)(int);
+        RecursiveMethod = ^(int value){
+            [lock lock];
+            if (value > 0) {
+                NSLog(@"value = %d",value);
+                sleep(2);
+                RecursiveMethod(value - 1);
+            }
+            [lock unlock];
+        };
+        RecursiveMethod(5);
+    });
+    
+    //尝试在第二个线程中枷锁
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(2);
+        BOOL flag = [lock lockBeforeDate:[NSDate dateWithTimeIntervalSinceNow:1]];
+        if (flag) {
+            NSLog(@"Lock before date");
+            [lock unlock];
+        }else{
+            NSLog(@"fail to lock before date");
+        }
+    });
+}
+
 @end
 
 
@@ -875,6 +924,7 @@ static const void * const kDispatchQueueSpecificKey = &kDispatchQueueSpecificKey
  iOS多线程之GCD：http://www.jianshu.com/p/456672967e75
  iOS笔记(一)GCD多线程：信号量和条件锁: https://my.oschina.net/u/2436242/blog/518318
  细说GCD（Grand Central Dispatch）如何用: http://www.jianshu.com/p/fbe6a654604c
+ Facebook开源的Parse源码分析【系列】:https://github.com/ChenYilong/ParseSourceCodeStudy
 
 */
 
