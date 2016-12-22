@@ -24,8 +24,6 @@ IOS知识点总结和实践
 - [KVC和KVO](http://ppsheep.com/categories/KVC%E5%92%8CKVO/)
 - [KVC 和 KVO](https://www.objccn.io/issue-7-3/)
 
-### Autolayout
-- [AutolayoutExampleWithMasonry](https://github.com/zekunyan/AutolayoutExampleWithMasonry)
 
 ### 多线程和RunLoop
 - [深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
