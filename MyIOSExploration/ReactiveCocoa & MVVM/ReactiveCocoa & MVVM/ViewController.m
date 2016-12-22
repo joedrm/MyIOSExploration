@@ -6,6 +6,12 @@
 //  Copyright © 2016年 wdy. All rights reserved.
 //
 
+/*
+ 参考资料：
+ https://github.com/wangtongke/WTKMVVMRAC   高仿电商项目，采用MVVM+ReactiveCocoa
+ 
+ */
+
 #import "ViewController.h"
 
 @interface ViewController ()

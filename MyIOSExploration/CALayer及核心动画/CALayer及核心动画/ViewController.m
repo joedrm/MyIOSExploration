@@ -10,6 +10,11 @@
  参考资料：
  
  https://github.com/xiaochaofeiyu/YSCAnimation
+ IOS动画总结:https://github.com/yixiangboy/IOSAnimationDemo
+ https://github.com/wangtongke/WTKTransitionAnimate
+ https://github.com/wangtongke/WTKTransitionAnimation
+ https://github.com/weng1250/WZLBadge
+ https://github.com/a130785/iosAnimationDemo
  */
 
 #import "ViewController.h"

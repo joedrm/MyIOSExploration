@@ -14,9 +14,11 @@
 		16DBC0681D7D673E006F4784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0671D7D673E006F4784 /* Assets.xcassets */; };
 		16DBC06B1D7D673E006F4784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0691D7D673E006F4784 /* LaunchScreen.storyboard */; };
 		16E899161D825FCA00D14346 /* SingleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E899151D825FCA00D14346 /* SingleTool.m */; };
+		45E79326AA36848ACC44147F /* Pods_GCD__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC99BDCC9BEB5FECA07424A /* Pods_GCD__.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A76DC08DDDE8457493D4892 /* Pods-GCD实践.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCD实践.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GCD实践/Pods-GCD实践.release.xcconfig"; sourceTree = "<group>"; };
 		16DBC0581D7D673E006F4784 /* GCD实践.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GCD实践.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DBC05C1D7D673E006F4784 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16DBC05E1D7D673E006F4784 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		16DBC06C1D7D673E006F4784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E899141D825FCA00D14346 /* SingleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTool.h; sourceTree = "<group>"; };
 		16E899151D825FCA00D14346 /* SingleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTool.m; sourceTree = "<group>"; };
+		1BC99BDCC9BEB5FECA07424A /* Pods_GCD__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCD__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7021E8FDDA9AD0B74875ED /* Pods-GCD实践.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCD实践.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GCD实践/Pods-GCD实践.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E79326AA36848ACC44147F /* Pods_GCD__.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				16DBC05A1D7D673E006F4784 /* GCD实践 */,
 				16DBC0591D7D673E006F4784 /* Products */,
+				7F6514F4E2F6164F13B08EF4 /* Pods */,
+				C22B7891BE2F46EEA2898031 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7F6514F4E2F6164F13B08EF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A7021E8FDDA9AD0B74875ED /* Pods-GCD实践.debug.xcconfig */,
+				0A76DC08DDDE8457493D4892 /* Pods-GCD实践.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C22B7891BE2F46EEA2898031 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC99BDCC9BEB5FECA07424A /* Pods_GCD__.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16DBC06F1D7D673E006F4784 /* Build configuration list for PBXNativeTarget "GCD实践" */;
 			buildPhases = (
+				D789A85FFA6D5701327C60D2 /* [CP] Check Pods Manifest.lock */,
 				16DBC0541D7D673E006F4784 /* Sources */,
 				16DBC0551D7D673E006F4784 /* Frameworks */,
 				16DBC0561D7D673E006F4784 /* Resources */,
+				9212F2E62095CD9C12A62087 /* [CP] Embed Pods Frameworks */,
+				1D2C39926FA6BE1C7D777651 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D2C39926FA6BE1C7D777651 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GCD实践/Pods-GCD实践-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9212F2E62095CD9C12A62087 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GCD实践/Pods-GCD实践-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D789A85FFA6D5701327C60D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16DBC0541D7D673E006F4784 /* Sources */ = {
@@ -267,6 +342,7 @@
 		};
 		16DBC0701D7D673E006F4784 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A7021E8FDDA9AD0B74875ED /* Pods-GCD实践.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "GCD实践/Info.plist";
@@ -278,6 +354,7 @@
 		};
 		16DBC0711D7D673E006F4784 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A76DC08DDDE8457493D4892 /* Pods-GCD实践.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "GCD实践/Info.plist";

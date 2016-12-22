@@ -35,6 +35,7 @@ IOS知识点总结和实践
 - [iOS多线程操作时一些要注意的安全问题](http://www.starming.com/index.php?v=index&view=102)
 - [APP 缓存数据线程安全问题探讨](http://blog.cnbang.net/tech/3262/)
 - [底层并发 API](https://objccn.io/issue-2-3/)
+- [常见的后台实践](https://objccn.io/issue-2-2/)
 
 ### Runtime相关
 - [Objective-C中的Runtime](http://www.jianshu.com/p/3e050ec3b759)

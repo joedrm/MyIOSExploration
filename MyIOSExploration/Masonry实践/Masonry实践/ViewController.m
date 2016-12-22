@@ -6,6 +6,15 @@
 //  Copyright © 2016年 com.LBE.Photo. All rights reserved.
 //
 
+/*
+ 参考地址：
+ 
+ http://tutuge.me/tags/Autolayout/
+ https://github.com/zekunyan/AutolayoutExampleWithMasonry
+ https://github.com/CoderJackyHuang/MasonryDemo
+ */
+
+
 #import "ViewController.h"
 #import "Case1ViewController.h"
 
@@ -67,12 +76,6 @@ static NSString* identifier = @"cell";
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-/*
-参考地址：
-
-http://tutuge.me/tags/Autolayout/ 
-https://github.com/zekunyan/AutolayoutExampleWithMasonry
-*/
 
 @end
 

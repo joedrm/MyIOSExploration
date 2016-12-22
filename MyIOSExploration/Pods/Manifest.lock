@@ -1,4 +1,7 @@
 PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
   - ReactiveCocoa (4.2.2):
@@ -9,18 +12,20 @@ PODS:
   - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
+  - FMDB
   - Masonry
   - MJExtension
   - ReactiveCocoa
   - SDWebImage
 
 SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   ReactiveCocoa: 72263e7ac0770c274617ccd345e01049d0ca38ae
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 8eb096c99f6618663b336b375e69b15b91299b1d
+PODFILE CHECKSUM: f21400cfad671161457d8f180cf96dc0d084881c
 
 COCOAPODS: 1.1.1

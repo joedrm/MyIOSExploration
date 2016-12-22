@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SingleTool.h"
+#import <FMDB/FMDB.h>
 
 @interface ViewController ()
 {
@@ -201,6 +202,19 @@
      */
 }
 
+#pragma mark - 自定义队列的优先级：
+// 可以通过dipatch_queue_attr_make_with_qos_class或dispatch_set_target_queue方法设置队列的优先级
+- (void)customQueueClass{
+    //dipatch_queue_attr_make_with_qos_class
+    dispatch_queue_attr_t attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_UTILITY, -1);
+    dispatch_queue_t queue = dispatch_queue_create("com.starming.gcddemo.qosqueue", attr);
+    
+    //dispatch_set_target_queue
+    dispatch_queue_t queue = dispatch_queue_create("com.starming.gcddemo.settargetqueue",NULL); //需要设置优先级的queue
+    dispatch_queue_t referQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0); //参考优先级
+    dispatch_set_target_queue(queue, referQueue); //设置queue和referQueue的优先级一样
+}
+
 // 线程通讯
 - (void)downloadImage
 {
@@ -218,9 +232,9 @@
     });
 }
 
-// ------------------------ GCD常用函数 ------------------
+#pragma mark ------------------------ GCD常用函数 ------------------
 
-// 延迟执行
+#pragma mark -  延迟执行
 - (void)delay
 {
     /**
@@ -236,7 +250,30 @@
     });
 }
 
-// 一次性执行
+#pragma mark - dispatch_after延后执行
+// dispatch_after只是延时提交block，不是延时立刻执行
+- (void)after
+{
+    /*
+     第一个参数为DISPATCH_TIME_NOW表示当前。第二个参数的delta表示纳秒，一秒对应的纳秒为1000000000，系统提供了一些宏来简化
+     
+     #define NSEC_PER_SEC 1000000000ull //每秒有多少纳秒
+     #define USEC_PER_SEC 1000000ull    //每秒有多少毫秒
+     #define NSEC_PER_USEC 1000ull      //每毫秒有多少纳秒
+     这样如果要表示一秒就可以这样写
+     
+     dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC);
+     dispatch_time(DISPATCH_TIME_NOW, 1000 * USEC_PER_SEC);
+     dispatch_time(DISPATCH_TIME_NOW, USEC_PER_SEC * NSEC_PER_USEC);
+     */
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t) (delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self bar];
+    });
+}
+
+#pragma mark -  一次性执行
 - (void)once
 {
     static dispatch_once_t onceToken;
@@ -245,7 +282,14 @@
     });
 }
 
-// 栅栏函数：控制队列中的任务的执行顺序
+#pragma mark -  栅栏函数：控制队列中的任务的执行顺序
+/*
+ dispatch_barrier_async使用Barrier Task方法Dispatch Barrier解决多线程并发读写同一个资源发生死锁
+ Dispatch Barrier确保提交的闭包是指定队列中在特定时段唯一在执行的一个。
+ 在所有先于Dispatch Barrier的任务都完成的情况下这个闭包才开始执行。
+ 轮到这个闭包时barrier会执行这个闭包并且确保队列在此过程不会执行其它任务。闭包完成后队列恢复。
+ 需要注意dispatch_barrier_async只在自己创建的队列上有这种作用，在全局并发队列和串行队列上，效果和dispatch_sync一样
+ */
 - (void)fence
 {
     // 栅栏函数不能使用全局办法队列
@@ -279,7 +323,31 @@
      */
 }
 
-// 快速迭代：开启主线程和子线程一起执行，任务是并发的
+- (void)dispatchBarrierAsyncDemo {
+    //防止文件读写冲突，可以创建一个串行队列，操作都在这个队列中进行，没有更新数据读用并行，写用串行。
+    dispatch_queue_t dataQueue = dispatch_queue_create("com.starming.gcddemo.dataqueue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(dataQueue, ^{
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"read data 1");
+    });
+    dispatch_async(dataQueue, ^{
+        NSLog(@"read data 2");
+    });
+    //等待前面的都完成，在执行barrier后面的
+    dispatch_barrier_async(dataQueue, ^{
+        NSLog(@"write data 1");
+        [NSThread sleepForTimeInterval:1];
+    });
+    dispatch_async(dataQueue, ^{
+        [NSThread sleepForTimeInterval:1.f];
+        NSLog(@"read data 3");
+    });
+    dispatch_async(dataQueue, ^{
+        NSLog(@"read data 4");
+    });
+}
+
+#pragma mark -  快速迭代：开启主线程和子线程一起执行，任务是并发的
 - (void)iterate
 {
     // 普通遍历：同步执行
@@ -311,7 +379,70 @@
      */
 }
 
-// 队列组
+//create dispatch block
+- (void)dispatchCreateBlockDemo {
+    //normal way
+    dispatch_queue_t concurrentQueue = dispatch_queue_create("com.starming.gcddemo.concurrentqueue",DISPATCH_QUEUE_CONCURRENT);
+    dispatch_block_t block = dispatch_block_create(0, ^{
+        NSLog(@"run block");
+    });
+    dispatch_async(concurrentQueue, block);
+    
+    //QOS way
+    dispatch_block_t qosBlock = dispatch_block_create_with_qos_class(0, QOS_CLASS_USER_INITIATED, -1, ^{
+        NSLog(@"run qos block");
+    });
+    dispatch_async(concurrentQueue, qosBlock);
+}
+
+//dispatch_block_wait
+- (void)dispatchBlockWaitDemo {
+    dispatch_queue_t serialQueue = dispatch_queue_create("com.starming.gcddemo.serialqueue", DISPATCH_QUEUE_SERIAL);
+    dispatch_block_t block = dispatch_block_create(0, ^{
+        NSLog(@"star");
+        [NSThread sleepForTimeInterval:5.f];
+        NSLog(@"end");
+    });
+    dispatch_async(serialQueue, block);
+    //设置DISPATCH_TIME_FOREVER会一直等到前面任务都完成
+    dispatch_block_wait(block, DISPATCH_TIME_FOREVER);
+    NSLog(@"ok, now can go on");
+}
+
+//dispatch_block_notify
+- (void)dispatchBlockNotifyDemo {
+    dispatch_queue_t serialQueue = dispatch_queue_create("com.starming.gcddemo.serialqueue", DISPATCH_QUEUE_SERIAL);
+    dispatch_block_t firstBlock = dispatch_block_create(0, ^{
+        NSLog(@"first block start");
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"first block end");
+    });
+    dispatch_async(serialQueue, firstBlock);
+    dispatch_block_t secondBlock = dispatch_block_create(0, ^{
+        NSLog(@"second block run");
+    });
+    //first block执行完才在serial queue中执行second block
+    dispatch_block_notify(firstBlock, serialQueue, secondBlock);
+}
+
+//dispatch_block_cancel(iOS8+)
+- (void)dispatchBlockCancelDemo {
+    dispatch_queue_t serialQueue = dispatch_queue_create("com.starming.gcddemo.serialqueue", DISPATCH_QUEUE_SERIAL);
+    dispatch_block_t firstBlock = dispatch_block_create(0, ^{
+        NSLog(@"first block start");
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"first block end");
+    });
+    dispatch_block_t secondBlock = dispatch_block_create(0, ^{
+        NSLog(@"second block run");
+    });
+    dispatch_async(serialQueue, firstBlock);
+    dispatch_async(serialQueue, secondBlock);
+    //取消secondBlock
+    dispatch_block_cancel(secondBlock);
+}
+
+#pragma mark -  队列组
 - (void)queueGroup
 {
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
@@ -344,7 +475,23 @@
      */
 }
 
-// 队列组: 以前的写法
+#pragma mark - dispatch_group_wait
+- (void)dispatchGroupWaitDemo {
+    dispatch_queue_t concurrentQueue = dispatch_queue_create("com.starming.gcddemo.concurrentqueue",DISPATCH_QUEUE_CONCURRENT);
+    dispatch_group_t group = dispatch_group_create();
+    //在group中添加队列的block
+    dispatch_group_async(group, concurrentQueue, ^{
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"1");
+    });
+    dispatch_group_async(group, concurrentQueue, ^{
+        NSLog(@"2");
+    });
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+    NSLog(@"can continue");
+}
+
+#pragma mark - 队列组: 以前的写法
 - (void)queueGroup2
 {
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
@@ -386,7 +533,7 @@
      */
 }
 
-// 合并图片的demo
+#pragma mark - 合并图片的demo
 - (void)groupDemo
 {
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
@@ -425,6 +572,9 @@
     });
 }
 
+
+
+#pragma mark - 信号量
 /*上面有可能出现的问题：第三步操作(合并图片操作)有可能比要第一步或第二步操作快一些：
     其实这个道理很简单，我们开启的网络请求，是一个异步线程，所谓的异步线程，就是告诉系统你不要管我是否完成了，你尽管执行其他操作，开一个线程让我到外面操作去执行就行了，所以我们傻 
     傻的  dispatch_group_async 自然就不会管网络操作是否完成，是否有数据了，直接执行下面操作，告诉 dispatch_group_notify 它已经完成就行了
@@ -508,15 +658,18 @@
 }
 
 
-// 条件锁: 条件锁可以控制线程的执行次序，相当于NSOperation中的依赖关系
+#pragma mark - 条件锁: 条件锁可以控制线程的执行次序，相当于NSOperation中的依赖关系
 
 - (void)lockTest{
     /*     
-     常见的锁：
-     1.@synchronized(对象) 对象锁
-     2.NSLock 互斥锁
-     3.NSConditionLock 条件锁
-     4.NSRecursiveLock 递归锁
+     常见的锁：简单介绍下iOS中常用的各种锁和他们的性能。
+     
+     NSRecursiveLock：递归锁，可以在一个线程中反复获取锁不会造成死锁，这个过程会记录获取锁和释放锁的次数来达到何时释放的作用。
+     NSDistributedLock：分布锁，基于文件方式的锁机制，可以跨进程访问。
+     NSConditionLock：条件锁，用户定义条件，确保一个线程可以获取满足一定条件的锁。因为线程间竞争会涉及到条件锁检测，系统调用上下切换频繁导致耗时是几个锁里最长的。
+     OSSpinLock：自旋锁，不进入内核，减少上下文切换，性能最高，但抢占多时会占用较多cpu，好点多，这时使用pthread_mutex较好。
+     pthread_mutex_t：同步锁基于C语言，底层api性能高，使用方法和其它的类似。
+     @synchronized：更加简单。
      */
     //条件锁,条件是整数值
     NSConditionLock *lock = [[NSConditionLock alloc] initWithCondition:3];
@@ -555,7 +708,7 @@ void task(void* param){
     NSLog(@"%s", __func__);
 }
 
-// 单例模式的实现
+#pragma mark - 单例模式的实现
 - (void)singleTest
 {
     SingleTool* single1 = [SingleTool shareInstance];
@@ -569,6 +722,119 @@ void task(void* param){
      single3 = <SingleTool: 0x7fa9205a0010>
      */
 }
+
+#pragma mark - dispatch source directory demo
+- (void)dispatchSourceDirectoryDemo {
+    NSURL *directoryURL; // assume this is set to a directory
+    int const fd = open([[directoryURL path] fileSystemRepresentation], O_EVTONLY);
+    if (fd < 0) {
+        char buffer[80];
+        strerror_r(errno, buffer, sizeof(buffer));
+        NSLog(@"Unable to open \"%@\": %s (%d)", [directoryURL path], buffer, errno);
+        return;
+    }
+    dispatch_source_t source = dispatch_source_create(DISPATCH_SOURCE_TYPE_VNODE, fd,
+                                                      DISPATCH_VNODE_WRITE | DISPATCH_VNODE_DELETE, DISPATCH_TARGET_QUEUE_DEFAULT);
+    dispatch_source_set_event_handler(source, ^(){
+        unsigned long const data = dispatch_source_get_data(source);
+        if (data & DISPATCH_VNODE_WRITE) {
+            NSLog(@"The directory changed.");
+        }
+        if (data & DISPATCH_VNODE_DELETE) {
+            NSLog(@"The directory has been deleted.");
+        }
+    });
+    dispatch_source_set_cancel_handler(source, ^(){
+        close(fd);
+    });
+    dispatch_resume(source);
+    //还要注意需要用DISPATCH_VNODE_DELETE 去检查监视的文件或文件夹是否被删除，如果删除了就停止监听
+}
+
+#pragma mark - dispatch source timer demo
+- (void)dispatchSourceTimerDemo {
+    //NSTimer在主线程的runloop里会在runloop切换其它模式时停止，这时就需要手动在子线程开启一个模式为NSRunLoopCommonModes的runloop，如果不想开启一个新的runloop可以用不跟runloop关联的dispatch source timer
+    dispatch_source_t source = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER,0, 0, DISPATCH_TARGET_QUEUE_DEFAULT);
+    dispatch_source_set_event_handler(source, ^(){
+        NSLog(@"Time flies.");
+    });
+    dispatch_source_set_timer(source, DISPATCH_TIME_NOW, 5ull * NSEC_PER_SEC,100ull * NSEC_PER_MSEC);
+    dispatch_resume(source);
+}
+
+#pragma mark - GCD死锁
+// 当前串行队列里面同步执行当前串行队列就会死锁，解决的方法就是将同步的串行队列放到另外一个线程就能够解决。
+- (void)deadLockCase1 {
+    NSLog(@"1");
+    //主队列的同步线程，按照FIFO的原则（先入先出），2排在3后面会等3执行完，但因为同步线程，3又要等2执行完，相互等待成为死锁。
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        NSLog(@"2");
+    });
+    NSLog(@"3");
+}
+- (void)deadLockCase2 {
+    NSLog(@"1");
+    //3会等2，因为2在全局并行队列里，不需要等待3，这样2执行完回到主队列，3就开始执行
+    dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        NSLog(@"2");
+    });
+    NSLog(@"3");
+}
+- (void)deadLockCase3 {
+    dispatch_queue_t serialQueue = dispatch_queue_create("com.starming.gcddemo.serialqueue", DISPATCH_QUEUE_SERIAL);
+    NSLog(@"1");
+    dispatch_async(serialQueue, ^{
+        NSLog(@"2");
+        //串行队列里面同步一个串行队列就会死锁
+        dispatch_sync(serialQueue, ^{
+            NSLog(@"3");
+        });
+        NSLog(@"4");
+    });
+    NSLog(@"5");
+}
+- (void)deadLockCase4 {
+    NSLog(@"1");
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"2");
+        //将同步的串行队列放到另外一个线程就能够解决
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            NSLog(@"3");
+        });
+        NSLog(@"4");
+    });
+    NSLog(@"5");
+}
+- (void)deadLockCase5 {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"1");
+        //回到主线程发现死循环后面就没法执行了
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            NSLog(@"2");
+        });
+        NSLog(@"3");
+    });
+    NSLog(@"4");
+    //死循环
+    while (1) {
+        //
+    }
+}
+
+#pragma mark - GCD实际使用
+// FMDB如何使用dispatch_queue_set_specific和dispatch_get_specific来防止死锁
+
+static const void * const kDispatchQueueSpecificKey = &kDispatchQueueSpecificKey;
+//检查是否是同一个队列来避免死锁的方法
+- (void)inDatabase:(void (^)(FMDatabase *db))block {
+    //创建串行队列，所有数据库的操作都在这个队列里
+    dispatch_queue_t _queue = dispatch_queue_create([[NSString stringWithFormat:@"fmdb.%@", self] UTF8String], NULL);
+    //标记队列
+    dispatch_queue_set_specific(_queue, kDispatchQueueSpecificKey, (__bridge void *)self, NULL);
+    FMDatabaseQueue *currentSyncQueue = (__bridge id)dispatch_get_specific(kDispatchQueueSpecificKey);
+    assert(currentSyncQueue != self && "inDatabase: was called reentrantly on the same queue, which would lead to a deadlock");
+}
+
 @end
 
 
@@ -583,10 +849,23 @@ void task(void* param){
  1、同步和异步决定了是否开启新的线程。main队列除外，在main队列中，同步或者异步执行都会阻塞当线的main线程，且不会另开线程。当然，永远不要使用sync向主队列中添加任务，这样子会线程卡死，具体原因看main线程。
  2、串行和并行，决定了任务是否同时执行。
  
+ 
+ 主队列（main queue）,四种通用调度队列，自己定制的队列。四种通用调度队列为
+ QOS_CLASS_USER_INTERACTIVE：user interactive等级表示任务需要被立即执行提供好的体验，用来更新UI，响应事件等。这个等级最好保持小规模。
+ QOS_CLASS_USER_INITIATED：user initiated等级表示任务由UI发起异步执行。适用场景是需要及时结果同时又可以继续交互的时候。
+ QOS_CLASS_UTILITY：utility等级表示需要长时间运行的任务，伴有用户可见进度指示器。经常会用来做计算，I/O，网络，持续的数据填充等任务。这个任务节能。
+ QOS_CLASS_BACKGROUND：background等级表示用户不会察觉的任务，使用它来处理预加载，或者不需要用户交互和对时间不敏感的任务。
+
+ 何时使用何种队列类型
+ 主队列（顺序）：队列中有任务完成需要更新UI时，dispatch_after在这种类型中使用。
+ 并发队列：用来执行与UI无关的后台任务，dispatch_sync放在这里，方便等待任务完成进行后续处理或和dispatch barrier同步。dispatch groups放在这里也不错。
+ 自定义顺序队列：顺序执行后台任务并追踪它时。这样做同时只有一个任务在执行可以防止资源竞争。dipatch barriers解决读写锁问题的放在这里处理。dispatch groups也是放在这里。
+ 
  参考资料：
  
  iOS多线程之GCD：http://www.jianshu.com/p/456672967e75
  iOS笔记(一)GCD多线程：信号量和条件锁: https://my.oschina.net/u/2436242/blog/518318
+ 细说GCD（Grand Central Dispatch）如何用: http://www.jianshu.com/p/fbe6a654604c
  */
 
 /*
