@@ -3,16 +3,14 @@
 
 
 ### 几个概念：
- 串行队列：在队列中，采用先进先出（FIFO）的方式从RunLoop取出任务
- 并行队行：同样，在并行队列当中，依然也是采用先进先出(FIFO)的方式从RunLoop取出来
+ * 串行队列：在队列中，采用先进先出（FIFO）的方式从RunLoop取出任务
+ * 并行队行：同样，在并行队列当中，依然也是采用先进先出(FIFO)的方式从RunLoop取出来
+ * 异步执行：不会阻塞当前线程
+ * 同步执行：会阻塞当前线程，直到当前的block任务执行完毕
+ * 同步和异步决定了是否开启新的线程。main队列除外，在main队列中，同步或者异步执行都会阻塞当线的main线程，且不会另开线程。当然，永远不要使用sync向主队列中添加任务，这样子会线程卡死，具体原因看main线程
+ * 串行和并行，决定了任务是否同时执行。
  
- 异步执行：不会阻塞当前线程
- 同步执行：会阻塞当前线程，直到当前的block任务执行完毕
- 
- 1. 同步和异步决定了是否开启新的线程。main队列除外，在main队列中，同步或者异步执行都会阻塞当线的main线程，且不会另开线程。当然，永远不要使用sync向主队列中添加任务，这样子会线程卡死，具体原因看main线程
- 2. 串行和并行，决定了任务是否同时执行。
- 
- [](gcd_image.png)
+ [gcd_image](https://github.com/wangdongyang/MyIOSExploration/blob/master/%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0/images/gcd_image.png)
  
 ### 主队列（main queue）的四种通用调度队列
  * QOS_CLASS_USER_INTERACTIVE：user interactive等级表示任务需要被立即执行提供好的体验，用来更新UI，响应事件等。这个等级最好保持小规模。
@@ -22,9 +20,9 @@
 
 ### 何时使用何种队列类型
 
- 1. 主队列（顺序）：队列中有任务完成需要更新UI时，dispatch_after在这种类型中使用。
- 2. 并发队列：用来执行与UI无关的后台任务，dispatch_sync放在这里，方便等待任务完成进行后续处理或和dispatch barrier同步。dispatch groups放在这里也不错。
- 3. 自定义顺序队列：顺序执行后台任务并追踪它时。这样做同时只有一个任务在执行可以防止资源竞争。dipatch barriers解决读写锁问题的放在这里处理。dispatch groups也是放在这里。
+ * 主队列（顺序）：队列中有任务完成需要更新UI时，dispatch_after在这种类型中使用。
+ * 并发队列：用来执行与UI无关的后台任务，dispatch_sync放在这里，方便等待任务完成进行后续处理或和dispatch barrier同步。dispatch groups放在这里也不错。
+ * 自定义顺序队列：顺序执行后台任务并追踪它时。这样做同时只有一个任务在执行可以防止资源竞争。dipatch barriers解决读写锁问题的放在这里处理。dispatch groups也是放在这里。
  
  
 ### 使用Crearte函数创建的并发队列和全局并发队列的主要区别：
