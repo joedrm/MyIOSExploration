@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16554C661E0E27D70095E722 /* SingleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16554C651E0E27D70095E722 /* SingleTool.m */; };
 		16DBC05D1D7D673E006F4784 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DBC05C1D7D673E006F4784 /* main.m */; };
 		16DBC0601D7D673E006F4784 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DBC05F1D7D673E006F4784 /* AppDelegate.m */; };
 		16DBC0631D7D673E006F4784 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DBC0621D7D673E006F4784 /* ViewController.m */; };
 		16DBC0661D7D673E006F4784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0641D7D673E006F4784 /* Main.storyboard */; };
 		16DBC0681D7D673E006F4784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0671D7D673E006F4784 /* Assets.xcassets */; };
 		16DBC06B1D7D673E006F4784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0691D7D673E006F4784 /* LaunchScreen.storyboard */; };
-		16E899161D825FCA00D14346 /* SingleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E899151D825FCA00D14346 /* SingleTool.m */; };
 		20ACF1D31E0BC6DA00916787 /* SemaphoreTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1D21E0BC6DA00916787 /* SemaphoreTestVC.m */; };
 		20ACF1D71E0BCF2000916787 /* DispatchSourceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1D61E0BCF2000916787 /* DispatchSourceVC.m */; };
 		20ACF1DB1E0BD86100916787 /* GDCTimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1DA1E0BD86100916787 /* GDCTimerVC.m */; };
@@ -23,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		0A76DC08DDDE8457493D4892 /* Pods-GCD实践.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCD实践.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GCD实践/Pods-GCD实践.release.xcconfig"; sourceTree = "<group>"; };
+		16554C641E0E27D70095E722 /* SingleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTool.h; sourceTree = "<group>"; };
+		16554C651E0E27D70095E722 /* SingleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTool.m; sourceTree = "<group>"; };
 		16DBC0581D7D673E006F4784 /* GCD实践.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GCD实践.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DBC05C1D7D673E006F4784 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16DBC05E1D7D673E006F4784 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,8 +35,6 @@
 		16DBC0671D7D673E006F4784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16DBC06A1D7D673E006F4784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16DBC06C1D7D673E006F4784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16E899141D825FCA00D14346 /* SingleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTool.h; sourceTree = "<group>"; };
-		16E899151D825FCA00D14346 /* SingleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTool.m; sourceTree = "<group>"; };
 		1BC99BDCC9BEB5FECA07424A /* Pods_GCD__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCD__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20ACF1D11E0BC6DA00916787 /* SemaphoreTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaphoreTestVC.h; sourceTree = "<group>"; };
 		20ACF1D21E0BC6DA00916787 /* SemaphoreTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemaphoreTestVC.m; sourceTree = "<group>"; };
@@ -59,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16554C631E0E27D70095E722 /* Singleton Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				16554C641E0E27D70095E722 /* SingleTool.h */,
+				16554C651E0E27D70095E722 /* SingleTool.m */,
+			);
+			path = "Singleton Pattern";
+			sourceTree = "<group>";
+		};
 		16DBC04F1D7D673E006F4784 = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +96,7 @@
 				20ACF1D81E0BD67200916787 /* 更精准的定时器 */,
 				20ACF1D41E0BCEF100916787 /* Dispatch source */,
 				20ACF1D01E0BC69100916787 /* 多网络异步回调：信号量 */,
-				16E899141D825FCA00D14346 /* SingleTool.h */,
-				16E899151D825FCA00D14346 /* SingleTool.m */,
+				16554C631E0E27D70095E722 /* Singleton Pattern */,
 				16DBC0641D7D673E006F4784 /* Main.storyboard */,
 				16DBC0671D7D673E006F4784 /* Assets.xcassets */,
 				16DBC0691D7D673E006F4784 /* LaunchScreen.storyboard */,
@@ -280,7 +288,7 @@
 				20ACF1E11E0BE3EF00916787 /* GCDTimer.m in Sources */,
 				20ACF1DB1E0BD86100916787 /* GDCTimerVC.m in Sources */,
 				16DBC05D1D7D673E006F4784 /* main.m in Sources */,
-				16E899161D825FCA00D14346 /* SingleTool.m in Sources */,
+				16554C661E0E27D70095E722 /* SingleTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
