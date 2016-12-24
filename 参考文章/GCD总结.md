@@ -10,7 +10,7 @@
  * 同步和异步决定了是否开启新的线程。main队列除外，在main队列中，同步或者异步执行都会阻塞当线的main线程，且不会另开线程。当然，永远不要使用sync向主队列中添加任务，这样子会线程卡死，具体原因看main线程
  * 串行和并行，决定了任务是否同时执行。
  
- [gcd_image](https://github.com/wangdongyang/MyIOSExploration/blob/master/%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0/images/gcd_image.png)
+ ![gcd_image](https://github.com/wangdongyang/MyIOSExploration/blob/master/%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0/images/gcd_image.png)
  
 ### 主队列（main queue）的四种通用调度队列
  * QOS_CLASS_USER_INTERACTIVE：user interactive等级表示任务需要被立即执行提供好的体验，用来更新UI，响应事件等。这个等级最好保持小规模。
