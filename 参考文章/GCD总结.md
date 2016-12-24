@@ -9,23 +9,22 @@
  异步执行：不会阻塞当前线程
  同步执行：会阻塞当前线程，直到当前的block任务执行完毕
  
- 小结
- 
- 1. 同步和异步决定了是否开启新的线程。main队列除外，在main队列中，同步或者异步执行都会阻塞当线的main线程，且不会另开线程。当然，永远不要使用sync向主队列中添加任务，这样子会线程卡死，具体原因看main线程。
+ 1. 同步和异步决定了是否开启新的线程。main队列除外，在main队列中，同步或者异步执行都会阻塞当线的main线程，且不会另开线程。当然，永远不要使用sync向主队列中添加任务，这样子会线程卡死，具体原因看main线程
  2. 串行和并行，决定了任务是否同时执行。
  
  [](gcd_image.png)
  
 ### 主队列（main queue）的四种通用调度队列
- QOS_CLASS_USER_INTERACTIVE：user interactive等级表示任务需要被立即执行提供好的体验，用来更新UI，响应事件等。这个等级最好保持小规模。
- QOS_CLASS_USER_INITIATED：user initiated等级表示任务由UI发起异步执行。适用场景是需要及时结果同时又可以继续交互的时候。
- QOS_CLASS_UTILITY：utility等级表示需要长时间运行的任务，伴有用户可见进度指示器。经常会用来做计算，I/O，网络，持续的数据填充等任务。这个任务节能。
- QOS_CLASS_BACKGROUND：background等级表示用户不会察觉的任务，使用它来处理预加载，或者不需要用户交互和对时间不敏感的任务。
+ * QOS_CLASS_USER_INTERACTIVE：user interactive等级表示任务需要被立即执行提供好的体验，用来更新UI，响应事件等。这个等级最好保持小规模。
+ * QOS_CLASS_USER_INITIATED：user initiated等级表示任务由UI发起异步执行。适用场景是需要及时结果同时又可以继续交互的时候。
+ * QOS_CLASS_UTILITY：utility等级表示需要长时间运行的任务，伴有用户可见进度指示器。经常会用来做计算，I/O，网络，持续的数据填充等任务。这个任务节能。
+ * QOS_CLASS_BACKGROUND：background等级表示用户不会察觉的任务，使用它来处理预加载，或者不需要用户交互和对时间不敏感的任务。
 
 ### 何时使用何种队列类型
- 主队列（顺序）：队列中有任务完成需要更新UI时，dispatch_after在这种类型中使用。
- 并发队列：用来执行与UI无关的后台任务，dispatch_sync放在这里，方便等待任务完成进行后续处理或和dispatch barrier同步。dispatch groups放在这里也不错。
- 自定义顺序队列：顺序执行后台任务并追踪它时。这样做同时只有一个任务在执行可以防止资源竞争。dipatch barriers解决读写锁问题的放在这里处理。dispatch groups也是放在这里。
+
+ 1. 主队列（顺序）：队列中有任务完成需要更新UI时，dispatch_after在这种类型中使用。
+ 2. 并发队列：用来执行与UI无关的后台任务，dispatch_sync放在这里，方便等待任务完成进行后续处理或和dispatch barrier同步。dispatch groups放在这里也不错。
+ 3. 自定义顺序队列：顺序执行后台任务并追踪它时。这样做同时只有一个任务在执行可以防止资源竞争。dipatch barriers解决读写锁问题的放在这里处理。dispatch groups也是放在这里。
  
  
 ### 使用Crearte函数创建的并发队列和全局并发队列的主要区别：
@@ -102,10 +101,10 @@
  
 ### 参考资料：
  
-1. [iOS多线程之GCD](http://www.jianshu.com/p/456672967e75)
-2. [iOS笔记(一)GCD多线程：信号量和条件锁](https://my.oschina.net/u/2436242/blog/518318)
-3. [细说GCD（Grand Central Dispatch）如何用](http://www.jianshu.com/p/fbe6a654604c)
-4. [Facebook开源的Parse源码分析【系列】](https://github.com/ChenYilong/ParseSourceCodeStudy)
+- [iOS多线程之GCD](http://www.jianshu.com/p/456672967e75)
+- [iOS笔记(一)GCD多线程：信号量和条件锁](https://my.oschina.net/u/2436242/blog/518318)
+- [细说GCD（Grand Central Dispatch）如何用](http://www.jianshu.com/p/fbe6a654604c)
+- [Facebook开源的Parse源码分析【系列】](https://github.com/ChenYilong/ParseSourceCodeStudy)
 
 
 
