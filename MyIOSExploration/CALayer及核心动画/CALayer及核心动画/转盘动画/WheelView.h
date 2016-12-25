@@ -11,6 +11,9 @@
 @interface WheelView : UIView
 
 + (instancetype)wheelView;
+
++ (instancetype)wheelViewFromNib;
+
 // 开始旋转
 - (void)startRotation;
 // 停止旋转

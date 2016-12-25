@@ -26,10 +26,19 @@ target :'Quartz 2D实践' do
 end
 
 
+
 use_frameworks!
 target :'GCD实践' do
     platform :ios, '8.0'
     pod 'FMDB'
     project 'GCD实践/GCD实践.xcodeproj'
     #pod 'WDYLibrary', :path => './WDYLibrary'
+end
+
+
+use_frameworks!
+target :'CALayer及核心动画' do
+    platform :ios, '8.0'
+    pod 'Masonry'
+    project 'CALayer及核心动画/CALayer及核心动画.xcodeproj'
 end

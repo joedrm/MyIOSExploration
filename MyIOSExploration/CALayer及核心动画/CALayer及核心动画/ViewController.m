@@ -56,7 +56,11 @@ static NSString* AnimationIdentifier = @"AnimationIdentifier";
                       @"CAKeyframeAnimation(图片抖动)",
                       @"CATransition转场动画",
                       @"CAAnimationGroup(动画组)",
-                      @"转盘动画"];
+                      @"转盘动画",
+                      @"图片折叠",
+                      @"播放器音量震动条",
+                      @"粒子效果",
+                      @"仿QQ粘性布局"];
     
     self.vcArr = @[@"CATransformVC",
                    @"CustomLayerVC",
@@ -66,7 +70,11 @@ static NSString* AnimationIdentifier = @"AnimationIdentifier";
                    @"CAKeyframeAnimationVC",
                    @"CATransitionDemoVC",
                    @"CAAnimationGroupVC",
-                   @"WheelViewController"
+                   @"MyWheelViewController",
+                   @"ImageFoldViewController",
+                   @"VoiceShakeViewController",
+                   @"ParticleEffectViewController",
+                   @"QQViewController"
                    ];
     self.tableView.rowHeight = 44;
     self.tableView.tableFooterView = [[UIView alloc] init];

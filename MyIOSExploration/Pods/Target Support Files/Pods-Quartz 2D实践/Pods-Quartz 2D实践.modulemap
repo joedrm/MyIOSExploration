@@ -1,6 +1,0 @@
-framework module Pods_Quartz_2D__ {
-  umbrella header "Pods-Quartz 2D实践-umbrella.h"
-
-  export *
-  module * { export * }
-}
