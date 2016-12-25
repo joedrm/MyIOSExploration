@@ -9,14 +9,20 @@
 /*
  参考资料：
  
+ 学习步骤
+ 1. https://github.com/AttackOnDobby/iOS-Core-Animation-Advanced-Techniques，demo:https://github.com/huang303513/HCDCoreAnimation
+ 2. https://github.com/KittenYang/A-GUIDE-TO-iOS-ANIMATION
+ 3. https://github.com/YouXianMing/Animations   https://github.com/YouXianMing/YoCelsius   https://github.com/YouXianMing/UI-Component-Collection
+ 
+ 
+ 
  https://github.com/xiaochaofeiyu/YSCAnimation
  IOS动画总结:https://github.com/yixiangboy/IOSAnimationDemo
  https://github.com/wangtongke/WTKTransitionAnimate
  https://github.com/wangtongke/WTKTransitionAnimation
  https://github.com/weng1250/WZLBadge
  https://github.com/a130785/iosAnimationDemo
- https://github.com/huang303513/HCDCoreAnimation
- https://github.com/KittenYang/A-GUIDE-TO-iOS-ANIMATION - The source code of my new eBook —— A GUIDE TO IOS ANIMATION
+ 
  
  
  Facebook-POP
