@@ -8,8 +8,6 @@ IOS知识点总结和实践
 - [iOS Developer Library](https://developer.apple.com/library/content/navigation/) - Guides and Sample Code
 
 ### IOS Awsome
-- [SwiftGuide](https://github.com/ipader/SwiftGuide)
-- [iOS-Swift-Demos](https://github.com/Lax/iOS-Swift-Demos) - 精心收集并分类整理的Swift开发学习资源
 - [awesome-ios](https://github.com/vsouza/awesome-ios)
 - [awesome-iOS-blog-article](https://github.com/Jiar/awesome-iOS-blog-article) - 比较好的一些博客和文章
 - [ming1016/study](https://github.com/ming1016/study) - 学习记录
