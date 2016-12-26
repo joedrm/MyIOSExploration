@@ -82,7 +82,7 @@ IOS知识点总结和实践
 - [ibireme](http://blog.ibireme.com/)
 - [南峰子](http://southpeak.github.io/)
 - [kenshincui](http://www.cnblogs.com/kenshincui/)
-- [雷纯锋](http://blog.leichunfeng.com/)
+- [雷纯锋](http://blog.leichunfeng.com/)，[Github](https://github.com/leichunfeng)
 - [MrPeak杂货铺](http://mrpeak.cn/)
 - [Kitten's 时间胶囊](http://kittenyang.com/#blog)
 - [岁寒](https://lvwenhan.com/sort/ios)
