@@ -36,6 +36,8 @@
 		20AC98A61DF1603B00C761FA /* books.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20AC98A51DF1603B00C761FA /* books.jpg */; };
 		20AC98AB1DF1672800C761FA /* TesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC98AA1DF1672800C761FA /* TesViewController.m */; };
 		20AC98AF1DF177F100C761FA /* Case6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC98AE1DF177F100C761FA /* Case6ViewController.m */; };
+		20D514951E124A70000FBD5D /* Case9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D514941E124A70000FBD5D /* Case9ViewController.m */; };
+		20D514981E124AAB000FBD5D /* UIView+EqualSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D514971E124AAB000FBD5D /* UIView+EqualSpace.m */; };
 		EC62D413454CBDC385FDD2BB /* Pods_Masonry__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03401E1A5735B91FBAE4D716 /* Pods_Masonry__.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +112,10 @@
 		20AC98AA1DF1672800C761FA /* TesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TesViewController.m; sourceTree = "<group>"; };
 		20AC98AD1DF177F100C761FA /* Case6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case6ViewController.h; sourceTree = "<group>"; };
 		20AC98AE1DF177F100C761FA /* Case6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case6ViewController.m; sourceTree = "<group>"; };
+		20D514931E124A70000FBD5D /* Case9ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case9ViewController.h; sourceTree = "<group>"; };
+		20D514941E124A70000FBD5D /* Case9ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case9ViewController.m; sourceTree = "<group>"; };
+		20D514961E124AAB000FBD5D /* UIView+EqualSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EqualSpace.h"; sourceTree = "<group>"; };
+		20D514971E124AAB000FBD5D /* UIView+EqualSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EqualSpace.m"; sourceTree = "<group>"; };
 		8A7511561C2659CBC1BF58CF /* Pods-Masonry实践.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masonry实践.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Masonry实践/Pods-Masonry实践.debug.xcconfig"; sourceTree = "<group>"; };
 		C53E5F2E72C3F686D1518DDB /* Pods-Masonry实践.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masonry实践.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Masonry实践/Pods-Masonry实践.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +202,7 @@
 				20AC983A1DF10CFE00C761FA /* AppDelegate.m */,
 				20AC983C1DF10CFE00C761FA /* ViewController.h */,
 				20AC983D1DF10CFE00C761FA /* ViewController.m */,
+				20D514921E124A52000FBD5D /* 横向或纵向实现多个View等间距 */,
 				2066642F1E1235E900C7F140 /* ScrollView的布局 */,
 				2090DE701DF6933600650BCC /* 动画 */,
 				2090DE6C1DF66E0E00650BCC /* 两种方式实现等间距 */,
@@ -318,6 +325,17 @@
 				2090DE6A1DF6659C00650BCC /* Case6Model.m */,
 			);
 			path = "Cell的展开和收缩";
+			sourceTree = "<group>";
+		};
+		20D514921E124A52000FBD5D /* 横向或纵向实现多个View等间距 */ = {
+			isa = PBXGroup;
+			children = (
+				20D514931E124A70000FBD5D /* Case9ViewController.h */,
+				20D514941E124A70000FBD5D /* Case9ViewController.m */,
+				20D514961E124AAB000FBD5D /* UIView+EqualSpace.h */,
+				20D514971E124AAB000FBD5D /* UIView+EqualSpace.m */,
+			);
+			path = "横向或纵向实现多个View等间距";
 			sourceTree = "<group>";
 		};
 		77F9C702A275CD4755434A9B /* Pods */ = {
@@ -539,8 +557,10 @@
 				2090DE681DF6656600650BCC /* Case6Cell.m in Sources */,
 				20AC98861DF14C2D00C761FA /* Case4ViewController.m in Sources */,
 				2090DE6B1DF6659C00650BCC /* Case6Model.m in Sources */,
+				20D514981E124AAB000FBD5D /* UIView+EqualSpace.m in Sources */,
 				20AC988D1DF14D2700C761FA /* Case4Cell.m in Sources */,
 				2090DE6F1DF66EA800650BCC /* Case7ViewController.m in Sources */,
+				20D514951E124A70000FBD5D /* Case9ViewController.m in Sources */,
 				20AC989D1DF15A7100C761FA /* Case2ViewController.m in Sources */,
 				20AC989E1DF15A7100C761FA /* Case1ViewController.m in Sources */,
 				20AC98AB1DF1672800C761FA /* TesViewController.m in Sources */,

@@ -15,6 +15,9 @@
  https://github.com/CoderJackyHuang/MasonryDemo
  https://github.com/HApple/AutoLayout
  https://github.com/HqRaining78/Masonry-demo-collection
+ https://github.com/adad184/DemoMasonry   已读
+ https://github.com/adad184/DemoMasonryPlus  先读
+ https://github.com/adad184/DemoScrollViewAutolayout
  
  */
 
@@ -42,7 +45,8 @@ static NSString* identifier = @"cell";
                       @"Case6: Cell的展开和收缩",
                       @"Case7: 两种方式实现等间距",
                       @"Case8: 约束动画",
-                      @"Case9: ScrollView的布局"];
+                      @"ScrollView的布局",
+                      @"Case9: 横向或纵向实现多个View等间距"];
     self.vcArr = @[@"Case1ViewController",
                    @"Case2ViewController",
                    @"Case3ViewController",
@@ -51,7 +55,8 @@ static NSString* identifier = @"cell";
                    @"Case6ViewController",
                    @"Case7ViewController",
                    @"Case8ViewController",
-                   @"ScrollViewController"
+                   @"ScrollViewController",
+                   @"Case9ViewController"
                    ];
     self.tableView.rowHeight = 55;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
