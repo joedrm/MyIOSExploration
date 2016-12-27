@@ -43,11 +43,11 @@
 		16DD640B1E06848E00926E50 /* CATransformVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DD64091E06848E00926E50 /* CATransformVC.xib */; };
 		16DD640D1E06870300926E50 /* your_name.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16DD640C1E06870300926E50 /* your_name.jpg */; };
 		16DD64111E068E4100926E50 /* CustomLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DD64101E068E4100926E50 /* CustomLayerVC.m */; };
+		16EB8E111E12A074008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E101E12A074008DE6FF /* WDYLibrary.framework */; };
+		16EB8E121E12A074008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E101E12A074008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16F2013E1E08289100D3A869 /* 心.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F2013D1E08289100D3A869 /* 心.png */; };
 		16F201431E082BDB00D3A869 /* CAKeyframeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */; };
 		16F201451E082C4C00D3A869 /* name.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16F201441E082C4C00D3A869 /* name.jpeg */; };
-		20D514AF1E126439000FBD5D /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D514AE1E126439000FBD5D /* WDYLibrary.framework */; };
-		20D514B01E126439000FBD5D /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20D514AE1E126439000FBD5D /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC21FEB752350A2A1D8FC4D3 /* Pods_CALayer_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7F71258B0D8F57EFCBA2D2 /* Pods_CALayer_____.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				20D514B01E126439000FBD5D /* WDYLibrary.framework in Embed Frameworks */,
+				16EB8E121E12A074008DE6FF /* WDYLibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,12 +122,12 @@
 		16DD640C1E06870300926E50 /* your_name.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = your_name.jpg; sourceTree = "<group>"; };
 		16DD640F1E068E4100926E50 /* CustomLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayerVC.h; sourceTree = "<group>"; };
 		16DD64101E068E4100926E50 /* CustomLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayerVC.m; sourceTree = "<group>"; };
+		16EB8E101E12A074008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F2013D1E08289100D3A869 /* 心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "心.png"; sourceTree = "<group>"; };
 		16F201411E082BDB00D3A869 /* CAKeyframeAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationVC.h; sourceTree = "<group>"; };
 		16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationVC.m; sourceTree = "<group>"; };
 		16F201441E082C4C00D3A869 /* name.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name.jpeg; sourceTree = "<group>"; };
 		1F7F71258B0D8F57EFCBA2D2 /* Pods_CALayer_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_CALayer_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		20D514AE1E126439000FBD5D /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A619EE50C15B5F3E87D7851 /* Pods-CALayer及核心动画.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CALayer及核心动画.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CALayer及核心动画/Pods-CALayer及核心动画.release.xcconfig"; sourceTree = "<group>"; };
 		B52C98535759A42148F5D345 /* Pods-CALayer及核心动画.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CALayer及核心动画.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CALayer及核心动画/Pods-CALayer及核心动画.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC21FEB752350A2A1D8FC4D3 /* Pods_CALayer_____.framework in Frameworks */,
-				20D514AF1E126439000FBD5D /* WDYLibrary.framework in Frameworks */,
+				16EB8E111E12A074008DE6FF /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +259,7 @@
 		16DD63E31E0649AA00926E50 = {
 			isa = PBXGroup;
 			children = (
-				20D514AE1E126439000FBD5D /* WDYLibrary.framework */,
+				16EB8E101E12A074008DE6FF /* WDYLibrary.framework */,
 				16DD63EE1E0649AA00926E50 /* CALayer及核心动画 */,
 				16DD63ED1E0649AA00926E50 /* Products */,
 				261F8DD9C7A9716143390EA1 /* Pods */,

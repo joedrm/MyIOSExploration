@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16EB8E0E1E12A067008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; };
+		16EB8E0F1E12A067008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20D515221E12876F000FBD5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D515211E12876F000FBD5D /* main.m */; };
 		20D515251E12876F000FBD5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D515241E12876F000FBD5D /* AppDelegate.m */; };
 		20D515281E12876F000FBD5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D515271E12876F000FBD5D /* ViewController.m */; };
 		20D5152B1E12876F000FBD5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D515291E12876F000FBD5D /* Main.storyboard */; };
 		20D5152D1E12876F000FBD5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D5152C1E12876F000FBD5D /* Assets.xcassets */; };
 		20D515301E12876F000FBD5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D5152E1E12876F000FBD5D /* LaunchScreen.storyboard */; };
-		20D515381E12878F000FBD5D /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D515371E12878F000FBD5D /* WDYLibrary.framework */; };
-		20D515391E12878F000FBD5D /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20D515371E12878F000FBD5D /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20D515421E1289AB000FBD5D /* ProperLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D515411E1289AB000FBD5D /* ProperLayerViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				20D515391E12878F000FBD5D /* WDYLibrary.framework in Embed Frameworks */,
+				16EB8E0F1E12A067008DE6FF /* WDYLibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D5151D1E12876F000FBD5D /* IOS核心动画高级技巧(读书笔记).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS核心动画高级技巧(读书笔记).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D515211E12876F000FBD5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20D515231E12876F000FBD5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		20D5152C1E12876F000FBD5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20D5152F1E12876F000FBD5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20D515311E12876F000FBD5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20D515371E12878F000FBD5D /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D515401E1289AB000FBD5D /* ProperLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProperLayerViewController.h; sourceTree = "<group>"; };
 		20D515411E1289AB000FBD5D /* ProperLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProperLayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20D515381E12878F000FBD5D /* WDYLibrary.framework in Frameworks */,
+				16EB8E0E1E12A067008DE6FF /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 		20D515141E12876F000FBD5D = {
 			isa = PBXGroup;
 			children = (
-				20D515371E12878F000FBD5D /* WDYLibrary.framework */,
+				16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */,
 				20D5151F1E12876F000FBD5D /* IOS核心动画高级技巧(读书笔记) */,
 				20D5151E1E12876F000FBD5D /* Products */,
 			);
@@ -344,6 +344,7 @@
 				20D515361E12876F000FBD5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
