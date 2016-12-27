@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WDYLibrary/WDYLibrary.h>
 
-@interface ViewController : UITableViewController
+@interface ViewController : BaseTestDataTableVC
 
 
 @end

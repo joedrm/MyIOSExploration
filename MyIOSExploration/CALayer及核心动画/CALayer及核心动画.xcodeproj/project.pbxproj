@@ -46,8 +46,24 @@
 		16F2013E1E08289100D3A869 /* 心.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F2013D1E08289100D3A869 /* 心.png */; };
 		16F201431E082BDB00D3A869 /* CAKeyframeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */; };
 		16F201451E082C4C00D3A869 /* name.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16F201441E082C4C00D3A869 /* name.jpeg */; };
+		20D514AF1E126439000FBD5D /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D514AE1E126439000FBD5D /* WDYLibrary.framework */; };
+		20D514B01E126439000FBD5D /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20D514AE1E126439000FBD5D /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC21FEB752350A2A1D8FC4D3 /* Pods_CALayer_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7F71258B0D8F57EFCBA2D2 /* Pods_CALayer_____.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20D514B11E12643A000FBD5D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20D514B01E126439000FBD5D /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		16554C671E0E39060095E722 /* WheelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelButton.h; sourceTree = "<group>"; };
@@ -110,7 +126,8 @@
 		16F201411E082BDB00D3A869 /* CAKeyframeAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationVC.h; sourceTree = "<group>"; };
 		16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationVC.m; sourceTree = "<group>"; };
 		16F201441E082C4C00D3A869 /* name.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name.jpeg; sourceTree = "<group>"; };
-		1F7F71258B0D8F57EFCBA2D2 /* Pods_CALayer_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CALayer_____.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7F71258B0D8F57EFCBA2D2 /* Pods_CALayer_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_CALayer_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D514AE1E126439000FBD5D /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A619EE50C15B5F3E87D7851 /* Pods-CALayer及核心动画.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CALayer及核心动画.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CALayer及核心动画/Pods-CALayer及核心动画.release.xcconfig"; sourceTree = "<group>"; };
 		B52C98535759A42148F5D345 /* Pods-CALayer及核心动画.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CALayer及核心动画.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CALayer及核心动画/Pods-CALayer及核心动画.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC21FEB752350A2A1D8FC4D3 /* Pods_CALayer_____.framework in Frameworks */,
+				20D514AF1E126439000FBD5D /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +259,7 @@
 		16DD63E31E0649AA00926E50 = {
 			isa = PBXGroup;
 			children = (
+				20D514AE1E126439000FBD5D /* WDYLibrary.framework */,
 				16DD63EE1E0649AA00926E50 /* CALayer及核心动画 */,
 				16DD63ED1E0649AA00926E50 /* Products */,
 				261F8DD9C7A9716143390EA1 /* Pods */,
@@ -353,6 +372,7 @@
 				16DD63EA1E0649AA00926E50 /* Resources */,
 				08607ECB3D1545DE286C053E /* [CP] Embed Pods Frameworks */,
 				726BEBE0861F2B9BEC19CE23 /* [CP] Copy Pods Resources */,
+				20D514B11E12643A000FBD5D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,7 +394,7 @@
 				TargetAttributes = {
 					16DD63EB1E0649AA00926E50 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 2T6XGQJFJM;
+						DevelopmentTeam = DSHJC97KG4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -617,7 +637,7 @@
 			baseConfigurationReference = B52C98535759A42148F5D345 /* Pods-CALayer及核心动画.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
 				INFOPLIST_FILE = "CALayer及核心动画/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy..CALayer-----";
@@ -630,7 +650,7 @@
 			baseConfigurationReference = 3A619EE50C15B5F3E87D7851 /* Pods-CALayer及核心动画.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
 				INFOPLIST_FILE = "CALayer及核心动画/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy..CALayer-----";

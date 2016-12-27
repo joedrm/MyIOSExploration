@@ -1,0 +1,23 @@
+{
+  "name": "WDYKit",
+  "version": "0.1.1",
+  "summary": "WDYKit.",
+  "description": "私有库代码",
+  "homepage": "https://github.com/wangdongyang",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "冬日暖阳": "877197753@qq.com"
+  },
+  "source": {
+    "git": "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/WDYKit",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WDYKit/Classes/**/*",
+  "frameworks": "UIKit"
+}

@@ -50,34 +50,6 @@ static NSString* identifier = @"cell";
                    @"GestureUnlockVC",
                    @"MaskImageVC"
                    ];
-    self.tableView.rowHeight = 44;
-    self.tableView.tableFooterView = [[UIView alloc] init];
-    self.tableView.tableHeaderView = [[UIView alloc] init];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return self.titleArr.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
-    }
-    cell.textLabel.font = [UIFont systemFontOfSize:15];
-    cell.textLabel.numberOfLines = 0;
-    cell.textLabel.text = self.titleArr[indexPath.row];
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    id class = NSClassFromString(self.vcArr[indexPath.row]);
-    UIViewController* vc = [[class alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

@@ -15,6 +15,7 @@ use_frameworks!
 target :'ReactiveCocoa & MVVM' do
     platform :ios, '8.0'
     pod 'ReactiveCocoa'
+    pod 'WDYKit', :path => '/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/WDYKit' #本地私有库
     project 'ReactiveCocoa & MVVM/ReactiveCocoa & MVVM.xcodeproj'
 end
 

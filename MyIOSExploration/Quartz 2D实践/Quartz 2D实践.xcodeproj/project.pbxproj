@@ -62,6 +62,8 @@
 		2090DF1C1DFA78B700650BCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2090DF1A1DFA78B700650BCC /* LaunchScreen.storyboard */; };
 		2090DF271DFA78B700650BCC /* Quartz_2D__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DF261DFA78B700650BCC /* Quartz_2D__UITests.m */; };
 		20C642E31DFEAF7F00A6D722 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C642E21DFEAF7F00A6D722 /* ImageUtil.m */; };
+		20D514BF1E126CAF000FBD5D /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D514BE1E126CAF000FBD5D /* WDYLibrary.framework */; };
+		20D514C01E126CAF000FBD5D /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20D514BE1E126CAF000FBD5D /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE2F8CA80C0D633ABF8D959C /* Pods_Quartz_2D__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96B53F1D9B729AE750531C7 /* Pods_Quartz_2D__.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,20 @@
 			remoteInfo = "Quartz 2D实践";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20D514C11E126CAF000FBD5D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20D514C01E126CAF000FBD5D /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		14D4C7B575D7A4F7042F6664 /* Pods-Quartz 2D实践.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quartz 2D实践.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Quartz 2D实践/Pods-Quartz 2D实践.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +181,7 @@
 		20C642E11DFEAF7F00A6D722 /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
 		20C642E21DFEAF7F00A6D722 /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
 		20C642E41DFEB2C200A6D722 /* ColorMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatrix.h; sourceTree = "<group>"; };
+		20D514BE1E126CAF000FBD5D /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		371903975C5BD19D7D6E2173 /* Pods-Quartz 2D实践.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quartz 2D实践.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Quartz 2D实践/Pods-Quartz 2D实践.debug.xcconfig"; sourceTree = "<group>"; };
 		B96B53F1D9B729AE750531C7 /* Pods_Quartz_2D__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quartz_2D__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -175,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE2F8CA80C0D633ABF8D959C /* Pods_Quartz_2D__.framework in Frameworks */,
+				20D514BF1E126CAF000FBD5D /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +399,7 @@
 		2090DF001DFA78B700650BCC = {
 			isa = PBXGroup;
 			children = (
+				20D514BE1E126CAF000FBD5D /* WDYLibrary.framework */,
 				2090DF0B1DFA78B700650BCC /* Quartz 2D实践 */,
 				2090DF251DFA78B700650BCC /* Quartz 2D实践UITests */,
 				2090DF0A1DFA78B700650BCC /* Products */,
@@ -482,6 +501,7 @@
 				2090DF071DFA78B700650BCC /* Resources */,
 				A0A4AD39BC35C0FF65B19FD5 /* [CP] Embed Pods Frameworks */,
 				A7F8B0BA03FD655A11BA4645 /* [CP] Copy Pods Resources */,
+				20D514C11E126CAF000FBD5D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

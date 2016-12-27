@@ -10,7 +10,7 @@
  参考资料：
  
  学习步骤
- 1. https://github.com/AttackOnDobby/iOS-Core-Animation-Advanced-Techniques
+ 1. https://github.com/AttackOnDobby/iOS-Core-Animation-Advanced-Techniques  在读
     demo:https://github.com/huang303513/HCDCoreAnimation
  
  2. https://github.com/KittenYang/A-GUIDE-TO-iOS-ANIMATION
@@ -49,13 +49,8 @@
 
 #import "ViewController.h"
 
-static NSString* AnimationIdentifier = @"AnimationIdentifier";
-
 @interface ViewController ()
 
-
-@property (nonatomic, strong) NSArray* titleArr;
-@property (nonatomic, strong) NSArray* vcArr;
 @end
 
 @implementation ViewController
@@ -91,34 +86,6 @@ static NSString* AnimationIdentifier = @"AnimationIdentifier";
                    @"ParticleEffectViewController",
                    @"QQViewController"
                    ];
-    self.tableView.rowHeight = 44;
-    self.tableView.tableFooterView = [[UIView alloc] init];
-    self.tableView.tableHeaderView = [[UIView alloc] init];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:AnimationIdentifier];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return self.titleArr.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:AnimationIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:AnimationIdentifier];
-    }
-    cell.textLabel.font = [UIFont systemFontOfSize:15];
-    cell.textLabel.numberOfLines = 0;
-    cell.textLabel.text = self.titleArr[indexPath.row];
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    id class = NSClassFromString(self.vcArr[indexPath.row]);
-    UIViewController* vc = [[class alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

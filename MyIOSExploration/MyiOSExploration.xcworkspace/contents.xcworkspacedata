@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:WDYLibrary/WDYLibrary.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:KVC&amp;KVO&#x5b9e;&#x4f8b;&#x8be6;&#x89e3;/KVC&amp;KVO&#x5b9e;&#x4f8b;&#x8be6;&#x89e3;.xcodeproj">
    </FileRef>
    <FileRef

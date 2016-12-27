@@ -1,0 +1,16 @@
+//
+//  WDYLibraryHeader.pch
+//  WDYLibrary
+//
+//  Created by fang wang on 16/12/27.
+//  Copyright © 2016年 wdy. All rights reserved.
+//
+
+#ifndef WDYLibraryHeader_pch
+#define WDYLibraryHeader_pch
+
+#import <Foundation/Foundation.h>
+#import "WDYLibrary.h"
+
+#endif /* WDYLibraryHeader_pch */
+
