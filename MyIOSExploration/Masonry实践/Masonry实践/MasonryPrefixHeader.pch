@@ -13,5 +13,6 @@
 #import <Masonry/Masonry.h>
 #import <MJExtension/MJExtension.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <WDYLibrary/WDYLibrary.h>
 
 #endif /* MasonryPrefixHeader_pch */

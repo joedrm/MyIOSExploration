@@ -22,14 +22,7 @@
  */
 
 
-#import "ViewController.h"
-#import "Case1ViewController.h"
-
-static NSString* identifier = @"cell";
-
 @interface ViewController ()
-@property (nonatomic, strong) NSArray* titleArr;
-@property (nonatomic, strong) NSArray* vcArr;
 @end
 
 @implementation ViewController
@@ -58,33 +51,6 @@ static NSString* identifier = @"cell";
                    @"ScrollViewController",
                    @"Case9ViewController"
                    ];
-    self.tableView.rowHeight = 55;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
-}
-
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return self.titleArr.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
-    }
-    cell.textLabel.font = [UIFont systemFontOfSize:13];
-    cell.textLabel.numberOfLines = 0;
-    cell.textLabel.text = self.titleArr[indexPath.row];
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    id class = NSClassFromString(self.vcArr[indexPath.row]);
-    UIViewController* vc = [[class alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
