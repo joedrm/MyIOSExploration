@@ -6,6 +6,11 @@
 //  Copyright © 2016年 wdy. All rights reserved.
 //
 
+/*
+ 参考资料：
+ http://tutuge.me/2016/12/25/TTGPuzzleVerify/  拼图验证控件TTGPuzzleVerify的实现
+ */
+
 #import "ViewController.h"
 
 static NSString* identifier = @"cell";

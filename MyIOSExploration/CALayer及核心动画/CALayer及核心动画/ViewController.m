@@ -20,6 +20,8 @@
     https://github.com/YouXianMing/UI-Component-Collection
  
  
+ http://www.jianshu.com/p/78c30ccf425f  CATransform3D笔记 https://github.com/HApple/CATransform3D
+ 
  
  https://github.com/xiaochaofeiyu/YSCAnimation
  IOS动画总结:https://github.com/yixiangboy/IOSAnimationDemo
@@ -28,7 +30,7 @@
  https://github.com/weng1250/WZLBadge
  https://github.com/a130785/iosAnimationDemo
  https://github.com/shu223/AnimatedTransitionGallery
- 
+ https://github.com/jhurray/JHChainableAnimations
  
  
  Facebook-POP

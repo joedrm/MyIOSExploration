@@ -10,8 +10,12 @@
  参考地址：
  
  http://tutuge.me/tags/Autolayout/
- https://github.com/zekunyan/AutolayoutExampleWithMasonry
+ https://github.com/johnlui/AutoLayout
+ https://github.com/zekunyan/AutolayoutExampleWithMasonry  已读
  https://github.com/CoderJackyHuang/MasonryDemo
+ https://github.com/HApple/AutoLayout
+ https://github.com/HqRaining78/Masonry-demo-collection
+ 
  */
 
 
@@ -37,7 +41,8 @@ static NSString* identifier = @"cell";
                       @"Case5: Header头部拉伸效果",
                       @"Case6: Cell的展开和收缩",
                       @"Case7: 两种方式实现等间距",
-                      @"Case8: 约束动画"];
+                      @"Case8: 约束动画",
+                      @"Case9: ScrollView的布局"];
     self.vcArr = @[@"Case1ViewController",
                    @"Case2ViewController",
                    @"Case3ViewController",
@@ -45,7 +50,8 @@ static NSString* identifier = @"cell";
                    @"Case5ViewController",
                    @"Case6ViewController",
                    @"Case7ViewController",
-                   @"Case8ViewController"
+                   @"Case8ViewController",
+                   @"ScrollViewController"
                    ];
     self.tableView.rowHeight = 55;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
