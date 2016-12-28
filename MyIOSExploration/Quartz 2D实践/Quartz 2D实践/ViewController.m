@@ -17,9 +17,6 @@ static NSString* identifier = @"cell";
 
 @interface ViewController ()
 
-
-@property (nonatomic, strong) NSArray* titleArr;
-@property (nonatomic, strong) NSArray* vcArr;
 @end
 
 @implementation ViewController
