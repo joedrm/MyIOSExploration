@@ -22,9 +22,11 @@ static NSString* KVOAndKVCIdentifier = @"KVOAndKVCIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"KVC&KVO实例详解";
-    self.titleArr = @[@"KVO监听数组"];
+    self.titleArr = @[@"KVO监听数组",
+                      @"手动触发KVO"];
     
-    self.vcArr = @[@"KVOObserveArrayVC"
+    self.vcArr = @[@"KVOObserveArrayVC",
+                   @"SetKVOViewController"
                    ];
     self.tableView.rowHeight = 44;
     self.tableView.tableFooterView = [[UIView alloc] init];

@@ -18,9 +18,13 @@
     [super viewDidLoad];
     
     self.title = @"IOS核心动画高级技巧(读书笔记)";
-    self.titleArr = @[@"专有图层"];
+    self.titleArr = @[@"2.寄宿图",
+                      @"3.图层几何学",
+                      @"6.专有图层"];
     
-    self.vcArr = @[@"CATransformVC"
+    self.vcArr = @[@"BoardViewLayerVC",
+                   @"LayerGeometryVC",
+                   @"CATransformVC"
                    ];
 }
 

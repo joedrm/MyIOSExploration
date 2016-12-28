@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16B137851E1408B700A39AE0 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B137841E1408B700A39AE0 /* WDYLibrary.framework */; };
+		16B137861E1408B700A39AE0 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16B137841E1408B700A39AE0 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16B1378B1E1409B900A39AE0 /* SetKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B1378A1E1409B900A39AE0 /* SetKVOViewController.m */; };
 		20ACF19C1E0A71DD00916787 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF19B1E0A71DD00916787 /* main.m */; };
 		20ACF19F1E0A71DD00916787 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF19E1E0A71DD00916787 /* AppDelegate.m */; };
 		20ACF1A21E0A71DD00916787 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1A11E0A71DD00916787 /* ViewController.m */; };
@@ -18,7 +21,24 @@
 		20ACF1B91E0A720900916787 /* KVOObserveArrayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF1B61E0A720900916787 /* KVOObserveArrayVC.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		16B137871E1408B700A39AE0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16B137861E1408B700A39AE0 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		16B137841E1408B700A39AE0 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B137891E1409B900A39AE0 /* SetKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetKVOViewController.h; sourceTree = "<group>"; };
+		16B1378A1E1409B900A39AE0 /* SetKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetKVOViewController.m; sourceTree = "<group>"; };
 		20ACF1971E0A71DD00916787 /* KVC&KVO实例详解.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KVC&KVO实例详解.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20ACF19B1E0A71DD00916787 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20ACF19D1E0A71DD00916787 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,15 +61,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B137851E1408B700A39AE0 /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B137881E14095800A39AE0 /* 手动触发KVO */ = {
+			isa = PBXGroup;
+			children = (
+				16B137891E1409B900A39AE0 /* SetKVOViewController.h */,
+				16B1378A1E1409B900A39AE0 /* SetKVOViewController.m */,
+			);
+			path = "手动触发KVO";
+			sourceTree = "<group>";
+		};
 		20ACF18E1E0A71DC00916787 = {
 			isa = PBXGroup;
 			children = (
+				16B137841E1408B700A39AE0 /* WDYLibrary.framework */,
 				20ACF1991E0A71DD00916787 /* KVC&KVO实例详解 */,
 				20ACF1981E0A71DD00916787 /* Products */,
 			);
@@ -72,6 +103,7 @@
 				20ACF1A11E0A71DD00916787 /* ViewController.m */,
 				20ACF1B11E0A720900916787 /* KVCAndKVOViewController.h */,
 				20ACF1B21E0A720900916787 /* KVCAndKVOViewController.m */,
+				16B137881E14095800A39AE0 /* 手动触发KVO */,
 				20ACF1B31E0A720900916787 /* KVO监听数组 */,
 				20ACF1A31E0A71DD00916787 /* Main.storyboard */,
 				20ACF1A61E0A71DD00916787 /* Assets.xcassets */,
@@ -110,6 +142,7 @@
 				20ACF1931E0A71DD00916787 /* Sources */,
 				20ACF1941E0A71DD00916787 /* Frameworks */,
 				20ACF1951E0A71DD00916787 /* Resources */,
+				16B137871E1408B700A39AE0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,7 +164,7 @@
 				TargetAttributes = {
 					20ACF1961E0A71DD00916787 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 2T6XGQJFJM;
+						DevelopmentTeam = DSHJC97KG4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -173,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B1378B1E1409B900A39AE0 /* SetKVOViewController.m in Sources */,
 				20ACF1A21E0A71DD00916787 /* ViewController.m in Sources */,
 				20ACF19F1E0A71DD00916787 /* AppDelegate.m in Sources */,
 				20ACF1B71E0A720900916787 /* KVCAndKVOViewController.m in Sources */,
@@ -295,7 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
 				INFOPLIST_FILE = "KVC&KVO实例详解/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.KVC-KVO----";
@@ -307,7 +341,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
 				INFOPLIST_FILE = "KVC&KVO实例详解/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.KVC-KVO----";
@@ -334,6 +368,7 @@
 				20ACF1B01E0A71DD00916787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

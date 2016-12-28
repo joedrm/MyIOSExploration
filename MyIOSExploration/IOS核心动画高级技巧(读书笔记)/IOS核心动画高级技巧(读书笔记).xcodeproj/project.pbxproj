@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16B1378F1E140EAE00A39AE0 /* BoardViewLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B1378E1E140EAE00A39AE0 /* BoardViewLayerVC.m */; };
+		16B137911E140FC700A39AE0 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16B137901E140FC700A39AE0 /* test.jpg */; };
+		16B137951E141A4E00A39AE0 /* LayerGeometryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B137941E141A4E00A39AE0 /* LayerGeometryVC.m */; };
 		16EB8E0E1E12A067008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; };
 		16EB8E0F1E12A067008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20D515221E12876F000FBD5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D515211E12876F000FBD5D /* main.m */; };
@@ -34,6 +37,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16B1378D1E140EAE00A39AE0 /* BoardViewLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardViewLayerVC.h; sourceTree = "<group>"; };
+		16B1378E1E140EAE00A39AE0 /* BoardViewLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardViewLayerVC.m; sourceTree = "<group>"; };
+		16B137901E140FC700A39AE0 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		16B137931E141A4E00A39AE0 /* LayerGeometryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerGeometryVC.h; sourceTree = "<group>"; };
+		16B137941E141A4E00A39AE0 /* LayerGeometryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerGeometryVC.m; sourceTree = "<group>"; };
 		16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D5151D1E12876F000FBD5D /* IOS核心动画高级技巧(读书笔记).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS核心动画高级技巧(读书笔记).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D515211E12876F000FBD5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +74,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B1378C1E140E4A00A39AE0 /* 2.寄宿图 */ = {
+			isa = PBXGroup;
+			children = (
+				16B1378D1E140EAE00A39AE0 /* BoardViewLayerVC.h */,
+				16B1378E1E140EAE00A39AE0 /* BoardViewLayerVC.m */,
+			);
+			path = "2.寄宿图";
+			sourceTree = "<group>";
+		};
+		16B137921E1419E900A39AE0 /* 3.图层几何学 */ = {
+			isa = PBXGroup;
+			children = (
+				16B137931E141A4E00A39AE0 /* LayerGeometryVC.h */,
+				16B137941E141A4E00A39AE0 /* LayerGeometryVC.m */,
+			);
+			path = "3.图层几何学";
+			sourceTree = "<group>";
+		};
 		20D515141E12876F000FBD5D = {
 			isa = PBXGroup;
 			children = (
@@ -92,9 +118,12 @@
 				20D515241E12876F000FBD5D /* AppDelegate.m */,
 				20D515261E12876F000FBD5D /* ViewController.h */,
 				20D515271E12876F000FBD5D /* ViewController.m */,
+				16B137921E1419E900A39AE0 /* 3.图层几何学 */,
+				16B1378C1E140E4A00A39AE0 /* 2.寄宿图 */,
 				20D5153F1E1289AB000FBD5D /* 6.专有图层 */,
 				20D515291E12876F000FBD5D /* Main.storyboard */,
 				20D5152C1E12876F000FBD5D /* Assets.xcassets */,
+				16B137901E140FC700A39AE0 /* test.jpg */,
 				20D5152E1E12876F000FBD5D /* LaunchScreen.storyboard */,
 				20D515311E12876F000FBD5D /* Info.plist */,
 				20D515201E12876F000FBD5D /* Supporting Files */,
@@ -203,6 +232,7 @@
 				20D515301E12876F000FBD5D /* LaunchScreen.storyboard in Resources */,
 				20D5152D1E12876F000FBD5D /* Assets.xcassets in Resources */,
 				20D5152B1E12876F000FBD5D /* Main.storyboard in Resources */,
+				16B137911E140FC700A39AE0 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +293,9 @@
 			files = (
 				20D515281E12876F000FBD5D /* ViewController.m in Sources */,
 				20D515251E12876F000FBD5D /* AppDelegate.m in Sources */,
+				16B137951E141A4E00A39AE0 /* LayerGeometryVC.m in Sources */,
 				20D515421E1289AB000FBD5D /* ProperLayerViewController.m in Sources */,
+				16B1378F1E140EAE00A39AE0 /* BoardViewLayerVC.m in Sources */,
 				20D515221E12876F000FBD5D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
