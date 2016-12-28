@@ -45,3 +45,14 @@ target :'CALayer及核心动画' do
     pod 'Masonry'
     project 'CALayer及核心动画/CALayer及核心动画.xcodeproj'
 end
+
+
+use_frameworks!
+target :'IOS核心动画高级技巧(读书笔记)' do
+    platform :ios, '8.0'
+    pod 'WDYBaseProject','~> 0.2.4'
+    project 'IOS核心动画高级技巧(读书笔记)/IOS核心动画高级技巧(读书笔记).xcodeproj'
+end
+
+
+
