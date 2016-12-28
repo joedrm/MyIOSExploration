@@ -43,8 +43,11 @@
 #import "UIDevice+Hardware.h"
 #import "UIImage+Color.h"
 #import "UIImage+Crop.h"
+#import "UIImage+Gif.h"
+#import "UIImage+ImageEffects.h"
 #import "UIImage+RemoteSize.h"
 #import "UIImage+SubImage.h"
+#import "UIImageView+Blur.h"
 #import "UINavigationController+StackManager.h"
 #import "UITableView+Common.h"
 #import "UIView+Animation.h"
@@ -54,6 +57,10 @@
 #import "UIView+Nib.h"
 #import "UIViewController+Current.h"
 #import "WDYCategory.h"
+#import "WDYMacros.h"
+#import "UIImageView+AnimForSDWebImage.h"
+#import "LayoutButton.h"
+#import "WDYUIHeader.h"
 
 FOUNDATION_EXPORT double WDYBaseProjectVersionNumber;
 FOUNDATION_EXPORT const unsigned char WDYBaseProjectVersionString[];

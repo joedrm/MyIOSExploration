@@ -8,12 +8,19 @@ PODS:
   - ReactiveCocoa (4.2.2):
     - Result (~> 2.0)
   - Result (2.1.3)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
-  - WDYBaseProject (0.1.8):
-    - WDYBaseProject/Category (= 0.1.8)
-  - WDYBaseProject/Category (0.1.8)
+  - SDWebImage (3.8.0):
+    - SDWebImage/Core (= 3.8.0)
+  - SDWebImage/Core (3.8.0)
+  - WDYBaseProject (0.2.4):
+    - WDYBaseProject/Category (= 0.2.4)
+    - WDYBaseProject/Macros (= 0.2.4)
+    - WDYBaseProject/Other (= 0.2.4)
+    - WDYBaseProject/UI (= 0.2.4)
+  - WDYBaseProject/Category (0.2.4)
+  - WDYBaseProject/Macros (0.2.4)
+  - WDYBaseProject/Other (0.2.4):
+    - SDWebImage (= 3.8.0)
+  - WDYBaseProject/UI (0.2.4)
   - WDYKit (0.1.1)
 
 DEPENDENCIES:
@@ -23,7 +30,7 @@ DEPENDENCIES:
   - MMPlaceHolder
   - ReactiveCocoa
   - SDWebImage
-  - WDYBaseProject
+  - WDYBaseProject (~> 0.2.4)
   - WDYKit (from `/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/WDYKit`)
 
 EXTERNAL SOURCES:
@@ -37,10 +44,10 @@ SPEC CHECKSUMS:
   MMPlaceHolder: 40212b9dfe8760134b1b2fce3232f0d46200178f
   ReactiveCocoa: 72263e7ac0770c274617ccd345e01049d0ca38ae
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  WDYBaseProject: 4be6792951a26c8ba80ac70d9ab2290e60f98dc9
+  SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
+  WDYBaseProject: 81192852b4d26a127c99eee8b76f5ab618d058f4
   WDYKit: be022200cf9dfe1803d98dc5d49ff984a4a88047
 
-PODFILE CHECKSUM: f72c392c3c4e28c2345666199313c744ee9e14aa
+PODFILE CHECKSUM: b32736b69e35cc09fcbf3b1c4f8485949ac6e44f
 
 COCOAPODS: 1.1.1

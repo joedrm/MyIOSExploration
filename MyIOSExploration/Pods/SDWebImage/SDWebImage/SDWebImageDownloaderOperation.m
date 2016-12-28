@@ -73,7 +73,7 @@ NSString *const SDWebImageDownloadFinishNotification = @"SDWebImageDownloadFinis
             completed:(SDWebImageDownloaderCompletedBlock)completedBlock
             cancelled:(SDWebImageNoParamsBlock)cancelBlock {
     if ((self = [super init])) {
-        _request = [request copy];
+        _request = request;
         _shouldDecompressImages = YES;
         _options = options;
         _progressBlock = [progressBlock copy];
@@ -404,14 +404,12 @@ didReceiveResponse:(NSURLResponse *)response
     } else {
         SDWebImageDownloaderCompletedBlock completionBlock = self.completedBlock;
         
+        if (![[NSURLCache sharedURLCache] cachedResponseForRequest:_request]) {
+            responseFromCached = NO;
+        }
+        
         if (completionBlock) {
-            /**
-             *  See #1608 and #1623 - apparently, there is a race condition on `NSURLCache` that causes a crash
-             *  Limited the calls to `cachedResponseForRequest:` only for cases where we should ignore the cached response
-             *    and images for which responseFromCached is YES (only the ones that cannot be cached).
-             *  Note: responseFromCached is set to NO inside `willCacheResponse:`. This method doesn't get called for large images or images behind authentication 
-             */
-            if (self.options & SDWebImageDownloaderIgnoreCachedResponse && responseFromCached && [[NSURLCache sharedURLCache] cachedResponseForRequest:self.request]) {
+            if (self.options & SDWebImageDownloaderIgnoreCachedResponse && responseFromCached) {
                 completionBlock(nil, nil, nil, YES);
             } else if (self.imageData) {
                 UIImage *image = [UIImage sd_imageWithData:self.imageData];

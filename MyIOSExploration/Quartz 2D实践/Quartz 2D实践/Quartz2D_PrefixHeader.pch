@@ -13,6 +13,10 @@
 #import <Masonry/Masonry.h>
 #import "ImageUtil.h"
 #import <WDYLibrary/WDYLibrary.h>
+
 #import <WDYBaseProject/WDYCategory.h>
+#import <WDYBaseProject/WDYMacros.h>
+#import <WDYBaseProject/WDYUIHeader.h>
+
 
 #endif /* Quartz2D_PrefixHeader_pch */

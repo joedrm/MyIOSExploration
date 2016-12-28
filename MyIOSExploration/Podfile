@@ -23,7 +23,7 @@ use_frameworks!
 target :'Quartz 2D实践' do
     platform :ios, '8.0'
     pod 'Masonry'
-    pod 'WDYBaseProject'
+    pod 'WDYBaseProject','~> 0.2.4'
     project 'Quartz 2D实践/Quartz 2D实践.xcodeproj'
     #pod 'WDYLibrary', :path => './WDYLibrary'
 end

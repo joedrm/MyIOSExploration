@@ -8,55 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-/**
- *  UIScreen width.
- */
-#define  ScreenWidth   [UIScreen mainScreen].bounds.size.width
 
-/**
- *  UIScreen height.
- */
-#define  ScreenHeight  [UIScreen mainScreen].bounds.size.height
 
-/**
- *  Status bar height.
- */
-#define  StatusBarHeight      20.f
-
-/**
- *  Navigation bar height.
- */
-#define  NavigationBarHeight  44.f
-
-/**
- *  Tabbar height.
- */
-#define  TabbarHeight         49.f
-
-/**
- *  Status bar & navigation bar height.
- */
-#define  StatusBarAndNavigationBarHeight   (20.f + 44.f)
-
-/**
- *  iPhone4 or iPhone4s
- */
-#define  iPhone4_4s     (Width == 320.f && Height == 480.f ? YES : NO)
-
-/**
- *  iPhone5 or iPhone5s
- */
-#define  iPhone5_5s     (Width == 320.f && Height == 568.f ? YES : NO)
-
-/**
- *  iPhone6 or iPhone6s
- */
-#define  iPhone6_6s     (Width == 375.f && Height == 667.f ? YES : NO)
-
-/**
- *  iPhone6Plus or iPhone6sPlus
- */
-#define  iPhone6_6sPlus (Width == 414.f && Height == 736.f ? YES : NO)
 
 @interface UIView (Frame)
 /**
