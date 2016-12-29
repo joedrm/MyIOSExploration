@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor grayColor];
     
     UIView* layerView = [[UIView alloc] init];
     layerView.backgroundColor = [UIColor whiteColor];
@@ -26,7 +27,8 @@
     self.layerView = layerView;
     
     // 1. contents 属性
-    // contents这个奇怪的表现是由Mac OS的历史原因造成的。它之所以被定义为id类型，是因为在Mac OS系统上，这个属性对CGImage和NSImage类型的值都起作用。
+    // contents这个奇怪的表现是由Mac OS的历史原因造成的。它之所以被定义为id类型，是因为在Mac OS系统上，
+    // 这个属性对CGImage和NSImage类型的值都起作用。
     UIImage* image = [UIImage imageNamed:@"test.jpg"];
     self.layerView.layer.contents = (__bridge id _Nullable)(image.CGImage);
     
@@ -63,12 +65,12 @@
     // 和bounds，frame不同，contentsRect不是按点来计算的，它使用了单位坐标，单位坐标指定在0到1之间，是一个相对值（像素和点就是绝对值）。所以它们是相对与寄宿图的尺寸的, 默认的contentsRect是{0, 0, 1, 1}，这意味着整个寄宿图默认都是可见的，如果我们指定一个小一点的矩形，图片就会被裁剪，常被用于图片拼合
     UIView* topView = [[UIView alloc] init];
     topView.backgroundColor = [UIColor whiteColor];
-    topView.frame = CGRectMake(0, 0, 100, 100);
+    topView.frame = CGRectMake(0, kNavigationBarHeight, 100, 100);
     [self.view addSubview:topView];
     
     UIView* bottomView = [[UIView alloc] init];
     bottomView.backgroundColor = [UIColor whiteColor];
-    bottomView.frame = CGRectMake(0, self.view.frame.size.height - 100, 100, 100);
+    bottomView.frame = CGRectMake(0, self.view.height - 100, 100, 100);
     [self.view addSubview:bottomView];
     
     [self addSpriteImage:image withContentRect:CGRectMake(0, 0, 1, 0.5) toLayer:topView.layer];
@@ -78,12 +80,9 @@
     // contentsCenter其实是一个CGRect，它定义了一个固定的边框和一个在图层上可拉伸的区域。 改变contentsCenter的值并不会影响到寄宿图的显示，除非这个图层的大小改变了，你才看得到效果，默认情况下，contentsCenter是{0, 0, 1, 1}，这意味着如果大小（由conttensGravity决定）改变了,那么寄宿图将会均匀地拉伸开, 工作起来的效果和UIImage里的-resizableImageWithCapInsets: 方法效果非常类似
     UIButton* btn = [[UIButton alloc] init];
     [btn setBackgroundColor:[UIColor redColor]];
-    btn.frame = CGRectMake(self.view.frame.size.width - 100, 80, 100, 100);
+    btn.frame = CGRectMake(self.view.width - 100, 80, 100, 100);
     [self.view addSubview:btn];
     [self addStretchableImage:image withContentCenter:CGRectMake(0.25, 0.25, 0.5, 0.5) toLayer:btn.layer];
-    
-    
-    // 7. 
 }
 
 // contentsRect: 图片合并或拆分
