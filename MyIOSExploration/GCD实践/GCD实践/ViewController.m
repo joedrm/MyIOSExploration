@@ -8,6 +8,10 @@
 
 /*
  https://github.com/YouXianMing/GCD-Program GCD的封装
+ https://github.com/ibireme/YYKit   很多关于异步绘制、线程安全的实践，需要反复阅读
+    https://github.com/ibireme/YYKit/blob/master/YYKit/Utility/YYTimer.h   dispatch_source_t和dispatch_semaphore_t实现的定时器
+    https://github.com/ibireme/YYKit/blob/master/YYKit/Utility/YYThreadSafeArray.h  线程安全的数组
+    https://github.com/ibireme/YYKit/blob/master/YYKit/Utility/YYAsyncLayer.h  layer的异步绘制
  
  
  */
