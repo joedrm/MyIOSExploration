@@ -12,6 +12,7 @@
     https://github.com/ibireme/YYKit/blob/master/YYKit/Utility/YYTimer.h   dispatch_source_t和dispatch_semaphore_t实现的定时器
     https://github.com/ibireme/YYKit/blob/master/YYKit/Utility/YYThreadSafeArray.h  线程安全的数组
     https://github.com/ibireme/YYKit/blob/master/YYKit/Utility/YYAsyncLayer.h  layer的异步绘制
+    http://dreamerpanda.cn/2016/07/18/YYCache-analyzing/
  
  
  */
