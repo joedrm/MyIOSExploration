@@ -10,6 +10,10 @@
 		16B1378F1E140EAE00A39AE0 /* BoardViewLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B1378E1E140EAE00A39AE0 /* BoardViewLayerVC.m */; };
 		16B137911E140FC700A39AE0 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16B137901E140FC700A39AE0 /* test.jpg */; };
 		16B137951E141A4E00A39AE0 /* LayerGeometryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B137941E141A4E00A39AE0 /* LayerGeometryVC.m */; };
+		16B137991E15529B00A39AE0 /* VisualEffectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B137981E15529B00A39AE0 /* VisualEffectVC.m */; };
+		16B1379B1E155A1500A39AE0 /* VisualEffectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B1379A1E155A1500A39AE0 /* VisualEffectVC.xib */; };
+		16B137A01E1565E500A39AE0 /* TransformVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B1379E1E1565E500A39AE0 /* TransformVC.m */; };
+		16B137A11E1565E500A39AE0 /* TransformVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B1379F1E1565E500A39AE0 /* TransformVC.xib */; };
 		16EB8E0E1E12A067008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; };
 		16EB8E0F1E12A067008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20D515221E12876F000FBD5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D515211E12876F000FBD5D /* main.m */; };
@@ -42,6 +46,12 @@
 		16B137901E140FC700A39AE0 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		16B137931E141A4E00A39AE0 /* LayerGeometryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerGeometryVC.h; sourceTree = "<group>"; };
 		16B137941E141A4E00A39AE0 /* LayerGeometryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerGeometryVC.m; sourceTree = "<group>"; };
+		16B137971E15529B00A39AE0 /* VisualEffectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualEffectVC.h; sourceTree = "<group>"; };
+		16B137981E15529B00A39AE0 /* VisualEffectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualEffectVC.m; sourceTree = "<group>"; };
+		16B1379A1E155A1500A39AE0 /* VisualEffectVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisualEffectVC.xib; sourceTree = "<group>"; };
+		16B1379D1E1565E500A39AE0 /* TransformVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformVC.h; sourceTree = "<group>"; };
+		16B1379E1E1565E500A39AE0 /* TransformVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformVC.m; sourceTree = "<group>"; };
+		16B1379F1E1565E500A39AE0 /* TransformVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformVC.xib; sourceTree = "<group>"; };
 		16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D5151D1E12876F000FBD5D /* IOS核心动画高级技巧(读书笔记).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS核心动画高级技巧(读书笔记).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D515211E12876F000FBD5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +102,26 @@
 			path = "3.图层几何学";
 			sourceTree = "<group>";
 		};
+		16B137961E15526600A39AE0 /* 4.视觉效果 */ = {
+			isa = PBXGroup;
+			children = (
+				16B137971E15529B00A39AE0 /* VisualEffectVC.h */,
+				16B137981E15529B00A39AE0 /* VisualEffectVC.m */,
+				16B1379A1E155A1500A39AE0 /* VisualEffectVC.xib */,
+			);
+			path = "4.视觉效果";
+			sourceTree = "<group>";
+		};
+		16B1379C1E1565CD00A39AE0 /* 5.变换 */ = {
+			isa = PBXGroup;
+			children = (
+				16B1379D1E1565E500A39AE0 /* TransformVC.h */,
+				16B1379E1E1565E500A39AE0 /* TransformVC.m */,
+				16B1379F1E1565E500A39AE0 /* TransformVC.xib */,
+			);
+			path = "5.变换";
+			sourceTree = "<group>";
+		};
 		20D515141E12876F000FBD5D = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +149,8 @@
 				20D515261E12876F000FBD5D /* ViewController.h */,
 				20D515271E12876F000FBD5D /* ViewController.m */,
 				20D5153F1E1289AB000FBD5D /* 6.专有图层 */,
+				16B1379C1E1565CD00A39AE0 /* 5.变换 */,
+				16B137961E15526600A39AE0 /* 4.视觉效果 */,
 				16B137921E1419E900A39AE0 /* 3.图层几何学 */,
 				16B1378C1E140E4A00A39AE0 /* 2.寄宿图 */,
 				20D515291E12876F000FBD5D /* Main.storyboard */,
@@ -230,7 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20D515301E12876F000FBD5D /* LaunchScreen.storyboard in Resources */,
+				16B137A11E1565E500A39AE0 /* TransformVC.xib in Resources */,
 				20D5152D1E12876F000FBD5D /* Assets.xcassets in Resources */,
+				16B1379B1E155A1500A39AE0 /* VisualEffectVC.xib in Resources */,
 				20D5152B1E12876F000FBD5D /* Main.storyboard in Resources */,
 				16B137911E140FC700A39AE0 /* test.jpg in Resources */,
 			);
@@ -291,10 +325,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B137991E15529B00A39AE0 /* VisualEffectVC.m in Sources */,
 				20D515281E12876F000FBD5D /* ViewController.m in Sources */,
 				20D515251E12876F000FBD5D /* AppDelegate.m in Sources */,
 				16B137951E141A4E00A39AE0 /* LayerGeometryVC.m in Sources */,
 				20D515421E1289AB000FBD5D /* ProperLayerViewController.m in Sources */,
+				16B137A01E1565E500A39AE0 /* TransformVC.m in Sources */,
 				16B1378F1E140EAE00A39AE0 /* BoardViewLayerVC.m in Sources */,
 				20D515221E12876F000FBD5D /* main.m in Sources */,
 			);
