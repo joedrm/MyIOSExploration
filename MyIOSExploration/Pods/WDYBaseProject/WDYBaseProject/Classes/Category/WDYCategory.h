@@ -12,7 +12,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-
 // 分类
 #import "NSBundle+AppIcon.h"
 #import "NSDictionary+Merge.h"
@@ -67,6 +66,7 @@
 #import "UIGestureRecognizer+ALActionBlocks.h"
 
 #import "UIControl+Delay.h"
+#import "UIControl+ActionBlock.h"
 
 #import "UIDevice+Hardware.h"
 
@@ -88,9 +88,12 @@
 #import "UIView+Frame.h"
 #import "UIView+Nib.h"
 
+#import "UIScrollView+Common.h"
+
 // UIViewController 分类
 #import "UIViewController+Current.h"
-
+#import "UIViewController+NaviExtentions.h"
+#import "UIViewController+BackButtonHandler.h"
 
 
 

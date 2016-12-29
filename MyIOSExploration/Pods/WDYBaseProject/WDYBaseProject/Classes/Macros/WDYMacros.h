@@ -102,23 +102,35 @@
 #define kNotificationCenter [NSNotificationCenter defaultCenter]
 
 
-//存储对象
+// NSUserDefaults存储对象
 
 #define kUserDefaultSetObjectForKey(__VALUE__,__KEY__) \
 {\
 [[NSUserDefaults standardUserDefaults] setObject:__VALUE__ forKey:__KEY__];\
 [[NSUserDefaults standardUserDefaults] synchronize];\
 }
-//获得存储的对象
+// 获得存储的对象
 #define kUserDefaultObjectForKey(__KEY__)  [[NSUserDefaults standardUserDefaults] objectForKey:__KEY__]
 
-//     删除对象
+// 删除对象
 #define kUserDefaultRemoveObjectForKey(__KEY__) \
 {\
 [[NSUserDefaults standardUserDefaults] removeObjectForKey:__KEY__];\
 [[NSUserDefaults standardUserDefaults] synchronize];\
 }
 
+// 主队列
+#define kMainThread (dispatch_get_main_queue())
+// 全局队列
+#define kGlobalThread dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
+// 加载本地图片
+#define kImage(Name) ([UIImage imageNamed:Name])
+#define kImageOfFile(Name) ([UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:Name ofType:nil]])
+
+// 字体
+#define kFontWithSize(size) [UIFont systemFontOfSize:size]
+#define kBoldFontWithSize(size) [UIFont boldSystemFontOfSize:size]
 
 #endif /* WDYMacros_h */
 

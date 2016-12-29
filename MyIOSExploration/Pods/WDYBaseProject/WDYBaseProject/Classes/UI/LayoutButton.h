@@ -4,7 +4,7 @@
 //
 //  Created by fang wang on 16/12/28.
 //
-//
+// 自定义的按钮，主要用于图片文字布局的计算
 
 #import <UIKit/UIKit.h>
 
