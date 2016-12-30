@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GDCTimerVC : UIViewController
+@interface GDCTimerVC : BaseViewController
 
 @end

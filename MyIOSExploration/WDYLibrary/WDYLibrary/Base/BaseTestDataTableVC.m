@@ -47,6 +47,7 @@ static NSString* BaseTestDataTableVCIdentifier = @"BaseTestDataTableVCIdentifier
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     id class = NSClassFromString(self.vcArr[indexPath.row]);
     UIViewController* vc = [[class alloc] init];
+    vc.title = self.titleArr[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

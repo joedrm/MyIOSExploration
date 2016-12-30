@@ -22,3 +22,4 @@ FOUNDATION_EXPORT const unsigned char WDYLibraryVersionString[];
 
 #import "BaseTestDataTableVC.h"
 #import "UIView+SetRect.h"
+#import "BaseViewController.h"

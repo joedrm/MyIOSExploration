@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DispatchSourceVC : UIViewController
+@interface DispatchSourceVC : BaseViewController
 
 @end

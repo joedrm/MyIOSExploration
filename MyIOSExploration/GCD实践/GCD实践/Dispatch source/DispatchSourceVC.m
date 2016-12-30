@@ -324,5 +324,6 @@ void RemoveDispatchSource(dispatch_source_t mySource)
  
  IOS dispatch source 学习篇： http://www.jianshu.com/p/2f6eed90bb9d
  iOS多线程——Dispatch Source： http://www.jianshu.com/p/880c2f9301b6
+ https://github.com/ChenYilong/ParseSourceCodeStudy/blob/master/01_Parse%E7%9A%84%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/Parse%E7%9A%84%E5%BA%95%E5%B1%82%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF.md#%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAdispatch-source
  */
 @end
