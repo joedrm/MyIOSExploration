@@ -6,6 +6,14 @@
 //  Copyright © 2016年 wdy. All rights reserved.
 //
 
+// 参考资料
+/*
+    https://github.com/daria-kopaliani/DAPagesContainer
+    https://github.com/daria-kopaliani/DARecycledScrollView
+    https://github.com/daria-kopaliani/DAPageControlView
+ */
+
+
 #import "ViewController.h"
 #import "TestViewController.h"
 
