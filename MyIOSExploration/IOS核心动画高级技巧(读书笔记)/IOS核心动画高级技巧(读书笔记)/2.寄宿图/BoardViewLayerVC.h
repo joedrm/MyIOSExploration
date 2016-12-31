@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BoardViewLayerVC : UIViewController
+@interface BoardViewLayerVC : BaseViewController
 
 @end

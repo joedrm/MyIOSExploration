@@ -10,7 +10,6 @@
 
 @interface VisualEffectVC ()
 @property (weak, nonatomic) IBOutlet UIView *redView;
-
 @property (weak, nonatomic) IBOutlet UIView *greenView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIButton *button;
@@ -61,15 +60,12 @@
     
     // 7. 拉伸过滤，minificationFilter和magnificationFilter属性, 三种拉伸过滤方法，他们是：
     /*
-     
     kCAFilterLinear: minification（缩小图片）和magnification（放大图片）默认的过滤器都是kCAFilterLinear, 采用双线性滤波算法，它在大多数情况下都表现良好。双线性滤波算法通过对多个像素取样最终生成新的值，得到一个平滑的表现不错的拉伸。但是当放大倍数比较大的时候图片就模糊不清了。
      
     kCAFilterNearest: kCAFilterNearest是一种比较武断的方法。从名字不难看出，这个算法（也叫最近过滤）就是取样最近的单像素点而不管其他的颜色。这样做非常快，也不会使图片模糊。但是，最明显的效果就是，会使得压缩图片更糟，图片放大之后也显得块状或是马赛克严重。
      
     kCAFilterTrilinear: kCAFilterTrilinear和kCAFilterLinear非常相似，大部分情况下二者都看不出来有什么差别。但是，较双线性滤波算法而言，三线性滤波算法存储了多个大小情况下的图片（也叫多重贴图），并三维取样，同时结合大图和小图的存储进而�得到最后的结果。
-     
      */
-    //
     
     
     

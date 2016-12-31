@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProperLayerViewController : UIViewController
+@interface ProperLayerViewController : BaseViewController
 
 @end

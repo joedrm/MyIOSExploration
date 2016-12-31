@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VisualEffectVC : UIViewController
+@interface VisualEffectVC : BaseViewController
 
 @end

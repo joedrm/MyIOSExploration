@@ -10,6 +10,8 @@
 #define IOS_Core_Anim_Header_pch
 
 
+#import <WDYLibrary/WDYLibrary.h>
+
 #import <WDYBaseProject/WDYCategory.h>
 #import <WDYBaseProject/WDYMacros.h>
 #import <WDYBaseProject/WDYUIHeader.h>

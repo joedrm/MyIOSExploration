@@ -23,7 +23,6 @@ PODS:
     - SDWebImage (= 3.8.0)
   - WDYBaseProject/UI (0.2.8)
   - WDYBaseProject/Utils (0.2.8)
-  - WDYKit (0.1.1)
 
 DEPENDENCIES:
   - FMDB
@@ -33,11 +32,6 @@ DEPENDENCIES:
   - ReactiveCocoa
   - SDWebImage
   - WDYBaseProject (~> 0.2.8)
-  - WDYKit (from `/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/WDYKit`)
-
-EXTERNAL SOURCES:
-  WDYKit:
-    :path: /Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/WDYKit
 
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
@@ -48,8 +42,7 @@ SPEC CHECKSUMS:
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
   SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
   WDYBaseProject: 9b1da2b6e2f966e3fcf2615cc237ac31d93fb744
-  WDYKit: be022200cf9dfe1803d98dc5d49ff984a4a88047
 
-PODFILE CHECKSUM: 595ec75b756f73e21721cdfcb743e83aca858ff4
+PODFILE CHECKSUM: 2abcafcbc58cf8a285070810579ee41d07a1c3a1
 
 COCOAPODS: 1.1.1

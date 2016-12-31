@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TransformVC : UIViewController
+@interface TransformVC : BaseViewController
 
 @end
