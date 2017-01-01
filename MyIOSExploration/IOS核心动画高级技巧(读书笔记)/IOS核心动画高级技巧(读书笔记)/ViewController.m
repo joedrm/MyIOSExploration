@@ -22,13 +22,21 @@
                       @"3.图层几何学",
                       @"4.视觉效果",
                       @"5.变换",
-                      @"6.专有图层"];
+                      @"6.1 专有图层之 CAShapeLayer",
+                      @"6.2 专有图层之 CATextLayer",
+                      @"6.3 专有图层之 TransformLayer",
+                      @"6.4 专有图层之 CAGradientLayer",
+                      @"6.5 专有图层之 CAReplicatorLayer"];
     
     self.vcArr = @[@"BoardViewLayerVC",
                    @"LayerGeometryVC",
                    @"VisualEffectVC",
                    @"TransformVC",
-                   @"ProperLayerViewController"
+                   @"CAShapeLayerVC",
+                   @"CATextLayerVC",
+                   @"CATransformLayerVC",
+                   @"CAGradientLayerVC",
+                   @"CAReplicatorLayerVC"
                    ];
 }
 

@@ -239,8 +239,7 @@
     CALayer *layer = [CALayer layer];
     layer.frame = face.bounds;
     [face addSublayer:layer];
-    //convert the face transform to matrix
-    //(GLKMatrix4 has the same structure as CATransform3D)
+    
     //译者注：GLKMatrix4和CATransform3D内存结构一致，但坐标类型有长度区别，所以理论上应该做一次float到CGFloat的转换，感谢[@zihuyishi](https://github.com/zihuyishi)同学~
     CATransform3D transform = face.transform;
     GLKMatrix4 matrix4 = *(GLKMatrix4 *)&transform;

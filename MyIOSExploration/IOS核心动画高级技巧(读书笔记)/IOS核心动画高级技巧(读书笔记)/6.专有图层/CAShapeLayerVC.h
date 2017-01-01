@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProperLayerViewController : BaseViewController
+@interface CAShapeLayerVC : BaseViewController
 
 @end

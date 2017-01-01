@@ -17,4 +17,6 @@
 #import <WDYBaseProject/WDYUIHeader.h>
 
 
+#define KTextString   @"人在孤身逆旅中最易感怀人生，因为说到底，人生在世也无非是孤身逆旅罢了。聚散乃人生寻常事，却也足堪叹息。最可叹的是散时视为寻常，不料而聚无日，一别竟成永诀。或者青春相别，再见时皆已白头，彼此如同一面镜子，瞬间照出了岁月的无情流逝。—— 周国平《逆旅与聚散》"
+
 #endif /* IOS_Core_Anim_Header_pch */
