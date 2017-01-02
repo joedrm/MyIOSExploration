@@ -26,7 +26,9 @@
                       @"6.2 专有图层之 CATextLayer",
                       @"6.3 专有图层之 TransformLayer",
                       @"6.4 专有图层之 CAGradientLayer",
-                      @"6.5 专有图层之 CAReplicatorLayer"];
+                      @"6.5 专有图层之 CAReplicatorLayer",
+                      @"7.隐式动画",
+                      @"8.1 显式动画之 CABasicAnimation"];
     
     self.vcArr = @[@"BoardViewLayerVC",
                    @"LayerGeometryVC",
@@ -36,7 +38,9 @@
                    @"CATextLayerVC",
                    @"CATransformLayerVC",
                    @"CAGradientLayerVC",
-                   @"CAReplicatorLayerVC"
+                   @"CAReplicatorLayerVC",
+                   @"ImplicitViewController",
+                   @"CABasicAnimationVC"
                    ];
 }
 

@@ -20,6 +20,8 @@
 		16D178961E18DBC10089696A /* CATextLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D178951E18DBC10089696A /* CATextLayerVC.m */; };
 		16D178991E18E6F30089696A /* CAGradientLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D178981E18E6F30089696A /* CAGradientLayerVC.m */; };
 		16D1789C1E18EA620089696A /* CAReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1789B1E18EA620089696A /* CAReplicatorLayerVC.m */; };
+		16D178A01E18FF100089696A /* ImplicitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1789F1E18FF100089696A /* ImplicitViewController.m */; };
+		16D178A41E1A90BA0089696A /* CABasicAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D178A31E1A90BA0089696A /* CABasicAnimationVC.m */; };
 		16EB8E0E1E12A067008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; };
 		16EB8E0F1E12A067008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20D515221E12876F000FBD5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D515211E12876F000FBD5D /* main.m */; };
@@ -70,6 +72,10 @@
 		16D178981E18E6F30089696A /* CAGradientLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerVC.m; sourceTree = "<group>"; };
 		16D1789A1E18EA620089696A /* CAReplicatorLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAReplicatorLayerVC.h; sourceTree = "<group>"; };
 		16D1789B1E18EA620089696A /* CAReplicatorLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAReplicatorLayerVC.m; sourceTree = "<group>"; };
+		16D1789E1E18FF100089696A /* ImplicitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImplicitViewController.h; sourceTree = "<group>"; };
+		16D1789F1E18FF100089696A /* ImplicitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImplicitViewController.m; sourceTree = "<group>"; };
+		16D178A21E1A90BA0089696A /* CABasicAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationVC.h; sourceTree = "<group>"; };
+		16D178A31E1A90BA0089696A /* CABasicAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationVC.m; sourceTree = "<group>"; };
 		16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D5151D1E12876F000FBD5D /* IOS核心动画高级技巧(读书笔记).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS核心动画高级技巧(读书笔记).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D515211E12876F000FBD5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,6 +147,24 @@
 			path = "5.变换";
 			sourceTree = "<group>";
 		};
+		16D1789D1E18FEBE0089696A /* 7.隐式动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16D1789E1E18FF100089696A /* ImplicitViewController.h */,
+				16D1789F1E18FF100089696A /* ImplicitViewController.m */,
+			);
+			path = "7.隐式动画";
+			sourceTree = "<group>";
+		};
+		16D178A11E1A90450089696A /* 8.显式动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16D178A21E1A90BA0089696A /* CABasicAnimationVC.h */,
+				16D178A31E1A90BA0089696A /* CABasicAnimationVC.m */,
+			);
+			path = "8.显式动画";
+			sourceTree = "<group>";
+		};
 		20D515141E12876F000FBD5D = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +191,8 @@
 				20D515241E12876F000FBD5D /* AppDelegate.m */,
 				20D515261E12876F000FBD5D /* ViewController.h */,
 				20D515271E12876F000FBD5D /* ViewController.m */,
+				16D178A11E1A90450089696A /* 8.显式动画 */,
+				16D1789D1E18FEBE0089696A /* 7.隐式动画 */,
 				20D5153F1E1289AB000FBD5D /* 6.专有图层 */,
 				16B1379C1E1565CD00A39AE0 /* 5.变换 */,
 				16B137961E15526600A39AE0 /* 4.视觉效果 */,
@@ -367,7 +393,9 @@
 				16D1788E1E18D2370089696A /* LayerLabel.m in Sources */,
 				16B137A01E1565E500A39AE0 /* TransformVC.m in Sources */,
 				16D1789C1E18EA620089696A /* CAReplicatorLayerVC.m in Sources */,
+				16D178A01E18FF100089696A /* ImplicitViewController.m in Sources */,
 				16B1378F1E140EAE00A39AE0 /* BoardViewLayerVC.m in Sources */,
+				16D178A41E1A90BA0089696A /* CABasicAnimationVC.m in Sources */,
 				20D515221E12876F000FBD5D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
