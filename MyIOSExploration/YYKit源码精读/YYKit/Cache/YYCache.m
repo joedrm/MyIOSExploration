@@ -1,13 +1,16 @@
 //
 //  YYCache.m
 //  YYKit <https://github.com/ibireme/YYKit>
-//
-//  Created by ibireme on 15/2/13.
-//  Copyright (c) 2015 ibireme.
-//
-//  This source code is licensed under the MIT-style license found in the
-//  LICENSE file in the root directory of this source tree.
-//
+
+
+
+/* 源码解读资料
+ http://www.jianshu.com/p/88b33bfa82ca
+ 
+ */
+
+
+
 
 #import "YYCache.h"
 #import "YYMemoryCache.h"
