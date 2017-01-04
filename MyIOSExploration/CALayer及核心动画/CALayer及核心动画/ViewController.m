@@ -32,7 +32,9 @@
  https://github.com/shu223/AnimatedTransitionGallery
  https://github.com/jhurray/JHChainableAnimations
  https://github.com/adad184/MMTweenAnimation
+ https://github.com/Raizlabs/RZTransitions
  
+ https://github.com/bryanoltman/CAAnimation-EasingEquations
  
  Facebook-POP
  

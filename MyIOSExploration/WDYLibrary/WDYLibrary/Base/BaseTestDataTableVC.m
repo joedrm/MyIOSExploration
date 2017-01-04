@@ -38,13 +38,18 @@ static NSString* BaseTestDataTableVCIdentifier = @"BaseTestDataTableVCIdentifier
     }
     cell.textLabel.font = [UIFont systemFontOfSize:15];
     cell.textLabel.numberOfLines = 0;
-    cell.textLabel.text = self.titleArr[indexPath.row];
+    if (self.titleArr.count) {
+        cell.textLabel.text = self.titleArr[indexPath.row];
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (!self.vcArr.count || !self.titleArr.count || (self.vcArr.count != self.titleArr.count)) {
+        return;
+    }
     id class = NSClassFromString(self.vcArr[indexPath.row]);
     UIViewController* vc = [[class alloc] init];
     vc.title = self.titleArr[indexPath.row];
