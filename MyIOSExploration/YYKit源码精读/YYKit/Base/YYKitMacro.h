@@ -310,8 +310,38 @@ static inline void dispatch_sync_on_main_queue(void (^block)()) {
     }
 }
 
-/**
+/* 创建个互斥线程
  Initialize a pthread mutex.
+ 以动态的方式创建互斥锁的，参数attr指定了新建互斥锁的属性。
+ recursive这个bool值为false时，attr为空，则使用默认的互斥锁属性，默认属性为快速互斥锁。
+ recursive这个bool值为true时，配置互斥锁属性创建相应的互斥锁
+ 
+ YYMUTEX_ASSERT_ON_ERROR: 断言来进行检查错误，所有操作返回非0时，表示有异常错误发生
+ 
+ Mutex type attributes 有四个属性：
+ #define PTHREAD_MUTEX_NORMAL		0
+ #define PTHREAD_MUTEX_ERRORCHECK	1
+ #define PTHREAD_MUTEX_RECURSIVE		2
+ #define PTHREAD_MUTEX_DEFAULT		PTHREAD_MUTEX_NORMAL
+ 
+ PTHREAD_MUTEX_NORMAL：不进行deadlock detection（死锁检测）。当进行relock时，这个mutex就导致deadlock。对一个没有进行lock或者已经unlock的对象进行unlock操作，结果也是未知的。
+ PTHREAD_MUTEX_ERRORCHECK：和PTHREAD_MUTEX_NORMAL相比，PTHREAD_MUTEX_ERRORCHECK会进行错误检测，以上错误行为都会返回一个错误。
+ PTHREAD_MUTEX_RECURSIVE：和semaphore（信号量）有个类似的东西，mutex会有个锁住次数的概念，第一次锁住mutex的时候，锁住次数设置为1，每一次一个线程unlock这个mutex时，锁住次数就会减1。当锁住次数为0时，其他线程就可以获得该mutex锁了。同样，对一个没有进行lock或者已经unlock的对象进行unlock操作，将返回一个错误。
+ PTHREAD_MUTEX_DEFAULT：默认PTHREAD_MUTEX_NORMAL。
+ 
+使用：
+- (YYImageFrame *)frameAtIndex:(NSUInteger)index decodeForDisplay:(BOOL)decodeForDisplay {
+    YYImageFrame *result = nil;
+    pthread_mutex_lock(&_lock);
+    result = [self _frameAtIndex:index decodeForDisplay:decodeForDisplay];
+    pthread_mutex_unlock(&_lock);
+    return result;
+}
+ 为了防止多线程资源抢夺的问题，先进行lock下，等数据操作完毕后释放unlock，原理和 NSLock、synchronized 来进行加锁
+ 
+ pthread_main_thread_np()：获取主线程，和[NSThread mainThread]一样
+ pthread_self()：获取当前线程，[NSThread currentThread]
+ 
  */
 static inline void pthread_mutex_init_recursive(pthread_mutex_t *mutex, bool recursive) {
 #define YYMUTEX_ASSERT_ON_ERROR(x_) do { \

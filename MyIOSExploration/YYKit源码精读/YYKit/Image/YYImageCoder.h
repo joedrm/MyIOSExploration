@@ -31,7 +31,7 @@ typedef NS_ENUM(NSUInteger, YYImageType) {
 };
 
 
-/**
+/** Dispose: 处理
  Dispose method specifies how the area used by the current frame is to be treated
  before rendering the next frame on the canvas.
  */

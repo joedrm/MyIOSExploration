@@ -1503,7 +1503,6 @@ CGImageRef YYCGImageCreateWithWebPData(CFDataRef webpData,
 }
 @end
 
-
 @implementation YYImageDecoder {
     pthread_mutex_t _lock; // recursive lock
     

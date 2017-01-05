@@ -22,6 +22,9 @@
  
  http://www.jianshu.com/p/78c30ccf425f  CATransform3D笔记 https://github.com/HApple/CATransform3D
  
+ awesome
+ https://github.com/ameizi/awesome-ios-animation
+ http://www.jianshu.com/p/9fed46a83ad9
  
  https://github.com/xiaochaofeiyu/YSCAnimation
  IOS动画总结:https://github.com/yixiangboy/IOSAnimationDemo

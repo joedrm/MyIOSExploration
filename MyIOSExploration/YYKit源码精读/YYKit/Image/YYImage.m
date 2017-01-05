@@ -29,7 +29,7 @@
     NSString *path = nil;
     CGFloat scale = 1;
     
-    // If no extension, guess by system supported (same as UIImage).
+    // 如果没有格式，就默认使用系统支持的格式，和 UIImage 一样
     NSArray *exts = ext.length > 0 ? @[ext] : @[@"", @"png", @"jpeg", @"jpg", @"gif", @"webp", @"apng"];
     NSArray *scales = [NSBundle preferredScales];
     for (int s = 0; s < scales.count; s++) {
@@ -73,6 +73,8 @@
 - (instancetype)initWithData:(NSData *)data scale:(CGFloat)scale {
     if (data.length == 0) return nil;
     if (scale <= 0) scale = [UIScreen mainScreen].scale;
+    
+    // 创建信号锁
     _preloadedLock = dispatch_semaphore_create(1);
     @autoreleasepool {
         YYImageDecoder *decoder = [YYImageDecoder decoderWithData:data scale:scale];
@@ -96,6 +98,7 @@
     return _decoder.data;
 }
 
+// 预加载 frame 到内存，减少CPU损耗
 - (void)setPreloadAllAnimatedImageFrames:(BOOL)preloadAllAnimatedImageFrames {
     if (_preloadAllAnimatedImageFrames != preloadAllAnimatedImageFrames) {
         if (preloadAllAnimatedImageFrames && _decoder.frameCount > 0) {
