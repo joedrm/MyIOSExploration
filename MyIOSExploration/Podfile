@@ -1,7 +1,7 @@
 workspace 'MyiOSExploration'
 use_frameworks!
 
-target :Masonry实践 do
+target :'Masonry实践' do
 platform :ios, '8.0'
     pod 'Masonry'
     pod 'MJExtension'
