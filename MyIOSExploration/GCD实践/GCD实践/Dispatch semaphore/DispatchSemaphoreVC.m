@@ -22,7 +22,44 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     // 资源抢夺的例子
-    [self demo5];
+    [self demo];
+}
+
+- (void)demo{
+    /*应用场景1：马路有2股道，3辆车通过 ，每辆车通过需要2秒
+     *条件分解:
+     马路有2股道 <=>  dispatch_semaphore_create(2) //创建两个信号
+     三楼车通过 <=> dispatch_async(defaultQueue, ^{ } 执行三次
+     车通过需要2秒 <=>  [NSThread sleepForTimeInterval:2];//线程暂停两秒
+     */
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(2);
+    
+    dispatch_async(queue, ^{
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"carA pass the road");
+        dispatch_semaphore_signal(semaphore);
+    });
+    dispatch_async(queue, ^{
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"carB pass the road");
+        dispatch_semaphore_signal(semaphore);
+    });
+    dispatch_async(queue, ^{
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"carC pass the road");
+        dispatch_semaphore_signal(semaphore);
+    });
+    NSLog(@"GCDFunction end");
+    /*
+    2017-01-06 17:46:15.062 GCD实践[57990:3548129] GCDFunction end
+    2017-01-06 17:46:17.066 GCD实践[57990:3548266] carA pass the road
+    2017-01-06 17:46:17.066 GCD实践[57990:3548965] carB pass the road
+    2017-01-06 17:46:19.067 GCD实践[57990:3548967] carC pass the road
+    */
 }
 
 // 首先举个反例，看看打印
@@ -68,6 +105,7 @@
 }
 
 // 解决方法三：dispatch_semaphore_t 信号量
+//应用场景2 ：原子性保护，保证同时只有一个线程进入操作
 - (void)demo4{
     // 创建一个自定义的队列
     dispatch_queue_t queue = dispatch_queue_create("com.wdy.myiosexploration", DISPATCH_QUEUE_CONCURRENT);
