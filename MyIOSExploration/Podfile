@@ -1,23 +1,21 @@
 workspace 'MyiOSExploration'
-
 use_frameworks!
+
 target :Masonry实践 do
 platform :ios, '8.0'
-pod 'Masonry'
-pod 'MJExtension'
-pod 'SDWebImage'
-pod 'MMPlaceHolder'
-project 'Masonry实践/Masonry实践.xcodeproj'
+    pod 'Masonry'
+    pod 'MJExtension'
+    pod 'SDWebImage'
+    pod 'MMPlaceHolder'
+    project 'Masonry实践/Masonry实践.xcodeproj'
 end
 
-use_frameworks!
 target :'ReactiveCocoa & MVVM' do
     platform :ios, '8.0'
     pod 'ReactiveCocoa'
     project 'ReactiveCocoa & MVVM/ReactiveCocoa & MVVM.xcodeproj'
 end
 
-use_frameworks!
 target :'Quartz 2D实践' do
     platform :ios, '8.0'
     pod 'Masonry'
@@ -26,7 +24,6 @@ target :'Quartz 2D实践' do
 end
 
 
-use_frameworks!
 target :'GCD实践' do
     platform :ios, '8.0'
     pod 'FMDB'
@@ -34,7 +31,6 @@ target :'GCD实践' do
 end
 
 
-use_frameworks!
 target :'CALayer及核心动画' do
     platform :ios, '8.0'
     pod 'Masonry'
@@ -42,7 +38,6 @@ target :'CALayer及核心动画' do
 end
 
 
-use_frameworks!
 target :'IOS核心动画高级技巧(读书笔记)' do
     platform :ios, '8.0'
     pod 'WDYBaseProject','~> 0.2.8'
