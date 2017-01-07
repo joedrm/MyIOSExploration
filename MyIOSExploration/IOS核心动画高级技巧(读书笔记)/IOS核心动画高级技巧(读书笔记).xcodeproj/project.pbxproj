@@ -22,6 +22,13 @@
 		16D1789C1E18EA620089696A /* CAReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1789B1E18EA620089696A /* CAReplicatorLayerVC.m */; };
 		16D178A01E18FF100089696A /* ImplicitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1789F1E18FF100089696A /* ImplicitViewController.m */; };
 		16D178A41E1A90BA0089696A /* CABasicAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D178A31E1A90BA0089696A /* CABasicAnimationVC.m */; };
+		16D178A71E20E7340089696A /* CAKeyframeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D178A61E20E7340089696A /* CAKeyframeAnimationVC.m */; };
+		16D178AA1E20F1080089696A /* CAAnimationGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D178A91E20F1080089696A /* CAAnimationGroupVC.m */; };
+		16D178AD1E20F35D0089696A /* CATransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D178AC1E20F35D0089696A /* CATransitionVC.m */; };
+		16D178B21E20F8250089696A /* name01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16D178AE1E20F8250089696A /* name01.jpeg */; };
+		16D178B31E20F8250089696A /* name02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16D178AF1E20F8250089696A /* name02.jpeg */; };
+		16D178B41E20F8250089696A /* name03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16D178B01E20F8250089696A /* name03.jpeg */; };
+		16D178B51E20F8250089696A /* name04.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16D178B11E20F8250089696A /* name04.jpeg */; };
 		16EB8E0E1E12A067008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; };
 		16EB8E0F1E12A067008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20D515221E12876F000FBD5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D515211E12876F000FBD5D /* main.m */; };
@@ -76,6 +83,16 @@
 		16D1789F1E18FF100089696A /* ImplicitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImplicitViewController.m; sourceTree = "<group>"; };
 		16D178A21E1A90BA0089696A /* CABasicAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationVC.h; sourceTree = "<group>"; };
 		16D178A31E1A90BA0089696A /* CABasicAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationVC.m; sourceTree = "<group>"; };
+		16D178A51E20E7340089696A /* CAKeyframeAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationVC.h; sourceTree = "<group>"; };
+		16D178A61E20E7340089696A /* CAKeyframeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationVC.m; sourceTree = "<group>"; };
+		16D178A81E20F1080089696A /* CAAnimationGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationGroupVC.h; sourceTree = "<group>"; };
+		16D178A91E20F1080089696A /* CAAnimationGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationGroupVC.m; sourceTree = "<group>"; };
+		16D178AB1E20F35D0089696A /* CATransitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionVC.h; sourceTree = "<group>"; };
+		16D178AC1E20F35D0089696A /* CATransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionVC.m; sourceTree = "<group>"; };
+		16D178AE1E20F8250089696A /* name01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name01.jpeg; sourceTree = "<group>"; };
+		16D178AF1E20F8250089696A /* name02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name02.jpeg; sourceTree = "<group>"; };
+		16D178B01E20F8250089696A /* name03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name03.jpeg; sourceTree = "<group>"; };
+		16D178B11E20F8250089696A /* name04.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name04.jpeg; sourceTree = "<group>"; };
 		16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D5151D1E12876F000FBD5D /* IOS核心动画高级技巧(读书笔记).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS核心动画高级技巧(读书笔记).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D515211E12876F000FBD5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -161,6 +178,16 @@
 			children = (
 				16D178A21E1A90BA0089696A /* CABasicAnimationVC.h */,
 				16D178A31E1A90BA0089696A /* CABasicAnimationVC.m */,
+				16D178A51E20E7340089696A /* CAKeyframeAnimationVC.h */,
+				16D178A61E20E7340089696A /* CAKeyframeAnimationVC.m */,
+				16D178A81E20F1080089696A /* CAAnimationGroupVC.h */,
+				16D178A91E20F1080089696A /* CAAnimationGroupVC.m */,
+				16D178AB1E20F35D0089696A /* CATransitionVC.h */,
+				16D178AC1E20F35D0089696A /* CATransitionVC.m */,
+				16D178AE1E20F8250089696A /* name01.jpeg */,
+				16D178AF1E20F8250089696A /* name02.jpeg */,
+				16D178B01E20F8250089696A /* name03.jpeg */,
+				16D178B11E20F8250089696A /* name04.jpeg */,
 			);
 			path = "8.显式动画";
 			sourceTree = "<group>";
@@ -317,11 +344,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D178B41E20F8250089696A /* name03.jpeg in Resources */,
+				16D178B21E20F8250089696A /* name01.jpeg in Resources */,
 				16D1788B1E179C990089696A /* CubeView.xib in Resources */,
+				16D178B31E20F8250089696A /* name02.jpeg in Resources */,
 				20D515301E12876F000FBD5D /* LaunchScreen.storyboard in Resources */,
 				20D5152D1E12876F000FBD5D /* Assets.xcassets in Resources */,
 				16D178931E18DB4A0089696A /* CATransformLayerVC.xib in Resources */,
 				20D5152B1E12876F000FBD5D /* Main.storyboard in Resources */,
+				16D178B51E20F8250089696A /* name04.jpeg in Resources */,
 				16B137911E140FC700A39AE0 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,8 +420,11 @@
 				16D178891E179BA70089696A /* CubeView.m in Sources */,
 				16B137951E141A4E00A39AE0 /* LayerGeometryVC.m in Sources */,
 				16D178921E18DB4A0089696A /* CATransformLayerVC.m in Sources */,
+				16D178A71E20E7340089696A /* CAKeyframeAnimationVC.m in Sources */,
 				20D515421E1289AB000FBD5D /* CAShapeLayerVC.m in Sources */,
 				16D1788E1E18D2370089696A /* LayerLabel.m in Sources */,
+				16D178AA1E20F1080089696A /* CAAnimationGroupVC.m in Sources */,
+				16D178AD1E20F35D0089696A /* CATransitionVC.m in Sources */,
 				16B137A01E1565E500A39AE0 /* TransformVC.m in Sources */,
 				16D1789C1E18EA620089696A /* CAReplicatorLayerVC.m in Sources */,
 				16D178A01E18FF100089696A /* ImplicitViewController.m in Sources */,

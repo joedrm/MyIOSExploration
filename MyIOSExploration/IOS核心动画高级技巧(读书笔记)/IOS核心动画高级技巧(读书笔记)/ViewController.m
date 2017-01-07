@@ -18,7 +18,8 @@
     [super viewDidLoad];
     
     self.title = @"IOS核心动画高级技巧(读书笔记)";
-    self.titleArr = @[@"2.寄宿图",
+    self.titleArr = @[
+                      @"2.寄宿图",
                       @"3.图层几何学",
                       @"4.视觉效果",
                       @"5.变换",
@@ -28,9 +29,16 @@
                       @"6.4 专有图层之 CAGradientLayer",
                       @"6.5 专有图层之 CAReplicatorLayer",
                       @"7.隐式动画",
-                      @"8.1 显式动画之 CABasicAnimation"];
+                      @"8.1 显式动画之 CABasicAnimation",
+                      @"8.2 显式动画之 CAKeyframeAnimation",
+                      @"8.3 显式动画之 CAAnimationGroup",
+                      @"8.3 过渡动画 CATransition"
+                      ];
     
-    self.vcArr = @[@"BoardViewLayerVC",
+    
+    self.vcArr = @[
+                   
+                   @"BoardViewLayerVC",
                    @"LayerGeometryVC",
                    @"VisualEffectVC",
                    @"TransformVC",
@@ -40,7 +48,11 @@
                    @"CAGradientLayerVC",
                    @"CAReplicatorLayerVC",
                    @"ImplicitViewController",
-                   @"CABasicAnimationVC"
+                   @"CABasicAnimationVC",
+                   @"CAKeyframeAnimationVC",
+                   @"CAAnimationGroupVC",
+                   @"CATransitionVC"
+                   
                    ];
 }
 
