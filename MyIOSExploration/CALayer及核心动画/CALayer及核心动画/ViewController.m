@@ -50,6 +50,11 @@
  https://github.com/schneiderandre/popping
  https://github.com/hossamghareeb/Facebook-POP-Tutorial
  https://github.com/ColinEberhardt/VCTransitionsLibrary
+ 
+ 
+ 转场动画
+ http://www.jianshu.com/p/45434f73019e  iOS自定义转场动画
+ https://github.com/wazrx/XWTransition  几句代码快速集成自定义转场效果+ 全手势驱动
  */
 
 #import "ViewController.h"

@@ -11,6 +11,8 @@
     https://github.com/daria-kopaliani/DAPagesContainer
     https://github.com/daria-kopaliani/DARecycledScrollView
     https://github.com/daria-kopaliani/DAPageControlView
+ 
+ http://www.jianshu.com/p/274d19f97564   iOS封装一个轻量级的顶部分类控件
  */
 
 

@@ -6,6 +6,7 @@ IOS知识点总结和实践
 - [the-swift-programming-language-in-chinese](https://github.com/numbbbbb/the-swift-programming-language-in-chinese) - 中文版 Apple 官方 Swift 教程《The Swift Programming Language》
 - [Welcome-to-Swift](https://github.com/CocoaChina-editors/Welcome-to-Swift) - Swift中文文档
 - [iOS Developer Library](https://developer.apple.com/library/content/navigation/) - Guides and Sample Code
+- [swift-evolution](https://github.com/apple/swift-evolution)
 
 ### IOS Awsome
 - [awesome-ios](https://github.com/vsouza/awesome-ios)

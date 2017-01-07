@@ -46,3 +46,33 @@
 
 
 @end
+
+
+/*
+ http://bbs.520it.com/forum.php?mod=viewthread&tid=3060  离屏渲染原理，GPU 资源消耗原因和解决方案，ASDK 的基本原理
+ 
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
