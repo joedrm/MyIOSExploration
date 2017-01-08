@@ -29,6 +29,11 @@
 		16D178B31E20F8250089696A /* name02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16D178AF1E20F8250089696A /* name02.jpeg */; };
 		16D178B41E20F8250089696A /* name03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16D178B01E20F8250089696A /* name03.jpeg */; };
 		16D178B51E20F8250089696A /* name04.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16D178B11E20F8250089696A /* name04.jpeg */; };
+		16D178BB1E225F6B0089696A /* ship.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16D178BA1E225F6B0089696A /* ship.jpeg */; };
+		16D178BF1E225F8B0089696A /* AnimationTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D178BD1E225F8A0089696A /* AnimationTimeVC.m */; };
+		16D178C01E225F8B0089696A /* AnimationTimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D178BE1E225F8A0089696A /* AnimationTimeVC.xib */; };
+		16D4BBA41E226FC10050B7A4 /* door.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16D4BBA31E226FC10050B7A4 /* door.jpg */; };
+		16D4BBA81E2280EA0050B7A4 /* CAMediaTimingFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D4BBA71E2280EA0050B7A4 /* CAMediaTimingFunctionVC.m */; };
 		16EB8E0E1E12A067008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; };
 		16EB8E0F1E12A067008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20D515221E12876F000FBD5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D515211E12876F000FBD5D /* main.m */; };
@@ -93,6 +98,13 @@
 		16D178AF1E20F8250089696A /* name02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name02.jpeg; sourceTree = "<group>"; };
 		16D178B01E20F8250089696A /* name03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name03.jpeg; sourceTree = "<group>"; };
 		16D178B11E20F8250089696A /* name04.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name04.jpeg; sourceTree = "<group>"; };
+		16D178BA1E225F6B0089696A /* ship.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ship.jpeg; sourceTree = "<group>"; };
+		16D178BC1E225F8A0089696A /* AnimationTimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTimeVC.h; sourceTree = "<group>"; };
+		16D178BD1E225F8A0089696A /* AnimationTimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTimeVC.m; sourceTree = "<group>"; };
+		16D178BE1E225F8A0089696A /* AnimationTimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationTimeVC.xib; sourceTree = "<group>"; };
+		16D4BBA31E226FC10050B7A4 /* door.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = door.jpg; sourceTree = "<group>"; };
+		16D4BBA61E2280EA0050B7A4 /* CAMediaTimingFunctionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingFunctionVC.h; sourceTree = "<group>"; };
+		16D4BBA71E2280EA0050B7A4 /* CAMediaTimingFunctionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMediaTimingFunctionVC.m; sourceTree = "<group>"; };
 		16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D5151D1E12876F000FBD5D /* IOS核心动画高级技巧(读书笔记).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS核心动画高级技巧(读书笔记).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D515211E12876F000FBD5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -192,6 +204,27 @@
 			path = "8.显式动画";
 			sourceTree = "<group>";
 		};
+		16D178B61E225BA50089696A /* 9.图层时间 */ = {
+			isa = PBXGroup;
+			children = (
+				16D178BA1E225F6B0089696A /* ship.jpeg */,
+				16D4BBA31E226FC10050B7A4 /* door.jpg */,
+				16D178BC1E225F8A0089696A /* AnimationTimeVC.h */,
+				16D178BD1E225F8A0089696A /* AnimationTimeVC.m */,
+				16D178BE1E225F8A0089696A /* AnimationTimeVC.xib */,
+			);
+			path = "9.图层时间";
+			sourceTree = "<group>";
+		};
+		16D4BBA51E227FD80050B7A4 /* 10.缓冲 */ = {
+			isa = PBXGroup;
+			children = (
+				16D4BBA61E2280EA0050B7A4 /* CAMediaTimingFunctionVC.h */,
+				16D4BBA71E2280EA0050B7A4 /* CAMediaTimingFunctionVC.m */,
+			);
+			path = "10.缓冲";
+			sourceTree = "<group>";
+		};
 		20D515141E12876F000FBD5D = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +251,8 @@
 				20D515241E12876F000FBD5D /* AppDelegate.m */,
 				20D515261E12876F000FBD5D /* ViewController.h */,
 				20D515271E12876F000FBD5D /* ViewController.m */,
+				16D4BBA51E227FD80050B7A4 /* 10.缓冲 */,
+				16D178B61E225BA50089696A /* 9.图层时间 */,
 				16D178A11E1A90450089696A /* 8.显式动画 */,
 				16D1789D1E18FEBE0089696A /* 7.隐式动画 */,
 				20D5153F1E1289AB000FBD5D /* 6.专有图层 */,
@@ -344,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D178C01E225F8B0089696A /* AnimationTimeVC.xib in Resources */,
 				16D178B41E20F8250089696A /* name03.jpeg in Resources */,
 				16D178B21E20F8250089696A /* name01.jpeg in Resources */,
 				16D1788B1E179C990089696A /* CubeView.xib in Resources */,
@@ -352,7 +388,9 @@
 				20D5152D1E12876F000FBD5D /* Assets.xcassets in Resources */,
 				16D178931E18DB4A0089696A /* CATransformLayerVC.xib in Resources */,
 				20D5152B1E12876F000FBD5D /* Main.storyboard in Resources */,
+				16D178BB1E225F6B0089696A /* ship.jpeg in Resources */,
 				16D178B51E20F8250089696A /* name04.jpeg in Resources */,
+				16D4BBA41E226FC10050B7A4 /* door.jpg in Resources */,
 				16B137911E140FC700A39AE0 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,9 +458,11 @@
 				16D178891E179BA70089696A /* CubeView.m in Sources */,
 				16B137951E141A4E00A39AE0 /* LayerGeometryVC.m in Sources */,
 				16D178921E18DB4A0089696A /* CATransformLayerVC.m in Sources */,
+				16D178BF1E225F8B0089696A /* AnimationTimeVC.m in Sources */,
 				16D178A71E20E7340089696A /* CAKeyframeAnimationVC.m in Sources */,
 				20D515421E1289AB000FBD5D /* CAShapeLayerVC.m in Sources */,
 				16D1788E1E18D2370089696A /* LayerLabel.m in Sources */,
+				16D4BBA81E2280EA0050B7A4 /* CAMediaTimingFunctionVC.m in Sources */,
 				16D178AA1E20F1080089696A /* CAAnimationGroupVC.m in Sources */,
 				16D178AD1E20F35D0089696A /* CATransitionVC.m in Sources */,
 				16B137A01E1565E500A39AE0 /* TransformVC.m in Sources */,
