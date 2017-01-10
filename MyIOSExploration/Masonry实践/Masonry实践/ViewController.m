@@ -20,9 +20,10 @@
  https://github.com/adad184/DemoScrollViewAutolayout
  
  */
-
+#import "ViewController.h"
 
 @interface ViewController ()
+
 @end
 
 @implementation ViewController
@@ -39,7 +40,11 @@
                       @"Case7: 两种方式实现等间距",
                       @"Case8: 约束动画",
                       @"ScrollView的布局",
-                      @"Case9: 横向或纵向实现多个View等间距"];
+                      @"Case9: 横向或纵向实现多个View等间距",
+                      @"case10: 数组排列",
+                      @"Case11: 优先级",
+                      @"Case12: 自定义View更新布局"];
+    
     self.vcArr = @[@"Case1ViewController",
                    @"Case2ViewController",
                    @"Case3ViewController",
@@ -49,7 +54,11 @@
                    @"Case7ViewController",
                    @"Case8ViewController",
                    @"ScrollViewController",
-                   @"Case9ViewController"
+                   @"Case9ViewController",
+                   @"ArrayButtonLayoutVC",
+                   @"Case11ViewController",
+                   @"Case12ViewController"
+                   
                    ];
 }
 

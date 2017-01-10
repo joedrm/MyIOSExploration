@@ -19,6 +19,9 @@
     https://github.com/YouXianMing/YoCelsius
     https://github.com/YouXianMing/UI-Component-Collection
  
+ 4. https://github.com/MartinRGB/LearnCube-iOS
+ 
+ 5. https://github.com/intuit/AnimationEngine
  
  http://www.jianshu.com/p/78c30ccf425f  CATransform3D笔记 https://github.com/HApple/CATransform3D
  
@@ -26,8 +29,14 @@
  https://github.com/ameizi/awesome-ios-animation
  http://www.jianshu.com/p/9fed46a83ad9
  
+ Swift 知名动画框架
+ https://github.com/lkzhao/Hero
+ https://github.com/MengTo/Spring
+ 
+ 
+IOS动画总结:
  https://github.com/xiaochaofeiyu/YSCAnimation
- IOS动画总结:https://github.com/yixiangboy/IOSAnimationDemo
+ https://github.com/yixiangboy/IOSAnimationDemo
  https://github.com/wangtongke/WTKTransitionAnimate
  https://github.com/wangtongke/WTKTransitionAnimation
  https://github.com/weng1250/WZLBadge
@@ -36,8 +45,14 @@
  https://github.com/jhurray/JHChainableAnimations
  https://github.com/adad184/MMTweenAnimation
  https://github.com/Raizlabs/RZTransitions
- 
  https://github.com/bryanoltman/CAAnimation-EasingEquations
+ 
+ 动画实例：
+ https://github.com/shu223/PulsingHalo  雷达效果
+ https://github.com/daltoniam/DCAnimationKit  一系列的动画练习
+ https://github.com/robb/RBBAnimation  同上
+ https://github.com/jhurray/JHChainableAnimations 同上
+ https://github.com/IFTTT/JazzHands
  
  Facebook-POP
  
@@ -55,6 +70,9 @@
  转场动画
  http://www.jianshu.com/p/45434f73019e  iOS自定义转场动画
  https://github.com/wazrx/XWTransition  几句代码快速集成自定义转场效果+ 全手势驱动
+ https://github.com/Raizlabs/RZTransitions 自定义转场
+ https://github.com/ColinEberhardt/VCTransitionsLibrary
+ https://github.com/recruit-mp/RMPZoomTransitionAnimator
  */
 
 #import "ViewController.h"

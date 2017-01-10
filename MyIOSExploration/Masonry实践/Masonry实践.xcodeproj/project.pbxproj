@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		206664321E12361300C7F140 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206664311E12361300C7F140 /* ScrollViewController.m */; };
+		206E73FB1E23719D0089FABC /* ArrayButtonLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 206E73FA1E23719D0089FABC /* ArrayButtonLayoutVC.m */; };
+		206E73FD1E2373CB0089FABC /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206E73FC1E2373CB0089FABC /* WDYLibrary.framework */; };
+		206E73FE1E2373CB0089FABC /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 206E73FC1E2373CB0089FABC /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		206E74031E2375C50089FABC /* Case11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206E74021E2375C50089FABC /* Case11ViewController.m */; };
+		206E74071E23793D0089FABC /* Case12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206E74061E23793D0089FABC /* Case12ViewController.m */; };
+		206E740A1E2379920089FABC /* CustomUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 206E74091E2379920089FABC /* CustomUIView.m */; };
 		2090DE681DF6656600650BCC /* Case6Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE671DF6656600650BCC /* Case6Cell.m */; };
 		2090DE6B1DF6659C00650BCC /* Case6Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE6A1DF6659C00650BCC /* Case6Model.m */; };
 		2090DE6F1DF66EA800650BCC /* Case7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE6E1DF66EA800650BCC /* Case7ViewController.m */; };
@@ -58,10 +64,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		206E73FF1E2373CB0089FABC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				206E73FE1E2373CB0089FABC /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		03401E1A5735B91FBAE4D716 /* Pods_Masonry__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Masonry__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		206664301E12361300C7F140 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		206664311E12361300C7F140 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		206E73F91E23719D0089FABC /* ArrayButtonLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayButtonLayoutVC.h; sourceTree = "<group>"; };
+		206E73FA1E23719D0089FABC /* ArrayButtonLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayButtonLayoutVC.m; sourceTree = "<group>"; };
+		206E73FC1E2373CB0089FABC /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		206E74011E2375C50089FABC /* Case11ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case11ViewController.h; sourceTree = "<group>"; };
+		206E74021E2375C50089FABC /* Case11ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case11ViewController.m; sourceTree = "<group>"; };
+		206E74051E23793D0089FABC /* Case12ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case12ViewController.h; sourceTree = "<group>"; };
+		206E74061E23793D0089FABC /* Case12ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case12ViewController.m; sourceTree = "<group>"; };
+		206E74081E2379920089FABC /* CustomUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIView.h; sourceTree = "<group>"; };
+		206E74091E2379920089FABC /* CustomUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIView.m; sourceTree = "<group>"; };
 		2090DE661DF6656600650BCC /* Case6Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case6Cell.h; sourceTree = "<group>"; };
 		2090DE671DF6656600650BCC /* Case6Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case6Cell.m; sourceTree = "<group>"; };
 		2090DE691DF6659C00650BCC /* Case6Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case6Model.h; sourceTree = "<group>"; };
@@ -126,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC62D413454CBDC385FDD2BB /* Pods_Masonry__.framework in Frameworks */,
+				206E73FD1E2373CB0089FABC /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +185,35 @@
 			path = "ScrollView的布局";
 			sourceTree = "<group>";
 		};
+		206E73F81E23716A0089FABC /* 数组排列 */ = {
+			isa = PBXGroup;
+			children = (
+				206E73F91E23719D0089FABC /* ArrayButtonLayoutVC.h */,
+				206E73FA1E23719D0089FABC /* ArrayButtonLayoutVC.m */,
+			);
+			path = "数组排列";
+			sourceTree = "<group>";
+		};
+		206E74001E2375AB0089FABC /* 优先级 */ = {
+			isa = PBXGroup;
+			children = (
+				206E74011E2375C50089FABC /* Case11ViewController.h */,
+				206E74021E2375C50089FABC /* Case11ViewController.m */,
+			);
+			path = "优先级";
+			sourceTree = "<group>";
+		};
+		206E74041E2379180089FABC /* 自定义View更新布局 */ = {
+			isa = PBXGroup;
+			children = (
+				206E74051E23793D0089FABC /* Case12ViewController.h */,
+				206E74061E23793D0089FABC /* Case12ViewController.m */,
+				206E74081E2379920089FABC /* CustomUIView.h */,
+				206E74091E2379920089FABC /* CustomUIView.m */,
+			);
+			path = "自定义View更新布局";
+			sourceTree = "<group>";
+		};
 		2090DE6C1DF66E0E00650BCC /* 两种方式实现等间距 */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +235,7 @@
 		20AC982A1DF10CFE00C761FA = {
 			isa = PBXGroup;
 			children = (
+				206E73FC1E2373CB0089FABC /* WDYLibrary.framework */,
 				20AC98351DF10CFE00C761FA /* Masonry实践 */,
 				20AC984F1DF10CFE00C761FA /* Masonry实践Tests */,
 				20AC985A1DF10CFE00C761FA /* Masonry实践UITests */,
@@ -202,6 +262,9 @@
 				20AC983A1DF10CFE00C761FA /* AppDelegate.m */,
 				20AC983C1DF10CFE00C761FA /* ViewController.h */,
 				20AC983D1DF10CFE00C761FA /* ViewController.m */,
+				206E74041E2379180089FABC /* 自定义View更新布局 */,
+				206E74001E2375AB0089FABC /* 优先级 */,
+				206E73F81E23716A0089FABC /* 数组排列 */,
 				20D514921E124A52000FBD5D /* 横向或纵向实现多个View等间距 */,
 				2066642F1E1235E900C7F140 /* ScrollView的布局 */,
 				2090DE701DF6933600650BCC /* 动画 */,
@@ -368,6 +431,7 @@
 				20AC98311DF10CFE00C761FA /* Resources */,
 				7BD23593B047756323DB6B98 /* [CP] Embed Pods Frameworks */,
 				92B0FA5D153A91BFE42B1D36 /* [CP] Copy Pods Resources */,
+				206E73FF1E2373CB0089FABC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -560,14 +624,18 @@
 				20D514981E124AAB000FBD5D /* UIView+EqualSpace.m in Sources */,
 				20AC988D1DF14D2700C761FA /* Case4Cell.m in Sources */,
 				2090DE6F1DF66EA800650BCC /* Case7ViewController.m in Sources */,
+				206E740A1E2379920089FABC /* CustomUIView.m in Sources */,
 				20D514951E124A70000FBD5D /* Case9ViewController.m in Sources */,
+				206E74031E2375C50089FABC /* Case11ViewController.m in Sources */,
 				20AC989D1DF15A7100C761FA /* Case2ViewController.m in Sources */,
 				20AC989E1DF15A7100C761FA /* Case1ViewController.m in Sources */,
 				20AC98AB1DF1672800C761FA /* TesViewController.m in Sources */,
 				20AC98AF1DF177F100C761FA /* Case6ViewController.m in Sources */,
 				20AC98381DF10CFE00C761FA /* main.m in Sources */,
 				20AC98901DF14D5B00C761FA /* Case4Model.m in Sources */,
+				206E73FB1E23719D0089FABC /* ArrayButtonLayoutVC.m in Sources */,
 				206664321E12361300C7F140 /* ScrollViewController.m in Sources */,
+				206E74071E23793D0089FABC /* Case12ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
