@@ -8,6 +8,8 @@
 
 /*
  参考资料：
+ http://southpeak.github.io/categories/translate/page/2/  南峰子翻译的Quartz2D教程
+ https://developer.apple.com/library/content/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html Quartz 2D Programming Guide
  http://tutuge.me/2016/12/25/TTGPuzzleVerify/  拼图验证控件TTGPuzzleVerify的实现
  http://www.jianshu.com/p/24459aa51330    iOS封装一个简单的曲线图表视图
  https://github.com/Nyx0uf/NYXImagesKit  各种图片处理的分类，很强大

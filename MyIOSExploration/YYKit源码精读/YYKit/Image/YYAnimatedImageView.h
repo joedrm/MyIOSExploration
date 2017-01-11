@@ -34,12 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface YYAnimatedImageView : UIImageView
 
-/**
- If the image has more than one frame, set this value to `YES` will automatically 
- play/stop the animation when the view become visible/invisible.
- 
- The default value is `YES`.
- */
+// View显示完毕 且帧数大于等于1 可是设置 自动播放功能，默认是 YES
 @property (nonatomic) BOOL autoPlayAnimatedImage;
 
 /**
@@ -50,6 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  You can add an observer to this property to observe the playing status.
  */
+// 当前显示的帧的索引
 @property (nonatomic) NSUInteger currentAnimatedImageIndex;
 
 /**
@@ -96,29 +92,27 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @protocol YYAnimatedImage <NSObject>
 @required
-/// Total animated frame count.
-/// If the frame count is less than 1, then the methods below will be ignored.
+
+// 动图的帧数
 - (NSUInteger)animatedImageFrameCount;
 
-/// Animation loop count, 0 means infinite looping.
+// 动图的循环(播放)次数，0 表示无穷大
 - (NSUInteger)animatedImageLoopCount;
 
-/// Bytes per frame (in memory). It may used to optimize memory buffer size.
+// 每一帧在内存中占得字节数，用于缓存空间优化
 - (NSUInteger)animatedImageBytesPerFrame;
 
-/// Returns the frame image from a specified index.
-/// This method may be called on background thread.
-/// @param index  Frame index (zero based).
+// 返回 index 位置的帧图片，此方法被后台线程调用
 - (nullable UIImage *)animatedImageFrameAtIndex:(NSUInteger)index;
 
-/// Returns the frames's duration from a specified index.
-/// @param index  Frame index (zero based).
+// 返回 index 位置的动图播放时间
 - (NSTimeInterval)animatedImageDurationAtIndex:(NSUInteger)index;
 
 @optional
 /// A rectangle in image coordinates defining the subrectangle of the image that
 /// will be displayed. The rectangle should not outside the image's bounds.
 /// It may used to display sprite animation with a single image (sprite sheet).
+// 返回 index 位置的动图显示的Rect值
 - (CGRect)animatedImageContentsRectAtIndex:(NSUInteger)index;
 @end
 

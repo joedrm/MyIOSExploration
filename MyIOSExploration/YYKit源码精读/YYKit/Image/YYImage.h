@@ -46,15 +46,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (nullable YYImage *)imageWithData:(NSData *)data;
 + (nullable YYImage *)imageWithData:(NSData *)data scale:(CGFloat)scale;
 
-/**
- If the image is created from data or file, then the value indicates the data type.
- */
+/** 图片的数据类型 */
 @property (nonatomic, readonly) YYImageType animatedImageType;
 
-/**
- If the image is created from animated image data (multi-frame GIF/APNG/WebP),
- this property stores the original image data.
- */
+/** 如果图片是从GIF/APNG/WebP中创建，此属性保存了原始图片数据 */
 @property (nullable, nonatomic, readonly) NSData *animatedImageData;
 
 /**

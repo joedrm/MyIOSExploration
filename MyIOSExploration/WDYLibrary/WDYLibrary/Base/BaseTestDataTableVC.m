@@ -50,10 +50,12 @@ static NSString* BaseTestDataTableVCIdentifier = @"BaseTestDataTableVCIdentifier
     if (!self.vcArr.count || !self.titleArr.count || (self.vcArr.count != self.titleArr.count)) {
         return;
     }
-    id class = NSClassFromString(self.vcArr[indexPath.row]);
-    UIViewController* vc = [[class alloc] init];
-    vc.title = self.titleArr[indexPath.row];
-    [self.navigationController pushViewController:vc animated:YES];
+    Class class = NSClassFromString(self.vcArr[indexPath.row]);
+    if (class) {
+        UIViewController* vc = [[class alloc] init];
+        vc.title = self.titleArr[indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end

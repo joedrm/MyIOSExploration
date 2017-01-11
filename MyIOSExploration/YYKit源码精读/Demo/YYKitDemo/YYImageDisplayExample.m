@@ -65,7 +65,7 @@
     [paths addObject:[basePath stringByAppendingPathComponent:@"d_haha@2x.png"]];
     [paths addObject:[basePath stringByAppendingPathComponent:@"d_haixiu@3x.png"]];
     
-    UIImage *image = [[YYFrameImage alloc] initWithImagePaths:paths oneFrameDuration:0.1 loopCount:0];
+    UIImage *image = [[YYFrameImage alloc] initWithImagePaths:paths oneFrameDuration:2 loopCount:0];
     [self addImage:image size:CGSizeZero text:text];
 }
 
