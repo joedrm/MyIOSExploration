@@ -6,6 +6,14 @@
 //  Copyright © 2016年 wdy. All rights reserved.
 //
 
+/*
+ 参考资料：
+ https://github.com/JoySeeDog/JSDBanTangHomeDemo 真正的仿半塘首页效果，半糖首页核心技术解析。
+ https://github.com/leejayID/Linkage  两个 TableView 之间的联动，TableView 与 CollectionView 之间的联动
+ https://github.com/yuping1989/YPTabBarController 功能强大，使用方便，可高度自定义的TabBarController。
+ */
+
+
 #import "ViewController.h"
 #import "HeaderEffectVC1.h"
 #import "HeaderEffectVC.h"
