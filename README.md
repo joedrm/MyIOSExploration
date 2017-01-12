@@ -1,3 +1,12 @@
-# My Awesome Book
+# 人脸识别解决方案分析与测评
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+**在人脸识别属性返回功能以范围方面，我比较了以下公司：**
+
+### Microsoft
+
+### Face ++
+
+### **云飞科技**
+
+
+
