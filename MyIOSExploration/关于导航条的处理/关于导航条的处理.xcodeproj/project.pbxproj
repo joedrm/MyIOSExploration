@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20BEB6F91E1C940F00B1E41E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB6F81E1C940F00B1E41E /* main.m */; };
+		20BEB6FC1E1C940F00B1E41E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB6FB1E1C940F00B1E41E /* AppDelegate.m */; };
+		20BEB6FF1E1C940F00B1E41E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB6FE1E1C940F00B1E41E /* ViewController.m */; };
+		20BEB7021E1C940F00B1E41E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BEB7001E1C940F00B1E41E /* Main.storyboard */; };
+		20BEB7041E1C940F00B1E41E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BEB7031E1C940F00B1E41E /* Assets.xcassets */; };
+		20BEB7071E1C940F00B1E41E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BEB7051E1C940F00B1E41E /* LaunchScreen.storyboard */; };
+		20BEB7121E1C944500B1E41E /* RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB70F1E1C944500B1E41E /* RTRootNavigationController.m */; };
+		20BEB7131E1C944500B1E41E /* UIViewController+RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB7111E1C944500B1E41E /* UIViewController+RTRootNavigationController.m */; };
+		20BEB7151E1C945F00B1E41E /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BEB7141E1C945F00B1E41E /* WDYLibrary.framework */; };
+		20BEB7161E1C945F00B1E41E /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20BEB7141E1C945F00B1E41E /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20BEB71B1E1C966100B1E41E /* DisableInteractivePopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB71A1E1C966100B1E41E /* DisableInteractivePopVC.m */; };
+		20BEB7201E1C990000B1E41E /* HideNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB71F1E1C990000B1E41E /* HideNavigationBarVC.m */; };
+		20BEB7241E1C9B6B00B1E41E /* ScrollBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB7231E1C9B6B00B1E41E /* ScrollBackViewController.m */; };
+		20BEB7281E1C9F6000B1E41E /* PushRemoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB7271E1C9F6000B1E41E /* PushRemoveViewController.m */; };
+		20BEB72C1E1CA25A00B1E41E /* CustomNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB72B1E1CA25A00B1E41E /* CustomNavigationBarVC.m */; };
+		20BEB72F1E1CA2A700B1E41E /* CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB72E1E1CA2A700B1E41E /* CustomNavigationBar.m */; };
+		20BEB7331E1CA49D00B1E41E /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB7321E1CA49D00B1E41E /* TransitionViewController.m */; };
+		20BEB7361E1CA54900B1E41E /* TransitionDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BEB7351E1CA54900B1E41E /* TransitionDetailVC.m */; };
+		20BEB7381E1CA99100B1E41E /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20BEB7371E1CA99100B1E41E /* test.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20BEB7171E1C945F00B1E41E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20BEB7161E1C945F00B1E41E /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		20BEB6F41E1C940F00B1E41E /* 关于导航条的处理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "关于导航条的处理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20BEB6F81E1C940F00B1E41E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20BEB6FA1E1C940F00B1E41E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20BEB6FB1E1C940F00B1E41E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20BEB6FD1E1C940F00B1E41E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		20BEB6FE1E1C940F00B1E41E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		20BEB7011E1C940F00B1E41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20BEB7031E1C940F00B1E41E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20BEB7061E1C940F00B1E41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20BEB7081E1C940F00B1E41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20BEB70E1E1C944500B1E41E /* RTRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTRootNavigationController.h; sourceTree = "<group>"; };
+		20BEB70F1E1C944500B1E41E /* RTRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTRootNavigationController.m; sourceTree = "<group>"; };
+		20BEB7101E1C944500B1E41E /* UIViewController+RTRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RTRootNavigationController.h"; sourceTree = "<group>"; };
+		20BEB7111E1C944500B1E41E /* UIViewController+RTRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RTRootNavigationController.m"; sourceTree = "<group>"; };
+		20BEB7141E1C945F00B1E41E /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20BEB7191E1C966100B1E41E /* DisableInteractivePopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisableInteractivePopVC.h; sourceTree = "<group>"; };
+		20BEB71A1E1C966100B1E41E /* DisableInteractivePopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisableInteractivePopVC.m; sourceTree = "<group>"; };
+		20BEB71C1E1C96BF00B1E41E /* NavigationControllerHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerHeader.pch; sourceTree = "<group>"; };
+		20BEB71E1E1C990000B1E41E /* HideNavigationBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideNavigationBarVC.h; sourceTree = "<group>"; };
+		20BEB71F1E1C990000B1E41E /* HideNavigationBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideNavigationBarVC.m; sourceTree = "<group>"; };
+		20BEB7221E1C9B6B00B1E41E /* ScrollBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollBackViewController.h; sourceTree = "<group>"; };
+		20BEB7231E1C9B6B00B1E41E /* ScrollBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollBackViewController.m; sourceTree = "<group>"; };
+		20BEB7261E1C9F6000B1E41E /* PushRemoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushRemoveViewController.h; sourceTree = "<group>"; };
+		20BEB7271E1C9F6000B1E41E /* PushRemoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushRemoveViewController.m; sourceTree = "<group>"; };
+		20BEB72A1E1CA25A00B1E41E /* CustomNavigationBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBarVC.h; sourceTree = "<group>"; };
+		20BEB72B1E1CA25A00B1E41E /* CustomNavigationBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBarVC.m; sourceTree = "<group>"; };
+		20BEB72D1E1CA2A700B1E41E /* CustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBar.h; sourceTree = "<group>"; };
+		20BEB72E1E1CA2A700B1E41E /* CustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
+		20BEB7311E1CA49D00B1E41E /* TransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
+		20BEB7321E1CA49D00B1E41E /* TransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
+		20BEB7341E1CA54900B1E41E /* TransitionDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionDetailVC.h; sourceTree = "<group>"; };
+		20BEB7351E1CA54900B1E41E /* TransitionDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionDetailVC.m; sourceTree = "<group>"; };
+		20BEB7371E1CA99100B1E41E /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20BEB6F11E1C940F00B1E41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BEB7151E1C945F00B1E41E /* WDYLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20BEB6EB1E1C940F00B1E41E = {
+			isa = PBXGroup;
+			children = (
+				20BEB7141E1C945F00B1E41E /* WDYLibrary.framework */,
+				20BEB6F61E1C940F00B1E41E /* 关于导航条的处理 */,
+				20BEB6F51E1C940F00B1E41E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20BEB6F51E1C940F00B1E41E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20BEB6F41E1C940F00B1E41E /* 关于导航条的处理.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20BEB6F61E1C940F00B1E41E /* 关于导航条的处理 */ = {
+			isa = PBXGroup;
+			children = (
+				20BEB70E1E1C944500B1E41E /* RTRootNavigationController.h */,
+				20BEB70F1E1C944500B1E41E /* RTRootNavigationController.m */,
+				20BEB7101E1C944500B1E41E /* UIViewController+RTRootNavigationController.h */,
+				20BEB7111E1C944500B1E41E /* UIViewController+RTRootNavigationController.m */,
+				20BEB6FA1E1C940F00B1E41E /* AppDelegate.h */,
+				20BEB6FB1E1C940F00B1E41E /* AppDelegate.m */,
+				20BEB6FD1E1C940F00B1E41E /* ViewController.h */,
+				20BEB6FE1E1C940F00B1E41E /* ViewController.m */,
+				20BEB7301E1CA45D00B1E41E /* 转场动画 */,
+				20BEB7291E1CA24D00B1E41E /* 自定义NavigationBar */,
+				20BEB7251E1C9F4D00B1E41E /* 移除中间控制器 */,
+				20BEB7211E1C9AC800B1E41E /* ScrollView上的交互式返回 */,
+				20BEB71D1E1C98E000B1E41E /* 隐藏导航栏 */,
+				20BEB7181E1C962A00B1E41E /* 禁用交互式返回 */,
+				20BEB7001E1C940F00B1E41E /* Main.storyboard */,
+				20BEB7031E1C940F00B1E41E /* Assets.xcassets */,
+				20BEB7051E1C940F00B1E41E /* LaunchScreen.storyboard */,
+				20BEB7081E1C940F00B1E41E /* Info.plist */,
+				20BEB6F71E1C940F00B1E41E /* Supporting Files */,
+			);
+			path = "关于导航条的处理";
+			sourceTree = "<group>";
+		};
+		20BEB6F71E1C940F00B1E41E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20BEB6F81E1C940F00B1E41E /* main.m */,
+				20BEB71C1E1C96BF00B1E41E /* NavigationControllerHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20BEB7181E1C962A00B1E41E /* 禁用交互式返回 */ = {
+			isa = PBXGroup;
+			children = (
+				20BEB7191E1C966100B1E41E /* DisableInteractivePopVC.h */,
+				20BEB71A1E1C966100B1E41E /* DisableInteractivePopVC.m */,
+			);
+			path = "禁用交互式返回";
+			sourceTree = "<group>";
+		};
+		20BEB71D1E1C98E000B1E41E /* 隐藏导航栏 */ = {
+			isa = PBXGroup;
+			children = (
+				20BEB71E1E1C990000B1E41E /* HideNavigationBarVC.h */,
+				20BEB71F1E1C990000B1E41E /* HideNavigationBarVC.m */,
+			);
+			path = "隐藏导航栏";
+			sourceTree = "<group>";
+		};
+		20BEB7211E1C9AC800B1E41E /* ScrollView上的交互式返回 */ = {
+			isa = PBXGroup;
+			children = (
+				20BEB7221E1C9B6B00B1E41E /* ScrollBackViewController.h */,
+				20BEB7231E1C9B6B00B1E41E /* ScrollBackViewController.m */,
+			);
+			path = "ScrollView上的交互式返回";
+			sourceTree = "<group>";
+		};
+		20BEB7251E1C9F4D00B1E41E /* 移除中间控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				20BEB7261E1C9F6000B1E41E /* PushRemoveViewController.h */,
+				20BEB7271E1C9F6000B1E41E /* PushRemoveViewController.m */,
+			);
+			path = "移除中间控制器";
+			sourceTree = "<group>";
+		};
+		20BEB7291E1CA24D00B1E41E /* 自定义NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				20BEB72A1E1CA25A00B1E41E /* CustomNavigationBarVC.h */,
+				20BEB72B1E1CA25A00B1E41E /* CustomNavigationBarVC.m */,
+				20BEB72D1E1CA2A700B1E41E /* CustomNavigationBar.h */,
+				20BEB72E1E1CA2A700B1E41E /* CustomNavigationBar.m */,
+			);
+			path = "自定义NavigationBar";
+			sourceTree = "<group>";
+		};
+		20BEB7301E1CA45D00B1E41E /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				20BEB7371E1CA99100B1E41E /* test.jpg */,
+				20BEB7311E1CA49D00B1E41E /* TransitionViewController.h */,
+				20BEB7321E1CA49D00B1E41E /* TransitionViewController.m */,
+				20BEB7341E1CA54900B1E41E /* TransitionDetailVC.h */,
+				20BEB7351E1CA54900B1E41E /* TransitionDetailVC.m */,
+			);
+			path = "转场动画";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20BEB6F31E1C940F00B1E41E /* 关于导航条的处理 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20BEB70B1E1C940F00B1E41E /* Build configuration list for PBXNativeTarget "关于导航条的处理" */;
+			buildPhases = (
+				20BEB6F01E1C940F00B1E41E /* Sources */,
+				20BEB6F11E1C940F00B1E41E /* Frameworks */,
+				20BEB6F21E1C940F00B1E41E /* Resources */,
+				20BEB7171E1C945F00B1E41E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "关于导航条的处理";
+			productName = "关于导航条的处理";
+			productReference = 20BEB6F41E1C940F00B1E41E /* 关于导航条的处理.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20BEB6EC1E1C940F00B1E41E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wdy;
+				TargetAttributes = {
+					20BEB6F31E1C940F00B1E41E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VRGWDFH359;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 20BEB6EF1E1C940F00B1E41E /* Build configuration list for PBXProject "关于导航条的处理" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20BEB6EB1E1C940F00B1E41E;
+			productRefGroup = 20BEB6F51E1C940F00B1E41E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20BEB6F31E1C940F00B1E41E /* 关于导航条的处理 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20BEB6F21E1C940F00B1E41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BEB7071E1C940F00B1E41E /* LaunchScreen.storyboard in Resources */,
+				20BEB7041E1C940F00B1E41E /* Assets.xcassets in Resources */,
+				20BEB7021E1C940F00B1E41E /* Main.storyboard in Resources */,
+				20BEB7381E1CA99100B1E41E /* test.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20BEB6F01E1C940F00B1E41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BEB7201E1C990000B1E41E /* HideNavigationBarVC.m in Sources */,
+				20BEB71B1E1C966100B1E41E /* DisableInteractivePopVC.m in Sources */,
+				20BEB6FF1E1C940F00B1E41E /* ViewController.m in Sources */,
+				20BEB7281E1C9F6000B1E41E /* PushRemoveViewController.m in Sources */,
+				20BEB7121E1C944500B1E41E /* RTRootNavigationController.m in Sources */,
+				20BEB72C1E1CA25A00B1E41E /* CustomNavigationBarVC.m in Sources */,
+				20BEB7241E1C9B6B00B1E41E /* ScrollBackViewController.m in Sources */,
+				20BEB7331E1CA49D00B1E41E /* TransitionViewController.m in Sources */,
+				20BEB72F1E1CA2A700B1E41E /* CustomNavigationBar.m in Sources */,
+				20BEB6FC1E1C940F00B1E41E /* AppDelegate.m in Sources */,
+				20BEB7131E1C944500B1E41E /* UIViewController+RTRootNavigationController.m in Sources */,
+				20BEB7361E1CA54900B1E41E /* TransitionDetailVC.m in Sources */,
+				20BEB6F91E1C940F00B1E41E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		20BEB7001E1C940F00B1E41E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20BEB7011E1C940F00B1E41E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20BEB7051E1C940F00B1E41E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20BEB7061E1C940F00B1E41E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20BEB7091E1C940F00B1E41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		20BEB70A1E1C940F00B1E41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20BEB70C1E1C940F00B1E41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VRGWDFH359;
+				GCC_PREFIX_HEADER = "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/关于导航条的处理/关于导航条的处理/NavigationControllerHeader.pch";
+				INFOPLIST_FILE = "关于导航条的处理/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.nav.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20BEB70D1E1C940F00B1E41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VRGWDFH359;
+				GCC_PREFIX_HEADER = "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/关于导航条的处理/关于导航条的处理/NavigationControllerHeader.pch";
+				INFOPLIST_FILE = "关于导航条的处理/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.nav.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20BEB6EF1E1C940F00B1E41E /* Build configuration list for PBXProject "关于导航条的处理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20BEB7091E1C940F00B1E41E /* Debug */,
+				20BEB70A1E1C940F00B1E41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20BEB70B1E1C940F00B1E41E /* Build configuration list for PBXNativeTarget "关于导航条的处理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20BEB70C1E1C940F00B1E41E /* Debug */,
+				20BEB70D1E1C940F00B1E41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20BEB6EC1E1C940F00B1E41E /* Project object */;
+}

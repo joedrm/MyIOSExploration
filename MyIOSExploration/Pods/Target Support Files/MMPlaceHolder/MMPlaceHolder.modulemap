@@ -1,0 +1,6 @@
+framework module MMPlaceHolder {
+  umbrella header "MMPlaceHolder-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+//
+//  GCDHeader.pch
+//  GCD实践
+//
+//  Created by fang wang on 16/12/30.
+//  Copyright © 2016年 wdy. All rights reserved.
+//
+
+#ifndef GCDHeader_pch
+#define GCDHeader_pch
+
+
+#import <WDYLibrary/WDYLibrary.h>
+
+
+#endif /* GCDHeader_pch */

@@ -1,0 +1,6 @@
+framework module WDYBaseProject {
+  umbrella header "WDYBaseProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

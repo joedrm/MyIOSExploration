@@ -1,0 +1,16 @@
+//
+//  NavigationControllerHeader.pch
+//  关于导航条的处理
+//
+//  Created by fang wang on 17/1/4.
+//  Copyright © 2017年 wdy. All rights reserved.
+//
+
+#ifndef NavigationControllerHeader_pch
+#define NavigationControllerHeader_pch
+
+#import <WDYLibrary/WDYLibrary.h>
+#import "RTRootNavigationController.h"
+#import "UIViewController+RTRootNavigationController.h"
+
+#endif /* NavigationControllerHeader_pch */

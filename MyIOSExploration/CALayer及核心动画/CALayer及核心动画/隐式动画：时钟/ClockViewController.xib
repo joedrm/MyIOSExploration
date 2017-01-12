@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClockViewController">
+            <connections>
+                <outlet property="clockImage" destination="rgr-jq-MEM" id="6CB-Fm-jzo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="钟表.png" translatesAutoresizingMaskIntoConstraints="NO" id="rgr-jq-MEM">
+                    <rect key="frame" x="88" y="234" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="RYJ-dd-dq9"/>
+                        <constraint firstAttribute="height" constant="200" id="koW-Qw-oCb"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rgr-jq-MEM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BFt-23-ohl"/>
+                <constraint firstItem="rgr-jq-MEM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="xnB-BC-AmS"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="钟表.png" width="200" height="200"/>
+    </resources>
+</document>

@@ -1,0 +1,22 @@
+//
+//  IOS_Core_Anim_Header.pch
+//  IOS核心动画高级技巧(读书笔记)
+//
+//  Created by fang wang on 16/12/28.
+//  Copyright © 2016年 wdy. All rights reserved.
+//
+
+#ifndef IOS_Core_Anim_Header_pch
+#define IOS_Core_Anim_Header_pch
+
+
+#import <WDYLibrary/WDYLibrary.h>
+
+#import <WDYBaseProject/WDYCategory.h>
+#import <WDYBaseProject/WDYMacros.h>
+#import <WDYBaseProject/WDYUIHeader.h>
+
+
+#define KTextString   @"人在孤身逆旅中最易感怀人生，因为说到底，人生在世也无非是孤身逆旅罢了。聚散乃人生寻常事，却也足堪叹息。最可叹的是散时视为寻常，不料而聚无日，一别竟成永诀。或者青春相别，再见时皆已白头，彼此如同一面镜子，瞬间照出了岁月的无情流逝。—— 周国平《逆旅与聚散》"
+
+#endif /* IOS_Core_Anim_Header_pch */

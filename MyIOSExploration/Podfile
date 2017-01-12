@@ -1,0 +1,48 @@
+workspace 'MyiOSExploration'
+use_frameworks!
+
+target :'Masonry实践' do
+platform :ios, '8.0'
+    pod 'Masonry'
+    pod 'MJExtension'
+    pod 'SDWebImage'
+    pod 'MMPlaceHolder'
+    project 'Masonry实践/Masonry实践.xcodeproj'
+end
+
+target :'ReactiveCocoa & MVVM' do
+    platform :ios, '8.0'
+    pod 'ReactiveCocoa'
+    project 'ReactiveCocoa & MVVM/ReactiveCocoa & MVVM.xcodeproj'
+end
+
+target :'Quartz 2D实践' do
+    platform :ios, '8.0'
+    pod 'Masonry'
+    pod 'WDYBaseProject','~> 0.2.8'
+    project 'Quartz 2D实践/Quartz 2D实践.xcodeproj'
+end
+
+
+target :'GCD实践' do
+    platform :ios, '8.0'
+    pod 'FMDB'
+    project 'GCD实践/GCD实践.xcodeproj'
+end
+
+
+target :'CALayer及核心动画' do
+    platform :ios, '8.0'
+    pod 'Masonry'
+    project 'CALayer及核心动画/CALayer及核心动画.xcodeproj'
+end
+
+
+target :'IOS核心动画高级技巧(读书笔记)' do
+    platform :ios, '8.0'
+    pod 'WDYBaseProject','~> 0.2.8'
+    project 'IOS核心动画高级技巧(读书笔记)/IOS核心动画高级技巧(读书笔记).xcodeproj'
+end
+
+
+

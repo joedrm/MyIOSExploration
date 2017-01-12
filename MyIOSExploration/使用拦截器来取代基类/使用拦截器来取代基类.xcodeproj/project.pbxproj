@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2090DE281DF6587E00650BCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE271DF6587E00650BCC /* main.m */; };
+		2090DE2B1DF6587E00650BCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE2A1DF6587E00650BCC /* AppDelegate.m */; };
+		2090DE2E1DF6587E00650BCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE2D1DF6587E00650BCC /* ViewController.m */; };
+		2090DE311DF6587E00650BCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2090DE2F1DF6587E00650BCC /* Main.storyboard */; };
+		2090DE331DF6587E00650BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2090DE321DF6587E00650BCC /* Assets.xcassets */; };
+		2090DE361DF6587E00650BCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2090DE341DF6587E00650BCC /* LaunchScreen.storyboard */; };
+		2090DE411DF6587E00650BCC /* __________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE401DF6587E00650BCC /* __________Tests.m */; };
+		2090DE4C1DF6587E00650BCC /* __________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE4B1DF6587E00650BCC /* __________UITests.m */; };
+		2090DE5B1DF658A700650BCC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE5A1DF658A700650BCC /* TestViewController.m */; };
+		2090DE5F1DF6595200650BCC /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE5E1DF6595200650BCC /* Aspects.m */; };
+		2090DE621DF6597C00650BCC /* ViewControllerInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE611DF6597C00650BCC /* ViewControllerInterceptor.m */; };
+		2090DE651DF659A200650BCC /* UIViewController+Interceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE641DF659A200650BCC /* UIViewController+Interceptor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2090DE3D1DF6587E00650BCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2090DE1B1DF6587E00650BCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2090DE221DF6587E00650BCC;
+			remoteInfo = "使用拦截器来取代基类";
+		};
+		2090DE481DF6587E00650BCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2090DE1B1DF6587E00650BCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2090DE221DF6587E00650BCC;
+			remoteInfo = "使用拦截器来取代基类";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2090DE231DF6587E00650BCC /* 使用拦截器来取代基类.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "使用拦截器来取代基类.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2090DE271DF6587E00650BCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2090DE291DF6587E00650BCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2090DE2A1DF6587E00650BCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2090DE2C1DF6587E00650BCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2090DE2D1DF6587E00650BCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2090DE301DF6587E00650BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2090DE321DF6587E00650BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2090DE351DF6587E00650BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2090DE371DF6587E00650BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2090DE3C1DF6587E00650BCC /* 使用拦截器来取代基类Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "使用拦截器来取代基类Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2090DE401DF6587E00650BCC /* __________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__________Tests.m"; sourceTree = "<group>"; };
+		2090DE421DF6587E00650BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2090DE471DF6587E00650BCC /* 使用拦截器来取代基类UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "使用拦截器来取代基类UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2090DE4B1DF6587E00650BCC /* __________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__________UITests.m"; sourceTree = "<group>"; };
+		2090DE4D1DF6587E00650BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2090DE591DF658A700650BCC /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		2090DE5A1DF658A700650BCC /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		2090DE5D1DF6595200650BCC /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		2090DE5E1DF6595200650BCC /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		2090DE601DF6597C00650BCC /* ViewControllerInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInterceptor.h; sourceTree = "<group>"; };
+		2090DE611DF6597C00650BCC /* ViewControllerInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInterceptor.m; sourceTree = "<group>"; };
+		2090DE631DF659A200650BCC /* UIViewController+Interceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Interceptor.h"; sourceTree = "<group>"; };
+		2090DE641DF659A200650BCC /* UIViewController+Interceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Interceptor.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2090DE201DF6587E00650BCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090DE391DF6587E00650BCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090DE441DF6587E00650BCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2090DE1A1DF6587E00650BCC = {
+			isa = PBXGroup;
+			children = (
+				2090DE251DF6587E00650BCC /* 使用拦截器来取代基类 */,
+				2090DE3F1DF6587E00650BCC /* 使用拦截器来取代基类Tests */,
+				2090DE4A1DF6587E00650BCC /* 使用拦截器来取代基类UITests */,
+				2090DE241DF6587E00650BCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2090DE241DF6587E00650BCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2090DE231DF6587E00650BCC /* 使用拦截器来取代基类.app */,
+				2090DE3C1DF6587E00650BCC /* 使用拦截器来取代基类Tests.xctest */,
+				2090DE471DF6587E00650BCC /* 使用拦截器来取代基类UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2090DE251DF6587E00650BCC /* 使用拦截器来取代基类 */ = {
+			isa = PBXGroup;
+			children = (
+				2090DE5C1DF6595200650BCC /* Interceptor */,
+				2090DE291DF6587E00650BCC /* AppDelegate.h */,
+				2090DE2A1DF6587E00650BCC /* AppDelegate.m */,
+				2090DE2C1DF6587E00650BCC /* ViewController.h */,
+				2090DE2D1DF6587E00650BCC /* ViewController.m */,
+				2090DE591DF658A700650BCC /* TestViewController.h */,
+				2090DE5A1DF658A700650BCC /* TestViewController.m */,
+				2090DE2F1DF6587E00650BCC /* Main.storyboard */,
+				2090DE321DF6587E00650BCC /* Assets.xcassets */,
+				2090DE341DF6587E00650BCC /* LaunchScreen.storyboard */,
+				2090DE371DF6587E00650BCC /* Info.plist */,
+				2090DE261DF6587E00650BCC /* Supporting Files */,
+			);
+			path = "使用拦截器来取代基类";
+			sourceTree = "<group>";
+		};
+		2090DE261DF6587E00650BCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2090DE271DF6587E00650BCC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2090DE3F1DF6587E00650BCC /* 使用拦截器来取代基类Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2090DE401DF6587E00650BCC /* __________Tests.m */,
+				2090DE421DF6587E00650BCC /* Info.plist */,
+			);
+			path = "使用拦截器来取代基类Tests";
+			sourceTree = "<group>";
+		};
+		2090DE4A1DF6587E00650BCC /* 使用拦截器来取代基类UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2090DE4B1DF6587E00650BCC /* __________UITests.m */,
+				2090DE4D1DF6587E00650BCC /* Info.plist */,
+			);
+			path = "使用拦截器来取代基类UITests";
+			sourceTree = "<group>";
+		};
+		2090DE5C1DF6595200650BCC /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				2090DE5D1DF6595200650BCC /* Aspects.h */,
+				2090DE5E1DF6595200650BCC /* Aspects.m */,
+				2090DE631DF659A200650BCC /* UIViewController+Interceptor.h */,
+				2090DE641DF659A200650BCC /* UIViewController+Interceptor.m */,
+				2090DE601DF6597C00650BCC /* ViewControllerInterceptor.h */,
+				2090DE611DF6597C00650BCC /* ViewControllerInterceptor.m */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2090DE221DF6587E00650BCC /* 使用拦截器来取代基类 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2090DE501DF6587E00650BCC /* Build configuration list for PBXNativeTarget "使用拦截器来取代基类" */;
+			buildPhases = (
+				2090DE1F1DF6587E00650BCC /* Sources */,
+				2090DE201DF6587E00650BCC /* Frameworks */,
+				2090DE211DF6587E00650BCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "使用拦截器来取代基类";
+			productName = "使用拦截器来取代基类";
+			productReference = 2090DE231DF6587E00650BCC /* 使用拦截器来取代基类.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2090DE3B1DF6587E00650BCC /* 使用拦截器来取代基类Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2090DE531DF6587E00650BCC /* Build configuration list for PBXNativeTarget "使用拦截器来取代基类Tests" */;
+			buildPhases = (
+				2090DE381DF6587E00650BCC /* Sources */,
+				2090DE391DF6587E00650BCC /* Frameworks */,
+				2090DE3A1DF6587E00650BCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2090DE3E1DF6587E00650BCC /* PBXTargetDependency */,
+			);
+			name = "使用拦截器来取代基类Tests";
+			productName = "使用拦截器来取代基类Tests";
+			productReference = 2090DE3C1DF6587E00650BCC /* 使用拦截器来取代基类Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2090DE461DF6587E00650BCC /* 使用拦截器来取代基类UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2090DE561DF6587E00650BCC /* Build configuration list for PBXNativeTarget "使用拦截器来取代基类UITests" */;
+			buildPhases = (
+				2090DE431DF6587E00650BCC /* Sources */,
+				2090DE441DF6587E00650BCC /* Frameworks */,
+				2090DE451DF6587E00650BCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2090DE491DF6587E00650BCC /* PBXTargetDependency */,
+			);
+			name = "使用拦截器来取代基类UITests";
+			productName = "使用拦截器来取代基类UITests";
+			productReference = 2090DE471DF6587E00650BCC /* 使用拦截器来取代基类UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2090DE1B1DF6587E00650BCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = wdy;
+				TargetAttributes = {
+					2090DE221DF6587E00650BCC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2T6XGQJFJM;
+						ProvisioningStyle = Automatic;
+					};
+					2090DE3B1DF6587E00650BCC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2T6XGQJFJM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2090DE221DF6587E00650BCC;
+					};
+					2090DE461DF6587E00650BCC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2T6XGQJFJM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2090DE221DF6587E00650BCC;
+					};
+				};
+			};
+			buildConfigurationList = 2090DE1E1DF6587E00650BCC /* Build configuration list for PBXProject "使用拦截器来取代基类" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2090DE1A1DF6587E00650BCC;
+			productRefGroup = 2090DE241DF6587E00650BCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2090DE221DF6587E00650BCC /* 使用拦截器来取代基类 */,
+				2090DE3B1DF6587E00650BCC /* 使用拦截器来取代基类Tests */,
+				2090DE461DF6587E00650BCC /* 使用拦截器来取代基类UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2090DE211DF6587E00650BCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2090DE361DF6587E00650BCC /* LaunchScreen.storyboard in Resources */,
+				2090DE331DF6587E00650BCC /* Assets.xcassets in Resources */,
+				2090DE311DF6587E00650BCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090DE3A1DF6587E00650BCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090DE451DF6587E00650BCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2090DE1F1DF6587E00650BCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2090DE5F1DF6595200650BCC /* Aspects.m in Sources */,
+				2090DE651DF659A200650BCC /* UIViewController+Interceptor.m in Sources */,
+				2090DE2E1DF6587E00650BCC /* ViewController.m in Sources */,
+				2090DE2B1DF6587E00650BCC /* AppDelegate.m in Sources */,
+				2090DE5B1DF658A700650BCC /* TestViewController.m in Sources */,
+				2090DE621DF6597C00650BCC /* ViewControllerInterceptor.m in Sources */,
+				2090DE281DF6587E00650BCC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090DE381DF6587E00650BCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2090DE411DF6587E00650BCC /* __________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090DE431DF6587E00650BCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2090DE4C1DF6587E00650BCC /* __________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2090DE3E1DF6587E00650BCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2090DE221DF6587E00650BCC /* 使用拦截器来取代基类 */;
+			targetProxy = 2090DE3D1DF6587E00650BCC /* PBXContainerItemProxy */;
+		};
+		2090DE491DF6587E00650BCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2090DE221DF6587E00650BCC /* 使用拦截器来取代基类 */;
+			targetProxy = 2090DE481DF6587E00650BCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2090DE2F1DF6587E00650BCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2090DE301DF6587E00650BCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2090DE341DF6587E00650BCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2090DE351DF6587E00650BCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2090DE4E1DF6587E00650BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2090DE4F1DF6587E00650BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2090DE511DF6587E00650BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				INFOPLIST_FILE = "使用拦截器来取代基类/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2090DE521DF6587E00650BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				INFOPLIST_FILE = "使用拦截器来取代基类/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2090DE541DF6587E00650BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				INFOPLIST_FILE = "使用拦截器来取代基类Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/使用拦截器来取代基类.app/使用拦截器来取代基类";
+			};
+			name = Debug;
+		};
+		2090DE551DF6587E00650BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				INFOPLIST_FILE = "使用拦截器来取代基类Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/使用拦截器来取代基类.app/使用拦截器来取代基类";
+			};
+			name = Release;
+		};
+		2090DE571DF6587E00650BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				INFOPLIST_FILE = "使用拦截器来取代基类UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "使用拦截器来取代基类";
+			};
+			name = Debug;
+		};
+		2090DE581DF6587E00650BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2T6XGQJFJM;
+				INFOPLIST_FILE = "使用拦截器来取代基类UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "使用拦截器来取代基类";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2090DE1E1DF6587E00650BCC /* Build configuration list for PBXProject "使用拦截器来取代基类" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2090DE4E1DF6587E00650BCC /* Debug */,
+				2090DE4F1DF6587E00650BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2090DE501DF6587E00650BCC /* Build configuration list for PBXNativeTarget "使用拦截器来取代基类" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2090DE511DF6587E00650BCC /* Debug */,
+				2090DE521DF6587E00650BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2090DE531DF6587E00650BCC /* Build configuration list for PBXNativeTarget "使用拦截器来取代基类Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2090DE541DF6587E00650BCC /* Debug */,
+				2090DE551DF6587E00650BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2090DE561DF6587E00650BCC /* Build configuration list for PBXNativeTarget "使用拦截器来取代基类UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2090DE571DF6587E00650BCC /* Debug */,
+				2090DE581DF6587E00650BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2090DE1B1DF6587E00650BCC /* Project object */;
+}

@@ -1,0 +1,22 @@
+//
+//  Quartz2D_PrefixHeader.pch
+//  Quartz 2D实践
+//
+//  Created by fang wang on 16/12/12.
+//  Copyright © 2016年 wdy. All rights reserved.
+//
+
+#ifndef Quartz2D_PrefixHeader_pch
+#define Quartz2D_PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Masonry/Masonry.h>
+#import "ImageUtil.h"
+#import <WDYLibrary/WDYLibrary.h>
+
+#import <WDYBaseProject/WDYCategory.h>
+#import <WDYBaseProject/WDYMacros.h>
+#import <WDYBaseProject/WDYUIHeader.h>
+
+
+#endif /* Quartz2D_PrefixHeader_pch */

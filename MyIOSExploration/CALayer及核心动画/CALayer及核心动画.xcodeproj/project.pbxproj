@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16554C691E0E39060095E722 /* WheelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 16554C681E0E39060095E722 /* WheelButton.m */; };
+		16554C6B1E0EA4C00095E722 /* WheelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16554C6A1E0EA4C00095E722 /* WheelView.xib */; };
+		16554C701E0F53450095E722 /* ImageFoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16554C6E1E0F53450095E722 /* ImageFoldViewController.m */; };
+		16554C711E0F53450095E722 /* ImageFoldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16554C6F1E0F53450095E722 /* ImageFoldViewController.xib */; };
+		16554C761E0F6C7D0095E722 /* VoiceShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16554C741E0F6C7D0095E722 /* VoiceShakeViewController.m */; };
+		16554C771E0F6C7D0095E722 /* VoiceShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16554C751E0F6C7D0095E722 /* VoiceShakeViewController.xib */; };
+		16554C7C1E0F75330095E722 /* ParticleEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16554C7A1E0F75330095E722 /* ParticleEffectViewController.m */; };
+		16554C7D1E0F75330095E722 /* ParticleEffectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16554C7B1E0F75330095E722 /* ParticleEffectViewController.xib */; };
+		16554C801E0F75640095E722 /* ParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16554C7F1E0F75640095E722 /* ParticleView.m */; };
+		16554C851E0F7DB40095E722 /* QQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16554C831E0F7DB40095E722 /* QQViewController.m */; };
+		16554C861E0F7DB40095E722 /* QQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16554C841E0F7DB40095E722 /* QQViewController.xib */; };
+		16554C891E0F7DFD0095E722 /* BageViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 16554C881E0F7DFD0095E722 /* BageViewButton.m */; };
+		16554C8B1E0F98CE0095E722 /* 粘性计算图.png in Resources */ = {isa = PBXBuildFile; fileRef = 16554C8A1E0F98CE0095E722 /* 粘性计算图.png */; };
+		165EEB021E0964A100C39F80 /* CATransitionDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB011E0964A100C39F80 /* CATransitionDemoVC.m */; };
+		165EEB071E0967AD00C39F80 /* name01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 165EEB031E0967AD00C39F80 /* name01.jpeg */; };
+		165EEB081E0967AD00C39F80 /* name02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 165EEB041E0967AD00C39F80 /* name02.jpeg */; };
+		165EEB091E0967AD00C39F80 /* name03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 165EEB051E0967AD00C39F80 /* name03.jpeg */; };
+		165EEB0A1E0967AD00C39F80 /* name04.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 165EEB061E0967AD00C39F80 /* name04.jpeg */; };
+		165EEB0E1E096C1700C39F80 /* CAAnimationGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB0D1E096C1700C39F80 /* CAAnimationGroupVC.m */; };
+		165EEB121E0978B500C39F80 /* MyWheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB111E0978B500C39F80 /* MyWheelViewController.m */; };
+		165EEB151E0978D600C39F80 /* WheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB141E0978D600C39F80 /* WheelView.m */; };
+		16DB1B2B1E06C6E7000147BB /* 钟表.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DB1B2A1E06C6E7000147BB /* 钟表.png */; };
+		16DB1B2F1E06C81F000147BB /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DB1B2D1E06C81F000147BB /* ClockViewController.m */; };
+		16DB1B301E06C81F000147BB /* ClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DB1B2E1E06C81F000147BB /* ClockViewController.xib */; };
+		16DB1B341E06D8A8000147BB /* CABasicAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DB1B331E06D8A8000147BB /* CABasicAnimationVC.m */; };
+		16DB1B381E06DC4F000147BB /* HeartBeatEffectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DB1B371E06DC4F000147BB /* HeartBeatEffectVC.m */; };
+		16DD63F11E0649AA00926E50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DD63F01E0649AA00926E50 /* main.m */; };
+		16DD63F41E0649AA00926E50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DD63F31E0649AA00926E50 /* AppDelegate.m */; };
+		16DD63F71E0649AA00926E50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DD63F61E0649AA00926E50 /* ViewController.m */; };
+		16DD63FA1E0649AA00926E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DD63F81E0649AA00926E50 /* Main.storyboard */; };
+		16DD63FC1E0649AA00926E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DD63FB1E0649AA00926E50 /* Assets.xcassets */; };
+		16DD63FF1E0649AA00926E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DD63FD1E0649AA00926E50 /* LaunchScreen.storyboard */; };
+		16DD640A1E06848E00926E50 /* CATransformVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DD64081E06848E00926E50 /* CATransformVC.m */; };
+		16DD640B1E06848E00926E50 /* CATransformVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DD64091E06848E00926E50 /* CATransformVC.xib */; };
+		16DD640D1E06870300926E50 /* your_name.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16DD640C1E06870300926E50 /* your_name.jpg */; };
+		16DD64111E068E4100926E50 /* CustomLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DD64101E068E4100926E50 /* CustomLayerVC.m */; };
+		16EB8E111E12A074008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E101E12A074008DE6FF /* WDYLibrary.framework */; };
+		16EB8E121E12A074008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E101E12A074008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16F2013E1E08289100D3A869 /* 心.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F2013D1E08289100D3A869 /* 心.png */; };
+		16F201431E082BDB00D3A869 /* CAKeyframeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */; };
+		16F201451E082C4C00D3A869 /* name.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16F201441E082C4C00D3A869 /* name.jpeg */; };
+		AC21FEB752350A2A1D8FC4D3 /* Pods_CALayer_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7F71258B0D8F57EFCBA2D2 /* Pods_CALayer_____.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20D514B11E12643A000FBD5D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16EB8E121E12A074008DE6FF /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16554C671E0E39060095E722 /* WheelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelButton.h; sourceTree = "<group>"; };
+		16554C681E0E39060095E722 /* WheelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelButton.m; sourceTree = "<group>"; };
+		16554C6A1E0EA4C00095E722 /* WheelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WheelView.xib; sourceTree = "<group>"; };
+		16554C6D1E0F53450095E722 /* ImageFoldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFoldViewController.h; sourceTree = "<group>"; };
+		16554C6E1E0F53450095E722 /* ImageFoldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFoldViewController.m; sourceTree = "<group>"; };
+		16554C6F1E0F53450095E722 /* ImageFoldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageFoldViewController.xib; sourceTree = "<group>"; };
+		16554C731E0F6C7D0095E722 /* VoiceShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceShakeViewController.h; sourceTree = "<group>"; };
+		16554C741E0F6C7D0095E722 /* VoiceShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceShakeViewController.m; sourceTree = "<group>"; };
+		16554C751E0F6C7D0095E722 /* VoiceShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceShakeViewController.xib; sourceTree = "<group>"; };
+		16554C791E0F75330095E722 /* ParticleEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEffectViewController.h; sourceTree = "<group>"; };
+		16554C7A1E0F75330095E722 /* ParticleEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleEffectViewController.m; sourceTree = "<group>"; };
+		16554C7B1E0F75330095E722 /* ParticleEffectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParticleEffectViewController.xib; sourceTree = "<group>"; };
+		16554C7E1E0F75640095E722 /* ParticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleView.h; sourceTree = "<group>"; };
+		16554C7F1E0F75640095E722 /* ParticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleView.m; sourceTree = "<group>"; };
+		16554C821E0F7DB40095E722 /* QQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQViewController.h; sourceTree = "<group>"; };
+		16554C831E0F7DB40095E722 /* QQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQViewController.m; sourceTree = "<group>"; };
+		16554C841E0F7DB40095E722 /* QQViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQViewController.xib; sourceTree = "<group>"; };
+		16554C871E0F7DFD0095E722 /* BageViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BageViewButton.h; sourceTree = "<group>"; };
+		16554C881E0F7DFD0095E722 /* BageViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BageViewButton.m; sourceTree = "<group>"; };
+		16554C8A1E0F98CE0095E722 /* 粘性计算图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粘性计算图.png"; sourceTree = "<group>"; };
+		165EEB001E0964A100C39F80 /* CATransitionDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionDemoVC.h; sourceTree = "<group>"; };
+		165EEB011E0964A100C39F80 /* CATransitionDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionDemoVC.m; sourceTree = "<group>"; };
+		165EEB031E0967AD00C39F80 /* name01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name01.jpeg; sourceTree = "<group>"; };
+		165EEB041E0967AD00C39F80 /* name02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name02.jpeg; sourceTree = "<group>"; };
+		165EEB051E0967AD00C39F80 /* name03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name03.jpeg; sourceTree = "<group>"; };
+		165EEB061E0967AD00C39F80 /* name04.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name04.jpeg; sourceTree = "<group>"; };
+		165EEB0C1E096C1700C39F80 /* CAAnimationGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationGroupVC.h; sourceTree = "<group>"; };
+		165EEB0D1E096C1700C39F80 /* CAAnimationGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationGroupVC.m; sourceTree = "<group>"; };
+		165EEB101E0978B500C39F80 /* MyWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWheelViewController.h; sourceTree = "<group>"; };
+		165EEB111E0978B500C39F80 /* MyWheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWheelViewController.m; sourceTree = "<group>"; };
+		165EEB131E0978D600C39F80 /* WheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelView.h; sourceTree = "<group>"; };
+		165EEB141E0978D600C39F80 /* WheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelView.m; sourceTree = "<group>"; };
+		16DB1B2A1E06C6E7000147BB /* 钟表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "钟表.png"; sourceTree = "<group>"; };
+		16DB1B2C1E06C81F000147BB /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		16DB1B2D1E06C81F000147BB /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
+		16DB1B2E1E06C81F000147BB /* ClockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockViewController.xib; sourceTree = "<group>"; };
+		16DB1B321E06D8A8000147BB /* CABasicAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationVC.h; sourceTree = "<group>"; };
+		16DB1B331E06D8A8000147BB /* CABasicAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationVC.m; sourceTree = "<group>"; };
+		16DB1B361E06DC4F000147BB /* HeartBeatEffectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartBeatEffectVC.h; sourceTree = "<group>"; };
+		16DB1B371E06DC4F000147BB /* HeartBeatEffectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartBeatEffectVC.m; sourceTree = "<group>"; };
+		16DD63EC1E0649AA00926E50 /* CALayer及核心动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CALayer及核心动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16DD63F01E0649AA00926E50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16DD63F21E0649AA00926E50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		16DD63F31E0649AA00926E50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		16DD63F51E0649AA00926E50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		16DD63F61E0649AA00926E50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		16DD63F91E0649AA00926E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16DD63FB1E0649AA00926E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16DD63FE1E0649AA00926E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16DD64001E0649AA00926E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16DD64071E06848E00926E50 /* CATransformVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformVC.h; sourceTree = "<group>"; };
+		16DD64081E06848E00926E50 /* CATransformVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransformVC.m; sourceTree = "<group>"; };
+		16DD64091E06848E00926E50 /* CATransformVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CATransformVC.xib; sourceTree = "<group>"; };
+		16DD640C1E06870300926E50 /* your_name.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = your_name.jpg; sourceTree = "<group>"; };
+		16DD640F1E068E4100926E50 /* CustomLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayerVC.h; sourceTree = "<group>"; };
+		16DD64101E068E4100926E50 /* CustomLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayerVC.m; sourceTree = "<group>"; };
+		16EB8E101E12A074008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F2013D1E08289100D3A869 /* 心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "心.png"; sourceTree = "<group>"; };
+		16F201411E082BDB00D3A869 /* CAKeyframeAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationVC.h; sourceTree = "<group>"; };
+		16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationVC.m; sourceTree = "<group>"; };
+		16F201441E082C4C00D3A869 /* name.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name.jpeg; sourceTree = "<group>"; };
+		1F7F71258B0D8F57EFCBA2D2 /* Pods_CALayer_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_CALayer_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A619EE50C15B5F3E87D7851 /* Pods-CALayer及核心动画.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CALayer及核心动画.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CALayer及核心动画/Pods-CALayer及核心动画.release.xcconfig"; sourceTree = "<group>"; };
+		B52C98535759A42148F5D345 /* Pods-CALayer及核心动画.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CALayer及核心动画.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CALayer及核心动画/Pods-CALayer及核心动画.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16DD63E91E0649AA00926E50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC21FEB752350A2A1D8FC4D3 /* Pods_CALayer_____.framework in Frameworks */,
+				16EB8E111E12A074008DE6FF /* WDYLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16554C6C1E0F53070095E722 /* 图片折叠 */ = {
+			isa = PBXGroup;
+			children = (
+				16554C6D1E0F53450095E722 /* ImageFoldViewController.h */,
+				16554C6E1E0F53450095E722 /* ImageFoldViewController.m */,
+				16554C6F1E0F53450095E722 /* ImageFoldViewController.xib */,
+			);
+			path = "图片折叠";
+			sourceTree = "<group>";
+		};
+		16554C721E0F6AAF0095E722 /* 播放器音量震动条 */ = {
+			isa = PBXGroup;
+			children = (
+				16554C731E0F6C7D0095E722 /* VoiceShakeViewController.h */,
+				16554C741E0F6C7D0095E722 /* VoiceShakeViewController.m */,
+				16554C751E0F6C7D0095E722 /* VoiceShakeViewController.xib */,
+			);
+			path = "播放器音量震动条";
+			sourceTree = "<group>";
+		};
+		16554C781E0F71540095E722 /* 粒子效果 */ = {
+			isa = PBXGroup;
+			children = (
+				16554C791E0F75330095E722 /* ParticleEffectViewController.h */,
+				16554C7A1E0F75330095E722 /* ParticleEffectViewController.m */,
+				16554C7E1E0F75640095E722 /* ParticleView.h */,
+				16554C7F1E0F75640095E722 /* ParticleView.m */,
+				16554C7B1E0F75330095E722 /* ParticleEffectViewController.xib */,
+			);
+			path = "粒子效果";
+			sourceTree = "<group>";
+		};
+		16554C811E0F7D4E0095E722 /* 仿QQ粘性布局 */ = {
+			isa = PBXGroup;
+			children = (
+				16554C821E0F7DB40095E722 /* QQViewController.h */,
+				16554C831E0F7DB40095E722 /* QQViewController.m */,
+				16554C841E0F7DB40095E722 /* QQViewController.xib */,
+				16554C871E0F7DFD0095E722 /* BageViewButton.h */,
+				16554C881E0F7DFD0095E722 /* BageViewButton.m */,
+				16554C8A1E0F98CE0095E722 /* 粘性计算图.png */,
+			);
+			path = "仿QQ粘性布局";
+			sourceTree = "<group>";
+		};
+		165EEAFF1E09648000C39F80 /* CATransition转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				165EEB031E0967AD00C39F80 /* name01.jpeg */,
+				165EEB041E0967AD00C39F80 /* name02.jpeg */,
+				165EEB051E0967AD00C39F80 /* name03.jpeg */,
+				165EEB061E0967AD00C39F80 /* name04.jpeg */,
+				165EEB001E0964A100C39F80 /* CATransitionDemoVC.h */,
+				165EEB011E0964A100C39F80 /* CATransitionDemoVC.m */,
+			);
+			path = "CATransition转场动画";
+			sourceTree = "<group>";
+		};
+		165EEB0B1E096BE800C39F80 /* CAAnimationGroup(动画组) */ = {
+			isa = PBXGroup;
+			children = (
+				165EEB0C1E096C1700C39F80 /* CAAnimationGroupVC.h */,
+				165EEB0D1E096C1700C39F80 /* CAAnimationGroupVC.m */,
+			);
+			path = "CAAnimationGroup(动画组)";
+			sourceTree = "<group>";
+		};
+		165EEB0F1E09788800C39F80 /* 转盘动画 */ = {
+			isa = PBXGroup;
+			children = (
+				165EEB101E0978B500C39F80 /* MyWheelViewController.h */,
+				165EEB111E0978B500C39F80 /* MyWheelViewController.m */,
+				165EEB131E0978D600C39F80 /* WheelView.h */,
+				165EEB141E0978D600C39F80 /* WheelView.m */,
+				16554C6A1E0EA4C00095E722 /* WheelView.xib */,
+				16554C671E0E39060095E722 /* WheelButton.h */,
+				16554C681E0E39060095E722 /* WheelButton.m */,
+			);
+			path = "转盘动画";
+			sourceTree = "<group>";
+		};
+		16DB1B291E06BF9D000147BB /* 隐式动画：时钟 */ = {
+			isa = PBXGroup;
+			children = (
+				16DB1B2A1E06C6E7000147BB /* 钟表.png */,
+				16DB1B2C1E06C81F000147BB /* ClockViewController.h */,
+				16DB1B2D1E06C81F000147BB /* ClockViewController.m */,
+				16DB1B2E1E06C81F000147BB /* ClockViewController.xib */,
+			);
+			path = "隐式动画：时钟";
+			sourceTree = "<group>";
+		};
+		16DB1B311E06D85C000147BB /* CABasicAnimation(基础核心动画) */ = {
+			isa = PBXGroup;
+			children = (
+				16DB1B321E06D8A8000147BB /* CABasicAnimationVC.h */,
+				16DB1B331E06D8A8000147BB /* CABasicAnimationVC.m */,
+			);
+			path = "CABasicAnimation(基础核心动画)";
+			sourceTree = "<group>";
+		};
+		16DB1B351E06DBE2000147BB /* 心跳效果 */ = {
+			isa = PBXGroup;
+			children = (
+				16F2013D1E08289100D3A869 /* 心.png */,
+				16DB1B361E06DC4F000147BB /* HeartBeatEffectVC.h */,
+				16DB1B371E06DC4F000147BB /* HeartBeatEffectVC.m */,
+			);
+			path = "心跳效果";
+			sourceTree = "<group>";
+		};
+		16DD63E31E0649AA00926E50 = {
+			isa = PBXGroup;
+			children = (
+				16EB8E101E12A074008DE6FF /* WDYLibrary.framework */,
+				16DD63EE1E0649AA00926E50 /* CALayer及核心动画 */,
+				16DD63ED1E0649AA00926E50 /* Products */,
+				261F8DD9C7A9716143390EA1 /* Pods */,
+				FAE0AA69D8E05A347BCB9B58 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16DD63ED1E0649AA00926E50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16DD63EC1E0649AA00926E50 /* CALayer及核心动画.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16DD63EE1E0649AA00926E50 /* CALayer及核心动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16DD63F21E0649AA00926E50 /* AppDelegate.h */,
+				16DD63F31E0649AA00926E50 /* AppDelegate.m */,
+				16DD63F51E0649AA00926E50 /* ViewController.h */,
+				16DD63F61E0649AA00926E50 /* ViewController.m */,
+				16554C811E0F7D4E0095E722 /* 仿QQ粘性布局 */,
+				16554C781E0F71540095E722 /* 粒子效果 */,
+				16554C721E0F6AAF0095E722 /* 播放器音量震动条 */,
+				16554C6C1E0F53070095E722 /* 图片折叠 */,
+				165EEB0F1E09788800C39F80 /* 转盘动画 */,
+				165EEB0B1E096BE800C39F80 /* CAAnimationGroup(动画组) */,
+				165EEAFF1E09648000C39F80 /* CATransition转场动画 */,
+				16F201401E082B3B00D3A869 /* CAKeyframeAnimation(图片抖动) */,
+				16DB1B351E06DBE2000147BB /* 心跳效果 */,
+				16DB1B311E06D85C000147BB /* CABasicAnimation(基础核心动画) */,
+				16DB1B291E06BF9D000147BB /* 隐式动画：时钟 */,
+				16DD640E1E068E2300926E50 /* 自定义Layer */,
+				16DD64061E067FC600926E50 /* CATransform3D */,
+				16DD63F81E0649AA00926E50 /* Main.storyboard */,
+				16DD63FB1E0649AA00926E50 /* Assets.xcassets */,
+				16DD63FD1E0649AA00926E50 /* LaunchScreen.storyboard */,
+				16DD64001E0649AA00926E50 /* Info.plist */,
+				16DD63EF1E0649AA00926E50 /* Supporting Files */,
+			);
+			path = "CALayer及核心动画";
+			sourceTree = "<group>";
+		};
+		16DD63EF1E0649AA00926E50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16DD63F01E0649AA00926E50 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16DD64061E067FC600926E50 /* CATransform3D */ = {
+			isa = PBXGroup;
+			children = (
+				16DD640C1E06870300926E50 /* your_name.jpg */,
+				16DD64071E06848E00926E50 /* CATransformVC.h */,
+				16DD64081E06848E00926E50 /* CATransformVC.m */,
+				16DD64091E06848E00926E50 /* CATransformVC.xib */,
+			);
+			path = CATransform3D;
+			sourceTree = "<group>";
+		};
+		16DD640E1E068E2300926E50 /* 自定义Layer */ = {
+			isa = PBXGroup;
+			children = (
+				16DD640F1E068E4100926E50 /* CustomLayerVC.h */,
+				16DD64101E068E4100926E50 /* CustomLayerVC.m */,
+			);
+			path = "自定义Layer";
+			sourceTree = "<group>";
+		};
+		16F201401E082B3B00D3A869 /* CAKeyframeAnimation(图片抖动) */ = {
+			isa = PBXGroup;
+			children = (
+				16F201441E082C4C00D3A869 /* name.jpeg */,
+				16F201411E082BDB00D3A869 /* CAKeyframeAnimationVC.h */,
+				16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */,
+			);
+			path = "CAKeyframeAnimation(图片抖动)";
+			sourceTree = "<group>";
+		};
+		261F8DD9C7A9716143390EA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B52C98535759A42148F5D345 /* Pods-CALayer及核心动画.debug.xcconfig */,
+				3A619EE50C15B5F3E87D7851 /* Pods-CALayer及核心动画.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAE0AA69D8E05A347BCB9B58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F7F71258B0D8F57EFCBA2D2 /* Pods_CALayer_____.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16DD63EB1E0649AA00926E50 /* CALayer及核心动画 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16DD64031E0649AA00926E50 /* Build configuration list for PBXNativeTarget "CALayer及核心动画" */;
+			buildPhases = (
+				A89DD71E9CA21BCDEAF58853 /* [CP] Check Pods Manifest.lock */,
+				16DD63E81E0649AA00926E50 /* Sources */,
+				16DD63E91E0649AA00926E50 /* Frameworks */,
+				16DD63EA1E0649AA00926E50 /* Resources */,
+				08607ECB3D1545DE286C053E /* [CP] Embed Pods Frameworks */,
+				726BEBE0861F2B9BEC19CE23 /* [CP] Copy Pods Resources */,
+				20D514B11E12643A000FBD5D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CALayer及核心动画";
+			productName = "CALayer及核心动画";
+			productReference = 16DD63EC1E0649AA00926E50 /* CALayer及核心动画.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16DD63E41E0649AA00926E50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = com.wdy.MyIOSExploration;
+				TargetAttributes = {
+					16DD63EB1E0649AA00926E50 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = DSHJC97KG4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 16DD63E71E0649AA00926E50 /* Build configuration list for PBXProject "CALayer及核心动画" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16DD63E31E0649AA00926E50;
+			productRefGroup = 16DD63ED1E0649AA00926E50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16DD63EB1E0649AA00926E50 /* CALayer及核心动画 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16DD63EA1E0649AA00926E50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F201451E082C4C00D3A869 /* name.jpeg in Resources */,
+				16554C7D1E0F75330095E722 /* ParticleEffectViewController.xib in Resources */,
+				16DD63FF1E0649AA00926E50 /* LaunchScreen.storyboard in Resources */,
+				16DD63FC1E0649AA00926E50 /* Assets.xcassets in Resources */,
+				16DB1B301E06C81F000147BB /* ClockViewController.xib in Resources */,
+				16554C711E0F53450095E722 /* ImageFoldViewController.xib in Resources */,
+				165EEB081E0967AD00C39F80 /* name02.jpeg in Resources */,
+				16F2013E1E08289100D3A869 /* 心.png in Resources */,
+				16DB1B2B1E06C6E7000147BB /* 钟表.png in Resources */,
+				16DD63FA1E0649AA00926E50 /* Main.storyboard in Resources */,
+				16554C6B1E0EA4C00095E722 /* WheelView.xib in Resources */,
+				16DD640B1E06848E00926E50 /* CATransformVC.xib in Resources */,
+				165EEB091E0967AD00C39F80 /* name03.jpeg in Resources */,
+				165EEB0A1E0967AD00C39F80 /* name04.jpeg in Resources */,
+				16DD640D1E06870300926E50 /* your_name.jpg in Resources */,
+				16554C771E0F6C7D0095E722 /* VoiceShakeViewController.xib in Resources */,
+				16554C8B1E0F98CE0095E722 /* 粘性计算图.png in Resources */,
+				16554C861E0F7DB40095E722 /* QQViewController.xib in Resources */,
+				165EEB071E0967AD00C39F80 /* name01.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08607ECB3D1545DE286C053E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CALayer及核心动画/Pods-CALayer及核心动画-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		726BEBE0861F2B9BEC19CE23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CALayer及核心动画/Pods-CALayer及核心动画-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A89DD71E9CA21BCDEAF58853 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16DD63E81E0649AA00926E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16554C701E0F53450095E722 /* ImageFoldViewController.m in Sources */,
+				165EEB0E1E096C1700C39F80 /* CAAnimationGroupVC.m in Sources */,
+				16554C691E0E39060095E722 /* WheelButton.m in Sources */,
+				16DD63F71E0649AA00926E50 /* ViewController.m in Sources */,
+				165EEB151E0978D600C39F80 /* WheelView.m in Sources */,
+				16554C891E0F7DFD0095E722 /* BageViewButton.m in Sources */,
+				16DD63F41E0649AA00926E50 /* AppDelegate.m in Sources */,
+				16554C761E0F6C7D0095E722 /* VoiceShakeViewController.m in Sources */,
+				16DD63F11E0649AA00926E50 /* main.m in Sources */,
+				16DB1B2F1E06C81F000147BB /* ClockViewController.m in Sources */,
+				16DB1B381E06DC4F000147BB /* HeartBeatEffectVC.m in Sources */,
+				16DD640A1E06848E00926E50 /* CATransformVC.m in Sources */,
+				16554C801E0F75640095E722 /* ParticleView.m in Sources */,
+				165EEB021E0964A100C39F80 /* CATransitionDemoVC.m in Sources */,
+				165EEB121E0978B500C39F80 /* MyWheelViewController.m in Sources */,
+				16F201431E082BDB00D3A869 /* CAKeyframeAnimationVC.m in Sources */,
+				16554C851E0F7DB40095E722 /* QQViewController.m in Sources */,
+				16DB1B341E06D8A8000147BB /* CABasicAnimationVC.m in Sources */,
+				16554C7C1E0F75330095E722 /* ParticleEffectViewController.m in Sources */,
+				16DD64111E068E4100926E50 /* CustomLayerVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16DD63F81E0649AA00926E50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16DD63F91E0649AA00926E50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16DD63FD1E0649AA00926E50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16DD63FE1E0649AA00926E50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16DD64011E0649AA00926E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16DD64021E0649AA00926E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16DD64041E0649AA00926E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52C98535759A42148F5D345 /* Pods-CALayer及核心动画.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
+				INFOPLIST_FILE = "CALayer及核心动画/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy..CALayer-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16DD64051E0649AA00926E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A619EE50C15B5F3E87D7851 /* Pods-CALayer及核心动画.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
+				INFOPLIST_FILE = "CALayer及核心动画/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy..CALayer-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16DD63E71E0649AA00926E50 /* Build configuration list for PBXProject "CALayer及核心动画" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16DD64011E0649AA00926E50 /* Debug */,
+				16DD64021E0649AA00926E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16DD64031E0649AA00926E50 /* Build configuration list for PBXNativeTarget "CALayer及核心动画" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16DD64041E0649AA00926E50 /* Debug */,
+				16DD64051E0649AA00926E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16DD63E41E0649AA00926E50 /* Project object */;
+}
