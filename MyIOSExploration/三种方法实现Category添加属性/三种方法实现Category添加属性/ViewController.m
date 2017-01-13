@@ -31,5 +31,7 @@
     NSLog(@"%@ %@ %@",p1.name, p1.address, p1.phone);
     
 }
+- (IBAction)modelPresentationVCOnWindow:(id)sender {
+}
 
 @end
