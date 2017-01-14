@@ -65,7 +65,8 @@
 
 /*
  http://bbs.520it.com/forum.php?mod=viewthread&tid=3060  离屏渲染原理，GPU 资源消耗原因和解决方案，ASDK 的基本原理
- 
+ https://github.com/nicklockwood/GLView    在IOS里面使用OpenGL创建3D模型，作者是Nick Lockwood：https://github.com/nicklockwood
+ https://camo.githubusercontent.com/7b8b4f8740b5a4c9874c5a99d54f98855242f844/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313638373532312d633539636263306664373964313132392e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430  CoreAnimation 结构图
  */
 
 
