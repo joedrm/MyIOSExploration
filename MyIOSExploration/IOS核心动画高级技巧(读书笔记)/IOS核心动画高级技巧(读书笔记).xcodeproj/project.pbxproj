@@ -34,6 +34,9 @@
 		16D178C01E225F8B0089696A /* AnimationTimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D178BE1E225F8A0089696A /* AnimationTimeVC.xib */; };
 		16D4BBA41E226FC10050B7A4 /* door.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16D4BBA31E226FC10050B7A4 /* door.jpg */; };
 		16D4BBA81E2280EA0050B7A4 /* CAMediaTimingFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D4BBA71E2280EA0050B7A4 /* CAMediaTimingFunctionVC.m */; };
+		16EACF541E2B356100B34B1C /* ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16EACF531E2B356100B34B1C /* ball.jpg */; };
+		16EACF561E2B4C4200B34B1C /* anchorPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EACF551E2B4C4200B34B1C /* anchorPoint.png */; };
+		16EACF5A1E2BA91000B34B1C /* TimerAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EACF591E2BA91000B34B1C /* TimerAnimationVC.m */; };
 		16EB8E0E1E12A067008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; };
 		16EB8E0F1E12A067008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20D515221E12876F000FBD5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D515211E12876F000FBD5D /* main.m */; };
@@ -105,6 +108,10 @@
 		16D4BBA31E226FC10050B7A4 /* door.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = door.jpg; sourceTree = "<group>"; };
 		16D4BBA61E2280EA0050B7A4 /* CAMediaTimingFunctionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingFunctionVC.h; sourceTree = "<group>"; };
 		16D4BBA71E2280EA0050B7A4 /* CAMediaTimingFunctionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMediaTimingFunctionVC.m; sourceTree = "<group>"; };
+		16EACF531E2B356100B34B1C /* ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ball.jpg; sourceTree = "<group>"; };
+		16EACF551E2B4C4200B34B1C /* anchorPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anchorPoint.png; sourceTree = "<group>"; };
+		16EACF581E2BA91000B34B1C /* TimerAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerAnimationVC.h; sourceTree = "<group>"; };
+		16EACF591E2BA91000B34B1C /* TimerAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerAnimationVC.m; sourceTree = "<group>"; };
 		16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D5151D1E12876F000FBD5D /* IOS核心动画高级技巧(读书笔记).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS核心动画高级技巧(读书笔记).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D515211E12876F000FBD5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -149,6 +156,7 @@
 		16B137921E1419E900A39AE0 /* 3.图层几何学 */ = {
 			isa = PBXGroup;
 			children = (
+				16EACF551E2B4C4200B34B1C /* anchorPoint.png */,
 				16B137931E141A4E00A39AE0 /* LayerGeometryVC.h */,
 				16B137941E141A4E00A39AE0 /* LayerGeometryVC.m */,
 			);
@@ -219,10 +227,27 @@
 		16D4BBA51E227FD80050B7A4 /* 10.缓冲 */ = {
 			isa = PBXGroup;
 			children = (
+				16EACF531E2B356100B34B1C /* ball.jpg */,
 				16D4BBA61E2280EA0050B7A4 /* CAMediaTimingFunctionVC.h */,
 				16D4BBA71E2280EA0050B7A4 /* CAMediaTimingFunctionVC.m */,
 			);
 			path = "10.缓冲";
+			sourceTree = "<group>";
+		};
+		16EACF571E2BA8AE00B34B1C /* 11.基于定时器的动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16EACF581E2BA91000B34B1C /* TimerAnimationVC.h */,
+				16EACF591E2BA91000B34B1C /* TimerAnimationVC.m */,
+			);
+			path = "11.基于定时器的动画";
+			sourceTree = "<group>";
+		};
+		16EACF9F1E2BCAE300B34B1C /* 12.性能调优 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "12.性能调优";
 			sourceTree = "<group>";
 		};
 		20D515141E12876F000FBD5D = {
@@ -251,6 +276,8 @@
 				20D515241E12876F000FBD5D /* AppDelegate.m */,
 				20D515261E12876F000FBD5D /* ViewController.h */,
 				20D515271E12876F000FBD5D /* ViewController.m */,
+				16EACF9F1E2BCAE300B34B1C /* 12.性能调优 */,
+				16EACF571E2BA8AE00B34B1C /* 11.基于定时器的动画 */,
 				16D4BBA51E227FD80050B7A4 /* 10.缓冲 */,
 				16D178B61E225BA50089696A /* 9.图层时间 */,
 				16D178A11E1A90450089696A /* 8.显式动画 */,
@@ -385,10 +412,12 @@
 				16D1788B1E179C990089696A /* CubeView.xib in Resources */,
 				16D178B31E20F8250089696A /* name02.jpeg in Resources */,
 				20D515301E12876F000FBD5D /* LaunchScreen.storyboard in Resources */,
+				16EACF541E2B356100B34B1C /* ball.jpg in Resources */,
 				20D5152D1E12876F000FBD5D /* Assets.xcassets in Resources */,
 				16D178931E18DB4A0089696A /* CATransformLayerVC.xib in Resources */,
 				20D5152B1E12876F000FBD5D /* Main.storyboard in Resources */,
 				16D178BB1E225F6B0089696A /* ship.jpeg in Resources */,
+				16EACF561E2B4C4200B34B1C /* anchorPoint.png in Resources */,
 				16D178B51E20F8250089696A /* name04.jpeg in Resources */,
 				16D4BBA41E226FC10050B7A4 /* door.jpg in Resources */,
 				16B137911E140FC700A39AE0 /* test.jpg in Resources */,
@@ -469,6 +498,7 @@
 				16D1789C1E18EA620089696A /* CAReplicatorLayerVC.m in Sources */,
 				16D178A01E18FF100089696A /* ImplicitViewController.m in Sources */,
 				16B1378F1E140EAE00A39AE0 /* BoardViewLayerVC.m in Sources */,
+				16EACF5A1E2BA91000B34B1C /* TimerAnimationVC.m in Sources */,
 				16D178A41E1A90BA0089696A /* CABasicAnimationVC.m in Sources */,
 				20D515221E12876F000FBD5D /* main.m in Sources */,
 			);

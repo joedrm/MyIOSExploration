@@ -34,7 +34,8 @@
                       @"8.3 显式动画之 CAAnimationGroup",
                       @"8.3 过渡动画 CATransition",
                       @"9 图层时间",
-                      @"10 缓冲"
+                      @"10 缓冲",
+                      @"11 基于定时器的动画"
                       ];
     
     
@@ -55,7 +56,8 @@
                    @"CAAnimationGroupVC",
                    @"CATransitionVC",
                    @"AnimationTimeVC",
-                   @"CAMediaTimingFunctionVC"
+                   @"CAMediaTimingFunctionVC",
+                   @"TimerAnimationVC"
                    ];
 }
 

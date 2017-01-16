@@ -25,17 +25,17 @@
     UIView *animationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 95, 30)];
     
     UIView  *shapeView1= [[UIView alloc] initWithFrame:CGRectMake(0, 7, 16, 16)];
-    shapeView1.backgroundColor = UIColorGreen;
+    shapeView1.backgroundColor = [UIColor greenColor];
     shapeView1.layer.cornerRadius = 8;
     [animationView addSubview:shapeView1];
     
     UIView *shapeView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 7, 16, 16)];
-    shapeView2.backgroundColor = UIColorRed;
+    shapeView2.backgroundColor = [UIColor redColor];
     shapeView2.layer.cornerRadius = 8;
     [animationView addSubview:shapeView2];
     
     UIView *shapeView3 = [[UIView alloc] initWithFrame:CGRectMake(0, 7, 16, 16)];
-    shapeView3.backgroundColor = UIColorBlue;
+    shapeView3.backgroundColor = [UIColor blueColor];
     shapeView3.layer.cornerRadius = 8;
     [animationView addSubview:shapeView3];
     
