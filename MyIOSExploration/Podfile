@@ -44,5 +44,11 @@ target :'IOS核心动画高级技巧(读书笔记)' do
     project 'IOS核心动画高级技巧(读书笔记)/IOS核心动画高级技巧(读书笔记).xcodeproj'
 end
 
+target :'视频播放及特效制作' do
+    platform :ios, '8.0'
+    pod 'WDYBaseProject','~> 0.2.8'
+    pod 'Masonry'
+    project '视频播放及特效制作/视频播放及特效制作.xcodeproj'
+end
 
 

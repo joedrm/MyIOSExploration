@@ -1,0 +1,17 @@
+//
+//  VideoPrefixHeader.pch
+//  视频播放及特效制作
+//
+//  Created by fang wang on 17/1/17.
+//  Copyright © 2017年 wdy. All rights reserved.
+//
+
+#ifndef VideoPrefixHeader_pch
+#define VideoPrefixHeader_pch
+
+
+#import <Masonry/Masonry.h>
+#import <WDYBaseProject/WDYCategory.h>
+#import <WDYBaseProject/WDYMacros.h>
+
+#endif /* VideoPrefixHeader_pch */
