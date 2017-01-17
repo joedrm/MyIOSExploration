@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UICollectionView&#x6df1;&#x5165;&#x7406;&#x89e3;&#x548c;&#x5b9e;&#x8df5;/UICollectionView&#x6df1;&#x5165;&#x7406;&#x89e3;&#x548c;&#x5b9e;&#x8df5;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MultiCustomUIComponent/MultiCustomUIComponent.xcodeproj">
    </FileRef>
    <FileRef
