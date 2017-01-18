@@ -13,6 +13,8 @@
     https://github.com/daria-kopaliani/DAPageControlView
  
  http://www.jianshu.com/p/274d19f97564   iOS封装一个轻量级的顶部分类控件
+ 
+ https://github.com/seedante/iOS-Note iOS 视图控制器转场(动画)详解、自定义容器控制器转场
  */
 
 
