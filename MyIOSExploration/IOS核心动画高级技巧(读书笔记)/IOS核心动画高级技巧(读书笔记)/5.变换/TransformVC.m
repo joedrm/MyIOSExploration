@@ -81,6 +81,9 @@
 }
 
 #pragma mark - 1.仿射变换 CGAffineTransform
+
+// http://blog.csdn.net/likendsl/article/details/7595611   从UIImage的矩阵变换看矩阵运算的原理
+
 // UIView的transform属性是一个CGAffineTransform类型，用于在二维空间做旋转，缩放和平移。CGAffineTransform是一个可以和二维空间向量（例如CGPoint）做乘法的3X2的矩阵, UIView可以通过设置transform属性做变换，但实际上它只是封装了内部图层的变换。CALayer同样也有一个transform属性，但它的类型是CATransform3D，而不是CGAffineTransform，CALayer对应于UIView的transform属性叫做affineTransform
 // CGAffineTransform 类型属于 Core Graphics 框架，对应layer的属性是：affineTransform
 // 对图层旋转45度

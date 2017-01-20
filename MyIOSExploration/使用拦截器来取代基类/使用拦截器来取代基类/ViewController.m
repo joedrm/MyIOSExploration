@@ -35,5 +35,6 @@
 /*
  参考文章：
  http://www.jianshu.com/p/61d2b86512ad
+ https://github.com/wujunyang/MobileProject/blob/master/MobileProject/Resource/AppDelegate/XAspect-GeTuiAppDelegate.m  拦截器的使用
  */
 @end
