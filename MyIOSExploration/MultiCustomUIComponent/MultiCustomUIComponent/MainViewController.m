@@ -26,7 +26,7 @@
     
     self.vcArr = @[
                    @"MultiCustomUIComponentVC",
-                   @"TimerAnimationVC"
+                   @"TestToastViewController"
                    ];
 }
 

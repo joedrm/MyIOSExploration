@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16A1D7C01E34FC6D003869B2 /* CustomToastAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A1D7BF1E34FC6D003869B2 /* CustomToastAnimator.m */; };
+		16A1D7C31E34FD98003869B2 /* CustomToastContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A1D7C21E34FD98003869B2 /* CustomToastContentView.m */; };
+		16A1D7C61E34FFD3003869B2 /* UIImageView+ImageFitSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A1D7C51E34FFD3003869B2 /* UIImageView+ImageFitSize.m */; };
 		202EB7C81E28B47E00619831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 202EB7C71E28B47E00619831 /* main.m */; };
 		202EB7CB1E28B47E00619831 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 202EB7CA1E28B47E00619831 /* AppDelegate.m */; };
 		202EB7D11E28B47E00619831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202EB7CF1E28B47E00619831 /* Main.storyboard */; };
@@ -49,6 +52,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16A1D7BE1E34FC6D003869B2 /* CustomToastAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomToastAnimator.h; sourceTree = "<group>"; };
+		16A1D7BF1E34FC6D003869B2 /* CustomToastAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomToastAnimator.m; sourceTree = "<group>"; };
+		16A1D7C11E34FD98003869B2 /* CustomToastContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomToastContentView.h; sourceTree = "<group>"; };
+		16A1D7C21E34FD98003869B2 /* CustomToastContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomToastContentView.m; sourceTree = "<group>"; };
+		16A1D7C41E34FFD3003869B2 /* UIImageView+ImageFitSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImageFitSize.h"; sourceTree = "<group>"; };
+		16A1D7C51E34FFD3003869B2 /* UIImageView+ImageFitSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ImageFitSize.m"; sourceTree = "<group>"; };
 		202EB7C31E28B47E00619831 /* MultiCustomUIComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiCustomUIComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		202EB7C71E28B47E00619831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		202EB7C91E28B47E00619831 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +145,10 @@
 				202EB7DE1E28B4CA00619831 /* ModalPresentationViewController.m */,
 				20385B7F1E34C25B00445564 /* TestToastViewController.h */,
 				20385B801E34C25B00445564 /* TestToastViewController.m */,
+				16A1D7BE1E34FC6D003869B2 /* CustomToastAnimator.h */,
+				16A1D7BF1E34FC6D003869B2 /* CustomToastAnimator.m */,
+				16A1D7C11E34FD98003869B2 /* CustomToastContentView.h */,
+				16A1D7C21E34FD98003869B2 /* CustomToastContentView.m */,
 				20385B821E34C27800445564 /* Tool */,
 				20385B5C1E34C0D300445564 /* Toast */,
 				202EB7CF1E28B47E00619831 /* Main.storyboard */,
@@ -193,6 +206,8 @@
 				20385B831E34C27800445564 /* AppCommonHelper.h */,
 				20385B841E34C27800445564 /* AppCommonHelper.m */,
 				20385B851E34C27800445564 /* CommonDefines.h */,
+				16A1D7C41E34FFD3003869B2 /* UIImageView+ImageFitSize.h */,
+				16A1D7C51E34FFD3003869B2 /* UIImageView+ImageFitSize.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -229,7 +244,7 @@
 				TargetAttributes = {
 					202EB7C21E28B47E00619831 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VRGWDFH359;
+						DevelopmentTeam = DSHJC97KG4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -280,6 +295,7 @@
 				20385B861E34C27800445564 /* AppCommonHelper.m in Sources */,
 				20385B761E34C0D300445564 /* ToastContentView.m in Sources */,
 				20385B741E34C0D300445564 /* ToastAnimator.m in Sources */,
+				16A1D7C31E34FD98003869B2 /* CustomToastContentView.m in Sources */,
 				20385B811E34C25B00445564 /* TestToastViewController.m in Sources */,
 				202EB7DF1E28B4CA00619831 /* ModalPresentationViewController.m in Sources */,
 				20385B731E34C0D300445564 /* TipsView.m in Sources */,
@@ -288,6 +304,8 @@
 				202EB7E21E28B9F800619831 /* MultiCustomUIComponentVC.m in Sources */,
 				20385B7E1E34C16200445564 /* MainViewController.m in Sources */,
 				202EB7CB1E28B47E00619831 /* AppDelegate.m in Sources */,
+				16A1D7C01E34FC6D003869B2 /* CustomToastAnimator.m in Sources */,
+				16A1D7C61E34FFD3003869B2 /* UIImageView+ImageFitSize.m in Sources */,
 				20385B751E34C0D300445564 /* ToastBackgroundView.m in Sources */,
 				202EB7C81E28B47E00619831 /* main.m in Sources */,
 			);
@@ -407,9 +425,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MultiCustomUIComponent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.nav.MultiCustomUIComponent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MultiCustomUIComponent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.nav.MultiCustomUIComponent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
