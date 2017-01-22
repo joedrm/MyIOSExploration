@@ -88,6 +88,7 @@
 		20385B831E34C27800445564 /* AppCommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommonHelper.h; sourceTree = "<group>"; };
 		20385B841E34C27800445564 /* AppCommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommonHelper.m; sourceTree = "<group>"; };
 		20385B851E34C27800445564 /* CommonDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefines.h; sourceTree = "<group>"; };
+		20385B871E34C51000445564 /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +182,7 @@
 				20385B6A1E34C0D300445564 /* ToastContentView.m */,
 				20385B6B1E34C0D300445564 /* ToastView.h */,
 				20385B6C1E34C0D300445564 /* ToastView.m */,
+				20385B871E34C51000445564 /* Toast.h */,
 			);
 			path = Toast;
 			sourceTree = "<group>";
