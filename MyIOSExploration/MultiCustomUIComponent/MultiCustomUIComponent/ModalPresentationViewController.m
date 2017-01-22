@@ -8,51 +8,9 @@
 
 #import "ModalPresentationViewController.h"
 #import <objc/runtime.h>
+#import "CommonDefines.h"
+#import "AppCommonHelper.h"
 
-/**
- *  基于指定的倍数，对传进来的 floatValue 进行像素取整。若指定倍数为0，则表示以当前设备的屏幕倍数为准。
- *  例如传进来 “2.1”，在 2x 倍数下会返回 2.5（0.5pt 对应 1px），在 3x 倍数下会返回 2.333（0.333pt 对应 1px）。
- */
-CG_INLINE float
-flatfSpecificScale(float floatValue, float scale) {
-    scale = scale == 0 ? ([[UIScreen mainScreen] scale]) : scale;
-    CGFloat flattedValue = ceilf(floatValue * scale) / scale;
-    return flattedValue;
-}
-
-/**
- *  基于当前设备的屏幕倍数，对传进来的 floatValue 进行像素取整。
- *  注意如果在 Core Graphic 绘图里使用时，要注意当前画布的倍数是否和设备屏幕倍数一致，若不一致，不可使用 flatf() 函数。
- */
-CG_INLINE float
-flatf(float floatValue) {
-    return flatfSpecificScale(floatValue, 0);
-}
-/// 用于居中运算
-CG_INLINE CGFloat
-CGFloatGetCenter(CGFloat parent, CGFloat child) {
-    return flatf((parent - child) / 2.0);
-}
-/// 获取UIEdgeInsets在水平方向上的值
-CG_INLINE CGFloat
-UIEdgeInsetsGetHorizontalValue(UIEdgeInsets insets) {
-    return insets.left + insets.right;
-}
-
-/// 获取UIEdgeInsets在垂直方向上的值
-CG_INLINE CGFloat
-UIEdgeInsetsGetVerticalValue(UIEdgeInsets insets) {
-    return insets.top + insets.bottom;
-}
-
-CGSize screenSizeFor47Inch() {
-    return CGSizeMake(375, 667);
-};
-
-
-#define UIColorMakeWithRGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a/1.0]
-#define ViewAnimationOptionsCurveOut (7<<16)
-#define ViewAnimationOptionsCurveIn (8<<16)
 
 @interface UIViewController ()
 @property(nonatomic, weak, readwrite) ModalPresentationViewController *modalPresentedViewController;
@@ -77,7 +35,7 @@ static ModalPresentationViewController *appearance;
     }
     appearance.animationStyle = ModalPresentationAnimationStyleFade;
     appearance.contentViewMargins = UIEdgeInsetsMake(20, 20, 20, 20);
-    appearance.maximumContentViewWidth = (screenSizeFor47Inch().width - UIEdgeInsetsGetHorizontalValue(appearance.contentViewMargins));
+    appearance.maximumContentViewWidth = ([AppCommonHelper screenSizeFor47Inch].width - UIEdgeInsetsGetHorizontalValue(appearance.contentViewMargins));
 }
 
 + (void)initialize {

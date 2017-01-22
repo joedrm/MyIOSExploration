@@ -8,6 +8,7 @@
 
 /* 参考资料：
  https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/03_Editing.html 官方文档
+ http://blog.csdn.net/zyq522376829/article/details/52144394 官方文档翻译
  https://developer.apple.com/library/content/samplecode/AVSimpleEditoriOS/Introduction/Intro.html  官方视频编辑Demo
  https://www.raywenderlich.com/13418/how-to-play-record-edit-videos-in-ios
  https://www.raywenderlich.com/30200/avfoundation-tutorial-adding-overlays-and-animations-to-videos
@@ -19,6 +20,7 @@
  https://github.com/ismilesky/MaxVideo  多张图片合成视频；多个小视频合成大视频
  https://github.com/100mango/zen/tree/master/iOS%E5%AD%A6%E4%B9%A0%EF%BC%9AAVFoundation%20%E8%A7%86%E9%A2%91%E6%B5%81%E5%A4%84%E7%90%86 iOS学习：AVFoundation 视频流处理
  http://www.superqq.com/blog/2015/08/24/avfoundation-gpuimage-find/ AVFoundation和 GPUImage初探
+ http://wiki.baixin.io/2016/07/22/%E8%A7%86%E9%A2%91%E8%B5%84%E6%96%99/   iOS视频开发资料
  */
 
 #import "ViewController.h"

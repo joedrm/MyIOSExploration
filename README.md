@@ -66,6 +66,7 @@ IOS知识点总结和实践
 - [Runtime 10种用法（没有比这更全的了）](http://www.jianshu.com/p/3182646001d1)
 - [Runtime Method Swizzling开发实例汇总](http://www.jianshu.com/p/f6dad8e1b848)
 - [手把手带你撸一个 YYModel 的精简版](http://www.jianshu.com/p/b822285f73ac)
+- [苹果开源的 objc 运行时库](https://opensource.apple.com/source/objc4/)
 
 ### ReactiveCocoa相关
 - [RAC中文资源列表](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources)
@@ -112,6 +113,7 @@ IOS知识点总结和实践
 - [limboy](http://limboy.me/)
 - [程序员说](http://www.devtalking.com/) - 关于多线程和动画的文章多，也深入
 - [draveness](http://draveness.me/) - 不知哪位大神，很多不错的文章
+- [罗朝辉的深入浅出Cocoa](http://blog.csdn.net/column/details/cocoa.html) - 涵盖 Cocoa 开发中的 runtime，class， message，KVO, 多线程，core data，网络，framework/plugin，性能，数据库，图形库等诸多方面，不仅讲述了应该如何使用这些技术，还深入底层探究这些技术是如何实现的，及其 runtime 分析。
 - [我的博客](https://wangdongyang.github.io/)
 
 ### 优化文章
@@ -119,13 +121,22 @@ IOS知识点总结和实践
 - [iOS 保持界面流畅的技巧](http://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/)
 - [WWDC心得与延伸:iOS图形性能](http://www.cocoachina.com/ios/20150429/11712.html)
 - [使用 ASDK 性能调优 - 提升 iOS 界面的渲染性能](http://draveness.me/asdk-rendering/)
+- [iOS底层技术文章收集](http://wiki.baixin.io/2016/06/11/iOS-Tech/)
 
-### 组件化
+### 专题一：组件化
 - [《iOS应用架构谈 组件化方案》](http://casatwy.com/iOS-Modulization.html)
 - [蘑菇街 App 的组件化之路](http://limboy.me/tech/2016/03/10/mgj-components.html)
 - [蘑菇街 App 的组件化之路·续](http://limboy.me/tech/2016/03/14/mgj-components-continued.html)
 - [iOS 组件化方案探索](http://blog.cnbang.net/tech/3080/)
 - [围观神仙打架，反革命工程师《iOS应用架构谈 组件化方案》和蘑菇街Limboy的《蘑菇街 App 的组件化之路》的阅读指导](http://reviewcode.cn/article.html?reviewId=20)
+
+### 专题二：OpenGL
+- [OpenGL ES 2.0 iOS教程](http://blog.csdn.net/column/details/opengl-es2-ios.html) - 详细介绍OpenGL ES 2.0 渲染管线，空间变换，光照，纹理贴图，混合，文字等3D知识。
+
+### 专题三：WWDC
+- [非官方WWDC App](https://github.com/insidegui/WWDC)
+- [WWDC_2015_Video_Subtitle](https://github.com/qiaoxueshi/WWDC_2015_Video_Subtitle) - WWDC 2015 英文字幕
+- [WWDC2015](https://github.com/6david9/WWDC2015) - WWDC2015下载链接
 
 ### Git SVN
 - [Git常用命令清单](https://github.com/jaywcjlove/handbook/blob/master/other/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95.md#%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3)

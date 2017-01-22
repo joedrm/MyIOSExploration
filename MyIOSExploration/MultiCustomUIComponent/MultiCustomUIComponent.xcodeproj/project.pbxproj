@@ -16,7 +16,37 @@
 		202EB7E21E28B9F800619831 /* MultiCustomUIComponentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 202EB7E11E28B9F800619831 /* MultiCustomUIComponentVC.m */; };
 		202EB7E51E28D12900619831 /* ModalContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202EB7E41E28D12900619831 /* ModalContentViewController.m */; };
 		202EB7E81E28D7C600619831 /* name01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 202EB7E71E28D7C600619831 /* name01.jpeg */; };
+		20385B6D1E34C0D300445564 /* tips_done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20385B5D1E34C0D300445564 /* tips_done@2x.png */; };
+		20385B6E1E34C0D300445564 /* tips_done@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20385B5E1E34C0D300445564 /* tips_done@3x.png */; };
+		20385B6F1E34C0D300445564 /* tips_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20385B5F1E34C0D300445564 /* tips_error@2x.png */; };
+		20385B701E34C0D300445564 /* tips_error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20385B601E34C0D300445564 /* tips_error@3x.png */; };
+		20385B711E34C0D300445564 /* tips_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20385B611E34C0D300445564 /* tips_info@2x.png */; };
+		20385B721E34C0D300445564 /* tips_info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20385B621E34C0D300445564 /* tips_info@3x.png */; };
+		20385B731E34C0D300445564 /* TipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20385B641E34C0D300445564 /* TipsView.m */; };
+		20385B741E34C0D300445564 /* ToastAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 20385B661E34C0D300445564 /* ToastAnimator.m */; };
+		20385B751E34C0D300445564 /* ToastBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20385B681E34C0D300445564 /* ToastBackgroundView.m */; };
+		20385B761E34C0D300445564 /* ToastContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20385B6A1E34C0D300445564 /* ToastContentView.m */; };
+		20385B771E34C0D300445564 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20385B6C1E34C0D300445564 /* ToastView.m */; };
+		20385B791E34C13500445564 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20385B781E34C13500445564 /* WDYLibrary.framework */; };
+		20385B7A1E34C13500445564 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20385B781E34C13500445564 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20385B7E1E34C16200445564 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20385B7D1E34C16200445564 /* MainViewController.m */; };
+		20385B811E34C25B00445564 /* TestToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20385B801E34C25B00445564 /* TestToastViewController.m */; };
+		20385B861E34C27800445564 /* AppCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 20385B841E34C27800445564 /* AppCommonHelper.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20385B7B1E34C13500445564 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20385B7A1E34C13500445564 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		202EB7C31E28B47E00619831 /* MultiCustomUIComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiCustomUIComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +64,30 @@
 		202EB7E31E28D12900619831 /* ModalContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalContentViewController.h; sourceTree = "<group>"; };
 		202EB7E41E28D12900619831 /* ModalContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalContentViewController.m; sourceTree = "<group>"; };
 		202EB7E71E28D7C600619831 /* name01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name01.jpeg; sourceTree = "<group>"; };
+		20385B5D1E34C0D300445564 /* tips_done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tips_done@2x.png"; sourceTree = "<group>"; };
+		20385B5E1E34C0D300445564 /* tips_done@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tips_done@3x.png"; sourceTree = "<group>"; };
+		20385B5F1E34C0D300445564 /* tips_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tips_error@2x.png"; sourceTree = "<group>"; };
+		20385B601E34C0D300445564 /* tips_error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tips_error@3x.png"; sourceTree = "<group>"; };
+		20385B611E34C0D300445564 /* tips_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tips_info@2x.png"; sourceTree = "<group>"; };
+		20385B621E34C0D300445564 /* tips_info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tips_info@3x.png"; sourceTree = "<group>"; };
+		20385B631E34C0D300445564 /* TipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsView.h; sourceTree = "<group>"; };
+		20385B641E34C0D300445564 /* TipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsView.m; sourceTree = "<group>"; };
+		20385B651E34C0D300445564 /* ToastAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastAnimator.h; sourceTree = "<group>"; };
+		20385B661E34C0D300445564 /* ToastAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastAnimator.m; sourceTree = "<group>"; };
+		20385B671E34C0D300445564 /* ToastBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastBackgroundView.h; sourceTree = "<group>"; };
+		20385B681E34C0D300445564 /* ToastBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastBackgroundView.m; sourceTree = "<group>"; };
+		20385B691E34C0D300445564 /* ToastContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastContentView.h; sourceTree = "<group>"; };
+		20385B6A1E34C0D300445564 /* ToastContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastContentView.m; sourceTree = "<group>"; };
+		20385B6B1E34C0D300445564 /* ToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastView.h; sourceTree = "<group>"; };
+		20385B6C1E34C0D300445564 /* ToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastView.m; sourceTree = "<group>"; };
+		20385B781E34C13500445564 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20385B7C1E34C16200445564 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		20385B7D1E34C16200445564 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		20385B7F1E34C25B00445564 /* TestToastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestToastViewController.h; sourceTree = "<group>"; };
+		20385B801E34C25B00445564 /* TestToastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestToastViewController.m; sourceTree = "<group>"; };
+		20385B831E34C27800445564 /* AppCommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommonHelper.h; sourceTree = "<group>"; };
+		20385B841E34C27800445564 /* AppCommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommonHelper.m; sourceTree = "<group>"; };
+		20385B851E34C27800445564 /* CommonDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20385B791E34C13500445564 /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +105,7 @@
 		202EB7BA1E28B47E00619831 = {
 			isa = PBXGroup;
 			children = (
+				20385B781E34C13500445564 /* WDYLibrary.framework */,
 				202EB7C51E28B47E00619831 /* MultiCustomUIComponent */,
 				202EB7C41E28B47E00619831 /* Products */,
 			);
@@ -69,12 +125,18 @@
 				202EB7E61E28D7C600619831 /* Images */,
 				202EB7C91E28B47E00619831 /* AppDelegate.h */,
 				202EB7CA1E28B47E00619831 /* AppDelegate.m */,
+				20385B7C1E34C16200445564 /* MainViewController.h */,
+				20385B7D1E34C16200445564 /* MainViewController.m */,
 				202EB7E01E28B9F800619831 /* MultiCustomUIComponentVC.h */,
 				202EB7E11E28B9F800619831 /* MultiCustomUIComponentVC.m */,
 				202EB7E31E28D12900619831 /* ModalContentViewController.h */,
 				202EB7E41E28D12900619831 /* ModalContentViewController.m */,
 				202EB7DD1E28B4CA00619831 /* ModalPresentationViewController.h */,
 				202EB7DE1E28B4CA00619831 /* ModalPresentationViewController.m */,
+				20385B7F1E34C25B00445564 /* TestToastViewController.h */,
+				20385B801E34C25B00445564 /* TestToastViewController.m */,
+				20385B821E34C27800445564 /* Tool */,
+				20385B5C1E34C0D300445564 /* Toast */,
 				202EB7CF1E28B47E00619831 /* Main.storyboard */,
 				202EB7D21E28B47E00619831 /* Assets.xcassets */,
 				202EB7D41E28B47E00619831 /* LaunchScreen.storyboard */,
@@ -100,6 +162,39 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		20385B5C1E34C0D300445564 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				20385B5D1E34C0D300445564 /* tips_done@2x.png */,
+				20385B5E1E34C0D300445564 /* tips_done@3x.png */,
+				20385B5F1E34C0D300445564 /* tips_error@2x.png */,
+				20385B601E34C0D300445564 /* tips_error@3x.png */,
+				20385B611E34C0D300445564 /* tips_info@2x.png */,
+				20385B621E34C0D300445564 /* tips_info@3x.png */,
+				20385B631E34C0D300445564 /* TipsView.h */,
+				20385B641E34C0D300445564 /* TipsView.m */,
+				20385B651E34C0D300445564 /* ToastAnimator.h */,
+				20385B661E34C0D300445564 /* ToastAnimator.m */,
+				20385B671E34C0D300445564 /* ToastBackgroundView.h */,
+				20385B681E34C0D300445564 /* ToastBackgroundView.m */,
+				20385B691E34C0D300445564 /* ToastContentView.h */,
+				20385B6A1E34C0D300445564 /* ToastContentView.m */,
+				20385B6B1E34C0D300445564 /* ToastView.h */,
+				20385B6C1E34C0D300445564 /* ToastView.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		20385B821E34C27800445564 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				20385B831E34C27800445564 /* AppCommonHelper.h */,
+				20385B841E34C27800445564 /* AppCommonHelper.m */,
+				20385B851E34C27800445564 /* CommonDefines.h */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +205,7 @@
 				202EB7BF1E28B47E00619831 /* Sources */,
 				202EB7C01E28B47E00619831 /* Frameworks */,
 				202EB7C11E28B47E00619831 /* Resources */,
+				20385B7B1E34C13500445564 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,10 +255,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20385B711E34C0D300445564 /* tips_info@2x.png in Resources */,
+				20385B701E34C0D300445564 /* tips_error@3x.png in Resources */,
 				202EB7D61E28B47E00619831 /* LaunchScreen.storyboard in Resources */,
+				20385B721E34C0D300445564 /* tips_info@3x.png in Resources */,
+				20385B6F1E34C0D300445564 /* tips_error@2x.png in Resources */,
 				202EB7E81E28D7C600619831 /* name01.jpeg in Resources */,
 				202EB7D31E28B47E00619831 /* Assets.xcassets in Resources */,
+				20385B6E1E34C0D300445564 /* tips_done@3x.png in Resources */,
 				202EB7D11E28B47E00619831 /* Main.storyboard in Resources */,
+				20385B6D1E34C0D300445564 /* tips_done@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,10 +275,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20385B861E34C27800445564 /* AppCommonHelper.m in Sources */,
+				20385B761E34C0D300445564 /* ToastContentView.m in Sources */,
+				20385B741E34C0D300445564 /* ToastAnimator.m in Sources */,
+				20385B811E34C25B00445564 /* TestToastViewController.m in Sources */,
 				202EB7DF1E28B4CA00619831 /* ModalPresentationViewController.m in Sources */,
+				20385B731E34C0D300445564 /* TipsView.m in Sources */,
+				20385B771E34C0D300445564 /* ToastView.m in Sources */,
 				202EB7E51E28D12900619831 /* ModalContentViewController.m in Sources */,
 				202EB7E21E28B9F800619831 /* MultiCustomUIComponentVC.m in Sources */,
+				20385B7E1E34C16200445564 /* MainViewController.m in Sources */,
 				202EB7CB1E28B47E00619831 /* AppDelegate.m in Sources */,
+				20385B751E34C0D300445564 /* ToastBackgroundView.m in Sources */,
 				202EB7C81E28B47E00619831 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VRGWDFH359;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MultiCustomUIComponent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.nav.MultiCustomUIComponent;
@@ -308,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VRGWDFH359;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MultiCustomUIComponent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.nav.MultiCustomUIComponent;
@@ -334,6 +446,7 @@
 				202EB7DC1E28B47E00619831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
