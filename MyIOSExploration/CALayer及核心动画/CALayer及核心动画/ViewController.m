@@ -25,6 +25,10 @@
  
  http://www.jianshu.com/p/78c30ccf425f  CATransform3D笔记 https://github.com/HApple/CATransform3D
  
+ 
+ https://github.com/minggo620/iOSViewAnimation  主要是UIView动画
+ 
+ 
  awesome
  https://github.com/ameizi/awesome-ios-animation
  http://www.jianshu.com/p/9fed46a83ad9
@@ -46,6 +50,8 @@ IOS动画总结:
  https://github.com/adad184/MMTweenAnimation
  https://github.com/Raizlabs/RZTransitions
  https://github.com/bryanoltman/CAAnimation-EasingEquations
+ 
+ https://github.com/warrenm/AHEasing  很不错动画函数库
  
  动画实例：
  https://github.com/shu223/PulsingHalo  雷达效果

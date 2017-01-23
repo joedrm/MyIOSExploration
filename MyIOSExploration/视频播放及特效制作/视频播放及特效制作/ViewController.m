@@ -21,6 +21,7 @@
  https://github.com/100mango/zen/tree/master/iOS%E5%AD%A6%E4%B9%A0%EF%BC%9AAVFoundation%20%E8%A7%86%E9%A2%91%E6%B5%81%E5%A4%84%E7%90%86 iOS学习：AVFoundation 视频流处理
  http://www.superqq.com/blog/2015/08/24/avfoundation-gpuimage-find/ AVFoundation和 GPUImage初探
  http://wiki.baixin.io/2016/07/22/%E8%A7%86%E9%A2%91%E8%B5%84%E6%96%99/   iOS视频开发资料
+ https://github.com/12207480/TYVideoPlayer     封装了AVPlayer的视频播放器组件，支持点播，直播和本地播放
  */
 
 #import "ViewController.h"
@@ -53,12 +54,6 @@
  AVAssetExportSession:      用来进行视频导出操作的
  
  */
-
-
-
-
-
-
 
 
 #pragma mark - 自定义的播放器

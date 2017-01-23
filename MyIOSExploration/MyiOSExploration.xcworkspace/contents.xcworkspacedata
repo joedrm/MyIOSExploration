@@ -20,9 +20,6 @@
       location = "group:IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;)/IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;).xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:KVC&amp;KVO&#x5b9e;&#x4f8b;&#x8be6;&#x89e3;/KVC&amp;KVO&#x5b9e;&#x4f8b;&#x8be6;&#x89e3;.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:CALayer&#x53ca;&#x6838;&#x5fc3;&#x52a8;&#x753b;/CALayer&#x53ca;&#x6838;&#x5fc3;&#x52a8;&#x753b;.xcodeproj">
    </FileRef>
    <FileRef
@@ -63,6 +60,12 @@
    </FileRef>
    <FileRef
       location = "group:NSOperation&#x57fa;&#x672c;&#x4f7f;&#x7528;/NSOperation&#x57fa;&#x672c;&#x4f7f;&#x7528;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:KVC&amp;KVO&#x5b9e;&#x4f8b;&#x8be6;&#x89e3;/KVC&amp;KVO&#x5b9e;&#x4f8b;&#x8be6;&#x89e3;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Runloop&#x5e94;&#x7528;&#x5b9e;&#x4f8b;/Runloop&#x5e94;&#x7528;&#x5b9e;&#x4f8b;.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Runtime&#x6d88;&#x606f;&#x673a;&#x5236;/Runtime&#x6d88;&#x606f;&#x673a;&#x5236;.xcodeproj">

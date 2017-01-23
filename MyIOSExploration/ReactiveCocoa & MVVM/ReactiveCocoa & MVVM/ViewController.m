@@ -12,6 +12,7 @@
  http://www.starming.com/index.php?v=index&view=101 iOS函数响应式编程以及ReactiveCocoa的使用
  https://github.com/leichunfeng/MVVMReactiveCocoa  GitBucket iOS App
  https://github.com/BinBear/breadtrip-ReactiveCocoa-MVVM-  仿面包旅行，ReactiveCocoa+MVVM
+ http://www.jianshu.com/p/bae2eeba118d   ReactiveCocoa基本用法
  */
 
 #import "ViewController.h"

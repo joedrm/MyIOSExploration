@@ -1,15 +1,10 @@
 //
 //  ViewController.m
-//  UICollectionView深入理解和实践
+//  Runloop应用实例
 //
-//  Created by fang wang on 17/1/17.
+//  Created by fang wang on 17/1/23.
 //  Copyright © 2017年 wdy. All rights reserved.
 //
-/*
- 参考资料：
- https://github.com/Instagram/IGListKit  近期关注度比较高的UICollectionView框架
- http://www.jianshu.com/p/d75a9a8d13b5  
- */
 
 #import "ViewController.h"
 
@@ -32,3 +27,12 @@
 
 
 @end
+
+
+/*
+ 资料：
+ https://github.com/CZXBigBrother/MCRunLoopWork  
+ http://www.imlifengfeng.com/blog/?p=487   RunLoop详解
+ https://github.com/yechunjun/RunLoopDemo  
+ https://github.com/Kailic/RunLoopDemo
+ */

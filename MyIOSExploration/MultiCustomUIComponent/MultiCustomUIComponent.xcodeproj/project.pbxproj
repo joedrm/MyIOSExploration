@@ -35,6 +35,7 @@
 		20385B861E34C27800445564 /* AppCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 20385B841E34C27800445564 /* AppCommonHelper.m */; };
 		20B82E831E3595A7005B0DED /* CustomToastAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B82E801E3595A7005B0DED /* CustomToastAnimator.m */; };
 		20B82E841E3595A7005B0DED /* CustomToastContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B82E821E3595A7005B0DED /* CustomToastContentView.m */; };
+		20B82EDD1E35DD67005B0DED /* ActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B82EDC1E35DD67005B0DED /* ActionSheetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,6 +99,8 @@
 		20B82E801E3595A7005B0DED /* CustomToastAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomToastAnimator.m; sourceTree = "<group>"; };
 		20B82E811E3595A7005B0DED /* CustomToastContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomToastContentView.h; sourceTree = "<group>"; };
 		20B82E821E3595A7005B0DED /* CustomToastContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomToastContentView.m; sourceTree = "<group>"; };
+		20B82EDB1E35DD67005B0DED /* ActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetViewController.h; sourceTree = "<group>"; };
+		20B82EDC1E35DD67005B0DED /* ActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,7 @@
 				202EB7DE1E28B4CA00619831 /* ModalPresentationViewController.m */,
 				20385B7F1E34C25B00445564 /* TestToastViewController.h */,
 				20385B801E34C25B00445564 /* TestToastViewController.m */,
+				20B82EDA1E35DD49005B0DED /* ActionSheet */,
 				20385B821E34C27800445564 /* Tool */,
 				20385B5C1E34C0D300445564 /* Toast */,
 				202EB7CF1E28B47E00619831 /* Main.storyboard */,
@@ -210,6 +214,15 @@
 				16A1D7C51E34FFD3003869B2 /* UIImageView+ImageFitSize.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		20B82EDA1E35DD49005B0DED /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				20B82EDB1E35DD67005B0DED /* ActionSheetViewController.h */,
+				20B82EDC1E35DD67005B0DED /* ActionSheetViewController.m */,
+			);
+			path = ActionSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +312,7 @@
 				202EB7DF1E28B4CA00619831 /* ModalPresentationViewController.m in Sources */,
 				20385B731E34C0D300445564 /* TipsView.m in Sources */,
 				20385B771E34C0D300445564 /* ToastView.m in Sources */,
+				20B82EDD1E35DD67005B0DED /* ActionSheetViewController.m in Sources */,
 				20B82E831E3595A7005B0DED /* CustomToastAnimator.m in Sources */,
 				202EB7E51E28D12900619831 /* ModalContentViewController.m in Sources */,
 				202EB7E21E28B9F800619831 /* MultiCustomUIComponentVC.m in Sources */,
