@@ -117,6 +117,11 @@
  
  UILayoutFittingCompressedSize: 返回合适的最小大小。
  UILayoutFittingExpandedSize: 返回合适的最大大小。
+ 
+ 
+ 
+ 
+ http://code.cocoachina.com/view/128541  Masonry动态计算cell高度
  */
 
 

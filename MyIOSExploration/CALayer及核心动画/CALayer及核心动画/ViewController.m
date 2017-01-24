@@ -50,6 +50,7 @@ IOS动画总结:
  https://github.com/adad184/MMTweenAnimation
  https://github.com/Raizlabs/RZTransitions
  https://github.com/bryanoltman/CAAnimation-EasingEquations
+ https://github.com/GirlCunt/AnimationDemo
  
  https://github.com/warrenm/AHEasing  很不错动画函数库
  
@@ -59,6 +60,8 @@ IOS动画总结:
  https://github.com/robb/RBBAnimation  同上
  https://github.com/jhurray/JHChainableAnimations 同上
  https://github.com/IFTTT/JazzHands
+ https://github.com/xinge1/LXWaveProgress  水波纹动画 
+ https://github.com/xinge1/LXAnimationDemo  iOS动画实现Demo（波纹，缩放，弹性，平移等）
  
  Facebook-POP
  

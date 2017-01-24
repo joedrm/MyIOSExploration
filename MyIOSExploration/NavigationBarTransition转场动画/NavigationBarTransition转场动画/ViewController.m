@@ -34,3 +34,11 @@
 }
 
 @end
+
+
+/*
+ https://github.com/seedante/iOS-Note/wiki/ViewController-Transition  视图控制器转场详解
+ https://github.com/STShenZhaoliang/STNavigationBar   一个全面的UINavigationBar的使用,各种效果
+ 
+ 
+ */

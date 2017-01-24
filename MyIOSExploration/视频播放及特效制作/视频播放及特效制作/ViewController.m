@@ -8,7 +8,13 @@
 
 /* 参考资料：
  https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/03_Editing.html 官方文档
- http://blog.csdn.net/zyq522376829/article/details/52144394 官方文档翻译
+ http://blog.csdn.net/zyq522376829/article/details/52144394 官方文档翻译http://yoferzhang.com/post/20160724AVFoundation/
+ https://github.com/tapharmonic/Learning-AV-Foundation  Sample code for Bob McCune's Learning AV Foundation book
+ https://github.com/tapharmonic/AVFoundationDemos
+ https://developer.apple.com/sample-code/wwdc/2015/ 
+ https://www.amazon.com/Learning-Foundation-Hands-Mastering-Framework/dp/0321961803   Book <<Learning AV Foundation>> sell 
+ https://github.com/jkyin/Subtitle
+ 
  https://developer.apple.com/library/content/samplecode/AVSimpleEditoriOS/Introduction/Intro.html  官方视频编辑Demo
  https://www.raywenderlich.com/13418/how-to-play-record-edit-videos-in-ios
  https://www.raywenderlich.com/30200/avfoundation-tutorial-adding-overlays-and-animations-to-videos
@@ -22,6 +28,9 @@
  http://www.superqq.com/blog/2015/08/24/avfoundation-gpuimage-find/ AVFoundation和 GPUImage初探
  http://wiki.baixin.io/2016/07/22/%E8%A7%86%E9%A2%91%E8%B5%84%E6%96%99/   iOS视频开发资料
  https://github.com/12207480/TYVideoPlayer     封装了AVPlayer的视频播放器组件，支持点播，直播和本地播放
+ https://github.com/xujingzhou/CustomVideo   美拍,秒拍功能大拆解, 以及功能大扩展。
+ https://github.com/xujingzhou/FunCrop  将指定视频，按算法进行水平或垂直切分，并加入多种转场动画后输出
+ http://v.youku.com/v_show/id_XNDUyMjI3MTY0.html 斯坦福ios教程 Introduction to AVFoundation
  */
 
 #import "ViewController.h"
