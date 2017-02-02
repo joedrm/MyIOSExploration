@@ -51,6 +51,7 @@ IOS动画总结:
  https://github.com/Raizlabs/RZTransitions
  https://github.com/bryanoltman/CAAnimation-EasingEquations
  https://github.com/GirlCunt/AnimationDemo
+ https://github.com/tapharmonic/Core-Animation-Demos  ***
  
  https://github.com/warrenm/AHEasing  很不错动画函数库
  
