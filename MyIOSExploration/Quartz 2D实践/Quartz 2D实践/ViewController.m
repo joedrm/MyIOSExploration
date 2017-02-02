@@ -14,6 +14,7 @@
  http://www.jianshu.com/p/24459aa51330    iOS封装一个简单的曲线图表视图
  https://github.com/Nyx0uf/NYXImagesKit  各种图片处理的分类，很强大
  http://www.swarthmore.edu/NatSci/mzucker1/opencv-2.4.10-docs/index.html  Opencv文档
+ https://github.com/tapharmonic/QuartzDemos   很不错的Demos
  */
 
 #import "ViewController.h"
