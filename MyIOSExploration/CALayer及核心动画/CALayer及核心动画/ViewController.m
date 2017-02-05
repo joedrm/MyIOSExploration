@@ -52,6 +52,8 @@ IOS动画总结:
  https://github.com/bryanoltman/CAAnimation-EasingEquations
  https://github.com/GirlCunt/AnimationDemo
  https://github.com/tapharmonic/Core-Animation-Demos  ***
+ // 丰富的路径动画，可以自己定制设计动画路径
+ https://github.com/airbnb/lottie-ios   http://jeremie-martinez.com//2016/09/15/train-animations/
  
  https://github.com/warrenm/AHEasing  很不错动画函数库
  

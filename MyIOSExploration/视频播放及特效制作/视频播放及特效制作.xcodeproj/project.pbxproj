@@ -9,31 +9,63 @@
 /* Begin PBXBuildFile section */
 		209F34931E2DC7340083C875 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F34921E2DC7340083C875 /* main.m */; };
 		209F34961E2DC7340083C875 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F34951E2DC7340083C875 /* AppDelegate.m */; };
-		209F34991E2DC7340083C875 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F34981E2DC7340083C875 /* ViewController.m */; };
 		209F349C1E2DC7340083C875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F349A1E2DC7340083C875 /* Main.storyboard */; };
 		209F349E1E2DC7340083C875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209F349D1E2DC7340083C875 /* Assets.xcassets */; };
 		209F34A11E2DC7340083C875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F349F1E2DC7340083C875 /* LaunchScreen.storyboard */; };
-		209F34AA1E2DCB530083C875 /* AVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F34A91E2DCB530083C875 /* AVPlayerView.m */; };
-		209F34AE1E2DFF630083C875 /* FullPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F34AD1E2DFF630083C875 /* FullPlayerViewController.m */; };
+		20FF2DC31E446E2700DCE2B3 /* AVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DC01E446E2700DCE2B3 /* AVPlayerView.m */; };
+		20FF2DC41E446E2700DCE2B3 /* FullPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DC21E446E2700DCE2B3 /* FullPlayerViewController.m */; };
+		20FF2DC81E446E8100DCE2B3 /* AVPlayerBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DC71E446E8100DCE2B3 /* AVPlayerBasicViewController.m */; };
+		20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; };
+		20FF2DCB1E446E9000DCE2B3 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20FF2DCF1E446F6500DCE2B3 /* CustomAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DCE1E446F6500DCE2B3 /* CustomAVPlayerViewController.m */; };
+		20FF2DD31E446FE800DCE2B3 /* AVPlayerViewControllerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DD21E446FE800DCE2B3 /* AVPlayerViewControllerDemoVC.m */; };
+		20FF2DD61E4470E400DCE2B3 /* PlayerMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DD51E4470E400DCE2B3 /* PlayerMianViewController.m */; };
+		20FF2E0E1E4571BE00DCE2B3 /* PlayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2E0D1E4571BE00DCE2B3 /* PlayerAnimationViewController.m */; };
+		20FF4D481E46CC4200DCE2B3 /* VideoEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF4D471E46CC4200DCE2B3 /* VideoEditViewController.m */; };
 		4539B64C8BE60ABD560D78B1 /* Pods__________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3279C867DC1F123CA5661F2F /* Pods__________.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20FF2DCC1E446E9000DCE2B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20FF2DCB1E446E9000DCE2B3 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		209F348E1E2DC7340083C875 /* 视频播放及特效制作.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "视频播放及特效制作.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		209F34921E2DC7340083C875 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		209F34941E2DC7340083C875 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		209F34951E2DC7340083C875 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		209F34971E2DC7340083C875 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		209F34981E2DC7340083C875 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		209F349B1E2DC7340083C875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		209F349D1E2DC7340083C875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209F34A01E2DC7340083C875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		209F34A21E2DC7340083C875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		209F34A81E2DCB530083C875 /* AVPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerView.h; sourceTree = "<group>"; };
-		209F34A91E2DCB530083C875 /* AVPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerView.m; sourceTree = "<group>"; };
 		209F34AB1E2DEF230083C875 /* VideoPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPrefixHeader.pch; sourceTree = "<group>"; };
-		209F34AC1E2DFF630083C875 /* FullPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullPlayerViewController.h; sourceTree = "<group>"; };
-		209F34AD1E2DFF630083C875 /* FullPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullPlayerViewController.m; sourceTree = "<group>"; };
+		20FF2DBF1E446E2700DCE2B3 /* AVPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerView.h; sourceTree = "<group>"; };
+		20FF2DC01E446E2700DCE2B3 /* AVPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerView.m; sourceTree = "<group>"; };
+		20FF2DC11E446E2700DCE2B3 /* FullPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullPlayerViewController.h; sourceTree = "<group>"; };
+		20FF2DC21E446E2700DCE2B3 /* FullPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullPlayerViewController.m; sourceTree = "<group>"; };
+		20FF2DC61E446E8100DCE2B3 /* AVPlayerBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerBasicViewController.h; sourceTree = "<group>"; };
+		20FF2DC71E446E8100DCE2B3 /* AVPlayerBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerBasicViewController.m; sourceTree = "<group>"; };
+		20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FF2DCD1E446F6500DCE2B3 /* CustomAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAVPlayerViewController.h; sourceTree = "<group>"; };
+		20FF2DCE1E446F6500DCE2B3 /* CustomAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAVPlayerViewController.m; sourceTree = "<group>"; };
+		20FF2DD11E446FE800DCE2B3 /* AVPlayerViewControllerDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewControllerDemoVC.h; sourceTree = "<group>"; };
+		20FF2DD21E446FE800DCE2B3 /* AVPlayerViewControllerDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewControllerDemoVC.m; sourceTree = "<group>"; };
+		20FF2DD41E4470E400DCE2B3 /* PlayerMianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerMianViewController.h; sourceTree = "<group>"; };
+		20FF2DD51E4470E400DCE2B3 /* PlayerMianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerMianViewController.m; sourceTree = "<group>"; };
+		20FF2E0C1E4571BE00DCE2B3 /* PlayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerAnimationViewController.h; sourceTree = "<group>"; };
+		20FF2E0D1E4571BE00DCE2B3 /* PlayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerAnimationViewController.m; sourceTree = "<group>"; };
+		20FF4D461E46CC4200DCE2B3 /* VideoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEditViewController.h; sourceTree = "<group>"; };
+		20FF4D471E46CC4200DCE2B3 /* VideoEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEditViewController.m; sourceTree = "<group>"; };
 		3279C867DC1F123CA5661F2F /* Pods__________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods__________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98BB26707EEE1D99D696CE84 /* Pods-视频播放及特效制作.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-视频播放及特效制作.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作.debug.xcconfig"; sourceTree = "<group>"; };
 		9D2A099E0DA5B1DAF12F51A4 /* Pods-视频播放及特效制作.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-视频播放及特效制作.release.xcconfig"; path = "../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4539B64C8BE60ABD560D78B1 /* Pods__________.framework in Frameworks */,
+				20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +87,7 @@
 		209F34851E2DC7340083C875 = {
 			isa = PBXGroup;
 			children = (
+				20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */,
 				209F34901E2DC7340083C875 /* 视频播放及特效制作 */,
 				209F348F1E2DC7340083C875 /* Products */,
 				BDC302D67FA3FFFDCC9C86D4 /* Pods */,
@@ -74,12 +108,13 @@
 			children = (
 				209F34941E2DC7340083C875 /* AppDelegate.h */,
 				209F34951E2DC7340083C875 /* AppDelegate.m */,
-				209F34971E2DC7340083C875 /* ViewController.h */,
-				209F34981E2DC7340083C875 /* ViewController.m */,
-				209F34A81E2DCB530083C875 /* AVPlayerView.h */,
-				209F34A91E2DCB530083C875 /* AVPlayerView.m */,
-				209F34AC1E2DFF630083C875 /* FullPlayerViewController.h */,
-				209F34AD1E2DFF630083C875 /* FullPlayerViewController.m */,
+				20FF2DD41E4470E400DCE2B3 /* PlayerMianViewController.h */,
+				20FF2DD51E4470E400DCE2B3 /* PlayerMianViewController.m */,
+				20FF2E0B1E4571AB00DCE2B3 /* 视频过渡效果 */,
+				20FF4D451E46CC2200DCE2B3 /* 视频编辑 */,
+				20FF2DD01E446FC300DCE2B3 /* AVPlayerViewController的使用 */,
+				20FF2DBE1E446E2700DCE2B3 /* 自定义AVPlayer */,
+				20FF2DC51E446E3E00DCE2B3 /* AVPlayer基本使用 */,
 				209F349A1E2DC7340083C875 /* Main.storyboard */,
 				209F349D1E2DC7340083C875 /* Assets.xcassets */,
 				209F349F1E2DC7340083C875 /* LaunchScreen.storyboard */,
@@ -96,6 +131,55 @@
 				209F34AB1E2DEF230083C875 /* VideoPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20FF2DBE1E446E2700DCE2B3 /* 自定义AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				20FF2DBF1E446E2700DCE2B3 /* AVPlayerView.h */,
+				20FF2DC01E446E2700DCE2B3 /* AVPlayerView.m */,
+				20FF2DC11E446E2700DCE2B3 /* FullPlayerViewController.h */,
+				20FF2DC21E446E2700DCE2B3 /* FullPlayerViewController.m */,
+				20FF2DCD1E446F6500DCE2B3 /* CustomAVPlayerViewController.h */,
+				20FF2DCE1E446F6500DCE2B3 /* CustomAVPlayerViewController.m */,
+			);
+			path = "自定义AVPlayer";
+			sourceTree = "<group>";
+		};
+		20FF2DC51E446E3E00DCE2B3 /* AVPlayer基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				20FF2DC61E446E8100DCE2B3 /* AVPlayerBasicViewController.h */,
+				20FF2DC71E446E8100DCE2B3 /* AVPlayerBasicViewController.m */,
+			);
+			path = "AVPlayer基本使用";
+			sourceTree = "<group>";
+		};
+		20FF2DD01E446FC300DCE2B3 /* AVPlayerViewController的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				20FF2DD11E446FE800DCE2B3 /* AVPlayerViewControllerDemoVC.h */,
+				20FF2DD21E446FE800DCE2B3 /* AVPlayerViewControllerDemoVC.m */,
+			);
+			path = "AVPlayerViewController的使用";
+			sourceTree = "<group>";
+		};
+		20FF2E0B1E4571AB00DCE2B3 /* 视频过渡效果 */ = {
+			isa = PBXGroup;
+			children = (
+				20FF2E0C1E4571BE00DCE2B3 /* PlayerAnimationViewController.h */,
+				20FF2E0D1E4571BE00DCE2B3 /* PlayerAnimationViewController.m */,
+			);
+			path = "视频过渡效果";
+			sourceTree = "<group>";
+		};
+		20FF4D451E46CC2200DCE2B3 /* 视频编辑 */ = {
+			isa = PBXGroup;
+			children = (
+				20FF4D461E46CC4200DCE2B3 /* VideoEditViewController.h */,
+				20FF4D471E46CC4200DCE2B3 /* VideoEditViewController.m */,
+			);
+			path = "视频编辑";
 			sourceTree = "<group>";
 		};
 		BDC302D67FA3FFFDCC9C86D4 /* Pods */ = {
@@ -128,6 +212,7 @@
 				209F348C1E2DC7340083C875 /* Resources */,
 				2BB5DF69DFE54D0DE69DEDEE /* [CP] Embed Pods Frameworks */,
 				26C2E2F237453E014AB478E8 /* [CP] Copy Pods Resources */,
+				20FF2DCC1E446E9000DCE2B3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,9 +323,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				209F34AE1E2DFF630083C875 /* FullPlayerViewController.m in Sources */,
-				209F34AA1E2DCB530083C875 /* AVPlayerView.m in Sources */,
-				209F34991E2DC7340083C875 /* ViewController.m in Sources */,
+				20FF2DCF1E446F6500DCE2B3 /* CustomAVPlayerViewController.m in Sources */,
+				20FF2DD61E4470E400DCE2B3 /* PlayerMianViewController.m in Sources */,
+				20FF2DC41E446E2700DCE2B3 /* FullPlayerViewController.m in Sources */,
+				20FF2DD31E446FE800DCE2B3 /* AVPlayerViewControllerDemoVC.m in Sources */,
+				20FF2DC81E446E8100DCE2B3 /* AVPlayerBasicViewController.m in Sources */,
+				20FF2DC31E446E2700DCE2B3 /* AVPlayerView.m in Sources */,
+				20FF4D481E46CC4200DCE2B3 /* VideoEditViewController.m in Sources */,
+				20FF2E0E1E4571BE00DCE2B3 /* PlayerAnimationViewController.m in Sources */,
 				209F34961E2DC7340083C875 /* AppDelegate.m in Sources */,
 				209F34931E2DC7340083C875 /* main.m in Sources */,
 			);

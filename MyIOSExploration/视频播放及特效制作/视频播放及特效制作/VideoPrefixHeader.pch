@@ -9,9 +9,14 @@
 #ifndef VideoPrefixHeader_pch
 #define VideoPrefixHeader_pch
 
-
+#import <WDYLibrary/WDYLibrary.h>
 #import <Masonry/Masonry.h>
 #import <WDYBaseProject/WDYCategory.h>
 #import <WDYBaseProject/WDYMacros.h>
+
+
+#import <AVKit/AVKit.h>  // 框架
+#import <AVFoundation/AVFoundation.h>  // AVPlayer
+
 
 #endif /* VideoPrefixHeader_pch */

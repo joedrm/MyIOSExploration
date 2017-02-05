@@ -13,7 +13,26 @@
 		16DBC0961D7D722B006F4784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0941D7D722B006F4784 /* Main.storyboard */; };
 		16DBC0981D7D722B006F4784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0971D7D722B006F4784 /* Assets.xcassets */; };
 		16DBC09B1D7D722B006F4784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DBC0991D7D722B006F4784 /* LaunchScreen.storyboard */; };
+		20FF2DAE1E441B9F00DCE2B3 /* AutoHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DAC1E441B9F00DCE2B3 /* AutoHeightViewController.m */; };
+		20FF2DB31E441BC800DCE2B3 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DB11E441BC800DCE2B3 /* MyTableViewCell.m */; };
+		20FF2DB41E441BC800DCE2B3 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20FF2DB21E441BC800DCE2B3 /* MyTableViewCell.xib */; };
+		20FF2DB61E441CF800DCE2B3 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DB51E441CF800DCE2B3 /* WDYLibrary.framework */; };
+		20FF2DB71E441CF800DCE2B3 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DB51E441CF800DCE2B3 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20FF2DB81E441CF800DCE2B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20FF2DB71E441CF800DCE2B3 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		16DBC0881D7D722B006F4784 /* UITableView性能优化.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITableView性能优化.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +45,12 @@
 		16DBC0971D7D722B006F4784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16DBC09A1D7D722B006F4784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16DBC09C1D7D722B006F4784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20FF2DAB1E441B9F00DCE2B3 /* AutoHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoHeightViewController.h; sourceTree = "<group>"; };
+		20FF2DAC1E441B9F00DCE2B3 /* AutoHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoHeightViewController.m; sourceTree = "<group>"; };
+		20FF2DB01E441BC800DCE2B3 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		20FF2DB11E441BC800DCE2B3 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		20FF2DB21E441BC800DCE2B3 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		20FF2DB51E441CF800DCE2B3 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FF2DB61E441CF800DCE2B3 /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +68,7 @@
 		16DBC07F1D7D722B006F4784 = {
 			isa = PBXGroup;
 			children = (
+				20FF2DB51E441CF800DCE2B3 /* WDYLibrary.framework */,
 				16DBC08A1D7D722B006F4784 /* UITableView性能优化 */,
 				16DBC0891D7D722B006F4784 /* Products */,
 			);
@@ -62,6 +89,7 @@
 				16DBC08F1D7D722B006F4784 /* AppDelegate.m */,
 				16DBC0911D7D722B006F4784 /* ViewController.h */,
 				16DBC0921D7D722B006F4784 /* ViewController.m */,
+				20FF2DAA1E441B3600DCE2B3 /* Cell高度计算 */,
 				16DBC0941D7D722B006F4784 /* Main.storyboard */,
 				16DBC0971D7D722B006F4784 /* Assets.xcassets */,
 				16DBC0991D7D722B006F4784 /* LaunchScreen.storyboard */,
@@ -79,6 +107,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		20FF2DAA1E441B3600DCE2B3 /* Cell高度计算 */ = {
+			isa = PBXGroup;
+			children = (
+				20FF2DAB1E441B9F00DCE2B3 /* AutoHeightViewController.h */,
+				20FF2DAC1E441B9F00DCE2B3 /* AutoHeightViewController.m */,
+				20FF2DB01E441BC800DCE2B3 /* MyTableViewCell.h */,
+				20FF2DB11E441BC800DCE2B3 /* MyTableViewCell.m */,
+				20FF2DB21E441BC800DCE2B3 /* MyTableViewCell.xib */,
+			);
+			path = "Cell高度计算";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +129,7 @@
 				16DBC0841D7D722B006F4784 /* Sources */,
 				16DBC0851D7D722B006F4784 /* Frameworks */,
 				16DBC0861D7D722B006F4784 /* Resources */,
+				20FF2DB81E441CF800DCE2B3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -110,6 +151,7 @@
 				TargetAttributes = {
 					16DBC0871D7D722B006F4784 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DSHJC97KG4;
 					};
 				};
 			};
@@ -136,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FF2DB41E441BC800DCE2B3 /* MyTableViewCell.xib in Resources */,
 				16DBC09B1D7D722B006F4784 /* LaunchScreen.storyboard in Resources */,
 				16DBC0981D7D722B006F4784 /* Assets.xcassets in Resources */,
 				16DBC0961D7D722B006F4784 /* Main.storyboard in Resources */,
@@ -151,7 +194,9 @@
 			files = (
 				16DBC0931D7D722B006F4784 /* ViewController.m in Sources */,
 				16DBC0901D7D722B006F4784 /* AppDelegate.m in Sources */,
+				20FF2DAE1E441B9F00DCE2B3 /* AutoHeightViewController.m in Sources */,
 				16DBC08D1D7D722B006F4784 /* main.m in Sources */,
+				20FF2DB31E441BC800DCE2B3 /* MyTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +308,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
 				INFOPLIST_FILE = "UITableView性能优化/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.UITableView----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +321,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
 				INFOPLIST_FILE = "UITableView性能优化/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.UITableView----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +349,7 @@
 				16DBC0A11D7D722B006F4784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
