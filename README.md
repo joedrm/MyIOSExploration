@@ -35,7 +35,7 @@ IOS知识点总结和实践
 - [TimLiu-iOS](https://github.com/Tim9Liu9/TimLiu-iOS) - iOS开发常用三方库、插件、知名博客等等
 - [nixzhu/dev-blog](https://github.com/nixzhu/dev-blog) - 翻译、开发心得或学习笔记
 - [iOS10AdaptationTips](https://github.com/ChenYilong/iOS10AdaptationTips) - IOS 10适配
-- [CoderJackyHuang/MDArtileFiles](https://github.com/CoderJackyHuang/MDArtileFiles)
+- [awesome-ios-cn](https://github.com/jobbole/awesome-ios-cn) - iOS资源大全中文版
 
 ### KVO进阶
 - [谈谈 KVO](http://www.jianshu.com/p/2d1c9d76153b)
@@ -140,6 +140,9 @@ IOS知识点总结和实践
 
 ### Git SVN
 - [Git常用命令清单](https://github.com/jaywcjlove/handbook/blob/master/other/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95.md#%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3)
+
+### iOS安全
+- [IosHackStudy](https://github.com/pandazheng/IosHackStudy) - IOS安全学习资料汇总
 
 ### 面试
 - [iOSInterviewQuestions](https://github.com/ChenYilong/iOSInterviewQuestions) - iOS面试题集锦

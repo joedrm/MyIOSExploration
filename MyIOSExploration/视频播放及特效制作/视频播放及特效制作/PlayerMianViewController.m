@@ -78,4 +78,21 @@
  https://github.com/xujingzhou/FunCrop  将指定视频，按算法进行水平或垂直切分，并加入多种转场动画后输出
  http://v.youku.com/v_show/id_XNDUyMjI3MTY0.html 斯坦福ios教程 Introduction to AVFoundation
  http://www.ishare5.com/10076923/
+ 
+ 
+ 开源框架：
+ https://github.com/vimeo/VIMVideoPlayer
+ https://github.com/mobileplayer/mobileplayer-ios
  */
+
+
+
+
+
+
+
+
+
+
+
+

@@ -23,6 +23,9 @@
       location = "group:CALayer&#x53ca;&#x6838;&#x5fc3;&#x52a8;&#x753b;/CALayer&#x53ca;&#x6838;&#x5fc3;&#x52a8;&#x753b;.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:UIView&#x52a8;&#x753b;&#x8be6;&#x89e3;/UIView&#x52a8;&#x753b;&#x8be6;&#x89e3;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:YYKit&#x6e90;&#x7801;&#x7cbe;&#x8bfb;/Demo/YYKit&#x6e90;&#x7801;&#x7cbe;&#x8bfb;.xcodeproj">
    </FileRef>
    <FileRef
