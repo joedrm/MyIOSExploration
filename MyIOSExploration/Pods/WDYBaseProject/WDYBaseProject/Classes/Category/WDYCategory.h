@@ -4,7 +4,16 @@
 //
 //  Created by fang wang on 16/12/28.
 //
-//
+/*
+ 参考：
+ 
+ https://github.com/Damonvvong/DWCategory
+ https://github.com/shaojiankui/JKCategories
+ https://github.com/wujunyang/MobileProject
+ 
+ https://github.com/shaojiankui/JKCategories/tree/master/NotRenamed  牛B的第三方分类
+ 
+ */
 
 #ifndef WDYBaseProject_h
 #define WDYBaseProject_h
@@ -14,6 +23,7 @@
 
 // 分类
 #import "NSBundle+AppIcon.h"
+#import "NSBundle+MyLibrary.h"
 #import "NSDictionary+Merge.h"
 #import "NSDictionary+URL.h"
 #import "NSFileManager+Paths.h"
@@ -39,10 +49,12 @@
 #import "NSTimer+Addition.h"
 #import "NSTimer+Blocks.h"
 
+#import "UINavigationController+StackManager.h"
+#import "UINavigationBar+Addition.h"
 #import "UIBarButtonItem+Badge.h"
-
 #import "UINavigationItem+Loading.h"
 #import "UINavigationItem+Margin.h"
+#import "UINavigationItem+Addition.h"
 
 // UIButton 分类
 #import "UIButton+BackgroundColor.h"
@@ -75,11 +87,15 @@
 #import "UIImage+SubImage.h"
 #import "UIImage+Color.h"
 #import "UIImage+Crop.h"
+#import "UIImage+Splash.h"
+#import "UIImage+Alpha.h"
 
 // UIImageView 分类
 #import "UIImageView+Blur.h"
+#import "UIImageView+BetterFace.h"
+#import "UIImageView+FaceAwareFill.h"
+#import "UIImageView+ImageFitSize.h"
 
-#import "UINavigationController+StackManager.h"
 #import "UITableView+Common.h"
 
 // UIView 分类
@@ -87,6 +103,7 @@
 #import "UIView+Find.h"
 #import "UIView+Frame.h"
 #import "UIView+Nib.h"
+#import "UIView+Layer.h"
 
 #import "UIScrollView+Common.h"
 
@@ -96,7 +113,39 @@
 #import "UIViewController+BackButtonHandler.h"
 
 
+#import "CAShapeLayer+BezierPath.h"
+#import "CALayer+Addition.h"
+#import "NSRunLoop+PerformBlock.h"
 
+#import "UIFont+TTF.h"
 
+#import "UIBezierPath+BasicShapes.h"
+#import "UIBezierPath+Symbol.h"
+#import "UIApplication+KeyboardFrame.h"
+
+#import "SafeCategory.h"
+
+#import "UITextField+Appearance.h"
 
 #endif /* WDYBaseProject_h */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

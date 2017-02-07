@@ -155,4 +155,5 @@ IOS知识点总结和实践
 ### 写作
 - [Markdown - 简单的世界](https://wizardforcel.gitbooks.io/markdown-simple-world/)
 - [Mac使用gitbook创建电子书](http://ppsheep.com/2016/10/25/Mac%E4%BD%BF%E7%94%A8gitbook%E5%88%9B%E5%BB%BA%E7%94%B5%E5%AD%90%E4%B9%A6/)
+- [Gitbook 的使用和常用插件](http://zhaoda.net/2015/11/09/gitbook-plugins/)
 

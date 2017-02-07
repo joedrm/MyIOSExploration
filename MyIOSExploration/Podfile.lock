@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -11,18 +26,50 @@ PODS:
   - SDWebImage (3.8.0):
     - SDWebImage/Core (= 3.8.0)
   - SDWebImage/Core (3.8.0)
-  - WDYBaseProject (0.2.8):
-    - WDYBaseProject/Category (= 0.2.8)
-    - WDYBaseProject/Macros (= 0.2.8)
-    - WDYBaseProject/Other (= 0.2.8)
-    - WDYBaseProject/UI (= 0.2.8)
-    - WDYBaseProject/Utils (= 0.2.8)
-  - WDYBaseProject/Category (0.2.8)
-  - WDYBaseProject/Macros (0.2.8)
-  - WDYBaseProject/Other (0.2.8):
-    - SDWebImage (= 3.8.0)
-  - WDYBaseProject/UI (0.2.8)
-  - WDYBaseProject/Utils (0.2.8)
+  - WDYBaseProject (1.0.0):
+    - WDYBaseProject/ADComponent (= 1.0.0)
+    - WDYBaseProject/BaseModel (= 1.0.0)
+    - WDYBaseProject/Category (= 1.0.0)
+    - WDYBaseProject/Macros (= 1.0.0)
+    - WDYBaseProject/Navigation (= 1.0.0)
+    - WDYBaseProject/NewFeatureComponent (= 1.0.0)
+    - WDYBaseProject/PublicHeaders (= 1.0.0)
+    - WDYBaseProject/TableViewComponent (= 1.0.0)
+    - WDYBaseProject/Toast (= 1.0.0)
+    - WDYBaseProject/UIComponent (= 1.0.0)
+    - WDYBaseProject/Utils (= 1.0.0)
+  - WDYBaseProject/ADComponent (1.0.0)
+  - WDYBaseProject/BaseModel (1.0.0):
+    - MJExtension
+    - WDYBaseProject/Utils
+  - WDYBaseProject/Category (1.0.0):
+    - WDYBaseProject/Macros
+  - WDYBaseProject/Macros (1.0.0)
+  - WDYBaseProject/Navigation (1.0.0)
+  - WDYBaseProject/NewFeatureComponent (1.0.0)
+  - WDYBaseProject/PublicHeaders (1.0.0):
+    - WDYBaseProject/ADComponent
+    - WDYBaseProject/BaseModel
+    - WDYBaseProject/Category
+    - WDYBaseProject/Macros
+    - WDYBaseProject/Navigation
+    - WDYBaseProject/NewFeatureComponent
+    - WDYBaseProject/TableViewComponent
+    - WDYBaseProject/Toast
+    - WDYBaseProject/UIComponent
+    - WDYBaseProject/Utils
+  - WDYBaseProject/TableViewComponent (1.0.0)
+  - WDYBaseProject/Toast (1.0.0):
+    - WDYBaseProject/Category
+    - WDYBaseProject/Macros
+    - WDYBaseProject/Utils
+  - WDYBaseProject/UIComponent (1.0.0):
+    - WDYBaseProject/Macros
+    - WDYBaseProject/Utils
+  - WDYBaseProject/Utils (1.0.0):
+    - AFNetworking (= 3.1.0)
+    - WDYBaseProject/Category
+    - WDYBaseProject/Macros
 
 DEPENDENCIES:
   - FMDB
@@ -31,9 +78,10 @@ DEPENDENCIES:
   - MMPlaceHolder
   - ReactiveCocoa
   - SDWebImage
-  - WDYBaseProject (~> 0.2.8)
+  - WDYBaseProject (~> 1.0.0)
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
@@ -41,8 +89,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 72263e7ac0770c274617ccd345e01049d0ca38ae
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
   SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
-  WDYBaseProject: 9b1da2b6e2f966e3fcf2615cc237ac31d93fb744
+  WDYBaseProject: 1dfd6b6bee4d01345d89f5557f29065532e6d64f
 
-PODFILE CHECKSUM: f56940e0774df3517cd1d6184531614ee51deb8c
+PODFILE CHECKSUM: 21bac86f1c3af8dc3c3d96d8e75450c12e4d3f57
 
 COCOAPODS: 1.1.1

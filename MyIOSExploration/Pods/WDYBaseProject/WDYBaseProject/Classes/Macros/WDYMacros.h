@@ -9,6 +9,11 @@
 #ifndef WDYMacros_h
 #define WDYMacros_h
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <objc/runtime.h>
+#import "CommonDefines.h"
+
 //开发的时候打印，但是发布的时候不打印的NSLog
 #ifdef DEBUG
 #define NSLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
@@ -33,6 +38,10 @@
 || ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
 || ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
 
+#define kSafeRun_Delegate(name, selector)   (name && [name respondsToSelector:selector]) ? YES : NO
+#define kSafeRun_Delegate_Default(selector)  (_delegate && [_delegate respondsToSelector:selector]) ? YES : NO
+#define kSafeRun_Block(block, ...) block ? block(__VA_ARGS__) : nil
+#define kSafeRun_Return(_obj_)if (_obj_) return _obj_
 
 //获取沙盒Document路径
 #define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
@@ -128,9 +137,58 @@
 #define kImage(Name) ([UIImage imageNamed:Name])
 #define kImageOfFile(Name) ([UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:Name ofType:nil]])
 
+// 从xib中load view
+#define kLoadXibWithClass(__class__) [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([__class__ class]) owner:self options:nil] firstObject];
+
+// 获取工程中的文件
+#define kProject_File(__fileName__)  [[NSBundle mainBundle] pathForResource:__fileName__ ofType:nil]
+
 // 字体
 #define kFontWithSize(size) [UIFont systemFontOfSize:size]
 #define kBoldFontWithSize(size) [UIFont boldSystemFontOfSize:size]
+#define kFONT(F) [UIFont fontWithName:@"FZHTJW--GB1-0" size:F]  //方正黑体简体字体
+
+// 消除 self preform selector的警告
+#define NO_Warning_Leak(__perform__) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+__perform__; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+
+/** block */
+#define BlockExec(block, ...) if (block) { block(__VA_ARGS__); };
+typedef void (^CallBackIdBlock)(id result);
+typedef void (^CallBackBoolBlock)(BOOL bRet);
+typedef void (^CallBackVoidBlock)(void);
+typedef void (^CallBackIntegerBlock)(NSInteger index);
+
+/** 处理分割线没在最左边问题：ios8以后才有的问题 */
+#define AddTableViewLineAdjust \
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{\
+    if ([tableView respondsToSelector:@selector(setSeparatorInset:)]) {\
+        [tableView setSeparatorInset:UIEdgeInsetsZero];\
+    }\
+    if ([tableView respondsToSelector:@selector(setLayoutMargins:)]) {\
+        [tableView setLayoutMargins:UIEdgeInsetsZero];\
+    }\
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {\
+        [cell setLayoutMargins:UIEdgeInsetsZero];\
+    }\
+}
+
+
+
+// 不同屏幕尺寸字体适配（320，568是因为效果图为IPHONE5 如果不是则根据实际情况修改）
+// https://github.com/wujunyang/MobileProject
+#define kScreenWidthRatio  (Main_Screen_Width / 320.0)
+#define kScreenHeightRatio (Main_Screen_Height / 568.0)
+#define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
+#define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
+#define AdaptedFontSize(R)     CHINESE_SYSTEM(AdaptedWidth(R))
+
 
 #endif /* WDYMacros_h */
 

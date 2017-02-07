@@ -11,7 +11,7 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 #import <Masonry/Masonry.h>
-#import <WDYBaseProject/WDYCategory.h>
+#import <WDYBaseProject/BaseProject.h>
 #import <WDYBaseProject/WDYMacros.h>
 
 

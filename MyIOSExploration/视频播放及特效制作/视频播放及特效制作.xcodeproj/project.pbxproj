@@ -257,7 +257,7 @@
 				TargetAttributes = {
 					209F348D1E2DC7340083C875 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VRGWDFH359;
+						DevelopmentTeam = DSHJC97KG4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -479,11 +479,10 @@
 			baseConfigurationReference = 98BB26707EEE1D99D696CE84 /* Pods-视频播放及特效制作.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
 				GCC_PREFIX_HEADER = "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/视频播放及特效制作/视频播放及特效制作/VideoPrefixHeader.pch";
 				INFOPLIST_FILE = "视频播放及特效制作/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.collectionView.---------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -493,11 +492,10 @@
 			baseConfigurationReference = 9D2A099E0DA5B1DAF12F51A4 /* Pods-视频播放及特效制作.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
 				GCC_PREFIX_HEADER = "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/视频播放及特效制作/视频播放及特效制作/VideoPrefixHeader.pch";
 				INFOPLIST_FILE = "视频播放及特效制作/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.collectionView.---------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

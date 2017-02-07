@@ -144,7 +144,6 @@ static CGFloat sg_navButtonCornerRadius;
             
             self.navigationItem.backBarButtonItem = item;
 #endif
-
 #pragma clang diagnostic pop
         }
         
