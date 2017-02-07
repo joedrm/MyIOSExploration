@@ -55,6 +55,8 @@ IOS动画总结:
  // 丰富的路径动画，可以自己定制设计动画路径
  https://github.com/airbnb/lottie-ios   http://jeremie-martinez.com//2016/09/15/train-animations/
  
+ http://www.jianshu.com/p/9b3a3b4006ef  iOS动画详解(学习动画看这一篇就够了)
+ 
  https://github.com/warrenm/AHEasing  很不错动画函数库
  
  动画实例：

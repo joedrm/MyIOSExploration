@@ -37,5 +37,13 @@
  http://www.jianshu.com/p/ce5e7427e740  PINCache解读
  https://knightsj.github.io/2017/01/17/MBProgressHUD%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/ MBProgressHUD源码解析
  
+ http://www.jianshu.com/p/0a11b2d0f4ae  iOS即时通讯进阶 - CocoaAsyncSocket源码解析(Connect篇)
+ http://www.jianshu.com/p/22c984eac9b9 iOS即时通讯进阶 - CocoaAsyncSocket源码解析(Connect篇终)
  
+ 
+ http://www.jianshu.com/p/856f0e26279d AFNetworking到底做了什么？
+ http://www.jianshu.com/p/f32bd79233da AFNetworking到底做了什么（二）?
+ http://www.jianshu.com/p/a84237b07611 AFNetworking之于https认证
+ http://www.jianshu.com/p/4ffeb1ba3046 AFNetworking之UIKit扩展与缓存实现
+ http://www.jianshu.com/p/7ed7c0be15b4 AFNetworking到底做了什么？(终)
  */
