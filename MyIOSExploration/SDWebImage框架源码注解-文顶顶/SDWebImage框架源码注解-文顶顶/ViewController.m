@@ -46,4 +46,29 @@
  http://www.jianshu.com/p/a84237b07611 AFNetworking之于https认证
  http://www.jianshu.com/p/4ffeb1ba3046 AFNetworking之UIKit扩展与缓存实现
  http://www.jianshu.com/p/7ed7c0be15b4 AFNetworking到底做了什么？(终)
+ 
+ 
+ 计划阅读的开源项目：
+ 
+ 一个GitHub第三方客户端
+ https://github.com/coderyi/Monkey IOS版   
+ https://github.com/coderyi/MonkeyForMac MAC版
+ https://github.com/andyiac/githot  Android版
+ 
  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

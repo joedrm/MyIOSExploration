@@ -7,6 +7,7 @@
 //
 
 #import "PlayerAnimationViewController.h"
+#import "LBEMagicVideoHeader.h"
 
 #define KVideoSavePath [kCachePath stringByAppendingPathComponent:@"final_video.mp4"]
 
@@ -31,6 +32,8 @@ typedef void(^GenericCallback)(BOOL success, id result);
 @property (nonatomic, strong)AVQueuePlayer *player;
 @property (nonatomic, strong) NSMutableArray *clips; // array of AVURLAssets
 @property (nonatomic, strong) NSMutableArray *clipTimeRanges; // array of CMTimeRanges stored in NSValues.
+@property (strong, nonatomic) NSArray *videoItems;
+@property (strong, nonatomic) LBECompositionExporter* exporter;
 @end
 
 @implementation PlayerAnimationViewController
@@ -60,10 +63,12 @@ typedef void(^GenericCallback)(BOOL success, id result);
     
     [player play];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playEnd)
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(playEnd)
                                                  name:AVPlayerItemDidPlayToEndTimeNotification
                                                object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive)
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationWillResignActive)
                                                  name:UIApplicationWillResignActiveNotification
                                                object:nil];
     
@@ -96,7 +101,8 @@ typedef void(^GenericCallback)(BOOL success, id result);
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    [self imageSaveToVideo];
+//    [self imageSaveToVideo];
+    [self editVideo2];
 }
 
 - (void)imageSaveToVideo{
@@ -116,9 +122,9 @@ typedef void(^GenericCallback)(BOOL success, id result);
     }
     //Wire the writer:
     NSError *error =nil;
-    AVAssetWriter *videoWriter =[[AVAssetWriter alloc]initWithURL:[NSURL fileURLWithPath:path]
-                                                         fileType:AVFileTypeQuickTimeMovie
-                                                            error:&error];
+    AVAssetWriter *videoWriter =[[AVAssetWriter alloc] initWithURL:[NSURL fileURLWithPath:path]
+                                                          fileType:AVFileTypeQuickTimeMovie
+                                                             error:&error];
     NSParameterAssert(videoWriter);
     
     NSDictionary *videoSettings =[NSDictionary dictionaryWithObjectsAndKeys:
@@ -182,7 +188,7 @@ typedef void(^GenericCallback)(BOOL success, id result);
     //Finish the session:
     [videoWriter finishWritingWithCompletionHandler:^{
         NSLog(@"finishWriting");
-        
+        [self editVideo];
     }];
     
 }
@@ -213,18 +219,86 @@ typedef void(^GenericCallback)(BOOL success, id result);
 
 #pragma mark - 编辑视频，
 
+#define EXPORTING_KEYPATH       @"exporting"
+#define PROGRESS_KEYPATH        @"progress"
+
 - (void)editVideo2{
     
-    AVMutableComposition* mixComposition = [[AVMutableComposition alloc] init];
+    NSMutableArray* timelineItems = [NSMutableArray array];
+    [timelineItems addObject:[NSMutableArray array]];
+    [timelineItems addObject:[NSMutableArray array]];
+    [timelineItems addObject:[NSMutableArray array]];
+    [timelineItems addObject:[NSMutableArray array]];
     
+    NSMutableArray* items = timelineItems[LBEVideoTrack];
+    for (LBEVideoItem *videoItem in self.videoItems) {
+        videoItem.timeRange = CMTimeRangeMake(kCMTimeZero, CMTimeMake(4, 1));
+        LBETimelineItemViewModel *model = [LBETimelineItemViewModel modelWithTimelineItem:videoItem];
+        if (items.count > 0) {
+            LBEVideoTransition *transition = [LBEVideoTransition disolveTransitionWithDuration:CMTimeMake(1, 2)];
+            [items addObject:transition];
+        }
+        [items addObject:model];
+    }
+    
+    LBETimeline* timeLine = [LBETimelineBuilder buildTimelineWithMediaItems:timelineItems transitionsEnabled:YES];
+    LBECompositionBuilderFactory* factory = [[LBECompositionBuilderFactory alloc] init];
+    id<CompositionBuilderProtocol> builder = [factory builderForTimeline:timeLine];
+    id<CompositionProtocol> composition = [builder buildComposition];
+//    AVPlayerItem *playerItem = [composition makePlayable];
+
+    LBECompositionExporter* exporter = [[LBECompositionExporter alloc] initWithComposition:composition];
+    self.exporter = exporter;
+    [exporter addObserver:self forKeyPath:EXPORTING_KEYPATH options:NSKeyValueObservingOptionNew context:nil];
+    [exporter addObserver:self forKeyPath:PROGRESS_KEYPATH options:NSKeyValueObservingOptionNew context:nil];
+    [exporter beginExport];
     
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context {
+    
+    if ([keyPath isEqualToString:EXPORTING_KEYPATH]) {
+        BOOL exporting = [change[NSKeyValueChangeNewKey] boolValue];
+        if (!exporting) {
+            [self.exporter removeObserver:self forKeyPath:PROGRESS_KEYPATH];
+            [self.exporter removeObserver:self forKeyPath:EXPORTING_KEYPATH];
+        }
+    } else if ([keyPath isEqualToString:PROGRESS_KEYPATH]) {
+        CGFloat progress = [change[NSKeyValueChangeNewKey] floatValue];
+        NSLog(@"%.2f", progress);
+    } else {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
+    
+}
+- (NSArray *)videoItems {
+    if (!_videoItems) {
+        NSMutableArray *items = [NSMutableArray array];
+        for (int i = 0; i < [self videoURLs].count; i++) {
+            NSURL *url = [self videoURLs][i];
+            LBEVideoItem *item = [LBEVideoItem videoItemWithURL:url];
+            [item prepareWithCompletionBlock:^(BOOL complete) {
+                if (complete) {
+                    NSLog(@"Load Compelete");
+                } else {
+                    NSLog(@"Load fail");
+                }
+            }];
+            [items addObject:item];
+        }
+        _videoItems = items;
+    }
+    return _videoItems;
+}
 
-
-
-
-
+- (NSArray *)videoURLs {
+    NSMutableArray *urls = [NSMutableArray array];
+    [urls addObjectsFromArray:[[NSBundle mainBundle] URLsForResourcesWithExtension:@"mov" subdirectory:nil]];
+    return urls;
+}
 
 
 

@@ -18,5 +18,7 @@
 #import <AVKit/AVKit.h>  // 框架
 #import <AVFoundation/AVFoundation.h>  // AVPlayer
 
+#import "LBEFunctions.h"
+
 
 #endif /* VideoPrefixHeader_pch */

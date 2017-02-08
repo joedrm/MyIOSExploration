@@ -6,6 +6,11 @@
 //  Copyright © 2016年 wdy. All rights reserved.
 //
 
+/*
+ https://github.com/Qiyun2014/YNSerialOperation  队列任务按顺序执行
+ 
+ */
+
 #import "ViewController.h"
 #import "CustomOperation.h"
 

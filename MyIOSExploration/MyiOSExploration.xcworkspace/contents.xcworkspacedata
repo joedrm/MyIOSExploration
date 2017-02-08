@@ -50,6 +50,9 @@
       location = "group:Masonry&#x5b9e;&#x8df5;/Masonry&#x5b9e;&#x8df5;.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:AutoLayoutPractice/AutoLayoutPractice.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UITableViewCell&#x7684;&#x5c55;&#x5f00;&#x3001;&#x6536;&#x8d77;&#x548c;&#x591a;&#x5c42;&#x7ea7;cell/UITableViewCell&#x7684;&#x5c55;&#x5f00;&#x3001;&#x6536;&#x8d77;&#x548c;&#x591a;&#x5c42;&#x7ea7;cell.xcodeproj">
    </FileRef>
    <FileRef

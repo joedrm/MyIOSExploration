@@ -12,6 +12,28 @@
 		209F349C1E2DC7340083C875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F349A1E2DC7340083C875 /* Main.storyboard */; };
 		209F349E1E2DC7340083C875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209F349D1E2DC7340083C875 /* Assets.xcassets */; };
 		209F34A11E2DC7340083C875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F349F1E2DC7340083C875 /* LaunchScreen.storyboard */; };
+		20B9229D1E4AB21F00F37C0B /* LBETimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B9229C1E4AB21F00F37C0B /* LBETimeline.m */; };
+		20B922A01E4AB27600F37C0B /* LBETimelineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B9229F1E4AB27600F37C0B /* LBETimelineItem.m */; };
+		20B922A31E4AB2AE00F37C0B /* LBEMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B922A21E4AB2AE00F37C0B /* LBEMediaItem.m */; };
+		20B922A61E4AB3E900F37C0B /* LBEVideoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B922A51E4AB3E900F37C0B /* LBEVideoItem.m */; };
+		20B922A91E4AB47700F37C0B /* LBEAudioItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B922A81E4AB47700F37C0B /* LBEAudioItem.m */; };
+		20B922AC1E4AB4BD00F37C0B /* LBEVideoTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B922AB1E4AB4BD00F37C0B /* LBEVideoTransition.m */; };
+		20D9954A1E4AB86600520561 /* LBECompositionBuilderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995491E4AB86600520561 /* LBECompositionBuilderFactory.m */; };
+		20D9954D1E4AB94F00520561 /* LBEBasicComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D9954C1E4AB94F00520561 /* LBEBasicComposition.m */; };
+		20D995501E4AB9BB00520561 /* LBEBasicCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D9954F1E4AB9BB00520561 /* LBEBasicCompositionBuilder.m */; };
+		20D995531E4ABBA700520561 /* LBETransitionComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995521E4ABBA700520561 /* LBETransitionComposition.m */; };
+		20D995561E4ABC3100520561 /* LBETransitionCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995551E4ABC3000520561 /* LBETransitionCompositionBuilder.m */; };
+		20D9955A1E4ABE8600520561 /* LBETransitionInstructions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995591E4ABE8600520561 /* LBETransitionInstructions.m */; };
+		20D9955D1E4AC01A00520561 /* LBEVolumeAutomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D9955C1E4AC01A00520561 /* LBEVolumeAutomation.m */; };
+		20D995601E4AC22D00520561 /* LBEManualTransitionCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D9955F1E4AC22D00520561 /* LBEManualTransitionCompositionBuilder.m */; };
+		20D995631E4AC54200520561 /* LBEAudioMixComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995621E4AC54200520561 /* LBEAudioMixComposition.m */; };
+		20D995661E4AC5C400520561 /* LBEAudioMixCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995651E4AC5C400520561 /* LBEAudioMixCompositionBuilder.m */; };
+		20D995691E4AC78500520561 /* LBECompositionExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995681E4AC78500520561 /* LBECompositionExporter.m */; };
+		20D9956C1E4ACC3500520561 /* LBETimelineBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D9956B1E4ACC3500520561 /* LBETimelineBuilder.m */; };
+		20D9956F1E4ACCDF00520561 /* LBETimelineItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D9956E1E4ACCDF00520561 /* LBETimelineItemViewModel.m */; };
+		20D995991E4AF1C000520561 /* 20170208142618078.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20D995941E4AF1C000520561 /* 20170208142618078.mov */; };
+		20D9959A1E4AF1C000520561 /* 20170208142618099.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20D995951E4AF1C000520561 /* 20170208142618099.mov */; };
+		20D9959B1E4AF1C000520561 /* 20170208142618101.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20D995961E4AF1C000520561 /* 20170208142618101.mov */; };
 		20FF2DC31E446E2700DCE2B3 /* AVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DC01E446E2700DCE2B3 /* AVPlayerView.m */; };
 		20FF2DC41E446E2700DCE2B3 /* FullPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DC21E446E2700DCE2B3 /* FullPlayerViewController.m */; };
 		20FF2DC81E446E8100DCE2B3 /* AVPlayerBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2DC71E446E8100DCE2B3 /* AVPlayerBasicViewController.m */; };
@@ -54,6 +76,51 @@
 		209F34A01E2DC7340083C875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		209F34A21E2DC7340083C875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		209F34AB1E2DEF230083C875 /* VideoPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPrefixHeader.pch; sourceTree = "<group>"; };
+		20B9229B1E4AB21F00F37C0B /* LBETimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETimeline.h; sourceTree = "<group>"; };
+		20B9229C1E4AB21F00F37C0B /* LBETimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETimeline.m; sourceTree = "<group>"; };
+		20B9229E1E4AB27600F37C0B /* LBETimelineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETimelineItem.h; sourceTree = "<group>"; };
+		20B9229F1E4AB27600F37C0B /* LBETimelineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETimelineItem.m; sourceTree = "<group>"; };
+		20B922A11E4AB2AE00F37C0B /* LBEMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEMediaItem.h; sourceTree = "<group>"; };
+		20B922A21E4AB2AE00F37C0B /* LBEMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEMediaItem.m; sourceTree = "<group>"; };
+		20B922A41E4AB3E900F37C0B /* LBEVideoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEVideoItem.h; sourceTree = "<group>"; };
+		20B922A51E4AB3E900F37C0B /* LBEVideoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEVideoItem.m; sourceTree = "<group>"; };
+		20B922A71E4AB47700F37C0B /* LBEAudioItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEAudioItem.h; sourceTree = "<group>"; };
+		20B922A81E4AB47700F37C0B /* LBEAudioItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEAudioItem.m; sourceTree = "<group>"; };
+		20B922AA1E4AB4BD00F37C0B /* LBEVideoTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEVideoTransition.h; sourceTree = "<group>"; };
+		20B922AB1E4AB4BD00F37C0B /* LBEVideoTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEVideoTransition.m; sourceTree = "<group>"; };
+		20B922AD1E4AB6A400F37C0B /* CompositionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositionProtocol.h; sourceTree = "<group>"; };
+		20B922AE1E4AB71400F37C0B /* CompositionBuilderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositionBuilderProtocol.h; sourceTree = "<group>"; };
+		20D995481E4AB86600520561 /* LBECompositionBuilderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBECompositionBuilderFactory.h; sourceTree = "<group>"; };
+		20D995491E4AB86600520561 /* LBECompositionBuilderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBECompositionBuilderFactory.m; sourceTree = "<group>"; };
+		20D9954B1E4AB94F00520561 /* LBEBasicComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEBasicComposition.h; sourceTree = "<group>"; };
+		20D9954C1E4AB94F00520561 /* LBEBasicComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEBasicComposition.m; sourceTree = "<group>"; };
+		20D9954E1E4AB9BB00520561 /* LBEBasicCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEBasicCompositionBuilder.h; sourceTree = "<group>"; };
+		20D9954F1E4AB9BB00520561 /* LBEBasicCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEBasicCompositionBuilder.m; sourceTree = "<group>"; };
+		20D995511E4ABBA700520561 /* LBETransitionComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETransitionComposition.h; sourceTree = "<group>"; };
+		20D995521E4ABBA700520561 /* LBETransitionComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETransitionComposition.m; sourceTree = "<group>"; };
+		20D995541E4ABC3000520561 /* LBETransitionCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETransitionCompositionBuilder.h; sourceTree = "<group>"; };
+		20D995551E4ABC3000520561 /* LBETransitionCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETransitionCompositionBuilder.m; sourceTree = "<group>"; };
+		20D995571E4ABD5100520561 /* LBEFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBEFunctions.h; sourceTree = "<group>"; };
+		20D995581E4ABE8600520561 /* LBETransitionInstructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETransitionInstructions.h; sourceTree = "<group>"; };
+		20D995591E4ABE8600520561 /* LBETransitionInstructions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETransitionInstructions.m; sourceTree = "<group>"; };
+		20D9955B1E4AC01A00520561 /* LBEVolumeAutomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEVolumeAutomation.h; sourceTree = "<group>"; };
+		20D9955C1E4AC01A00520561 /* LBEVolumeAutomation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEVolumeAutomation.m; sourceTree = "<group>"; };
+		20D9955E1E4AC22D00520561 /* LBEManualTransitionCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEManualTransitionCompositionBuilder.h; sourceTree = "<group>"; };
+		20D9955F1E4AC22D00520561 /* LBEManualTransitionCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEManualTransitionCompositionBuilder.m; sourceTree = "<group>"; };
+		20D995611E4AC54200520561 /* LBEAudioMixComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEAudioMixComposition.h; sourceTree = "<group>"; };
+		20D995621E4AC54200520561 /* LBEAudioMixComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEAudioMixComposition.m; sourceTree = "<group>"; };
+		20D995641E4AC5C400520561 /* LBEAudioMixCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEAudioMixCompositionBuilder.h; sourceTree = "<group>"; };
+		20D995651E4AC5C400520561 /* LBEAudioMixCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEAudioMixCompositionBuilder.m; sourceTree = "<group>"; };
+		20D995671E4AC78500520561 /* LBECompositionExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBECompositionExporter.h; sourceTree = "<group>"; };
+		20D995681E4AC78500520561 /* LBECompositionExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBECompositionExporter.m; sourceTree = "<group>"; };
+		20D9956A1E4ACC3500520561 /* LBETimelineBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETimelineBuilder.h; sourceTree = "<group>"; };
+		20D9956B1E4ACC3500520561 /* LBETimelineBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETimelineBuilder.m; sourceTree = "<group>"; };
+		20D9956D1E4ACCDF00520561 /* LBETimelineItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETimelineItemViewModel.h; sourceTree = "<group>"; };
+		20D9956E1E4ACCDF00520561 /* LBETimelineItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETimelineItemViewModel.m; sourceTree = "<group>"; };
+		20D995701E4ACF9E00520561 /* LBEMagicVideoHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBEMagicVideoHeader.h; sourceTree = "<group>"; };
+		20D995941E4AF1C000520561 /* 20170208142618078.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 20170208142618078.mov; sourceTree = "<group>"; };
+		20D995951E4AF1C000520561 /* 20170208142618099.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 20170208142618099.mov; sourceTree = "<group>"; };
+		20D995961E4AF1C000520561 /* 20170208142618101.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 20170208142618101.mov; sourceTree = "<group>"; };
 		20FF2DBF1E446E2700DCE2B3 /* AVPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerView.h; sourceTree = "<group>"; };
 		20FF2DC01E446E2700DCE2B3 /* AVPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerView.m; sourceTree = "<group>"; };
 		20FF2DC11E446E2700DCE2B3 /* FullPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullPlayerViewController.h; sourceTree = "<group>"; };
@@ -180,6 +247,48 @@
 			children = (
 				20FF2E0C1E4571BE00DCE2B3 /* PlayerAnimationViewController.h */,
 				20FF2E0D1E4571BE00DCE2B3 /* PlayerAnimationViewController.m */,
+				20B9229B1E4AB21F00F37C0B /* LBETimeline.h */,
+				20B9229C1E4AB21F00F37C0B /* LBETimeline.m */,
+				20B9229E1E4AB27600F37C0B /* LBETimelineItem.h */,
+				20B9229F1E4AB27600F37C0B /* LBETimelineItem.m */,
+				20B922A11E4AB2AE00F37C0B /* LBEMediaItem.h */,
+				20B922A21E4AB2AE00F37C0B /* LBEMediaItem.m */,
+				20B922A41E4AB3E900F37C0B /* LBEVideoItem.h */,
+				20B922A51E4AB3E900F37C0B /* LBEVideoItem.m */,
+				20B922A71E4AB47700F37C0B /* LBEAudioItem.h */,
+				20B922A81E4AB47700F37C0B /* LBEAudioItem.m */,
+				20B922AA1E4AB4BD00F37C0B /* LBEVideoTransition.h */,
+				20B922AB1E4AB4BD00F37C0B /* LBEVideoTransition.m */,
+				20D9955B1E4AC01A00520561 /* LBEVolumeAutomation.h */,
+				20D9955C1E4AC01A00520561 /* LBEVolumeAutomation.m */,
+				20B922AD1E4AB6A400F37C0B /* CompositionProtocol.h */,
+				20B922AE1E4AB71400F37C0B /* CompositionBuilderProtocol.h */,
+				20D995481E4AB86600520561 /* LBECompositionBuilderFactory.h */,
+				20D995491E4AB86600520561 /* LBECompositionBuilderFactory.m */,
+				20D9954B1E4AB94F00520561 /* LBEBasicComposition.h */,
+				20D9954C1E4AB94F00520561 /* LBEBasicComposition.m */,
+				20D9954E1E4AB9BB00520561 /* LBEBasicCompositionBuilder.h */,
+				20D9954F1E4AB9BB00520561 /* LBEBasicCompositionBuilder.m */,
+				20D995511E4ABBA700520561 /* LBETransitionComposition.h */,
+				20D995521E4ABBA700520561 /* LBETransitionComposition.m */,
+				20D995541E4ABC3000520561 /* LBETransitionCompositionBuilder.h */,
+				20D995551E4ABC3000520561 /* LBETransitionCompositionBuilder.m */,
+				20D9955E1E4AC22D00520561 /* LBEManualTransitionCompositionBuilder.h */,
+				20D9955F1E4AC22D00520561 /* LBEManualTransitionCompositionBuilder.m */,
+				20D995611E4AC54200520561 /* LBEAudioMixComposition.h */,
+				20D995621E4AC54200520561 /* LBEAudioMixComposition.m */,
+				20D995641E4AC5C400520561 /* LBEAudioMixCompositionBuilder.h */,
+				20D995651E4AC5C400520561 /* LBEAudioMixCompositionBuilder.m */,
+				20D995581E4ABE8600520561 /* LBETransitionInstructions.h */,
+				20D995591E4ABE8600520561 /* LBETransitionInstructions.m */,
+				20D995671E4AC78500520561 /* LBECompositionExporter.h */,
+				20D995681E4AC78500520561 /* LBECompositionExporter.m */,
+				20D9956A1E4ACC3500520561 /* LBETimelineBuilder.h */,
+				20D9956B1E4ACC3500520561 /* LBETimelineBuilder.m */,
+				20D9956D1E4ACCDF00520561 /* LBETimelineItemViewModel.h */,
+				20D9956E1E4ACCDF00520561 /* LBETimelineItemViewModel.m */,
+				20D995701E4ACF9E00520561 /* LBEMagicVideoHeader.h */,
+				20D995571E4ABD5100520561 /* LBEFunctions.h */,
 			);
 			path = "视频过渡效果";
 			sourceTree = "<group>";
@@ -201,6 +310,9 @@
 				20FF4D6F1E46DB8100DCE2B3 /* image3.jpg */,
 				20FF4D701E46DB8100DCE2B3 /* image4.jpg */,
 				20FF4D711E46DB8100DCE2B3 /* image5.jpg */,
+				20D995941E4AF1C000520561 /* 20170208142618078.mov */,
+				20D995951E4AF1C000520561 /* 20170208142618099.mov */,
+				20D995961E4AF1C000520561 /* 20170208142618101.mov */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -257,7 +369,7 @@
 				TargetAttributes = {
 					209F348D1E2DC7340083C875 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = DSHJC97KG4;
+						DevelopmentTeam = 2Y3JSHFEC2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -292,7 +404,10 @@
 				20FF4D741E46DB8100DCE2B3 /* image3.jpg in Resources */,
 				20FF4D751E46DB8100DCE2B3 /* image4.jpg in Resources */,
 				209F349E1E2DC7340083C875 /* Assets.xcassets in Resources */,
+				20D9959B1E4AF1C000520561 /* 20170208142618101.mov in Resources */,
+				20D995991E4AF1C000520561 /* 20170208142618078.mov in Resources */,
 				209F349C1E2DC7340083C875 /* Main.storyboard in Resources */,
+				20D9959A1E4AF1C000520561 /* 20170208142618099.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,16 +466,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B9229D1E4AB21F00F37C0B /* LBETimeline.m in Sources */,
+				20B922A31E4AB2AE00F37C0B /* LBEMediaItem.m in Sources */,
+				20B922A01E4AB27600F37C0B /* LBETimelineItem.m in Sources */,
+				20D9956F1E4ACCDF00520561 /* LBETimelineItemViewModel.m in Sources */,
 				20FF2DCF1E446F6500DCE2B3 /* CustomAVPlayerViewController.m in Sources */,
+				20B922AC1E4AB4BD00F37C0B /* LBEVideoTransition.m in Sources */,
+				20D995561E4ABC3100520561 /* LBETransitionCompositionBuilder.m in Sources */,
+				20D995631E4AC54200520561 /* LBEAudioMixComposition.m in Sources */,
+				20B922A91E4AB47700F37C0B /* LBEAudioItem.m in Sources */,
+				20D995661E4AC5C400520561 /* LBEAudioMixCompositionBuilder.m in Sources */,
 				20FF2DD61E4470E400DCE2B3 /* PlayerMianViewController.m in Sources */,
+				20D995531E4ABBA700520561 /* LBETransitionComposition.m in Sources */,
 				20FF2DC41E446E2700DCE2B3 /* FullPlayerViewController.m in Sources */,
 				20FF2DD31E446FE800DCE2B3 /* AVPlayerViewControllerDemoVC.m in Sources */,
+				20D9954D1E4AB94F00520561 /* LBEBasicComposition.m in Sources */,
 				20FF2DC81E446E8100DCE2B3 /* AVPlayerBasicViewController.m in Sources */,
+				20D9955D1E4AC01A00520561 /* LBEVolumeAutomation.m in Sources */,
 				20FF2DC31E446E2700DCE2B3 /* AVPlayerView.m in Sources */,
+				20D9954A1E4AB86600520561 /* LBECompositionBuilderFactory.m in Sources */,
+				20D9955A1E4ABE8600520561 /* LBETransitionInstructions.m in Sources */,
+				20D995601E4AC22D00520561 /* LBEManualTransitionCompositionBuilder.m in Sources */,
+				20D9956C1E4ACC3500520561 /* LBETimelineBuilder.m in Sources */,
+				20D995691E4AC78500520561 /* LBECompositionExporter.m in Sources */,
 				20FF4D481E46CC4200DCE2B3 /* VideoEditViewController.m in Sources */,
 				20FF2E0E1E4571BE00DCE2B3 /* PlayerAnimationViewController.m in Sources */,
 				209F34961E2DC7340083C875 /* AppDelegate.m in Sources */,
+				20B922A61E4AB3E900F37C0B /* LBEVideoItem.m in Sources */,
 				209F34931E2DC7340083C875 /* main.m in Sources */,
+				20D995501E4AB9BB00520561 /* LBEBasicCompositionBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,10 +613,11 @@
 			baseConfigurationReference = 98BB26707EEE1D99D696CE84 /* Pods-视频播放及特效制作.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DSHJC97KG4;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				GCC_PREFIX_HEADER = "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/视频播放及特效制作/视频播放及特效制作/VideoPrefixHeader.pch";
 				INFOPLIST_FILE = "视频播放及特效制作/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.video;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -492,10 +627,11 @@
 			baseConfigurationReference = 9D2A099E0DA5B1DAF12F51A4 /* Pods-视频播放及特效制作.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DSHJC97KG4;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				GCC_PREFIX_HEADER = "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/视频播放及特效制作/视频播放及特效制作/VideoPrefixHeader.pch";
 				INFOPLIST_FILE = "视频播放及特效制作/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.video;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
