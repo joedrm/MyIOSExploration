@@ -212,6 +212,23 @@ typedef void(^GenericCallback)(BOOL success, id result);
 }
 
 #pragma mark - 编辑视频，
+
+- (void)editVideo2{
+    
+    AVMutableComposition* mixComposition = [[AVMutableComposition alloc] init];
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
 - (void)editVideo{
     
     AVAsset* videoAsset = [AVAsset assetWithURL:[NSURL fileURLWithPath:KVideoSavePath]];
@@ -263,6 +280,7 @@ typedef void(^GenericCallback)(BOOL success, id result);
     
     AVMutableComposition *composition = [AVMutableComposition composition];
     AVMutableCompositionTrack *videoCompositionTrack = [composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+    
     AVAssetTrack *assetVideoTrack = [[asset tracksWithMediaType:AVMediaTypeVideo] firstObject];
     [videoCompositionTrack insertTimeRange:range ofTrack:assetVideoTrack atTime:kCMTimeZero error:nil];
     [videoCompositionTrack setPreferredTransform:assetVideoTrack.preferredTransform];
