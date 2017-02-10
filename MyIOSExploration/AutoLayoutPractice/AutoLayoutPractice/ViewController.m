@@ -31,6 +31,8 @@
 
 /*
  https://github.com/coderyi/AutoLayoutDemo
- 
+ https://github.com/johnlui/AutoLayout
+ https://github.com/liaojinxing/Autolayout
+ https://github.com/minggo620/iOSConstraintAnimation
  
  */

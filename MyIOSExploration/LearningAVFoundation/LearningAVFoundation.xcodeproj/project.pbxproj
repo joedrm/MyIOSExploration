@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20D996041E4C173800520561 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995B11E4C173800520561 /* AppDelegate.m */; };
+		20D996051E4C173800520561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D995B21E4C173800520561 /* Assets.xcassets */; };
+		20D996061E4C173800520561 /* AVPlayerViewControllerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995B51E4C173800520561 /* AVPlayerViewControllerDemoVC.m */; };
+		20D996071E4C173800520561 /* AVPlayerBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995B81E4C173800520561 /* AVPlayerBasicViewController.m */; };
+		20D996081E4C173800520561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D995B91E4C173800520561 /* LaunchScreen.storyboard */; };
+		20D996091E4C173800520561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D995BB1E4C173800520561 /* Main.storyboard */; };
+		20D9960A1E4C173800520561 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D995BD1E4C173800520561 /* Info.plist */; };
+		20D9960B1E4C173800520561 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995BE1E4C173800520561 /* main.m */; };
+		20D9960C1E4C173800520561 /* PlayerMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995C01E4C173800520561 /* PlayerMianViewController.m */; };
+		20D9960D1E4C173800520561 /* 20170208142618078.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C21E4C173800520561 /* 20170208142618078.mov */; };
+		20D9960E1E4C173800520561 /* 20170208142618099.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C31E4C173800520561 /* 20170208142618099.mov */; };
+		20D9960F1E4C173800520561 /* 20170208142618101.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C41E4C173800520561 /* 20170208142618101.mov */; };
+		20D996101E4C173800520561 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C51E4C173800520561 /* image1.jpg */; };
+		20D996111E4C173800520561 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C61E4C173800520561 /* image2.jpg */; };
+		20D996121E4C173800520561 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C71E4C173800520561 /* image3.jpg */; };
+		20D996131E4C173800520561 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C81E4C173800520561 /* image4.jpg */; };
+		20D996141E4C173800520561 /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C91E4C173800520561 /* image5.jpg */; };
+		20D996151E4C173800520561 /* AVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995CD1E4C173800520561 /* AVPlayerView.m */; };
+		20D996161E4C173800520561 /* CustomAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995CF1E4C173800520561 /* CustomAVPlayerViewController.m */; };
+		20D996171E4C173800520561 /* FullPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995D11E4C173800520561 /* FullPlayerViewController.m */; };
+		20D996181E4C173800520561 /* VideoEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995D41E4C173800520561 /* VideoEditViewController.m */; };
+		20D996191E4C173800520561 /* LBEAudioItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995D91E4C173800520561 /* LBEAudioItem.m */; };
+		20D9961A1E4C173800520561 /* LBEAudioMixComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995DB1E4C173800520561 /* LBEAudioMixComposition.m */; };
+		20D9961B1E4C173800520561 /* LBEAudioMixCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995DD1E4C173800520561 /* LBEAudioMixCompositionBuilder.m */; };
+		20D9961C1E4C173800520561 /* LBEBasicComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995DF1E4C173800520561 /* LBEBasicComposition.m */; };
+		20D9961D1E4C173800520561 /* LBEBasicCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995E11E4C173800520561 /* LBEBasicCompositionBuilder.m */; };
+		20D9961E1E4C173800520561 /* LBECompositionBuilderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995E31E4C173800520561 /* LBECompositionBuilderFactory.m */; };
+		20D9961F1E4C173800520561 /* LBECompositionExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995E51E4C173800520561 /* LBECompositionExporter.m */; };
+		20D996201E4C173800520561 /* LBEManualTransitionCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995E91E4C173800520561 /* LBEManualTransitionCompositionBuilder.m */; };
+		20D996211E4C173800520561 /* LBEMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995EB1E4C173800520561 /* LBEMediaItem.m */; };
+		20D996221E4C173800520561 /* LBETimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995ED1E4C173800520561 /* LBETimeline.m */; };
+		20D996231E4C173800520561 /* LBETimelineBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995EF1E4C173800520561 /* LBETimelineBuilder.m */; };
+		20D996241E4C173800520561 /* LBETimelineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995F11E4C173800520561 /* LBETimelineItem.m */; };
+		20D996251E4C173800520561 /* LBETimelineItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995F31E4C173800520561 /* LBETimelineItemViewModel.m */; };
+		20D996261E4C173800520561 /* LBETransitionComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995F51E4C173800520561 /* LBETransitionComposition.m */; };
+		20D996271E4C173800520561 /* LBETransitionCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995F71E4C173800520561 /* LBETransitionCompositionBuilder.m */; };
+		20D996281E4C173800520561 /* LBETransitionInstructions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995F91E4C173800520561 /* LBETransitionInstructions.m */; };
+		20D996291E4C173800520561 /* LBEVideoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995FB1E4C173800520561 /* LBEVideoItem.m */; };
+		20D9962A1E4C173800520561 /* LBEVideoTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995FD1E4C173800520561 /* LBEVideoTransition.m */; };
+		20D9962B1E4C173800520561 /* LBEVolumeAutomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995FF1E4C173800520561 /* LBEVolumeAutomation.m */; };
+		20D9962C1E4C173800520561 /* PlayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996011E4C173800520561 /* PlayerAnimationViewController.m */; };
+		20D9962D1E4C173800520561 /* VideoEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996031E4C173800520561 /* VideoEditor.m */; };
+		20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; };
+		20FF2DCB1E446E9000DCE2B3 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4539B64C8BE60ABD560D78B1 /* Pods__________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3279C867DC1F123CA5661F2F /* Pods__________.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20FF2DCC1E446E9000DCE2B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20FF2DCB1E446E9000DCE2B3 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		209F348E1E2DC7340083C875 /* LearningAVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningAVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D995B01E4C173800520561 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20D995B11E4C173800520561 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20D995B21E4C173800520561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20D995B41E4C173800520561 /* AVPlayerViewControllerDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewControllerDemoVC.h; sourceTree = "<group>"; };
+		20D995B51E4C173800520561 /* AVPlayerViewControllerDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewControllerDemoVC.m; sourceTree = "<group>"; };
+		20D995B71E4C173800520561 /* AVPlayerBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerBasicViewController.h; sourceTree = "<group>"; };
+		20D995B81E4C173800520561 /* AVPlayerBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerBasicViewController.m; sourceTree = "<group>"; };
+		20D995BA1E4C173800520561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20D995BC1E4C173800520561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20D995BD1E4C173800520561 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D995BE1E4C173800520561 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20D995BF1E4C173800520561 /* PlayerMianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerMianViewController.h; sourceTree = "<group>"; };
+		20D995C01E4C173800520561 /* PlayerMianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerMianViewController.m; sourceTree = "<group>"; };
+		20D995C21E4C173800520561 /* 20170208142618078.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 20170208142618078.mov; sourceTree = "<group>"; };
+		20D995C31E4C173800520561 /* 20170208142618099.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 20170208142618099.mov; sourceTree = "<group>"; };
+		20D995C41E4C173800520561 /* 20170208142618101.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 20170208142618101.mov; sourceTree = "<group>"; };
+		20D995C51E4C173800520561 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		20D995C61E4C173800520561 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		20D995C71E4C173800520561 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		20D995C81E4C173800520561 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		20D995C91E4C173800520561 /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		20D995CA1E4C173800520561 /* VideoPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPrefixHeader.pch; sourceTree = "<group>"; };
+		20D995CC1E4C173800520561 /* AVPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerView.h; sourceTree = "<group>"; };
+		20D995CD1E4C173800520561 /* AVPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerView.m; sourceTree = "<group>"; };
+		20D995CE1E4C173800520561 /* CustomAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAVPlayerViewController.h; sourceTree = "<group>"; };
+		20D995CF1E4C173800520561 /* CustomAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAVPlayerViewController.m; sourceTree = "<group>"; };
+		20D995D01E4C173800520561 /* FullPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullPlayerViewController.h; sourceTree = "<group>"; };
+		20D995D11E4C173800520561 /* FullPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullPlayerViewController.m; sourceTree = "<group>"; };
+		20D995D31E4C173800520561 /* VideoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEditViewController.h; sourceTree = "<group>"; };
+		20D995D41E4C173800520561 /* VideoEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEditViewController.m; sourceTree = "<group>"; };
+		20D995D61E4C173800520561 /* CompositionBuilderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositionBuilderProtocol.h; sourceTree = "<group>"; };
+		20D995D71E4C173800520561 /* CompositionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositionProtocol.h; sourceTree = "<group>"; };
+		20D995D81E4C173800520561 /* LBEAudioItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEAudioItem.h; sourceTree = "<group>"; };
+		20D995D91E4C173800520561 /* LBEAudioItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEAudioItem.m; sourceTree = "<group>"; };
+		20D995DA1E4C173800520561 /* LBEAudioMixComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEAudioMixComposition.h; sourceTree = "<group>"; };
+		20D995DB1E4C173800520561 /* LBEAudioMixComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEAudioMixComposition.m; sourceTree = "<group>"; };
+		20D995DC1E4C173800520561 /* LBEAudioMixCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEAudioMixCompositionBuilder.h; sourceTree = "<group>"; };
+		20D995DD1E4C173800520561 /* LBEAudioMixCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEAudioMixCompositionBuilder.m; sourceTree = "<group>"; };
+		20D995DE1E4C173800520561 /* LBEBasicComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEBasicComposition.h; sourceTree = "<group>"; };
+		20D995DF1E4C173800520561 /* LBEBasicComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEBasicComposition.m; sourceTree = "<group>"; };
+		20D995E01E4C173800520561 /* LBEBasicCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEBasicCompositionBuilder.h; sourceTree = "<group>"; };
+		20D995E11E4C173800520561 /* LBEBasicCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEBasicCompositionBuilder.m; sourceTree = "<group>"; };
+		20D995E21E4C173800520561 /* LBECompositionBuilderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBECompositionBuilderFactory.h; sourceTree = "<group>"; };
+		20D995E31E4C173800520561 /* LBECompositionBuilderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBECompositionBuilderFactory.m; sourceTree = "<group>"; };
+		20D995E41E4C173800520561 /* LBECompositionExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBECompositionExporter.h; sourceTree = "<group>"; };
+		20D995E51E4C173800520561 /* LBECompositionExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBECompositionExporter.m; sourceTree = "<group>"; };
+		20D995E61E4C173800520561 /* LBEFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEFunctions.h; sourceTree = "<group>"; };
+		20D995E71E4C173800520561 /* LBEMagicVideoHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEMagicVideoHeader.h; sourceTree = "<group>"; };
+		20D995E81E4C173800520561 /* LBEManualTransitionCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEManualTransitionCompositionBuilder.h; sourceTree = "<group>"; };
+		20D995E91E4C173800520561 /* LBEManualTransitionCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEManualTransitionCompositionBuilder.m; sourceTree = "<group>"; };
+		20D995EA1E4C173800520561 /* LBEMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEMediaItem.h; sourceTree = "<group>"; };
+		20D995EB1E4C173800520561 /* LBEMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEMediaItem.m; sourceTree = "<group>"; };
+		20D995EC1E4C173800520561 /* LBETimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETimeline.h; sourceTree = "<group>"; };
+		20D995ED1E4C173800520561 /* LBETimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETimeline.m; sourceTree = "<group>"; };
+		20D995EE1E4C173800520561 /* LBETimelineBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETimelineBuilder.h; sourceTree = "<group>"; };
+		20D995EF1E4C173800520561 /* LBETimelineBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETimelineBuilder.m; sourceTree = "<group>"; };
+		20D995F01E4C173800520561 /* LBETimelineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETimelineItem.h; sourceTree = "<group>"; };
+		20D995F11E4C173800520561 /* LBETimelineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETimelineItem.m; sourceTree = "<group>"; };
+		20D995F21E4C173800520561 /* LBETimelineItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETimelineItemViewModel.h; sourceTree = "<group>"; };
+		20D995F31E4C173800520561 /* LBETimelineItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETimelineItemViewModel.m; sourceTree = "<group>"; };
+		20D995F41E4C173800520561 /* LBETransitionComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETransitionComposition.h; sourceTree = "<group>"; };
+		20D995F51E4C173800520561 /* LBETransitionComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETransitionComposition.m; sourceTree = "<group>"; };
+		20D995F61E4C173800520561 /* LBETransitionCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETransitionCompositionBuilder.h; sourceTree = "<group>"; };
+		20D995F71E4C173800520561 /* LBETransitionCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETransitionCompositionBuilder.m; sourceTree = "<group>"; };
+		20D995F81E4C173800520561 /* LBETransitionInstructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBETransitionInstructions.h; sourceTree = "<group>"; };
+		20D995F91E4C173800520561 /* LBETransitionInstructions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBETransitionInstructions.m; sourceTree = "<group>"; };
+		20D995FA1E4C173800520561 /* LBEVideoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEVideoItem.h; sourceTree = "<group>"; };
+		20D995FB1E4C173800520561 /* LBEVideoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEVideoItem.m; sourceTree = "<group>"; };
+		20D995FC1E4C173800520561 /* LBEVideoTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEVideoTransition.h; sourceTree = "<group>"; };
+		20D995FD1E4C173800520561 /* LBEVideoTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEVideoTransition.m; sourceTree = "<group>"; };
+		20D995FE1E4C173800520561 /* LBEVolumeAutomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEVolumeAutomation.h; sourceTree = "<group>"; };
+		20D995FF1E4C173800520561 /* LBEVolumeAutomation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEVolumeAutomation.m; sourceTree = "<group>"; };
+		20D996001E4C173800520561 /* PlayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerAnimationViewController.h; sourceTree = "<group>"; };
+		20D996011E4C173800520561 /* PlayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerAnimationViewController.m; sourceTree = "<group>"; };
+		20D996021E4C173800520561 /* VideoEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEditor.h; sourceTree = "<group>"; };
+		20D996031E4C173800520561 /* VideoEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEditor.m; sourceTree = "<group>"; };
+		20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3279C867DC1F123CA5661F2F /* Pods__________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods__________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98BB26707EEE1D99D696CE84 /* Pods-视频播放及特效制作.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-视频播放及特效制作.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作.debug.xcconfig"; sourceTree = "<group>"; };
+		9D2A099E0DA5B1DAF12F51A4 /* Pods-视频播放及特效制作.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-视频播放及特效制作.release.xcconfig"; path = "../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		209F348B1E2DC7340083C875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4539B64C8BE60ABD560D78B1 /* Pods__________.framework in Frameworks */,
+				20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		209F34851E2DC7340083C875 = {
+			isa = PBXGroup;
+			children = (
+				20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */,
+				20D995AF1E4C173800520561 /* LearningAVFoundation */,
+				209F348F1E2DC7340083C875 /* Products */,
+				BDC302D67FA3FFFDCC9C86D4 /* Pods */,
+				EE678E5DA28A95C6C3421341 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		209F348F1E2DC7340083C875 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				209F348E1E2DC7340083C875 /* LearningAVFoundation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20D995AF1E4C173800520561 /* LearningAVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				20D995B01E4C173800520561 /* AppDelegate.h */,
+				20D995B11E4C173800520561 /* AppDelegate.m */,
+				20D995B21E4C173800520561 /* Assets.xcassets */,
+				20D995B31E4C173800520561 /* AVPlayerViewController的使用 */,
+				20D995B61E4C173800520561 /* AVPlayer基本使用 */,
+				20D995B91E4C173800520561 /* LaunchScreen.storyboard */,
+				20D995BB1E4C173800520561 /* Main.storyboard */,
+				20D995BD1E4C173800520561 /* Info.plist */,
+				20D995BE1E4C173800520561 /* main.m */,
+				20D995BF1E4C173800520561 /* PlayerMianViewController.h */,
+				20D995C01E4C173800520561 /* PlayerMianViewController.m */,
+				20D995C11E4C173800520561 /* Source */,
+				20D995CA1E4C173800520561 /* VideoPrefixHeader.pch */,
+				20D995CB1E4C173800520561 /* 自定义AVPlayer */,
+				20D995D21E4C173800520561 /* 视频编辑 */,
+				20D995D51E4C173800520561 /* 视频过渡效果 */,
+			);
+			path = LearningAVFoundation;
+			sourceTree = "<group>";
+		};
+		20D995B31E4C173800520561 /* AVPlayerViewController的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				20D995B41E4C173800520561 /* AVPlayerViewControllerDemoVC.h */,
+				20D995B51E4C173800520561 /* AVPlayerViewControllerDemoVC.m */,
+			);
+			path = "AVPlayerViewController的使用";
+			sourceTree = "<group>";
+		};
+		20D995B61E4C173800520561 /* AVPlayer基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				20D995B71E4C173800520561 /* AVPlayerBasicViewController.h */,
+				20D995B81E4C173800520561 /* AVPlayerBasicViewController.m */,
+			);
+			path = "AVPlayer基本使用";
+			sourceTree = "<group>";
+		};
+		20D995C11E4C173800520561 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				20D995C21E4C173800520561 /* 20170208142618078.mov */,
+				20D995C31E4C173800520561 /* 20170208142618099.mov */,
+				20D995C41E4C173800520561 /* 20170208142618101.mov */,
+				20D995C51E4C173800520561 /* image1.jpg */,
+				20D995C61E4C173800520561 /* image2.jpg */,
+				20D995C71E4C173800520561 /* image3.jpg */,
+				20D995C81E4C173800520561 /* image4.jpg */,
+				20D995C91E4C173800520561 /* image5.jpg */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		20D995CB1E4C173800520561 /* 自定义AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				20D995CC1E4C173800520561 /* AVPlayerView.h */,
+				20D995CD1E4C173800520561 /* AVPlayerView.m */,
+				20D995CE1E4C173800520561 /* CustomAVPlayerViewController.h */,
+				20D995CF1E4C173800520561 /* CustomAVPlayerViewController.m */,
+				20D995D01E4C173800520561 /* FullPlayerViewController.h */,
+				20D995D11E4C173800520561 /* FullPlayerViewController.m */,
+			);
+			path = "自定义AVPlayer";
+			sourceTree = "<group>";
+		};
+		20D995D21E4C173800520561 /* 视频编辑 */ = {
+			isa = PBXGroup;
+			children = (
+				20D995D31E4C173800520561 /* VideoEditViewController.h */,
+				20D995D41E4C173800520561 /* VideoEditViewController.m */,
+			);
+			path = "视频编辑";
+			sourceTree = "<group>";
+		};
+		20D995D51E4C173800520561 /* 视频过渡效果 */ = {
+			isa = PBXGroup;
+			children = (
+				20D995D61E4C173800520561 /* CompositionBuilderProtocol.h */,
+				20D995D71E4C173800520561 /* CompositionProtocol.h */,
+				20D995D81E4C173800520561 /* LBEAudioItem.h */,
+				20D995D91E4C173800520561 /* LBEAudioItem.m */,
+				20D995DA1E4C173800520561 /* LBEAudioMixComposition.h */,
+				20D995DB1E4C173800520561 /* LBEAudioMixComposition.m */,
+				20D995DC1E4C173800520561 /* LBEAudioMixCompositionBuilder.h */,
+				20D995DD1E4C173800520561 /* LBEAudioMixCompositionBuilder.m */,
+				20D995DE1E4C173800520561 /* LBEBasicComposition.h */,
+				20D995DF1E4C173800520561 /* LBEBasicComposition.m */,
+				20D995E01E4C173800520561 /* LBEBasicCompositionBuilder.h */,
+				20D995E11E4C173800520561 /* LBEBasicCompositionBuilder.m */,
+				20D995E21E4C173800520561 /* LBECompositionBuilderFactory.h */,
+				20D995E31E4C173800520561 /* LBECompositionBuilderFactory.m */,
+				20D995E41E4C173800520561 /* LBECompositionExporter.h */,
+				20D995E51E4C173800520561 /* LBECompositionExporter.m */,
+				20D995E61E4C173800520561 /* LBEFunctions.h */,
+				20D995E71E4C173800520561 /* LBEMagicVideoHeader.h */,
+				20D995E81E4C173800520561 /* LBEManualTransitionCompositionBuilder.h */,
+				20D995E91E4C173800520561 /* LBEManualTransitionCompositionBuilder.m */,
+				20D995EA1E4C173800520561 /* LBEMediaItem.h */,
+				20D995EB1E4C173800520561 /* LBEMediaItem.m */,
+				20D995EC1E4C173800520561 /* LBETimeline.h */,
+				20D995ED1E4C173800520561 /* LBETimeline.m */,
+				20D995EE1E4C173800520561 /* LBETimelineBuilder.h */,
+				20D995EF1E4C173800520561 /* LBETimelineBuilder.m */,
+				20D995F01E4C173800520561 /* LBETimelineItem.h */,
+				20D995F11E4C173800520561 /* LBETimelineItem.m */,
+				20D995F21E4C173800520561 /* LBETimelineItemViewModel.h */,
+				20D995F31E4C173800520561 /* LBETimelineItemViewModel.m */,
+				20D995F41E4C173800520561 /* LBETransitionComposition.h */,
+				20D995F51E4C173800520561 /* LBETransitionComposition.m */,
+				20D995F61E4C173800520561 /* LBETransitionCompositionBuilder.h */,
+				20D995F71E4C173800520561 /* LBETransitionCompositionBuilder.m */,
+				20D995F81E4C173800520561 /* LBETransitionInstructions.h */,
+				20D995F91E4C173800520561 /* LBETransitionInstructions.m */,
+				20D995FA1E4C173800520561 /* LBEVideoItem.h */,
+				20D995FB1E4C173800520561 /* LBEVideoItem.m */,
+				20D995FC1E4C173800520561 /* LBEVideoTransition.h */,
+				20D995FD1E4C173800520561 /* LBEVideoTransition.m */,
+				20D995FE1E4C173800520561 /* LBEVolumeAutomation.h */,
+				20D995FF1E4C173800520561 /* LBEVolumeAutomation.m */,
+				20D996001E4C173800520561 /* PlayerAnimationViewController.h */,
+				20D996011E4C173800520561 /* PlayerAnimationViewController.m */,
+				20D996021E4C173800520561 /* VideoEditor.h */,
+				20D996031E4C173800520561 /* VideoEditor.m */,
+			);
+			path = "视频过渡效果";
+			sourceTree = "<group>";
+		};
+		BDC302D67FA3FFFDCC9C86D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98BB26707EEE1D99D696CE84 /* Pods-视频播放及特效制作.debug.xcconfig */,
+				9D2A099E0DA5B1DAF12F51A4 /* Pods-视频播放及特效制作.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE678E5DA28A95C6C3421341 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3279C867DC1F123CA5661F2F /* Pods__________.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		209F348D1E2DC7340083C875 /* LearningAVFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209F34A51E2DC7340083C875 /* Build configuration list for PBXNativeTarget "LearningAVFoundation" */;
+			buildPhases = (
+				F74791C6D02DD26791D16A47 /* [CP] Check Pods Manifest.lock */,
+				209F348A1E2DC7340083C875 /* Sources */,
+				209F348B1E2DC7340083C875 /* Frameworks */,
+				209F348C1E2DC7340083C875 /* Resources */,
+				2BB5DF69DFE54D0DE69DEDEE /* [CP] Embed Pods Frameworks */,
+				26C2E2F237453E014AB478E8 /* [CP] Copy Pods Resources */,
+				20FF2DCC1E446E9000DCE2B3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearningAVFoundation;
+			productName = "视频播放及特效制作";
+			productReference = 209F348E1E2DC7340083C875 /* LearningAVFoundation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		209F34861E2DC7340083C875 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wdy;
+				TargetAttributes = {
+					209F348D1E2DC7340083C875 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2Y3JSHFEC2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 209F34891E2DC7340083C875 /* Build configuration list for PBXProject "LearningAVFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 209F34851E2DC7340083C875;
+			productRefGroup = 209F348F1E2DC7340083C875 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				209F348D1E2DC7340083C875 /* LearningAVFoundation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		209F348C1E2DC7340083C875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D9960F1E4C173800520561 /* 20170208142618101.mov in Resources */,
+				20D996141E4C173800520561 /* image5.jpg in Resources */,
+				20D996131E4C173800520561 /* image4.jpg in Resources */,
+				20D996121E4C173800520561 /* image3.jpg in Resources */,
+				20D9960A1E4C173800520561 /* Info.plist in Resources */,
+				20D9960E1E4C173800520561 /* 20170208142618099.mov in Resources */,
+				20D9960D1E4C173800520561 /* 20170208142618078.mov in Resources */,
+				20D996111E4C173800520561 /* image2.jpg in Resources */,
+				20D996091E4C173800520561 /* Main.storyboard in Resources */,
+				20D996101E4C173800520561 /* image1.jpg in Resources */,
+				20D996051E4C173800520561 /* Assets.xcassets in Resources */,
+				20D996081E4C173800520561 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26C2E2F237453E014AB478E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BB5DF69DFE54D0DE69DEDEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F74791C6D02DD26791D16A47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		209F348A1E2DC7340083C875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D996161E4C173800520561 /* CustomAVPlayerViewController.m in Sources */,
+				20D996201E4C173800520561 /* LBEManualTransitionCompositionBuilder.m in Sources */,
+				20D996061E4C173800520561 /* AVPlayerViewControllerDemoVC.m in Sources */,
+				20D996221E4C173800520561 /* LBETimeline.m in Sources */,
+				20D996071E4C173800520561 /* AVPlayerBasicViewController.m in Sources */,
+				20D9961F1E4C173800520561 /* LBECompositionExporter.m in Sources */,
+				20D9960C1E4C173800520561 /* PlayerMianViewController.m in Sources */,
+				20D996171E4C173800520561 /* FullPlayerViewController.m in Sources */,
+				20D996211E4C173800520561 /* LBEMediaItem.m in Sources */,
+				20D9961E1E4C173800520561 /* LBECompositionBuilderFactory.m in Sources */,
+				20D9961C1E4C173800520561 /* LBEBasicComposition.m in Sources */,
+				20D9962C1E4C173800520561 /* PlayerAnimationViewController.m in Sources */,
+				20D9960B1E4C173800520561 /* main.m in Sources */,
+				20D9962B1E4C173800520561 /* LBEVolumeAutomation.m in Sources */,
+				20D996251E4C173800520561 /* LBETimelineItemViewModel.m in Sources */,
+				20D996151E4C173800520561 /* AVPlayerView.m in Sources */,
+				20D996041E4C173800520561 /* AppDelegate.m in Sources */,
+				20D9961B1E4C173800520561 /* LBEAudioMixCompositionBuilder.m in Sources */,
+				20D996291E4C173800520561 /* LBEVideoItem.m in Sources */,
+				20D996281E4C173800520561 /* LBETransitionInstructions.m in Sources */,
+				20D9962D1E4C173800520561 /* VideoEditor.m in Sources */,
+				20D996181E4C173800520561 /* VideoEditViewController.m in Sources */,
+				20D996241E4C173800520561 /* LBETimelineItem.m in Sources */,
+				20D996231E4C173800520561 /* LBETimelineBuilder.m in Sources */,
+				20D9962A1E4C173800520561 /* LBEVideoTransition.m in Sources */,
+				20D996191E4C173800520561 /* LBEAudioItem.m in Sources */,
+				20D996261E4C173800520561 /* LBETransitionComposition.m in Sources */,
+				20D9961A1E4C173800520561 /* LBEAudioMixComposition.m in Sources */,
+				20D9961D1E4C173800520561 /* LBEBasicCompositionBuilder.m in Sources */,
+				20D996271E4C173800520561 /* LBETransitionCompositionBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		20D995B91E4C173800520561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D995BA1E4C173800520561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		20D995BB1E4C173800520561 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D995BC1E4C173800520561 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		209F34A31E2DC7340083C875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		209F34A41E2DC7340083C875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		209F34A61E2DC7340083C875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98BB26707EEE1D99D696CE84 /* Pods-视频播放及特效制作.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				GCC_PREFIX_HEADER = /Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/LearningAVFoundation/LearningAVFoundation/VideoPrefixHeader.pch;
+				INFOPLIST_FILE = LearningAVFoundation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.video;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		209F34A71E2DC7340083C875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2A099E0DA5B1DAF12F51A4 /* Pods-视频播放及特效制作.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				GCC_PREFIX_HEADER = /Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/LearningAVFoundation/LearningAVFoundation/VideoPrefixHeader.pch;
+				INFOPLIST_FILE = LearningAVFoundation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.video;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		209F34891E2DC7340083C875 /* Build configuration list for PBXProject "LearningAVFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209F34A31E2DC7340083C875 /* Debug */,
+				209F34A41E2DC7340083C875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		209F34A51E2DC7340083C875 /* Build configuration list for PBXNativeTarget "LearningAVFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209F34A61E2DC7340083C875 /* Debug */,
+				209F34A71E2DC7340083C875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 209F34861E2DC7340083C875 /* Project object */;
+}

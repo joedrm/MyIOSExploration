@@ -8,6 +8,8 @@
 
 #import "PlayerAnimationViewController.h"
 #import "LBEMagicVideoHeader.h"
+#import "VideoEditor.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 
 #define KVideoSavePath [kCachePath stringByAppendingPathComponent:@"final_video.mp4"]
 
@@ -34,6 +36,7 @@ typedef void(^GenericCallback)(BOOL success, id result);
 @property (nonatomic, strong) NSMutableArray *clipTimeRanges; // array of CMTimeRanges stored in NSValues.
 @property (strong, nonatomic) NSArray *videoItems;
 @property (strong, nonatomic) LBECompositionExporter* exporter;
+@property (strong, nonatomic) VideoEditor* videoEditor;
 @end
 
 @implementation PlayerAnimationViewController
@@ -45,6 +48,7 @@ typedef void(^GenericCallback)(BOOL success, id result);
     _clips = [[NSMutableArray alloc] initWithCapacity:ImageArr().count];
     _clipTimeRanges = [[NSMutableArray alloc] initWithCapacity:ImageArr().count];
     
+    self.videoEditor = [[VideoEditor alloc] init];
     NSString* url = [[NSBundle mainBundle] pathForResource:@"final_video" ofType:@"mp4"];
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     if (kStringIsEmpty(url)) {
@@ -102,7 +106,7 @@ typedef void(^GenericCallback)(BOOL success, id result);
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
 //    [self imageSaveToVideo];
-    [self editVideo2];
+    [self editVideo3];
 }
 
 - (void)imageSaveToVideo{
@@ -301,7 +305,89 @@ typedef void(^GenericCallback)(BOOL success, id result);
 }
 
 
+- (void)editVideo3{
 
+    NSMutableArray *urls = [NSMutableArray array];
+    NSArray* videoNameArr = @[@"20170208142618078",@"20170208142618099", @"20170208142618101"];
+    for (NSString* str in videoNameArr) {
+        NSString* urlStr = [[NSBundle mainBundle] pathForResource:str ofType:@"mov"];
+        NSLog(@"urlStr = %@", urlStr);
+        NSURL* url = [NSURL fileURLWithPath:urlStr];
+        NSDictionary *options = @{AVURLAssetPreferPreciseDurationAndTimingKey : @YES};
+        AVAsset* asset = [AVURLAsset URLAssetWithURL:url options:options];
+        [urls addObject:asset];
+    }
+    self.videoEditor.clips = [NSArray arrayWithArray:urls];
+    
+    NSMutableArray* array = [NSMutableArray array];
+    for (AVURLAsset* asset in self.videoEditor.clips) {
+        CMTimeRange timeRange = kCMTimeRangeZero;
+        timeRange.duration = asset.duration;
+        NSValue *timeRangeValue = [NSValue valueWithCMTimeRange:timeRange];
+        NSLog(@"timeRangeValue = %@", timeRangeValue);
+        [array addObject:timeRangeValue];
+    }
+    self.videoEditor.clipTimeRanges = [NSArray arrayWithArray:array];
+    
+    self.videoEditor.commentary = nil;
+    //	_editor.commentary = _commentaryEnabled ? self.commentary : nil;
+    //	CMTime commentaryStartTime = (_commentaryEnabled && self.commentary) ? CMTimeMakeWithSeconds(_commentaryStartTime, 600) : kCMTimeInvalid;
+    //	_editor.commentaryStartTime = commentaryStartTime;
+    
+    // Transitions
+    self.videoEditor.transitionDuration = CMTimeMakeWithSeconds(1.0, 600);
+//    self.videoEditor.transitionType = (SimpleEditorTransitionType*)malloc(sizeof(int) * 3);
+//    self.videoEditor.transitionType[0] = SimpleEditorTransitionTypePush;
+//    self.videoEditor.transitionType[1] = SimpleEditorTransitionTypeCrossFade;
+    //	_editor.transitionType[2] = SimpleEditorTransitionTypeCrossFade;
+    // Titles
+    self.videoEditor.transitionType = SimpleEditorTransitionTypeNone;
+    self.videoEditor.titleText = @" ";
+    [self.videoEditor buildCompositionObjectsForPlayback:NO];
+    
+    AVAssetExportSession *session = [self.videoEditor assetExportSessionWithPreset:AVAssetExportPresetHighestQuality];
+    
+    NSString *filePath = nil;
+    NSUInteger count = 0;
+    do {
+        filePath = NSTemporaryDirectory();
+        
+        NSString *numberString = count > 0 ? [NSString stringWithFormat:@"-%lu", (unsigned long)count] : @"";
+        filePath = [filePath stringByAppendingPathComponent:[NSString stringWithFormat:@"Output-%@.mov", numberString]];
+        count++;
+    } while([[NSFileManager defaultManager] fileExistsAtPath:filePath]);
+    
+    session.outputURL = [NSURL fileURLWithPath:filePath];
+    session.outputFileType = AVFileTypeQuickTimeMovie;
+    
+    [session exportAsynchronouslyWithCompletionHandler:^
+     {
+         dispatch_async(dispatch_get_main_queue(), ^{
+             [self exportDidFinish:session];
+         });
+     }];
+}
+
+- (void)exportDidFinish:(AVAssetExportSession*)session
+{
+    NSURL *outputURL = session.outputURL;
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    if ([library videoAtPathIsCompatibleWithSavedPhotosAlbum:outputURL]) {
+        [library writeVideoAtPathToSavedPhotosAlbum:outputURL completionBlock:^(NSURL *assetURL, NSError *error){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (error) {
+                    NSLog(@"writeVideoToAssestsLibrary failed: %@", error);
+                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[error localizedDescription] message:[error localizedRecoverySuggestion] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                    [alertView show];
+                } else {
+                    
+                }
+                NSLog(@"Done");
+            });
+            
+        }];
+    }
+}
 
 - (void)editVideo{
     

@@ -2,13 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OpenGL_Practice/OpenGL_Practice.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearningAVFoundation/LearningAVFoundation.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CoreImage&#x4eba;&#x8138;&#x8bc6;&#x522b;/CoreImage&#x4eba;&#x8138;&#x8bc6;&#x522b;.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:LearningOpenCV/LearningOpenCV.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:&#x89c6;&#x9891;&#x64ad;&#x653e;&#x53ca;&#x7279;&#x6548;&#x5236;&#x4f5c;/&#x89c6;&#x9891;&#x64ad;&#x653e;&#x53ca;&#x7279;&#x6548;&#x5236;&#x4f5c;.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:MultiCustomUIComponent/MultiCustomUIComponent.xcodeproj">

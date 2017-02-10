@@ -55,6 +55,7 @@
  https://github.com/coderyi/MonkeyForMac MAC版
  https://github.com/andyiac/githot  Android版
  
+ https://github.com/gsdios/GSD_WeiXin
  */
 
 

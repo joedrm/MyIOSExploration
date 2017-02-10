@@ -13,6 +13,9 @@
  https://github.com/leichunfeng/MVVMReactiveCocoa  GitBucket iOS App
  https://github.com/BinBear/breadtrip-ReactiveCocoa-MVVM-  仿面包旅行，ReactiveCocoa+MVVM
  http://www.jianshu.com/p/bae2eeba118d   ReactiveCocoa基本用法
+ 
+ MVVM
+ https://github.com/coderyi/MVVMDemo
  */
 
 #import "ViewController.h"

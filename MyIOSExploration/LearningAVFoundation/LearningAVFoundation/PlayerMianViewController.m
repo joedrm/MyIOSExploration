@@ -81,6 +81,8 @@
  http://www.ishare5.com/10076923/
  
  
+ https://github.com/loyinglin/LearnAVFoundation 
+ 
  开源框架：
  https://github.com/vimeo/VIMVideoPlayer
  https://github.com/mobileplayer/mobileplayer-ios

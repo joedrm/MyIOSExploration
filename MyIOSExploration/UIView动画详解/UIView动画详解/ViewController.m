@@ -25,5 +25,6 @@
 
 /*
  https://github.com/daltoniam/DCAnimationKit  
+ https://github.com/minggo620/iOSViewAnimation
  
  */
