@@ -10,7 +10,7 @@
 #import "LBEMagicVideoHeader.h"
 #import "VideoEditor.h"
 #import <AssetsLibrary/AssetsLibrary.h>
-
+#import "VideoMaker.h"
 #define KVideoSavePath [kCachePath stringByAppendingPathComponent:@"final_video.mp4"]
 
 static inline NSArray* ImageArr(){
@@ -106,7 +106,7 @@ typedef void(^GenericCallback)(BOOL success, id result);
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
 //    [self imageSaveToVideo];
-    [self editVideo3];
+    [self editVideo2];
 }
 
 - (void)imageSaveToVideo{
@@ -299,7 +299,12 @@ typedef void(^GenericCallback)(BOOL success, id result);
 }
 
 - (NSArray *)videoURLs {
-    NSMutableArray *urls = [NSMutableArray array];
+    NSMutableArray *urls = [NSMutableArray arrayWithObjects:[VideoMaker createVideoWithImage:kImage(@"image1.jpg")],
+                            [VideoMaker createVideoWithImage:kImage(@"image2.jpg")],
+                            [VideoMaker createVideoWithImage:kImage(@"image3.jpg")],
+                            [VideoMaker createVideoWithImage:kImage(@"image4.jpg")],
+                            [VideoMaker createVideoWithImage:kImage(@"image5.jpg")],nil];
+    
     [urls addObjectsFromArray:[[NSBundle mainBundle] URLsForResourcesWithExtension:@"mov" subdirectory:nil]];
     return urls;
 }
@@ -358,7 +363,7 @@ typedef void(^GenericCallback)(BOOL success, id result);
     } while([[NSFileManager defaultManager] fileExistsAtPath:filePath]);
     
     session.outputURL = [NSURL fileURLWithPath:filePath];
-    session.outputFileType = AVFileTypeQuickTimeMovie;
+    session.outputFileType = AVFileTypeMPEG4;
     
     [session exportAsynchronouslyWithCompletionHandler:^
      {

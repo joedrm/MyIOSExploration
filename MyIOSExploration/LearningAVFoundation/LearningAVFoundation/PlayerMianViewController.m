@@ -24,7 +24,8 @@
                       @"2 自定义AVPlayer",
                       @"3 AVPlayerViewController的使用",
                       @"4 视频编辑",
-                      @"5 视频过渡效果"
+                      @"5 视频过渡效果",
+                      @"6 视频过渡效果2"
                       ];
     
     
@@ -33,7 +34,8 @@
                    @"CustomAVPlayerViewController",
                    @"AVPlayerViewControllerDemoVC",
                    @"VideoEditViewController",
-                   @"PlayerAnimationViewController"
+                   @"PlayerAnimationViewController",
+                   @"EditVideoViewController"
                    ];
     
 }
@@ -82,6 +84,9 @@
  
  
  https://github.com/loyinglin/LearnAVFoundation 
+ 
+ 视音频编解码技术零基础学习方法
+ http://blog.csdn.net/leixiaohua1020/article/details/18893769
  
  开源框架：
  https://github.com/vimeo/VIMVideoPlayer

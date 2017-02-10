@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LearningGPUImage/LearningGPUImage.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:OpenGL_Practice/OpenGL_Practice.xcodeproj">
    </FileRef>
    <FileRef

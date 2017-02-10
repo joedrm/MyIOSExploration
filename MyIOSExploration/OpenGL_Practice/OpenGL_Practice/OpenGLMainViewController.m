@@ -29,7 +29,8 @@
 
 /*
  学习资料：
- https://github.com/loyinglin/LearnOpenGLES  OpenGLES教程
- https://github.com/loyinglin/GPUImage  Tutorial-GPUImage
+ OpenGLES教程：https://github.com/loyinglin/LearnOpenGLES  博客讲解：http://www.jianshu.com/nb/2135411
+ 
  https://github.com/loyinglin/LearnLiveAnimation  礼物动画
+ 
  */

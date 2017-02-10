@@ -16,9 +16,6 @@
 		20D9960A1E4C173800520561 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D995BD1E4C173800520561 /* Info.plist */; };
 		20D9960B1E4C173800520561 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995BE1E4C173800520561 /* main.m */; };
 		20D9960C1E4C173800520561 /* PlayerMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995C01E4C173800520561 /* PlayerMianViewController.m */; };
-		20D9960D1E4C173800520561 /* 20170208142618078.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C21E4C173800520561 /* 20170208142618078.mov */; };
-		20D9960E1E4C173800520561 /* 20170208142618099.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C31E4C173800520561 /* 20170208142618099.mov */; };
-		20D9960F1E4C173800520561 /* 20170208142618101.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C41E4C173800520561 /* 20170208142618101.mov */; };
 		20D996101E4C173800520561 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C51E4C173800520561 /* image1.jpg */; };
 		20D996111E4C173800520561 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C61E4C173800520561 /* image2.jpg */; };
 		20D996121E4C173800520561 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C71E4C173800520561 /* image3.jpg */; };
@@ -49,6 +46,12 @@
 		20D9962B1E4C173800520561 /* LBEVolumeAutomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995FF1E4C173800520561 /* LBEVolumeAutomation.m */; };
 		20D9962C1E4C173800520561 /* PlayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996011E4C173800520561 /* PlayerAnimationViewController.m */; };
 		20D9962D1E4C173800520561 /* VideoEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996031E4C173800520561 /* VideoEditor.m */; };
+		20D996871E4D637000520561 /* SimpleEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996861E4D637000520561 /* SimpleEditor.m */; };
+		20D9968A1E4D649C00520561 /* EditVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996891E4D649C00520561 /* EditVideoViewController.m */; };
+		20D9968E1E4D676C00520561 /* abc.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 20D9968B1E4D676C00520561 /* abc.mp4 */; };
+		20D9968F1E4D676C00520561 /* eer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 20D9968C1E4D676C00520561 /* eer.mp4 */; };
+		20D996901E4D676C00520561 /* qwe.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 20D9968D1E4D676C00520561 /* qwe.mp4 */; };
+		20D996931E4D880300520561 /* VideoMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996921E4D880300520561 /* VideoMaker.m */; };
 		20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; };
 		20FF2DCB1E446E9000DCE2B3 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4539B64C8BE60ABD560D78B1 /* Pods__________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3279C867DC1F123CA5661F2F /* Pods__________.framework */; };
@@ -83,9 +86,6 @@
 		20D995BE1E4C173800520561 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20D995BF1E4C173800520561 /* PlayerMianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerMianViewController.h; sourceTree = "<group>"; };
 		20D995C01E4C173800520561 /* PlayerMianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerMianViewController.m; sourceTree = "<group>"; };
-		20D995C21E4C173800520561 /* 20170208142618078.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 20170208142618078.mov; sourceTree = "<group>"; };
-		20D995C31E4C173800520561 /* 20170208142618099.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 20170208142618099.mov; sourceTree = "<group>"; };
-		20D995C41E4C173800520561 /* 20170208142618101.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 20170208142618101.mov; sourceTree = "<group>"; };
 		20D995C51E4C173800520561 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		20D995C61E4C173800520561 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		20D995C71E4C173800520561 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
@@ -146,6 +146,15 @@
 		20D996011E4C173800520561 /* PlayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerAnimationViewController.m; sourceTree = "<group>"; };
 		20D996021E4C173800520561 /* VideoEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEditor.h; sourceTree = "<group>"; };
 		20D996031E4C173800520561 /* VideoEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEditor.m; sourceTree = "<group>"; };
+		20D996851E4D637000520561 /* SimpleEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditor.h; sourceTree = "<group>"; };
+		20D996861E4D637000520561 /* SimpleEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditor.m; sourceTree = "<group>"; };
+		20D996881E4D649C00520561 /* EditVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditVideoViewController.h; sourceTree = "<group>"; };
+		20D996891E4D649C00520561 /* EditVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditVideoViewController.m; sourceTree = "<group>"; };
+		20D9968B1E4D676C00520561 /* abc.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abc.mp4; sourceTree = "<group>"; };
+		20D9968C1E4D676C00520561 /* eer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = eer.mp4; sourceTree = "<group>"; };
+		20D9968D1E4D676C00520561 /* qwe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qwe.mp4; sourceTree = "<group>"; };
+		20D996911E4D880300520561 /* VideoMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMaker.h; sourceTree = "<group>"; };
+		20D996921E4D880300520561 /* VideoMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMaker.m; sourceTree = "<group>"; };
 		20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3279C867DC1F123CA5661F2F /* Pods__________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods__________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98BB26707EEE1D99D696CE84 /* Pods-视频播放及特效制作.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-视频播放及特效制作.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作.debug.xcconfig"; sourceTree = "<group>"; };
@@ -228,9 +237,9 @@
 		20D995C11E4C173800520561 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				20D995C21E4C173800520561 /* 20170208142618078.mov */,
-				20D995C31E4C173800520561 /* 20170208142618099.mov */,
-				20D995C41E4C173800520561 /* 20170208142618101.mov */,
+				20D9968B1E4D676C00520561 /* abc.mp4 */,
+				20D9968C1E4D676C00520561 /* eer.mp4 */,
+				20D9968D1E4D676C00520561 /* qwe.mp4 */,
 				20D995C51E4C173800520561 /* image1.jpg */,
 				20D995C61E4C173800520561 /* image2.jpg */,
 				20D995C71E4C173800520561 /* image3.jpg */,
@@ -307,10 +316,16 @@
 				20D995FD1E4C173800520561 /* LBEVideoTransition.m */,
 				20D995FE1E4C173800520561 /* LBEVolumeAutomation.h */,
 				20D995FF1E4C173800520561 /* LBEVolumeAutomation.m */,
-				20D996001E4C173800520561 /* PlayerAnimationViewController.h */,
-				20D996011E4C173800520561 /* PlayerAnimationViewController.m */,
 				20D996021E4C173800520561 /* VideoEditor.h */,
 				20D996031E4C173800520561 /* VideoEditor.m */,
+				20D996851E4D637000520561 /* SimpleEditor.h */,
+				20D996861E4D637000520561 /* SimpleEditor.m */,
+				20D996881E4D649C00520561 /* EditVideoViewController.h */,
+				20D996891E4D649C00520561 /* EditVideoViewController.m */,
+				20D996911E4D880300520561 /* VideoMaker.h */,
+				20D996921E4D880300520561 /* VideoMaker.m */,
+				20D996001E4C173800520561 /* PlayerAnimationViewController.h */,
+				20D996011E4C173800520561 /* PlayerAnimationViewController.m */,
 			);
 			path = "视频过渡效果";
 			sourceTree = "<group>";
@@ -395,13 +410,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20D9960F1E4C173800520561 /* 20170208142618101.mov in Resources */,
 				20D996141E4C173800520561 /* image5.jpg in Resources */,
+				20D9968F1E4D676C00520561 /* eer.mp4 in Resources */,
 				20D996131E4C173800520561 /* image4.jpg in Resources */,
+				20D9968E1E4D676C00520561 /* abc.mp4 in Resources */,
 				20D996121E4C173800520561 /* image3.jpg in Resources */,
 				20D9960A1E4C173800520561 /* Info.plist in Resources */,
-				20D9960E1E4C173800520561 /* 20170208142618099.mov in Resources */,
-				20D9960D1E4C173800520561 /* 20170208142618078.mov in Resources */,
+				20D996901E4D676C00520561 /* qwe.mp4 in Resources */,
 				20D996111E4C173800520561 /* image2.jpg in Resources */,
 				20D996091E4C173800520561 /* Main.storyboard in Resources */,
 				20D996101E4C173800520561 /* image1.jpg in Resources */,
@@ -466,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20D996161E4C173800520561 /* CustomAVPlayerViewController.m in Sources */,
+				20D996871E4D637000520561 /* SimpleEditor.m in Sources */,
 				20D996201E4C173800520561 /* LBEManualTransitionCompositionBuilder.m in Sources */,
 				20D996061E4C173800520561 /* AVPlayerViewControllerDemoVC.m in Sources */,
 				20D996221E4C173800520561 /* LBETimeline.m in Sources */,
@@ -475,11 +491,13 @@
 				20D996171E4C173800520561 /* FullPlayerViewController.m in Sources */,
 				20D996211E4C173800520561 /* LBEMediaItem.m in Sources */,
 				20D9961E1E4C173800520561 /* LBECompositionBuilderFactory.m in Sources */,
+				20D996931E4D880300520561 /* VideoMaker.m in Sources */,
 				20D9961C1E4C173800520561 /* LBEBasicComposition.m in Sources */,
 				20D9962C1E4C173800520561 /* PlayerAnimationViewController.m in Sources */,
 				20D9960B1E4C173800520561 /* main.m in Sources */,
 				20D9962B1E4C173800520561 /* LBEVolumeAutomation.m in Sources */,
 				20D996251E4C173800520561 /* LBETimelineItemViewModel.m in Sources */,
+				20D9968A1E4D649C00520561 /* EditVideoViewController.m in Sources */,
 				20D996151E4C173800520561 /* AVPlayerView.m in Sources */,
 				20D996041E4C173800520561 /* AppDelegate.m in Sources */,
 				20D9961B1E4C173800520561 /* LBEAudioMixCompositionBuilder.m in Sources */,
