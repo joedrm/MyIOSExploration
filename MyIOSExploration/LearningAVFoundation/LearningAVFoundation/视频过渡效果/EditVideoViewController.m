@@ -72,8 +72,6 @@
 
 - (void)loadAsset:(AVAsset *)asset withKeys:(NSArray *)assetKeysToLoad usingDispatchGroup:(dispatch_group_t)dispatchGroup
 {
-//    [self.clips addObject:asset];
-//    [self.clipTimeRanges addObject:[NSValue valueWithCMTimeRange:CMTimeRangeMake(CMTimeMakeWithSeconds(0, 1), CMTimeMakeWithSeconds(5, 1))]];
     dispatch_group_enter(dispatchGroup);
     kWeakSelf(self)
     [asset loadValuesAsynchronouslyForKeys:assetKeysToLoad completionHandler:^(){
@@ -105,8 +103,7 @@
             
             [self.clips addObject:asset];
             [self.clipTimeRanges addObject:value];
-        }
-        else {
+        } else {
             NSLog(@"error ");
         }
         dispatch_group_leave(dispatchGroup);
@@ -122,7 +119,7 @@
     self.editor.transitionDuration = CMTimeMakeWithSeconds(2.0, 600);
     self.editor.transitionType = (EditorTransitionType*)malloc(sizeof(int) * self.editor.clips.count);
     for (int i = 0; i < self.editor.clips.count; i ++) {
-        NSLog(@"--------%@", @([self getRandomNumber:EditorTransitionTypeNone to:EditorTransitionTypeCustom]));
+        NSLog(@"transitionType = %@", @([self getRandomNumber:EditorTransitionTypeNone to:EditorTransitionTypeCustom]));
         self.editor.transitionType[i] = [self getRandomNumber:EditorTransitionTypeNone to:EditorTransitionTypeCustom];
     }
     [self.editor buildCompositionObjectsForPlayback];

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20D996041E4C173800520561 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995B11E4C173800520561 /* AppDelegate.m */; };
+		2045DCFF1E4DCAE6000F0713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045DCFB1E4DCAE6000F0713 /* AppDelegate.m */; };
+		2045DD001E4DCAE6000F0713 /* PlayerMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045DCFE1E4DCAE6000F0713 /* PlayerMianViewController.m */; };
 		20D996051E4C173800520561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D995B21E4C173800520561 /* Assets.xcassets */; };
 		20D996061E4C173800520561 /* AVPlayerViewControllerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995B51E4C173800520561 /* AVPlayerViewControllerDemoVC.m */; };
 		20D996071E4C173800520561 /* AVPlayerBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995B81E4C173800520561 /* AVPlayerBasicViewController.m */; };
@@ -15,7 +16,6 @@
 		20D996091E4C173800520561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D995BB1E4C173800520561 /* Main.storyboard */; };
 		20D9960A1E4C173800520561 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D995BD1E4C173800520561 /* Info.plist */; };
 		20D9960B1E4C173800520561 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995BE1E4C173800520561 /* main.m */; };
-		20D9960C1E4C173800520561 /* PlayerMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995C01E4C173800520561 /* PlayerMianViewController.m */; };
 		20D996101E4C173800520561 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C51E4C173800520561 /* image1.jpg */; };
 		20D996111E4C173800520561 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C61E4C173800520561 /* image2.jpg */; };
 		20D996121E4C173800520561 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20D995C71E4C173800520561 /* image3.jpg */; };
@@ -69,9 +69,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2045DCFA1E4DCAE6000F0713 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2045DCFB1E4DCAE6000F0713 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2045DCFD1E4DCAE6000F0713 /* PlayerMianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerMianViewController.h; sourceTree = "<group>"; };
+		2045DCFE1E4DCAE6000F0713 /* PlayerMianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerMianViewController.m; sourceTree = "<group>"; };
 		209F348E1E2DC7340083C875 /* LearningAVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningAVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		20D995B01E4C173800520561 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		20D995B11E4C173800520561 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		20D995B21E4C173800520561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20D995B41E4C173800520561 /* AVPlayerViewControllerDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewControllerDemoVC.h; sourceTree = "<group>"; };
 		20D995B51E4C173800520561 /* AVPlayerViewControllerDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewControllerDemoVC.m; sourceTree = "<group>"; };
@@ -81,8 +83,6 @@
 		20D995BC1E4C173800520561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20D995BD1E4C173800520561 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20D995BE1E4C173800520561 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		20D995BF1E4C173800520561 /* PlayerMianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerMianViewController.h; sourceTree = "<group>"; };
-		20D995C01E4C173800520561 /* PlayerMianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerMianViewController.m; sourceTree = "<group>"; };
 		20D995C51E4C173800520561 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		20D995C61E4C173800520561 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		20D995C71E4C173800520561 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
@@ -168,6 +168,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2045DCF91E4DCAE6000F0713 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2045DCFA1E4DCAE6000F0713 /* AppDelegate.h */,
+				2045DCFB1E4DCAE6000F0713 /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2045DCFC1E4DCAE6000F0713 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2045DCFD1E4DCAE6000F0713 /* PlayerMianViewController.h */,
+				2045DCFE1E4DCAE6000F0713 /* PlayerMianViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		209F34851E2DC7340083C875 = {
 			isa = PBXGroup;
 			children = (
@@ -190,22 +208,20 @@
 		20D995AF1E4C173800520561 /* LearningAVFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				20D995B01E4C173800520561 /* AppDelegate.h */,
-				20D995B11E4C173800520561 /* AppDelegate.m */,
 				20D995B21E4C173800520561 /* Assets.xcassets */,
-				20D995B31E4C173800520561 /* AVPlayerViewController的使用 */,
-				20D995B61E4C173800520561 /* AVPlayer基本使用 */,
 				20D995B91E4C173800520561 /* LaunchScreen.storyboard */,
 				20D995BB1E4C173800520561 /* Main.storyboard */,
 				20D995BD1E4C173800520561 /* Info.plist */,
 				20D995BE1E4C173800520561 /* main.m */,
-				20D995BF1E4C173800520561 /* PlayerMianViewController.h */,
-				20D995C01E4C173800520561 /* PlayerMianViewController.m */,
-				20D995C11E4C173800520561 /* Source */,
 				20D995CA1E4C173800520561 /* VideoPrefixHeader.pch */,
+				2045DCF91E4DCAE6000F0713 /* App */,
+				2045DCFC1E4DCAE6000F0713 /* Main */,
+				20D995B31E4C173800520561 /* AVPlayerViewController的使用 */,
+				20D995B61E4C173800520561 /* AVPlayer基本使用 */,
 				20D995CB1E4C173800520561 /* 自定义AVPlayer */,
 				20D995D21E4C173800520561 /* 视频编辑 */,
 				20D995D51E4C173800520561 /* 视频过渡效果 */,
+				20D995C11E4C173800520561 /* Source */,
 			);
 			path = LearningAVFoundation;
 			sourceTree = "<group>";
@@ -472,22 +488,22 @@
 				20D996871E4D637000520561 /* SimpleEditor.m in Sources */,
 				20D996201E4C173800520561 /* LBEManualTransitionCompositionBuilder.m in Sources */,
 				20D996061E4C173800520561 /* AVPlayerViewControllerDemoVC.m in Sources */,
+				2045DCFF1E4DCAE6000F0713 /* AppDelegate.m in Sources */,
 				20D996221E4C173800520561 /* LBETimeline.m in Sources */,
 				20D996071E4C173800520561 /* AVPlayerBasicViewController.m in Sources */,
 				20D9961F1E4C173800520561 /* LBECompositionExporter.m in Sources */,
-				20D9960C1E4C173800520561 /* PlayerMianViewController.m in Sources */,
 				20D996171E4C173800520561 /* FullPlayerViewController.m in Sources */,
 				20D996211E4C173800520561 /* LBEMediaItem.m in Sources */,
 				20D9961E1E4C173800520561 /* LBECompositionBuilderFactory.m in Sources */,
 				20D996931E4D880300520561 /* VideoMaker.m in Sources */,
 				20D9961C1E4C173800520561 /* LBEBasicComposition.m in Sources */,
+				2045DD001E4DCAE6000F0713 /* PlayerMianViewController.m in Sources */,
 				20D9962C1E4C173800520561 /* PlayerAnimationViewController.m in Sources */,
 				20D9960B1E4C173800520561 /* main.m in Sources */,
 				20D9962B1E4C173800520561 /* LBEVolumeAutomation.m in Sources */,
 				20D996251E4C173800520561 /* LBETimelineItemViewModel.m in Sources */,
 				20D9968A1E4D649C00520561 /* EditVideoViewController.m in Sources */,
 				20D996151E4C173800520561 /* AVPlayerView.m in Sources */,
-				20D996041E4C173800520561 /* AppDelegate.m in Sources */,
 				20D9961B1E4C173800520561 /* LBEAudioMixCompositionBuilder.m in Sources */,
 				20D996291E4C173800520561 /* LBEVideoItem.m in Sources */,
 				20D996281E4C173800520561 /* LBETransitionInstructions.m in Sources */,
