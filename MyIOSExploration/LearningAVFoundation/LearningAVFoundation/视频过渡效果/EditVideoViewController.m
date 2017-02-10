@@ -32,35 +32,27 @@
     self.transitionDuration = 2.0; // 默认变换时间
     self.transitionsEnabled = YES;
     
-    
-    
-    
-     [self setupEditingAndPlayback];
+    [self setupEditingAndPlayback];
     
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(0, 0, 100, 30);
     btn.center = self.view.center;
     [btn setBackgroundColor:[UIColor redColor] forState:UIControlStateNormal];
     [self.view addSubview:btn];
+    kWeakSelf(self)
     [btn addActionHandler:^{
+        kStrongSelf(self)
        [self.editor beginExport];
     }];
 }
 
 - (void)setupEditingAndPlayback
 {
-//    NSArray* videoNameArr = @[@"20170208142618078",@"20170208142618099", @"20170208142618101"];
-    
     AVAsset* asset1 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:kImage(@"image1.jpg")]];
     AVAsset* asset2 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:kImage(@"image2.jpg")]];
     AVAsset* asset3 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:kImage(@"image3.jpg")]];
     AVAsset* asset4 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:kImage(@"image4.jpg")]];
-//    AVAsset* asset5 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:kImage(@"image5.jpg")]];
-    
-//    AVURLAsset *asset3 = [AVURLAsset assetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"abc" ofType:@"mp4"]]];
-//    AVURLAsset *asset2 = [AVURLAsset assetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"qwe" ofType:@"mp4"]]];
-//    AVURLAsset *asset1 = [AVURLAsset assetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"eer" ofType:@"mp4"]]];
-    
+    AVAsset* asset5 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:kImage(@"image5.jpg")]];
     
     dispatch_group_t dispatchGroup = dispatch_group_create();
     NSArray *assetKeysToLoadAndTest = @[@"tracks", @"duration", @"composable"];
@@ -70,7 +62,7 @@
     [self loadAsset:asset2 withKeys:assetKeysToLoadAndTest usingDispatchGroup:dispatchGroup];
     [self loadAsset:asset3 withKeys:assetKeysToLoadAndTest usingDispatchGroup:dispatchGroup];
     [self loadAsset:asset4 withKeys:assetKeysToLoadAndTest usingDispatchGroup:dispatchGroup];
-//    [self loadAsset:asset5 withKeys:assetKeysToLoadAndTest usingDispatchGroup:dispatchGroup];
+    [self loadAsset:asset5 withKeys:assetKeysToLoadAndTest usingDispatchGroup:dispatchGroup];
     
     // 等待就绪
     dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
@@ -83,12 +75,13 @@
 //    [self.clips addObject:asset];
 //    [self.clipTimeRanges addObject:[NSValue valueWithCMTimeRange:CMTimeRangeMake(CMTimeMakeWithSeconds(0, 1), CMTimeMakeWithSeconds(5, 1))]];
     dispatch_group_enter(dispatchGroup);
+    kWeakSelf(self)
     [asset loadValuesAsynchronouslyForKeys:assetKeysToLoad completionHandler:^(){
+        kStrongSelf(self)
         // 测试是否成功加载
         BOOL bSuccess = YES;
         for (NSString *key in assetKeysToLoad) {
             NSError *error;
-            
             if ([asset statusOfValueForKey:key error:&error] == AVKeyValueStatusFailed) {
                 NSLog(@"Key value loading failed for key:%@ with error: %@", key, error);
                 bSuccess = NO;
@@ -100,10 +93,18 @@
             bSuccess = NO;
         }
         
-        NSLog(@"%@,%@", @(CMTimeGetSeconds(asset.duration)), @(bSuccess));
         if (bSuccess && CMTimeGetSeconds(asset.duration) > 3) {
+            
+            float assetDurtion = CMTimeGetSeconds(asset.duration);
+            CMTime startTime = CMTimeMakeWithSeconds(0, 1);
+            CMTime endTime = CMTimeMakeWithSeconds(assetDurtion, 1);
+            CMTimeRange timeRange = CMTimeRangeMake(startTime, endTime);
+            NSValue *value = [NSValue valueWithCMTimeRange:timeRange];
+            
+            NSLog(@"asset.duration = %@, bSuccess = %@, value = %@", @(assetDurtion), @(bSuccess), value);
+            
             [self.clips addObject:asset];
-            [self.clipTimeRanges addObject:[NSValue valueWithCMTimeRange:CMTimeRangeMake(CMTimeMakeWithSeconds(0, 1), CMTimeMakeWithSeconds(4, 1))]];
+            [self.clipTimeRanges addObject:value];
         }
         else {
             NSLog(@"error ");
@@ -118,22 +119,22 @@
     [self synchronizeEditorClipTimeRangesWithOurClipTimeRanges];
     
     
-    // Transitions
-//    if (_transitionsEnabled) {
-        self.editor.transitionDuration = CMTimeMakeWithSeconds(_transitionDuration, 600);
-//    } else {
-//        self.editor.transitionDuration = kCMTimeInvalid;
-//    }
+    self.editor.transitionDuration = CMTimeMakeWithSeconds(2.0, 600);
     self.editor.transitionType = (EditorTransitionType*)malloc(sizeof(int) * self.editor.clips.count);
-    self.editor.transitionType[0] = EditorTransitionTypePush;
-    self.editor.transitionType[1] = EditorTransitionTypeCrossFade;
-    self.editor.transitionType[2] = EditorTransitionTypeCustom;
-    self.editor.transitionType[3] = EditorTransitionTypeCrossFade;
-    self.editor.transitionType[4] = EditorTransitionTypeCustom;
+    for (int i = 0; i < self.editor.clips.count; i ++) {
+        NSLog(@"--------%@", @([self getRandomNumber:EditorTransitionTypeNone to:EditorTransitionTypeCustom]));
+        self.editor.transitionType[i] = [self getRandomNumber:EditorTransitionTypeNone to:EditorTransitionTypeCustom];
+    }
     [self.editor buildCompositionObjectsForPlayback];
-//    [self play];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self play];
+    });
 }
 
+-(int)getRandomNumber:(int)from to:(int)to
+{
+    return (int)(from + (arc4random() % (to - from + 1)));
+}
 
 - (void)play{
     AVQueuePlayer *player = [AVQueuePlayer playerWithPlayerItem:self.editor.playerItem];
@@ -191,4 +192,11 @@
     }
     self.editor.clipTimeRanges = validClipTimeRanges;
 }
+
+- (void)dealloc{
+    
+    NSLog(@"%s", __func__);
+}
+
+
 @end

@@ -164,10 +164,7 @@
     videoComposition.instructions = instructions;
 }
 
--(int)getRandomNumber:(int)from to:(int)to
-{
-    return (int)(from + (arc4random() % (to - from + 1)));
-}
+
 
 - (void)buildCompositionObjectsForPlayback
 {
@@ -191,7 +188,7 @@
     
     if (videoComposition) {
         // 通用属性
-        videoComposition.frameDuration = CMTimeMake(1, 30); // 30 fps
+        videoComposition.frameDuration = CMTimeMake(1, 10); // 30 fps
         videoComposition.renderSize = videoSize;
     }
     
@@ -215,14 +212,18 @@
     session.outputURL = [self exportURL];
     session.outputFileType = AVFileTypeMPEG4;
     session.shouldOptimizeForNetworkUse = YES;
+    kWeakSelf(self)
     [session exportAsynchronouslyWithCompletionHandler:^(void) {
+        kStrongSelf(self);
         switch ([session status])
         {
             case AVAssetExportSessionStatusCompleted:
             {
                 // Close timer
                 NSLog(@"Export Successful");
-                [self exportDidFinish:session];
+                Run_Main(^{
+                    [self exportDidFinish:session];
+                });
                 break;
             }
                 
@@ -241,12 +242,6 @@
                 break;
         }
     }];
-    
-//    [session exportAsynchronouslyWithCompletionHandler:^{
-//         dispatch_async(dispatch_get_main_queue(), ^{
-//             [self exportDidFinish:session];
-//         });
-//     }];
 }
 
 - (void)exportDidFinish:(AVAssetExportSession*)session
@@ -275,11 +270,12 @@
     do {
         filePath = NSTemporaryDirectory();
         NSString *numberString = count > 0 ? [NSString stringWithFormat:@"%li", (unsigned long) count] : @"";
-        NSString *fileNameString = [NSString stringWithFormat:@"Masterpiece%@.mp4", @"1"];
+        NSString *fileNameString = [NSString stringWithFormat:@"Masterpiece%@.mp4", numberString];
         filePath = [filePath stringByAppendingPathComponent:fileNameString];
         count++;
     } while ([[NSFileManager defaultManager] fileExistsAtPath:filePath]);
     return [NSURL fileURLWithPath:filePath];
 }
+
 
 @end

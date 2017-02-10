@@ -48,9 +48,6 @@
 		20D9962D1E4C173800520561 /* VideoEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996031E4C173800520561 /* VideoEditor.m */; };
 		20D996871E4D637000520561 /* SimpleEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996861E4D637000520561 /* SimpleEditor.m */; };
 		20D9968A1E4D649C00520561 /* EditVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996891E4D649C00520561 /* EditVideoViewController.m */; };
-		20D9968E1E4D676C00520561 /* abc.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 20D9968B1E4D676C00520561 /* abc.mp4 */; };
-		20D9968F1E4D676C00520561 /* eer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 20D9968C1E4D676C00520561 /* eer.mp4 */; };
-		20D996901E4D676C00520561 /* qwe.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 20D9968D1E4D676C00520561 /* qwe.mp4 */; };
 		20D996931E4D880300520561 /* VideoMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996921E4D880300520561 /* VideoMaker.m */; };
 		20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; };
 		20FF2DCB1E446E9000DCE2B3 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -150,9 +147,6 @@
 		20D996861E4D637000520561 /* SimpleEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditor.m; sourceTree = "<group>"; };
 		20D996881E4D649C00520561 /* EditVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditVideoViewController.h; sourceTree = "<group>"; };
 		20D996891E4D649C00520561 /* EditVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditVideoViewController.m; sourceTree = "<group>"; };
-		20D9968B1E4D676C00520561 /* abc.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abc.mp4; sourceTree = "<group>"; };
-		20D9968C1E4D676C00520561 /* eer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = eer.mp4; sourceTree = "<group>"; };
-		20D9968D1E4D676C00520561 /* qwe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qwe.mp4; sourceTree = "<group>"; };
 		20D996911E4D880300520561 /* VideoMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMaker.h; sourceTree = "<group>"; };
 		20D996921E4D880300520561 /* VideoMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMaker.m; sourceTree = "<group>"; };
 		20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,9 +231,6 @@
 		20D995C11E4C173800520561 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				20D9968B1E4D676C00520561 /* abc.mp4 */,
-				20D9968C1E4D676C00520561 /* eer.mp4 */,
-				20D9968D1E4D676C00520561 /* qwe.mp4 */,
 				20D995C51E4C173800520561 /* image1.jpg */,
 				20D995C61E4C173800520561 /* image2.jpg */,
 				20D995C71E4C173800520561 /* image3.jpg */,
@@ -411,12 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20D996141E4C173800520561 /* image5.jpg in Resources */,
-				20D9968F1E4D676C00520561 /* eer.mp4 in Resources */,
 				20D996131E4C173800520561 /* image4.jpg in Resources */,
-				20D9968E1E4D676C00520561 /* abc.mp4 in Resources */,
 				20D996121E4C173800520561 /* image3.jpg in Resources */,
 				20D9960A1E4C173800520561 /* Info.plist in Resources */,
-				20D996901E4D676C00520561 /* qwe.mp4 in Resources */,
 				20D996111E4C173800520561 /* image2.jpg in Resources */,
 				20D996091E4C173800520561 /* Main.storyboard in Resources */,
 				20D996101E4C173800520561 /* image1.jpg in Resources */,
