@@ -16,6 +16,10 @@
  http://www.imlifengfeng.com/blog/?tag=runtime   iOS Runtime
  https://github.com/leejayID/RuntimeDemo  Objective-C中的Runtime
  
+ http://www.jianshu.com/p/8345a79fd572  你会遇到的runtime面试题（详）
+ 
+ http://www.jianshu.com/p/f6dad8e1b848  Runtime Method Swizzling开发实例汇总（持续更新中）
+ 
  */
 
 #import "ViewController.h"

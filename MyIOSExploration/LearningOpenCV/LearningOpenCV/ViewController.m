@@ -36,4 +36,6 @@
  http://blog.csdn.net/column/details/opencv-tutorial.html  【OpenCV】入门教程，CSDN专栏
  http://www.opencv.org.cn/opencvdoc/2.3.2/html/index.html   OpenCV官方文档翻译
  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html   OpenCV教程
+ 
+ http://www.jianshu.com/p/96be2417cc98  OpenCV学习
  */

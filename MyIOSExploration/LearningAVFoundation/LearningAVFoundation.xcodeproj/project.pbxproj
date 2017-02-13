@@ -51,6 +51,7 @@
 		20D996931E4D880300520561 /* VideoMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996921E4D880300520561 /* VideoMaker.m */; };
 		20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; };
 		20FF2DCB1E446E9000DCE2B3 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3ECDA35E43B9EA9B93B118B0 /* Pods_LearningAVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C1462E16901A51BE29FD7A /* Pods_LearningAVFoundation.framework */; };
 		4539B64C8BE60ABD560D78B1 /* Pods__________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3279C867DC1F123CA5661F2F /* Pods__________.framework */; };
 /* End PBXBuildFile section */
 
@@ -151,8 +152,9 @@
 		20D996921E4D880300520561 /* VideoMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMaker.m; sourceTree = "<group>"; };
 		20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3279C867DC1F123CA5661F2F /* Pods__________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods__________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		98BB26707EEE1D99D696CE84 /* Pods-视频播放及特效制作.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-视频播放及特效制作.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作.debug.xcconfig"; sourceTree = "<group>"; };
-		9D2A099E0DA5B1DAF12F51A4 /* Pods-视频播放及特效制作.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-视频播放及特效制作.release.xcconfig"; path = "../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作.release.xcconfig"; sourceTree = "<group>"; };
+		57A0DEDBB592D68738D37682 /* Pods-LearningAVFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningAVFoundation.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LearningAVFoundation/Pods-LearningAVFoundation.debug.xcconfig"; sourceTree = "<group>"; };
+		88C1462E16901A51BE29FD7A /* Pods_LearningAVFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningAVFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CCC3A9D0FAB3FB3AEFA0E9 /* Pods-LearningAVFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningAVFoundation.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LearningAVFoundation/Pods-LearningAVFoundation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			files = (
 				4539B64C8BE60ABD560D78B1 /* Pods__________.framework in Frameworks */,
 				20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */,
+				3ECDA35E43B9EA9B93B118B0 /* Pods_LearningAVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,8 +343,8 @@
 		BDC302D67FA3FFFDCC9C86D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				98BB26707EEE1D99D696CE84 /* Pods-视频播放及特效制作.debug.xcconfig */,
-				9D2A099E0DA5B1DAF12F51A4 /* Pods-视频播放及特效制作.release.xcconfig */,
+				57A0DEDBB592D68738D37682 /* Pods-LearningAVFoundation.debug.xcconfig */,
+				94CCC3A9D0FAB3FB3AEFA0E9 /* Pods-LearningAVFoundation.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				3279C867DC1F123CA5661F2F /* Pods__________.framework */,
+				88C1462E16901A51BE29FD7A /* Pods_LearningAVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -444,7 +448,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LearningAVFoundation/Pods-LearningAVFoundation-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2BB5DF69DFE54D0DE69DEDEE /* [CP] Embed Pods Frameworks */ = {
@@ -459,7 +463,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-视频播放及特效制作/Pods-视频播放及特效制作-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LearningAVFoundation/Pods-LearningAVFoundation-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F74791C6D02DD26791D16A47 /* [CP] Check Pods Manifest.lock */ = {
@@ -632,7 +636,7 @@
 		};
 		209F34A61E2DC7340083C875 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98BB26707EEE1D99D696CE84 /* Pods-视频播放及特效制作.debug.xcconfig */;
+			baseConfigurationReference = 57A0DEDBB592D68738D37682 /* Pods-LearningAVFoundation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
@@ -646,7 +650,7 @@
 		};
 		209F34A71E2DC7340083C875 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D2A099E0DA5B1DAF12F51A4 /* Pods-视频播放及特效制作.release.xcconfig */;
+			baseConfigurationReference = 94CCC3A9D0FAB3FB3AEFA0E9 /* Pods-LearningAVFoundation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y3JSHFEC2;

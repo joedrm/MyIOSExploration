@@ -48,6 +48,7 @@ target :'LearningAVFoundation' do
     platform :ios, '8.0'
     pod 'WDYBaseProject','~> 1.0.0'
     pod 'Masonry'
+    pod 'GPUImage'
     project 'LearningAVFoundation/LearningAVFoundation.xcodeproj'
 end
 

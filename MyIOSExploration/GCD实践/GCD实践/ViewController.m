@@ -14,6 +14,7 @@
     https://github.com/ibireme/YYKit/blob/master/YYKit/Utility/YYAsyncLayer.h  layer的异步绘制
     http://dreamerpanda.cn/2016/07/18/YYCache-analyzing/
  
+ http://www.jianshu.com/p/4f0ce4380dda  iOS中的锁
  
  */
 

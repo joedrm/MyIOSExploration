@@ -17,6 +17,7 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
+  - GPUImage (0.1.7)
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
   - MMPlaceHolder (1.9)
@@ -73,6 +74,7 @@ PODS:
 
 DEPENDENCIES:
   - FMDB
+  - GPUImage
   - Masonry
   - MJExtension
   - MMPlaceHolder
@@ -83,6 +85,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MMPlaceHolder: 40212b9dfe8760134b1b2fce3232f0d46200178f
@@ -91,6 +94,6 @@ SPEC CHECKSUMS:
   SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
   WDYBaseProject: 1dfd6b6bee4d01345d89f5557f29065532e6d64f
 
-PODFILE CHECKSUM: 21bac86f1c3af8dc3c3d96d8e75450c12e4d3f57
+PODFILE CHECKSUM: 63223468c204a33962968e874bbdcfc76535b30c
 
 COCOAPODS: 1.1.1

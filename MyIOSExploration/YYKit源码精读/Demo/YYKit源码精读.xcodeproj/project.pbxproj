@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2007ADB41E514B4E002C1155 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 2007ADB31E514B4E002C1155 /* Common.m */; };
 		ABDC320D1BEAFB870012A159 /* YYTextTagExample.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */; };
 		D9067DF11B975D3900F346EB /* YYTextExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF01B975D3900F346EB /* YYTextExampleHelper.m */; };
 		D9067DF41B9813B500F346EB /* YYTextEditExample.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF31B9813B500F346EB /* YYTextEditExample.m */; };
@@ -196,6 +197,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2007ADB21E514B4E002C1155 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		2007ADB31E514B4E002C1155 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		ABDC320B1BEAFB870012A159 /* YYTextTagExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextTagExample.h; sourceTree = "<group>"; };
 		ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextTagExample.m; sourceTree = "<group>"; };
 		D9067DEF1B975D3900F346EB /* YYTextExampleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextExampleHelper.h; sourceTree = "<group>"; };
@@ -293,7 +296,7 @@
 		D9700D9D1BC7D44B00F878A4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D9700D9F1BC9123300F878A4 /* T1StatusLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T1StatusLayout.h; sourceTree = "<group>"; };
 		D9700DA01BC9123300F878A4 /* T1StatusLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T1StatusLayout.m; sourceTree = "<group>"; };
-		D97484D019CAAD2900F46DE1 /* YYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97484D019CAAD2900F46DE1 /* YYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = YYKitDemo.app; path = "YYKit源码精读.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97484D419CAAD2900F46DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97484D519CAAD2900F46DE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D97484D719CAAD2900F46DE1 /* YYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYAppDelegate.h; sourceTree = "<group>"; };
@@ -793,6 +796,8 @@
 		D97484D219CAAD2900F46DE1 /* YYKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2007ADB21E514B4E002C1155 /* Common.h */,
+				2007ADB31E514B4E002C1155 /* Common.m */,
 				D97484D719CAAD2900F46DE1 /* YYAppDelegate.h */,
 				D97484D819CAAD2900F46DE1 /* YYAppDelegate.m */,
 				D943B48B19EC2BC100A9481E /* YYRootViewController.h */,
@@ -1244,6 +1249,7 @@
 				D9387D471C7CBCAF00717477 /* YYUtilityExample.m in Sources */,
 				D9B2606A1BEE79370038C00A /* UIScrollView+YYAdd.m in Sources */,
 				D91A99721B5D2B4800EF3A3E /* YYImageExampleHelper.m in Sources */,
+				2007ADB41E514B4E002C1155 /* Common.m in Sources */,
 				D9B260861BEE79370038C00A /* YYTextLayout.m in Sources */,
 				D9B260791BEE79370038C00A /* YYImage.m in Sources */,
 				D91A99441B5A8DE900EF3A3E /* YYImageExample.m in Sources */,

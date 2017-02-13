@@ -151,6 +151,7 @@ IOS知识点总结和实践
 - [iOSInterviewQuestions](https://github.com/findM/iOSInterviewQuestions) - 搜集互联网上的iOS相关的面试题，并且给出详尽答案！
 - [Accumulateknowledge](https://github.com/sunWaterMood/Accumulateknowledge/issues/1) - iOS面试题
 - [常见面试题整理--计算机网络篇](https://zhuanlan.zhihu.com/p/24001696?refer=passer)、[常见面试题整理--操作系统篇](https://zhuanlan.zhihu.com/p/23755202?refer=passer)
+- [iOS面试题大全-点亮你iOS技能树](http://www.jianshu.com/p/a3b61b2f6e66)
 
 ### 写作
 - [Markdown - 简单的世界](https://wizardforcel.gitbooks.io/markdown-simple-world/)

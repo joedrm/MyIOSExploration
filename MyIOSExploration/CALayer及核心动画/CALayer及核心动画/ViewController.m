@@ -59,6 +59,7 @@ IOS动画总结:
  
  https://github.com/warrenm/AHEasing  很不错动画函数库
  
+ 
  动画实例：
  https://github.com/shu223/PulsingHalo  雷达效果
  https://github.com/daltoniam/DCAnimationKit  一系列的动画练习
@@ -67,6 +68,7 @@ IOS动画总结:
  https://github.com/IFTTT/JazzHands
  https://github.com/xinge1/LXWaveProgress  水波纹动画 
  https://github.com/xinge1/LXAnimationDemo  iOS动画实现Demo（波纹，缩放，弹性，平移等）
+ http://www.jianshu.com/p/6b4347bd6c6f  YQDownloadButton---带有波浪效果和震动波效果的动画
  
  Facebook-POP
  

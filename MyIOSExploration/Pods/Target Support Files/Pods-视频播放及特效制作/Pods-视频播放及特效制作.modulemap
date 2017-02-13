@@ -1,6 +1,0 @@
-framework module Pods__________ {
-  umbrella header "Pods-视频播放及特效制作-umbrella.h"
-
-  export *
-  module * { export * }
-}

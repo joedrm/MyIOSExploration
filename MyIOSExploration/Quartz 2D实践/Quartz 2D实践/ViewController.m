@@ -15,6 +15,8 @@
  https://github.com/Nyx0uf/NYXImagesKit  各种图片处理的分类，很强大
  http://www.swarthmore.edu/NatSci/mzucker1/opencv-2.4.10-docs/index.html  Opencv文档
  https://github.com/tapharmonic/QuartzDemos   很不错的Demos
+ 
+ http://www.jianshu.com/p/e98b31051e37  基于点阵图来构建 Bezier 路径
  */
 
 #import "ViewController.h"

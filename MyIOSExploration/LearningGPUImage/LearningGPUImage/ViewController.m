@@ -30,5 +30,5 @@
 
 /*
  GPUImage教程：https://github.com/loyinglin/GPUImage  博客讲解：http://www.jianshu.com/nb/4268718
- 
+ https://github.com/ClaudeLi/BeautifyFace   基于GPUImage，美颜滤镜
  */
