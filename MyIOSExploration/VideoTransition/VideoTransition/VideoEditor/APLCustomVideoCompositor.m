@@ -47,16 +47,10 @@
 
 #import "APLCustomVideoCompositor.h"
 #import "APLCustomVideoCompositionInstruction.h"
-#import "APLOpenGLRenderer.h"
+#import "APLDiagonalWipeRenderer.h"
+#import "APLCrossDissolveRenderer.h"
 
 #import <CoreVideo/CoreVideo.h>
-
-// Renderers
-#import "VTSPinwheelRenderer.h"
-#import "VTSSimpleFlipRenderer.h"
-#import "VTSWindRenderer.h"
-#import "VTSFoldRenderer.h"
-#import "VTSStarWipeRenderer.h"
 
 @interface APLCustomVideoCompositor()
 {
@@ -72,87 +66,32 @@
 
 @end
 
-// ============ VTSPinwheelVideoCompositor ============
-
-@implementation VTSPinwheelVideoCompositor
+@implementation APLCrossDissolveCompositor
 
 - (id)init
 {
-    self = [super init];
-    
-    if (self) {
-        self.oglRenderer = [[VTSPinwheelRenderer alloc] init];
-    }
-    
-    return self;
+	self = [super init];
+	
+	if (self) {
+		self.oglRenderer = [[APLCrossDissolveRenderer alloc] init];
+	}
+	
+	return self;
 }
 
 @end
 
-// ============ VTSSimpleFlipVideoCompositor ============
-
-@implementation VTSSimpleFlipVideoCompositor
+@implementation APLDiagonalWipeCompositor
 
 - (id)init
 {
-    self = [super init];
-    
-    if (self) {
-        self.oglRenderer = [[VTSSimpleFlipRenderer alloc] init];
-    }
-    
-    return self;
-}
-
-@end
-
-// ============ VTSWindVideoCompositor ============
-
-@implementation VTSWindVideoCompositor
-
-- (id)init
-{
-    self = [super init];
-    
-    if (self) {
-        self.oglRenderer = [[VTSWindRenderer alloc] init];
-    }
-    
-    return self;
-}
-
-@end
-
-// ============ VTSFoldVideoCompositor ============
-
-@implementation VTSFoldVideoCompositor
-
-- (id)init
-{
-    self = [super init];
-    
-    if (self) {
-        self.oglRenderer = [[VTSFoldRenderer alloc] init];
-    }
-    
-    return self;
-}
-
-@end
-
-// ============ VTSStarWipeVideoCompositor ============
-
-@implementation VTSStarWipeVideoCompositor
-
-- (id)init
-{
-    self = [super init];
-    
-    if (self) {
-        self.oglRenderer = [[VTSStarWipeRenderer alloc] init];
-    }
-    
-    return self;
+	self = [super init];
+	
+	if (self) {
+		self.oglRenderer = [[APLDiagonalWipeRenderer alloc] init];
+	}
+	
+	return self;
 }
 
 @end
@@ -166,8 +105,6 @@
 	self = [super init];
 	if (self)
 	{
-        
-        self.oglRenderer = [[APLOpenGLRenderer alloc] init];
 		_renderingQueue = dispatch_queue_create("com.apple.aplcustomvideocompositor.renderingqueue", DISPATCH_QUEUE_SERIAL); 
 		_renderContextQueue = dispatch_queue_create("com.apple.aplcustomvideocompositor.rendercontextqueue", DISPATCH_QUEUE_SERIAL);
         _previousBuffer = nil;
@@ -178,13 +115,13 @@
 
 - (NSDictionary *)sourcePixelBufferAttributes
 {
-	return @{ (NSString *)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA],
+	return @{ (NSString *)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithUnsignedInt:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange],
 			  (NSString*)kCVPixelBufferOpenGLESCompatibilityKey : [NSNumber numberWithBool:YES]};
 }
 
 - (NSDictionary *)requiredPixelBufferAttributesForRenderContext
 {
-	return @{ (NSString *)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA],
+	return @{ (NSString *)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithUnsignedInt:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange],
 			  (NSString*)kCVPixelBufferOpenGLESCompatibilityKey : [NSNumber numberWithBool:YES]};
 }
 

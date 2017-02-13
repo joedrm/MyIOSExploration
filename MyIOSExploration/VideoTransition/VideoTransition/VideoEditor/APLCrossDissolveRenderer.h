@@ -1,6 +1,6 @@
 /*
-     File: APLVideoEditor.h
- Abstract: Simple editor sets up an AVMutableComposition using supplied clips and time ranges. It also sets up an AVVideoComposition to perform custom compositor rendering.
+     File: APLCrossDissolveRenderer.h
+ Abstract: APLCrossDissolveRenderer subclass of APLOpenGLRenderer, renders the given source buffers to perform a cross dissolve over the time range of the transition.
   Version: 1.2
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
@@ -45,38 +45,8 @@
  
  */
 
-#import <Foundation/Foundation.h>
+#import "APLOpenGLRenderer.h"
 
-#import <CoreMedia/CMTime.h>
-
-typedef NS_ENUM(NSUInteger, VTSTransitionType) {
-    VTSTransitionDefault,
-    VTSTransitionPinwheel,
-    VTSTransitionSimpleFlip,
-    VTSTransitionWind,
-    VTSTransitionFold,
-    VTSTransitionStarWipe,
-    VTSTransitionsCount
-};
-
-@class AVPlayerItem, AVAssetExportSession;
-
-@interface APLVideoEditor : NSObject
-
-// Set these properties before building the composition objects.
-@property (nonatomic, copy) NSArray *clips; // array of AVURLAssets
-@property (nonatomic, copy) NSArray *clipTimeRanges; // array of CMTimeRanges stored in NSValues.
-
-@property (nonatomic) VTSTransitionType transitionType;
-@property (nonatomic) CMTime transitionDuration;
-
-// Builds the composition and videoComposition
-- (void)buildCompositionObjects;
-
-- (void)buildCompositionObjectsForPreviewTransition:(BOOL)previewTransition;
-
-- (AVAssetExportSession*)assetExportSessionWithPreset:(NSString*)presetName;
-
-- (AVPlayerItem *)playerItem;
+@interface APLCrossDissolveRenderer : APLOpenGLRenderer
 
 @end

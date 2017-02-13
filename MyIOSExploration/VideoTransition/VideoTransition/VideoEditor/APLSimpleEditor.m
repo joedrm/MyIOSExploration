@@ -1,5 +1,5 @@
 /*
-     File: APLVideoEditor.m
+     File: APLSimpleEditor.m
  Abstract: Simple editor sets up an AVMutableComposition using supplied clips and time ranges. It also sets up an AVVideoComposition to perform custom compositor rendering.
   Version: 1.2
  
@@ -45,14 +45,15 @@
  
  */
 
-#import "APLVideoEditor.h"
+#import "APLSimpleEditor.h"
+//#import "APLTransitionTypeController.h"
 #import "APLCustomVideoCompositor.h"
 #import "APLCustomVideoCompositionInstruction.h"
 #import <CoreMedia/CoreMedia.h>
 #import <AVFoundation/AVFoundation.h>
 
 
-@interface APLVideoEditor ()
+@interface APLSimpleEditor ()
 
 @property (nonatomic, strong) AVMutableComposition *composition;
 @property (nonatomic, strong) AVMutableVideoComposition *videoComposition;
@@ -61,10 +62,10 @@
 
 
 
-@implementation APLVideoEditor
+@implementation APLSimpleEditor
 
 
-- (void)buildTransitionComposition:(AVMutableComposition *)composition andVideoComposition:(AVMutableVideoComposition *)videoComposition previewTransition:(BOOL)previewTransition
+- (void)buildTransitionComposition:(AVMutableComposition *)composition andVideoComposition:(AVMutableVideoComposition *)videoComposition
 {
 	CMTime nextClipStartTime = kCMTimeZero;
 	NSInteger i;
@@ -76,9 +77,7 @@
 		NSValue *clipTimeRange = [_clipTimeRanges objectAtIndex:i];
 		if (clipTimeRange) {
 			CMTime halfClipDuration = [clipTimeRange CMTimeRangeValue].duration;
-            if (previewTransition == NO) {
-                halfClipDuration.timescale *= 2; // You can halve a rational by doubling its denominator.
-            }
+			halfClipDuration.timescale *= 2; // You can halve a rational by doubling its denominator.
 			transitionDuration = CMTimeMinimum(transitionDuration, halfClipDuration);
 		}
 	}
@@ -108,10 +107,8 @@
 		AVAssetTrack *clipVideoTrack = [[asset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
 		[compositionVideoTracks[alternatingIndex] insertTimeRange:timeRangeInAsset ofTrack:clipVideoTrack atTime:nextClipStartTime error:nil];
 		
-        if ([[asset tracksWithMediaType:AVMediaTypeAudio] count]) {
-            AVAssetTrack *clipAudioTrack = [[asset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0];
-            [compositionAudioTracks[alternatingIndex] insertTimeRange:timeRangeInAsset ofTrack:clipAudioTrack atTime:nextClipStartTime error:nil];
-        }
+		AVAssetTrack *clipAudioTrack = [[asset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0];
+		[compositionAudioTracks[alternatingIndex] insertTimeRange:timeRangeInAsset ofTrack:clipAudioTrack atTime:nextClipStartTime error:nil];
 		
 		// Remember the time range in which this clip should pass through.
 		// First clip ends with a transition.
@@ -187,64 +184,43 @@
 	videoComposition.instructions = instructions;
 }
 
-- (void)buildCompositionObjectsForPreviewTransition:(BOOL)previewTransition {
-    if ( (_clips == nil) || [_clips count] == 0 ) {
-        self.composition = nil;
-        self.videoComposition = nil;
-        return;
-    }
-    
-    CGSize videoSize = [[_clips objectAtIndex:0] naturalSize];
-    AVMutableComposition *composition = [AVMutableComposition composition];
-    AVMutableVideoComposition *videoComposition = nil;
-    
-    composition.naturalSize = videoSize;
-    
-    // With transitions:
-    // Place clips into alternating video & audio tracks in composition, overlapped by transitionDuration.
-    // Set up the video composition to cycle between "pass through A", "transition from A to B",
-    // "pass through B".
-    
-    videoComposition = [AVMutableVideoComposition videoComposition];
-    
-    // TODO: set customVideoCompositorClass
-    switch (self.transitionType) {
-        case VTSTransitionDefault:
-            videoComposition.customVideoCompositorClass = [APLCustomVideoCompositor class];
-            break;
-        case VTSTransitionPinwheel:
-            videoComposition.customVideoCompositorClass = [VTSPinwheelVideoCompositor class];
-            break;
-        case VTSTransitionSimpleFlip:
-            videoComposition.customVideoCompositorClass = [VTSSimpleFlipVideoCompositor class];
-            break;
-        case VTSTransitionWind:
-            videoComposition.customVideoCompositorClass = [VTSWindVideoCompositor class];
-            break;
-        case VTSTransitionFold:
-            videoComposition.customVideoCompositorClass = [VTSFoldVideoCompositor class];
-            break;
-        case VTSTransitionStarWipe:
-            videoComposition.customVideoCompositorClass = [VTSStarWipeVideoCompositor class];
-            break;
-        case VTSTransitionsCount: break;
-    }
-    
-    [self buildTransitionComposition:composition andVideoComposition:videoComposition previewTransition:previewTransition];
-    
-    if (videoComposition) {
-        // Every videoComposition needs these properties to be set:
-        videoComposition.frameDuration = CMTimeMake(1, 30); // 30 fps
-        videoComposition.renderSize = videoSize;
-    }
-    
-    self.composition = composition;
-    self.videoComposition = videoComposition;
-}
-
-- (void)buildCompositionObjects
+- (void)buildCompositionObjectsForPlayback:(BOOL)forPlayback
 {
-    [self buildCompositionObjectsForPreviewTransition:NO];
+	if ( (_clips == nil) || [_clips count] == 0 ) {
+		self.composition = nil;
+		self.videoComposition = nil;
+		return;
+	}
+	
+	CGSize videoSize = [[_clips objectAtIndex:0] naturalSize];
+	AVMutableComposition *composition = [AVMutableComposition composition];
+	AVMutableVideoComposition *videoComposition = nil;
+	
+	composition.naturalSize = videoSize;
+	
+	// With transitions:
+	// Place clips into alternating video & audio tracks in composition, overlapped by transitionDuration.
+	// Set up the video composition to cycle between "pass through A", "transition from A to B",
+	// "pass through B".
+	
+	videoComposition = [AVMutableVideoComposition videoComposition];
+	
+	if (self.transitionType == 0) {
+		videoComposition.customVideoCompositorClass = [APLDiagonalWipeCompositor class];
+	} else {
+		videoComposition.customVideoCompositorClass = [APLCrossDissolveCompositor class];
+	}
+	
+	[self buildTransitionComposition:composition andVideoComposition:videoComposition];
+	
+	if (videoComposition) {
+		// Every videoComposition needs these properties to be set:
+		videoComposition.frameDuration = CMTimeMake(1, 30); // 30 fps
+		videoComposition.renderSize = videoSize;
+	}
+	
+	self.composition = composition;
+	self.videoComposition = videoComposition;
 }
 
 - (AVAssetExportSession*)assetExportSessionWithPreset:(NSString*)presetName

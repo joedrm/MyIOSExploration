@@ -1,6 +1,6 @@
 /*
-     File: APLOpenGLRenderer.h
- Abstract: OpenGL base class renderer sets up an EAGLContext for rendering, it also loads, compiles and links the vertex and fragment shaders for both the Y and UV planes.
+     File: APLCustomVideoCompositor.h
+ Abstract: Custom video compositor class implementing the AVVideoCompositing protocol.
   Version: 1.2
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
@@ -46,48 +46,16 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import <OpenGLES/EAGL.h>
-#import <OpenGLES/ES2/gl.h>
-#import <OpenGLES/ES2/glext.h>
-#import <CoreGraphics/CoreGraphics.h>
-#import <CoreVideo/CoreVideo.h>
+#import <AVFoundation/AVFoundation.h>
 
-#define STRINGIZE(x) #x
-#define STRINGIZE2(x) STRINGIZE(x)
-#define SHADER_STRING(text) @ STRINGIZE2(text)
+@interface APLCustomVideoCompositor : NSObject <AVVideoCompositing>
 
-enum
-{
-    UNIFORM_RGB_FROM,
-    UNIFORM_RGB_TO,
-    UNIFORM_RENDER_TRANSFORM_RGB,
-    UNIFORM_RENDER_PROGRESS_RGB,
-   	NUM_UNIFORMS
-};
-GLint uniforms[NUM_UNIFORMS];
+@end
 
-enum
-{
-    ATTRIB_VERTEX_RGB,
-    ATTRIB_TEXCOORD_RGB,
-   	NUM_ATTRIBUTES
-};
+@interface APLCrossDissolveCompositor : APLCustomVideoCompositor
 
-@interface APLOpenGLRenderer : NSObject
+@end
 
-@property GLuint programRGB;
-@property CGAffineTransform renderTransform;
-@property CVOpenGLESTextureCacheRef videoTextureCache;
-@property EAGLContext *currentContext;
-@property GLuint offscreenBufferHandle;
-
-- (CVOpenGLESTextureRef)rgbTextureForPixelBuffer:(CVPixelBufferRef)pixelBuffer;
-- (void)renderPixelBuffer:(CVPixelBufferRef)destinationPixelBuffer usingForegroundSourceBuffer:(CVPixelBufferRef)foregroundPixelBuffer andBackgroundSourceBuffer:(CVPixelBufferRef)backgroundPixelBuffer forTweenFactor:(float)tween;
-
-#pragma mark -
-#pragma mark Base methods for extension
-
-- (NSString *)fragmentShaderString;
+@interface APLDiagonalWipeCompositor : APLCustomVideoCompositor
 
 @end

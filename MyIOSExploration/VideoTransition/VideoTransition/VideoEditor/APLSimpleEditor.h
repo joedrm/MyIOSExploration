@@ -1,6 +1,6 @@
 /*
-     File: APLCustomVideoCompositor.h
- Abstract: Custom video compositor class implementing the AVVideoCompositing protocol.
+     File: APLSimpleEditor.h
+ Abstract: Simple editor sets up an AVMutableComposition using supplied clips and time ranges. It also sets up an AVVideoComposition to perform custom compositor rendering.
   Version: 1.2
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
@@ -46,28 +46,25 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <AVFoundation/AVFoundation.h>
 
-@interface APLCustomVideoCompositor : NSObject <AVVideoCompositing>
+#import <CoreMedia/CMTime.h>
 
-@end
+@class AVPlayerItem, AVAssetExportSession;
 
-@interface VTSPinwheelVideoCompositor : APLCustomVideoCompositor
+@interface APLSimpleEditor : NSObject
 
-@end
+// Set these properties before building the composition objects.
+@property (nonatomic, copy) NSArray *clips; // array of AVURLAssets
+@property (nonatomic, copy) NSArray *clipTimeRanges; // array of CMTimeRanges stored in NSValues.
 
-@interface VTSSimpleFlipVideoCompositor : APLCustomVideoCompositor
+@property (nonatomic) NSInteger transitionType;
+@property (nonatomic) CMTime transitionDuration;
 
-@end
+// Builds the composition and videoComposition
+- (void)buildCompositionObjectsForPlayback:(BOOL)forPlayback;
 
-@interface VTSWindVideoCompositor : APLCustomVideoCompositor
+- (AVAssetExportSession*)assetExportSessionWithPreset:(NSString*)presetName;
 
-@end
-
-@interface VTSFoldVideoCompositor : APLCustomVideoCompositor
-
-@end
-
-@interface VTSStarWipeVideoCompositor : APLCustomVideoCompositor
+- (AVPlayerItem *)playerItem;
 
 @end

@@ -47,35 +47,35 @@
 
 #import "APLOpenGLRenderer.h"
 
-NSString *const kPassThroughVertexShader = SHADER_STRING
-(
-    attribute vec4 position;
-    attribute vec2 texCoord;
-    uniform mat4 renderTransform;
-    varying vec2 texCoordVarying;
-    void main()
-    {
-        gl_Position = position * renderTransform;
-        texCoordVarying = texCoord;
-    }
+static const char kPassThroughVertexShader[] = {
+    "attribute vec4 position; \n \
+     attribute vec2 texCoord; \n \
+	 uniform mat4 renderTransform; \n \
+     varying vec2 texCoordVarying; \n \
+     void main() \n \
+     { \n \
+        gl_Position = position * renderTransform; \n \
+        texCoordVarying = texCoord; \n \
+     }"
+};
 
-);
+static const char kPassThroughFragmentShaderY[] = {
+    "varying highp vec2 texCoordVarying; \n \
+     uniform sampler2D SamplerY; \n \
+     void main() \n \
+     { \n \
+		gl_FragColor.r = texture2D(SamplerY, texCoordVarying).r; \n \
+     }"
+};
 
-NSString *const kPassThroughFragmentShaderRGB = SHADER_STRING
-(
- 
-    varying highp vec2 texCoordVarying;
-    uniform highp float progress;
-    uniform sampler2D from;
-    uniform sampler2D to;
- 
-    void main()
-    {
-        highp vec2 p = texCoordVarying;
-        gl_FragColor = mix(texture2D(from, p), texture2D(to, p), progress);
-    }
- 
-);
+static const char kPassThroughFragmentShaderUV[] = {
+    "varying highp vec2 texCoordVarying; \n \
+    uniform sampler2D SamplerUV; \n \
+    void main() \n \
+    { \n \
+		gl_FragColor.rg = texture2D(SamplerUV, texCoordVarying).rg; \n \
+    }"
+};
 
 @interface APLOpenGLRenderer ()
 
@@ -119,104 +119,7 @@ NSString *const kPassThroughFragmentShaderRGB = SHADER_STRING
 
 - (void)renderPixelBuffer:(CVPixelBufferRef)destinationPixelBuffer usingForegroundSourceBuffer:(CVPixelBufferRef)foregroundPixelBuffer andBackgroundSourceBuffer:(CVPixelBufferRef)backgroundPixelBuffer forTweenFactor:(float)tween
 {
-    [EAGLContext setCurrentContext:self.currentContext];
-    
-    if (foregroundPixelBuffer != NULL || backgroundPixelBuffer != NULL) {
-        
-        CVOpenGLESTextureRef foregroundRGBTexture  = [self rgbTextureForPixelBuffer:foregroundPixelBuffer];
-        
-        CVOpenGLESTextureRef backgroundRGBTexture = [self rgbTextureForPixelBuffer:backgroundPixelBuffer];
-        
-        CVOpenGLESTextureRef destRGBTexture = [self rgbTextureForPixelBuffer:destinationPixelBuffer];
-        
-        glUseProgram(self.programRGB);
-        
-        // Set the render transform
-        GLfloat preferredRenderTransform [] = {
-            self.renderTransform.a, self.renderTransform.b, self.renderTransform.tx, 0.0,
-            self.renderTransform.c, self.renderTransform.d, self.renderTransform.ty, 0.0,
-            0.0,					   0.0,										1.0, 0.0,
-            0.0,					   0.0,										0.0, 1.0,
-        };
-        
-        glUniformMatrix4fv(uniforms[UNIFORM_RENDER_TRANSFORM_RGB], 1, GL_FALSE, preferredRenderTransform);
-        
-        glBindFramebuffer(GL_FRAMEBUFFER, self.offscreenBufferHandle);
-        glViewport(0, 0, (int)CVPixelBufferGetWidth(destinationPixelBuffer), (int)CVPixelBufferGetHeight(destinationPixelBuffer));
-        
-        // Y planes of foreground and background frame are used to render the Y plane of the destination frame
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(CVOpenGLESTextureGetTarget(foregroundRGBTexture), CVOpenGLESTextureGetName(foregroundRGBTexture));
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-        
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(CVOpenGLESTextureGetTarget(backgroundRGBTexture), CVOpenGLESTextureGetName(backgroundRGBTexture));
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-        glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-        
-        // Attach the destination texture as a color attachment to the off screen frame buffer
-        glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, CVOpenGLESTextureGetTarget(destRGBTexture), CVOpenGLESTextureGetName(destRGBTexture), 0);
-        
-        GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
-        
-        if (status != GL_FRAMEBUFFER_COMPLETE) {
-            NSLog(@"Failed to make complete framebuffer object %x", glCheckFramebufferStatus(GL_FRAMEBUFFER));
-            goto bail;
-        }
-        
-        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-        
-        GLfloat quadVertexData1 [] = {
-            -1.0, 1.0,
-            1.0, 1.0,
-            -1.0, -1.0,
-            1.0, -1.0,
-        };
-        
-        // texture data varies from 0 -> 1, whereas vertex data varies from -1 -> 1
-        GLfloat quadTextureData1 [] = {
-            0.5 + quadVertexData1[0]/2, 0.5 + quadVertexData1[1]/2,
-            0.5 + quadVertexData1[2]/2, 0.5 + quadVertexData1[3]/2,
-            0.5 + quadVertexData1[4]/2, 0.5 + quadVertexData1[5]/2,
-            0.5 + quadVertexData1[6]/2, 0.5 + quadVertexData1[7]/2,
-        };
-        
-        glUniform1i(uniforms[UNIFORM_RGB_FROM], 0);
-        glUniform1i(uniforms[UNIFORM_RGB_TO], 1);
-        glUniform1f(uniforms[UNIFORM_RENDER_PROGRESS_RGB], tween);
-        
-        glVertexAttribPointer(ATTRIB_VERTEX_RGB, 2, GL_FLOAT, 0, 0, quadVertexData1);
-        glEnableVertexAttribArray(ATTRIB_VERTEX_RGB);
-        
-        glVertexAttribPointer(ATTRIB_TEXCOORD_RGB, 2, GL_FLOAT, 0, 0, quadTextureData1);
-        glEnableVertexAttribArray(ATTRIB_TEXCOORD_RGB);
-        
-        // Blend function to draw the foreground frame
-        glEnable(GL_BLEND);
-        glBlendFunc(GL_ONE, GL_ZERO);
-        
-        // Draw the foreground frame
-        glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-        
-        glFlush();
-        
-    bail:
-        CFRelease(foregroundRGBTexture);
-        CFRelease(backgroundRGBTexture);
-        CFRelease(destRGBTexture);
-        
-        // Periodic texture cache flush every frame
-        CVOpenGLESTextureCacheFlush(self.videoTextureCache, 0);
-        
-        [EAGLContext setCurrentContext:nil];
-    }
-    
+	[self doesNotRecognizeSelector:_cmd];
 }
 
 - (void)setupOffscreenRenderContext
@@ -237,10 +140,9 @@ NSString *const kPassThroughFragmentShaderRGB = SHADER_STRING
 	glBindFramebuffer(GL_FRAMEBUFFER, _offscreenBufferHandle);
 }
 
-- (CVOpenGLESTextureRef)rgbTextureForPixelBuffer:(CVPixelBufferRef)pixelBuffer
+- (CVOpenGLESTextureRef)lumaTextureForPixelBuffer:(CVPixelBufferRef)pixelBuffer
 {
-    
-    CVOpenGLESTextureRef rgbTexture = NULL;
+    CVOpenGLESTextureRef lumaTexture = NULL;
     CVReturn err;
     
     if (!_videoTextureCache) {
@@ -252,102 +154,164 @@ NSString *const kPassThroughFragmentShaderRGB = SHADER_STRING
     CVOpenGLESTextureCacheFlush(_videoTextureCache, 0);
     
     // CVOpenGLTextureCacheCreateTextureFromImage will create GL texture optimally from CVPixelBufferRef.
-    // RGB
+    // Y
     err = CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault,
                                                        _videoTextureCache,
                                                        pixelBuffer,
                                                        NULL,
                                                        GL_TEXTURE_2D,
-                                                       GL_RGBA,
+                                                       GL_RED_EXT,
                                                        (int)CVPixelBufferGetWidth(pixelBuffer),
                                                        (int)CVPixelBufferGetHeight(pixelBuffer),
-                                                       GL_BGRA,
+                                                       GL_RED_EXT,
                                                        GL_UNSIGNED_BYTE,
                                                        0,
-                                                       &rgbTexture);
+                                                       &lumaTexture);
     
-    if (!rgbTexture || err) {
-        NSLog(@"Error at creating rgb texture using CVOpenGLESTextureCacheCreateTextureFromImage %d", err);
+    if (!lumaTexture || err) {
+        NSLog(@"Error at creating luma texture using CVOpenGLESTextureCacheCreateTextureFromImage %d", err);
     }
     
 bail:
-    return rgbTexture;
+    return lumaTexture;
 }
 
-#pragma mark -
-#pragma mark Base methods for extension
-
-- (NSString *)fragmentShaderString {
-    return kPassThroughFragmentShaderRGB;
+- (CVOpenGLESTextureRef)chromaTextureForPixelBuffer:(CVPixelBufferRef)pixelBuffer
+{
+    CVOpenGLESTextureRef chromaTexture = NULL;
+    CVReturn err;
+    
+    if (!_videoTextureCache) {
+        NSLog(@"No video texture cache");
+        goto bail;
+    }
+    
+    // Periodic texture cache flush every frame
+    CVOpenGLESTextureCacheFlush(_videoTextureCache, 0);
+    
+    // CVOpenGLTextureCacheCreateTextureFromImage will create GL texture optimally from CVPixelBufferRef.
+    // UV
+    err = CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault,
+                                                       _videoTextureCache,
+                                                       pixelBuffer,
+                                                       NULL,
+                                                       GL_TEXTURE_2D,
+                                                       GL_RG_EXT,
+                                                       (int)CVPixelBufferGetWidthOfPlane(pixelBuffer, 1),
+                                                       (int)CVPixelBufferGetHeightOfPlane(pixelBuffer, 1),
+                                                       GL_RG_EXT,
+                                                       GL_UNSIGNED_BYTE,
+                                                       1,
+                                                       &chromaTexture);
+    
+    if (!chromaTexture || err) {
+        NSLog(@"Error at creating chroma texture using CVOpenGLESTextureCacheCreateTextureFromImage %d", err);
+    }
+    
+bail:
+    return chromaTexture;
 }
 
 #pragma mark -  OpenGL ES 2 shader compilation
 
 - (BOOL)loadShaders
 {
-	GLuint vertShader, fragShaderRGB;
-	NSString *vertShaderSource, *fragShaderRGBSource;
+	GLuint vertShader, fragShaderY, fragShaderUV;
+	NSString *vertShaderSource, *fragShaderYSource, *fragShaderUVSource;
 	
 	// Create the shader program.
-    _programRGB = glCreateProgram();
+	_programY = glCreateProgram();
+    _programUV = glCreateProgram();
 	
 	// Create and compile the vertex shader.
-	vertShaderSource = kPassThroughVertexShader;
+	vertShaderSource = [NSString stringWithCString:kPassThroughVertexShader encoding:NSUTF8StringEncoding];
 	if (![self compileShader:&vertShader type:GL_VERTEX_SHADER source:vertShaderSource]) {
 		NSLog(@"Failed to compile vertex shader");
 		return NO;
 	}
+	
+	// Create and compile Y fragment shader.
+	fragShaderYSource = [NSString stringWithCString:kPassThroughFragmentShaderY encoding:NSUTF8StringEncoding];
+	if (![self compileShader:&fragShaderY type:GL_FRAGMENT_SHADER source:fragShaderYSource]) {
+		NSLog(@"Failed to compile Y fragment shader");
+		return NO;
+	}
     
-    // Create and compile RGB fragment shader.
-    fragShaderRGBSource = [self fragmentShaderString];
-    if (![self compileShader:&fragShaderRGB type:GL_FRAGMENT_SHADER source:fragShaderRGBSource]) {
-        NSLog(@"Failed to compile RGB fragment shader");
-        return NO;
-    }
+    // Create and compile UV fragment shader.
+    fragShaderUVSource = [NSString stringWithCString:kPassThroughFragmentShaderUV encoding:NSUTF8StringEncoding];
+	if (![self compileShader:&fragShaderUV type:GL_FRAGMENT_SHADER source:fragShaderUVSource]) {
+		NSLog(@"Failed to compile UV fragment shader");
+		return NO;
+	}
+	
+	// Attach vertex shader to programY.
+	glAttachShader(_programY, vertShader);
+	
+	// Attach fragment shader to programY.
+	glAttachShader(_programY, fragShaderY);
     
     // Attach vertex shader to programY.
-    glAttachShader(_programRGB, vertShader);
-    
-    // Attach fragment shader to programY.
-    glAttachShader(_programRGB, fragShaderRGB);
+	glAttachShader(_programUV, vertShader);
+	
+	// Attach fragment shader to programY.
+	glAttachShader(_programUV, fragShaderUV);
+
 	
 	// Bind attribute locations. This needs to be done prior to linking.
 	
-    glBindAttribLocation(_programRGB, ATTRIB_VERTEX_RGB, "position");
-    glBindAttribLocation(_programRGB, ATTRIB_TEXCOORD_RGB, "texCoord");
+	glBindAttribLocation(_programY, ATTRIB_VERTEX_Y, "position");
+	glBindAttribLocation(_programY, ATTRIB_TEXCOORD_Y, "texCoord");
+	glBindAttribLocation(_programUV, ATTRIB_VERTEX_UV, "position");
+	glBindAttribLocation(_programUV, ATTRIB_TEXCOORD_UV, "texCoord");
 		   
 	// Link the program.
-	if (![self linkProgram:_programRGB]) {
-		NSLog(@"Failed to link program: %d", _programRGB);
+	if (![self linkProgram:_programY] || ![self linkProgram:_programUV]) {
+		NSLog(@"Failed to link program: %d and %d", _programY, _programUV);
 		
 		if (vertShader) {
 			glDeleteShader(vertShader);
 			vertShader = 0;
 		}
-        if (_programRGB) {
-            glDeleteProgram(_programRGB);
-            _programRGB = 0;
-        }
+		if (fragShaderY) {
+			glDeleteShader(fragShaderY);
+			fragShaderY = 0;
+		}
+        if (fragShaderUV) {
+			glDeleteShader(fragShaderUV);
+			fragShaderUV = 0;
+		}
+		if (_programY) {
+			glDeleteProgram(_programY);
+			_programY = 0;
+		}
+        if (_programUV) {
+			glDeleteProgram(_programUV);
+			_programUV = 0;
+		}
 		
 		return NO;
 	}
 	
 	// Get uniform locations.
-    uniforms[UNIFORM_RGB_FROM] = glGetUniformLocation(_programRGB, "from");
-    uniforms[UNIFORM_RGB_TO] = glGetUniformLocation(_programRGB, "to");
-    uniforms[UNIFORM_RENDER_TRANSFORM_RGB] = glGetUniformLocation(_programRGB, "renderTransform");
-    uniforms[UNIFORM_RENDER_PROGRESS_RGB] = glGetUniformLocation(_programRGB, "progress");
-    
-    
+	uniforms[UNIFORM_Y] = glGetUniformLocation(_programY, "SamplerY");
+    uniforms[UNIFORM_UV] = glGetUniformLocation(_programUV, "SamplerUV");
+    uniforms[UNIFORM_RENDER_TRANSFORM_Y] = glGetUniformLocation(_programY, "renderTransform");
+	uniforms[UNIFORM_RENDER_TRANSFORM_UV] = glGetUniformLocation(_programUV, "renderTransform");
+	
 	// Release vertex and fragment shaders.
 	if (vertShader) {
-		glDetachShader(_programRGB, vertShader);
+		glDetachShader(_programY, vertShader);
+        glDetachShader(_programUV, vertShader);
 		glDeleteShader(vertShader);
 	}
-    if (fragShaderRGB) {
-        glDetachShader(_programRGB, fragShaderRGB);
-        glDeleteShader(fragShaderRGB);
-    }
+	if (fragShaderY) {
+		glDetachShader(_programY, fragShaderY);
+		glDeleteShader(fragShaderY);
+	}
+    if (fragShaderUV) {
+		glDetachShader(_programUV, fragShaderUV);
+		glDeleteShader(fragShaderUV);
+	}
 	
     return YES;
 }
