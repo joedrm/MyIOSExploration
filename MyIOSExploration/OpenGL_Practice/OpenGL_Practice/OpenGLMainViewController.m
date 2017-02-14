@@ -33,4 +33,7 @@
  
  https://github.com/loyinglin/LearnLiveAnimation  礼物动画
  
+ https://github.com/Michael-Lfx/GPUImage_OpenGL_ES_Vulkan_Metal_ChatGroup  OpenGL (ES)学习群和学习方向
+ 
+ http://www.jianshu.com/nb/3300601  OpenGL ES 3.0 数据可视化开发
  */

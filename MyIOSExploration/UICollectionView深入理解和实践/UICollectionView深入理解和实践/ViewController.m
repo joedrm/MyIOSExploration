@@ -9,6 +9,7 @@
  参考资料：
  https://github.com/Instagram/IGListKit  近期关注度比较高的UICollectionView框架
  http://www.jianshu.com/p/d75a9a8d13b5  
+ https://github.com/KelvinJin/AnimatedCollectionViewLayout   CollectionView切换动画
  */
 
 #import "ViewController.h"

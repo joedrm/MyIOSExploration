@@ -85,6 +85,8 @@
  
  https://github.com/loyinglin/LearnAVFoundation 
  
+ https://github.com/ElfSundae/AVDemo  Demo projects for iOS Audio & Video development
+ 
  视音频编解码技术零基础学习方法
  http://blog.csdn.net/leixiaohua1020/article/details/18893769
  

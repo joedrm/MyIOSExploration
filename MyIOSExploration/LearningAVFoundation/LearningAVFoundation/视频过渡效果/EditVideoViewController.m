@@ -9,6 +9,7 @@
 #import "EditVideoViewController.h"
 #import "SimpleEditor.h"
 #import "VideoMaker.h"
+#import <WDYBaseProject/UIImage+SubImage.h>
 
 @interface EditVideoViewController ()
 @property (nonatomic, strong) SimpleEditor		*editor;
@@ -29,7 +30,7 @@
     self.clips = [[NSMutableArray alloc] init];
     self.clipTimeRanges = [[NSMutableArray alloc] init];
     
-    self.transitionDuration = 2.0; // 默认变换时间
+    self.transitionDuration = 1.0; // 默认变换时间
     self.transitionsEnabled = YES;
     
     [self setupEditingAndPlayback];
@@ -48,7 +49,8 @@
 
 - (void)setupEditingAndPlayback
 {
-    AVAsset* asset1 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:kImage(@"image1.jpg")]];
+    UIImage* clipImage1 = [kImage(@"image1.jpg") getTiledImageWithSize:CGSizeMake(640, 480)];
+    AVAsset* asset1 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:clipImage1]];
     AVAsset* asset2 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:kImage(@"image2.jpg")]];
     AVAsset* asset3 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:kImage(@"image3.jpg")]];
     AVAsset* asset4 = [AVAsset assetWithURL:[VideoMaker createVideoWithImage:kImage(@"image4.jpg")]];
@@ -111,15 +113,24 @@
 }
 - (void)synchronizeWithEditor
 {
-    // Clips
-    [self synchronizeEditorClipsWithOurClips];
-    [self synchronizeEditorClipTimeRangesWithOurClipTimeRanges];
+    NSMutableArray *validClips = [NSMutableArray array];
+    for (AVURLAsset *asset in self.clips) {
+        if (![asset isKindOfClass:[NSNull class]]) {
+            [validClips addObject:asset];
+        }
+    }
     
-    
-    self.editor.transitionDuration = CMTimeMakeWithSeconds(2.0, 600);
+    NSMutableArray *validClipTimeRanges = [NSMutableArray array];
+    for (NSValue *timeRange in self.clipTimeRanges) {
+        if (! [timeRange isKindOfClass:[NSNull class]]) {
+            [validClipTimeRanges addObject:timeRange];
+        }
+    }
+    self.editor.clips = validClips;
+    self.editor.clipTimeRanges = validClipTimeRanges;
+    self.editor.transitionDuration = CMTimeMakeWithSeconds(1.0, 600);
     self.editor.transitionType = (EditorTransitionType*)malloc(sizeof(int) * self.editor.clips.count);
     for (int i = 0; i < self.editor.clips.count; i ++) {
-        NSLog(@"transitionType = %@", @([self getRandomNumber:EditorTransitionTypeNone to:EditorTransitionTypeCustom]));
         self.editor.transitionType[i] = [self getRandomNumber:EditorTransitionTypeNone to:EditorTransitionTypeCustom];
     }
     [self.editor buildCompositionObjectsForPlayback];
@@ -138,22 +149,13 @@
     player.actionAtItemEnd = AVPlayerActionAtItemEndNone;
     AVPlayerViewController *vc = [[AVPlayerViewController alloc] init];
     vc.player = player;
-    vc.view.frame = CGRectMake(0, 200, kScreenWidth, 300);
+    vc.view.frame = CGRectMake(0, kStatusBarAndNavigationBarHeight, kScreenWidth, 300);
     vc.view.backgroundColor = [UIColor blackColor];
     vc.videoGravity = AVLayerVideoGravityResizeAspect;
     [self.view addSubview:vc.view];
-    
     [player play];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(playEnd)
-                                                 name:AVPlayerItemDidPlayToEndTimeNotification
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(applicationWillResignActive)
-                                                 name:UIApplicationWillResignActiveNotification
-                                               object:nil];
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playEnd) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive) name:UIApplicationWillResignActiveNotification object:nil];
     self.item = self.editor.playerItem;
     self.player = player;
 }
@@ -165,29 +167,6 @@
 
 - (void)applicationWillResignActive{
     [self.player pause];
-}
-
-
-- (void)synchronizeEditorClipsWithOurClips
-{
-    NSMutableArray *validClips = [NSMutableArray array];
-    for (AVURLAsset *asset in self.clips) {
-        if (![asset isKindOfClass:[NSNull class]]) {
-            [validClips addObject:asset];
-        }
-    }
-    
-    self.editor.clips = validClips;
-}
-- (void)synchronizeEditorClipTimeRangesWithOurClipTimeRanges
-{
-    NSMutableArray *validClipTimeRanges = [NSMutableArray array];
-    for (NSValue *timeRange in self.clipTimeRanges) {
-        if (! [timeRange isKindOfClass:[NSNull class]]) {
-            [validClipTimeRanges addObject:timeRange];
-        }
-    }
-    self.editor.clipTimeRanges = validClipTimeRanges;
 }
 
 - (void)dealloc{

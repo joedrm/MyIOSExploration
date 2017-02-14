@@ -188,7 +188,7 @@
     
     if (videoComposition) {
         // 通用属性
-        videoComposition.frameDuration = CMTimeMake(1, 10); // 30 fps
+        videoComposition.frameDuration = CMTimeMake(1, 30); // 30 fps
         videoComposition.renderSize = videoSize;
     }
     

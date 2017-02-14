@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2045DCFF1E4DCAE6000F0713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045DCFB1E4DCAE6000F0713 /* AppDelegate.m */; };
 		2045DD001E4DCAE6000F0713 /* PlayerMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045DCFE1E4DCAE6000F0713 /* PlayerMianViewController.m */; };
+		20C1B86B1E52F9A100471E61 /* CDPVideoEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C1B86A1E52F9A100471E61 /* CDPVideoEditor.m */; };
 		20D996051E4C173800520561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D995B21E4C173800520561 /* Assets.xcassets */; };
 		20D996061E4C173800520561 /* AVPlayerViewControllerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995B51E4C173800520561 /* AVPlayerViewControllerDemoVC.m */; };
 		20D996071E4C173800520561 /* AVPlayerBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995B81E4C173800520561 /* AVPlayerBasicViewController.m */; };
@@ -52,7 +53,6 @@
 		20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; };
 		20FF2DCB1E446E9000DCE2B3 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3ECDA35E43B9EA9B93B118B0 /* Pods_LearningAVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C1462E16901A51BE29FD7A /* Pods_LearningAVFoundation.framework */; };
-		4539B64C8BE60ABD560D78B1 /* Pods__________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3279C867DC1F123CA5661F2F /* Pods__________.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +75,8 @@
 		2045DCFD1E4DCAE6000F0713 /* PlayerMianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerMianViewController.h; sourceTree = "<group>"; };
 		2045DCFE1E4DCAE6000F0713 /* PlayerMianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerMianViewController.m; sourceTree = "<group>"; };
 		209F348E1E2DC7340083C875 /* LearningAVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningAVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20C1B8691E52F9A100471E61 /* CDPVideoEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPVideoEditor.h; sourceTree = "<group>"; };
+		20C1B86A1E52F9A100471E61 /* CDPVideoEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPVideoEditor.m; sourceTree = "<group>"; };
 		20D995B21E4C173800520561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20D995B41E4C173800520561 /* AVPlayerViewControllerDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewControllerDemoVC.h; sourceTree = "<group>"; };
 		20D995B51E4C173800520561 /* AVPlayerViewControllerDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewControllerDemoVC.m; sourceTree = "<group>"; };
@@ -151,7 +153,6 @@
 		20D996911E4D880300520561 /* VideoMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMaker.h; sourceTree = "<group>"; };
 		20D996921E4D880300520561 /* VideoMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMaker.m; sourceTree = "<group>"; };
 		20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3279C867DC1F123CA5661F2F /* Pods__________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods__________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A0DEDBB592D68738D37682 /* Pods-LearningAVFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningAVFoundation.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LearningAVFoundation/Pods-LearningAVFoundation.debug.xcconfig"; sourceTree = "<group>"; };
 		88C1462E16901A51BE29FD7A /* Pods_LearningAVFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningAVFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CCC3A9D0FAB3FB3AEFA0E9 /* Pods-LearningAVFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningAVFoundation.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LearningAVFoundation/Pods-LearningAVFoundation.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,7 +163,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4539B64C8BE60ABD560D78B1 /* Pods__________.framework in Frameworks */,
 				20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */,
 				3ECDA35E43B9EA9B93B118B0 /* Pods_LearningAVFoundation.framework in Frameworks */,
 			);
@@ -334,6 +334,8 @@
 				20D996891E4D649C00520561 /* EditVideoViewController.m */,
 				20D996911E4D880300520561 /* VideoMaker.h */,
 				20D996921E4D880300520561 /* VideoMaker.m */,
+				20C1B8691E52F9A100471E61 /* CDPVideoEditor.h */,
+				20C1B86A1E52F9A100471E61 /* CDPVideoEditor.m */,
 				20D996001E4C173800520561 /* PlayerAnimationViewController.h */,
 				20D996011E4C173800520561 /* PlayerAnimationViewController.m */,
 			);
@@ -352,7 +354,6 @@
 		EE678E5DA28A95C6C3421341 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3279C867DC1F123CA5661F2F /* Pods__________.framework */,
 				88C1462E16901A51BE29FD7A /* Pods_LearningAVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -518,6 +519,7 @@
 				20D9962A1E4C173800520561 /* LBEVideoTransition.m in Sources */,
 				20D996191E4C173800520561 /* LBEAudioItem.m in Sources */,
 				20D996261E4C173800520561 /* LBETransitionComposition.m in Sources */,
+				20C1B86B1E52F9A100471E61 /* CDPVideoEditor.m in Sources */,
 				20D9961A1E4C173800520561 /* LBEAudioMixComposition.m in Sources */,
 				20D9961D1E4C173800520561 /* LBEBasicCompositionBuilder.m in Sources */,
 				20D996271E4C173800520561 /* LBETransitionCompositionBuilder.m in Sources */,
