@@ -354,7 +354,7 @@
 				DEVELOPMENT_TEAM = VRGWDFH359;
 				INFOPLIST_FILE = OpenGL_Practice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.OpenGL-Practice.OpenGL-Practice";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.OpenGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -366,7 +366,7 @@
 				DEVELOPMENT_TEAM = VRGWDFH359;
 				INFOPLIST_FILE = OpenGL_Practice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.OpenGL-Practice.OpenGL-Practice";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.OpenGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -414,6 +414,7 @@
 				20D9965B1E4D54EC00520561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20D9965C1E4D54EC00520561 /* Build configuration list for PBXNativeTarget "OpenGL_PracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				20D9965E1E4D54EC00520561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
