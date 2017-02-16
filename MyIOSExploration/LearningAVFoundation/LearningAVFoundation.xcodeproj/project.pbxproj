@@ -22,7 +22,6 @@
 		2067DC621E5425AD00416DC6 /* VideoThemesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC5E1E5425AD00416DC6 /* VideoThemesData.m */; };
 		2067DC671E54266700416DC6 /* CurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC641E54266700416DC6 /* CurledViewBase.m */; };
 		2067DC681E54266700416DC6 /* UIImage+Reflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC661E54266700416DC6 /* UIImage+Reflection.m */; };
-		2067DC911E557CD200416DC6 /* introducing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2067DC901E557CD200416DC6 /* introducing.mp4 */; };
 		20C1B86B1E52F9A100471E61 /* CDPVideoEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C1B86A1E52F9A100471E61 /* CDPVideoEditor.m */; };
 		20C1B86F1E53E70200471E61 /* EditVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C1B86D1E53E70200471E61 /* EditVideoViewController.m */; };
 		20C1B8701E53E70200471E61 /* EditVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C1B86E1E53E70200471E61 /* EditVideoViewController.xib */; };
@@ -111,7 +110,6 @@
 		2067DC641E54266700416DC6 /* CurledViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurledViewBase.m; sourceTree = "<group>"; };
 		2067DC651E54266700416DC6 /* UIImage+Reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Reflection.h"; sourceTree = "<group>"; };
 		2067DC661E54266700416DC6 /* UIImage+Reflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Reflection.m"; sourceTree = "<group>"; };
-		2067DC901E557CD200416DC6 /* introducing.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = introducing.mp4; sourceTree = "<group>"; };
 		209F348E1E2DC7340083C875 /* LearningAVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningAVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C1B8691E52F9A100471E61 /* CDPVideoEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPVideoEditor.h; sourceTree = "<group>"; };
 		20C1B86A1E52F9A100471E61 /* CDPVideoEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPVideoEditor.m; sourceTree = "<group>"; };
@@ -330,7 +328,6 @@
 		20D995C11E4C173800520561 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2067DC901E557CD200416DC6 /* introducing.mp4 */,
 				2067DC3D1E54010400416DC6 /* Big Big World.mp3 */,
 				2067DC3E1E54010400416DC6 /* Rhythm Of Rain.mp3 */,
 				2067DC3F1E54010400416DC6 /* The Day You Went Away.mp3 */,
@@ -513,7 +510,6 @@
 				20D996131E4C173800520561 /* image4.jpg in Resources */,
 				2067DC461E54010400416DC6 /* Yesterday Once More.mp3 in Resources */,
 				20D996121E4C173800520561 /* image3.jpg in Resources */,
-				2067DC911E557CD200416DC6 /* introducing.mp4 in Resources */,
 				20D9960A1E4C173800520561 /* Info.plist in Resources */,
 				20D996111E4C173800520561 /* image2.jpg in Resources */,
 				2067DC441E54010400416DC6 /* The Day You Went Away.mp3 in Resources */,
