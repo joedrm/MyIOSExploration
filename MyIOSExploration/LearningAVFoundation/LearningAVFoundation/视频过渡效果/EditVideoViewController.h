@@ -2,7 +2,7 @@
 //  EditVideoViewController.h
 //  LearningAVFoundation
 //
-//  Created by fang wang on 17/2/10.
+//  Created by fang wang on 17/2/15.
 //  Copyright © 2017年 wdy. All rights reserved.
 //
 

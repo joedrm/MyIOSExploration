@@ -12,6 +12,7 @@
 @interface LBEVideoItem : LBEMediaItem
 @property (strong, nonatomic) NSArray *thumbnails;
 
+
 + (id)videoItemWithURL:(NSURL *)url;
 
 @property (strong, nonatomic) LBEVideoTransition *startTransition;

@@ -9,7 +9,23 @@
 /* Begin PBXBuildFile section */
 		2045DCFF1E4DCAE6000F0713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045DCFB1E4DCAE6000F0713 /* AppDelegate.m */; };
 		2045DD001E4DCAE6000F0713 /* PlayerMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045DCFE1E4DCAE6000F0713 /* PlayerMianViewController.m */; };
+		2067DC421E54010400416DC6 /* Big Big World.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2067DC3D1E54010400416DC6 /* Big Big World.mp3 */; };
+		2067DC431E54010400416DC6 /* Rhythm Of Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2067DC3E1E54010400416DC6 /* Rhythm Of Rain.mp3 */; };
+		2067DC441E54010400416DC6 /* The Day You Went Away.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2067DC3F1E54010400416DC6 /* The Day You Went Away.mp3 */; };
+		2067DC451E54010400416DC6 /* The mood of love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2067DC401E54010400416DC6 /* The mood of love.mp3 */; };
+		2067DC461E54010400416DC6 /* Yesterday Once More.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2067DC411E54010400416DC6 /* Yesterday Once More.mp3 */; };
+		2067DC531E54257000416DC6 /* PBJVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC501E54257000416DC6 /* PBJVideoPlayerController.m */; };
+		2067DC541E54257000416DC6 /* PBJVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC521E54257000416DC6 /* PBJVideoView.m */; };
+		2067DC5F1E5425AD00416DC6 /* VideoBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC581E5425AD00416DC6 /* VideoBuilder.m */; };
+		2067DC601E5425AD00416DC6 /* VideoEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC5A1E5425AD00416DC6 /* VideoEffect.m */; };
+		2067DC611E5425AD00416DC6 /* VideoThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC5C1E5425AD00416DC6 /* VideoThemes.m */; };
+		2067DC621E5425AD00416DC6 /* VideoThemesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC5E1E5425AD00416DC6 /* VideoThemesData.m */; };
+		2067DC671E54266700416DC6 /* CurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC641E54266700416DC6 /* CurledViewBase.m */; };
+		2067DC681E54266700416DC6 /* UIImage+Reflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2067DC661E54266700416DC6 /* UIImage+Reflection.m */; };
+		2067DC911E557CD200416DC6 /* introducing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2067DC901E557CD200416DC6 /* introducing.mp4 */; };
 		20C1B86B1E52F9A100471E61 /* CDPVideoEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C1B86A1E52F9A100471E61 /* CDPVideoEditor.m */; };
+		20C1B86F1E53E70200471E61 /* EditVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C1B86D1E53E70200471E61 /* EditVideoViewController.m */; };
+		20C1B8701E53E70200471E61 /* EditVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C1B86E1E53E70200471E61 /* EditVideoViewController.xib */; };
 		20D996051E4C173800520561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D995B21E4C173800520561 /* Assets.xcassets */; };
 		20D996061E4C173800520561 /* AVPlayerViewControllerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995B51E4C173800520561 /* AVPlayerViewControllerDemoVC.m */; };
 		20D996071E4C173800520561 /* AVPlayerBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995B81E4C173800520561 /* AVPlayerBasicViewController.m */; };
@@ -48,7 +64,6 @@
 		20D9962C1E4C173800520561 /* PlayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996011E4C173800520561 /* PlayerAnimationViewController.m */; };
 		20D9962D1E4C173800520561 /* VideoEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996031E4C173800520561 /* VideoEditor.m */; };
 		20D996871E4D637000520561 /* SimpleEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996861E4D637000520561 /* SimpleEditor.m */; };
-		20D9968A1E4D649C00520561 /* EditVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996891E4D649C00520561 /* EditVideoViewController.m */; };
 		20D996931E4D880300520561 /* VideoMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D996921E4D880300520561 /* VideoMaker.m */; };
 		20FF2DCA1E446E9000DCE2B3 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; };
 		20FF2DCB1E446E9000DCE2B3 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -74,9 +89,35 @@
 		2045DCFB1E4DCAE6000F0713 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2045DCFD1E4DCAE6000F0713 /* PlayerMianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerMianViewController.h; sourceTree = "<group>"; };
 		2045DCFE1E4DCAE6000F0713 /* PlayerMianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerMianViewController.m; sourceTree = "<group>"; };
+		2067DC3D1E54010400416DC6 /* Big Big World.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Big Big World.mp3"; sourceTree = "<group>"; };
+		2067DC3E1E54010400416DC6 /* Rhythm Of Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rhythm Of Rain.mp3"; sourceTree = "<group>"; };
+		2067DC3F1E54010400416DC6 /* The Day You Went Away.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Day You Went Away.mp3"; sourceTree = "<group>"; };
+		2067DC401E54010400416DC6 /* The mood of love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The mood of love.mp3"; sourceTree = "<group>"; };
+		2067DC411E54010400416DC6 /* Yesterday Once More.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yesterday Once More.mp3"; sourceTree = "<group>"; };
+		2067DC4F1E54257000416DC6 /* PBJVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVideoPlayerController.h; sourceTree = "<group>"; };
+		2067DC501E54257000416DC6 /* PBJVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVideoPlayerController.m; sourceTree = "<group>"; };
+		2067DC511E54257000416DC6 /* PBJVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVideoView.h; sourceTree = "<group>"; };
+		2067DC521E54257000416DC6 /* PBJVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVideoView.m; sourceTree = "<group>"; };
+		2067DC561E5425AD00416DC6 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		2067DC571E5425AD00416DC6 /* VideoBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBuilder.h; sourceTree = "<group>"; };
+		2067DC581E5425AD00416DC6 /* VideoBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoBuilder.m; sourceTree = "<group>"; };
+		2067DC591E5425AD00416DC6 /* VideoEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEffect.h; sourceTree = "<group>"; };
+		2067DC5A1E5425AD00416DC6 /* VideoEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEffect.m; sourceTree = "<group>"; };
+		2067DC5B1E5425AD00416DC6 /* VideoThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoThemes.h; sourceTree = "<group>"; };
+		2067DC5C1E5425AD00416DC6 /* VideoThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoThemes.m; sourceTree = "<group>"; };
+		2067DC5D1E5425AD00416DC6 /* VideoThemesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoThemesData.h; sourceTree = "<group>"; };
+		2067DC5E1E5425AD00416DC6 /* VideoThemesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoThemesData.m; sourceTree = "<group>"; };
+		2067DC631E54266700416DC6 /* CurledViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurledViewBase.h; sourceTree = "<group>"; };
+		2067DC641E54266700416DC6 /* CurledViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurledViewBase.m; sourceTree = "<group>"; };
+		2067DC651E54266700416DC6 /* UIImage+Reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Reflection.h"; sourceTree = "<group>"; };
+		2067DC661E54266700416DC6 /* UIImage+Reflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Reflection.m"; sourceTree = "<group>"; };
+		2067DC901E557CD200416DC6 /* introducing.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = introducing.mp4; sourceTree = "<group>"; };
 		209F348E1E2DC7340083C875 /* LearningAVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningAVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C1B8691E52F9A100471E61 /* CDPVideoEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPVideoEditor.h; sourceTree = "<group>"; };
 		20C1B86A1E52F9A100471E61 /* CDPVideoEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPVideoEditor.m; sourceTree = "<group>"; };
+		20C1B86C1E53E70200471E61 /* EditVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditVideoViewController.h; sourceTree = "<group>"; };
+		20C1B86D1E53E70200471E61 /* EditVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditVideoViewController.m; sourceTree = "<group>"; };
+		20C1B86E1E53E70200471E61 /* EditVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditVideoViewController.xib; sourceTree = "<group>"; };
 		20D995B21E4C173800520561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20D995B41E4C173800520561 /* AVPlayerViewControllerDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewControllerDemoVC.h; sourceTree = "<group>"; };
 		20D995B51E4C173800520561 /* AVPlayerViewControllerDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewControllerDemoVC.m; sourceTree = "<group>"; };
@@ -148,8 +189,6 @@
 		20D996031E4C173800520561 /* VideoEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEditor.m; sourceTree = "<group>"; };
 		20D996851E4D637000520561 /* SimpleEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditor.h; sourceTree = "<group>"; };
 		20D996861E4D637000520561 /* SimpleEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditor.m; sourceTree = "<group>"; };
-		20D996881E4D649C00520561 /* EditVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditVideoViewController.h; sourceTree = "<group>"; };
-		20D996891E4D649C00520561 /* EditVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditVideoViewController.m; sourceTree = "<group>"; };
 		20D996911E4D880300520561 /* VideoMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMaker.h; sourceTree = "<group>"; };
 		20D996921E4D880300520561 /* VideoMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMaker.m; sourceTree = "<group>"; };
 		20FF2DC91E446E9000DCE2B3 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +228,46 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		2067DC471E54251300416DC6 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				2067DC631E54266700416DC6 /* CurledViewBase.h */,
+				2067DC641E54266700416DC6 /* CurledViewBase.m */,
+				2067DC651E54266700416DC6 /* UIImage+Reflection.h */,
+				2067DC661E54266700416DC6 /* UIImage+Reflection.m */,
+				2067DC551E5425AD00416DC6 /* VideoEffects */,
+				2067DC4E1E54257000416DC6 /* VideoPlay */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		2067DC4E1E54257000416DC6 /* VideoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				2067DC4F1E54257000416DC6 /* PBJVideoPlayerController.h */,
+				2067DC501E54257000416DC6 /* PBJVideoPlayerController.m */,
+				2067DC511E54257000416DC6 /* PBJVideoView.h */,
+				2067DC521E54257000416DC6 /* PBJVideoView.m */,
+			);
+			path = VideoPlay;
+			sourceTree = "<group>";
+		};
+		2067DC551E5425AD00416DC6 /* VideoEffects */ = {
+			isa = PBXGroup;
+			children = (
+				2067DC561E5425AD00416DC6 /* Common.h */,
+				2067DC571E5425AD00416DC6 /* VideoBuilder.h */,
+				2067DC581E5425AD00416DC6 /* VideoBuilder.m */,
+				2067DC591E5425AD00416DC6 /* VideoEffect.h */,
+				2067DC5A1E5425AD00416DC6 /* VideoEffect.m */,
+				2067DC5B1E5425AD00416DC6 /* VideoThemes.h */,
+				2067DC5C1E5425AD00416DC6 /* VideoThemes.m */,
+				2067DC5D1E5425AD00416DC6 /* VideoThemesData.h */,
+				2067DC5E1E5425AD00416DC6 /* VideoThemesData.m */,
+			);
+			path = VideoEffects;
+			sourceTree = "<group>";
+		};
 		209F34851E2DC7340083C875 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +296,7 @@
 				20D995BD1E4C173800520561 /* Info.plist */,
 				20D995BE1E4C173800520561 /* main.m */,
 				20D995CA1E4C173800520561 /* VideoPrefixHeader.pch */,
+				2067DC471E54251300416DC6 /* Vender */,
 				2045DCF91E4DCAE6000F0713 /* App */,
 				2045DCFC1E4DCAE6000F0713 /* Main */,
 				20D995B31E4C173800520561 /* AVPlayerViewController的使用 */,
@@ -250,6 +330,12 @@
 		20D995C11E4C173800520561 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2067DC901E557CD200416DC6 /* introducing.mp4 */,
+				2067DC3D1E54010400416DC6 /* Big Big World.mp3 */,
+				2067DC3E1E54010400416DC6 /* Rhythm Of Rain.mp3 */,
+				2067DC3F1E54010400416DC6 /* The Day You Went Away.mp3 */,
+				2067DC401E54010400416DC6 /* The mood of love.mp3 */,
+				2067DC411E54010400416DC6 /* Yesterday Once More.mp3 */,
 				20D995C51E4C173800520561 /* image1.jpg */,
 				20D995C61E4C173800520561 /* image2.jpg */,
 				20D995C71E4C173800520561 /* image3.jpg */,
@@ -330,8 +416,9 @@
 				20D996031E4C173800520561 /* VideoEditor.m */,
 				20D996851E4D637000520561 /* SimpleEditor.h */,
 				20D996861E4D637000520561 /* SimpleEditor.m */,
-				20D996881E4D649C00520561 /* EditVideoViewController.h */,
-				20D996891E4D649C00520561 /* EditVideoViewController.m */,
+				20C1B86C1E53E70200471E61 /* EditVideoViewController.h */,
+				20C1B86D1E53E70200471E61 /* EditVideoViewController.m */,
+				20C1B86E1E53E70200471E61 /* EditVideoViewController.xib */,
 				20D996911E4D880300520561 /* VideoMaker.h */,
 				20D996921E4D880300520561 /* VideoMaker.m */,
 				20C1B8691E52F9A100471E61 /* CDPVideoEditor.h */,
@@ -424,13 +511,20 @@
 			files = (
 				20D996141E4C173800520561 /* image5.jpg in Resources */,
 				20D996131E4C173800520561 /* image4.jpg in Resources */,
+				2067DC461E54010400416DC6 /* Yesterday Once More.mp3 in Resources */,
 				20D996121E4C173800520561 /* image3.jpg in Resources */,
+				2067DC911E557CD200416DC6 /* introducing.mp4 in Resources */,
 				20D9960A1E4C173800520561 /* Info.plist in Resources */,
 				20D996111E4C173800520561 /* image2.jpg in Resources */,
+				2067DC441E54010400416DC6 /* The Day You Went Away.mp3 in Resources */,
 				20D996091E4C173800520561 /* Main.storyboard in Resources */,
 				20D996101E4C173800520561 /* image1.jpg in Resources */,
 				20D996051E4C173800520561 /* Assets.xcassets in Resources */,
+				20C1B8701E53E70200471E61 /* EditVideoViewController.xib in Resources */,
 				20D996081E4C173800520561 /* LaunchScreen.storyboard in Resources */,
+				2067DC421E54010400416DC6 /* Big Big World.mp3 in Resources */,
+				2067DC431E54010400416DC6 /* Rhythm Of Rain.mp3 in Resources */,
+				2067DC451E54010400416DC6 /* The mood of love.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,21 +588,29 @@
 				20D996201E4C173800520561 /* LBEManualTransitionCompositionBuilder.m in Sources */,
 				20D996061E4C173800520561 /* AVPlayerViewControllerDemoVC.m in Sources */,
 				2045DCFF1E4DCAE6000F0713 /* AppDelegate.m in Sources */,
+				2067DC5F1E5425AD00416DC6 /* VideoBuilder.m in Sources */,
 				20D996221E4C173800520561 /* LBETimeline.m in Sources */,
 				20D996071E4C173800520561 /* AVPlayerBasicViewController.m in Sources */,
 				20D9961F1E4C173800520561 /* LBECompositionExporter.m in Sources */,
+				2067DC671E54266700416DC6 /* CurledViewBase.m in Sources */,
+				2067DC681E54266700416DC6 /* UIImage+Reflection.m in Sources */,
 				20D996171E4C173800520561 /* FullPlayerViewController.m in Sources */,
 				20D996211E4C173800520561 /* LBEMediaItem.m in Sources */,
+				2067DC621E5425AD00416DC6 /* VideoThemesData.m in Sources */,
 				20D9961E1E4C173800520561 /* LBECompositionBuilderFactory.m in Sources */,
+				2067DC541E54257000416DC6 /* PBJVideoView.m in Sources */,
 				20D996931E4D880300520561 /* VideoMaker.m in Sources */,
 				20D9961C1E4C173800520561 /* LBEBasicComposition.m in Sources */,
+				2067DC611E5425AD00416DC6 /* VideoThemes.m in Sources */,
 				2045DD001E4DCAE6000F0713 /* PlayerMianViewController.m in Sources */,
+				2067DC601E5425AD00416DC6 /* VideoEffect.m in Sources */,
 				20D9962C1E4C173800520561 /* PlayerAnimationViewController.m in Sources */,
 				20D9960B1E4C173800520561 /* main.m in Sources */,
 				20D9962B1E4C173800520561 /* LBEVolumeAutomation.m in Sources */,
 				20D996251E4C173800520561 /* LBETimelineItemViewModel.m in Sources */,
-				20D9968A1E4D649C00520561 /* EditVideoViewController.m in Sources */,
+				20C1B86F1E53E70200471E61 /* EditVideoViewController.m in Sources */,
 				20D996151E4C173800520561 /* AVPlayerView.m in Sources */,
+				2067DC531E54257000416DC6 /* PBJVideoPlayerController.m in Sources */,
 				20D9961B1E4C173800520561 /* LBEAudioMixCompositionBuilder.m in Sources */,
 				20D996291E4C173800520561 /* LBEVideoItem.m in Sources */,
 				20D996281E4C173800520561 /* LBETransitionInstructions.m in Sources */,

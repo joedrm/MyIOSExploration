@@ -3,10 +3,12 @@
 ## Swift Awsome
 - [SwiftGuide](https://github.com/ipader/SwiftGuide)
 - [iOS-Swift-Demos](https://github.com/Lax/iOS-Swift-Demos) - 精心收集并分类整理的Swift开发学习资源
+- [Swift开源实例iOS项目收集](https://github.com/conanwhf/ResourceDoc/blob/master/3.0SwiftProject.md)
 
 ## open source app
 - [30DaysofSwift](https://github.com/allenwong/30DaysofSwift)
 - [ios-oss](https://github.com/kickstarter/ios-oss)  众筹网站 kickstarter 开源其 iOS 应用
+
 
 ## article
 - [一些使用Swift的iOS教程](https://github.com/yrq110/some-ios-tutorials-with-swift-CN)

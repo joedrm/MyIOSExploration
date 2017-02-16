@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:iOS&#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;&#x89e3;&#x6790;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;)/iOS&#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;&#x89e3;&#x6790;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;).xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LearningGPUImage/LearningGPUImage.xcodeproj">
    </FileRef>
    <FileRef

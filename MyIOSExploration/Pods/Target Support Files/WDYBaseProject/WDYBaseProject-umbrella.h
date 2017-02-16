@@ -63,6 +63,7 @@
 #import "UIImage+Gif.h"
 #import "UIImage+ImageEffects.h"
 #import "UIImage+RemoteSize.h"
+#import "UIImage+Resize.h"
 #import "UIImage+Splash.h"
 #import "UIImage+SubImage.h"
 #import "UIImageView+BetterFace.h"

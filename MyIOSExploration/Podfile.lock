@@ -27,28 +27,28 @@ PODS:
   - SDWebImage (3.8.0):
     - SDWebImage/Core (= 3.8.0)
   - SDWebImage/Core (3.8.0)
-  - WDYBaseProject (1.0.0):
-    - WDYBaseProject/ADComponent (= 1.0.0)
-    - WDYBaseProject/BaseModel (= 1.0.0)
-    - WDYBaseProject/Category (= 1.0.0)
-    - WDYBaseProject/Macros (= 1.0.0)
-    - WDYBaseProject/Navigation (= 1.0.0)
-    - WDYBaseProject/NewFeatureComponent (= 1.0.0)
-    - WDYBaseProject/PublicHeaders (= 1.0.0)
-    - WDYBaseProject/TableViewComponent (= 1.0.0)
-    - WDYBaseProject/Toast (= 1.0.0)
-    - WDYBaseProject/UIComponent (= 1.0.0)
-    - WDYBaseProject/Utils (= 1.0.0)
-  - WDYBaseProject/ADComponent (1.0.0)
-  - WDYBaseProject/BaseModel (1.0.0):
+  - WDYBaseProject (1.0.1):
+    - WDYBaseProject/ADComponent (= 1.0.1)
+    - WDYBaseProject/BaseModel (= 1.0.1)
+    - WDYBaseProject/Category (= 1.0.1)
+    - WDYBaseProject/Macros (= 1.0.1)
+    - WDYBaseProject/Navigation (= 1.0.1)
+    - WDYBaseProject/NewFeatureComponent (= 1.0.1)
+    - WDYBaseProject/PublicHeaders (= 1.0.1)
+    - WDYBaseProject/TableViewComponent (= 1.0.1)
+    - WDYBaseProject/Toast (= 1.0.1)
+    - WDYBaseProject/UIComponent (= 1.0.1)
+    - WDYBaseProject/Utils (= 1.0.1)
+  - WDYBaseProject/ADComponent (1.0.1)
+  - WDYBaseProject/BaseModel (1.0.1):
     - MJExtension
     - WDYBaseProject/Utils
-  - WDYBaseProject/Category (1.0.0):
+  - WDYBaseProject/Category (1.0.1):
     - WDYBaseProject/Macros
-  - WDYBaseProject/Macros (1.0.0)
-  - WDYBaseProject/Navigation (1.0.0)
-  - WDYBaseProject/NewFeatureComponent (1.0.0)
-  - WDYBaseProject/PublicHeaders (1.0.0):
+  - WDYBaseProject/Macros (1.0.1)
+  - WDYBaseProject/Navigation (1.0.1)
+  - WDYBaseProject/NewFeatureComponent (1.0.1)
+  - WDYBaseProject/PublicHeaders (1.0.1):
     - WDYBaseProject/ADComponent
     - WDYBaseProject/BaseModel
     - WDYBaseProject/Category
@@ -59,15 +59,15 @@ PODS:
     - WDYBaseProject/Toast
     - WDYBaseProject/UIComponent
     - WDYBaseProject/Utils
-  - WDYBaseProject/TableViewComponent (1.0.0)
-  - WDYBaseProject/Toast (1.0.0):
+  - WDYBaseProject/TableViewComponent (1.0.1)
+  - WDYBaseProject/Toast (1.0.1):
     - WDYBaseProject/Category
     - WDYBaseProject/Macros
     - WDYBaseProject/Utils
-  - WDYBaseProject/UIComponent (1.0.0):
+  - WDYBaseProject/UIComponent (1.0.1):
     - WDYBaseProject/Macros
     - WDYBaseProject/Utils
-  - WDYBaseProject/Utils (1.0.0):
+  - WDYBaseProject/Utils (1.0.1):
     - AFNetworking (= 3.1.0)
     - WDYBaseProject/Category
     - WDYBaseProject/Macros
@@ -80,7 +80,7 @@ DEPENDENCIES:
   - MMPlaceHolder
   - ReactiveCocoa
   - SDWebImage
-  - WDYBaseProject (~> 1.0.0)
+  - WDYBaseProject (~> 1.0.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -92,8 +92,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 72263e7ac0770c274617ccd345e01049d0ca38ae
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
   SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
-  WDYBaseProject: 1dfd6b6bee4d01345d89f5557f29065532e6d64f
+  WDYBaseProject: 9d5ad302d056ff29ba0946e1366555043c09778b
 
-PODFILE CHECKSUM: 63223468c204a33962968e874bbdcfc76535b30c
+PODFILE CHECKSUM: 2c184c85bd705fab8218cac36cff81b06da9057c
 
 COCOAPODS: 1.1.1

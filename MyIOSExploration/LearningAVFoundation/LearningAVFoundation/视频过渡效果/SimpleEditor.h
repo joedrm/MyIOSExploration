@@ -12,25 +12,54 @@
 #import <CoreMedia/CMTime.h>
 #import <AVFoundation/AVFoundation.h>
 
+//typedef enum {
+//    EditorTransitionTypeCrossFade,
+//    EditorTransitionTypeCustom,
+//    EditorPushHorizontalSpinFromRight,
+//    EditorPushHorizontalFromRight,
+//    EditorPushHorizontalFromLeft,
+//    EditorPushVerticalFromBottom,
+//    EditorPushVerticalFromTop,
+//    EditorTransitionTypeWipe
+//} EditorTransitionType;
+
 typedef enum {
-    EditorTransitionTypeNone,
-    EditorTransitionTypeCrossFade,
-    EditorTransitionTypePush,
-    EditorTransitionTypeCustom
-} EditorTransitionType;
+    VideoTransitionTypeFadeIn = 0,
+    VideoTransitionTypeFadeOut,
+    VideoTransitionTypeDisolve,
+    VideoTransitionTypePush,
+    VideoTransitionTypePushFromTop,
+    VideoTransitionTypePushFromBottom,
+    VideoTransitionTypePushFromLeft,
+    VideoTransitionTypePushFromRight,
+    VideoTransitionTypeZoomIn,
+    VideoTransitionTypeWipe
+} VideoTransitionType;
+
+@protocol ExportProgressDelegate <NSObject>
+
+- (void)exportVideoProgress:(float)progress;
+
+@end
+
+typedef void(^ExportSuccessBlock)(NSString* exportPathStr, BOOL isExportSuccessed);
 
 @interface SimpleEditor : NSObject
 
 @property (nonatomic, copy) NSArray *clips;
 @property (nonatomic, copy) NSArray *clipTimeRanges;
 @property (nonatomic) CMTime transitionDuration;
-@property (nonatomic) EditorTransitionType* transitionType;
-
+@property (nonatomic) VideoTransitionType* transitionType;
+@property (nonatomic, weak) id <ExportProgressDelegate> delegate;
 @property (nonatomic, readonly, retain) AVMutableComposition *composition;
 @property (nonatomic, readonly, retain) AVMutableVideoComposition *videoComposition;
 @property (nonatomic, readonly, retain) AVMutableAudioMix *audioMix;
 
+
 - (void)buildCompositionObjectsForPlayback;
+- (void)addVoiceEffectsWithAudioPath:(NSString *)audioPathString;
 - (AVPlayerItem *)playerItem;
-- (void)beginExport;
+- (void)exportSaveToLibrary:(BOOL)isSave exportSuccessed:(ExportSuccessBlock)block;
+- (void)applyVideoEffectsWithImage:(UIImage*)image frame:(CGRect)frame;
+
 @end

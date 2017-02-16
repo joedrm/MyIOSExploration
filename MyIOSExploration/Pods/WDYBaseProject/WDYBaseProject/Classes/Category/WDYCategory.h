@@ -89,6 +89,9 @@
 #import "UIImage+Crop.h"
 #import "UIImage+Splash.h"
 #import "UIImage+Alpha.h"
+#import "UIImage+Resize.h"
+#import "UIImage+Gif.h"
+#import "UIImage+ImageEffects.h"
 
 // UIImageView 分类
 #import "UIImageView+Blur.h"

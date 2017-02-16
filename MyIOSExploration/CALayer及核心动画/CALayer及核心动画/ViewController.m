@@ -89,6 +89,10 @@ IOS动画总结:
  https://github.com/Raizlabs/RZTransitions 自定义转场
  https://github.com/ColinEberhardt/VCTransitionsLibrary
  https://github.com/recruit-mp/RMPZoomTransitionAnimator
+ 
+ 
+ 动画设计
+ http://charsdavy.github.io/2016/07/31/design-complex-animation-effect/  设计复杂的iOS动画效果
  */
 
 #import "ViewController.h"
