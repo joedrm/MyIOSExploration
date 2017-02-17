@@ -52,6 +52,7 @@ IOS动画总结:
  https://github.com/bryanoltman/CAAnimation-EasingEquations
  https://github.com/GirlCunt/AnimationDemo
  https://github.com/tapharmonic/Core-Animation-Demos  ***
+ https://github.com/AugustRush/ARAnimation  ARAnimation is an Core Animation library to make you animations easily.
  // 丰富的路径动画，可以自己定制设计动画路径
  https://github.com/airbnb/lottie-ios   http://jeremie-martinez.com//2016/09/15/train-animations/
  
@@ -89,6 +90,7 @@ IOS动画总结:
  https://github.com/Raizlabs/RZTransitions 自定义转场
  https://github.com/ColinEberhardt/VCTransitionsLibrary
  https://github.com/recruit-mp/RMPZoomTransitionAnimator
+ https://github.com/AugustRush/ARTransitionAnimator
  
  
  动画设计

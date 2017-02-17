@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:iOS&#x7ec4;&#x4ef6;&#x5316;&#x63a2;&#x7d22;/iOS&#x7ec4;&#x4ef6;&#x5316;&#x63a2;&#x7d22;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:iOS&#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;&#x89e3;&#x6790;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;)/iOS&#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;&#x89e3;&#x6790;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;).xcodeproj">
    </FileRef>
    <FileRef
@@ -81,6 +84,9 @@
    </FileRef>
    <FileRef
       location = "group:&#x591a;&#x7ebf;&#x7a0b;&#x5b9e;&#x6218;/&#x591a;&#x7ebf;&#x7a0b;&#x5b9e;&#x6218;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:IOS&#x7f51;&#x7edc;&#x7f16;&#x7a0b;/IOS&#x7f51;&#x7edc;&#x7f16;&#x7a0b;.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:NSOperation&#x57fa;&#x672c;&#x4f7f;&#x7528;/NSOperation&#x57fa;&#x672c;&#x4f7f;&#x7528;.xcodeproj">
