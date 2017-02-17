@@ -11,17 +11,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreMedia/CMTime.h>
 #import <AVFoundation/AVFoundation.h>
-
-//typedef enum {
-//    EditorTransitionTypeCrossFade,
-//    EditorTransitionTypeCustom,
-//    EditorPushHorizontalSpinFromRight,
-//    EditorPushHorizontalFromRight,
-//    EditorPushHorizontalFromLeft,
-//    EditorPushVerticalFromBottom,
-//    EditorPushVerticalFromTop,
-//    EditorTransitionTypeWipe
-//} EditorTransitionType;
+#import "VideoEffectTheme.h"
 
 typedef enum {
     VideoTransitionTypeFadeIn = 0,
@@ -49,7 +39,8 @@ typedef void(^ExportSuccessBlock)(NSString* exportPathStr, BOOL isExportSuccesse
 @property (nonatomic, copy) NSArray *clips;
 @property (nonatomic, copy) NSArray *clipTimeRanges;
 @property (nonatomic) CMTime transitionDuration;
-@property (nonatomic) VideoTransitionType* transitionType;
+@property (nonatomic) VideoTransitionType* transitionType; //转场动画效果
+@property (assign, nonatomic) ThemesType themeCurrentType; //主题类型
 @property (nonatomic, weak) id <ExportProgressDelegate> delegate;
 @property (nonatomic, readonly, retain) AVMutableComposition *composition;
 @property (nonatomic, readonly, retain) AVMutableVideoComposition *videoComposition;
@@ -57,9 +48,8 @@ typedef void(^ExportSuccessBlock)(NSString* exportPathStr, BOOL isExportSuccesse
 
 
 - (void)buildCompositionObjectsForPlayback;
-- (void)addVoiceEffectsWithAudioPath:(NSString *)audioPathString;
+- (void)applyVideoEffects;
 - (AVPlayerItem *)playerItem;
 - (void)exportSaveToLibrary:(BOOL)isSave exportSuccessed:(ExportSuccessBlock)block;
-- (void)applyVideoEffectsWithImage:(UIImage*)image frame:(CGRect)frame;
 
 @end

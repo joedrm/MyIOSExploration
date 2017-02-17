@@ -10,6 +10,8 @@
 #import <CoreMedia/CoreMedia.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <Photos/Photos.h>
+#import "VideoThemeModel.h"
+#import "VideoBuilder.h"
 
 @interface SimpleEditor ()
 
@@ -18,10 +20,18 @@
 @property (nonatomic, readwrite, retain) AVMutableAudioMix *audioMix;
 @property (nonatomic, strong) AVAssetExportSession *exportSession;
 @property (nonatomic, strong) NSTimer *timerEffect;
-
+@property (nonatomic, strong) VideoBuilder* videoBuilder;
 @end
 
 @implementation SimpleEditor
+
+- (instancetype)init{
+    
+    if (self = [super init]) {
+        self.videoBuilder = [[VideoBuilder alloc] init];
+    }
+    return self;
+}
 
 - (void)buildTransitionComposition:(AVMutableComposition *)composition andVideoComposition:(AVMutableVideoComposition *)videoComposition andAudioMix:(AVMutableAudioMix *)audioMix
 {
@@ -251,18 +261,6 @@
     self.audioMix = audioMix;
 }
 
-- (void)addVoiceEffectsWithAudioPath:(NSString *)audioPathString{
-    
-    // 添加声效
-    NSString* audioSourceStr = [[NSBundle mainBundle] pathForResource:audioPathString ofType:@"mp3"];
-    NSURL *bgMusicURL = [NSURL fileURLWithPath:audioSourceStr];
-    AVURLAsset *assetMusic = [[AVURLAsset alloc] initWithURL:bgMusicURL options:nil];
-    [self addAudioMixToComposition:self.composition withAudioMix:self.audioMix withAsset:assetMusic];
-    
-    
-    [self applyVideoEffectsWithImage:kImage(@"image1.jpg") frame:CGRectMake(100, 50, 50, 50)];
-}
-
 - (void)addAudioMixToComposition:(AVMutableComposition *)composition withAudioMix:(AVMutableAudioMix *)audioMix withAsset:(AVURLAsset*)commentary
 {
     NSInteger i;
@@ -312,43 +310,546 @@
     audioMix.inputParameters = trackMixArray;
 }
 
-- (void)applyVideoEffectsWithImage:(UIImage*)image frame:(CGRect)frame
+- (void)applyVideoEffects
 {
-    CGSize effectSize = self.videoComposition.renderSize;
-    AVMutableComposition *composition = self.composition;
-    CGFloat startTime = 0;
-    CGFloat duration = composition.duration.value/composition.duration.timescale;
-    
-    //创建水印背景layer
-    CAShapeLayer *parentLayer=[CAShapeLayer layer];
-    parentLayer.geometryFlipped=YES;
-    parentLayer.frame = CGRectMake(0,0,effectSize.width,effectSize.height);
-    
-    CALayer *videoLayer=[CALayer layer];
-    videoLayer.frame=CGRectMake(0,0,effectSize.width,effectSize.height);
+    CGSize videoSizeResult = self.videoComposition.renderSize;
+    CMTime totalDuration = self.composition.duration;
+
+    CAShapeLayer *parentLayer = [CAShapeLayer layer];
+    parentLayer.geometryFlipped = YES;
+    parentLayer.frame = CGRectMake(0, 0, videoSizeResult.width, videoSizeResult.height);
+
+    CALayer *videoLayer = [CALayer layer];
+    videoLayer.frame = CGRectMake(0, 0, videoSizeResult.width, videoSizeResult.height);
     [parentLayer addSublayer:videoLayer];
     
-    //创建水印
-    CALayer *watermarkLayer=[CALayer layer];
-    watermarkLayer.contentsGravity=@"resizeAspect";
-    watermarkLayer.frame = frame;
-    watermarkLayer.contents=(__bridge id _Nullable)image.CGImage;
-    [parentLayer addSublayer:watermarkLayer];
-    
-    //添加水印显示时间段
-    CGFloat endTime= startTime + duration;
-    CGFloat allTime = composition.duration.value/composition.duration.timescale;
-    
-    if (!(startTime <= 0 && endTime >= allTime)) {
-        //水印仅在特定时间显示
-        watermarkLayer.opacity=0;
-        
-        [self addAnimationToWatermarkLayer:watermarkLayer show:YES beginTime:startTime];
-        [self addAnimationToWatermarkLayer:watermarkLayer show:NO beginTime:endTime];
+    VideoThemeModel *themeCurrent = nil;
+    if (self.themeCurrentType != kThemeNone && [[[VideoEffectTheme sharedInstance] getThemesData] count] >= self.themeCurrentType)
+    {
+        themeCurrent = [[[VideoEffectTheme sharedInstance] getThemesData] objectForKey:[NSNumber numberWithInt:self.themeCurrentType]];
     }
     
-    self.videoComposition.animationTool = [AVVideoCompositionCoreAnimationTool
-                                 videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:parentLayer];
+    if (themeCurrent && !kStringIsEmpty(themeCurrent.bgMusicFile))
+    {
+        NSString *fileName = [themeCurrent.bgMusicFile stringByDeletingPathExtension];
+        NSString *fileExt = [themeCurrent.bgMusicFile pathExtension];
+        NSLog(@"fileName = %@, fileExt = %@", fileName, fileExt);
+        NSURL *bgMusicURL = [[NSBundle mainBundle] URLForResource:fileName withExtension:fileExt];
+        AVURLAsset *assetMusic = [[AVURLAsset alloc] initWithURL:bgMusicURL options:nil];
+        [self addAudioMixToComposition:self.composition withAudioMix:self.audioMix withAsset:assetMusic];
+    }
+    
+    NSMutableArray *animatedLayers = [[NSMutableArray alloc] initWithCapacity:[[themeCurrent animationActions] count]];
+    if (themeCurrent && [[themeCurrent animationActions] count]>0)
+    {
+        for (NSNumber *animationAction in [themeCurrent animationActions])
+        {
+            CALayer *animatedLayer = nil;
+            switch ([animationAction intValue])
+            {
+                case kAnimationFireworks:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildEmitterFireworks:videoSizeResult startTime:timeInterval];
+                    if (animatedLayer){
+                        [animatedLayers addObject:[_videoBuilder buildEmitterFireworks:videoSizeResult startTime:timeInterval]];
+                    }
+                }
+                    break;
+                case kAnimationSnow:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildEmitterSnow:videoSizeResult startTime:timeInterval];
+                    if (animatedLayer){
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                }
+                    break;
+                case kAnimationSnow2:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildEmitterSnow2:videoSizeResult startTime:timeInterval];
+                    if (animatedLayer){
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                }
+                    break;
+                case kAnimationHeart:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildEmitterHeart:videoSizeResult startTime:timeInterval];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationRing:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildEmitterRing:videoSizeResult startTime:timeInterval];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationStar:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildEmitterStar:videoSizeResult startTime:timeInterval];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationMoveDot:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildEmitterMoveDot:videoSizeResult position:CGPointMake(160, 240) startTime:timeInterval];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationTextSparkle:
+                {
+                    if (!kStringIsEmpty(themeCurrent.textSparkle))
+                    {
+                        NSTimeInterval startTime = 10;
+                        animatedLayer = [_videoBuilder buildEmitterSparkle:videoSizeResult text:themeCurrent.textSparkle startTime:startTime];
+                        if (animatedLayer)
+                        {
+                            [animatedLayers addObject:(id)animatedLayer];
+                        }
+                    }
+                    
+                    break;
+                }
+                case kAnimationTextStar:
+                {
+                    if (!kStringIsEmpty(themeCurrent.textStar))
+                    {
+                        NSTimeInterval startTime = 0.1;
+                        animatedLayer = [_videoBuilder buildAnimationStarText:videoSizeResult text:themeCurrent.textStar startTime:startTime];
+                        if (animatedLayer)
+                        {
+                            [animatedLayers addObject:(id)animatedLayer];
+                        }
+                    }
+                    
+                    break;
+                }
+                case kAnimationSky:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildEmitterSky:videoSizeResult startTime:timeInterval];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationMeteor:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    for (int i=0; i<2; ++i)
+                    {
+                        animatedLayer = [_videoBuilder buildEmitterMeteor:videoSizeResult startTime:timeInterval pathN:i];
+                        if (animatedLayer)
+                        {
+                            [animatedLayers addObject:(id)animatedLayer];
+                        }
+                    }
+                    break;
+                }
+                case kAnimationRain:
+                {
+                    animatedLayer = [_videoBuilder buildEmitterRain:videoSizeResult];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationFlower:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildEmitterFlower:videoSizeResult startTime:timeInterval];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationFire:
+                {
+                    if (!kStringIsEmpty(themeCurrent.imageFile))
+                    {
+                        UIImage *image = [UIImage imageNamed:themeCurrent.imageFile];
+                        animatedLayer = [_videoBuilder buildEmitterFire:videoSizeResult position:CGPointMake(videoSizeResult.width/2.0, image.size.height+10)];
+                        if (animatedLayer)
+                        {
+                            [animatedLayers addObject:(id)animatedLayer];
+                        }
+                    }
+                    break;
+                }
+                case kAnimationSmoke:
+                {
+                    animatedLayer = [_videoBuilder buildEmitterSmoke:videoSizeResult position:CGPointMake(videoSizeResult.width/2.0, 105)];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationSpark:
+                {
+                    animatedLayer = [_videoBuilder buildEmitterSpark:videoSizeResult];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationBirthday:
+                {
+                    animatedLayer = [_videoBuilder buildEmitterBirthday:videoSizeResult];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationImage:
+                {
+                    if (!kStringIsEmpty(themeCurrent.imageFile))
+                    {
+                        UIImage *image = [UIImage imageNamed:themeCurrent.imageFile];
+                        animatedLayer = [_videoBuilder buildImage:videoSizeResult image:themeCurrent.imageFile position:CGPointMake(videoSizeResult.width/2, image.size.height/2)];
+                        
+                        if (animatedLayer)
+                        {
+                            [animatedLayers addObject:(id)animatedLayer];
+                        }
+                    }
+                    
+                    break;
+                }
+                case kAnimationImageArray:
+                {
+                    if(themeCurrent.animationImages)
+                    {
+                        UIImage *image = [UIImage imageWithCGImage:(CGImageRef)themeCurrent.animationImages[0]];
+                        animatedLayer = [_videoBuilder buildAnimationImages:videoSizeResult imagesArray:themeCurrent.animationImages position:CGPointMake(videoSizeResult.width/2, image.size.height/2)];
+                        
+                        if (animatedLayer)
+                        {
+                            [animatedLayers addObject:(id)animatedLayer];
+                        }
+                    }
+                    
+                    break;
+                }
+                case kAnimationVideoFrame:
+                {
+//                    if (themeCurrent.keyFrameTimes  && [[themeCurrent keyFrameTimes] count]>0)
+//                    {
+//                        for (NSNumber *timeSecond in themeCurrent.keyFrameTimes)
+//                        {
+//                            CMTime time = CMTimeMake([timeSecond doubleValue], 1);
+//                            if (CMTIME_COMPARE_INLINE(totalDuration, >, time))
+//                            {
+//                                animatedLayer = [_videoBuilder buildVideoFrameImage:videoSizeResult videoFile:inputVideoURL startTime:time];
+//                                if (animatedLayer)
+//                                {
+//                                    [animatedLayers addObject:(id)animatedLayer];
+//                                }
+//                            }
+//                        }
+//                    }
+                    
+                    break;
+                }
+                case kAnimationSpotlight:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildSpotlight:videoSizeResult startTime:timeInterval];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationScrollScreen:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildAnimationScrollScreen:videoSizeResult startTime:timeInterval];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationTextScroll:
+                {
+                    if (themeCurrent.scrollText && [[themeCurrent scrollText] count] > 0)
+                    {
+                        NSArray *startYPoints = [NSArray arrayWithObjects:[NSNumber numberWithFloat:videoSizeResult.height/3], [NSNumber numberWithFloat:videoSizeResult.height/2], [NSNumber numberWithFloat:videoSizeResult.height*2/3], nil];
+                        
+                        NSTimeInterval timeInterval = 12.0;
+                        for (NSString *text in themeCurrent.scrollText)
+                        {
+                            animatedLayer = [_videoBuilder buildAnimatedScrollText:videoSizeResult text:text startPoint:CGPointMake(videoSizeResult.width, [startYPoints[arc4random()%(int)3] floatValue]) startTime:timeInterval];
+                            
+                            if (animatedLayer)
+                            {
+                                [animatedLayers addObject:(id)animatedLayer];
+                                
+                                timeInterval += 3.0;
+                            }
+                        }
+                    }
+                    
+                    break;
+                }
+                case kAnimationBlackWhiteDot:
+                {
+                    for (int i=0; i<2; ++i)
+                    {
+                        animatedLayer = [_videoBuilder buildEmitterBlackWhiteDot:videoSizeResult positon:CGPointMake(videoSizeResult.width/2, i*videoSizeResult.height) startTime:2.0f];
+                        if (animatedLayer)
+                        {
+                            [animatedLayers addObject:(id)animatedLayer];
+                        }
+                    }
+                    
+                    break;
+                }
+                case kAnimationScrollLine:
+                {
+                    NSTimeInterval timeInterval = 0.1;
+                    animatedLayer = [_videoBuilder buildAnimatedScrollLine:videoSizeResult startTime:timeInterval lineHeight:30.0f image:nil];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationRipple:
+                {
+                    NSTimeInterval timeInterval = 1.0;
+                    animatedLayer = [_videoBuilder buildAnimationRipple:videoSizeResult centerPoint:CGPointMake(videoSizeResult.width/2, videoSizeResult.height/2) radius:videoSizeResult.width/2 startTime:timeInterval];
+                    
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationSteam:
+                {
+                    animatedLayer = [_videoBuilder buildEmitterSteam:videoSizeResult positon:CGPointMake(videoSizeResult.width/2, videoSizeResult.height - videoSizeResult.height/8)];
+                    if (animatedLayer)
+                    {
+                        [animatedLayers addObject:(id)animatedLayer];
+                    }
+                    
+                    break;
+                }
+                case kAnimationTextGradient:
+                {
+                    if (!kStringIsEmpty(themeCurrent.textGradient))
+                    {
+                        NSTimeInterval timeInterval = 3.0;
+                        animatedLayer = [_videoBuilder buildGradientText:videoSizeResult positon:CGPointMake(videoSizeResult.width/2, videoSizeResult.height - videoSizeResult.height/4) text:themeCurrent.textGradient startTime:timeInterval];
+                        if (animatedLayer)
+                        {
+                            [animatedLayers addObject:(id)animatedLayer];
+                        }
+                    }
+                    
+                    break;
+                }
+                case kAnimationFlashScreen:
+                {
+                    for (int timeSecond=2; timeSecond<12; timeSecond+=3)
+                    {
+                        CMTime time = CMTimeMake(timeSecond, 1);
+                        if (CMTIME_COMPARE_INLINE(totalDuration, >, time))
+                        {
+                            animatedLayer = [_videoBuilder buildAnimationFlashScreen:videoSizeResult startTime:timeSecond startOpacity:TRUE];
+                            if (animatedLayer)
+                            {
+                                [animatedLayers addObject:(id)animatedLayer];
+                            }
+                        }
+                    }
+                    
+                    break;
+                }
+                case kAnimationPhotoLinearScroll:
+                {
+//                    NSTimeInterval startTime = 3;
+//                    animatedLayer = [_videoBuilder buildAnimatedPhotoLinearScroll:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    break;
+                }
+                case KAnimationPhotoCentringShow:
+                {
+//                    NSTimeInterval startTime = 10;
+//                    animatedLayer = [_videoBuilder buildAnimatedPhotoCentringShow:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    
+                    break;
+                }
+                case kAnimationPhotoDrop:
+                {
+//                    NSTimeInterval startTime = 1;
+//                    animatedLayer = [_videoBuilder buildAnimatedPhotoDrop:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    
+                    break;
+                }
+                case kAnimationPhotoParabola:
+                {
+//                    NSTimeInterval startTime = 1;
+//                    animatedLayer = [_videoBuilder buildAnimatedPhotoParabola:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    
+                    break;
+                }
+                case kAnimationPhotoFlare:
+                {
+//                    NSTimeInterval startTime = 1;
+//                    animatedLayer = [_videoBuilder buildAnimatedPhotoFlare:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    
+                    break;
+                }
+                case kAnimationPhotoEmitter:
+                {
+//                    NSTimeInterval startTime = 1;
+//                    animatedLayer = [_videoBuilder BuildAnimationPhotoEmitter:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    
+                    break;
+                }
+                case kAnimationPhotoExplode:
+                {
+//                    NSTimeInterval startTime = 1;
+//                    animatedLayer = [_videoBuilder buildAnimatedPhotoExplode:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    
+                    break;
+                }
+                case kAnimationPhotoExplodeDrop:
+                {
+//                    NSTimeInterval startTime = 0.1;
+//                    animatedLayer = [_videoBuilder buildAnimatedPhotoExplodeDrop:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    
+                    break;
+                }
+                case kAnimationPhotoCloud:
+                {
+//                    NSTimeInterval startTime = 0.1;
+//                    animatedLayer = [_videoBuilder buildAnimatedPhotoCloud:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    break;
+                }
+                case kAnimationPhotoSpin360:
+                {
+//                    NSTimeInterval startTime = 0.1;
+//                    animatedLayer = [_videoBuilder buildAnimatedPhotoSpin360:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    break;
+                }
+                case kAnimationPhotoCarousel:
+                {
+//                    NSTimeInterval startTime = 0.1;
+//                    animatedLayer = [_videoBuilder buildAnimatedPhotoCarousel:videoSizeResult photos:photos startTime:startTime];
+//                    if (animatedLayer)
+//                    {
+//                        [animatedLayers addObject:(id)animatedLayer];
+//                    }
+                    
+                    break;
+                }
+                case kAnimationVideoBorder:
+                {
+                    if (!kStringIsEmpty(themeCurrent.imageVideoBorder))
+                    {
+                        animatedLayer = [_videoBuilder BuildVideoBorderImage:videoSizeResult borderImage:themeCurrent.imageVideoBorder position:CGPointMake(videoSizeResult.width/2, videoSizeResult.height/2)];
+                        
+                        if (animatedLayer)
+                        {
+                            [animatedLayers addObject:(id)animatedLayer];
+                        }
+                    }
+                    break;
+                }
+                default:
+                    break;
+            }
+        }
+        
+        if (animatedLayers && [animatedLayers count] > 0)
+        {
+            for (CALayer *animatedLayer in animatedLayers)
+            {
+                [parentLayer addSublayer:animatedLayer];
+            }
+        }
+    }
+    self.videoComposition.animationTool = [AVVideoCompositionCoreAnimationTool videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:parentLayer];
     
 }
 
@@ -415,46 +916,42 @@
     [exportSession exportAsynchronouslyWithCompletionHandler:^(void){
         kStrongSelf(self)
         [[UIApplication sharedApplication] delegate].window.userInteractionEnabled = YES;
-        switch (exportSession.status) {
-            case AVAssetExportSessionStatusCompleted:
-            {
-                //导出成功
-                if (isSave == YES) {
-                    // 保存到相册
-                    [self writeVideoToPhotoLibrary:[NSURL fileURLWithPath:outputURL]];
-                }
-                Run_Main(^{
+        Run_Main(^{
+            switch (exportSession.status) {
+                case AVAssetExportSessionStatusCompleted:
+                {
+                    //导出成功
+                    if (isSave == YES) {
+                        // 保存到相册
+                        [self writeVideoToPhotoLibrary:[NSURL fileURLWithPath:outputURL]];
+                    }
                     [self.timerEffect invalidate];
                     self.timerEffect = nil;
                     kSafeRun_Block(block, outputURL, YES);
-                });
-            }
-                break;
-            case AVAssetExportSessionStatusFailed:
-            {
-                //导出失败
-                Run_Main(^{
+                }
+                    break;
+                case AVAssetExportSessionStatusFailed:
+                {
+                    //导出失败
                     NSLog(@"视频压缩导出失败error:%@",exportSession.error);
                     kSafeRun_Block(block, nil, NO);
                     [self.timerEffect invalidate];
                     self.timerEffect = nil;
-                });
-            }
-                break;
-            case AVAssetExportSessionStatusCancelled:
-            {
-                //导出取消
-                Run_Main(^{
+                }
+                    break;
+                case AVAssetExportSessionStatusCancelled:
+                {
+                    //导出取消
                     NSLog(@"视频压缩导出失败error:%@",exportSession.error);
                     kSafeRun_Block(block, nil, NO);
                     [self.timerEffect invalidate];
                     self.timerEffect = nil;
-                });
+                }
+                    break;
+                default:
+                    break;
             }
-                break;
-            default:
-                break;
-        }
+        });
     }];
 }
 #pragma mark - 根据视频url地址将其保存到本地照片库

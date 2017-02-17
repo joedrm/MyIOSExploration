@@ -85,6 +85,7 @@
  http://v.youku.com/v_show/id_XNDUyMjI3MTY0.html 斯坦福ios教程 Introduction to AVFoundation
  http://www.ishare5.com/10076923/
  
+ https://github.com/hagaiw/AVVideoCompositionOptimizationRadar  使用滤镜来编辑视频
  
  https://github.com/loyinglin/LearnAVFoundation 
  
@@ -96,6 +97,13 @@
  开源框架：
  https://github.com/vimeo/VIMVideoPlayer
  https://github.com/mobileplayer/mobileplayer-ios
+ 
+ 开源APP
+ https://github.com/Onix-Systems/ios-video-maker  一个上线的图片、视频编辑的APP，强烈推荐
+ https://github.com/SinglTown/HappyMovie
+ https://github.com/SYH07088/DBMovie
+ https://github.com/xujingzhou/FunVideo
+ https://github.com/xujingzhou/CustomVideo
  */
 
 

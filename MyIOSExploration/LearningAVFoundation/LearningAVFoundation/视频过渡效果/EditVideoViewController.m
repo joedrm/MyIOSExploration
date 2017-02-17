@@ -6,6 +6,7 @@
 //  Copyright © 2017年 wdy. All rights reserved.
 /*
  https://github.com/jiang6777/Video_Edit  视频合并，编辑，裁剪，添加水印，添加背景音乐
+ https://github.com/MuFengYi/MovieMergeAddEffect  添加视频特效
  
  */
 
@@ -14,9 +15,7 @@
 #import "VideoMaker.h"
 #import <WDYBaseProject/UIImage+SubImage.h>
 
-#import "VideoEffect.h"
-#import "VideoThemes.h"
-#import "VideoThemesData.h"
+
 #import "VideoBuilder.h"
 #import "PBJVideoPlayerController.h"
 #import "CDPVideoEditor.h"
@@ -174,12 +173,20 @@
     self.editor.clips = validClips;
     self.editor.clipTimeRanges = validClipTimeRanges;
     self.editor.transitionDuration = CMTimeMakeWithSeconds(1.0, 600);
+    
+    
+//    NSArray *aniArray = [[VideoEffectTheme sharedInstance] getRandomAnimation];
+//    [[[VideoEffectTheme sharedInstance] getThemeByType:kThemeButterfly] setAnimationActions:aniArray];
+//    NSString *videoBorder = [[VideoEffectTheme sharedInstance] getVideoBorderByIndex:2];
+//    [[[VideoEffectTheme sharedInstance] getThemeByType:kThemeButterfly] setImageVideoBorder:videoBorder];
+    self.editor.themeCurrentType = kThemeButterfly;
+
     self.editor.transitionType = (VideoTransitionType*)malloc(sizeof(int) * self.editor.clips.count);
     for (int i = 0; i < self.editor.clips.count; i ++) {
         self.editor.transitionType[i] = [self getRandomNumber:VideoTransitionTypeFadeIn to:VideoTransitionTypeWipe];
     }
     [self.editor buildCompositionObjectsForPlayback];
-    [self.editor addVoiceEffectsWithAudioPath:@"The Day You Went Away"];
+    [self.editor applyVideoEffects];
     [TipsView showLoading:@"制作中..."];
     [self.editor exportSaveToLibrary:NO exportSuccessed:^(NSString* pathStr,BOOL isExportSuccessed) {
         NSLog(@"isExportSuccessed = %@ pathStr = %@", @(isExportSuccessed), pathStr);
@@ -189,7 +196,6 @@
             [self.videoPlayerController playFromBeginning];
         }
     }];
-    
 }
 
 #pragma mark - ExportProgressDelegate
@@ -270,8 +276,9 @@
         self.editor.transitionType[i] = [self getRandomNumber:VideoTransitionTypeFadeIn to:VideoTransitionTypeWipe];
     }
     [TipsView showLoading:@"制作中..."];
+    self.editor.themeCurrentType = kThemeCustom;
     [self.editor buildCompositionObjectsForPlayback];
-    [self.editor addVoiceEffectsWithAudioPath:@"Big Big World"];
+    [self.editor applyVideoEffects];
     [self.editor exportSaveToLibrary:NO exportSuccessed:^(NSString* pathStr,BOOL isExportSuccessed) {
         [TipsView hideToastView];
         NSLog(@"isExportSuccessed = %@ pathStr = %@", @(isExportSuccessed), pathStr);

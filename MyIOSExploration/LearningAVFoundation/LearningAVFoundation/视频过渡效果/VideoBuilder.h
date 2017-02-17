@@ -1,9 +1,9 @@
 //
-//  VideoBuilder
-//  CustomBeauty
+//  VideoBuilder.h
+//  LearningAVFoundation
 //
-//  Created by Johnny Xu(徐景周) on 7/23/14.
-//  Copyright (c) 2014 Future Studio. All rights reserved.
+//  Created by fang wang on 17/2/17.
+//  Copyright © 2017年 wdy. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -24,35 +24,35 @@ typedef enum tagEffectDirection
 
 typedef enum
 {
-	TransitionTypeNone,
-	TransitionTypeCrossFade,
-	TransitionTypePush
+    TransitionTypeNone,
+    TransitionTypeCrossFade,
+    TransitionTypePush
 }VideoBuilderTransitionType;
 
 
-@interface VideoBuilder : NSObject 
-{	
-	// Configuration
-	
-	NSArray *_clips;			// array of AVURLAssets
-	NSArray *_clipTimeRanges;	// array of CMTimeRanges stored in NSValues.
-	
-	AVURLAsset *_commentary;
-	CMTime _commentaryStartTime;
-	
-	VideoBuilderTransitionType _transitionType;
-	CMTime _transitionDuration;
-	
-	NSString *_titleText;
-	
-	
-	// Composition objects.
-	AVComposition *_composition;
-	AVVideoComposition *_videoComposition;
-	AVAudioMix *_audioMix;
-	
-	AVPlayerItem *_playerItem;
-	AVSynchronizedLayer *_synchronizedLayer;
+@interface VideoBuilder : NSObject
+{
+    // Configuration
+    
+    NSArray *_clips;			// array of AVURLAssets
+    NSArray *_clipTimeRanges;	// array of CMTimeRanges stored in NSValues.
+    
+    AVURLAsset *_commentary;
+    CMTime _commentaryStartTime;
+    
+    VideoBuilderTransitionType _transitionType;
+    CMTime _transitionDuration;
+    
+    NSString *_titleText;
+    
+    
+    // Composition objects.
+    AVComposition *_composition;
+    AVVideoComposition *_videoComposition;
+    AVAudioMix *_audioMix;
+    
+    AVPlayerItem *_playerItem;
+    AVSynchronizedLayer *_synchronizedLayer;
 }
 
 // Set these properties before building the composition objects.
@@ -118,7 +118,7 @@ typedef enum
 - (void)addCommentaryTrackToComposition:(AVMutableComposition *)composition withAudioMix:(AVMutableAudioMix *)audioMix;
 
 
-// Build the composition, videoComposition, and audioMix. 
+// Build the composition, videoComposition, and audioMix.
 // If the composition is being built for playback then a synchronized layer and player item are also constructed.
 // All of these objects can be retrieved all of these objects with the accessors below.
 // Calling buildCompositionObjectsForPlayback: will get rid of any previously created composition objects.
@@ -130,5 +130,4 @@ typedef enum
 
 - (AVAssetImageGenerator*)assetImageGenerator;
 - (AVAssetExportSession*)assetExportSessionWithPreset:(NSString*)presetName;
-
 @end

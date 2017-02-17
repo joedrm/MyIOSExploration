@@ -1,17 +1,24 @@
 //
-//  VideoBuilder
-//  CustomBeauty
+//  VideoBuilder.m
+//  LearningAVFoundation
 //
-//  Created by Johnny Xu(徐景周) on 7/23/14.
-//  Copyright (c) 2014 Future Studio. All rights reserved.
+//  Created by fang wang on 17/2/17.
+//  Copyright © 2017年 wdy. All rights reserved.
 //
 
 #import "VideoBuilder.h"
 #import <CoreText/CoreText.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-#import "Common.h"
 #import "CurledViewBase.h"
 #import "UIImage+Reflection.h"
+
+#define LightBlue [UIColor colorWithRed:155/255.0f green:188/255.0f blue:220/255.0f alpha:1]
+#define BrightBlue [UIColor colorWithRed:100/255.0f green:100/255.0f blue:230/255.0f alpha:1]
+#define iOS8 ((([[UIDevice currentDevice].systemVersion intValue] >= 8) && ([[UIDevice currentDevice].systemVersion intValue] < 9)) ? YES : NO )
+#define iOS7 ((([[UIDevice currentDevice].systemVersion intValue] >= 7) && ([[UIDevice currentDevice].systemVersion intValue] < 8)) ? YES : NO )
+#define iOS6 ((([[UIDevice currentDevice].systemVersion intValue] >= 6) && ([[UIDevice currentDevice].systemVersion intValue] < 7)) ? YES : NO )
+#define iOS5 ((([[UIDevice currentDevice].systemVersion intValue] >= 5) && ([[UIDevice currentDevice].systemVersion intValue] < 6)) ? YES : NO )
+
 
 NSString * const kStrokeAnimation = @"StrokeAnimation";
 NSString * const kEmitterAnimation = @"EmitterAnimation";
@@ -150,154 +157,154 @@ NSString * const kSmokeCellKey = @"SmokeCell";
 #pragma mark - Initialize
 - (id)init
 {
-	if (self = [super init])
+    if (self = [super init])
     {
-		_commentaryStartTime = CMTimeMake(0, 1); // Default start time for the commentary is 0 seconds.
-		
-		_transitionDuration = CMTimeMake(1, 1); // Default transition duration is one second.
-		
-		// just until we have the UI for this wired up
-		NSMutableArray *clipTimeRanges = [[NSMutableArray alloc] initWithCapacity:3];
-		CMTimeRange defaultTimeRange = CMTimeRangeMake(kCMTimeZero, CMTimeMake(5, 1));
-		NSValue *defaultTimeRangeValue = [NSValue valueWithCMTimeRange:defaultTimeRange];
-		[clipTimeRanges addObject:defaultTimeRangeValue];
-		[clipTimeRanges addObject:defaultTimeRangeValue];
-		[clipTimeRanges addObject:defaultTimeRangeValue];
-		_clipTimeRanges = clipTimeRanges;
+        _commentaryStartTime = CMTimeMake(0, 1); // Default start time for the commentary is 0 seconds.
+        
+        _transitionDuration = CMTimeMake(1, 1); // Default transition duration is one second.
+        
+        // just until we have the UI for this wired up
+        NSMutableArray *clipTimeRanges = [[NSMutableArray alloc] initWithCapacity:3];
+        CMTimeRange defaultTimeRange = CMTimeRangeMake(kCMTimeZero, CMTimeMake(5, 1));
+        NSValue *defaultTimeRangeValue = [NSValue valueWithCMTimeRange:defaultTimeRange];
+        [clipTimeRanges addObject:defaultTimeRangeValue];
+        [clipTimeRanges addObject:defaultTimeRangeValue];
+        [clipTimeRanges addObject:defaultTimeRangeValue];
+        _clipTimeRanges = clipTimeRanges;
         
         _thumbnailPhotoSize = CGSizeMake(160, 160);
-	}
+    }
     
-	return self;
+    return self;
 }
 
 #pragma mark - BuildEmitterRing
 static CGImageRef createStarImage(CGFloat radius)
 {
-	int i, count = 5;
+    int i, count = 5;
     
 #if TARGET_OS_IPHONE
-	CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
 #else // not TARGET_OS_IPHONE
-	CGColorSpaceRef colorspace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
+    CGColorSpaceRef colorspace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
 #endif // not TARGET_OS_IPHONE
     
-	CGImageRef image = NULL;
-	size_t width = 2*radius;
-	size_t height = 2*radius;
-	size_t bytesperrow = width * 4;
-	CGContextRef context = CGBitmapContextCreate((void *)NULL, width, height, 8, bytesperrow, colorspace, kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst);
-	CGContextClearRect(context, CGRectMake(0, 0, 2*radius, 2*radius));
-	CGContextSetLineWidth(context, radius / 15.0);
-	
-	for( i = 0; i < 2 * count; i++ )
-    {
-		CGFloat angle = i * M_PI / count;
-		CGFloat pointradius = (i % 2) ? radius * 0.37 : radius * 0.95;
-		CGFloat x = radius + pointradius * cos(angle);
-		CGFloat y = radius + pointradius * sin(angle);
-		if (i == 0)
-			CGContextMoveToPoint(context, x, y);
-		else
-			CGContextAddLineToPoint(context, x, y);
-	}
-	CGContextClosePath(context);
-	
-	CGContextSetRGBFillColor(context, 1.0, 1.0, 1.0, 1.0);
-	CGContextSetRGBStrokeColor(context, 0.0, 0.0, 0.0, 1.0);
-	CGContextDrawPath(context, kCGPathFillStroke);
-	CGColorSpaceRelease(colorspace);
-	image = CGBitmapContextCreateImage(context);
-	CGContextRelease(context);
+    CGImageRef image = NULL;
+    size_t width = 2*radius;
+    size_t height = 2*radius;
+    size_t bytesperrow = width * 4;
+    CGContextRef context = CGBitmapContextCreate((void *)NULL, width, height, 8, bytesperrow, colorspace, kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst);
+    CGContextClearRect(context, CGRectMake(0, 0, 2*radius, 2*radius));
+    CGContextSetLineWidth(context, radius / 15.0);
     
-	return image;
+    for( i = 0; i < 2 * count; i++ )
+    {
+        CGFloat angle = i * M_PI / count;
+        CGFloat pointradius = (i % 2) ? radius * 0.37 : radius * 0.95;
+        CGFloat x = radius + pointradius * cos(angle);
+        CGFloat y = radius + pointradius * sin(angle);
+        if (i == 0)
+            CGContextMoveToPoint(context, x, y);
+        else
+            CGContextAddLineToPoint(context, x, y);
+    }
+    CGContextClosePath(context);
+    
+    CGContextSetRGBFillColor(context, 1.0, 1.0, 1.0, 1.0);
+    CGContextSetRGBStrokeColor(context, 0.0, 0.0, 0.0, 1.0);
+    CGContextDrawPath(context, kCGPathFillStroke);
+    CGColorSpaceRelease(colorspace);
+    image = CGBitmapContextCreateImage(context);
+    CGContextRelease(context);
+    
+    return image;
 }
 
 - (CAEmitterLayer*) buildEmitterRing:(CGSize)viewBounds startTime:(NSTimeInterval)startTime
 {
     // Create the emitter layer
-	CAEmitterLayer *ringEmitter = [CAEmitterLayer layer];
-	
-	// Cells spawn in a 50pt circle around the position
-	ringEmitter.emitterPosition = CGPointMake(arc4random()%(int)viewBounds.width, arc4random()%(int)viewBounds.height);
-	ringEmitter.emitterSize	= CGSizeMake(50, 0);
-	ringEmitter.emitterMode	= kCAEmitterLayerOutline;
-	ringEmitter.emitterShape = kCAEmitterLayerCircle;
-	ringEmitter.renderMode = kCAEmitterLayerBackToFront;
+    CAEmitterLayer *ringEmitter = [CAEmitterLayer layer];
+    
+    // Cells spawn in a 50pt circle around the position
+    ringEmitter.emitterPosition = CGPointMake(arc4random()%(int)viewBounds.width, arc4random()%(int)viewBounds.height);
+    ringEmitter.emitterSize	= CGSizeMake(50, 0);
+    ringEmitter.emitterMode	= kCAEmitterLayerOutline;
+    ringEmitter.emitterShape = kCAEmitterLayerCircle;
+    ringEmitter.renderMode = kCAEmitterLayerBackToFront;
     ringEmitter.beginTime = startTime;
     
-	// Create the fire emitter cell
-	CAEmitterCell* ring = [CAEmitterCell emitterCell];
-	[ring setName:@"ring"];
-	
-	ring.birthRate			= 5;
-	ring.velocity			= 250;
-	ring.scale				= 0.5;
-	ring.scaleSpeed			=-0.2;
-	ring.greenSpeed			=-0.2;	// shifting to green
-	ring.redSpeed			=-0.5;
-	ring.blueSpeed			=-0.5;
-	ring.lifetime			= 2;
-	
-	ring.color = [[UIColor whiteColor] CGColor];
-	ring.contents = (id) [[UIImage imageNamed:@"DazTriangle"] CGImage];
-	
+    // Create the fire emitter cell
+    CAEmitterCell* ring = [CAEmitterCell emitterCell];
+    [ring setName:@"ring"];
     
-	CAEmitterCell* circle = [CAEmitterCell emitterCell];
-	[circle setName:@"circle"];
-	
-	circle.birthRate		= 5;			// every triangle creates
-	circle.emissionLongitude = M_PI * 0.5;	// sideways to triangle vector
-	circle.velocity			= 50;
-	circle.scale			= 0.5;
-	circle.scaleSpeed		=-0.2;
-	circle.greenSpeed		=-0.1;
-	circle.redSpeed			=-0.2;
-	circle.blueSpeed		= 0.1;
-	circle.alphaSpeed		=-0.2;
-	circle.lifetime			= 4;
-	
-	circle.color = [[UIColor whiteColor] CGColor];
-	circle.contents = (id) [[UIImage imageNamed:@"DazRing"] CGImage];
+    ring.birthRate			= 5;
+    ring.velocity			= 250;
+    ring.scale				= 0.5;
+    ring.scaleSpeed			=-0.2;
+    ring.greenSpeed			=-0.2;	// shifting to green
+    ring.redSpeed			=-0.5;
+    ring.blueSpeed			=-0.5;
+    ring.lifetime			= 2;
+    
+    ring.color = [[UIColor whiteColor] CGColor];
+    ring.contents = (id) [[UIImage imageNamed:@"DazTriangle"] CGImage];
     
     
-	CAEmitterCell* star = [CAEmitterCell emitterCell];
-	[star setName:@"star"];
-	
-	star.birthRate		= 5;	// every triangle creates
-	star.velocity		= 100;
-	star.zAcceleration  = -1;
-	star.emissionLongitude = -M_PI;	// back from triangle vector
-	star.scale			= 0.5;
-	star.scaleSpeed		=-0.2;
-	star.greenSpeed		=-0.1;
-	star.redSpeed		= 0.4;	// shifting to red
-	star.blueSpeed		=-0.1;
-	star.alphaSpeed		=-0.2;
-	star.lifetime		= 2;
-	
-	star.color = [[UIColor whiteColor] CGColor];
-	star.contents = (id) [[UIImage imageNamed:@"DazStarOutline"] CGImage];
-	
-	// First traigles are emitted, which then spawn circles and star along their path
-	ringEmitter.emitterCells = [NSArray arrayWithObject:ring];
-	ring.emitterCells = [NSArray arrayWithObjects:circle, star, nil];
+    CAEmitterCell* circle = [CAEmitterCell emitterCell];
+    [circle setName:@"circle"];
+    
+    circle.birthRate		= 5;			// every triangle creates
+    circle.emissionLongitude = M_PI * 0.5;	// sideways to triangle vector
+    circle.velocity			= 50;
+    circle.scale			= 0.5;
+    circle.scaleSpeed		=-0.2;
+    circle.greenSpeed		=-0.1;
+    circle.redSpeed			=-0.2;
+    circle.blueSpeed		= 0.1;
+    circle.alphaSpeed		=-0.2;
+    circle.lifetime			= 4;
+    
+    circle.color = [[UIColor whiteColor] CGColor];
+    circle.contents = (id) [[UIImage imageNamed:@"DazRing"] CGImage];
+    
+    
+    CAEmitterCell* star = [CAEmitterCell emitterCell];
+    [star setName:@"star"];
+    
+    star.birthRate		= 5;	// every triangle creates
+    star.velocity		= 100;
+    star.zAcceleration  = -1;
+    star.emissionLongitude = -M_PI;	// back from triangle vector
+    star.scale			= 0.5;
+    star.scaleSpeed		=-0.2;
+    star.greenSpeed		=-0.1;
+    star.redSpeed		= 0.4;	// shifting to red
+    star.blueSpeed		=-0.1;
+    star.alphaSpeed		=-0.2;
+    star.lifetime		= 2;
+    
+    star.color = [[UIColor whiteColor] CGColor];
+    star.contents = (id) [[UIImage imageNamed:@"DazStarOutline"] CGImage];
+    
+    // First traigles are emitted, which then spawn circles and star along their path
+    ringEmitter.emitterCells = [NSArray arrayWithObject:ring];
+    ring.emitterCells = [NSArray arrayWithObjects:circle, star, nil];
     
     
     CABasicAnimation *burst = [CABasicAnimation animationWithKeyPath:@"emitterCells.ring.birthRate"];
-	burst.fromValue			= [NSNumber numberWithFloat: 100.0];	// short but intense burst
-	burst.toValue			= [NSNumber numberWithFloat: 0.0];		// each birth creates 20 aditional cells!
-	burst.duration			= 0.5;
-	burst.timingFunction	= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    burst.fromValue			= [NSNumber numberWithFloat: 100.0];	// short but intense burst
+    burst.toValue			= [NSNumber numberWithFloat: 0.0];		// each birth creates 20 aditional cells!
+    burst.duration			= 0.5;
+    burst.timingFunction	= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     burst.repeatCount = 5;
-	
-	[ringEmitter addAnimation:burst forKey:@"burst"];
     
-	// Move to point
-//	[CATransaction begin];
-//	[CATransaction setDisableActions: YES];
-//	ringEmitter.emitterPosition	= CGPointMake(viewBounds.width/2, viewBounds.height/2);
-//	[CATransaction commit];
+    [ringEmitter addAnimation:burst forKey:@"burst"];
+    
+    // Move to point
+    //	[CATransaction begin];
+    //	[CATransaction setDisableActions: YES];
+    //	ringEmitter.emitterPosition	= CGPointMake(viewBounds.width/2, viewBounds.height/2);
+    //	[CATransaction commit];
     
     return ringEmitter;
 }
@@ -306,40 +313,40 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CAEmitterLayer*) buildEmitterSnow:(CGSize)viewBounds startTime:(NSTimeInterval)startTime
 {
     // Configure the particle emitter to the top edge of the screen
-	CAEmitterLayer *snowEmitter = [CAEmitterLayer layer];
-	snowEmitter.emitterPosition = CGPointMake(viewBounds.width / 2.0, viewBounds.height);
-	snowEmitter.emitterSize		= CGSizeMake(viewBounds.width * 2.0, 0.0);
+    CAEmitterLayer *snowEmitter = [CAEmitterLayer layer];
+    snowEmitter.emitterPosition = CGPointMake(viewBounds.width / 2.0, viewBounds.height);
+    snowEmitter.emitterSize		= CGSizeMake(viewBounds.width * 2.0, 0.0);
     snowEmitter.beginTime = startTime;
-	
-	// Spawn points for the flakes are within on the outline of the line
-	snowEmitter.emitterMode		= kCAEmitterLayerOutline;
-	snowEmitter.emitterShape	= kCAEmitterLayerLine;
-	
-	// Configure the snowflake emitter cell
-	CAEmitterCell *snowflake = [CAEmitterCell emitterCell];
-	
-	snowflake.birthRate		= 1.0;
-	snowflake.lifetime		= 60.0;
-	
-	snowflake.velocity		= 10;				// falling down slowly
-	snowflake.velocityRange = 10;
-	snowflake.yAcceleration = -30;
-	snowflake.emissionRange = 0.5 * M_PI;		// some variation in angle
-	snowflake.spinRange		= 0.25 * M_PI;		// slow spin
-	
-	snowflake.contents		= (id) [[UIImage imageNamed:@"DazFlake"] CGImage];
-	snowflake.color			= [[UIColor colorWithRed:0.600 green:0.658 blue:0.743 alpha:1.000] CGColor];
     
-	// Make the flakes seem inset in the background
-	snowEmitter.shadowOpacity = 1.0;
-	snowEmitter.shadowRadius  = 0.0;
-	snowEmitter.shadowOffset  = CGSizeMake(0.0, 1.0);
-	snowEmitter.shadowColor   = [[UIColor whiteColor] CGColor];
-	
-	// Add everything to our backing layer below the UIContol defined in the storyboard
-	snowEmitter.emitterCells = [NSArray arrayWithObject:snowflake];
+    // Spawn points for the flakes are within on the outline of the line
+    snowEmitter.emitterMode		= kCAEmitterLayerOutline;
+    snowEmitter.emitterShape	= kCAEmitterLayerLine;
     
-	return snowEmitter;
+    // Configure the snowflake emitter cell
+    CAEmitterCell *snowflake = [CAEmitterCell emitterCell];
+    
+    snowflake.birthRate		= 1.0;
+    snowflake.lifetime		= 60.0;
+    
+    snowflake.velocity		= 10;				// falling down slowly
+    snowflake.velocityRange = 10;
+    snowflake.yAcceleration = -30;
+    snowflake.emissionRange = 0.5 * M_PI;		// some variation in angle
+    snowflake.spinRange		= 0.25 * M_PI;		// slow spin
+    
+    snowflake.contents		= (id) [[UIImage imageNamed:@"DazFlake"] CGImage];
+    snowflake.color			= [[UIColor colorWithRed:0.600 green:0.658 blue:0.743 alpha:1.000] CGColor];
+    
+    // Make the flakes seem inset in the background
+    snowEmitter.shadowOpacity = 1.0;
+    snowEmitter.shadowRadius  = 0.0;
+    snowEmitter.shadowOffset  = CGSizeMake(0.0, 1.0);
+    snowEmitter.shadowColor   = [[UIColor whiteColor] CGColor];
+    
+    // Add everything to our backing layer below the UIContol defined in the storyboard
+    snowEmitter.emitterCells = [NSArray arrayWithObject:snowflake];
+    
+    return snowEmitter;
 }
 
 // Snow effect 2
@@ -351,19 +358,19 @@ static CGImageRef createStarImage(CGFloat radius)
     
     // Spawn points for the flakes are within on the outline of the line
     parentLayer.emitterMode	= kCAEmitterLayerOutline;
-	parentLayer.emitterShape = kCAEmitterLayerLine;
+    parentLayer.emitterShape = kCAEmitterLayerLine;
     parentLayer.beginTime = startTime;
     
     parentLayer.shadowOpacity = 1.0;
-	parentLayer.shadowRadius  = 0.0;
-	parentLayer.shadowOffset  = CGSizeMake(0.0, 1.0);
-	parentLayer.shadowColor   = [[UIColor whiteColor] CGColor];
+    parentLayer.shadowRadius  = 0.0;
+    parentLayer.shadowOffset  = CGSizeMake(0.0, 1.0);
+    parentLayer.shadowColor   = [[UIColor whiteColor] CGColor];
     parentLayer.seed = (arc4random()%100)+1;
     
     CAEmitterCell* containerLayer = [CAEmitterCell emitterCell];
-	containerLayer.birthRate = 3;
-	containerLayer.velocity	= -1;
-	containerLayer.lifetime	= 0.4;
+    containerLayer.birthRate = 3;
+    containerLayer.velocity	= -1;
+    containerLayer.lifetime	= 0.4;
     containerLayer.name = @"containerLayer";
     
     NSMutableArray *snowArray = [NSMutableArray array];
@@ -389,10 +396,10 @@ static CGImageRef createStarImage(CGFloat radius)
     
     cellLayer.birthRate		= 1;
     cellLayer.lifetime		= 20;
-	
-	cellLayer.velocity		= -100;				// falling down slowly
-	cellLayer.velocityRange = 0;
-	cellLayer.yAcceleration = 2;
+    
+    cellLayer.velocity		= -100;				// falling down slowly
+    cellLayer.velocityRange = 0;
+    cellLayer.yAcceleration = 2;
     cellLayer.emissionRange = 0.5 * M_PI;		// some variation in angle
     cellLayer.spinRange		= 0.5 * M_PI;		// slow spin
     cellLayer.scale = 0.2;
@@ -411,13 +418,13 @@ static CGImageRef createStarImage(CGFloat radius)
     Dots.lifetime = 0.5;
     Dots.scale = 0.3;
     Dots.scaleRange = 0.3;
-	Dots.scaleSpeed = -0.25;
+    Dots.scaleSpeed = -0.25;
     
     Dots.spin = 0.384;
-	Dots.spinRange = 0.925;
-	Dots.emissionLatitude = 1.745;
-	Dots.emissionLongitude = 1.745;
-	Dots.emissionRange = 3.491;
+    Dots.spinRange = 0.925;
+    Dots.emissionLatitude = 1.745;
+    Dots.emissionLongitude = 1.745;
+    Dots.emissionRange = 3.491;
     
     UIImage *image = [UIImage imageNamed:@"dot"];
     if (isBlack)
@@ -431,9 +438,9 @@ static CGImageRef createStarImage(CGFloat radius)
     Dots.contents = (id)[image CGImage];
     
     Dots.contentsRect = CGRectMake(0.00, 0.00, 1.00, 1.00);
-	Dots.magnificationFilter = kCAFilterTrilinear;
-	Dots.minificationFilter = kCAFilterLinear;
-
+    Dots.magnificationFilter = kCAFilterTrilinear;
+    Dots.minificationFilter = kCAFilterLinear;
+    
     return Dots;
 }
 
@@ -446,12 +453,12 @@ static CGImageRef createStarImage(CGFloat radius)
     dotsEmitter.emitterShape = kCAEmitterLayerCircle;
     dotsEmitter.emitterMode = kCAEmitterLayerSurface;
     dotsEmitter.beginTime = startTime;
-
+    
     CAEmitterCell* blackDots = [self createBlackWhiteDots:TRUE];
     CAEmitterCell* whiteDots = [self createBlackWhiteDots:FALSE];
     
     dotsEmitter.emitterCells = [NSArray arrayWithObjects:blackDots, whiteDots, nil];
-
+    
     return dotsEmitter;
 }
 
@@ -474,15 +481,15 @@ static CGImageRef createStarImage(CGFloat radius)
     dots.lifetimeRange = 0.5;
     
     dots.color = [[UIColor colorWithRed:0.8 green:0.6 blue:0.70 alpha:0.6] CGColor];
-	dots.redRange = 0.9;
-	dots.greenRange = 0.8;
-	dots.blueRange = 0.7;
-	dots.alphaRange = 0.8;
+    dots.redRange = 0.9;
+    dots.greenRange = 0.8;
+    dots.blueRange = 0.7;
+    dots.alphaRange = 0.8;
     
-	dots.redSpeed = 0.92;
-	dots.greenSpeed = 0.84;
-	dots.blueSpeed = 0.74;
-	dots.alphaSpeed = 0.55;
+    dots.redSpeed = 0.92;
+    dots.greenSpeed = 0.84;
+    dots.blueSpeed = 0.74;
+    dots.alphaSpeed = 0.55;
     
     dots.contents = (id)[[UIImage imageNamed:@"spark"] CGImage];
     
@@ -516,63 +523,63 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CAEmitterLayer *) makeEmitterAtPoint:(CGSize)viewBounds
 {
     CAEmitterLayer *emitterLayer = [CAEmitterLayer layer];
-	emitterLayer.name = @"starLayer";
-	emitterLayer.emitterPosition = CGPointMake(30, 10);
-	emitterLayer.emitterZPosition = -43;
-	emitterLayer.emitterSize = CGSizeMake(viewBounds.width, 10);
-	emitterLayer.emitterDepth = 0.00;
-	emitterLayer.emitterShape = kCAEmitterLayerCircle;
-	emitterLayer.emitterMode = kCAEmitterLayerSurface;
-	emitterLayer.renderMode = kCAEmitterLayerBackToFront;
-	emitterLayer.seed = 721963909;
+    emitterLayer.name = @"starLayer";
+    emitterLayer.emitterPosition = CGPointMake(30, 10);
+    emitterLayer.emitterZPosition = -43;
+    emitterLayer.emitterSize = CGSizeMake(viewBounds.width, 10);
+    emitterLayer.emitterDepth = 0.00;
+    emitterLayer.emitterShape = kCAEmitterLayerCircle;
+    emitterLayer.emitterMode = kCAEmitterLayerSurface;
+    emitterLayer.renderMode = kCAEmitterLayerBackToFront;
+    emitterLayer.seed = 721963909;
     
     return emitterLayer;
 }
 
 - (CAEmitterCell *) makeEmitterCellWithParticle:(NSString *)name
 {
-	CAEmitterCell *emitterCell = [CAEmitterCell emitterCell];
-	
-	emitterCell.name = @"star";
-	emitterCell.enabled = YES;
+    CAEmitterCell *emitterCell = [CAEmitterCell emitterCell];
     
-	emitterCell.contents = (id)[[UIImage imageNamed:name] CGImage];
-	emitterCell.contentsRect = CGRectMake(0.00, 0.00, 1.00, 1.00);
+    emitterCell.name = @"star";
+    emitterCell.enabled = YES;
     
-	emitterCell.magnificationFilter = kCAFilterTrilinear;
-	emitterCell.minificationFilter = kCAFilterLinear;
-	emitterCell.minificationFilterBias = 0.00;
+    emitterCell.contents = (id)[[UIImage imageNamed:name] CGImage];
+    emitterCell.contentsRect = CGRectMake(0.00, 0.00, 1.00, 1.00);
     
-	emitterCell.scale = 0.72;
-	emitterCell.scaleRange = 0.14;
-	emitterCell.scaleSpeed = -0.25;
+    emitterCell.magnificationFilter = kCAFilterTrilinear;
+    emitterCell.minificationFilter = kCAFilterLinear;
+    emitterCell.minificationFilterBias = 0.00;
     
-	emitterCell.color = [[UIColor colorWithRed:0.77 green:0.55 blue:0.60 alpha:0.55] CGColor];
-	emitterCell.redRange = 0.9;
-	emitterCell.greenRange = 0.8;
-	emitterCell.blueRange = 0.7;
-	emitterCell.alphaRange = 0.8;
+    emitterCell.scale = 0.72;
+    emitterCell.scaleRange = 0.14;
+    emitterCell.scaleSpeed = -0.25;
     
-	emitterCell.redSpeed = 0.92;
-	emitterCell.greenSpeed = 0.84;
-	emitterCell.blueSpeed = 0.74;
-	emitterCell.alphaSpeed = 0.55;
+    emitterCell.color = [[UIColor colorWithRed:0.77 green:0.55 blue:0.60 alpha:0.55] CGColor];
+    emitterCell.redRange = 0.9;
+    emitterCell.greenRange = 0.8;
+    emitterCell.blueRange = 0.7;
+    emitterCell.alphaRange = 0.8;
     
-	emitterCell.lifetime = 9.0;
-	emitterCell.lifetimeRange = 2.37;
-	emitterCell.birthRate = 0;
-	emitterCell.velocity = -20.00;
-	emitterCell.velocityRange = 2.00;
-	emitterCell.xAcceleration = 1.00;
-	emitterCell.yAcceleration = 10.00;
-	emitterCell.zAcceleration = 12.00;
+    emitterCell.redSpeed = 0.92;
+    emitterCell.greenSpeed = 0.84;
+    emitterCell.blueSpeed = 0.74;
+    emitterCell.alphaSpeed = 0.55;
     
-	// these values are in radians, in the UI they are in degrees
-	emitterCell.spin = 0.384;
-	emitterCell.spinRange = 0.925;
-	emitterCell.emissionLatitude = 1.745;
-	emitterCell.emissionLongitude = 1.745;
-	emitterCell.emissionRange = 3.491;
+    emitterCell.lifetime = 9.0;
+    emitterCell.lifetimeRange = 2.37;
+    emitterCell.birthRate = 0;
+    emitterCell.velocity = -20.00;
+    emitterCell.velocityRange = 2.00;
+    emitterCell.xAcceleration = 1.00;
+    emitterCell.yAcceleration = 10.00;
+    emitterCell.zAcceleration = 12.00;
+    
+    // these values are in radians, in the UI they are in degrees
+    emitterCell.spin = 0.384;
+    emitterCell.spinRange = 0.925;
+    emitterCell.emissionLatitude = 1.745;
+    emitterCell.emissionLongitude = 1.745;
+    emitterCell.emissionRange = 3.491;
     
     return emitterCell;
 }
@@ -581,145 +588,145 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CAEmitterLayer*) buildEmitterHeart:(CGSize)viewBounds startTime:(NSTimeInterval)startTime
 {
     // Configure the particle emitter
-	CAEmitterLayer	*heartsEmitter = [CAEmitterLayer layer];
-	heartsEmitter.emitterPosition = CGPointMake(arc4random()%(int)viewBounds.width, arc4random()%(int)viewBounds.height);
-	heartsEmitter.emitterSize = CGSizeMake(viewBounds.width * 2.0, 0.0);
-	
-	// Spawn points for the hearts are within the area defined by the button frame
-	heartsEmitter.emitterMode = kCAEmitterLayerVolume;
-	heartsEmitter.emitterShape = kCAEmitterLayerRectangle;
-	heartsEmitter.renderMode = kCAEmitterLayerAdditive;
-    heartsEmitter.beginTime = startTime;
-	
-	// Configure the emitter cell
-	CAEmitterCell *heart = [CAEmitterCell emitterCell];
-	heart.name = @"heart";
-	
-	heart.emissionLongitude = M_PI/2.0; // up
-	heart.emissionRange = 0.55 * M_PI;  // in a wide spread
-	heart.birthRate		= 10;			// emitter is deactivated for now
-	heart.lifetime		= 10.0;			// hearts vanish after 10 seconds
+    CAEmitterLayer	*heartsEmitter = [CAEmitterLayer layer];
+    heartsEmitter.emitterPosition = CGPointMake(arc4random()%(int)viewBounds.width, arc4random()%(int)viewBounds.height);
+    heartsEmitter.emitterSize = CGSizeMake(viewBounds.width * 2.0, 0.0);
     
-	heart.velocity		= -120;			// particles get fired up fast
-	heart.velocityRange = 60;			// with some variation
-	heart.yAcceleration = 20;			// but fall eventually
-	
-	heart.contents		= (id) [[UIImage imageNamed:@"DazHeart"] CGImage];
-	heart.color			= [[UIColor colorWithRed:0.5 green:0.0 blue:0.5 alpha:0.5] CGColor];
-	heart.redRange		= 0.3;			// some variation in the color
-	heart.blueRange		= 0.3;
-	heart.alphaSpeed	= -0.5 / heart.lifetime;  // fade over the lifetime
-	
-	heart.scale			= 0.15;			// let them start small
-	heart.scaleSpeed	= 0.5;			// but then 'explode' in size
-	heart.spinRange		= 2.0 * M_PI;	// and send them spinning from -180 to +180 deg/s
-	
-	// Add everything to our backing layer
-	heartsEmitter.emitterCells = [NSArray arrayWithObject:heart];
+    // Spawn points for the hearts are within the area defined by the button frame
+    heartsEmitter.emitterMode = kCAEmitterLayerVolume;
+    heartsEmitter.emitterShape = kCAEmitterLayerRectangle;
+    heartsEmitter.renderMode = kCAEmitterLayerAdditive;
+    heartsEmitter.beginTime = startTime;
+    
+    // Configure the emitter cell
+    CAEmitterCell *heart = [CAEmitterCell emitterCell];
+    heart.name = @"heart";
+    
+    heart.emissionLongitude = M_PI/2.0; // up
+    heart.emissionRange = 0.55 * M_PI;  // in a wide spread
+    heart.birthRate		= 10;			// emitter is deactivated for now
+    heart.lifetime		= 10.0;			// hearts vanish after 10 seconds
+    
+    heart.velocity		= -120;			// particles get fired up fast
+    heart.velocityRange = 60;			// with some variation
+    heart.yAcceleration = 20;			// but fall eventually
+    
+    heart.contents		= (id) [[UIImage imageNamed:@"DazHeart"] CGImage];
+    heart.color			= [[UIColor colorWithRed:0.5 green:0.0 blue:0.5 alpha:0.5] CGColor];
+    heart.redRange		= 0.3;			// some variation in the color
+    heart.blueRange		= 0.3;
+    heart.alphaSpeed	= -0.5 / heart.lifetime;  // fade over the lifetime
+    
+    heart.scale			= 0.15;			// let them start small
+    heart.scaleSpeed	= 0.5;			// but then 'explode' in size
+    heart.spinRange		= 2.0 * M_PI;	// and send them spinning from -180 to +180 deg/s
+    
+    // Add everything to our backing layer
+    heartsEmitter.emitterCells = [NSArray arrayWithObject:heart];
     
     CABasicAnimation *heartsBurst = [CABasicAnimation animationWithKeyPath:@"emitterCells.heart.birthRate"];
-	heartsBurst.fromValue		= [NSNumber numberWithFloat:150.0];
-	heartsBurst.toValue			= [NSNumber numberWithFloat:  0.0];
-	heartsBurst.duration		= 5.0;
-	heartsBurst.timingFunction	= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-	
-	[heartsEmitter addAnimation:heartsBurst forKey:@"heartsBurst"];
-
-	return heartsEmitter;
+    heartsBurst.fromValue		= [NSNumber numberWithFloat:150.0];
+    heartsBurst.toValue			= [NSNumber numberWithFloat:  0.0];
+    heartsBurst.duration		= 5.0;
+    heartsBurst.timingFunction	= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    
+    [heartsEmitter addAnimation:heartsBurst forKey:@"heartsBurst"];
+    
+    return heartsEmitter;
 }
 
 #pragma mark - BuildEmitterFireworks
 - (CAEmitterLayer*) buildEmitterFireworks:(CGSize)viewBounds startTime:(NSTimeInterval)startTime
 {
     UIImage *image = [UIImage imageNamed:@"spark"];
-	CAEmitterLayer *fireworksEmitter = [CAEmitterLayer layer];
+    CAEmitterLayer *fireworksEmitter = [CAEmitterLayer layer];
     fireworksEmitter.emitterPosition = CGPointMake((arc4random()%(int)viewBounds.width*2/3)+30, (arc4random()%(int)viewBounds.height*2/3)+30);
-	fireworksEmitter.renderMode = kCAEmitterLayerAdditive;
+    fireworksEmitter.renderMode = kCAEmitterLayerAdditive;
     fireworksEmitter.beginTime = startTime;
-	
-	// Invisible particle representing the rocket before the explosion
-	CAEmitterCell *rocket = [CAEmitterCell emitterCell];
-	rocket.emissionLongitude = (3 * M_PI) / 2;
-	rocket.emissionLatitude = 0;
-    rocket.birthRate = 1;
-	rocket.lifetime = 1.6f;
-	rocket.velocity = 150.0f;
-	rocket.velocityRange = 150.0f;
-	rocket.yAcceleration = -250;
-	rocket.emissionRange = 8.0f * M_PI / 4;
-	rocket.color = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.5].CGColor;
-	rocket.redRange = 0.5;
-	rocket.greenRange = 0.5;
-	rocket.blueRange = 0.5;
-	
-	// Name the cell so that it can be animated later using keypath
-	[rocket setName:@"rocket"];
-	
-	// Flare particles emitted from the rocket as it flys
-	CAEmitterCell *flare = [CAEmitterCell emitterCell];
-	flare.contents = (id)image.CGImage;
-	flare.emissionLongitude = (4 * M_PI) / 2;
-	flare.scale = 0.4;
-	flare.velocity = 100;
-	flare.birthRate = 45;
-	flare.lifetime = 1.5f;
-	flare.yAcceleration = -350;
-	flare.emissionRange = M_PI / 7;
-	flare.alphaSpeed = -0.7;
-	flare.scaleSpeed = -0.1;
-	flare.scaleRange = 0.1;
-	flare.beginTime = 0.01;
-	flare.duration = 0.7;
-	
-	// The particles that make up the explosion
-	CAEmitterCell *firework = [CAEmitterCell emitterCell];
-	firework.contents = (id)image.CGImage;
-	firework.birthRate = 9999;
-	firework.scale = 0.6;
-	firework.velocity = 150.0f;
-    firework.velocityRange = 0.0f;
-	firework.lifetime = 2;
-	firework.alphaSpeed = -0.2;
-	firework.yAcceleration = -80;
-	firework.beginTime = 1.5;
-	firework.duration = 0.1;
-	firework.emissionRange = 2 * M_PI;
-	firework.scaleSpeed = -0.1;
-	firework.spin = 2;
-	
-	// Name the cell so that it can be animated later using keypath
-	[firework setName:@"firework"];
-	
-	// preSpark is an invisible particle used to later emit the spark
-	CAEmitterCell *preSpark = [CAEmitterCell emitterCell];
-	preSpark.birthRate = 80;
-	preSpark.velocity = firework.velocity * 0.70;
-	preSpark.lifetime = 1.7;
-	preSpark.yAcceleration = firework.yAcceleration * 0.85;
-	preSpark.beginTime = firework.beginTime - 0.2;
-	preSpark.emissionRange = firework.emissionRange;
-	preSpark.greenSpeed = 100;
-	preSpark.blueSpeed = 100;
-	preSpark.redSpeed = 100;
-	
-	// Name the cell so that it can be animated later using keypath
-	[preSpark setName:@"preSpark"];
-	
-	// The 'sparkle' at the end of a firework
-	CAEmitterCell *spark = [CAEmitterCell emitterCell];
-	spark.contents = (id)image.CGImage;
-	spark.lifetime = 0.05;
-	spark.yAcceleration = -250;
-	spark.beginTime = 0.8;
-	spark.scale = 0.4;
-	spark.birthRate = 10;
     
-	preSpark.emitterCells = [NSArray arrayWithObjects:spark, nil];
-	rocket.emitterCells = [NSArray arrayWithObjects:flare, firework, preSpark, nil];
-	fireworksEmitter.emitterCells = [NSArray arrayWithObjects:rocket, nil];
+    // Invisible particle representing the rocket before the explosion
+    CAEmitterCell *rocket = [CAEmitterCell emitterCell];
+    rocket.emissionLongitude = (3 * M_PI) / 2;
+    rocket.emissionLatitude = 0;
+    rocket.birthRate = 1;
+    rocket.lifetime = 1.6f;
+    rocket.velocity = 150.0f;
+    rocket.velocityRange = 150.0f;
+    rocket.yAcceleration = -250;
+    rocket.emissionRange = 8.0f * M_PI / 4;
+    rocket.color = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.5].CGColor;
+    rocket.redRange = 0.5;
+    rocket.greenRange = 0.5;
+    rocket.blueRange = 0.5;
+    
+    // Name the cell so that it can be animated later using keypath
+    [rocket setName:@"rocket"];
+    
+    // Flare particles emitted from the rocket as it flys
+    CAEmitterCell *flare = [CAEmitterCell emitterCell];
+    flare.contents = (id)image.CGImage;
+    flare.emissionLongitude = (4 * M_PI) / 2;
+    flare.scale = 0.4;
+    flare.velocity = 100;
+    flare.birthRate = 45;
+    flare.lifetime = 1.5f;
+    flare.yAcceleration = -350;
+    flare.emissionRange = M_PI / 7;
+    flare.alphaSpeed = -0.7;
+    flare.scaleSpeed = -0.1;
+    flare.scaleRange = 0.1;
+    flare.beginTime = 0.01;
+    flare.duration = 0.7;
+    
+    // The particles that make up the explosion
+    CAEmitterCell *firework = [CAEmitterCell emitterCell];
+    firework.contents = (id)image.CGImage;
+    firework.birthRate = 9999;
+    firework.scale = 0.6;
+    firework.velocity = 150.0f;
+    firework.velocityRange = 0.0f;
+    firework.lifetime = 2;
+    firework.alphaSpeed = -0.2;
+    firework.yAcceleration = -80;
+    firework.beginTime = 1.5;
+    firework.duration = 0.1;
+    firework.emissionRange = 2 * M_PI;
+    firework.scaleSpeed = -0.1;
+    firework.spin = 2;
+    
+    // Name the cell so that it can be animated later using keypath
+    [firework setName:@"firework"];
+    
+    // preSpark is an invisible particle used to later emit the spark
+    CAEmitterCell *preSpark = [CAEmitterCell emitterCell];
+    preSpark.birthRate = 80;
+    preSpark.velocity = firework.velocity * 0.70;
+    preSpark.lifetime = 1.7;
+    preSpark.yAcceleration = firework.yAcceleration * 0.85;
+    preSpark.beginTime = firework.beginTime - 0.2;
+    preSpark.emissionRange = firework.emissionRange;
+    preSpark.greenSpeed = 100;
+    preSpark.blueSpeed = 100;
+    preSpark.redSpeed = 100;
+    
+    // Name the cell so that it can be animated later using keypath
+    [preSpark setName:@"preSpark"];
+    
+    // The 'sparkle' at the end of a firework
+    CAEmitterCell *spark = [CAEmitterCell emitterCell];
+    spark.contents = (id)image.CGImage;
+    spark.lifetime = 0.05;
+    spark.yAcceleration = -250;
+    spark.beginTime = 0.8;
+    spark.scale = 0.4;
+    spark.birthRate = 10;
+    
+    preSpark.emitterCells = [NSArray arrayWithObjects:spark, nil];
+    rocket.emitterCells = [NSArray arrayWithObjects:flare, firework, preSpark, nil];
+    fireworksEmitter.emitterCells = [NSArray arrayWithObjects:rocket, nil];
     
     fireworksEmitter.birthRate = 5;
-	
+    
     return fireworksEmitter;
 }
 
@@ -773,74 +780,74 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CAEmitterLayer*) buildEmitterFire:(CGSize)viewBounds position:(CGPoint)position
 {
     // Create the emitter layers
-	CAEmitterLayer *fireEmitter	= [CAEmitterLayer layer];
-	// Place layers just above the tab bar
-	fireEmitter.emitterPosition = position;
-	fireEmitter.emitterSize	= CGSizeMake(viewBounds.width/2.0, 0);
-	fireEmitter.emitterMode	= kCAEmitterLayerOutline;
-	fireEmitter.emitterShape	= kCAEmitterLayerLine;
-	// with additive rendering the dense cell distribution will create "hot" areas
-	fireEmitter.renderMode		= kCAEmitterLayerAdditive;
-	
-	// Create the fire emitter cell
-	CAEmitterCell* fire = [CAEmitterCell emitterCell];
-	[fire setName:@"fire"];
+    CAEmitterLayer *fireEmitter	= [CAEmitterLayer layer];
+    // Place layers just above the tab bar
+    fireEmitter.emitterPosition = position;
+    fireEmitter.emitterSize	= CGSizeMake(viewBounds.width/2.0, 0);
+    fireEmitter.emitterMode	= kCAEmitterLayerOutline;
+    fireEmitter.emitterShape	= kCAEmitterLayerLine;
+    // with additive rendering the dense cell distribution will create "hot" areas
+    fireEmitter.renderMode		= kCAEmitterLayerAdditive;
     
-	fire.birthRate			= 100;
-	fire.emissionLongitude  = M_PI;
-	fire.velocity			= -80;
-	fire.velocityRange		= 30;
-	fire.emissionRange		= 1;
-	fire.yAcceleration		= 200;
-	fire.scaleSpeed			= 0.2;
-	fire.lifetime			= 50;
-	fire.lifetimeRange		= (50.0 * 0.35);
+    // Create the fire emitter cell
+    CAEmitterCell* fire = [CAEmitterCell emitterCell];
+    [fire setName:@"fire"];
     
-	fire.color = [[UIColor colorWithRed:0.8 green:0.4 blue:0.2 alpha:0.1] CGColor];
-	fire.contents = (id) [[UIImage imageNamed:@"DazFire"] CGImage];
+    fire.birthRate			= 100;
+    fire.emissionLongitude  = M_PI;
+    fire.velocity			= -80;
+    fire.velocityRange		= 30;
+    fire.emissionRange		= 1;
+    fire.yAcceleration		= 200;
+    fire.scaleSpeed			= 0.2;
+    fire.lifetime			= 50;
+    fire.lifetimeRange		= (50.0 * 0.35);
     
-	
-	fireEmitter.emitterCells	= [NSArray arrayWithObject:fire];
-	
+    fire.color = [[UIColor colorWithRed:0.8 green:0.4 blue:0.2 alpha:0.1] CGColor];
+    fire.contents = (id) [[UIImage imageNamed:@"DazFire"] CGImage];
+    
+    
+    fireEmitter.emitterCells	= [NSArray arrayWithObject:fire];
+    
     // Update the fire properties
     int value = 1.5;
-	[fireEmitter setValue:[NSNumber numberWithInt:(value * 40)]
-					forKeyPath:@"emitterCells.fire.birthRate"];
-	[fireEmitter setValue:[NSNumber numberWithFloat:value]
-					forKeyPath:@"emitterCells.fire.lifetime"];
-	[fireEmitter setValue:[NSNumber numberWithFloat:(value * 0.35)]
-					forKeyPath:@"emitterCells.fire.lifetimeRange"];
-	fireEmitter.emitterSize = CGSizeMake(3 * value, 0);
-	
+    [fireEmitter setValue:[NSNumber numberWithInt:(value * 40)]
+               forKeyPath:@"emitterCells.fire.birthRate"];
+    [fireEmitter setValue:[NSNumber numberWithFloat:value]
+               forKeyPath:@"emitterCells.fire.lifetime"];
+    [fireEmitter setValue:[NSNumber numberWithFloat:(value * 0.35)]
+               forKeyPath:@"emitterCells.fire.lifetimeRange"];
+    fireEmitter.emitterSize = CGSizeMake(3 * value, 0);
+    
     return fireEmitter;
 }
 
 - (CAEmitterLayer*) buildEmitterSmoke:(CGSize)viewBounds position:(CGPoint)position
 {
     // Create the emitter layers
-	CAEmitterLayer *smokeEmitter	= [CAEmitterLayer layer];
-	smokeEmitter.emitterPosition = position;
-	smokeEmitter.emitterMode	= kCAEmitterLayerPoints;
-	
-	// Create the smoke emitter cell
-	CAEmitterCell* smoke = [CAEmitterCell emitterCell];
-	[smoke setName:@"smoke"];
-	smoke.birthRate			= 10;
-	smoke.emissionLongitude = -M_PI / 2;
-	smoke.lifetime			= 5;
-	smoke.velocity			= -40;
-	smoke.velocityRange		= 10;
-	smoke.emissionRange		= M_PI / 4;
-	smoke.spin				= 1;
-	smoke.spinRange			= 6;
-	smoke.yAcceleration		= 60;
-	smoke.contents			= (id)[[UIImage imageNamed:@"DazSmoke"] CGImage];
-	smoke.scale				= 0.1;
-	smoke.alphaSpeed		= -0.12;
-	smoke.scaleSpeed		= 0.7;
-	
-	// Add the smoke emitter cell to the smoke emitter layer
-	smokeEmitter.emitterCells	= [NSArray arrayWithObject:smoke];
+    CAEmitterLayer *smokeEmitter	= [CAEmitterLayer layer];
+    smokeEmitter.emitterPosition = position;
+    smokeEmitter.emitterMode	= kCAEmitterLayerPoints;
+    
+    // Create the smoke emitter cell
+    CAEmitterCell* smoke = [CAEmitterCell emitterCell];
+    [smoke setName:@"smoke"];
+    smoke.birthRate			= 10;
+    smoke.emissionLongitude = -M_PI / 2;
+    smoke.lifetime			= 5;
+    smoke.velocity			= -40;
+    smoke.velocityRange		= 10;
+    smoke.emissionRange		= M_PI / 4;
+    smoke.spin				= 1;
+    smoke.spinRange			= 6;
+    smoke.yAcceleration		= 60;
+    smoke.contents			= (id)[[UIImage imageNamed:@"DazSmoke"] CGImage];
+    smoke.scale				= 0.1;
+    smoke.alphaSpeed		= -0.12;
+    smoke.scaleSpeed		= 0.7;
+    
+    // Add the smoke emitter cell to the smoke emitter layer
+    smokeEmitter.emitterCells	= [NSArray arrayWithObject:smoke];
     
     return smokeEmitter;
 }
@@ -906,7 +913,7 @@ static CGImageRef createStarImage(CGFloat radius)
     NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:string
                                                                      attributes:attrs];
     CTLineRef line = CTLineCreateWithAttributedString((CFAttributedStringRef)attrString);
-	CFArrayRef runArray = CTLineGetGlyphRuns(line);
+    CFArrayRef runArray = CTLineGetGlyphRuns(line);
     
     // for each RUN
     for (CFIndex runIndex = 0; runIndex < CFArrayGetCount(runArray); runIndex++)
@@ -961,7 +968,7 @@ static CGImageRef createStarImage(CGFloat radius)
     alphaAnimation.toValue = @1;
     alphaAnimation.duration = duration*2;
     alphaAnimation.beginTime = timeInterval;
-
+    
     CABasicAnimation *stroke = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     stroke.duration = duration;
     stroke.fromValue = [NSNumber numberWithFloat:0.1];
@@ -984,8 +991,8 @@ static CGImageRef createStarImage(CGFloat radius)
     sparkle.beginTime = timeInterval;
     [emitterLayer addAnimation:sparkle forKey:kEmitterAnimation];
     
-    dispatch_async_main_after(duration, ^{
-        emitterLayer.lifetime = 30;
+    Run_Delay(duration, ^{
+       emitterLayer.lifetime = 30;
     });
 }
 
@@ -1004,7 +1011,7 @@ static CGImageRef createStarImage(CGFloat radius)
     textShapeLayer.lineWidth = 1;
     textShapeLayer.strokeColor = [UIColor lightGrayColor].CGColor;
     textShapeLayer.fillColor = [[UIColor clearColor] CGColor];
-    textShapeLayer.geometryFlipped = NO;
+    textShapeLayer.geometryFlipped = YES;
     textShapeLayer.position = position;
     textShapeLayer.opacity = 0;
     
@@ -1014,7 +1021,7 @@ static CGImageRef createStarImage(CGFloat radius)
     emitterLayer.emitterShape = kCAEmitterLayerPoint;
     emitterLayer.birthRate = 0;
     emitterLayer.geometryFlipped = YES;
-   
+    
     [textShapeLayer addSublayer:emitterLayer];
     [self doAnimation:textShapeLayer emitterLayer:emitterLayer startTime:startTime];
     
@@ -1025,7 +1032,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CAEmitterLayer*) buildEmitterSteam:(CGSize)viewBounds positon:(CGPoint)postion
 {
     CAEmitterLayer *emitterLayer = [CAEmitterLayer layer];
-    emitterLayer.emitterPosition = postion; 
+    emitterLayer.emitterPosition = postion;
     emitterLayer.emitterSize = CGSizeMake(viewBounds.width, 0);
     
     CAEmitterCell* cell = [CAEmitterCell emitterCell];
@@ -1112,11 +1119,11 @@ static CGImageRef createStarImage(CGFloat radius)
     emitterLayer.emitterCells = @[starCell];
     starCell.emitterCells = @[starCell0, starCell1];
     starCell1.emitterCells = @[starCell2];
-
+    
     return emitterLayer;
 }
 
- // Build meteor
+// Build meteor
 - (CAEmitterLayer*) buildEmitterMeteor:(CGSize)viewBounds startTime:(NSTimeInterval)timeInterval pathN:(NSInteger)pathN
 {
     CAEmitterLayer *emitterLayer = [CAEmitterLayer layer];
@@ -1124,7 +1131,7 @@ static CGImageRef createStarImage(CGFloat radius)
     emitterLayer.emitterSize = viewBounds;
     emitterLayer.renderMode = kCAEmitterLayerAdditive;
     emitterLayer.emitterMode = kCAEmitterLayerPoints;
-	emitterLayer.emitterShape = kCAEmitterLayerSphere;
+    emitterLayer.emitterShape = kCAEmitterLayerSphere;
     emitterLayer.opacity = 0;
     
     CAEmitterCell *cell1 = [self productEmitterCellWithContents:(id)[[UIImage imageNamed:@"star1"] CGImage]];
@@ -1173,8 +1180,8 @@ static CGImageRef createStarImage(CGFloat radius)
     NSArray *animations = @[animationPath, opacityAnimation];
     animationGroup.animations = animations;
     [emitterLayer addAnimation:animationGroup forKey:nil];
-   
-    dispatch_async_main_after((duration+1), ^{
+    
+    Run_Delay((duration+1), ^{
         emitterLayer.birthRate = 1;
         CGPathRelease(path);
     });
@@ -1186,29 +1193,29 @@ static CGImageRef createStarImage(CGFloat radius)
 {
     int numberOfEdges = 10;
     int inset = 1;
-	CGPoint center = CGPointMake(viewBounds.width/2.0, viewBounds.height/2.0);
-	CGFloat outerRadius = MIN(viewBounds.width, viewBounds.height) / 2.0 - inset;
-	CGFloat innerRadius = outerRadius * 0.75;
-	CGFloat angle = M_PI * 2.0 / (numberOfEdges * 2);
-	UIBezierPath *path = [UIBezierPath bezierPath];
-	for (NSInteger cc=0; cc<numberOfEdges; cc++)
+    CGPoint center = CGPointMake(viewBounds.width/2.0, viewBounds.height/2.0);
+    CGFloat outerRadius = MIN(viewBounds.width, viewBounds.height) / 2.0 - inset;
+    CGFloat innerRadius = outerRadius * 0.75;
+    CGFloat angle = M_PI * 2.0 / (numberOfEdges * 2);
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    for (NSInteger cc=0; cc<numberOfEdges; cc++)
     {
-		CGPoint p0 = CGPointMake(center.x + outerRadius * cos(angle * (cc*2)), center.y + outerRadius * sin(angle * (cc*2)));
-		CGPoint p1 = CGPointMake(center.x + innerRadius * cos(angle * (cc*2+1)), center.y + innerRadius * sin(angle * (cc*2+1)));
-		
-		if (cc==0)
+        CGPoint p0 = CGPointMake(center.x + outerRadius * cos(angle * (cc*2)), center.y + outerRadius * sin(angle * (cc*2)));
+        CGPoint p1 = CGPointMake(center.x + innerRadius * cos(angle * (cc*2+1)), center.y + innerRadius * sin(angle * (cc*2+1)));
+        
+        if (cc==0)
         {
-			[path moveToPoint: p0];
-		}
-		else
+            [path moveToPoint: p0];
+        }
+        else
         {
-			[path addLineToPoint: p0];
-		}
-		[path addLineToPoint: p1];
-	}
+            [path addLineToPoint: p0];
+        }
+        [path addLineToPoint: p1];
+    }
     
-	[path closePath];
-	return path;
+    [path closePath];
+    return path;
 }
 
 - (CAEmitterCell *)productEmitterCellWithContents:(id)contents
@@ -1237,12 +1244,12 @@ static CGImageRef createStarImage(CGFloat radius)
     
     // Spawn points for the flakes are within on the outline of the line
     parentLayer.emitterMode		= kCAEmitterLayerOutline;
-	parentLayer.emitterShape	= kCAEmitterLayerLine;
+    parentLayer.emitterShape	= kCAEmitterLayerLine;
     
     parentLayer.shadowOpacity = 1.0;
-	parentLayer.shadowRadius  = 0.0;
-	parentLayer.shadowOffset  = CGSizeMake(0.0, 1.0);
-	parentLayer.shadowColor   = [[UIColor whiteColor] CGColor];
+    parentLayer.shadowRadius  = 0.0;
+    parentLayer.shadowOffset  = CGSizeMake(0.0, 1.0);
+    parentLayer.shadowColor   = [[UIColor whiteColor] CGColor];
     parentLayer.seed = (arc4random()%100)+1;
     
     UIImage *image = [UIImage imageNamed:@"rain"];
@@ -1259,9 +1266,9 @@ static CGImageRef createStarImage(CGFloat radius)
     
     cellLayer.birthRate		= 100.0;
     cellLayer.lifetime		= 5;
-	
-	cellLayer.velocity		= 1000;				// falling down slowly
-	cellLayer.velocityRange = 0;
+    
+    cellLayer.velocity		= 1000;				// falling down slowly
+    cellLayer.velocityRange = 0;
     
     cellLayer.scale = 0.2;
     cellLayer.contents		= (id)[image CGImage];
@@ -1282,18 +1289,18 @@ static CGImageRef createStarImage(CGFloat radius)
     
     // Spawn points for the flakes are within on the outline of the line
     parentLayer.emitterMode	= kCAEmitterLayerOutline;
-	parentLayer.emitterShape = kCAEmitterLayerLine;
+    parentLayer.emitterShape = kCAEmitterLayerLine;
     
     parentLayer.shadowOpacity = 1.0;
-	parentLayer.shadowRadius  = 0.0;
-	parentLayer.shadowOffset  = CGSizeMake(0.0, 1.0);
-	parentLayer.shadowColor   = [[UIColor whiteColor] CGColor];
+    parentLayer.shadowRadius  = 0.0;
+    parentLayer.shadowOffset  = CGSizeMake(0.0, 1.0);
+    parentLayer.shadowColor   = [[UIColor whiteColor] CGColor];
     parentLayer.seed = (arc4random()%100)+1;
     
     CAEmitterCell* containerLayer = [CAEmitterCell emitterCell];
-	containerLayer.birthRate = 2;
-	containerLayer.velocity	= -1;
-	containerLayer.lifetime	= 0.5;
+    containerLayer.birthRate = 2;
+    containerLayer.velocity	= -1;
+    containerLayer.lifetime	= 0.5;
     containerLayer.name = @"containerLayer";
     
     UIImage *image = [UIImage imageNamed:@"birthday"];
@@ -1311,10 +1318,10 @@ static CGImageRef createStarImage(CGFloat radius)
     
     cellLayer.birthRate	= 3.0;
     cellLayer.lifetime  = 20;
-	
-	cellLayer.velocity	= -100;				// falling down slowly
-	cellLayer.velocityRange = 0;
-	cellLayer.yAcceleration = 2;
+    
+    cellLayer.velocity	= -100;				// falling down slowly
+    cellLayer.velocityRange = 0;
+    cellLayer.yAcceleration = 2;
     cellLayer.emissionRange = 0.5 * M_PI;		// some variation in angle
     cellLayer.scale = 1.3;
     cellLayer.contents	= (id)[image CGImage];
@@ -1334,18 +1341,18 @@ static CGImageRef createStarImage(CGFloat radius)
     
     // Spawn points for the flakes are within on the outline of the line
     parentLayer.emitterMode		= kCAEmitterLayerOutline;
-	parentLayer.emitterShape	= kCAEmitterLayerLine;
+    parentLayer.emitterShape	= kCAEmitterLayerLine;
     
     parentLayer.shadowOpacity = 1.0;
-	parentLayer.shadowRadius  = 0.0;
-	parentLayer.shadowOffset  = CGSizeMake(0.0, 1.0);
-	parentLayer.shadowColor   = [[UIColor whiteColor] CGColor];
+    parentLayer.shadowRadius  = 0.0;
+    parentLayer.shadowOffset  = CGSizeMake(0.0, 1.0);
+    parentLayer.shadowColor   = [[UIColor whiteColor] CGColor];
     parentLayer.seed = (arc4random()%100)+1;
     
     CAEmitterCell* containerLayer = [CAEmitterCell emitterCell];
-	containerLayer.birthRate = 1.0;
-	containerLayer.velocity	= -1;
-	containerLayer.lifetime	= 0.5;
+    containerLayer.birthRate = 1.0;
+    containerLayer.velocity	= -1;
+    containerLayer.lifetime	= 0.5;
     containerLayer.name = @"containerLayer";
     
     NSMutableArray *flowerArray = [NSMutableArray array];
@@ -1361,7 +1368,7 @@ static CGImageRef createStarImage(CGFloat radius)
     
     containerLayer.emitterCells = @[flowerArray[0], flowerArray[1], flowerArray[3], flowerArray[4], flowerArray[5], flowerArray[6], flowerArray[7]];
     parentLayer.emitterCells = @[containerLayer];
-
+    
     return parentLayer;
 }
 
@@ -1370,10 +1377,10 @@ static CGImageRef createStarImage(CGFloat radius)
     CAEmitterCell *cellLayer = [CAEmitterCell emitterCell];
     cellLayer.birthRate	= 3;
     cellLayer.lifetime	= 10;
-	
-	cellLayer.velocity	= -100;				// falling down slowly
-	cellLayer.velocityRange = 20;
-	cellLayer.yAcceleration = 2;
+    
+    cellLayer.velocity	= -100;				// falling down slowly
+    cellLayer.velocityRange = 20;
+    cellLayer.yAcceleration = 2;
     cellLayer.emissionRange = 0.5 * M_PI;	// some variation in angle
     cellLayer.spinRange	= 0.5 * M_PI;		// slow spin
     cellLayer.scale = 0.2;
@@ -1396,76 +1403,76 @@ static CGImageRef createStarImage(CGFloat radius)
         return nil;
     }
     
-	// Create a layer for the overall title animation.
-	CALayer *animatedTitleLayer = [CALayer layer];
-	
-	// 1. Create a layer for the text of the title.
+    // Create a layer for the overall title animation.
+    CALayer *animatedTitleLayer = [CALayer layer];
+    
+    // 1. Create a layer for the text of the title.
     CGFloat height = viewBounds.height/2;
     if (viewBounds.height > viewBounds.width)
     {
         height = viewBounds.width/2;
     }
     CGFloat fontHeight = height/5;
-	CATextLayer *titleLayer = [CATextLayer layer];
-	titleLayer.string = text;
-	titleLayer.font = (__bridge CFTypeRef)(@"Helvetica");
-	titleLayer.fontSize = fontHeight;
-	titleLayer.alignmentMode = kCAAlignmentCenter;
-	titleLayer.bounds = CGRectMake(0, 0, viewBounds.width, fontHeight+10);
-	
-//    [titleLayer addAnimation:[self animationRotationZ:1.0 durationTimes:2.0 startTime:startTime+1] forKey:@"rotationOut"];
+    CATextLayer *titleLayer = [CATextLayer layer];
+    titleLayer.string = text;
+    titleLayer.font = (__bridge CFTypeRef)(@"Helvetica");
+    titleLayer.fontSize = fontHeight;
+    titleLayer.alignmentMode = kCAAlignmentCenter;
+    titleLayer.bounds = CGRectMake(0, 0, viewBounds.width, fontHeight+10);
     
-	// Add it to the overall layer.
-	[animatedTitleLayer addSublayer:titleLayer];
-	
+    //    [titleLayer addAnimation:[self animationRotationZ:1.0 durationTimes:2.0 startTime:startTime+1] forKey:@"rotationOut"];
+    
+    // Add it to the overall layer.
+    [animatedTitleLayer addSublayer:titleLayer];
+    
     NSTimeInterval animatedInStartTime = startTime;
     
-	// 2. Create a layer that contains a ring of stars.
-	CALayer *ringOfStarsLayer = [CALayer layer];
+    // 2. Create a layer that contains a ring of stars.
+    CALayer *ringOfStarsLayer = [CALayer layer];
     
-	NSInteger starCount = 9, star;
-	CGFloat starRadius = height/6;
-	CGFloat ringRadius = height*2/3;
-	CGImageRef starImage = createStarImage(starRadius);
-	for (star = 0; star < starCount; star++)
+    NSInteger starCount = 9, star;
+    CGFloat starRadius = height/6;
+    CGFloat ringRadius = height*2/3;
+    CGImageRef starImage = createStarImage(starRadius);
+    for (star = 0; star < starCount; star++)
     {
-		CALayer *starLayer = [CALayer layer];
-		CGFloat angle = star * 2 * M_PI / starCount;
-		starLayer.bounds = CGRectMake(0, 0, 2 * starRadius, 2 * starRadius);
-		starLayer.position = CGPointMake(ringRadius * cos(angle), ringRadius * sin(angle));
-		starLayer.contents = (__bridge id)starImage;
-		[ringOfStarsLayer addSublayer:starLayer];
-	}
-	CGImageRelease(starImage);
-	
-	// Rotate the ring of stars.
-	CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-	rotationAnimation.repeatCount = 1e100; // forever
-	rotationAnimation.fromValue = [NSNumber numberWithFloat:0.0];
-	rotationAnimation.toValue = [NSNumber numberWithFloat:2 * M_PI];
-	rotationAnimation.duration = 2.0; // repeat every 3 seconds
-	rotationAnimation.additive = YES;
-	rotationAnimation.removedOnCompletion = NO;
-	rotationAnimation.beginTime = animatedInStartTime; // CoreAnimation automatically replaces zero beginTime with CACurrentMediaTime().  The constant AVCoreAnimationBeginTimeAtZero is also available.
-	[ringOfStarsLayer addAnimation:rotationAnimation forKey:nil];
-	
-	// Add the ring of stars to the overall layer.
-	animatedTitleLayer.position = CGPointMake(viewBounds.width / 2.0, viewBounds.height / 2.0);
-	[animatedTitleLayer addSublayer:ringOfStarsLayer];
-	
+        CALayer *starLayer = [CALayer layer];
+        CGFloat angle = star * 2 * M_PI / starCount;
+        starLayer.bounds = CGRectMake(0, 0, 2 * starRadius, 2 * starRadius);
+        starLayer.position = CGPointMake(ringRadius * cos(angle), ringRadius * sin(angle));
+        starLayer.contents = (__bridge id)starImage;
+        [ringOfStarsLayer addSublayer:starLayer];
+    }
+    CGImageRelease(starImage);
+    
+    // Rotate the ring of stars.
+    CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    rotationAnimation.repeatCount = 1e100; // forever
+    rotationAnimation.fromValue = [NSNumber numberWithFloat:0.0];
+    rotationAnimation.toValue = [NSNumber numberWithFloat:2 * M_PI];
+    rotationAnimation.duration = 2.0; // repeat every 3 seconds
+    rotationAnimation.additive = YES;
+    rotationAnimation.removedOnCompletion = NO;
+    rotationAnimation.beginTime = animatedInStartTime; // CoreAnimation automatically replaces zero beginTime with CACurrentMediaTime().  The constant AVCoreAnimationBeginTimeAtZero is also available.
+    [ringOfStarsLayer addAnimation:rotationAnimation forKey:nil];
+    
+    // Add the ring of stars to the overall layer.
+    animatedTitleLayer.position = CGPointMake(viewBounds.width / 2.0, viewBounds.height / 2.0);
+    [animatedTitleLayer addSublayer:ringOfStarsLayer];
+    
     // 3.
     CABasicAnimation *fadeInAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-	fadeInAnimation.fromValue = @0.0f;
-	fadeInAnimation.toValue = @1.0f;
-	fadeInAnimation.additive = NO;
-	fadeInAnimation.removedOnCompletion = NO;
-	fadeInAnimation.beginTime = animatedInStartTime;
-	fadeInAnimation.duration = 1.0;
-	fadeInAnimation.autoreverses = NO;
-	fadeInAnimation.fillMode = kCAFillModeBoth;
+    fadeInAnimation.fromValue = @0.0f;
+    fadeInAnimation.toValue = @1.0f;
+    fadeInAnimation.additive = NO;
+    fadeInAnimation.removedOnCompletion = NO;
+    fadeInAnimation.beginTime = animatedInStartTime;
+    fadeInAnimation.duration = 1.0;
+    fadeInAnimation.autoreverses = NO;
+    fadeInAnimation.fillMode = kCAFillModeBoth;
     
-	NSTimeInterval animatedOutStartTime = rotationAnimation.beginTime + rotationAnimation.duration;
-
+    NSTimeInterval animatedOutStartTime = rotationAnimation.beginTime + rotationAnimation.duration;
+    
     CABasicAnimation* rotationAnimationLayer = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotationAnimationLayer.toValue = @((2 * M_PI) * -2); // 3 is the number of 360 degree rotations
     // Make the rotation animation duration slightly less than the other animations to give it the feel
@@ -1490,8 +1497,8 @@ static CGImageRef createStarImage(CGFloat radius)
     [animatedTitleLayer addAnimation:fadeInAnimation forKey:nil];
     [animatedTitleLayer addAnimation:rotationAnimationLayer forKey:@"spinOut"];
     [animatedTitleLayer addAnimation:scaleAnimation forKey:@"scaleOut"];
-	
-	return animatedTitleLayer;
+    
+    return animatedTitleLayer;
 }
 
 #pragma mark - BuildAnimationScrollLine
@@ -1513,7 +1520,7 @@ static CGImageRef createStarImage(CGFloat radius)
     anim.duration = 3.0f;
     anim.beginTime = CMTimeGetSeconds(kCMTimeZero) + timeInterval;
     anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-
+    
     [lineLayer addAnimation:anim forKey:@"shine"];
     
     if (image)
@@ -1522,7 +1529,7 @@ static CGImageRef createStarImage(CGFloat radius)
         UIImage *shineImage = [self highlightedImageForImage:image];
         shineLayer.contents = (id) shineImage.CGImage;
         shineLayer.frame = CGRectMake(0, 0, width, height);
-
+        
         shineLayer.mask = lineLayer;
         
         return shineLayer;
@@ -1595,17 +1602,17 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimatedScrollText:(CGSize)viewBounds text:(NSString*)text startPoint:(CGPoint)startPoint startTime:(NSTimeInterval)startTime
 {
     CATextLayer *textLayer = [CATextLayer layer];
-	textLayer.string = text;
-	textLayer.font = (__bridge CFTypeRef)(@"Helvetica");
-	textLayer.fontSize = 21;
-	textLayer.alignmentMode = kCAAlignmentCenter;
+    textLayer.string = text;
+    textLayer.font = (__bridge CFTypeRef)(@"Helvetica");
+    textLayer.fontSize = 21;
+    textLayer.alignmentMode = kCAAlignmentCenter;
     
     CGFloat height = viewBounds.height/6;
     if (viewBounds.height < viewBounds.width)
     {
         height = viewBounds.width/6;
     }
-	textLayer.bounds = CGRectMake(0, 0, viewBounds.width, height);
+    textLayer.bounds = CGRectMake(0, 0, viewBounds.width, height);
     
     CGPoint startPointIn = startPoint;
     CGPoint middlePoint = CGPointMake(viewBounds.width/2, startPoint.y);
@@ -1616,14 +1623,14 @@ static CGImageRef createStarImage(CGFloat radius)
     
     // 1.
     CABasicAnimation *fadeInAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-	fadeInAnimation.fromValue = @0.0f;
-	fadeInAnimation.toValue = @0.8f;
-	fadeInAnimation.additive = NO;
-	fadeInAnimation.removedOnCompletion = NO;
-	fadeInAnimation.beginTime = CMTimeGetSeconds(animatedOutStartTime) + startTime;
-	fadeInAnimation.duration = 3.0;
-	fadeInAnimation.autoreverses = NO;
-	fadeInAnimation.fillMode = kCAFillModeBoth;
+    fadeInAnimation.fromValue = @0.0f;
+    fadeInAnimation.toValue = @0.8f;
+    fadeInAnimation.additive = NO;
+    fadeInAnimation.removedOnCompletion = NO;
+    fadeInAnimation.beginTime = CMTimeGetSeconds(animatedOutStartTime) + startTime;
+    fadeInAnimation.duration = 3.0;
+    fadeInAnimation.autoreverses = NO;
+    fadeInAnimation.fillMode = kCAFillModeBoth;
     
     CABasicAnimation *moveInAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
     [moveInAnimation setFromValue:[NSValue valueWithCGPoint:startPointIn]];
@@ -1636,21 +1643,21 @@ static CGImageRef createStarImage(CGFloat radius)
     scaleInAnimation.duration = 3.0;
     scaleInAnimation.beginTime = CMTimeGetSeconds(animatedOutStartTime) + startTime;
     scaleInAnimation.values = [NSArray arrayWithObjects:[NSNumber numberWithFloat:.5f],
-                    [NSNumber numberWithFloat:1.2f],
-                    [NSNumber numberWithFloat:.85f],
-                    [NSNumber numberWithFloat:1.f],
-                    nil];
+                               [NSNumber numberWithFloat:1.2f],
+                               [NSNumber numberWithFloat:.85f],
+                               [NSNumber numberWithFloat:1.f],
+                               nil];
     
     // 2.
     CABasicAnimation *fadeOutAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-	fadeOutAnimation.fromValue = @1.0f;
-	fadeOutAnimation.toValue = @0.0f;
-	fadeOutAnimation.additive = NO;
-	fadeOutAnimation.removedOnCompletion = NO;
-	fadeOutAnimation.beginTime = CMTimeGetSeconds(animatedOutStartTime) + 2 + startTime ;
-	fadeOutAnimation.duration = 3.0;
-	fadeOutAnimation.autoreverses = NO;
-	fadeOutAnimation.fillMode = kCAFillModeBoth;
+    fadeOutAnimation.fromValue = @1.0f;
+    fadeOutAnimation.toValue = @0.0f;
+    fadeOutAnimation.additive = NO;
+    fadeOutAnimation.removedOnCompletion = NO;
+    fadeOutAnimation.beginTime = CMTimeGetSeconds(animatedOutStartTime) + 2 + startTime ;
+    fadeOutAnimation.duration = 3.0;
+    fadeOutAnimation.autoreverses = NO;
+    fadeOutAnimation.fillMode = kCAFillModeBoth;
     
     CABasicAnimation *moveOutAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
     [moveOutAnimation setFromValue:[NSValue valueWithCGPoint:middlePoint]];
@@ -1658,7 +1665,7 @@ static CGImageRef createStarImage(CGFloat radius)
     [moveOutAnimation setDuration:2.0];
     moveOutAnimation.beginTime = CMTimeGetSeconds(animatedOutStartTime) + 2 + startTime;
     moveOutAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-
+    
     CABasicAnimation* rotateOutAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotateOutAnimation.toValue = @((2 * M_PI) * 2);
     rotateOutAnimation.duration = 2.0f;
@@ -1693,11 +1700,11 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimationScrollScreen:(CGSize)viewBounds startTime:(NSTimeInterval)startTime
 {
     CALayer *animatedScrollLayer = [CALayer layer];
-	
-	// 1.
-	CALayer *scrollUpLayer = [CALayer layer];
+    
+    // 1.
+    CALayer *scrollUpLayer = [CALayer layer];
     scrollUpLayer.backgroundColor = [[UIColor blackColor] CGColor];
-	scrollUpLayer.frame = CGRectMake(0, 0, viewBounds.width, viewBounds.height/2);
+    scrollUpLayer.frame = CGRectMake(0, 0, viewBounds.width, viewBounds.height/2);
     
     CGPoint startPointUp = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     CGPoint endPointUp = CGPointMake(viewBounds.width/2, viewBounds.height+viewBounds.height);
@@ -1711,15 +1718,15 @@ static CGImageRef createStarImage(CGFloat radius)
     [scrollUpLayer setPosition:endPointUp];
     [scrollUpLayer addAnimation:animationMoveUp forKey:@"positionUp"];
     
-	// Add it to the overall layer.
-	[animatedScrollLayer addSublayer:scrollUpLayer];
-	
+    // Add it to the overall layer.
+    [animatedScrollLayer addSublayer:scrollUpLayer];
     
-	// 2.
-	CALayer *scrollDownLayer = [CALayer layer];
+    
+    // 2.
+    CALayer *scrollDownLayer = [CALayer layer];
     scrollDownLayer.backgroundColor = [[UIColor blackColor] CGColor];
-	scrollDownLayer.frame = CGRectMake(0, 0, viewBounds.width, viewBounds.height/2);
-  	
+    scrollDownLayer.frame = CGRectMake(0, 0, viewBounds.width, viewBounds.height/2);
+    
     CGPoint startPointDown = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     CGPoint endPointDown = CGPointMake(viewBounds.width/2, -viewBounds.height);
     
@@ -1733,9 +1740,9 @@ static CGImageRef createStarImage(CGFloat radius)
     [scrollDownLayer addAnimation:animationMoveDown forKey:@"positionDown"];
     
     // Add it to the overall layer.
-	[animatedScrollLayer addSublayer:scrollDownLayer];
-	
-	return animatedScrollLayer;
+    [animatedScrollLayer addSublayer:scrollDownLayer];
+    
+    return animatedScrollLayer;
 }
 
 #pragma mark - BuildAnimationFlashScreen
@@ -1750,14 +1757,14 @@ static CGImageRef createStarImage(CGFloat radius)
     }
     else
     {
-         animatedFlashLayer.backgroundColor = [[UIColor blackColor] CGColor];
+        animatedFlashLayer.backgroundColor = [[UIColor blackColor] CGColor];
     }
     
     animatedFlashLayer.opacity = 0;
     
     id startValue = nil;
     id endValue = nil;
-	if (startOpacity)
+    if (startOpacity)
     {
         startValue = @1.0f;
         endValue = @0.0f;
@@ -1783,30 +1790,30 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimationRipple:(CGSize)viewBounds centerPoint:(CGPoint)centerPoint radius:(CGFloat)radius startTime:(NSTimeInterval)startTime
 {
     NSArray *colors = @[
-                             [UIColor colorWithRed:0.000 green:0.478 blue:1.000 alpha:1],
-                             [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
-                             [UIColor colorWithRed:204/255.f green:270/255.f blue:12/255.f alpha:1],
-                             [UIColor colorWithRed:240/255.f green:159/255.f blue:10/255.f alpha:1],
-                             [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
-                             [UIColor colorWithRed:255/255.f green:137/255.f blue:167/255.f alpha:1],
-                             [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-                             [UIColor colorWithRed:119/255.f green:152/255.f blue:255/255.f alpha:1],
-                             [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
-                             [UIColor colorWithRed:255/255.f green:137/255.f blue:167/255.f alpha:1],
-                             [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-                             [UIColor colorWithRed:119/255.f green:152/255.f blue:255/255.f alpha:1],
-                             [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
-                             [UIColor colorWithRed:255/255.f green:137/255.f blue:167/255.f alpha:1],
-                             [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-                             [UIColor colorWithRed:119/255.f green:152/255.f blue:255/255.f alpha:1],
-                             [UIColor colorWithWhite:0.8 alpha:0.8],
-                         ];
+                        [UIColor colorWithRed:0.000 green:0.478 blue:1.000 alpha:1],
+                        [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
+                        [UIColor colorWithRed:204/255.f green:270/255.f blue:12/255.f alpha:1],
+                        [UIColor colorWithRed:240/255.f green:159/255.f blue:10/255.f alpha:1],
+                        [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
+                        [UIColor colorWithRed:255/255.f green:137/255.f blue:167/255.f alpha:1],
+                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                        [UIColor colorWithRed:119/255.f green:152/255.f blue:255/255.f alpha:1],
+                        [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
+                        [UIColor colorWithRed:255/255.f green:137/255.f blue:167/255.f alpha:1],
+                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                        [UIColor colorWithRed:119/255.f green:152/255.f blue:255/255.f alpha:1],
+                        [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
+                        [UIColor colorWithRed:255/255.f green:137/255.f blue:167/255.f alpha:1],
+                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                        [UIColor colorWithRed:119/255.f green:152/255.f blue:255/255.f alpha:1],
+                        [UIColor colorWithWhite:0.8 alpha:0.8],
+                        ];
     
     UIColor *stroke = colors[arc4random()%(int)[colors count]];
     NSTimeInterval animationDuration = 3; // default:3s
     NSTimeInterval pulseInterval = 0;
     CGFloat diameter = radius * 2;
-
+    
     CAShapeLayer *circleShape = [CAShapeLayer layer];
     circleShape.cornerRadius = radius;
     circleShape.bounds = CGRectMake(0, 0, diameter, diameter);
@@ -1860,7 +1867,7 @@ static CGImageRef createStarImage(CGFloat radius)
         textLayer.fillColor = [[UIColor clearColor] CGColor];
     }
     
-    textLayer.geometryFlipped = NO;
+    textLayer.geometryFlipped = YES;
     textLayer.opacity = 0;
     
     NSTimeInterval duration = 6;
@@ -1888,30 +1895,30 @@ static CGImageRef createStarImage(CGFloat radius)
     gradientLayer.bounds = rectPath;
     
     CABasicAnimation *positionAnimationOut = [CABasicAnimation animationWithKeyPath:@"position"];
-	positionAnimationOut.fromValue = [NSValue valueWithCGPoint:gradientLayer.position];
-	positionAnimationOut.toValue = [NSValue valueWithCGPoint:CGPointZero];
+    positionAnimationOut.fromValue = [NSValue valueWithCGPoint:gradientLayer.position];
+    positionAnimationOut.toValue = [NSValue valueWithCGPoint:CGPointZero];
     
-	CABasicAnimation *boundsAnimationOut = [CABasicAnimation animationWithKeyPath:@"bounds"];
-	boundsAnimationOut.fromValue = [NSValue valueWithCGRect:gradientLayer.bounds];
-	boundsAnimationOut.toValue = [NSValue valueWithCGRect:CGRectZero];
+    CABasicAnimation *boundsAnimationOut = [CABasicAnimation animationWithKeyPath:@"bounds"];
+    boundsAnimationOut.fromValue = [NSValue valueWithCGRect:gradientLayer.bounds];
+    boundsAnimationOut.toValue = [NSValue valueWithCGRect:CGRectZero];
     
-	CABasicAnimation *opacityAnimationOut = [CABasicAnimation animationWithKeyPath:@"opacity"];
-	opacityAnimationOut.fromValue = [NSNumber numberWithFloat:1.0];
-	opacityAnimationOut.toValue = [NSNumber numberWithFloat:0.0];
-	
-	CABasicAnimation *rotateAnimationOut = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-	rotateAnimationOut.fromValue = [NSNumber numberWithFloat:0 * M_PI];
-	rotateAnimationOut.toValue = [NSNumber numberWithFloat:2 * M_PI];
-	
+    CABasicAnimation *opacityAnimationOut = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    opacityAnimationOut.fromValue = [NSNumber numberWithFloat:1.0];
+    opacityAnimationOut.toValue = [NSNumber numberWithFloat:0.0];
+    
+    CABasicAnimation *rotateAnimationOut = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotateAnimationOut.fromValue = [NSNumber numberWithFloat:0 * M_PI];
+    rotateAnimationOut.toValue = [NSNumber numberWithFloat:2 * M_PI];
+    
     int interval = 0;
-	CAAnimationGroup *groupOut = [CAAnimationGroup animation];
-	groupOut.beginTime = stroke.beginTime + stroke.duration + interval;
-	groupOut.duration = 1;
-	groupOut.animations = [NSArray arrayWithObjects:positionAnimationOut, boundsAnimationOut, rotateAnimationOut, opacityAnimationOut, nil];
-	groupOut.fillMode = kCAFillModeForwards;
-	groupOut.removedOnCompletion = NO;
-	
-	[gradientLayer addAnimation:groupOut forKey:@"moveOut"];
+    CAAnimationGroup *groupOut = [CAAnimationGroup animation];
+    groupOut.beginTime = stroke.beginTime + stroke.duration + interval;
+    groupOut.duration = 1;
+    groupOut.animations = [NSArray arrayWithObjects:positionAnimationOut, boundsAnimationOut, rotateAnimationOut, opacityAnimationOut, nil];
+    groupOut.fillMode = kCAFillModeForwards;
+    groupOut.removedOnCompletion = NO;
+    
+    [gradientLayer addAnimation:groupOut forKey:@"moveOut"];
     
     return gradientLayer;
 }
@@ -2120,8 +2127,8 @@ static CGImageRef createStarImage(CGFloat radius)
     CGRect bounds = CGRectMake(viewBounds.width/2, -viewBounds.height/2, viewBounds.width*2, viewBounds.height*2);
     CGFloat kRadius = 80;
     CGRect circleRect = CGRectMake(CGRectGetMidX(bounds) - kRadius,
-                                        CGRectGetMidY(bounds) - kRadius,
-                                         2 * kRadius, 2 * kRadius);
+                                   CGRectGetMidY(bounds) - kRadius,
+                                   2 * kRadius, 2 * kRadius);
     UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:circleRect];
     [path appendPath:[UIBezierPath bezierPathWithRect:bounds]];
     
@@ -2166,7 +2173,7 @@ static CGImageRef createStarImage(CGFloat radius)
     animationOpacityOut.repeatCount = 1;
     animationOpacityOut.duration = scaleAnimation.duration;
     animationOpacityOut.beginTime = animatedStartTime + animationMove.duration;
-
+    
     [circleLayer addAnimation:animationOpacityIn forKey:@"opacityIn"];
     [circleLayer addAnimation:animationMove forKey:@"position"];
     [circleLayer addAnimation:scaleAnimation forKey:@"scale"];
@@ -2184,7 +2191,7 @@ static CGImageRef createStarImage(CGFloat radius)
     if (imageSnap)
     {
         // Joint image
-//        NSString *imageName = [NSString stringWithFormat:@"attention_%i",(arc4random()%(int)2)+1];
+        //        NSString *imageName = [NSString stringWithFormat:@"attention_%i",(arc4random()%(int)2)+1];
         NSString *imageName = [NSString stringWithFormat:@"attention_1"];
         UIImage *imgOriginal = [UIImage imageNamed:imageName];
         UIImage *imageResult = [self imageJoint:imageSnap fromImage:imgOriginal];
@@ -2253,31 +2260,31 @@ static CGImageRef createStarImage(CGFloat radius)
         [layerImage addAnimation:opacityOutAnimation forKey:@"opacityOut"];
         [layerImage addAnimation:boundsOutAnimation forKey:@"boundsOut"];
         [layerImage addAnimation:rotationOutAnimation forKey:@"rotationOut"];
-       
+        
         
         // 1. Test image(save to png file)
-//        NSError *error = nil;
-//        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-//        NSString *documentsDirectory = [paths objectAtIndex:0];
-//        NSData *dataForPNGFile = UIImagePNGRepresentation(image);
-//        if (![dataForPNGFile writeToFile:[documentsDirectory stringByAppendingPathComponent:@"filtered.png"] options:NSAtomicWrite error:&error])
-//        {
-//            NSLog(@"Error: Couldn't save filter image.");
-//        }
+        //        NSError *error = nil;
+        //        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        //        NSString *documentsDirectory = [paths objectAtIndex:0];
+        //        NSData *dataForPNGFile = UIImagePNGRepresentation(image);
+        //        if (![dataForPNGFile writeToFile:[documentsDirectory stringByAppendingPathComponent:@"filtered.png"] options:NSAtomicWrite error:&error])
+        //        {
+        //            NSLog(@"Error: Couldn't save filter image.");
+        //        }
         
         // 2. Write to a temporary mov file
-//        NSString *tempFilmEffectMov = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/FilmEffect.mov"];
-//        unlink([tempFilmEffectMov UTF8String]);
-//        
-//        NSArray *arrImage = [NSArray arrayWithObjects:image, image, nil];
-//        [self writeImages:arrImage toMovieAtPath:tempFilmEffectMov withSize:CGSizeMake(viewBounds.width, viewBounds.height) inDuration:0.5 byFPS:(int32_t)time.timescale];
+        //        NSString *tempFilmEffectMov = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/FilmEffect.mov"];
+        //        unlink([tempFilmEffectMov UTF8String]);
+        //
+        //        NSArray *arrImage = [NSArray arrayWithObjects:image, image, nil];
+        //        [self writeImages:arrImage toMovieAtPath:tempFilmEffectMov withSize:CGSizeMake(viewBounds.width, viewBounds.height) inDuration:0.5 byFPS:(int32_t)time.timescale];
         
     }
     else
     {
         return nil;
     }
-
+    
     return layerImage;
 }
 
@@ -2401,8 +2408,8 @@ static CGImageRef createStarImage(CGFloat radius)
     // Wire the writer:
     NSError *error = nil;
     AVAssetWriter *videoWriter = [[AVAssetWriter alloc] initWithURL:[NSURL fileURLWithPath:path]
-                                                            fileType:AVFileTypeQuickTimeMovie
-                                                               error:&error];
+                                                           fileType:AVFileTypeQuickTimeMovie
+                                                              error:&error];
     NSParameterAssert(videoWriter);
     
     NSDictionary *videoSettings = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -2412,8 +2419,8 @@ static CGImageRef createStarImage(CGFloat radius)
                                    nil];
     
     AVAssetWriterInput* videoWriterInput = [AVAssetWriterInput
-                                             assetWriterInputWithMediaType:AVMediaTypeVideo
-                                             outputSettings:videoSettings];
+                                            assetWriterInputWithMediaType:AVMediaTypeVideo
+                                            outputSettings:videoSettings];
     
     
     AVAssetWriterInputPixelBufferAdaptor *adaptor = [AVAssetWriterInputPixelBufferAdaptor
@@ -2492,16 +2499,16 @@ static CGImageRef createStarImage(CGFloat radius)
     // Finish the session
     [videoWriterInput markAsFinished];
     [videoWriter finishWritingWithCompletionHandler:^(void)
-    {
-        NSLog(@"Finish insert image into video.");
-    }];
+     {
+         NSLog(@"Finish insert image into video.");
+     }];
 }
 
 #pragma mark - BuildAnimationPhotoLinearScroll
 - (CALayer*) buildAnimatedPhotoLinearScroll:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -2529,7 +2536,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) createPhotoLinearScrollLayer:(CGSize)viewBounds image:(UIImage *)image startTime:(NSTimeInterval)timeInterval
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
     layer.geometryFlipped = YES;
     
     // Add curled border
@@ -2547,14 +2554,14 @@ static CGImageRef createStarImage(CGFloat radius)
     
     // 1.
     CABasicAnimation *fadeInAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-	fadeInAnimation.fromValue = @0.0f;
-	fadeInAnimation.toValue = @1.0f;
-	fadeInAnimation.additive = NO;
-	fadeInAnimation.removedOnCompletion = NO;
-	fadeInAnimation.beginTime = timeInterval;
-	fadeInAnimation.duration = 3.0;
-	fadeInAnimation.autoreverses = NO;
-	fadeInAnimation.fillMode = kCAFillModeBoth;
+    fadeInAnimation.fromValue = @0.0f;
+    fadeInAnimation.toValue = @1.0f;
+    fadeInAnimation.additive = NO;
+    fadeInAnimation.removedOnCompletion = NO;
+    fadeInAnimation.beginTime = timeInterval;
+    fadeInAnimation.duration = 3.0;
+    fadeInAnimation.autoreverses = NO;
+    fadeInAnimation.fillMode = kCAFillModeBoth;
     
     CABasicAnimation *moveInAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
     [moveInAnimation setFromValue:[NSValue valueWithCGPoint:startPointIn]];
@@ -2580,7 +2587,7 @@ static CGImageRef createStarImage(CGFloat radius)
     shakeAnimation.repeatCount = 10;
     shakeAnimation.beginTime = moveInAnimation.beginTime + moveInAnimation.duration;
     
-    dispatch_async_main_after(shakeAnimation.beginTime+(shakeAnimation.duration*shakeAnimation.repeatCount), ^{
+    Run_Delay(shakeAnimation.beginTime+(shakeAnimation.duration*shakeAnimation.repeatCount), ^{
         layer.position = endPointIn;;
     });
     
@@ -2631,7 +2638,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimatedPhotoCentringShow:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -2684,7 +2691,7 @@ static CGImageRef createStarImage(CGFloat radius)
         
         double animatedStartTime = timeInterval;
         CABasicAnimation* rotationInAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-        rotationInAnimation.toValue = @((2 * M_PI) * -2); 
+        rotationInAnimation.toValue = @((2 * M_PI) * -2);
         rotationInAnimation.duration = 1.0f;
         rotationInAnimation.beginTime = animatedStartTime;
         rotationInAnimation.removedOnCompletion = NO;
@@ -2774,38 +2781,38 @@ static CGImageRef createStarImage(CGFloat radius)
 
 - (NSArray*)SplitImage:(UIImage*)image ByX:(int)x andY:(int)y
 {
-	if (x<1)
+    if (x<1)
     {
-		NSLog(@"illegal x!");
-		return nil;
-	}
+        NSLog(@"illegal x!");
+        return nil;
+    }
     else if (y<1)
     {
-		NSLog(@"illegal y!");
-		return nil;
-	}
+        NSLog(@"illegal y!");
+        return nil;
+    }
     
-	if (![image isKindOfClass:[UIImage class]])
+    if (![image isKindOfClass:[UIImage class]])
     {
-		NSLog(@"illegal image format!");
-		return nil;
-	}
-	
-	float _xstep = image.size.width/y;
-	float _ystep = image.size.height/x;
-	NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:x*y];
-	for (int i=0; i<x; ++i)
-	{
-		for (int j=0; j<y; ++j)
-		{
-			CGRect rect = CGRectMake(_xstep*j, _ystep*i, _xstep, _ystep);
-			CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], rect);
-			UIImage* elementImage = [UIImage imageWithCGImage:imageRef];
+        NSLog(@"illegal image format!");
+        return nil;
+    }
+    
+    float _xstep = image.size.width/y;
+    float _ystep = image.size.height/x;
+    NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:x*y];
+    for (int i=0; i<x; ++i)
+    {
+        for (int j=0; j<y; ++j)
+        {
+            CGRect rect = CGRectMake(_xstep*j, _ystep*i, _xstep, _ystep);
+            CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], rect);
+            UIImage* elementImage = [UIImage imageWithCGImage:imageRef];
             [arr addObject:elementImage];
-		}
-	}
-	
-	return arr;
+        }
+    }
+    
+    return arr;
 }
 
 #pragma mark - Get Image Asset
@@ -2815,8 +2822,8 @@ static CGImageRef createStarImage(CGFloat radius)
     CGImageRef imgRef = [assetRep fullResolutionImage];
     
     return [UIImage imageWithCGImage:imgRef
-                                    scale:assetRep.scale
-                                    orientation:(UIImageOrientation)assetRep.orientation];
+                               scale:assetRep.scale
+                         orientation:(UIImageOrientation)assetRep.orientation];
 }
 
 - (UIImage*) getThumbnailImageByALAsset:(ALAsset*)asset
@@ -2827,7 +2834,7 @@ static CGImageRef createStarImage(CGFloat radius)
 #pragma mark - Build Video BorderImage
 - (CALayer*) BuildVideoBorderImage:(CGSize)viewBounds borderImage:(NSString*)borderImage position:(CGPoint)position
 {
-    if (isStringEmpty(borderImage))
+    if (kStringIsEmpty(borderImage))
     {
         return nil;
     }
@@ -3031,7 +3038,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimatedPhotoDrop:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -3070,7 +3077,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) createPhotoDropLayer:(CGSize)viewBounds image:(UIImage *)image startTime:(NSTimeInterval)timeInterval xAxis:(CGFloat)xAxis
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
     
     // Joint image
     UIImage *imageResult = [self getBorderImage:image];
@@ -3085,14 +3092,14 @@ static CGImageRef createStarImage(CGFloat radius)
     
     // 1.
     CABasicAnimation *fadeInAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-	fadeInAnimation.fromValue = @0.0f;
-	fadeInAnimation.toValue = @1.0f;
-	fadeInAnimation.additive = NO;
-	fadeInAnimation.removedOnCompletion = NO;
-	fadeInAnimation.beginTime = timeInterval;
-	fadeInAnimation.duration = 2.0;
-	fadeInAnimation.autoreverses = NO;
-	fadeInAnimation.fillMode = kCAFillModeBoth;
+    fadeInAnimation.fromValue = @0.0f;
+    fadeInAnimation.toValue = @1.0f;
+    fadeInAnimation.additive = NO;
+    fadeInAnimation.removedOnCompletion = NO;
+    fadeInAnimation.beginTime = timeInterval;
+    fadeInAnimation.duration = 2.0;
+    fadeInAnimation.autoreverses = NO;
+    fadeInAnimation.fillMode = kCAFillModeBoth;
     
     CABasicAnimation *moveInAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
     [moveInAnimation setFromValue:[NSValue valueWithCGPoint:startPointIn]];
@@ -3118,7 +3125,7 @@ static CGImageRef createStarImage(CGFloat radius)
     shakeAnimation.repeatCount = 15;
     shakeAnimation.beginTime = moveInAnimation.beginTime + moveInAnimation.duration;
     
-    dispatch_async_main_after(shakeAnimation.beginTime+(shakeAnimation.duration*shakeAnimation.repeatCount), ^{
+    Run_Delay(shakeAnimation.beginTime+(shakeAnimation.duration*shakeAnimation.repeatCount), ^{
         layer.position = endPointIn;;
     });
     
@@ -3168,7 +3175,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimatedPhotoParabola:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -3207,7 +3214,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) createPhotoParabolaLayer:(CGSize)viewBounds image:(UIImage *)image startTime:(NSTimeInterval)timeInterval xAxis:(CGFloat)xAxis
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
     layer.position = CGPointMake(xAxis, viewBounds.height*2/3);
     layer.opacity = 0.0;
     
@@ -3216,14 +3223,14 @@ static CGImageRef createStarImage(CGFloat radius)
     
     // 1.
     CABasicAnimation *fadeInAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-	fadeInAnimation.fromValue = @0.0f;
-	fadeInAnimation.toValue = @1.0f;
-	fadeInAnimation.additive = NO;
-	fadeInAnimation.removedOnCompletion = NO;
-	fadeInAnimation.beginTime = timeInterval;
-	fadeInAnimation.duration = 1.0;
-	fadeInAnimation.autoreverses = NO;
-	fadeInAnimation.fillMode = kCAFillModeBoth;
+    fadeInAnimation.fromValue = @0.0f;
+    fadeInAnimation.toValue = @1.0f;
+    fadeInAnimation.additive = NO;
+    fadeInAnimation.removedOnCompletion = NO;
+    fadeInAnimation.beginTime = timeInterval;
+    fadeInAnimation.duration = 1.0;
+    fadeInAnimation.autoreverses = NO;
+    fadeInAnimation.fillMode = kCAFillModeBoth;
     
     // 2.
     CGFloat duration = 1.6f;
@@ -3289,7 +3296,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimatedPhotoFlare:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -3328,7 +3335,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) createPhotoFlareLayer:(CGSize)viewBounds image:(UIImage *)image startTime:(NSTimeInterval)timeInterval xAxis:(CGFloat)xAxis
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
     layer.position = CGPointMake(xAxis, viewBounds.height/2);
     layer.geometryFlipped = YES;
     
@@ -3343,13 +3350,13 @@ static CGImageRef createStarImage(CGFloat radius)
     
     CGFloat duration = 2.0f;
     float _xstep = imageResult.size.width/y;
-	float _ystep = imageResult.size.height/x;
-	for (int i=0; i<x; ++i)
-	{
-		for (int j=0; j<y; ++j)
-		{
-			CGRect rect = CGRectMake(_xstep*j, _ystep*i, _xstep, _ystep);
-			UIImage* elementImage = arrImage[i*y + j];
+    float _ystep = imageResult.size.height/x;
+    for (int i=0; i<x; ++i)
+    {
+        for (int j=0; j<y; ++j)
+        {
+            CGRect rect = CGRectMake(_xstep*j, _ystep*i, _xstep, _ystep);
+            UIImage* elementImage = arrImage[i*y + j];
             CALayer *layerPart = [CALayer layer];
             layerPart.frame = rect;
             layerPart.contents = (id)[elementImage CGImage];
@@ -3390,9 +3397,9 @@ static CGImageRef createStarImage(CGFloat radius)
             [layerPart addAnimation:fadeInAnimation forKey:@"opacity"];
             [layerPart addAnimation:moveInAnimation forKey:@"position"];
             [layer addSublayer:layerPart];
-		}
-	}
-
+        }
+    }
+    
     CABasicAnimation* shakeAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     shakeAnimation.fromValue = [NSNumber numberWithFloat:-M_PI/32];
     shakeAnimation.toValue = [NSNumber numberWithFloat:+M_PI/32];
@@ -3420,7 +3427,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) BuildAnimationPhotoEmitter:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -3472,7 +3479,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) createPhotoEmitterLayer:(CGSize)viewBounds image:(UIImage *)image startTime:(NSTimeInterval)timeInterval xAxis:(CGFloat)xAxis yAxis:(CGFloat)yAxis
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
     layer.position = CGPointMake(xAxis, yAxis);
     layer.opacity = 0.0;
     
@@ -3482,14 +3489,14 @@ static CGImageRef createStarImage(CGFloat radius)
     // 1.
     CGFloat duration = 1.6f;
     CABasicAnimation *fadeInAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-	fadeInAnimation.fromValue = @0.0f;
-	fadeInAnimation.toValue = @1.0f;
-	fadeInAnimation.additive = NO;
-	fadeInAnimation.removedOnCompletion = NO;
-	fadeInAnimation.beginTime = timeInterval;
-	fadeInAnimation.duration = duration;
-	fadeInAnimation.autoreverses = NO;
-	fadeInAnimation.fillMode = kCAFillModeBoth;
+    fadeInAnimation.fromValue = @0.0f;
+    fadeInAnimation.toValue = @1.0f;
+    fadeInAnimation.additive = NO;
+    fadeInAnimation.removedOnCompletion = NO;
+    fadeInAnimation.beginTime = timeInterval;
+    fadeInAnimation.duration = duration;
+    fadeInAnimation.autoreverses = NO;
+    fadeInAnimation.fillMode = kCAFillModeBoth;
     
     // 2.
     CGFloat positionX = layer.position.x;
@@ -3568,7 +3575,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimatedPhotoExplode:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -3596,7 +3603,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) createPhotoExplodeLayer:(CGSize)viewBounds image:(UIImage *)image startTime:(NSTimeInterval)timeInterval
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     layer.geometryFlipped = YES;
     
@@ -3611,13 +3618,13 @@ static CGImageRef createStarImage(CGFloat radius)
     
     CGFloat duration = 1.0f;
     float _xstep = imageResult.size.width/y;
-	float _ystep = imageResult.size.height/x;
-	for (int i=0; i<x; ++i)
-	{
-		for (int j=0; j<y; ++j)
-		{
-			CGRect rect = CGRectMake(_xstep*j, _ystep*i, _xstep, _ystep);
-			UIImage* elementImage = arrImage[i*y + j];
+    float _ystep = imageResult.size.height/x;
+    for (int i=0; i<x; ++i)
+    {
+        for (int j=0; j<y; ++j)
+        {
+            CGRect rect = CGRectMake(_xstep*j, _ystep*i, _xstep, _ystep);
+            UIImage* elementImage = arrImage[i*y + j];
             CALayer *layerPart = [CALayer layer];
             layerPart.frame = rect;
             layerPart.contents = (id)[elementImage CGImage];
@@ -3647,8 +3654,8 @@ static CGImageRef createStarImage(CGFloat radius)
             
             [layerPart addAnimation:group forKey:@"group"];
             [layer addSublayer:layerPart];
-		}
-	}
+        }
+    }
     
     CABasicAnimation* shakeAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     shakeAnimation.fromValue = [NSNumber numberWithFloat:-M_PI/32];
@@ -3700,7 +3707,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimatedPhotoExplodeDrop:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -3739,7 +3746,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) createPhotoExplodeDropLayer:(CGSize)viewBounds image:(UIImage*)image  startTime:(NSTimeInterval)timeInterval xAxis:(CGFloat)xAxis
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
     layer.position = CGPointMake(xAxis, viewBounds.height/2);
     layer.geometryFlipped = YES;
     
@@ -3754,18 +3761,18 @@ static CGImageRef createStarImage(CGFloat radius)
     
     CGFloat duration = 3.0f;
     float _xstep = imageResult.size.width/y;
-	float _ystep = imageResult.size.height/x;
-	for (int i=0; i<x; ++i)
-	{
-		for (int j=0; j<y; ++j)
-		{
-			CGRect rect = CGRectMake(_xstep*j, _ystep*i, _xstep, _ystep);
-			UIImage* elementImage = arrImage[i*y + j];
+    float _ystep = imageResult.size.height/x;
+    for (int i=0; i<x; ++i)
+    {
+        for (int j=0; j<y; ++j)
+        {
+            CGRect rect = CGRectMake(_xstep*j, _ystep*i, _xstep, _ystep);
+            UIImage* elementImage = arrImage[i*y + j];
             CALayer *layerPart = [CALayer layer];
             layerPart.frame = rect;
             layerPart.contents = (id)[elementImage CGImage];
             layerPart.geometryFlipped = YES;
-
+            
             layerPart.opacity = 0.0;
             CGPoint startPointIn = CGPointMake(((_xstep*(y-j)) + _xstep)/2, ((_ystep*i)+_ystep)/2);
             CGPoint middlePoint = layerPart.position;
@@ -3800,68 +3807,68 @@ static CGImageRef createStarImage(CGFloat radius)
             [layerPart addAnimation:fadeInAnimation forKey:@"opacity"];
             [layerPart addAnimation:moveInAnimation forKey:@"position"];
             [layerPart addAnimation:rotateInAnimation forKey:@"rotateIn"];
-
+            
             [layer addSublayer:layerPart];
-		}
-	}
+        }
+    }
     
     NSTimeInterval startTime = timeInterval + duration + 1;
     CGFloat durationExplode = 2.0;
     // Explode drop
     CGRect originalFrame = layer.frame;
     [[layer sublayers] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop)
-    {
-        LPParticleLayer *layerParticle = (LPParticleLayer *)obj;
-        
-        // Path
-        CAKeyframeAnimation *moveAnim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-        moveAnim.path = ([self pathForLayer:layerParticle parentRect:originalFrame].CGPath);
-        moveAnim.removedOnCompletion = YES;
-        moveAnim.fillMode=kCAFillModeForwards;
-        NSArray *timingFunctions = [NSArray arrayWithObjects:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],nil];
-        [moveAnim setTimingFunctions:timingFunctions];
-
-        float r = randomFloat();
-        NSTimeInterval speed = 2.35*r;
-
-        CAKeyframeAnimation *transformAnim = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-        CATransform3D startingScale = layerParticle.transform;
-        CATransform3D endingScale = CATransform3DConcat(CATransform3DMakeScale(randomFloat(), randomFloat(), randomFloat()), CATransform3DMakeRotation(M_PI*(1+randomFloat()), randomFloat(), randomFloat(), randomFloat()));
-
-        NSArray *boundsValues = [NSArray arrayWithObjects:[NSValue valueWithCATransform3D:startingScale],
-                                 [NSValue valueWithCATransform3D:endingScale], nil];
-        [transformAnim setValues:boundsValues];
-
-        NSArray *times = [NSArray arrayWithObjects:[NSNumber numberWithFloat:0.0],
-                          [NSNumber numberWithFloat:speed*.25], nil];
-        [transformAnim setKeyTimes:times];
-
-
-        timingFunctions = [NSArray arrayWithObjects:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],
-                           [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],
-                           [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut], [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
-                           nil];
-        [transformAnim setTimingFunctions:timingFunctions];
-        transformAnim.fillMode = kCAFillModeForwards;
-        transformAnim.removedOnCompletion = NO;
-
-        CABasicAnimation *opacityAnim = [CABasicAnimation animationWithKeyPath:@"opacity"];
-        opacityAnim.fromValue = [NSNumber numberWithFloat:1.0f];
-        opacityAnim.toValue = [NSNumber numberWithFloat:0.f];
-        opacityAnim.removedOnCompletion = NO;
-        opacityAnim.fillMode =kCAFillModeForwards;
-
-        CAAnimationGroup *animGroup = [CAAnimationGroup animation];
-        animGroup.animations = [NSArray arrayWithObjects:moveAnim,transformAnim,opacityAnim, nil];
-        animGroup.duration = durationExplode;
-        animGroup.fillMode = kCAFillModeForwards;
-        animGroup.delegate = self;
-        animGroup.beginTime = startTime;
-        [animGroup setValue:layerParticle forKey:@"animationLayer"];
-        
-        [layerParticle addAnimation:animGroup forKey:nil];
-        
-    }];
+     {
+         LPParticleLayer *layerParticle = (LPParticleLayer *)obj;
+         
+         // Path
+         CAKeyframeAnimation *moveAnim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+         moveAnim.path = ([self pathForLayer:layerParticle parentRect:originalFrame].CGPath);
+         moveAnim.removedOnCompletion = YES;
+         moveAnim.fillMode=kCAFillModeForwards;
+         NSArray *timingFunctions = [NSArray arrayWithObjects:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],nil];
+         [moveAnim setTimingFunctions:timingFunctions];
+         
+         float r = randomFloat();
+         NSTimeInterval speed = 2.35*r;
+         
+         CAKeyframeAnimation *transformAnim = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+         CATransform3D startingScale = layerParticle.transform;
+         CATransform3D endingScale = CATransform3DConcat(CATransform3DMakeScale(randomFloat(), randomFloat(), randomFloat()), CATransform3DMakeRotation(M_PI*(1+randomFloat()), randomFloat(), randomFloat(), randomFloat()));
+         
+         NSArray *boundsValues = [NSArray arrayWithObjects:[NSValue valueWithCATransform3D:startingScale],
+                                  [NSValue valueWithCATransform3D:endingScale], nil];
+         [transformAnim setValues:boundsValues];
+         
+         NSArray *times = [NSArray arrayWithObjects:[NSNumber numberWithFloat:0.0],
+                           [NSNumber numberWithFloat:speed*.25], nil];
+         [transformAnim setKeyTimes:times];
+         
+         
+         timingFunctions = [NSArray arrayWithObjects:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],
+                            [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],
+                            [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut], [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                            nil];
+         [transformAnim setTimingFunctions:timingFunctions];
+         transformAnim.fillMode = kCAFillModeForwards;
+         transformAnim.removedOnCompletion = NO;
+         
+         CABasicAnimation *opacityAnim = [CABasicAnimation animationWithKeyPath:@"opacity"];
+         opacityAnim.fromValue = [NSNumber numberWithFloat:1.0f];
+         opacityAnim.toValue = [NSNumber numberWithFloat:0.f];
+         opacityAnim.removedOnCompletion = NO;
+         opacityAnim.fillMode =kCAFillModeForwards;
+         
+         CAAnimationGroup *animGroup = [CAAnimationGroup animation];
+         animGroup.animations = [NSArray arrayWithObjects:moveAnim,transformAnim,opacityAnim, nil];
+         animGroup.duration = durationExplode;
+         animGroup.fillMode = kCAFillModeForwards;
+         animGroup.delegate = self;
+         animGroup.beginTime = startTime;
+         [animGroup setValue:layerParticle forKey:@"animationLayer"];
+         
+         [layerParticle addAnimation:animGroup forKey:nil];
+         
+     }];
     
     CABasicAnimation *fadeOutAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     fadeOutAnimation.fromValue = @1.0f;
@@ -3917,7 +3924,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimatedPhotoCloud:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -3957,10 +3964,10 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) createPhotoCloudLayer:(CGSize)viewBounds image:(UIImage *)image startTime:(NSTimeInterval)timeInterval left:(BOOL)left
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     layer.opacity = 0.0;
-  
+    
     // Add curled border
     UIImage * imageResult = [[CurledViewBase sharedInstance] setImage:image forLayer:layer];
     
@@ -3984,7 +3991,7 @@ static CGImageRef createStarImage(CGFloat radius)
     basicOpa.removedOnCompletion = NO;
     basicOpa.beginTime = timeInterval+0.5;
     basicOpa.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-
+    
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(viewBounds.width/2, -image.size.height/2)];
     if (left)
@@ -4010,7 +4017,7 @@ static CGImageRef createStarImage(CGFloat radius)
     [layer addAnimation:basicScale forKey:@"scale"];
     [layer addAnimation:basicOpa forKey:@"opacity"];
     [layer addAnimation:keyPosi forKey:@"position"];
-
+    
     // Reflection layer
     int gap = 10;
     CALayer *layerReflection = [CALayer layer];
@@ -4020,7 +4027,7 @@ static CGImageRef createStarImage(CGFloat radius)
     layerReflection.contents = (id)[reflectionImage CGImage];
     [layer addSublayer:layerReflection];
     reflectionImage = nil;
-
+    
     return layer;
 }
 
@@ -4028,7 +4035,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimatedPhotoSpin360:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -4053,7 +4060,7 @@ static CGImageRef createStarImage(CGFloat radius)
                     position = CGPointMake(gap + sizeImage.width/2, gap + sizeImage.height/2);
                     [layer addSublayer:[self createPhotoSpin360Layer:viewBounds photos:photos startTime:timeInterval position:position]];
                 }
-               
+                
                 break;
             }
             case 1:
@@ -4095,16 +4102,16 @@ static CGImageRef createStarImage(CGFloat radius)
         
         timeInterval += 0.5;
     }
-   
+    
     return layer;
 }
 
 - (CALayer*) createPhotoSpin360Layer:(CGSize)viewBounds photos:(NSMutableArray*)photos  startTime:(NSTimeInterval)timeInterval position:(CGPoint)position
 {
-   
+    
     UIImage *imageTemp = [self getThumbnailImageByALAsset:photos[0]];
     CALayer *layerImage = [CALayer layer];
-	layerImage.bounds = CGRectMake(0, 0, imageTemp.size.width, imageTemp.size.height);
+    layerImage.bounds = CGRectMake(0, 0, imageTemp.size.width, imageTemp.size.height);
     layerImage.position = position;
     layerImage.cornerRadius = imageTemp.size.width/2;
     layerImage.borderWidth = 2.0;
@@ -4114,16 +4121,16 @@ static CGImageRef createStarImage(CGFloat radius)
     CGFloat duration = 3.0;
     int repeatCount = 15;
     CAKeyframeAnimation *animTransform = [CAKeyframeAnimation animation];
-	animTransform.values = [NSArray arrayWithObjects:
+    animTransform.values = [NSArray arrayWithObjects:
                             [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0,1,0)],
                             [NSValue valueWithCATransform3D:CATransform3DMakeRotation(3.13, 0,1,0)],
                             [NSValue valueWithCATransform3D:CATransform3DMakeRotation(3.13, 0,1,0)],
                             [NSValue valueWithCATransform3D:CATransform3DMakeRotation(6.26, 0,1,0)],
                             nil];
-	animTransform.cumulative = YES;
-	animTransform.duration = duration;
-	animTransform.repeatCount = repeatCount;
-	animTransform.removedOnCompletion = NO;
+    animTransform.cumulative = YES;
+    animTransform.duration = duration;
+    animTransform.repeatCount = repeatCount;
+    animTransform.removedOnCompletion = NO;
     animTransform.beginTime = timeInterval;
     animTransform.timingFunctions =
     [NSArray arrayWithObjects:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
@@ -4164,7 +4171,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*) buildAnimatedPhotoCarousel:(CGSize)viewBounds photos:(NSMutableArray*)photos startTime:(NSTimeInterval)startTime
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
+    layer.bounds = CGRectMake(0, 0, viewBounds.width, viewBounds.height);
     layer.position = CGPointMake(viewBounds.width/2, viewBounds.height/2);
     
     if (!photos || [photos count] < 1)
@@ -4205,7 +4212,7 @@ static CGImageRef createStarImage(CGFloat radius)
 - (CALayer*)createPhotoCarouselLayer:(CGSize)viewBounds image:(UIImage*)image startTime:(NSTimeInterval)timeInterval xAxis:(CGFloat)xAxis curWhich:(int)curWhich
 {
     CALayer *layer = [CALayer layer];
-	layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    layer.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
     layer.position = CGPointMake(-image.size.width, viewBounds.height/2);
     layer.geometryFlipped = YES;
     
@@ -4488,189 +4495,189 @@ static CGImageRef createStarImage(CGFloat radius)
 #pragma mark - BuildComposition
 - (void)buildSequenceComposition:(AVMutableComposition *)composition
 {
-	CMTime nextClipStartTime = kCMTimeZero;
-	NSInteger i;
-	
-	// No transitions: place clips into one video track and one audio track in composition.
-	
-	AVMutableCompositionTrack *compositionVideoTrack = [composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
-	AVMutableCompositionTrack *compositionAudioTrack = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
-	
-	for (i = 0; i < [_clips count]; i++ )
+    CMTime nextClipStartTime = kCMTimeZero;
+    NSInteger i;
+    
+    // No transitions: place clips into one video track and one audio track in composition.
+    
+    AVMutableCompositionTrack *compositionVideoTrack = [composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+    AVMutableCompositionTrack *compositionAudioTrack = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
+    
+    for (i = 0; i < [_clips count]; i++ )
     {
-		AVURLAsset *asset = [_clips objectAtIndex:i];
-		NSValue *clipTimeRange = [_clipTimeRanges objectAtIndex:i];
-		CMTimeRange timeRangeInAsset;
-		if (clipTimeRange)
-			timeRangeInAsset = [clipTimeRange CMTimeRangeValue];
-		else
-			timeRangeInAsset = CMTimeRangeMake(kCMTimeZero, [asset duration]);
-		
-		AVAssetTrack *clipVideoTrack = [[asset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
-		[compositionVideoTrack insertTimeRange:timeRangeInAsset ofTrack:clipVideoTrack atTime:nextClipStartTime error:nil];
-		
+        AVURLAsset *asset = [_clips objectAtIndex:i];
+        NSValue *clipTimeRange = [_clipTimeRanges objectAtIndex:i];
+        CMTimeRange timeRangeInAsset;
+        if (clipTimeRange)
+            timeRangeInAsset = [clipTimeRange CMTimeRangeValue];
+        else
+            timeRangeInAsset = CMTimeRangeMake(kCMTimeZero, [asset duration]);
+        
+        AVAssetTrack *clipVideoTrack = [[asset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
+        [compositionVideoTrack insertTimeRange:timeRangeInAsset ofTrack:clipVideoTrack atTime:nextClipStartTime error:nil];
+        
         // 视频文件可能没有音频轨道，静音
         if ([[asset tracksWithMediaType:AVMediaTypeAudio] count] != 0)
         {
             AVAssetTrack *clipAudioTrack = [[asset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0];
             [compositionAudioTrack insertTimeRange:timeRangeInAsset ofTrack:clipAudioTrack atTime:nextClipStartTime error:nil];
-		}
+        }
         
-		// Note: This is largely equivalent:
-		// [composition insertTimeRange:timeRangeInAsset ofAsset:asset atTime:nextClipStartTime error:NULL];
-		// except that if the video tracks dimensions do not match, additional video tracks will be added to the composition.
-
-		nextClipStartTime = CMTimeAdd(nextClipStartTime, timeRangeInAsset.duration);
-	}
+        // Note: This is largely equivalent:
+        // [composition insertTimeRange:timeRangeInAsset ofAsset:asset atTime:nextClipStartTime error:NULL];
+        // except that if the video tracks dimensions do not match, additional video tracks will be added to the composition.
+        
+        nextClipStartTime = CMTimeAdd(nextClipStartTime, timeRangeInAsset.duration);
+    }
 }
 
 - (void)buildTransitionComposition:(AVMutableComposition *)composition andVideoComposition:(AVMutableVideoComposition *)videoComposition
 {
-	CMTime nextClipStartTime = kCMTimeZero;
-	NSInteger i;
-
-	// Make transitionDuration no greater than half the shortest clip duration.
-	CMTime transitionDuration = self.transitionDuration;
-	for (i = 0; i < [_clips count]; i++ )
+    CMTime nextClipStartTime = kCMTimeZero;
+    NSInteger i;
+    
+    // Make transitionDuration no greater than half the shortest clip duration.
+    CMTime transitionDuration = self.transitionDuration;
+    for (i = 0; i < [_clips count]; i++ )
     {
-		NSValue *clipTimeRange = [_clipTimeRanges objectAtIndex:i];
-		if (clipTimeRange)
+        NSValue *clipTimeRange = [_clipTimeRanges objectAtIndex:i];
+        if (clipTimeRange)
         {
-			CMTime halfClipDuration = [clipTimeRange CMTimeRangeValue].duration;
-			halfClipDuration.timescale *= 2; // You can halve a rational by doubling its denominator.
-			transitionDuration = CMTimeMinimum(transitionDuration, halfClipDuration);
-		}
-	}
-	
-	// Add two video tracks and two audio tracks.
-	AVMutableCompositionTrack *compositionVideoTracks[2];
-	AVMutableCompositionTrack *compositionAudioTracks[2];
-	compositionVideoTracks[0] = [composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
-	compositionVideoTracks[1] = [composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
-	compositionAudioTracks[0] = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
-	compositionAudioTracks[1] = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
-	
-	CMTimeRange *passThroughTimeRanges = alloca(sizeof(CMTimeRange) * [_clips count]);
-	CMTimeRange *transitionTimeRanges = alloca(sizeof(CMTimeRange) * [_clips count]);
-	
-	// Place clips into alternating video & audio tracks in composition, overlapped by transitionDuration.
-	for (i = 0; i < [_clips count]; i++ )
+            CMTime halfClipDuration = [clipTimeRange CMTimeRangeValue].duration;
+            halfClipDuration.timescale *= 2; // You can halve a rational by doubling its denominator.
+            transitionDuration = CMTimeMinimum(transitionDuration, halfClipDuration);
+        }
+    }
+    
+    // Add two video tracks and two audio tracks.
+    AVMutableCompositionTrack *compositionVideoTracks[2];
+    AVMutableCompositionTrack *compositionAudioTracks[2];
+    compositionVideoTracks[0] = [composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+    compositionVideoTracks[1] = [composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+    compositionAudioTracks[0] = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
+    compositionAudioTracks[1] = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
+    
+    CMTimeRange *passThroughTimeRanges = alloca(sizeof(CMTimeRange) * [_clips count]);
+    CMTimeRange *transitionTimeRanges = alloca(sizeof(CMTimeRange) * [_clips count]);
+    
+    // Place clips into alternating video & audio tracks in composition, overlapped by transitionDuration.
+    for (i = 0; i < [_clips count]; i++ )
     {
-		NSInteger alternatingIndex = i % 2; // alternating targets: 0, 1, 0, 1, ...
-		AVURLAsset *asset = [_clips objectAtIndex:i];
-		NSValue *clipTimeRange = [_clipTimeRanges objectAtIndex:i];
-		CMTimeRange timeRangeInAsset;
-		if (clipTimeRange)
-			timeRangeInAsset = [clipTimeRange CMTimeRangeValue];
-		else
-			timeRangeInAsset = CMTimeRangeMake(kCMTimeZero, [asset duration]);
-		
-		AVAssetTrack *clipVideoTrack = [[asset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
-		[compositionVideoTracks[alternatingIndex] insertTimeRange:timeRangeInAsset ofTrack:clipVideoTrack atTime:nextClipStartTime error:nil];
-		
+        NSInteger alternatingIndex = i % 2; // alternating targets: 0, 1, 0, 1, ...
+        AVURLAsset *asset = [_clips objectAtIndex:i];
+        NSValue *clipTimeRange = [_clipTimeRanges objectAtIndex:i];
+        CMTimeRange timeRangeInAsset;
+        if (clipTimeRange)
+            timeRangeInAsset = [clipTimeRange CMTimeRangeValue];
+        else
+            timeRangeInAsset = CMTimeRangeMake(kCMTimeZero, [asset duration]);
+        
+        AVAssetTrack *clipVideoTrack = [[asset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
+        [compositionVideoTracks[alternatingIndex] insertTimeRange:timeRangeInAsset ofTrack:clipVideoTrack atTime:nextClipStartTime error:nil];
+        
         // 视频文件可能没有音频轨道，静音
         if ([[asset tracksWithMediaType:AVMediaTypeAudio] count] != 0)
         {
             AVAssetTrack *clipAudioTrack = [[asset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0];
             [compositionAudioTracks[alternatingIndex] insertTimeRange:timeRangeInAsset ofTrack:clipAudioTrack atTime:nextClipStartTime error:nil];
-		}
-		
-		// Remember the time range in which this clip should pass through.
-		// Every clip after the first begins with a transition.
-		// Every clip before the last ends with a transition.
-		// Exclude those transitions from the pass through time ranges.
-		passThroughTimeRanges[i] = CMTimeRangeMake(nextClipStartTime, timeRangeInAsset.duration);
-		if (i > 0)
-        {
-			passThroughTimeRanges[i].start = CMTimeAdd(passThroughTimeRanges[i].start, transitionDuration);
-			passThroughTimeRanges[i].duration = CMTimeSubtract(passThroughTimeRanges[i].duration, transitionDuration);
-		}
-		if (i+1 < [_clips count])
-        {
-			passThroughTimeRanges[i].duration = CMTimeSubtract(passThroughTimeRanges[i].duration, transitionDuration);
-		}
-		
-		// The end of this clip will overlap the start of the next by transitionDuration.
-		// (Note: this arithmetic falls apart if timeRangeInAsset.duration < 2 * transitionDuration.)
-		nextClipStartTime = CMTimeAdd(nextClipStartTime, timeRangeInAsset.duration);
-		nextClipStartTime = CMTimeSubtract(nextClipStartTime, transitionDuration);
-		
-		// Remember the time range for the transition to the next item.
-		transitionTimeRanges[i] = CMTimeRangeMake(nextClipStartTime, transitionDuration);
-	}
-	
-	// Set up the video composition if we are to perform crossfade or push transitions between clips.
-	NSMutableArray *instructions = [NSMutableArray array];
-
-	// Cycle between "pass through A", "transition from A to B", "pass through B", "transition from B to A".
-	for (i = 0; i < [_clips count]; i++ )
-    {
-		NSInteger alternatingIndex = i % 2; // alternating targets
-		
-		// Pass through clip i.
-		AVMutableVideoCompositionInstruction *passThroughInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
-		passThroughInstruction.timeRange = passThroughTimeRanges[i];
+        }
         
-		AVMutableVideoCompositionLayerInstruction *passThroughLayer = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:compositionVideoTracks[alternatingIndex]];
-		passThroughInstruction.layerInstructions = [NSArray arrayWithObject:passThroughLayer];
-		[instructions addObject:passThroughInstruction];
-		
-		if (i+1 < [_clips count])
+        // Remember the time range in which this clip should pass through.
+        // Every clip after the first begins with a transition.
+        // Every clip before the last ends with a transition.
+        // Exclude those transitions from the pass through time ranges.
+        passThroughTimeRanges[i] = CMTimeRangeMake(nextClipStartTime, timeRangeInAsset.duration);
+        if (i > 0)
         {
-			// Add transition from clip i to clip i+1.
-			AVMutableVideoCompositionInstruction *transitionInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
-			transitionInstruction.timeRange = transitionTimeRanges[i];
+            passThroughTimeRanges[i].start = CMTimeAdd(passThroughTimeRanges[i].start, transitionDuration);
+            passThroughTimeRanges[i].duration = CMTimeSubtract(passThroughTimeRanges[i].duration, transitionDuration);
+        }
+        if (i+1 < [_clips count])
+        {
+            passThroughTimeRanges[i].duration = CMTimeSubtract(passThroughTimeRanges[i].duration, transitionDuration);
+        }
+        
+        // The end of this clip will overlap the start of the next by transitionDuration.
+        // (Note: this arithmetic falls apart if timeRangeInAsset.duration < 2 * transitionDuration.)
+        nextClipStartTime = CMTimeAdd(nextClipStartTime, timeRangeInAsset.duration);
+        nextClipStartTime = CMTimeSubtract(nextClipStartTime, transitionDuration);
+        
+        // Remember the time range for the transition to the next item.
+        transitionTimeRanges[i] = CMTimeRangeMake(nextClipStartTime, transitionDuration);
+    }
+    
+    // Set up the video composition if we are to perform crossfade or push transitions between clips.
+    NSMutableArray *instructions = [NSMutableArray array];
+    
+    // Cycle between "pass through A", "transition from A to B", "pass through B", "transition from B to A".
+    for (i = 0; i < [_clips count]; i++ )
+    {
+        NSInteger alternatingIndex = i % 2; // alternating targets
+        
+        // Pass through clip i.
+        AVMutableVideoCompositionInstruction *passThroughInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
+        passThroughInstruction.timeRange = passThroughTimeRanges[i];
+        
+        AVMutableVideoCompositionLayerInstruction *passThroughLayer = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:compositionVideoTracks[alternatingIndex]];
+        passThroughInstruction.layerInstructions = [NSArray arrayWithObject:passThroughLayer];
+        [instructions addObject:passThroughInstruction];
+        
+        if (i+1 < [_clips count])
+        {
+            // Add transition from clip i to clip i+1.
+            AVMutableVideoCompositionInstruction *transitionInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
+            transitionInstruction.timeRange = transitionTimeRanges[i];
             
-			AVMutableVideoCompositionLayerInstruction *fromLayer = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:compositionVideoTracks[alternatingIndex]];
-			AVMutableVideoCompositionLayerInstruction *toLayer = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:compositionVideoTracks[1-alternatingIndex]];
-			
-			if (self.transitionType == TransitionTypeCrossFade)
+            AVMutableVideoCompositionLayerInstruction *fromLayer = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:compositionVideoTracks[alternatingIndex]];
+            AVMutableVideoCompositionLayerInstruction *toLayer = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:compositionVideoTracks[1-alternatingIndex]];
+            
+            if (self.transitionType == TransitionTypeCrossFade)
             {
-				// Fade out the fromLayer by setting a ramp from 1.0 to 0.0.
-				[fromLayer setOpacityRampFromStartOpacity:1.0 toEndOpacity:0.0 timeRange:transitionTimeRanges[i]];
-			}
-			else if (self.transitionType == TransitionTypePush)
+                // Fade out the fromLayer by setting a ramp from 1.0 to 0.0.
+                [fromLayer setOpacityRampFromStartOpacity:1.0 toEndOpacity:0.0 timeRange:transitionTimeRanges[i]];
+            }
+            else if (self.transitionType == TransitionTypePush)
             {
-				// Set a transform ramp on fromLayer from identity to all the way left of the screen.
-				[fromLayer setTransformRampFromStartTransform:CGAffineTransformIdentity toEndTransform:CGAffineTransformMakeTranslation(-composition.naturalSize.width, 0.0) timeRange:transitionTimeRanges[i]];
+                // Set a transform ramp on fromLayer from identity to all the way left of the screen.
+                [fromLayer setTransformRampFromStartTransform:CGAffineTransformIdentity toEndTransform:CGAffineTransformMakeTranslation(-composition.naturalSize.width, 0.0) timeRange:transitionTimeRanges[i]];
                 
-				// Set a transform ramp on toLayer from all the way right of the screen to identity.
-				[toLayer setTransformRampFromStartTransform:CGAffineTransformMakeTranslation(+composition.naturalSize.width, 0.0) toEndTransform:CGAffineTransformIdentity timeRange:transitionTimeRanges[i]];
-			}
-			
-			transitionInstruction.layerInstructions = [NSArray arrayWithObjects:fromLayer, toLayer, nil];
-			[instructions addObject:transitionInstruction];
-		}
-	}
-		
-	videoComposition.instructions = instructions;
+                // Set a transform ramp on toLayer from all the way right of the screen to identity.
+                [toLayer setTransformRampFromStartTransform:CGAffineTransformMakeTranslation(+composition.naturalSize.width, 0.0) toEndTransform:CGAffineTransformIdentity timeRange:transitionTimeRanges[i]];
+            }
+            
+            transitionInstruction.layerInstructions = [NSArray arrayWithObjects:fromLayer, toLayer, nil];
+            [instructions addObject:transitionInstruction];
+        }
+    }
+    
+    videoComposition.instructions = instructions;
 }
 
 - (void)addCommentaryTrackToComposition:(AVMutableComposition *)composition withAudioMix:(AVMutableAudioMix *)audioMix
 {
-	NSInteger i;
-	NSArray *tracksToDuck = [composition tracksWithMediaType:AVMediaTypeAudio]; // before we add the commentary
-	
-	// 1. Clip commentary duration to composition duration.
-	CMTimeRange commentaryTimeRange = CMTimeRangeMake(self.commentaryStartTime, self.commentary.duration);
-	if (CMTIME_COMPARE_INLINE(CMTimeRangeGetEnd(commentaryTimeRange), >, [composition duration]))
-		commentaryTimeRange.duration = CMTimeSubtract([composition duration], commentaryTimeRange.start);
-	
-	// 2. Add the commentary track.
-	AVMutableCompositionTrack *compositionCommentaryTrack = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
+    NSInteger i;
+    NSArray *tracksToDuck = [composition tracksWithMediaType:AVMediaTypeAudio]; // before we add the commentary
+    
+    // 1. Clip commentary duration to composition duration.
+    CMTimeRange commentaryTimeRange = CMTimeRangeMake(self.commentaryStartTime, self.commentary.duration);
+    if (CMTIME_COMPARE_INLINE(CMTimeRangeGetEnd(commentaryTimeRange), >, [composition duration]))
+        commentaryTimeRange.duration = CMTimeSubtract([composition duration], commentaryTimeRange.start);
+    
+    // 2. Add the commentary track.
+    AVMutableCompositionTrack *compositionCommentaryTrack = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
     AVAssetTrack * commentaryTrack = [[self.commentary tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0];
-	[compositionCommentaryTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, commentaryTimeRange.duration) ofTrack:commentaryTrack atTime:commentaryTimeRange.start error:nil];
-	
+    [compositionCommentaryTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, commentaryTimeRange.duration) ofTrack:commentaryTrack atTime:commentaryTimeRange.start error:nil];
+    
     // 3. Fade in for bgMusic
     CMTime fadeTime = CMTimeMake(1, 1);
     CMTimeRange startRange = CMTimeRangeMake(kCMTimeZero, fadeTime);
     NSMutableArray *trackMixArray = [NSMutableArray array];
     AVMutableAudioMixInputParameters *trackMixComentray = [AVMutableAudioMixInputParameters audioMixInputParametersWithTrack:commentaryTrack];
     [trackMixComentray setVolumeRampFromStartVolume:0.0f toEndVolume:0.2f timeRange:startRange];
-	[trackMixArray addObject:trackMixComentray];
-	
-	// 4. Fade in & Fade out for original voices
-	for (i = 0; i < [tracksToDuck count]; ++i)
+    [trackMixArray addObject:trackMixComentray];
+    
+    // 4. Fade in & Fade out for original voices
+    for (i = 0; i < [tracksToDuck count]; ++i)
     {
         CMTimeRange timeRange = [[tracksToDuck objectAtIndex:i] timeRange];
         if (CMTIME_COMPARE_INLINE(CMTimeRangeGetEnd(timeRange), ==, kCMTimeInvalid))
@@ -4678,165 +4685,171 @@ static CGImageRef createStarImage(CGFloat radius)
             break;
         }
         
-		CMTime halfSecond = CMTimeMake(1, 2);
-		CMTime startTime = CMTimeSubtract(timeRange.start, halfSecond);
-		CMTime endRangeStartTime = CMTimeAdd(timeRange.start, timeRange.duration);
-		CMTimeRange endRange = CMTimeRangeMake(endRangeStartTime, halfSecond);
+        CMTime halfSecond = CMTimeMake(1, 2);
+        CMTime startTime = CMTimeSubtract(timeRange.start, halfSecond);
+        CMTime endRangeStartTime = CMTimeAdd(timeRange.start, timeRange.duration);
+        CMTimeRange endRange = CMTimeRangeMake(endRangeStartTime, halfSecond);
         if (startTime.value < 0)
         {
             startTime.value = 0;
         }
         
-		[trackMixComentray setVolumeRampFromStartVolume:0.5f toEndVolume:0.2f timeRange:CMTimeRangeMake(startTime, halfSecond)];
-		[trackMixComentray setVolumeRampFromStartVolume:0.2f toEndVolume:0.5f timeRange:endRange];
-		[trackMixArray addObject:trackMixComentray];
-	}
+        [trackMixComentray setVolumeRampFromStartVolume:0.5f toEndVolume:0.2f timeRange:CMTimeRangeMake(startTime, halfSecond)];
+        [trackMixComentray setVolumeRampFromStartVolume:0.2f toEndVolume:0.5f timeRange:endRange];
+        [trackMixArray addObject:trackMixComentray];
+    }
     
-	audioMix.inputParameters = trackMixArray;
+    audioMix.inputParameters = trackMixArray;
 }
 
 - (void)buildPassThroughVideoComposition:(AVMutableVideoComposition *)videoComposition forComposition:(AVMutableComposition *)composition
 {
-	// Make a "pass through video track" video composition.
-	AVMutableVideoCompositionInstruction *passThroughInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
-	passThroughInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, [composition duration]);
-	
-	AVAssetTrack *videoTrack = [[composition tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
-	AVMutableVideoCompositionLayerInstruction *passThroughLayer = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
-	
-	passThroughInstruction.layerInstructions = [NSArray arrayWithObject:passThroughLayer];
-	videoComposition.instructions = [NSArray arrayWithObject:passThroughInstruction];
+    // Make a "pass through video track" video composition.
+    AVMutableVideoCompositionInstruction *passThroughInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
+    passThroughInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, [composition duration]);
+    
+    AVAssetTrack *videoTrack = [[composition tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
+    AVMutableVideoCompositionLayerInstruction *passThroughLayer = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
+    
+    passThroughInstruction.layerInstructions = [NSArray arrayWithObject:passThroughLayer];
+    videoComposition.instructions = [NSArray arrayWithObject:passThroughInstruction];
 }
 
 - (void)buildCompositionObjectsForPlayback:(BOOL)forPlayback
-{	
-	CGSize videoSize = [[_clips objectAtIndex:0] naturalSize];
-	AVMutableComposition *composition = [AVMutableComposition composition];
-	AVMutableVideoComposition *videoComposition = nil;
-	AVMutableAudioMix *audioMix = nil;
-	CALayer *animatedTitleLayer = nil;
-	
-	composition.naturalSize = videoSize;
-	
-	if (self.transitionType == TransitionTypeNone)
+{
+    CGSize videoSize = [[_clips objectAtIndex:0] naturalSize];
+    AVMutableComposition *composition = [AVMutableComposition composition];
+    AVMutableVideoComposition *videoComposition = nil;
+    AVMutableAudioMix *audioMix = nil;
+    CALayer *animatedTitleLayer = nil;
+    
+    composition.naturalSize = videoSize;
+    
+    if (self.transitionType == TransitionTypeNone)
     {
-		// No transitions: place clips into one video track and one audio track in composition.
-		[self buildSequenceComposition:composition];
-	}
-	else
+        // No transitions: place clips into one video track and one audio track in composition.
+        [self buildSequenceComposition:composition];
+    }
+    else
     {
-		// With transitions:
-		// Place clips into alternating video & audio tracks in composition, overlapped by transitionDuration.
-		// Set up the video composition to cycle between "pass through A", "transition from A to B", 
-		// "pass through B", "transition from B to A".
-		videoComposition = [AVMutableVideoComposition videoComposition];
-		[self buildTransitionComposition:composition andVideoComposition:videoComposition];
-	}
-	
-	// If one is provided, add a commentary track and duck all other audio during it.
-	if (self.commentary)
+        // With transitions:
+        // Place clips into alternating video & audio tracks in composition, overlapped by transitionDuration.
+        // Set up the video composition to cycle between "pass through A", "transition from A to B",
+        // "pass through B", "transition from B to A".
+        videoComposition = [AVMutableVideoComposition videoComposition];
+        [self buildTransitionComposition:composition andVideoComposition:videoComposition];
+    }
+    
+    // If one is provided, add a commentary track and duck all other audio during it.
+    if (self.commentary)
     {
-		// Add the commentary track and duck all other audio during it.
-		audioMix = [AVMutableAudioMix audioMix];
-		[self addCommentaryTrackToComposition:composition withAudioMix:audioMix];
-	}
-	
-	// Set up Core Animation layers to contribute a title animation overlay if we have a title set.
-	if (self.titleText)
+        // Add the commentary track and duck all other audio during it.
+        audioMix = [AVMutableAudioMix audioMix];
+        [self addCommentaryTrackToComposition:composition withAudioMix:audioMix];
+    }
+    
+    // Set up Core Animation layers to contribute a title animation overlay if we have a title set.
+    if (self.titleText)
     {
         NSTimeInterval startTime = 0.5;
-		animatedTitleLayer = [self buildAnimationStarText:videoSize text:self.titleText startTime:startTime];
-		
-		if (! forPlayback)
+        animatedTitleLayer = [self buildAnimationStarText:videoSize text:self.titleText startTime:startTime];
+        
+        if (! forPlayback)
         {
-			// For export: build a Core Animation tree that contains both the animated title and the video.
-			CALayer *parentLayer = [CALayer layer];
-			CALayer *videoLayer = [CALayer layer];
-			parentLayer.frame = CGRectMake(0, 0, videoSize.width, videoSize.height);
-			videoLayer.frame = CGRectMake(0, 0, videoSize.width, videoSize.height);
-			[parentLayer addSublayer:videoLayer];
-			[parentLayer addSublayer:animatedTitleLayer];
-
-			if (! videoComposition)
+            // For export: build a Core Animation tree that contains both the animated title and the video.
+            CALayer *parentLayer = [CALayer layer];
+            CALayer *videoLayer = [CALayer layer];
+            parentLayer.frame = CGRectMake(0, 0, videoSize.width, videoSize.height);
+            videoLayer.frame = CGRectMake(0, 0, videoSize.width, videoSize.height);
+            [parentLayer addSublayer:videoLayer];
+            [parentLayer addSublayer:animatedTitleLayer];
+            
+            if (! videoComposition)
             {
-				// No transition set -- make a "pass through video track" video composition so we can include the Core Animation tree as a post-processing stage.
-				videoComposition = [AVMutableVideoComposition videoComposition];
-				
-				[self buildPassThroughVideoComposition:videoComposition forComposition:composition];
-			}
-			
-			videoComposition.animationTool = [AVVideoCompositionCoreAnimationTool videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:parentLayer];
-		}
-	}
-	
-	if (videoComposition)
+                // No transition set -- make a "pass through video track" video composition so we can include the Core Animation tree as a post-processing stage.
+                videoComposition = [AVMutableVideoComposition videoComposition];
+                
+                [self buildPassThroughVideoComposition:videoComposition forComposition:composition];
+            }
+            
+            videoComposition.animationTool = [AVVideoCompositionCoreAnimationTool videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:parentLayer];
+        }
+    }
+    
+    if (videoComposition)
     {
-		// Every videoComposition needs these properties to be set:
-		videoComposition.frameDuration = CMTimeMake(1, 30); // 30 fps
-		videoComposition.renderSize = videoSize;
-	}
-	
-	self.composition = composition;
-	self.videoComposition = videoComposition;
-	self.audioMix = audioMix;
-
-	self.synchronizedLayer = nil;
-	
-	if (forPlayback)
+        // Every videoComposition needs these properties to be set:
+        videoComposition.frameDuration = CMTimeMake(1, 30); // 30 fps
+        videoComposition.renderSize = videoSize;
+    }
+    
+    self.composition = composition;
+    self.videoComposition = videoComposition;
+    self.audioMix = audioMix;
+    
+    self.synchronizedLayer = nil;
+    
+    if (forPlayback)
     {
 #if TARGET_OS_EMBEDDED
-		// Render high-def movies at half scale for real-time playback (device-only).
-		if (videoSize.width > 640)
-			videoComposition.renderScale = 0.5;
+        // Render high-def movies at half scale for real-time playback (device-only).
+        if (videoSize.width > 640)
+            videoComposition.renderScale = 0.5;
 #endif // TARGET_OS_EMBEDDED
-		
-		AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:composition];
-		playerItem.videoComposition = videoComposition;
-		playerItem.audioMix = audioMix;
-		self.playerItem = playerItem;
-
-		if (animatedTitleLayer)
+        
+        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:composition];
+        playerItem.videoComposition = videoComposition;
+        playerItem.audioMix = audioMix;
+        self.playerItem = playerItem;
+        
+        if (animatedTitleLayer)
         {
-			// Build an AVSynchronizedLayer that contains the animated title.
-			self.synchronizedLayer = [AVSynchronizedLayer synchronizedLayerWithPlayerItem:self.playerItem];
-			self.synchronizedLayer.bounds = CGRectMake(0, 0, videoSize.width, videoSize.height);
-			[self.synchronizedLayer addSublayer:animatedTitleLayer];
-		}
-	}
+            // Build an AVSynchronizedLayer that contains the animated title.
+            self.synchronizedLayer = [AVSynchronizedLayer synchronizedLayerWithPlayerItem:self.playerItem];
+            self.synchronizedLayer.bounds = CGRectMake(0, 0, videoSize.width, videoSize.height);
+            [self.synchronizedLayer addSublayer:animatedTitleLayer];
+        }
+    }
 }
 
 - (void)getPlayerItem:(AVPlayerItem**)playerItemOut andSynchronizedLayer:(AVSynchronizedLayer**)synchronizedLayerOut
 {
-	if (playerItemOut)
+    if (playerItemOut)
     {
-		*playerItemOut = _playerItem;
-	}
+        *playerItemOut = _playerItem;
+    }
     
-	if (synchronizedLayerOut)
+    if (synchronizedLayerOut)
     {
-		*synchronizedLayerOut = _synchronizedLayer;
-	}
+        *synchronizedLayerOut = _synchronizedLayer;
+    }
 }
 
 - (AVAssetImageGenerator*)assetImageGenerator
 {
-	AVAssetImageGenerator *generator = [AVAssetImageGenerator assetImageGeneratorWithAsset:self.composition];
-	generator.videoComposition = self.videoComposition;
-	return generator;
+    AVAssetImageGenerator *generator = [AVAssetImageGenerator assetImageGeneratorWithAsset:self.composition];
+    generator.videoComposition = self.videoComposition;
+    return generator;
 }
 
 - (AVAssetExportSession*)assetExportSessionWithPreset:(NSString*)presetName
 {
-	AVAssetExportSession *session = [[AVAssetExportSession alloc] initWithAsset:self.composition presetName:presetName];
-	session.videoComposition = self.videoComposition;
-	session.audioMix = self.audioMix;
-
-	return session;
+    AVAssetExportSession *session = [[AVAssetExportSession alloc] initWithAsset:self.composition presetName:presetName];
+    session.videoComposition = self.videoComposition;
+    session.audioMix = self.audioMix;
+    
+    return session;
 }
 
 - (void)dealloc 
 {
-	
+    
+}
+
+static inline float randomFloat()
+{
+    return (float)rand()/(float)RAND_MAX;
 }
 
 @end
+

@@ -1,15 +1,15 @@
 //
-//  VideoThemesData.h
-//  CustomBeauty
+//  VideoEffectTheme.h
+//  LearningAVFoundation
 //
-//  Created by Johnny Xu(徐景周) on 7/23/14.
-//  Copyright (c) 2014 Future Studio. All rights reserved.
+//  Created by fang wang on 17/2/17.
+//  Copyright © 2017年 wdy. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "VideoThemes.h"
+#import "VideoThemeModel.h"
 
-// Effects
+
 typedef enum
 {
     kAnimationNone = 0,
@@ -90,23 +90,19 @@ typedef enum
     kThemeCloud,
     
     // Custom
-//    kThemeCustom,
+    //    kThemeCustom,
     
 } ThemesType;
 
-@interface VideoThemesData : NSObject
-{
-    
-}
+@interface VideoEffectTheme : NSObject
 
-+ (VideoThemesData *) sharedInstance;
++ (VideoEffectTheme *) sharedInstance;
 
 - (NSMutableDictionary*) getThemesData;
-- (VideoThemes*) getThemeByType:(ThemesType)themeType;
+- (VideoThemeModel*) getThemeByType:(ThemesType)themeType;
 
 - (NSArray*) getRandomAnimation;
 - (NSArray*) getAnimationByIndex:(int)index;
 
 - (NSString*) getVideoBorderByIndex:(int)index;
-
 @end
