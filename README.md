@@ -122,6 +122,7 @@ IOS知识点总结和实践
 - [WWDC心得与延伸:iOS图形性能](http://www.cocoachina.com/ios/20150429/11712.html)
 - [使用 ASDK 性能调优 - 提升 iOS 界面的渲染性能](http://draveness.me/asdk-rendering/)
 - [iOS底层技术文章收集](http://wiki.baixin.io/2016/06/11/iOS-Tech/)
+- [优化iOS程序性能的25个方法](http://blog.csdn.net/youshaoduo/article/details/53841078) 总结的很好
 
 ### 专题一：组件化
 - [《iOS应用架构谈 组件化方案》](http://casatwy.com/iOS-Modulization.html)
@@ -157,4 +158,7 @@ IOS知识点总结和实践
 - [Markdown - 简单的世界](https://wizardforcel.gitbooks.io/markdown-simple-world/)
 - [Mac使用gitbook创建电子书](http://ppsheep.com/2016/10/25/Mac%E4%BD%BF%E7%94%A8gitbook%E5%88%9B%E5%BB%BA%E7%94%B5%E5%AD%90%E4%B9%A6/)
 - [Gitbook 的使用和常用插件](http://zhaoda.net/2015/11/09/gitbook-plugins/)
+
+### 设计
+- [MakeIconsWithSketch](https://github.com/allenwong/MakeIconsWithSketch) Simple tutorials about how to make icons with Sketch.
 

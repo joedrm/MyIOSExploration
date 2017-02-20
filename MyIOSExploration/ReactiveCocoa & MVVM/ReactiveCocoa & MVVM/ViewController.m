@@ -22,6 +22,8 @@
  
  https://github.com/ReactiveCocoa/ReactiveObjC  The 2.x ReactiveCocoa Objective-C API: Streams of values over time
  
+ https://github.com/Josin22/JSShopCartModule MVVM实例，购物车通用模板
+ 
  MVVM
  https://github.com/coderyi/MVVMDemo
  */

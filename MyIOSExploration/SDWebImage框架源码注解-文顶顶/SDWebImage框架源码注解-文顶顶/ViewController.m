@@ -48,6 +48,13 @@
  http://www.jianshu.com/p/7ed7c0be15b4 AFNetworking到底做了什么？(终)
  
  
+ http://www.jianshu.com/p/0a11b2d0f4ae iOS即时通讯进阶 - CocoaAsyncSocket源码解析(Connect篇)
+ http://www.jianshu.com/p/fdd3d429bdb3  iOS即时通讯进阶 - CocoaAsyncSocket源码解析(Read篇)
+ 
+ 
+ https://knightsj.github.io/2017/02/14/VVeboTableView%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/ VVeboTableView源码解析
+
+ 
  计划阅读的开源项目：
  
  一个GitHub第三方客户端
@@ -56,6 +63,7 @@
  https://github.com/andyiac/githot  Android版
  
  https://github.com/gsdios/GSD_WeiXin
+ https://github.com/nacker/LZEasemob3  高仿微信，朋友圈的实现用MVVM
  */
 
 

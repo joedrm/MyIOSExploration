@@ -70,6 +70,10 @@ IOS动画总结:
  https://github.com/xinge1/LXWaveProgress  水波纹动画 
  https://github.com/xinge1/LXAnimationDemo  iOS动画实现Demo（波纹，缩放，弹性，平移等）
  http://www.jianshu.com/p/6b4347bd6c6f  YQDownloadButton---带有波浪效果和震动波效果的动画
+ https://github.com/iosyaowei/exampleForAnimation  iOS动画合集-动画基础到常用的动画案例
+ https://github.com/Josin22/JSDownloadView  精巧顺滑的下载动画实现和思路讲解
+ https://github.com/Josin22/JSWave  波浪动画
+ https://github.com/631106979/WCLShineButton  
  
  Facebook-POP
  

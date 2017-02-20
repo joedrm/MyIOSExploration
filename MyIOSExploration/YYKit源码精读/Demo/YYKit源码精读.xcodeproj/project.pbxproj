@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16CACF911E5929EB004514D6 /* 参考说明 in Resources */ = {isa = PBXBuildFile; fileRef = 16CACF901E5929EA004514D6 /* 参考说明 */; };
 		2007ADB41E514B4E002C1155 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 2007ADB31E514B4E002C1155 /* Common.m */; };
 		ABDC320D1BEAFB870012A159 /* YYTextTagExample.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */; };
 		D9067DF11B975D3900F346EB /* YYTextExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF01B975D3900F346EB /* YYTextExampleHelper.m */; };
@@ -197,6 +198,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16CACF901E5929EA004514D6 /* 参考说明 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "参考说明"; sourceTree = "<group>"; };
 		2007ADB21E514B4E002C1155 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		2007ADB31E514B4E002C1155 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		ABDC320B1BEAFB870012A159 /* YYTextTagExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextTagExample.h; sourceTree = "<group>"; };
@@ -778,6 +780,7 @@
 		D97484C719CAAD2900F46DE1 = {
 			isa = PBXGroup;
 			children = (
+				16CACF901E5929EA004514D6 /* 参考说明 */,
 				D9B25F9F1BEE79370038C00A /* YYKit */,
 				D97484D219CAAD2900F46DE1 /* YYKitDemo */,
 				D974852319CAB3AE00F46DE1 /* Frameworks */,
@@ -1211,6 +1214,7 @@
 				D933C16E1B779FE90065CDBB /* cube@2x.png in Resources */,
 				D9700D931BC7C16900F878A4 /* weibo_2.json in Resources */,
 				D9CC99F81B8B568B00A9466D /* mew_baseline.jpg in Resources */,
+				16CACF911E5929EB004514D6 /* 参考说明 in Resources */,
 				D9700D941BC7C16900F878A4 /* weibo_4.json in Resources */,
 				D939F7481B7E0254003EEC6A /* ermilio_q15.bpg in Resources */,
 				D90F52241B7860E800C9B465 /* pia@2x.png in Resources */,
