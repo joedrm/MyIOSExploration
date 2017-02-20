@@ -26,6 +26,7 @@
 
 /*
  其它解读：
+ http://itangqi.me/tags/SDWebImage/   SDWebImage 源码阅读笔记
  http://www.jianshu.com/p/313f243e6807  SDWebImage下载模块解析
  http://www.jianshu.com/p/be9a0a088feb  iOS图片加载框架－SDWebImage解读
  https://knightsj.github.io/2017/02/04/SDWebImage%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/ SDWebImage源码解析
@@ -47,6 +48,8 @@
  http://www.jianshu.com/p/4ffeb1ba3046 AFNetworking之UIKit扩展与缓存实现
  http://www.jianshu.com/p/7ed7c0be15b4 AFNetworking到底做了什么？(终)
  
+ http://itangqi.me/tags/AFNetworking/  AFNetworking 3.0 源码阅读笔记
+ 
  
  http://www.jianshu.com/p/0a11b2d0f4ae iOS即时通讯进阶 - CocoaAsyncSocket源码解析(Connect篇)
  http://www.jianshu.com/p/fdd3d429bdb3  iOS即时通讯进阶 - CocoaAsyncSocket源码解析(Read篇)
@@ -54,6 +57,7 @@
  
  https://knightsj.github.io/2017/02/14/VVeboTableView%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/ VVeboTableView源码解析
 
+ https://github.com/Magic-Unique/HXImage/blob/master/description.md  对比 YYKit的 UIImage 的内存处理
  
  计划阅读的开源项目：
  

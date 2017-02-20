@@ -16,6 +16,13 @@
  
  http://www.jianshu.com/p/4f0ce4380dda  iOS中的锁
  
+ https://github.com/Tinghui/HUIGCDDispatchAsync  GCD取消的Demo
+ 
+ https://www.zhihu.com/question/33515481  并发与并行的区别？
+ 
+ https://github.com/upworldcjw/test/tree/master/TestGCDQueue/TestGCDQueue  测试dispatch_sync在并行queue如何并发的Demo 
+ https://github.com/upworldcjw/wiki/wiki/%E5%B9%B6%E8%A1%8C%E9%98%9F%E5%88%97-%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8
+
  */
 
 #import "ViewController.h"

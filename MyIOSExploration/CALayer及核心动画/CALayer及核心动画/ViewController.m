@@ -74,6 +74,7 @@ IOS动画总结:
  https://github.com/Josin22/JSDownloadView  精巧顺滑的下载动画实现和思路讲解
  https://github.com/Josin22/JSWave  波浪动画
  https://github.com/631106979/WCLShineButton  
+ http://www.jianshu.com/c/dbf97f100a39  与瓜一起学iOS动画，很多不错的动画示例
  
  Facebook-POP
  
@@ -99,6 +100,7 @@ IOS动画总结:
  
  动画设计
  http://charsdavy.github.io/2016/07/31/design-complex-animation-effect/  设计复杂的iOS动画效果
+ http://www.jianshu.com/p/3fe831108001 iOS app旧貌换新颜(一)—Launch Page让Logo"飞"出屏幕
  */
 
 #import "ViewController.h"

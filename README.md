@@ -36,6 +36,7 @@ IOS知识点总结和实践
 - [nixzhu/dev-blog](https://github.com/nixzhu/dev-blog) - 翻译、开发心得或学习笔记
 - [iOS10AdaptationTips](https://github.com/ChenYilong/iOS10AdaptationTips) - IOS 10适配
 - [awesome-ios-cn](https://github.com/jobbole/awesome-ios-cn) - iOS资源大全中文版
+- [iOS-Note](https://github.com/seedante/iOS-Note)  - 一些不错的文章
 
 ### KVO进阶
 - [谈谈 KVO](http://www.jianshu.com/p/2d1c9d76153b)
@@ -123,6 +124,7 @@ IOS知识点总结和实践
 - [使用 ASDK 性能调优 - 提升 iOS 界面的渲染性能](http://draveness.me/asdk-rendering/)
 - [iOS底层技术文章收集](http://wiki.baixin.io/2016/06/11/iOS-Tech/)
 - [优化iOS程序性能的25个方法](http://blog.csdn.net/youshaoduo/article/details/53841078) 总结的很好
+- [离屏渲染优化详解：实例示范+性能测试](https://github.com/seedante/iOS-Note/wiki/Mastering-Offscreen-Render)
 
 ### 专题一：组件化
 - [《iOS应用架构谈 组件化方案》](http://casatwy.com/iOS-Modulization.html)

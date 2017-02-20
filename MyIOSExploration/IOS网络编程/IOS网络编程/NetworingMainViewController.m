@@ -32,4 +32,6 @@
  https://github.com/kangzubin/XMNetworking  一个轻量的、简单易用但功能强大的网络库，基于 AFNetworking 3.0 封装
  
  https://github.com/mmoaay/MBNetwork  
+ 
+ http://itangqi.me/categories/HTTP/  《图解 HTTP》读书笔记
  */
