@@ -9,6 +9,7 @@
 ## open source app
 - [30DaysofSwift](https://github.com/allenwong/30DaysofSwift)
 - [ios-oss](https://github.com/kickstarter/ios-oss)  众筹网站 kickstarter 开源其 iOS 应用
+- [WordPress-iOS](https://github.com/wordpress-mobile/WordPress-iOS)
 
 
 ## 开源框架

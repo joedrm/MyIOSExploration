@@ -6,6 +6,7 @@
 # 教程&学习笔记
 - [RNStudyNotes](https://github.com/crazycodeboy/RNStudyNotes/) 在研究与实践React Native过程中的一些经验，总结，教程，以及踩过的一些坑
 - [react-native-awesome](https://github.com/crazycodeboy/react-native-awesome) 汇集了各类react-native学习资料、工具、组件、开源App、资源下载、以及相关新闻等
+- [ReactNativeMaterials](https://github.com/LeoMobileDeveloper/ReactNativeMaterials) - React Native的中文参考资料，包括开源库，文字/视频资料，相关工具等
 
 ## 组件库
 - [mobile.ant.design支付宝移动组件裤](https://mobile.ant.design/) 

@@ -17,11 +17,20 @@
 
 /*
  https://github.com/arduomeng/OCDemo_me  OC实践的Demo
+ 
  https://github.com/1170197998/Objective_C-DEMO  OC一些常用的小功能 
+ 
  https://github.com/1170197998/Swift-DEMO   Swift一些常用的小功能
+ 
  https://github.com/aresxin/iOSDevelopment  开发Demo合集
  
  https://github.com/Magic-Unique/iOS-Categories  总结的不错的分类
  
  https://github.com/upworldcjw/test  IOS开发的Demo
+ 
+ https://github.com/huang303513/iOSBasicCommonDemos_First iOS各种知识点学习、总结、基本每个一个功能点
+ 
+ https://github.com/huang303513/iOSBasicCommonDemos_Second  私人学习过程中的一些Demo。每个demo通过警告的形式给出了博文地址或者书本学习
+ 
+ https://github.com/huang303513/iOSKeyPointExploration  GCD系列、Operation、KVC、KVO、Notification、响应链、模型解析、图片本地缓存
  */

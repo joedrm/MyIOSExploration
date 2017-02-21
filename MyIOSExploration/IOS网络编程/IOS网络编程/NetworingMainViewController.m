@@ -34,4 +34,6 @@
  https://github.com/mmoaay/MBNetwork  
  
  http://itangqi.me/categories/HTTP/  《图解 HTTP》读书笔记
+ 
+ https://github.com/jkpang/PPNetworkHelper AFNetworking 3.x 与YYCache封装,一句代码搞定数据请求与缓存,告别FMDB!控制台直接打印json中文字符,调试更方便
  */

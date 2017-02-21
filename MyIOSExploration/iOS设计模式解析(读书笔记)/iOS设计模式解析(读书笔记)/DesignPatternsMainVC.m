@@ -23,8 +23,7 @@
 @end
 
 /*
- Objective-C编程之道：iOS 设计模式解析(Pro Objective-C Design Patterns for iOS) 源代码
- https://github.com/alex520biao/Pro-Objective-C-Design-Patterns-for-iOS
+ https://github.com/alex520biao/Pro-Objective-C-Design-Patterns-for-iOS Objective-C编程之道：iOS 设计模式解析(Pro Objective-C Design Patterns for iOS) 源代码
  
- 
+ https://github.com/huang303513/Design-Pattern-For-iOS  IOS设计模式探索(大话设计模式)
  */

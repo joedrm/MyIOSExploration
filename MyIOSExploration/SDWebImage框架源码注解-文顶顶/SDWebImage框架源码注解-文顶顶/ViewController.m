@@ -26,6 +26,8 @@
 
 /*
  其它解读：
+ https://github.com/huang303513/iOSSourceCodeStudy  SDWebImage、AFNetworking、YY系列源码参考博文和分析学习
+ 
  http://itangqi.me/tags/SDWebImage/   SDWebImage 源码阅读笔记
  http://www.jianshu.com/p/313f243e6807  SDWebImage下载模块解析
  http://www.jianshu.com/p/be9a0a088feb  iOS图片加载框架－SDWebImage解读
