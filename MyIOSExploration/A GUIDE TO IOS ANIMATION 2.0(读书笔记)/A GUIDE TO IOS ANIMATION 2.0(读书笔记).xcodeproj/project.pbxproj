@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16D245801E5C9AFC00D3E697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D2457F1E5C9AFC00D3E697 /* main.m */; };
+		16D245831E5C9AFC00D3E697 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D245821E5C9AFC00D3E697 /* AppDelegate.m */; };
+		16D245891E5C9AFC00D3E697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D245871E5C9AFC00D3E697 /* Main.storyboard */; };
+		16D2458B1E5C9AFC00D3E697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D2458A1E5C9AFC00D3E697 /* Assets.xcassets */; };
+		16D2458E1E5C9AFC00D3E697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D2458C1E5C9AFC00D3E697 /* LaunchScreen.storyboard */; };
+		16D245961E5C9B4000D3E697 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D245951E5C9B4000D3E697 /* WDYLibrary.framework */; };
+		16D245971E5C9B4000D3E697 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16D245951E5C9B4000D3E697 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16D2459B1E5C9B6C00D3E697 /* AnimationGuideMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D2459A1E5C9B6C00D3E697 /* AnimationGuideMainVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16D245981E5C9B4000D3E697 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16D245971E5C9B4000D3E697 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16D2457B1E5C9AFC00D3E697 /* A GUIDE TO IOS ANIMATION 2.0(读书笔记).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A GUIDE TO IOS ANIMATION 2.0(读书笔记).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D2457F1E5C9AFC00D3E697 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16D245811E5C9AFC00D3E697 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		16D245821E5C9AFC00D3E697 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		16D245881E5C9AFC00D3E697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16D2458A1E5C9AFC00D3E697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16D2458D1E5C9AFC00D3E697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16D2458F1E5C9AFC00D3E697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D245951E5C9B4000D3E697 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D245991E5C9B6C00D3E697 /* AnimationGuideMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationGuideMainVC.h; sourceTree = "<group>"; };
+		16D2459A1E5C9B6C00D3E697 /* AnimationGuideMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationGuideMainVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16D245781E5C9AFC00D3E697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D245961E5C9B4000D3E697 /* WDYLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16D245721E5C9AFC00D3E697 = {
+			isa = PBXGroup;
+			children = (
+				16D245951E5C9B4000D3E697 /* WDYLibrary.framework */,
+				16D2457D1E5C9AFC00D3E697 /* A GUIDE TO IOS ANIMATION 2.0(读书笔记) */,
+				16D2457C1E5C9AFC00D3E697 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16D2457C1E5C9AFC00D3E697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16D2457B1E5C9AFC00D3E697 /* A GUIDE TO IOS ANIMATION 2.0(读书笔记).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16D2457D1E5C9AFC00D3E697 /* A GUIDE TO IOS ANIMATION 2.0(读书笔记) */ = {
+			isa = PBXGroup;
+			children = (
+				16D245811E5C9AFC00D3E697 /* AppDelegate.h */,
+				16D245821E5C9AFC00D3E697 /* AppDelegate.m */,
+				16D245991E5C9B6C00D3E697 /* AnimationGuideMainVC.h */,
+				16D2459A1E5C9B6C00D3E697 /* AnimationGuideMainVC.m */,
+				16D245871E5C9AFC00D3E697 /* Main.storyboard */,
+				16D2458A1E5C9AFC00D3E697 /* Assets.xcassets */,
+				16D2458C1E5C9AFC00D3E697 /* LaunchScreen.storyboard */,
+				16D2458F1E5C9AFC00D3E697 /* Info.plist */,
+				16D2457E1E5C9AFC00D3E697 /* Supporting Files */,
+			);
+			path = "A GUIDE TO IOS ANIMATION 2.0(读书笔记)";
+			sourceTree = "<group>";
+		};
+		16D2457E1E5C9AFC00D3E697 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16D2457F1E5C9AFC00D3E697 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16D2457A1E5C9AFC00D3E697 /* A GUIDE TO IOS ANIMATION 2.0(读书笔记) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D245921E5C9AFC00D3E697 /* Build configuration list for PBXNativeTarget "A GUIDE TO IOS ANIMATION 2.0(读书笔记)" */;
+			buildPhases = (
+				16D245771E5C9AFC00D3E697 /* Sources */,
+				16D245781E5C9AFC00D3E697 /* Frameworks */,
+				16D245791E5C9AFC00D3E697 /* Resources */,
+				16D245981E5C9B4000D3E697 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "A GUIDE TO IOS ANIMATION 2.0(读书笔记)";
+			productName = "A GUIDE TO IOS ANIMATION 2.0(读书笔记)";
+			productReference = 16D2457B1E5C9AFC00D3E697 /* A GUIDE TO IOS ANIMATION 2.0(读书笔记).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16D245731E5C9AFC00D3E697 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = com.wdy.MyIOSExploration;
+				TargetAttributes = {
+					16D2457A1E5C9AFC00D3E697 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2Y3JSHFEC2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 16D245761E5C9AFC00D3E697 /* Build configuration list for PBXProject "A GUIDE TO IOS ANIMATION 2.0(读书笔记)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16D245721E5C9AFC00D3E697;
+			productRefGroup = 16D2457C1E5C9AFC00D3E697 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16D2457A1E5C9AFC00D3E697 /* A GUIDE TO IOS ANIMATION 2.0(读书笔记) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16D245791E5C9AFC00D3E697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D2458E1E5C9AFC00D3E697 /* LaunchScreen.storyboard in Resources */,
+				16D2458B1E5C9AFC00D3E697 /* Assets.xcassets in Resources */,
+				16D245891E5C9AFC00D3E697 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16D245771E5C9AFC00D3E697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D2459B1E5C9B6C00D3E697 /* AnimationGuideMainVC.m in Sources */,
+				16D245831E5C9AFC00D3E697 /* AppDelegate.m in Sources */,
+				16D245801E5C9AFC00D3E697 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16D245871E5C9AFC00D3E697 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16D245881E5C9AFC00D3E697 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16D2458C1E5C9AFC00D3E697 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16D2458D1E5C9AFC00D3E697 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16D245901E5C9AFC00D3E697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16D245911E5C9AFC00D3E697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16D245931E5C9AFC00D3E697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				INFOPLIST_FILE = "A GUIDE TO IOS ANIMATION 2.0(读书笔记)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy..A-GUIDE-TO-IOS-ANIMATION-2-0------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16D245941E5C9AFC00D3E697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				INFOPLIST_FILE = "A GUIDE TO IOS ANIMATION 2.0(读书笔记)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy..A-GUIDE-TO-IOS-ANIMATION-2-0------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16D245761E5C9AFC00D3E697 /* Build configuration list for PBXProject "A GUIDE TO IOS ANIMATION 2.0(读书笔记)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D245901E5C9AFC00D3E697 /* Debug */,
+				16D245911E5C9AFC00D3E697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16D245921E5C9AFC00D3E697 /* Build configuration list for PBXNativeTarget "A GUIDE TO IOS ANIMATION 2.0(读书笔记)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D245931E5C9AFC00D3E697 /* Debug */,
+				16D245941E5C9AFC00D3E697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16D245731E5C9AFC00D3E697 /* Project object */;
+}

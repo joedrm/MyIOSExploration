@@ -35,6 +35,9 @@
       location = "group:&#x591a;&#x63a7;&#x5236;&#x5668;&#x5207;&#x6362;(&#x5bb9;&#x5668;&#x7c7b;&#x63a7;&#x5236;&#x5668;)/&#x591a;&#x63a7;&#x5236;&#x5668;&#x5207;&#x6362;(&#x5bb9;&#x5668;&#x7c7b;&#x63a7;&#x5236;&#x5668;).xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:A GUIDE TO IOS ANIMATION 2.0(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;)/A GUIDE TO IOS ANIMATION 2.0(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;).xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;)/IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;).xcodeproj">
    </FileRef>
    <FileRef
