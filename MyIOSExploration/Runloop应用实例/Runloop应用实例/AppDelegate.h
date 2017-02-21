@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WDYLibrary/WDYLibrary.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

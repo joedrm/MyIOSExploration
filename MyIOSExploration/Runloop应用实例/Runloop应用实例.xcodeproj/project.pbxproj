@@ -9,23 +9,43 @@
 /* Begin PBXBuildFile section */
 		20B82EEC1E3613D9005B0DED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B82EEB1E3613D9005B0DED /* main.m */; };
 		20B82EEF1E3613D9005B0DED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B82EEE1E3613D9005B0DED /* AppDelegate.m */; };
-		20B82EF21E3613D9005B0DED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B82EF11E3613D9005B0DED /* ViewController.m */; };
 		20B82EF51E3613D9005B0DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B82EF31E3613D9005B0DED /* Main.storyboard */; };
 		20B82EF71E3613D9005B0DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B82EF61E3613D9005B0DED /* Assets.xcassets */; };
 		20B82EFA1E3613D9005B0DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B82EF81E3613D9005B0DED /* LaunchScreen.storyboard */; };
+		20D96ACB1E5C0FC4008AF159 /* RunloopMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D96ACA1E5C0FC4008AF159 /* RunloopMainViewController.m */; };
+		20D96ACE1E5C1079008AF159 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D96ACD1E5C1079008AF159 /* WDYLibrary.framework */; };
+		20D96ACF1E5C1079008AF159 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20D96ACD1E5C1079008AF159 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20D96AD31E5C112A008AF159 /* LoopTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D96AD21E5C112A008AF159 /* LoopTimerViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20D96AD01E5C1079008AF159 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20D96ACF1E5C1079008AF159 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		20B82EE71E3613D9005B0DED /* Runloop应用实例.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Runloop应用实例.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B82EEB1E3613D9005B0DED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20B82EED1E3613D9005B0DED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20B82EEE1E3613D9005B0DED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		20B82EF01E3613D9005B0DED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		20B82EF11E3613D9005B0DED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		20B82EF41E3613D9005B0DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20B82EF61E3613D9005B0DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20B82EF91E3613D9005B0DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20B82EFB1E3613D9005B0DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D96AC91E5C0FC4008AF159 /* RunloopMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunloopMainViewController.h; sourceTree = "<group>"; };
+		20D96ACA1E5C0FC4008AF159 /* RunloopMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunloopMainViewController.m; sourceTree = "<group>"; };
+		20D96ACD1E5C1079008AF159 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D96AD11E5C112A008AF159 /* LoopTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopTimerViewController.h; sourceTree = "<group>"; };
+		20D96AD21E5C112A008AF159 /* LoopTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopTimerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D96ACE1E5C1079008AF159 /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,7 @@
 		20B82EDE1E3613D9005B0DED = {
 			isa = PBXGroup;
 			children = (
+				20D96ACD1E5C1079008AF159 /* WDYLibrary.framework */,
 				20B82EE91E3613D9005B0DED /* Runloop应用实例 */,
 				20B82EE81E3613D9005B0DED /* Products */,
 			);
@@ -60,8 +82,9 @@
 			children = (
 				20B82EED1E3613D9005B0DED /* AppDelegate.h */,
 				20B82EEE1E3613D9005B0DED /* AppDelegate.m */,
-				20B82EF01E3613D9005B0DED /* ViewController.h */,
-				20B82EF11E3613D9005B0DED /* ViewController.m */,
+				20D96AC91E5C0FC4008AF159 /* RunloopMainViewController.h */,
+				20D96ACA1E5C0FC4008AF159 /* RunloopMainViewController.m */,
+				20D96ACC1E5C1063008AF159 /* 实例一：运行循环与时钟 */,
 				20B82EF31E3613D9005B0DED /* Main.storyboard */,
 				20B82EF61E3613D9005B0DED /* Assets.xcassets */,
 				20B82EF81E3613D9005B0DED /* LaunchScreen.storyboard */,
@@ -79,6 +102,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		20D96ACC1E5C1063008AF159 /* 实例一：运行循环与时钟 */ = {
+			isa = PBXGroup;
+			children = (
+				20D96AD11E5C112A008AF159 /* LoopTimerViewController.h */,
+				20D96AD21E5C112A008AF159 /* LoopTimerViewController.m */,
+			);
+			path = "实例一：运行循环与时钟";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +121,7 @@
 				20B82EE31E3613D9005B0DED /* Sources */,
 				20B82EE41E3613D9005B0DED /* Frameworks */,
 				20B82EE51E3613D9005B0DED /* Resources */,
+				20D96AD01E5C1079008AF159 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -110,7 +143,7 @@
 				TargetAttributes = {
 					20B82EE61E3613D9005B0DED = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VRGWDFH359;
+						DevelopmentTeam = 2Y3JSHFEC2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,8 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20B82EF21E3613D9005B0DED /* ViewController.m in Sources */,
+				20D96ACB1E5C0FC4008AF159 /* RunloopMainViewController.m in Sources */,
 				20B82EEF1E3613D9005B0DED /* AppDelegate.m in Sources */,
+				20D96AD31E5C112A008AF159 /* LoopTimerViewController.m in Sources */,
 				20B82EEC1E3613D9005B0DED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				INFOPLIST_FILE = "Runloop应用实例/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.oc.Runloop----";
@@ -283,7 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				INFOPLIST_FILE = "Runloop应用实例/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.oc.Runloop----";
@@ -310,6 +344,7 @@
 				20B82F001E3613D9005B0DED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
