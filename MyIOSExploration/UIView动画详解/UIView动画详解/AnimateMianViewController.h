@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WDYLibrary/WDYLibrary.h>
 
-@interface ViewController : UIViewController
+@interface AnimateMianViewController : BaseTestDataTableVC
 
 
 @end

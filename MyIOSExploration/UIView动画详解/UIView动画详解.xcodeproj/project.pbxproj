@@ -7,21 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16B2D3491E5C8139003E8AA9 /* PositionAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B2D3471E5C8139003E8AA9 /* PositionAnimViewController.m */; };
+		16B2D34A1E5C8139003E8AA9 /* PositionAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B2D3481E5C8139003E8AA9 /* PositionAnimViewController.xib */; };
+		16D2454B1E5C85C600D3E697 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D2454A1E5C85C600D3E697 /* WDYLibrary.framework */; };
+		16D2454C1E5C85C600D3E697 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16D2454A1E5C85C600D3E697 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16D245511E5C8A3D00D3E697 /* OpacityAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D2454F1E5C8A3D00D3E697 /* OpacityAnimViewController.m */; };
+		16D245521E5C8A3D00D3E697 /* OpacityAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D245501E5C8A3D00D3E697 /* OpacityAnimViewController.xib */; };
+		16D245571E5C8B8700D3E697 /* ScaleAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D245551E5C8B8700D3E697 /* ScaleAnimViewController.m */; };
+		16D245581E5C8B8700D3E697 /* ScaleAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D245561E5C8B8700D3E697 /* ScaleAnimViewController.xib */; };
+		16D2455E1E5C8D0900D3E697 /* ColorAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D2455C1E5C8D0900D3E697 /* ColorAnimViewController.m */; };
+		16D2455F1E5C8D0900D3E697 /* ColorAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D2455D1E5C8D0900D3E697 /* ColorAnimViewController.xib */; };
+		16D245641E5C8E4B00D3E697 /* RotationAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D245621E5C8E4B00D3E697 /* RotationAnimViewController.m */; };
+		16D245651E5C8E4B00D3E697 /* RotationAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D245631E5C8E4B00D3E697 /* RotationAnimViewController.xib */; };
+		16D2456A1E5C950D00D3E697 /* RepeatAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D245681E5C950D00D3E697 /* RepeatAnimViewController.m */; };
+		16D2456B1E5C950D00D3E697 /* RepeatAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D245691E5C950D00D3E697 /* RepeatAnimViewController.xib */; };
+		16D245701E5C99A600D3E697 /* EasingAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D2456E1E5C99A600D3E697 /* EasingAnimViewController.m */; };
+		16D245711E5C99A600D3E697 /* EasingAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D2456F1E5C99A600D3E697 /* EasingAnimViewController.xib */; };
 		20FF4D571E46D07800DCE2B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF4D561E46D07800DCE2B3 /* main.m */; };
 		20FF4D5A1E46D07800DCE2B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF4D591E46D07800DCE2B3 /* AppDelegate.m */; };
-		20FF4D5D1E46D07800DCE2B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF4D5C1E46D07800DCE2B3 /* ViewController.m */; };
+		20FF4D5D1E46D07800DCE2B3 /* AnimateMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF4D5C1E46D07800DCE2B3 /* AnimateMianViewController.m */; };
 		20FF4D601E46D07800DCE2B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FF4D5E1E46D07800DCE2B3 /* Main.storyboard */; };
 		20FF4D621E46D07800DCE2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20FF4D611E46D07800DCE2B3 /* Assets.xcassets */; };
 		20FF4D651E46D07800DCE2B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FF4D631E46D07800DCE2B3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		16B2D34E1E5C814C003E8AA9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16D2454C1E5C85C600D3E697 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		16B2D3461E5C8139003E8AA9 /* PositionAnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionAnimViewController.h; sourceTree = "<group>"; };
+		16B2D3471E5C8139003E8AA9 /* PositionAnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionAnimViewController.m; sourceTree = "<group>"; };
+		16B2D3481E5C8139003E8AA9 /* PositionAnimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PositionAnimViewController.xib; sourceTree = "<group>"; };
+		16D2454A1E5C85C600D3E697 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D2454E1E5C8A3D00D3E697 /* OpacityAnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpacityAnimViewController.h; sourceTree = "<group>"; };
+		16D2454F1E5C8A3D00D3E697 /* OpacityAnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpacityAnimViewController.m; sourceTree = "<group>"; };
+		16D245501E5C8A3D00D3E697 /* OpacityAnimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpacityAnimViewController.xib; sourceTree = "<group>"; };
+		16D245541E5C8B8700D3E697 /* ScaleAnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleAnimViewController.h; sourceTree = "<group>"; };
+		16D245551E5C8B8700D3E697 /* ScaleAnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleAnimViewController.m; sourceTree = "<group>"; };
+		16D245561E5C8B8700D3E697 /* ScaleAnimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScaleAnimViewController.xib; sourceTree = "<group>"; };
+		16D2455B1E5C8D0900D3E697 /* ColorAnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorAnimViewController.h; sourceTree = "<group>"; };
+		16D2455C1E5C8D0900D3E697 /* ColorAnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorAnimViewController.m; sourceTree = "<group>"; };
+		16D2455D1E5C8D0900D3E697 /* ColorAnimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorAnimViewController.xib; sourceTree = "<group>"; };
+		16D245611E5C8E4B00D3E697 /* RotationAnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationAnimViewController.h; sourceTree = "<group>"; };
+		16D245621E5C8E4B00D3E697 /* RotationAnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationAnimViewController.m; sourceTree = "<group>"; };
+		16D245631E5C8E4B00D3E697 /* RotationAnimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RotationAnimViewController.xib; sourceTree = "<group>"; };
+		16D245671E5C950D00D3E697 /* RepeatAnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatAnimViewController.h; sourceTree = "<group>"; };
+		16D245681E5C950D00D3E697 /* RepeatAnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatAnimViewController.m; sourceTree = "<group>"; };
+		16D245691E5C950D00D3E697 /* RepeatAnimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepeatAnimViewController.xib; sourceTree = "<group>"; };
+		16D2456D1E5C99A600D3E697 /* EasingAnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasingAnimViewController.h; sourceTree = "<group>"; };
+		16D2456E1E5C99A600D3E697 /* EasingAnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasingAnimViewController.m; sourceTree = "<group>"; };
+		16D2456F1E5C99A600D3E697 /* EasingAnimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EasingAnimViewController.xib; sourceTree = "<group>"; };
 		20FF4D521E46D07800DCE2B3 /* UIView动画详解.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIView动画详解.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FF4D561E46D07800DCE2B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20FF4D581E46D07800DCE2B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20FF4D591E46D07800DCE2B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		20FF4D5B1E46D07800DCE2B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		20FF4D5C1E46D07800DCE2B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		20FF4D5B1E46D07800DCE2B3 /* AnimateMianViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateMianViewController.h; sourceTree = "<group>"; };
+		20FF4D5C1E46D07800DCE2B3 /* AnimateMianViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateMianViewController.m; sourceTree = "<group>"; };
 		20FF4D5F1E46D07800DCE2B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20FF4D611E46D07800DCE2B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20FF4D641E46D07800DCE2B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,15 +85,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D2454B1E5C85C600D3E697 /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B2D3451E5C811B003E8AA9 /* Position动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16B2D3461E5C8139003E8AA9 /* PositionAnimViewController.h */,
+				16B2D3471E5C8139003E8AA9 /* PositionAnimViewController.m */,
+				16B2D3481E5C8139003E8AA9 /* PositionAnimViewController.xib */,
+			);
+			path = "Position动画";
+			sourceTree = "<group>";
+		};
+		16D2454D1E5C8A2900D3E697 /* Opacity动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16D2454E1E5C8A3D00D3E697 /* OpacityAnimViewController.h */,
+				16D2454F1E5C8A3D00D3E697 /* OpacityAnimViewController.m */,
+				16D245501E5C8A3D00D3E697 /* OpacityAnimViewController.xib */,
+			);
+			path = "Opacity动画";
+			sourceTree = "<group>";
+		};
+		16D245531E5C8B6600D3E697 /* Scale动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16D245541E5C8B8700D3E697 /* ScaleAnimViewController.h */,
+				16D245551E5C8B8700D3E697 /* ScaleAnimViewController.m */,
+				16D245561E5C8B8700D3E697 /* ScaleAnimViewController.xib */,
+			);
+			path = "Scale动画";
+			sourceTree = "<group>";
+		};
+		16D2455A1E5C8CF200D3E697 /* Color动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16D2455B1E5C8D0900D3E697 /* ColorAnimViewController.h */,
+				16D2455C1E5C8D0900D3E697 /* ColorAnimViewController.m */,
+				16D2455D1E5C8D0900D3E697 /* ColorAnimViewController.xib */,
+			);
+			path = "Color动画";
+			sourceTree = "<group>";
+		};
+		16D245601E5C8E1E00D3E697 /* Rotation动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16D245611E5C8E4B00D3E697 /* RotationAnimViewController.h */,
+				16D245621E5C8E4B00D3E697 /* RotationAnimViewController.m */,
+				16D245631E5C8E4B00D3E697 /* RotationAnimViewController.xib */,
+			);
+			path = "Rotation动画";
+			sourceTree = "<group>";
+		};
+		16D245661E5C94F300D3E697 /* Repeat重复动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16D245671E5C950D00D3E697 /* RepeatAnimViewController.h */,
+				16D245681E5C950D00D3E697 /* RepeatAnimViewController.m */,
+				16D245691E5C950D00D3E697 /* RepeatAnimViewController.xib */,
+			);
+			path = "Repeat重复动画";
+			sourceTree = "<group>";
+		};
+		16D2456C1E5C997B00D3E697 /* Easing动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16D2456D1E5C99A600D3E697 /* EasingAnimViewController.h */,
+				16D2456E1E5C99A600D3E697 /* EasingAnimViewController.m */,
+				16D2456F1E5C99A600D3E697 /* EasingAnimViewController.xib */,
+			);
+			path = "Easing动画";
+			sourceTree = "<group>";
+		};
 		20FF4D491E46D07800DCE2B3 = {
 			isa = PBXGroup;
 			children = (
+				16D2454A1E5C85C600D3E697 /* WDYLibrary.framework */,
 				20FF4D541E46D07800DCE2B3 /* UIView动画详解 */,
 				20FF4D531E46D07800DCE2B3 /* Products */,
 			);
@@ -60,8 +184,15 @@
 			children = (
 				20FF4D581E46D07800DCE2B3 /* AppDelegate.h */,
 				20FF4D591E46D07800DCE2B3 /* AppDelegate.m */,
-				20FF4D5B1E46D07800DCE2B3 /* ViewController.h */,
-				20FF4D5C1E46D07800DCE2B3 /* ViewController.m */,
+				20FF4D5B1E46D07800DCE2B3 /* AnimateMianViewController.h */,
+				20FF4D5C1E46D07800DCE2B3 /* AnimateMianViewController.m */,
+				16D2456C1E5C997B00D3E697 /* Easing动画 */,
+				16D245661E5C94F300D3E697 /* Repeat重复动画 */,
+				16D245601E5C8E1E00D3E697 /* Rotation动画 */,
+				16D2455A1E5C8CF200D3E697 /* Color动画 */,
+				16D245531E5C8B6600D3E697 /* Scale动画 */,
+				16D2454D1E5C8A2900D3E697 /* Opacity动画 */,
+				16B2D3451E5C811B003E8AA9 /* Position动画 */,
 				20FF4D5E1E46D07800DCE2B3 /* Main.storyboard */,
 				20FF4D611E46D07800DCE2B3 /* Assets.xcassets */,
 				20FF4D631E46D07800DCE2B3 /* LaunchScreen.storyboard */,
@@ -89,6 +220,7 @@
 				20FF4D4E1E46D07800DCE2B3 /* Sources */,
 				20FF4D4F1E46D07800DCE2B3 /* Frameworks */,
 				20FF4D501E46D07800DCE2B3 /* Resources */,
+				16B2D34E1E5C814C003E8AA9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -110,7 +242,7 @@
 				TargetAttributes = {
 					20FF4D511E46D07800DCE2B3 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VRGWDFH359;
+						DevelopmentTeam = 2Y3JSHFEC2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,9 +270,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B2D34A1E5C8139003E8AA9 /* PositionAnimViewController.xib in Resources */,
+				16D245521E5C8A3D00D3E697 /* OpacityAnimViewController.xib in Resources */,
+				16D245581E5C8B8700D3E697 /* ScaleAnimViewController.xib in Resources */,
+				16D245651E5C8E4B00D3E697 /* RotationAnimViewController.xib in Resources */,
+				16D245711E5C99A600D3E697 /* EasingAnimViewController.xib in Resources */,
 				20FF4D651E46D07800DCE2B3 /* LaunchScreen.storyboard in Resources */,
+				16D2455F1E5C8D0900D3E697 /* ColorAnimViewController.xib in Resources */,
 				20FF4D621E46D07800DCE2B3 /* Assets.xcassets in Resources */,
 				20FF4D601E46D07800DCE2B3 /* Main.storyboard in Resources */,
+				16D2456B1E5C950D00D3E697 /* RepeatAnimViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,9 +290,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20FF4D5D1E46D07800DCE2B3 /* ViewController.m in Sources */,
+				16B2D3491E5C8139003E8AA9 /* PositionAnimViewController.m in Sources */,
+				16D2455E1E5C8D0900D3E697 /* ColorAnimViewController.m in Sources */,
+				20FF4D5D1E46D07800DCE2B3 /* AnimateMianViewController.m in Sources */,
+				16D245641E5C8E4B00D3E697 /* RotationAnimViewController.m in Sources */,
+				16D245701E5C99A600D3E697 /* EasingAnimViewController.m in Sources */,
+				16D2456A1E5C950D00D3E697 /* RepeatAnimViewController.m in Sources */,
 				20FF4D5A1E46D07800DCE2B3 /* AppDelegate.m in Sources */,
 				20FF4D571E46D07800DCE2B3 /* main.m in Sources */,
+				16D245571E5C8B8700D3E697 /* ScaleAnimViewController.m in Sources */,
+				16D245511E5C8A3D00D3E697 /* OpacityAnimViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +417,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				INFOPLIST_FILE = "UIView动画详解/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.oc.UIView----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,8 +430,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				INFOPLIST_FILE = "UIView动画详解/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.oc.UIView----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +458,7 @@
 				20FF4D6B1E46D07800DCE2B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

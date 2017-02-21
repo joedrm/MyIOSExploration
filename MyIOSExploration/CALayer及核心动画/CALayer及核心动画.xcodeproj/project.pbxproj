@@ -28,6 +28,8 @@
 		165EEB0E1E096C1700C39F80 /* CAAnimationGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB0D1E096C1700C39F80 /* CAAnimationGroupVC.m */; };
 		165EEB121E0978B500C39F80 /* MyWheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB111E0978B500C39F80 /* MyWheelViewController.m */; };
 		165EEB151E0978D600C39F80 /* WheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB141E0978D600C39F80 /* WheelView.m */; };
+		16D245481E5C859700D3E697 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D245471E5C859700D3E697 /* WDYLibrary.framework */; };
+		16D245491E5C859700D3E697 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16D245471E5C859700D3E697 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16DB1B2B1E06C6E7000147BB /* 钟表.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DB1B2A1E06C6E7000147BB /* 钟表.png */; };
 		16DB1B2F1E06C81F000147BB /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DB1B2D1E06C81F000147BB /* ClockViewController.m */; };
 		16DB1B301E06C81F000147BB /* ClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DB1B2E1E06C81F000147BB /* ClockViewController.xib */; };
@@ -43,8 +45,6 @@
 		16DD640B1E06848E00926E50 /* CATransformVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DD64091E06848E00926E50 /* CATransformVC.xib */; };
 		16DD640D1E06870300926E50 /* your_name.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16DD640C1E06870300926E50 /* your_name.jpg */; };
 		16DD64111E068E4100926E50 /* CustomLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DD64101E068E4100926E50 /* CustomLayerVC.m */; };
-		16EB8E111E12A074008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E101E12A074008DE6FF /* WDYLibrary.framework */; };
-		16EB8E121E12A074008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E101E12A074008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16F2013E1E08289100D3A869 /* 心.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F2013D1E08289100D3A869 /* 心.png */; };
 		16F201431E082BDB00D3A869 /* CAKeyframeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */; };
 		16F201451E082C4C00D3A869 /* name.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16F201441E082C4C00D3A869 /* name.jpeg */; };
@@ -58,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				16EB8E121E12A074008DE6FF /* WDYLibrary.framework in Embed Frameworks */,
+				16D245491E5C859700D3E697 /* WDYLibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +98,7 @@
 		165EEB111E0978B500C39F80 /* MyWheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWheelViewController.m; sourceTree = "<group>"; };
 		165EEB131E0978D600C39F80 /* WheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelView.h; sourceTree = "<group>"; };
 		165EEB141E0978D600C39F80 /* WheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelView.m; sourceTree = "<group>"; };
+		16D245471E5C859700D3E697 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DB1B2A1E06C6E7000147BB /* 钟表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "钟表.png"; sourceTree = "<group>"; };
 		16DB1B2C1E06C81F000147BB /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		16DB1B2D1E06C81F000147BB /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
@@ -122,7 +123,6 @@
 		16DD640C1E06870300926E50 /* your_name.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = your_name.jpg; sourceTree = "<group>"; };
 		16DD640F1E068E4100926E50 /* CustomLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayerVC.h; sourceTree = "<group>"; };
 		16DD64101E068E4100926E50 /* CustomLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayerVC.m; sourceTree = "<group>"; };
-		16EB8E101E12A074008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F2013D1E08289100D3A869 /* 心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "心.png"; sourceTree = "<group>"; };
 		16F201411E082BDB00D3A869 /* CAKeyframeAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationVC.h; sourceTree = "<group>"; };
 		16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationVC.m; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC21FEB752350A2A1D8FC4D3 /* Pods_CALayer_____.framework in Frameworks */,
-				16EB8E111E12A074008DE6FF /* WDYLibrary.framework in Frameworks */,
+				16D245481E5C859700D3E697 /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +259,7 @@
 		16DD63E31E0649AA00926E50 = {
 			isa = PBXGroup;
 			children = (
-				16EB8E101E12A074008DE6FF /* WDYLibrary.framework */,
+				16D245471E5C859700D3E697 /* WDYLibrary.framework */,
 				16DD63EE1E0649AA00926E50 /* CALayer及核心动画 */,
 				16DD63ED1E0649AA00926E50 /* Products */,
 				261F8DD9C7A9716143390EA1 /* Pods */,
@@ -639,6 +639,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DSHJC97KG4;
 				INFOPLIST_FILE = "CALayer及核心动画/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy..CALayer-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -652,6 +653,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DSHJC97KG4;
 				INFOPLIST_FILE = "CALayer及核心动画/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy..CALayer-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
