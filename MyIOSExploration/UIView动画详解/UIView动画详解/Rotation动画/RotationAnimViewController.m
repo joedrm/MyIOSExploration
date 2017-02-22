@@ -29,6 +29,9 @@
 
 - (void)rotateAnim{
     
+    
+    //参考： https://github.com/ruddfawcett/RFRotate  可以很方便地对任意基于UIView的视图进行旋转，可以自定义旋转的角度以及旋转时间
+    
     [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         CGAffineTransform transform = self.squreView.transform;
         self.squreView.transform = CGAffineTransformRotate(transform, M_PI);

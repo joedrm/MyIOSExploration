@@ -9,11 +9,17 @@
 /*
  参考资料：
  https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html 官方RuntimeGuide
+ 
  https://github.com/huang303513/iOSRunTimeExplore   ios运行时的学习与实践
+ 
  https://github.com/HHuiHao/Universal-Jump-ViewController  根据规则跳转到指定的界面
+ 
  http://dreamerpanda.cn/2016/05/11/Runtime-tabBarItem/  Runtime实战之定制TabBarItem大小
+ 
  http://bbs.520it.com/forum.php?mod=viewthread&tid=3045  runtime+KVC实现全屏滑动移除控制器
+ 
  http://www.imlifengfeng.com/blog/?tag=runtime   iOS Runtime
+ 
  https://github.com/leejayID/RuntimeDemo  Objective-C中的Runtime
  
  http://www.jianshu.com/p/8345a79fd572  你会遇到的runtime面试题（详）
@@ -23,6 +29,8 @@
  https://github.com/Magic-Unique/Runtime  Runtime基础知识点总结
  
  https://github.com/huang303513/iOSRunTimeRunLoopExplore  runloop、runtime学习与实践
+ 
+ https://github.com/cyanzhong/RuntimeInvoker  使用方法名称调用方法，可以用在一些奇技淫巧或是私有方法调试
  
  */
 

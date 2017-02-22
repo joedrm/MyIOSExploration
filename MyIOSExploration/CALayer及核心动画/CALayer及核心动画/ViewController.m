@@ -75,6 +75,8 @@ IOS动画总结:
  https://github.com/Josin22/JSWave  波浪动画
  https://github.com/631106979/WCLShineButton  
  http://www.jianshu.com/c/dbf97f100a39  与瓜一起学iOS动画，很多不错的动画示例
+ https://github.com/mengxianliang/XLCircleProgress  圆环进度指示器
+ https://github.com/mengxianliang/XLDotLoading  新浪微博的红包加载动画
  
  Facebook-POP
  
