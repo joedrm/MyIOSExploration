@@ -27,6 +27,8 @@
  http://www.cnblogs.com/smileEvday/archive/2013/05/25/IOSImageEdit.html  Quartz2D 图像处理
  
  http://blog.csdn.net/u013282507/article/details/53121556   iOS 利用正余弦曲线实现波浪形的XLWaveProgress
+ 
+ https://github.com/zekunyan/QuartzCodeExample-StarAimation  一个星星点赞动画
  */
 
 #import "ViewController.h"
