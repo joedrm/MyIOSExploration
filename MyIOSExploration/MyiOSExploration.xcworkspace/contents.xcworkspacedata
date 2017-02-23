@@ -59,9 +59,6 @@
       location = "group:ReactiveCocoa &amp; MVVM/ReactiveCocoa &amp; MVVM.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:iOS&#x7ec4;&#x4ef6;&#x5316;&#x5b9e;&#x8df5;&#x65b9;&#x6848;&#x5c1d;&#x8bd5;/iOS&#x7ec4;&#x4ef6;&#x5316;&#x5b9e;&#x8df5;&#x65b9;&#x6848;&#x5c1d;&#x8bd5;.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:&#x4f7f;&#x7528;&#x62e6;&#x622a;&#x5668;&#x6765;&#x53d6;&#x4ee3;&#x57fa;&#x7c7b;/&#x4f7f;&#x7528;&#x62e6;&#x622a;&#x5668;&#x6765;&#x53d6;&#x4ee3;&#x57fa;&#x7c7b;.xcodeproj">
    </FileRef>
    <FileRef

@@ -12,6 +12,9 @@
  
  https://developer.apple.com/library/content/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html Quartz 2D Programming Guide
  
+ // Quartz / UIKit绘画工具箱，汇集常用几何和Context操作方法、图像效果处理、路径绘图、多变形状、渐变填充、3D内外阴影高光渲染、高斯模糊、动画效果及属性文本绘制。
+ https://github.com/yizzuide/XFCrystalKit
+ 
  http://tutuge.me/2016/12/25/TTGPuzzleVerify/  拼图验证控件TTGPuzzleVerify的实现
  
  http://www.jianshu.com/p/24459aa51330    iOS封装一个简单的曲线图表视图
