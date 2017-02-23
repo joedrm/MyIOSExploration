@@ -166,6 +166,7 @@ IOS知识点总结和实践
 - [MakeIconsWithSketch](https://github.com/allenwong/MakeIconsWithSketch) Simple tutorials about how to make icons with Sketch.
 
 ### 工具
+- [awesome-mac](https://github.com/imlifengfeng/awesome-mac) - 收集非常好用的Mac应用程序、软件以及工具
 - [牛逼的ImageMagick](http://wenva.github.io/%E7%9F%A5%E8%AF%86%E5%9B%8A/2015/02/05/%E7%89%9B%E9%80%BC%E7%9A%84ImageMagick.html)
 - [iOS APP图标一键生成](http://wenva.github.io/ios/2015/05/18/iOS-APP%E5%9B%BE%E6%A0%87%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90.html)
-- [Awesome_API](https://github.com/marktony/Awesome_API) - 
+- [Awesome_API](https://github.com/marktony/Awesome_API) - 收集一些免费的API
