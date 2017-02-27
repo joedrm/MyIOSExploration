@@ -9,23 +9,40 @@
 /* Begin PBXBuildFile section */
 		209F34701E2DAF240083C875 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F346F1E2DAF240083C875 /* main.m */; };
 		209F34731E2DAF240083C875 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F34721E2DAF240083C875 /* AppDelegate.m */; };
-		209F34761E2DAF240083C875 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F34751E2DAF240083C875 /* ViewController.m */; };
 		209F34791E2DAF240083C875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F34771E2DAF240083C875 /* Main.storyboard */; };
 		209F347B1E2DAF240083C875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209F347A1E2DAF240083C875 /* Assets.xcassets */; };
 		209F347E1E2DAF240083C875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F347C1E2DAF240083C875 /* LaunchScreen.storyboard */; };
+		20B5A6581E63BFC200F97AD4 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B5A6571E63BFC200F97AD4 /* WDYLibrary.framework */; };
+		20B5A6591E63BFC200F97AD4 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20B5A6571E63BFC200F97AD4 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20B5A65D1E63C00200F97AD4 /* CollectionMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B5A65C1E63C00200F97AD4 /* CollectionMainViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20B5A65A1E63BFC300F97AD4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20B5A6591E63BFC200F97AD4 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		209F346B1E2DAF240083C875 /* UICollectionView深入理解和实践.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UICollectionView深入理解和实践.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		209F346F1E2DAF240083C875 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		209F34711E2DAF240083C875 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		209F34721E2DAF240083C875 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		209F34741E2DAF240083C875 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		209F34751E2DAF240083C875 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		209F34781E2DAF240083C875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		209F347A1E2DAF240083C875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209F347D1E2DAF240083C875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		209F347F1E2DAF240083C875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B5A6571E63BFC200F97AD4 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B5A65B1E63C00200F97AD4 /* CollectionMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionMainViewController.h; sourceTree = "<group>"; };
+		20B5A65C1E63C00200F97AD4 /* CollectionMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B5A6581E63BFC200F97AD4 /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 		209F34621E2DAF240083C875 = {
 			isa = PBXGroup;
 			children = (
+				20B5A6571E63BFC200F97AD4 /* WDYLibrary.framework */,
 				209F346D1E2DAF240083C875 /* UICollectionView深入理解和实践 */,
 				209F346C1E2DAF240083C875 /* Products */,
 			);
@@ -60,8 +79,8 @@
 			children = (
 				209F34711E2DAF240083C875 /* AppDelegate.h */,
 				209F34721E2DAF240083C875 /* AppDelegate.m */,
-				209F34741E2DAF240083C875 /* ViewController.h */,
-				209F34751E2DAF240083C875 /* ViewController.m */,
+				20B5A65B1E63C00200F97AD4 /* CollectionMainViewController.h */,
+				20B5A65C1E63C00200F97AD4 /* CollectionMainViewController.m */,
 				209F34771E2DAF240083C875 /* Main.storyboard */,
 				209F347A1E2DAF240083C875 /* Assets.xcassets */,
 				209F347C1E2DAF240083C875 /* LaunchScreen.storyboard */,
@@ -89,6 +108,7 @@
 				209F34671E2DAF240083C875 /* Sources */,
 				209F34681E2DAF240083C875 /* Frameworks */,
 				209F34691E2DAF240083C875 /* Resources */,
+				20B5A65A1E63BFC300F97AD4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -110,7 +130,7 @@
 				TargetAttributes = {
 					209F346A1E2DAF240083C875 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VRGWDFH359;
+						DevelopmentTeam = 2Y3JSHFEC2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,7 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				209F34761E2DAF240083C875 /* ViewController.m in Sources */,
+				20B5A65D1E63C00200F97AD4 /* CollectionMainViewController.m in Sources */,
 				209F34731E2DAF240083C875 /* AppDelegate.m in Sources */,
 				209F34701E2DAF240083C875 /* main.m in Sources */,
 			);
@@ -271,10 +291,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				INFOPLIST_FILE = "UICollectionView深入理解和实践/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.collectionView.UICollectionView-------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.collectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -283,10 +304,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				INFOPLIST_FILE = "UICollectionView深入理解和实践/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.collectionView.UICollectionView-------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.collectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -310,6 +332,7 @@
 				209F34841E2DAF240083C875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
