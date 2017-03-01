@@ -43,4 +43,7 @@
  
  
  https://github.com/LearnOpenGL-CN/LearnOpenGL-CN learnopengl.com系列教程的中文翻译
+ 
+ http://www.jianshu.com/p/8d30a007f0a1 iOS开发-OpenGL ES画图应用
+
  */

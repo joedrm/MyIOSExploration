@@ -10,7 +10,10 @@
 - [30DaysofSwift](https://github.com/allenwong/30DaysofSwift)
 - [ios-oss](https://github.com/kickstarter/ios-oss)  众筹网站 kickstarter 开源其 iOS 应用
 - [WordPress-iOS](https://github.com/wordpress-mobile/WordPress-iOS)
-
+- [BaoKanIOS](https://github.com/6ag/BaoKanIOS) 使用swift语言写的一款新闻资讯类的app,已经上架
+- [TodayMind](https://github.com/cyanzhong/TodayMind) 一个非常小的项目，提供了直接在通知中心管理 提醒事项 的神奇能力
+- [EnglishCommunity-swift](https://github.com/6ag/EnglishCommunity-swift) swift语言开发的自学英语社区app，已经上架
+- [V2ex-Swift](https://github.com/Finb/V2ex-Swift)  V2EX iOS客户端
 
 ## 开源框架
 - [RainbowNavigation](https://github.com/DanisFabric/RainbowNavigation) 在各种情况下动画改变UINavigationBar的backgroundColor
