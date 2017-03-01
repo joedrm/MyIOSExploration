@@ -85,7 +85,11 @@
  http://v.youku.com/v_show/id_XNDUyMjI3MTY0.html 斯坦福ios教程 Introduction to AVFoundation
  http://www.ishare5.com/10076923/
  
+ 
  https://github.com/hagaiw/AVVideoCompositionOptimizationRadar  使用滤镜来编辑视频
+ https://github.com/531464049/GPIImageVideoEdit  使用 GOUImage 给视频添加滤镜（本地或实时拍摄）
+ 
+ 
  
  https://github.com/loyinglin/LearnAVFoundation 
  

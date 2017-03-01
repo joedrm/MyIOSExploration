@@ -38,4 +38,6 @@
  https://github.com/jkpang/PPNetworkHelper AFNetworking 3.x 与YYCache封装,一句代码搞定数据请求与缓存,告别FMDB!控制台直接打印json中文字符,调试更方便
  
  https://github.com/lianleven/LYHTTPClient  缓存用的是YYCache，基于AFNetworking的封装
+ 
+ https://github.com/guowilling/SRDownloadManager  多线程文件下载管理
  */
