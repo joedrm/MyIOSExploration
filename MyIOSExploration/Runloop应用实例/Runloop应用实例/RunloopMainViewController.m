@@ -47,4 +47,6 @@
  https://github.com/Haley-Wong/RunLoopDemos
  
  http://blog.csdn.net/maxdong24/article/details/56281168  IOS-Run loop学习总结
+ 
+ http://www.cocoachina.com/ios/20170224/18763.html  逃不出的圈子 -- RunLoop
  */

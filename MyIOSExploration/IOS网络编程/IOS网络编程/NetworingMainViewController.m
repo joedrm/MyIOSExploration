@@ -26,6 +26,7 @@
  https://github.com/QianKun-HanLin/HLNetworking  基于AFNetworking的高阶网络请求管理器
  
  http://www.jianshu.com/p/f9b4ada163ab  一步一步构建你的iOS网络层 - HTTP篇
+ http://www.jianshu.com/p/2f98823730a8  一步一步构建你的iOS网络层 - TCP篇
 
  http://www.jianshu.com/p/d7e549249a01 iOS 工作中封装通用性网络请求框架 
  

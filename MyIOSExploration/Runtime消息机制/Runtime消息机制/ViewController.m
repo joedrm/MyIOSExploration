@@ -32,6 +32,8 @@
  
  https://github.com/cyanzhong/RuntimeInvoker  使用方法名称调用方法，可以用在一些奇技淫巧或是私有方法调试
  
+ http://www.cocoachina.com/ios/20170228/18798.html  Runtime在实际开发中的应用
+ 
  */
 
 #import "ViewController.h"
