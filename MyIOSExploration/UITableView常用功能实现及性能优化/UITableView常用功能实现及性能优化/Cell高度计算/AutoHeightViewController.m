@@ -43,6 +43,12 @@
 @end
 
 /*
+ https://github.com/forkingdog/UITableView-FDTemplateLayoutCell  使用xib和storyboard在添加约束来自动计算行高
+ 
+ https://github.com/CoderJackyHuang/HYBMasonryAutoCellHeight  基于Masonry自动计算行高
+ 
  https://github.com/Tinghui/UITableView-CellHeightCalculation  Cell高度计算
+ 
+ https://github.com/DevelopmentEngineer-DWQ/DWQCellAutoHeightWithMasonry  Masonry布局的强大助手，自动计算UITableViewCell的高度
  
  */
