@@ -48,6 +48,7 @@
 		16F2013E1E08289100D3A869 /* 心.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F2013D1E08289100D3A869 /* 心.png */; };
 		16F201431E082BDB00D3A869 /* CAKeyframeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */; };
 		16F201451E082C4C00D3A869 /* name.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16F201441E082C4C00D3A869 /* name.jpeg */; };
+		20E907731E6818720046F86D /* CAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E907721E6818720046F86D /* CAShapeLayerViewController.m */; };
 		AC21FEB752350A2A1D8FC4D3 /* Pods_CALayer_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7F71258B0D8F57EFCBA2D2 /* Pods_CALayer_____.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +129,8 @@
 		16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationVC.m; sourceTree = "<group>"; };
 		16F201441E082C4C00D3A869 /* name.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name.jpeg; sourceTree = "<group>"; };
 		1F7F71258B0D8F57EFCBA2D2 /* Pods_CALayer_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_CALayer_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E907711E6818720046F86D /* CAShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerViewController.h; sourceTree = "<group>"; };
+		20E907721E6818720046F86D /* CAShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerViewController.m; sourceTree = "<group>"; };
 		3A619EE50C15B5F3E87D7851 /* Pods-CALayer及核心动画.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CALayer及核心动画.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CALayer及核心动画/Pods-CALayer及核心动画.release.xcconfig"; sourceTree = "<group>"; };
 		B52C98535759A42148F5D345 /* Pods-CALayer及核心动画.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CALayer及核心动画.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CALayer及核心动画/Pods-CALayer及核心动画.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -282,6 +285,7 @@
 				16DD63F31E0649AA00926E50 /* AppDelegate.m */,
 				16DD63F51E0649AA00926E50 /* ViewController.h */,
 				16DD63F61E0649AA00926E50 /* ViewController.m */,
+				20E907701E6818520046F86D /* CAShapeLayer各种实例 */,
 				16554C811E0F7D4E0095E722 /* 仿QQ粘性布局 */,
 				16554C781E0F71540095E722 /* 粒子效果 */,
 				16554C721E0F6AAF0095E722 /* 播放器音量震动条 */,
@@ -340,6 +344,15 @@
 				16F201421E082BDB00D3A869 /* CAKeyframeAnimationVC.m */,
 			);
 			path = "CAKeyframeAnimation(图片抖动)";
+			sourceTree = "<group>";
+		};
+		20E907701E6818520046F86D /* CAShapeLayer各种实例 */ = {
+			isa = PBXGroup;
+			children = (
+				20E907711E6818720046F86D /* CAShapeLayerViewController.h */,
+				20E907721E6818720046F86D /* CAShapeLayerViewController.m */,
+			);
+			path = "CAShapeLayer各种实例";
 			sourceTree = "<group>";
 		};
 		261F8DD9C7A9716143390EA1 /* Pods */ = {
@@ -507,6 +520,7 @@
 				16554C891E0F7DFD0095E722 /* BageViewButton.m in Sources */,
 				16DD63F41E0649AA00926E50 /* AppDelegate.m in Sources */,
 				16554C761E0F6C7D0095E722 /* VoiceShakeViewController.m in Sources */,
+				20E907731E6818720046F86D /* CAShapeLayerViewController.m in Sources */,
 				16DD63F11E0649AA00926E50 /* main.m in Sources */,
 				16DB1B2F1E06C81F000147BB /* ClockViewController.m in Sources */,
 				16DB1B381E06DC4F000147BB /* HeartBeatEffectVC.m in Sources */,

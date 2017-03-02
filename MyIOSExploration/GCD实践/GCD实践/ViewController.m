@@ -22,6 +22,10 @@
  
  https://github.com/upworldcjw/test/tree/master/TestGCDQueue/TestGCDQueue  测试dispatch_sync在并行queue如何并发的Demo 
  https://github.com/upworldcjw/wiki/wiki/%E5%B9%B6%E8%A1%8C%E9%98%9F%E5%88%97-%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8
+ 
+ http://www.cocoachina.com/industry/20140428/8248.html  GCD 深入理解（一）
+ 
+ http://www.jianshu.com/p/938d68ed832c  iOS中保证线程安全的几种方式与性能对比
 
  */
 

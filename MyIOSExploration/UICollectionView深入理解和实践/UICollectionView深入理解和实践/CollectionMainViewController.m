@@ -41,4 +41,6 @@
  https://github.com/KelvinJin/AnimatedCollectionViewLayout   CollectionView切换动画
  
  https://github.com/Tidusww/WWCollectionWaterfallLayout  UICollectionView 实现瀑布流布局
+ 
+ https://github.com/BestJoker/FJSPicMixCollectionViewLayout  模仿IMDb和格瓦拉的图片集混合排布展示效果.2.普通瀑布流waterFlow3.跨列混合瀑布流waterFlow4.中间图片放大
  */

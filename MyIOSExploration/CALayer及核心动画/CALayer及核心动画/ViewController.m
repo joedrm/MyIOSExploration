@@ -128,7 +128,8 @@ IOS动画总结:
                       @"图片折叠",
                       @"播放器音量震动条",
                       @"粒子效果",
-                      @"仿QQ粘性布局"];
+                      @"仿QQ粘性布局",
+                      @"CAShapeLayer各种实例"];
     
     self.vcArr = @[@"CATransformVC",
                    @"CustomLayerVC",
@@ -142,7 +143,8 @@ IOS动画总结:
                    @"ImageFoldViewController",
                    @"VoiceShakeViewController",
                    @"ParticleEffectViewController",
-                   @"QQViewController"
+                   @"QQViewController",
+                   @"CAShapeLayerViewController"
                    ];
 }
 
