@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Talk About iOS Performance Optimization/Talk About iOS Performance Optimization.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:iOS&#x7ec4;&#x4ef6;&#x5316;&#x63a2;&#x7d22;/iOS&#x7ec4;&#x4ef6;&#x5316;&#x63a2;&#x7d22;.xcodeproj">
    </FileRef>
    <FileRef

@@ -8,6 +8,8 @@
 
 /*
  参考资料：
+ https://github.com/shenAlexy/MVVM  MVVM架构的一次实践，重写iOS头条客户端
+ 
  https://github.com/wangtongke/WTKMVVMRAC   高仿电商项目，采用MVVM+ReactiveCocoa
  
  http://www.starming.com/index.php?v=index&view=101 iOS函数响应式编程以及ReactiveCocoa的使用

@@ -30,13 +30,14 @@ IOS知识点总结和实践
 
 ### IOS Awsome
 - [awesome-ios](https://github.com/vsouza/awesome-ios)
-- [awesome-iOS-blog-article](https://github.com/Jiar/awesome-iOS-blog-article) - 比较好的一些博客和文章
-- [ming1016/study](https://github.com/ming1016/study) - 学习记录
 - [TimLiu-iOS](https://github.com/Tim9Liu9/TimLiu-iOS) - iOS开发常用三方库、插件、知名博客等等
-- [nixzhu/dev-blog](https://github.com/nixzhu/dev-blog) - 翻译、开发心得或学习笔记
 - [iOS10AdaptationTips](https://github.com/ChenYilong/iOS10AdaptationTips) - IOS 10适配
+- [awesome-iOS-blog-article](https://github.com/Jiar/awesome-iOS-blog-article) - 比较好的一些博客和文章
+- [nixzhu/dev-blog](https://github.com/nixzhu/dev-blog) - 翻译、开发心得或学习笔记
+- [ming1016/study](https://github.com/ming1016/study) - 学习记录
 - [awesome-ios-cn](https://github.com/jobbole/awesome-ios-cn) - iOS资源大全中文版
 - [iOS-Note](https://github.com/seedante/iOS-Note)  - 一些不错的文章
+- [100mango/zen](https://github.com/100mango/zen) - iOS, Swift, Objective-C 心得
 
 ### KVO进阶
 - [谈谈 KVO](http://www.jianshu.com/p/2d1c9d76153b)

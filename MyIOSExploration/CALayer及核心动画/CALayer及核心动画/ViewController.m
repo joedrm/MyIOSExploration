@@ -98,6 +98,7 @@ IOS动画总结:
  https://github.com/ColinEberhardt/VCTransitionsLibrary
  https://github.com/recruit-mp/RMPZoomTransitionAnimator
  https://github.com/AugustRush/ARTransitionAnimator
+ https://github.com/mh4u/XXTransition/  应付各种需求的转场动画
  
  
  动画设计

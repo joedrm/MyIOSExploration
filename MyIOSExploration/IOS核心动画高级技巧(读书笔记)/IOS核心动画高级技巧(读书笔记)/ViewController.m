@@ -68,7 +68,6 @@
 /*
  https://github.com/ameizi/awesome-ios-animation  收集IOS动画框架
  
- https://github.com/seedante/iOS-Note/wiki/Mastering-Offscreen-Render  离屏渲染(Offscreen Render)
  
  http://bbs.520it.com/forum.php?mod=viewthread&tid=3060  离屏渲染原理，GPU 资源消耗原因和解决方案，ASDK 的基本原理
  
@@ -78,6 +77,10 @@
  http://www.jianshu.com/u/ee4fcaade234  写的比较底层：CoreAnimation初探(一) —— 图形学基础、CoreAnimation初探(二) —— 初识CALayer与动画、CoreAnimation初探(三) —— UIView与CAlayer动画原理
  
  http://blog.csdn.net/u013282174/article/category/6014571   iOS CoreAnimation 原理篇、技巧篇
+ 
+ 离屏幕渲染 和 性能优化
+ https://github.com/seedante/iOS-Note/wiki/Mastering-Offscreen-Render  离屏渲染(Offscreen Render)
+ https://github.com/100mango/zen/blob/master/WWDC%E5%BF%83%E5%BE%97%EF%BC%9AAdvanced%20Graphics%20and%20Animations%20for%20iOS%20Apps/Advanced%20Graphics%20and%20Animations%20for%20iOS%20Apps.md  Advanced Graphics and Animations for iOS Apps
  */
 
 
