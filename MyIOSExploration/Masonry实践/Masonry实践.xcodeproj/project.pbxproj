@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		206664321E12361300C7F140 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206664311E12361300C7F140 /* ScrollViewController.m */; };
+		2019B0CC1E6D6677003FD161 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019B0CB1E6D6677003FD161 /* ScrollViewController.m */; };
+		2019B0D01E6D66D1003FD161 /* HorizontalScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019B0CF1E6D66D1003FD161 /* HorizontalScrollViewController.m */; };
 		206E73FB1E23719D0089FABC /* ArrayButtonLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 206E73FA1E23719D0089FABC /* ArrayButtonLayoutVC.m */; };
 		206E73FD1E2373CB0089FABC /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206E73FC1E2373CB0089FABC /* WDYLibrary.framework */; };
 		206E73FE1E2373CB0089FABC /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 206E73FC1E2373CB0089FABC /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -80,8 +81,10 @@
 
 /* Begin PBXFileReference section */
 		03401E1A5735B91FBAE4D716 /* Pods_Masonry__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Masonry__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		206664301E12361300C7F140 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
-		206664311E12361300C7F140 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		2019B0CA1E6D6677003FD161 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		2019B0CB1E6D6677003FD161 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		2019B0CE1E6D66D1003FD161 /* HorizontalScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalScrollViewController.h; sourceTree = "<group>"; };
+		2019B0CF1E6D66D1003FD161 /* HorizontalScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalScrollViewController.m; sourceTree = "<group>"; };
 		206E73F91E23719D0089FABC /* ArrayButtonLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayButtonLayoutVC.h; sourceTree = "<group>"; };
 		206E73FA1E23719D0089FABC /* ArrayButtonLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayButtonLayoutVC.m; sourceTree = "<group>"; };
 		206E73FC1E2373CB0089FABC /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,13 +179,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2066642F1E1235E900C7F140 /* ScrollView的布局 */ = {
+		2019B0C91E6D6677003FD161 /* ScrollView的竖向布局 */ = {
 			isa = PBXGroup;
 			children = (
-				206664301E12361300C7F140 /* ScrollViewController.h */,
-				206664311E12361300C7F140 /* ScrollViewController.m */,
+				2019B0CA1E6D6677003FD161 /* ScrollViewController.h */,
+				2019B0CB1E6D6677003FD161 /* ScrollViewController.m */,
 			);
-			path = "ScrollView的布局";
+			path = "ScrollView的竖向布局";
+			sourceTree = "<group>";
+		};
+		2019B0CD1E6D66A2003FD161 /* ScrollView的横向布局 */ = {
+			isa = PBXGroup;
+			children = (
+				2019B0CE1E6D66D1003FD161 /* HorizontalScrollViewController.h */,
+				2019B0CF1E6D66D1003FD161 /* HorizontalScrollViewController.m */,
+			);
+			path = "ScrollView的横向布局";
 			sourceTree = "<group>";
 		};
 		206E73F81E23716A0089FABC /* 数组排列 */ = {
@@ -266,7 +278,8 @@
 				206E74001E2375AB0089FABC /* 优先级 */,
 				206E73F81E23716A0089FABC /* 数组排列 */,
 				20D514921E124A52000FBD5D /* 横向或纵向实现多个View等间距 */,
-				2066642F1E1235E900C7F140 /* ScrollView的布局 */,
+				2019B0CD1E6D66A2003FD161 /* ScrollView的横向布局 */,
+				2019B0C91E6D6677003FD161 /* ScrollView的竖向布局 */,
 				2090DE701DF6933600650BCC /* 动画 */,
 				2090DE6C1DF66E0E00650BCC /* 两种方式实现等间距 */,
 				20AC98AC1DF177B200C761FA /* Cell的展开和收缩 */,
@@ -619,8 +632,10 @@
 				2090DE731DF6934F00650BCC /* Case8ViewController.m in Sources */,
 				20AC983B1DF10CFE00C761FA /* AppDelegate.m in Sources */,
 				2090DE681DF6656600650BCC /* Case6Cell.m in Sources */,
+				2019B0D01E6D66D1003FD161 /* HorizontalScrollViewController.m in Sources */,
 				20AC98861DF14C2D00C761FA /* Case4ViewController.m in Sources */,
 				2090DE6B1DF6659C00650BCC /* Case6Model.m in Sources */,
+				2019B0CC1E6D6677003FD161 /* ScrollViewController.m in Sources */,
 				20D514981E124AAB000FBD5D /* UIView+EqualSpace.m in Sources */,
 				20AC988D1DF14D2700C761FA /* Case4Cell.m in Sources */,
 				2090DE6F1DF66EA800650BCC /* Case7ViewController.m in Sources */,
@@ -634,7 +649,6 @@
 				20AC98381DF10CFE00C761FA /* main.m in Sources */,
 				20AC98901DF14D5B00C761FA /* Case4Model.m in Sources */,
 				206E73FB1E23719D0089FABC /* ArrayButtonLayoutVC.m in Sources */,
-				206664321E12361300C7F140 /* ScrollViewController.m in Sources */,
 				206E74071E23793D0089FABC /* Case12ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

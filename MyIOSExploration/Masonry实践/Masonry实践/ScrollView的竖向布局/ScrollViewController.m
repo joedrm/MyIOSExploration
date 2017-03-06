@@ -27,8 +27,8 @@
     
     // 添加一个容器的View
     /*
-     创建一个视图容器container加到scrollView里
-     container的edges与scrollView相同，这个决定container的位置,与scrollView各边距为0
+     创建一个视图容器 container 加到 scrollView 里
+     container 的 edges 与 scrollView 相同，这个决定 container 的位置,与 scrollView 各边距为0
      container的width与height才是决定它的大小，而这个也决定了scrollView的contentSize
      在这里(伪代码)
      scrollView.contentSize = CGSizeMake(container.witdth + container.左边距 + container.右边距,
