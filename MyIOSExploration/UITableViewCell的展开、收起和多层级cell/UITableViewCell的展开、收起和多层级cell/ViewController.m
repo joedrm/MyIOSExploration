@@ -7,11 +7,7 @@
 //
 
 
-/*
- 参考文章：
- 1、优雅地分离tableview回调：http://www.cocoachina.com/ios/20161008/17687.html；https://github.com/haltNoShut/YFAssistantTableView
- 
- */
+
 #import "ViewController.h"
 
 @interface ViewController ()
