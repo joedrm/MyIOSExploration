@@ -1,10 +1,42 @@
 //
-//  ViewController.m
+//  RACMainViewController.m
 //  ReactiveCocoa & MVVM
 //
-//  Created by fang wang on 16/12/6.
-//  Copyright © 2016年 wdy. All rights reserved.
+//  Created by wdy on 2017/3/5.
+//  Copyright © 2017年 wdy. All rights reserved.
 //
+
+#import "RACMainViewController.h"
+
+@interface RACMainViewController ()
+
+@end
+
+@implementation RACMainViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.title = @"ReactiveCocoa & MVVM";
+    self.titleArr = @[
+                      @"RAC常用类和基本使用",
+                      @"RAC开发中常见用法",
+                      @"RAC中常见的宏",
+                      @"RAC常见信号操作方法"
+                      ];
+    
+    self.vcArr = @[
+                   @"BasicSimpleViewController",
+                   @"CommonApplyViewController",
+                   @"RACMacrosViewController",
+                   @"SignalOperateViewController"
+                   ];
+}
+
+
+@end
+
+
 
 /*
  参考资料：
@@ -26,32 +58,15 @@
  
  http://www.jianshu.com/p/01546347bad5   iOS函数响应式编程以及ReactiveCocoa的使用
  
- https://github.com/arduomeng/OCDemo_me/tree/bc22cc5636e78e2cf34a2a8ebba7c5962a4f41bb/RAC  
+ https://github.com/arduomeng/OCDemo_me/tree/bc22cc5636e78e2cf34a2a8ebba7c5962a4f41bb/RAC
  
  https://github.com/ReactiveCocoa/ReactiveObjC  The 2.x ReactiveCocoa Objective-C API: Streams of values over time
  
  https://github.com/Josin22/JSShopCartModule MVVM实例，购物车通用模板
  
  https://github.com/ValiantCat/FRPCheatSheeta  函数式编程框架：ReactiveCocoa,RXSwift速查表
-
+ 
  
  MVVM
  https://github.com/coderyi/MVVMDemo
  */
-
-#import "ViewController.h"
-
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    
-}
-
-
-@end

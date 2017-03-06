@@ -8,9 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		02222644EA3E824F2EDB189F /* Pods_ReactiveCocoa___MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767EAE3F3CB4A46418A2243D /* Pods_ReactiveCocoa___MVVM.framework */; };
+		16DF11311E6BBAE1001476E6 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DF11301E6BBAE1001476E6 /* WDYLibrary.framework */; };
+		16DF11321E6BBAE1001476E6 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16DF11301E6BBAE1001476E6 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16DF11361E6BBB4E001476E6 /* RACMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DF11351E6BBB4E001476E6 /* RACMainViewController.m */; };
+		16DF11391E6BBBDD001476E6 /* BasicSimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DF11381E6BBBDD001476E6 /* BasicSimpleViewController.m */; };
+		16DF113C1E6BF050001476E6 /* DelegateTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DF113B1E6BF050001476E6 /* DelegateTestView.m */; };
+		16DF113E1E6BF87D001476E6 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16DF113D1E6BF87D001476E6 /* data.plist */; };
+		16DF11411E6BF8A9001476E6 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DF11401E6BF8A9001476E6 /* TestModel.m */; };
+		16DF11461E6BFD2A001476E6 /* CommonApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DF11441E6BFD2A001476E6 /* CommonApplyViewController.m */; };
+		16DF11471E6BFD2A001476E6 /* CommonApplyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DF11451E6BFD2A001476E6 /* CommonApplyViewController.xib */; };
+		16DF114A1E6BFE01001476E6 /* GreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DF11491E6BFE01001476E6 /* GreenView.m */; };
+		16DF11521E6C0950001476E6 /* RACMacrosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DF11501E6C0950001476E6 /* RACMacrosViewController.m */; };
+		16DF11531E6C0950001476E6 /* RACMacrosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DF11511E6C0950001476E6 /* RACMacrosViewController.xib */; };
+		16DF115B1E6C22BB001476E6 /* SignalOperateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DF11591E6C22BB001476E6 /* SignalOperateViewController.m */; };
+		16DF115C1E6C22BB001476E6 /* SignalOperateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DF115A1E6C22BB001476E6 /* SignalOperateViewController.xib */; };
 		2090DE821DF6986400650BCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE811DF6986400650BCC /* main.m */; };
 		2090DE851DF6986400650BCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE841DF6986400650BCC /* AppDelegate.m */; };
-		2090DE881DF6986400650BCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090DE871DF6986400650BCC /* ViewController.m */; };
 		2090DE8B1DF6986400650BCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2090DE891DF6986400650BCC /* Main.storyboard */; };
 		2090DE8D1DF6986400650BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2090DE8C1DF6986400650BCC /* Assets.xcassets */; };
 		2090DE901DF6986400650BCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2090DE8E1DF6986400650BCC /* LaunchScreen.storyboard */; };
@@ -27,13 +40,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		16DF11331E6BBAE2001476E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16DF11321E6BBAE1001476E6 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		16DF11301E6BBAE1001476E6 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16DF11341E6BBB4E001476E6 /* RACMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACMainViewController.h; sourceTree = "<group>"; };
+		16DF11351E6BBB4E001476E6 /* RACMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACMainViewController.m; sourceTree = "<group>"; };
+		16DF11371E6BBBDD001476E6 /* BasicSimpleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicSimpleViewController.h; sourceTree = "<group>"; };
+		16DF11381E6BBBDD001476E6 /* BasicSimpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicSimpleViewController.m; sourceTree = "<group>"; };
+		16DF113A1E6BF050001476E6 /* DelegateTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateTestView.h; sourceTree = "<group>"; };
+		16DF113B1E6BF050001476E6 /* DelegateTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateTestView.m; sourceTree = "<group>"; };
+		16DF113D1E6BF87D001476E6 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		16DF113F1E6BF8A9001476E6 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		16DF11401E6BF8A9001476E6 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		16DF11431E6BFD2A001476E6 /* CommonApplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonApplyViewController.h; sourceTree = "<group>"; };
+		16DF11441E6BFD2A001476E6 /* CommonApplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonApplyViewController.m; sourceTree = "<group>"; };
+		16DF11451E6BFD2A001476E6 /* CommonApplyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonApplyViewController.xib; sourceTree = "<group>"; };
+		16DF11481E6BFE01001476E6 /* GreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenView.h; sourceTree = "<group>"; };
+		16DF11491E6BFE01001476E6 /* GreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenView.m; sourceTree = "<group>"; };
+		16DF114F1E6C0950001476E6 /* RACMacrosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACMacrosViewController.h; sourceTree = "<group>"; };
+		16DF11501E6C0950001476E6 /* RACMacrosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACMacrosViewController.m; sourceTree = "<group>"; };
+		16DF11511E6C0950001476E6 /* RACMacrosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACMacrosViewController.xib; sourceTree = "<group>"; };
+		16DF11581E6C22BB001476E6 /* SignalOperateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalOperateViewController.h; sourceTree = "<group>"; };
+		16DF11591E6C22BB001476E6 /* SignalOperateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalOperateViewController.m; sourceTree = "<group>"; };
+		16DF115A1E6C22BB001476E6 /* SignalOperateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignalOperateViewController.xib; sourceTree = "<group>"; };
 		2090DE7D1DF6986400650BCC /* ReactiveCocoa & MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveCocoa & MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2090DE811DF6986400650BCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2090DE831DF6986400650BCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2090DE841DF6986400650BCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2090DE861DF6986400650BCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2090DE871DF6986400650BCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2090DE8A1DF6986400650BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2090DE8C1DF6986400650BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2090DE8F1DF6986400650BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02222644EA3E824F2EDB189F /* Pods_ReactiveCocoa___MVVM.framework in Frameworks */,
+				16DF11311E6BBAE1001476E6 /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +113,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16DF112F1E6BBAC9001476E6 /* RAC常用类和基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				16DF11371E6BBBDD001476E6 /* BasicSimpleViewController.h */,
+				16DF11381E6BBBDD001476E6 /* BasicSimpleViewController.m */,
+				16DF113A1E6BF050001476E6 /* DelegateTestView.h */,
+				16DF113B1E6BF050001476E6 /* DelegateTestView.m */,
+				16DF113F1E6BF8A9001476E6 /* TestModel.h */,
+				16DF11401E6BF8A9001476E6 /* TestModel.m */,
+				16DF113D1E6BF87D001476E6 /* data.plist */,
+			);
+			path = "RAC常用类和基本使用";
+			sourceTree = "<group>";
+		};
+		16DF11421E6BFCF7001476E6 /* RAC开发中常见用法 */ = {
+			isa = PBXGroup;
+			children = (
+				16DF11431E6BFD2A001476E6 /* CommonApplyViewController.h */,
+				16DF11441E6BFD2A001476E6 /* CommonApplyViewController.m */,
+				16DF11481E6BFE01001476E6 /* GreenView.h */,
+				16DF11491E6BFE01001476E6 /* GreenView.m */,
+				16DF11451E6BFD2A001476E6 /* CommonApplyViewController.xib */,
+			);
+			path = "RAC开发中常见用法";
+			sourceTree = "<group>";
+		};
+		16DF114B1E6C08B3001476E6 /* RAC中常见的宏 */ = {
+			isa = PBXGroup;
+			children = (
+				16DF114F1E6C0950001476E6 /* RACMacrosViewController.h */,
+				16DF11501E6C0950001476E6 /* RACMacrosViewController.m */,
+				16DF11511E6C0950001476E6 /* RACMacrosViewController.xib */,
+			);
+			path = "RAC中常见的宏";
+			sourceTree = "<group>";
+		};
+		16DF11541E6C2263001476E6 /* RAC常见信号操作方法 */ = {
+			isa = PBXGroup;
+			children = (
+				16DF11581E6C22BB001476E6 /* SignalOperateViewController.h */,
+				16DF11591E6C22BB001476E6 /* SignalOperateViewController.m */,
+				16DF115A1E6C22BB001476E6 /* SignalOperateViewController.xib */,
+			);
+			path = "RAC常见信号操作方法";
+			sourceTree = "<group>";
+		};
 		1EE642CAB8F77FEFA5658608 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +171,7 @@
 		2090DE741DF6986400650BCC = {
 			isa = PBXGroup;
 			children = (
+				16DF11301E6BBAE1001476E6 /* WDYLibrary.framework */,
 				2090DE7F1DF6986400650BCC /* ReactiveCocoa & MVVM */,
 				2090DE991DF6986400650BCC /* ReactiveCocoa & MVVMUITests */,
 				2090DE7E1DF6986400650BCC /* Products */,
@@ -100,8 +194,12 @@
 			children = (
 				2090DE831DF6986400650BCC /* AppDelegate.h */,
 				2090DE841DF6986400650BCC /* AppDelegate.m */,
-				2090DE861DF6986400650BCC /* ViewController.h */,
-				2090DE871DF6986400650BCC /* ViewController.m */,
+				16DF11341E6BBB4E001476E6 /* RACMainViewController.h */,
+				16DF11351E6BBB4E001476E6 /* RACMainViewController.m */,
+				16DF11541E6C2263001476E6 /* RAC常见信号操作方法 */,
+				16DF114B1E6C08B3001476E6 /* RAC中常见的宏 */,
+				16DF11421E6BFCF7001476E6 /* RAC开发中常见用法 */,
+				16DF112F1E6BBAC9001476E6 /* RAC常用类和基本使用 */,
 				2090DE891DF6986400650BCC /* Main.storyboard */,
 				2090DE8C1DF6986400650BCC /* Assets.xcassets */,
 				2090DE8E1DF6986400650BCC /* LaunchScreen.storyboard */,
@@ -150,6 +248,7 @@
 				2090DE7B1DF6986400650BCC /* Resources */,
 				92330C40E8CA2A332AF1382B /* [CP] Embed Pods Frameworks */,
 				D6DCFB66B33440C0F198836C /* [CP] Copy Pods Resources */,
+				16DF11331E6BBAE2001476E6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,7 +288,7 @@
 				TargetAttributes = {
 					2090DE7C1DF6986400650BCC = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 2T6XGQJFJM;
+						DevelopmentTeam = 2Y3JSHFEC2;
 						ProvisioningStyle = Automatic;
 					};
 					2090DE951DF6986400650BCC = {
@@ -225,8 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2090DE901DF6986400650BCC /* LaunchScreen.storyboard in Resources */,
+				16DF11471E6BFD2A001476E6 /* CommonApplyViewController.xib in Resources */,
+				16DF11531E6C0950001476E6 /* RACMacrosViewController.xib in Resources */,
 				2090DE8D1DF6986400650BCC /* Assets.xcassets in Resources */,
+				16DF113E1E6BF87D001476E6 /* data.plist in Resources */,
 				2090DE8B1DF6986400650BCC /* Main.storyboard in Resources */,
+				16DF115C1E6C22BB001476E6 /* SignalOperateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +395,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2090DE881DF6986400650BCC /* ViewController.m in Sources */,
+				16DF11361E6BBB4E001476E6 /* RACMainViewController.m in Sources */,
+				16DF113C1E6BF050001476E6 /* DelegateTestView.m in Sources */,
+				16DF11521E6C0950001476E6 /* RACMacrosViewController.m in Sources */,
+				16DF114A1E6BFE01001476E6 /* GreenView.m in Sources */,
+				16DF11391E6BBBDD001476E6 /* BasicSimpleViewController.m in Sources */,
+				16DF11411E6BF8A9001476E6 /* TestModel.m in Sources */,
 				2090DE851DF6986400650BCC /* AppDelegate.m in Sources */,
+				16DF115B1E6C22BB001476E6 /* SignalOperateViewController.m in Sources */,
+				16DF11461E6BFD2A001476E6 /* CommonApplyViewController.m in Sources */,
 				2090DE821DF6986400650BCC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,9 +541,10 @@
 			baseConfigurationReference = D6F657EA3C29EBB192E88659 /* Pods-ReactiveCocoa & MVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2T6XGQJFJM;
-				GCC_PREFIX_HEADER = "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/ReactiveCocoa & MVVM/ReactiveCocoa & MVVM/RACPrefixHeader.pch";
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				GCC_PREFIX_HEADER = "/Users/wdy/Documents/MyIOSExploration/MyIOSExploration/ReactiveCocoa & MVVM/ReactiveCocoa & MVVM/RACPrefixHeader.pch";
 				INFOPLIST_FILE = "ReactiveCocoa & MVVM/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.ReactiveCocoa---MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,9 +556,10 @@
 			baseConfigurationReference = FB9F66DF07FE038BD42AF9D5 /* Pods-ReactiveCocoa & MVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2T6XGQJFJM;
-				GCC_PREFIX_HEADER = "/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/ReactiveCocoa & MVVM/ReactiveCocoa & MVVM/RACPrefixHeader.pch";
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				GCC_PREFIX_HEADER = "/Users/wdy/Documents/MyIOSExploration/MyIOSExploration/ReactiveCocoa & MVVM/ReactiveCocoa & MVVM/RACPrefixHeader.pch";
 				INFOPLIST_FILE = "ReactiveCocoa & MVVM/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.ReactiveCocoa---MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
