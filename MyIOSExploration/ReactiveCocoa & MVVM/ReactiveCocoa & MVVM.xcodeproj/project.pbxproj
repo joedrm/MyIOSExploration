@@ -542,7 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
-				GCC_PREFIX_HEADER = "/Users/wdy/Documents/MyIOSExploration/MyIOSExploration/ReactiveCocoa & MVVM/ReactiveCocoa & MVVM/RACPrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ReactiveCocoa & MVVM/RACPrefixHeader.pch";
 				INFOPLIST_FILE = "ReactiveCocoa & MVVM/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -557,7 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
-				GCC_PREFIX_HEADER = "/Users/wdy/Documents/MyIOSExploration/MyIOSExploration/ReactiveCocoa & MVVM/ReactiveCocoa & MVVM/RACPrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ReactiveCocoa & MVVM/RACPrefixHeader.pch";
 				INFOPLIST_FILE = "ReactiveCocoa & MVVM/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
