@@ -11,6 +11,7 @@
 #import "TransDemo1VC.h"
 #import "TransDemo2VC.h"
 #import "TransDemo3VC.h"
+#import "TransDemo4VC.h"
 
 @interface TransTestViewController ()
 
@@ -71,6 +72,16 @@
 // 实现tableView每个group头部等高效果
 - (IBAction)transDemo3:(id)sender {
     [self.navigationController pushViewController:[[TransDemo3VC alloc] init] animated:YES];
+}
+
+// 滚动视图半透明效果
+- (IBAction)transDemo4:(id)sender {
+    [self.navigationController pushViewController:[[TransDemo4VC alloc] init] animated:YES];
+}
+
+// 滚动视图不需要半透明
+- (IBAction)transDemo5:(id)sender {
+    [self.navigationController pushViewController:[[TransDemo1VC alloc] init] animated:YES];
 }
 
 @end

@@ -181,7 +181,6 @@ RACReplaySubject 可以先发送信号，再订阅信号，RACSubject 就不可�
         NSLog(@"%@", x);
     }];
     
-    
 #warning 遍历字典，遍历出来的键值对会包装成RACTuple(元组对象)
     NSDictionary* dict = @{@"name": @"小米", @"age": @"22", @"address": @"上海"};
     [dict.rac_sequence.signal subscribeNext:^(RACTuple* x) {

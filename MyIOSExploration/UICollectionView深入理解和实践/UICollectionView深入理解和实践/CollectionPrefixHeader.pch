@@ -1,0 +1,14 @@
+//
+//  CollectionPrefixHeader.pch
+//  UICollectionView深入理解和实践
+//
+//  Created by fang wang on 17/3/6.
+//  Copyright © 2017年 wdy. All rights reserved.
+//
+
+#ifndef CollectionPrefixHeader_pch
+#define CollectionPrefixHeader_pch
+
+
+
+#endif /* CollectionPrefixHeader_pch */

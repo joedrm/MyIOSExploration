@@ -31,11 +31,16 @@
     
 }
 
+- (void)viewDidLayoutSubviews{
+
+    [super viewDidLayoutSubviews];
+}
+
 @end
 
 
 /*
  http://itangqi.me/tags/UITableView/  聊一聊UITableView
- 
+ https://github.com/NianJi/NJEasyTable  能够缓存cell高度，避免重复计算,实现不同的Cell的显示
  
  */

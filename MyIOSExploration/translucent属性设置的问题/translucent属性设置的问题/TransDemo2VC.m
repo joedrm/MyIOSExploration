@@ -24,6 +24,13 @@ static NSString* identi = @"TransDemo1VC";
     self.navigationController.navigationBar.translucent = NO;
 //    self.automaticallyAdjustsScrollViewInsets = NO;
     
+    //总结，self.navigationController.navigationBar.translucent = YES，即navigationBar默认是透明的，而此时设置 extendedLayoutIncludesOpaqueBars 的值其实没有作用，
+    //只有当 self.navigationController.navigationBar.translucent = NO 的时候 extendedLayoutIncludesOpaqueBars 的作用才能显现出来。
+    //extendedLayoutIncludesOpaqueBars = YES，控制器view的起始位置将从顶部开始。
+    
+    // 在ios7.1以后，ios会根据navigationBar的translucent来自动确定是否全屏。
+//    self.extendedLayoutIncludesOpaqueBars = YES;
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }

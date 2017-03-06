@@ -42,5 +42,6 @@
  
  话题二：UIScrollView子控件重用
  参考资料：https://github.com/alibaba/LazyScrollView  天猫首页使用LazyScrollView布局，达到控件重用
+         https://github.com/NianJi/NJCycleScrollView  可循环的scrollView
  
  */

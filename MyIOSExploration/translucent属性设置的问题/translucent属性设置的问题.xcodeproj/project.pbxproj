@@ -19,6 +19,7 @@
 		166E64CF1DBF0DCA004A9D3F /* TransDemo2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 166E64CD1DBF0DCA004A9D3F /* TransDemo2VC.m */; };
 		166E64D01DBF0DCA004A9D3F /* TransDemo2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166E64CE1DBF0DCA004A9D3F /* TransDemo2VC.xib */; };
 		166E64D31DBF1A35004A9D3F /* TransDemo3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 166E64D21DBF1A35004A9D3F /* TransDemo3VC.m */; };
+		2019B0B71E6D45C0003FD161 /* TransDemo4VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019B0B61E6D45C0003FD161 /* TransDemo4VC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		166E64CE1DBF0DCA004A9D3F /* TransDemo2VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransDemo2VC.xib; sourceTree = "<group>"; };
 		166E64D11DBF1A35004A9D3F /* TransDemo3VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransDemo3VC.h; sourceTree = "<group>"; };
 		166E64D21DBF1A35004A9D3F /* TransDemo3VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransDemo3VC.m; sourceTree = "<group>"; };
+		2019B0B51E6D45C0003FD161 /* TransDemo4VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransDemo4VC.h; sourceTree = "<group>"; };
+		2019B0B61E6D45C0003FD161 /* TransDemo4VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransDemo4VC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				166E64CE1DBF0DCA004A9D3F /* TransDemo2VC.xib */,
 				166E64D11DBF1A35004A9D3F /* TransDemo3VC.h */,
 				166E64D21DBF1A35004A9D3F /* TransDemo3VC.m */,
+				2019B0B51E6D45C0003FD161 /* TransDemo4VC.h */,
+				2019B0B61E6D45C0003FD161 /* TransDemo4VC.m */,
 				166E64B41DBEFC57004A9D3F /* Main.storyboard */,
 				166E64B71DBEFC57004A9D3F /* Assets.xcassets */,
 				166E64B91DBEFC57004A9D3F /* LaunchScreen.storyboard */,
@@ -182,6 +187,7 @@
 				166E64B31DBEFC57004A9D3F /* TransTestViewController.m in Sources */,
 				166E64CF1DBF0DCA004A9D3F /* TransDemo2VC.m in Sources */,
 				166E64B01DBEFC57004A9D3F /* AppDelegate.m in Sources */,
+				2019B0B71E6D45C0003FD161 /* TransDemo4VC.m in Sources */,
 				166E64C41DBEFEC4004A9D3F /* DeafultViewController.m in Sources */,
 				166E64D31DBF1A35004A9D3F /* TransDemo3VC.m in Sources */,
 				166E64AD1DBEFC57004A9D3F /* main.m in Sources */,
@@ -342,6 +348,7 @@
 				166E64C11DBEFC57004A9D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

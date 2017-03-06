@@ -1,0 +1,16 @@
+//
+//  AutoLayoutPrefixHeader.pch
+//  AutoLayoutPractice
+//
+//  Created by fang wang on 17/3/6.
+//  Copyright © 2017年 wdy. All rights reserved.
+//
+
+#ifndef AutoLayoutPrefixHeader_pch
+#define AutoLayoutPrefixHeader_pch
+
+#import <WDYLibrary/WDYLibrary.h>
+#import <Masonry/Masonry.h>
+
+
+#endif /* AutoLayoutPrefixHeader_pch */

@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2019B0C81E6D548D003FD161 /* CollectionPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionPrefixHeader.pch; sourceTree = "<group>"; };
 		209F346B1E2DAF240083C875 /* UICollectionView深入理解和实践.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UICollectionView深入理解和实践.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		209F346F1E2DAF240083C875 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		209F34711E2DAF240083C875 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				209F346F1E2DAF240083C875 /* main.m */,
+				2019B0C81E6D548D003FD161 /* CollectionPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -292,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UICollectionView深入理解和实践/CollectionPrefixHeader.pch";
 				INFOPLIST_FILE = "UICollectionView深入理解和实践/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -305,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UICollectionView深入理解和实践/CollectionPrefixHeader.pch";
 				INFOPLIST_FILE = "UICollectionView深入理解和实践/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -33,6 +33,8 @@ static NSString* identi = @"TransDemo1VC";
     //UIViewController的y值 == 导航栏y + 导航栏height
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
+//    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
