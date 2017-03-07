@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/SQLite&#x5165;&#x95e8;&#x5230;&#x5b9e;&#x8df5;/iOS&#x6570;&#x636e;&#x5e93;&#x7f16;&#x7a0b;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Talk About iOS Performance Optimization/Talk About iOS Performance Optimization.xcodeproj">
    </FileRef>
    <FileRef

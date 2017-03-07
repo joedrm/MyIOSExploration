@@ -1,0 +1,14 @@
+//
+//  SQLitePrefixHeader.pch
+//  SQLite入门到实践
+//
+//  Created by fang wang on 17/3/7.
+//  Copyright © 2017年 sqlite. All rights reserved.
+//
+
+#ifndef SQLitePrefixHeader_pch
+#define SQLitePrefixHeader_pch
+
+#import <WDYLibrary/WDYLibrary.h>
+
+#endif /* SQLitePrefixHeader_pch */
