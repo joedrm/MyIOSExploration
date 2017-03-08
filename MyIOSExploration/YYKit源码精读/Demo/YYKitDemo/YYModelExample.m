@@ -29,6 +29,7 @@ static void SimpleObjectExample() {
        \"publishDate\": \"2010-01-01\"          \
     }"];
     NSString *bookJSON = [book modelToJSONString];
+    NSLog(@"name = %@, pages = %llu, publishDate = %@", book.name, book.pages, book.publishDate);
     NSLog(@"Book: %@", bookJSON);
 }
 
