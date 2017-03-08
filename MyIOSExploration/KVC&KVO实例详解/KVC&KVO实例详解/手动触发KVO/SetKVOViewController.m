@@ -38,5 +38,8 @@
     NSLog(@"3");
 }
 
+- (void)dealloc{
+    [self removeObserver:self forKeyPath:@"now"];
+}
 
 @end

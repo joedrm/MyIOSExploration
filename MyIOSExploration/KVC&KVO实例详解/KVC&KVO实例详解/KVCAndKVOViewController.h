@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface KVCAndKVOViewController : UITableViewController
+@interface KVCAndKVOViewController : BaseTestDataTableVC
 
 
 @end

@@ -32,7 +32,14 @@
     
     // 如果直接这样操作，发现并没有打印KVO的观察者监听方法
     // [self.arr addObject:@"1"];
-    [[self mutableArrayValueForKey:@"arr"] addObject:@"123"];
+    
+    // 方法一：
+//    [[self mutableArrayValueForKey:@"arr"] addObject:@"123"];
+    
+    // 方法二：
+    [self willChangeValueForKey:@"arr"];
+    [self.arr addObject:@"123"];
+    [self didChangeValueForKey:@"arr"];
 
 }
 
@@ -40,7 +47,13 @@
 - (IBAction)deleteObj:(UIButton *)sender {
     
     if (self.arr.count) {
-        [[self mutableArrayValueForKey:@"arr"] removeObject:@"123"];
+        // 方法一：
+//        [[self mutableArrayValueForKey:@"arr"] removeObject:@"123"];
+        
+        // 方法二：
+        [self willChangeValueForKey:@"arr"];
+        [self.arr removeObject:@"123"];
+        [self didChangeValueForKey:@"arr"];
     }
 }
 /*

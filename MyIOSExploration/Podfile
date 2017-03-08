@@ -57,4 +57,11 @@ target :'LearningAVFoundation' do
     project 'LearningAVFoundation/LearningAVFoundation.xcodeproj'
 end
 
+target :'KVC&KVO实例详解' do
+    platform :ios, '8.0'
+    pod 'KVOController'
+    project 'KVC&KVO实例详解/KVC&KVO实例详解.xcodeproj'
+end
+
+
 

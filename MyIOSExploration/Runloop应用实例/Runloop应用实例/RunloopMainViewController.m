@@ -49,4 +49,6 @@
  http://blog.csdn.net/maxdong24/article/details/56281168  IOS-Run loop学习总结
  
  http://www.cocoachina.com/ios/20170224/18763.html  逃不出的圈子 -- RunLoop
+ 
+ http://www.jianshu.com/p/f3079ea36775  iOS-Runloop常驻线程／性能优化
  */

@@ -1,0 +1,15 @@
+//
+//  KVOPrefixHeader.pch
+//  KVC&KVO实例详解
+//
+//  Created by fang wang on 17/3/8.
+//  Copyright © 2017年 wdy. All rights reserved.
+//
+
+#ifndef KVOPrefixHeader_pch
+#define KVOPrefixHeader_pch
+
+#import <WDYLibrary/WDYLibrary.h>
+#import <KVOController/KVOController.h>
+
+#endif /* KVOPrefixHeader_pch */

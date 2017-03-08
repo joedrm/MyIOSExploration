@@ -38,6 +38,6 @@
  
  https://github.com/li6185377/LKDBHelper-SQLite-ORM 全自动的插入,查询,更新,删除 
  
- 
+ http://www.jianshu.com/p/4bc34f982fee  iOS - 关于移动端SQLite，你想知道的都有
  
  */

@@ -12,13 +12,15 @@
 		16B1378B1E1409B900A39AE0 /* SetKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B1378A1E1409B900A39AE0 /* SetKVOViewController.m */; };
 		20ACF19C1E0A71DD00916787 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF19B1E0A71DD00916787 /* main.m */; };
 		20ACF19F1E0A71DD00916787 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF19E1E0A71DD00916787 /* AppDelegate.m */; };
-		20ACF1A21E0A71DD00916787 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1A11E0A71DD00916787 /* ViewController.m */; };
 		20ACF1A51E0A71DD00916787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF1A31E0A71DD00916787 /* Main.storyboard */; };
 		20ACF1A71E0A71DD00916787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF1A61E0A71DD00916787 /* Assets.xcassets */; };
 		20ACF1AA1E0A71DD00916787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF1A81E0A71DD00916787 /* LaunchScreen.storyboard */; };
 		20ACF1B71E0A720900916787 /* KVCAndKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1B21E0A720900916787 /* KVCAndKVOViewController.m */; };
 		20ACF1B81E0A720900916787 /* KVOObserveArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ACF1B51E0A720900916787 /* KVOObserveArrayVC.m */; };
 		20ACF1B91E0A720900916787 /* KVOObserveArrayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF1B61E0A720900916787 /* KVOObserveArrayVC.xib */; };
+		20B8CBD21E6FFBD800F2C8DA /* TestKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8CBD01E6FFBD800F2C8DA /* TestKVOController.m */; };
+		20B8CBD61E6FFE6300F2C8DA /* Fizz.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8CBD51E6FFE6300F2C8DA /* Fizz.m */; };
+		50C1DCF4013FDD04DC4AE166 /* Pods_KVC_KVO____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EC5D5F626BA549A425FDEF /* Pods_KVC_KVO____.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,8 +45,6 @@
 		20ACF19B1E0A71DD00916787 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20ACF19D1E0A71DD00916787 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20ACF19E1E0A71DD00916787 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		20ACF1A01E0A71DD00916787 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		20ACF1A11E0A71DD00916787 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		20ACF1A41E0A71DD00916787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20ACF1A61E0A71DD00916787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20ACF1A91E0A71DD00916787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +54,14 @@
 		20ACF1B41E0A720900916787 /* KVOObserveArrayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOObserveArrayVC.h; sourceTree = "<group>"; };
 		20ACF1B51E0A720900916787 /* KVOObserveArrayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOObserveArrayVC.m; sourceTree = "<group>"; };
 		20ACF1B61E0A720900916787 /* KVOObserveArrayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOObserveArrayVC.xib; sourceTree = "<group>"; };
+		20B8CBCD1E6FF80900F2C8DA /* KVOPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOPrefixHeader.pch; sourceTree = "<group>"; };
+		20B8CBCF1E6FFBD800F2C8DA /* TestKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestKVOController.h; sourceTree = "<group>"; };
+		20B8CBD01E6FFBD800F2C8DA /* TestKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestKVOController.m; sourceTree = "<group>"; };
+		20B8CBD41E6FFE6300F2C8DA /* Fizz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fizz.h; sourceTree = "<group>"; };
+		20B8CBD51E6FFE6300F2C8DA /* Fizz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fizz.m; sourceTree = "<group>"; };
+		BD96E616BEC7FE072978694D /* Pods-KVC&KVO实例详解.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KVC&KVO实例详解.release.xcconfig"; path = "../Pods/Target Support Files/Pods-KVC&KVO实例详解/Pods-KVC&KVO实例详解.release.xcconfig"; sourceTree = "<group>"; };
+		E5EC5D5F626BA549A425FDEF /* Pods_KVC_KVO____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_KVC_KVO____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E93A47D977BFCC6984A809 /* Pods-KVC&KVO实例详解.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KVC&KVO实例详解.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-KVC&KVO实例详解/Pods-KVC&KVO实例详解.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B137851E1408B700A39AE0 /* WDYLibrary.framework in Frameworks */,
+				50C1DCF4013FDD04DC4AE166 /* Pods_KVC_KVO____.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,8 @@
 				16B137841E1408B700A39AE0 /* WDYLibrary.framework */,
 				20ACF1991E0A71DD00916787 /* KVC&KVO实例详解 */,
 				20ACF1981E0A71DD00916787 /* Products */,
+				3101D87FE41C98F8F138D672 /* Pods */,
+				5C90E14017A0DE50597A88B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +110,9 @@
 			children = (
 				20ACF19D1E0A71DD00916787 /* AppDelegate.h */,
 				20ACF19E1E0A71DD00916787 /* AppDelegate.m */,
-				20ACF1A01E0A71DD00916787 /* ViewController.h */,
-				20ACF1A11E0A71DD00916787 /* ViewController.m */,
 				20ACF1B11E0A720900916787 /* KVCAndKVOViewController.h */,
 				20ACF1B21E0A720900916787 /* KVCAndKVOViewController.m */,
+				20B8CBCE1E6FFB9000F2C8DA /* KVOController的使用 */,
 				16B137881E14095800A39AE0 /* 手动触发KVO */,
 				20ACF1B31E0A720900916787 /* KVO监听数组 */,
 				20ACF1A31E0A71DD00916787 /* Main.storyboard */,
@@ -118,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				20ACF19B1E0A71DD00916787 /* main.m */,
+				20B8CBCD1E6FF80900F2C8DA /* KVOPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,6 +143,34 @@
 			path = "KVO监听数组";
 			sourceTree = "<group>";
 		};
+		20B8CBCE1E6FFB9000F2C8DA /* KVOController的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				20B8CBCF1E6FFBD800F2C8DA /* TestKVOController.h */,
+				20B8CBD01E6FFBD800F2C8DA /* TestKVOController.m */,
+				20B8CBD41E6FFE6300F2C8DA /* Fizz.h */,
+				20B8CBD51E6FFE6300F2C8DA /* Fizz.m */,
+			);
+			path = "KVOController的使用";
+			sourceTree = "<group>";
+		};
+		3101D87FE41C98F8F138D672 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7E93A47D977BFCC6984A809 /* Pods-KVC&KVO实例详解.debug.xcconfig */,
+				BD96E616BEC7FE072978694D /* Pods-KVC&KVO实例详解.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C90E14017A0DE50597A88B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5EC5D5F626BA549A425FDEF /* Pods_KVC_KVO____.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +178,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20ACF1AE1E0A71DD00916787 /* Build configuration list for PBXNativeTarget "KVC&KVO实例详解" */;
 			buildPhases = (
+				BA5584AF48FA5EF94C9E9B03 /* [CP] Check Pods Manifest.lock */,
 				20ACF1931E0A71DD00916787 /* Sources */,
 				20ACF1941E0A71DD00916787 /* Frameworks */,
 				20ACF1951E0A71DD00916787 /* Resources */,
 				16B137871E1408B700A39AE0 /* Embed Frameworks */,
+				A8BD2741D0BC3EB00B41BB60 /* [CP] Embed Pods Frameworks */,
+				923B788897F2CA57B00D2DA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,16 +243,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		923B788897F2CA57B00D2DA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-KVC&KVO实例详解/Pods-KVC&KVO实例详解-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8BD2741D0BC3EB00B41BB60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-KVC&KVO实例详解/Pods-KVC&KVO实例详解-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA5584AF48FA5EF94C9E9B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20ACF1931E0A71DD00916787 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B8CBD21E6FFBD800F2C8DA /* TestKVOController.m in Sources */,
 				16B1378B1E1409B900A39AE0 /* SetKVOViewController.m in Sources */,
-				20ACF1A21E0A71DD00916787 /* ViewController.m in Sources */,
 				20ACF19F1E0A71DD00916787 /* AppDelegate.m in Sources */,
 				20ACF1B71E0A720900916787 /* KVCAndKVOViewController.m in Sources */,
 				20ACF19C1E0A71DD00916787 /* main.m in Sources */,
+				20B8CBD61E6FFE6300F2C8DA /* Fizz.m in Sources */,
 				20ACF1B81E0A720900916787 /* KVOObserveArrayVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,9 +418,11 @@
 		};
 		20ACF1AF1E0A71DD00916787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E93A47D977BFCC6984A809 /* Pods-KVC&KVO实例详解.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DSHJC97KG4;
+				GCC_PREFIX_HEADER = "KVC&KVO实例详解/KVOPrefixHeader.pch";
 				INFOPLIST_FILE = "KVC&KVO实例详解/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.KVC-KVO----";
@@ -339,9 +432,11 @@
 		};
 		20ACF1B01E0A71DD00916787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD96E616BEC7FE072978694D /* Pods-KVC&KVO实例详解.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DSHJC97KG4;
+				GCC_PREFIX_HEADER = "KVC&KVO实例详解/KVOPrefixHeader.pch";
 				INFOPLIST_FILE = "KVC&KVO实例详解/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.KVC-KVO----";

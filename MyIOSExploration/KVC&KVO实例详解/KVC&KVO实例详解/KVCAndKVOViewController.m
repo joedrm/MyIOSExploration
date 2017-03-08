@@ -8,13 +8,8 @@
 
 #import "KVCAndKVOViewController.h"
 
-static NSString* KVOAndKVCIdentifier = @"KVOAndKVCIdentifier";
-
 @interface KVCAndKVOViewController ()
 
-
-@property (nonatomic, strong) NSArray* titleArr;
-@property (nonatomic, strong) NSArray* vcArr;
 @end
 
 @implementation KVCAndKVOViewController
@@ -22,41 +17,31 @@ static NSString* KVOAndKVCIdentifier = @"KVOAndKVCIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"KVC&KVO实例详解";
-    self.titleArr = @[@"KVO监听数组",
-                      @"手动触发KVO"];
+    self.titleArr = @[
+                      @"KVO监听数组",
+                      @"手动触发KVO",
+                      @"KVOController的使用"
+                      ];
     
-    self.vcArr = @[@"KVOObserveArrayVC",
-                   @"SetKVOViewController"
+    self.vcArr = @[
+                   @"KVOObserveArrayVC",
+                   @"SetKVOViewController",
+                   @"TestKVOController"
                    ];
-    self.tableView.rowHeight = 44;
-    self.tableView.tableFooterView = [[UIView alloc] init];
-    self.tableView.tableHeaderView = [[UIView alloc] init];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:KVOAndKVCIdentifier];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return self.titleArr.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:KVOAndKVCIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:KVOAndKVCIdentifier];
-    }
-    cell.textLabel.font = [UIFont systemFontOfSize:15];
-    cell.textLabel.numberOfLines = 0;
-    cell.textLabel.text = self.titleArr[indexPath.row];
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    id class = NSClassFromString(self.vcArr[indexPath.row]);
-    UIViewController* vc = [[class alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
 @end
+
+/*
+ https://github.com/huang303513/iOSKeyPointExploration/tree/master/%E6%89%8B%E5%8A%A8%E5%AE%9E%E7%8E%B0KVO%E3%80%81%E6%B3%A8%E5%86%8C%E4%BE%9D%E8%B5%96%E9%94%AE%E3%80%81%E9%9B%86%E5%90%88%E5%B1%9E%E6%80%A7%E7%9B%91%E5%90%AC
+ 
+ http://www.jianshu.com/p/70b2503d5fd1   一句代码，更加优雅的调用KVO和通知
+ https://objccn.io/issue-7-3/    KVC 和 KVO
+ http://zyden.vicp.cc/kvc-kvo-advanced/  KVC KVO高阶应用
+ http://ppsheep.com/all-tags/KVC%E5%92%8CKVO/   KVC与KVO三篇
+ http://www.imlifengfeng.com/blog/?p=493  KVC详解
+ http://www.imlifengfeng.com/blog/?p=498  KVO详解
+ 
+ https://gold.xitu.io/post/58be0b40128fe1006451f586 如何优雅地使用 KVO
+ */

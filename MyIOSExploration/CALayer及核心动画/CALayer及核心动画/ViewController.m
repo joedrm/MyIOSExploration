@@ -99,6 +99,7 @@ IOS动画总结:
  https://github.com/recruit-mp/RMPZoomTransitionAnimator
  https://github.com/AugustRush/ARTransitionAnimator
  https://github.com/mh4u/XXTransition/  应付各种需求的转场动画
+ https://github.com/bawn/LCSpreadTransition  豌豆荚一览的页面切换效果
  
  
  动画设计
