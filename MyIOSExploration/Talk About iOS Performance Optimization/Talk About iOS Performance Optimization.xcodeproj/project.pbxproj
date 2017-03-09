@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20ACBE1C1E70EC1700FB42FE /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20ACBE1B1E70EC1700FB42FE /* WDYLibrary.framework */; };
+		20ACBE1D1E70EC1700FB42FE /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20ACBE1B1E70EC1700FB42FE /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20E907821E6905400046F86D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E907811E6905400046F86D /* main.m */; };
 		20E907851E6905400046F86D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E907841E6905400046F86D /* AppDelegate.m */; };
 		20E9078B1E6905400046F86D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E907891E6905400046F86D /* Main.storyboard */; };
 		20E9078D1E6905400046F86D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E9078C1E6905400046F86D /* Assets.xcassets */; };
 		20E907901E6905400046F86D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E9078E1E6905400046F86D /* LaunchScreen.storyboard */; };
-		20E907981E6905830046F86D /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E907971E6905830046F86D /* WDYLibrary.framework */; };
-		20E907991E6905830046F86D /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20E907971E6905830046F86D /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20E9079D1E6905E70046F86D /* OptimizationMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E9079C1E6905E70046F86D /* OptimizationMainVC.m */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				20E907991E6905830046F86D /* WDYLibrary.framework in Embed Frameworks */,
+				20ACBE1D1E70EC1700FB42FE /* WDYLibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		20ACBE1B1E70EC1700FB42FE /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E9077D1E6905400046F86D /* Talk About iOS Performance Optimization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talk About iOS Performance Optimization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E907811E6905400046F86D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20E907831E6905400046F86D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 		20E9078C1E6905400046F86D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20E9078F1E6905400046F86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20E907911E6905400046F86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20E907971E6905830046F86D /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E9079B1E6905E70046F86D /* OptimizationMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptimizationMainVC.h; sourceTree = "<group>"; };
 		20E9079C1E6905E70046F86D /* OptimizationMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptimizationMainVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20E907981E6905830046F86D /* WDYLibrary.framework in Frameworks */,
+				20ACBE1C1E70EC1700FB42FE /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,7 @@
 		20E907741E6905400046F86D = {
 			isa = PBXGroup;
 			children = (
-				20E907971E6905830046F86D /* WDYLibrary.framework */,
+				20ACBE1B1E70EC1700FB42FE /* WDYLibrary.framework */,
 				20E9077F1E6905400046F86D /* Talk About iOS Performance Optimization */,
 				20E9077E1E6905400046F86D /* Products */,
 			);
@@ -332,6 +332,7 @@
 				20E907961E6905400046F86D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
