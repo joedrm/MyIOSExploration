@@ -19,7 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     if (!self.testView) {
         self.testView = [[CustomUIView alloc]init];
         self.testView.leftWidth = 120;
