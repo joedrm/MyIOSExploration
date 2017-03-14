@@ -24,14 +24,14 @@
 
 -(void)setLeftWidth:(CGFloat)leftWidth
 {
-    _leftWidth=leftWidth;
+    _leftWidth = leftWidth;
     
     [self setNeedsUpdateConstraints];
 }
 
 -(void)setRightWidth:(CGFloat)rightWidth
 {
-    _rightWidth=rightWidth;
+    _rightWidth = rightWidth;
     
     [self setNeedsUpdateConstraints];
 }

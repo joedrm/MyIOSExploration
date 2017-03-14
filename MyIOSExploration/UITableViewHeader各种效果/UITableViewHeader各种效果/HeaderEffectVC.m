@@ -22,6 +22,13 @@ static CGFloat SCREEN_HEIGHT(){
     return [UIScreen mainScreen].bounds.size.height;
 }
 
+static CGFloat SCROLLVIEW_HEIGHT(){
+    return [UIScreen mainScreen].bounds.size.height - 64 -44;
+}
+
+static CGFloat SCREEN_WIDTH(){
+    return [UIScreen mainScreen].bounds.size.height;
+}
 
 @interface HeaderEffectVC ()<UITableViewDelegate, UITableViewDataSource,UIScrollViewDelegate>
 
@@ -30,6 +37,7 @@ static CGFloat SCREEN_HEIGHT(){
 @property (nonatomic, strong) UIImageView *headerImageView;
 @property (nonatomic, strong) UIView *middleView;
 @property (strong, nonatomic) MASConstraint *headerHeight;
+@property (nonatomic, strong) UIScrollView* scrollView;
 @end
 
 
@@ -74,6 +82,7 @@ static NSString *EffIdentifier1 = @"HeaderEffectVC2";
     }];
     
     
+    
     HMSegmentedControl *segCtrl = [[HMSegmentedControl alloc] initWithFrame:CGRectZero];
     segCtrl.backgroundColor = [UIColor lightGrayColor];
     segCtrl.sectionTitles = @[@"首页", @"微博", @"消息"];
@@ -114,6 +123,13 @@ static NSString *EffIdentifier1 = @"HeaderEffectVC2";
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:EffIdentifier1];
     cell.textLabel.text = [NSString stringWithFormat:@"%ld 行", indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    [cell.contentView addSubview:self.scrollView];
+    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(cell.contentView);
+        make.height.mas_equalTo(SCROLLVIEW_HEIGHT());
+    }];
+    self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH()*3, SCROLLVIEW_HEIGHT());
     return cell;
 }
 
@@ -131,13 +147,14 @@ static NSString *EffIdentifier1 = @"HeaderEffectVC2";
     NSLog(@"%f",self.myTableView.contentOffset.y);
     CGFloat offset_Y = self.myTableView.contentOffset.y;
     CGFloat delta = offset_Y + TotalHeaderHeight();
-    
+    self.myTableView.scrollEnabled = YES;
     
     //向上滑动
     CGFloat heigh = TopViewHeight-delta;
     //当减小到64,到导航栏的位置,就不再减少了
     if (heigh<64) {
         heigh = 64;
+        self.myTableView.scrollEnabled = NO;
     }
     [self.headerView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.mas_equalTo(self.view);
@@ -152,13 +169,22 @@ static NSString *EffIdentifier1 = @"HeaderEffectVC2";
     [self loadViewIfNeeded];
     
     CGFloat alpha = delta/(TopViewHeight-64);
-    NSLog(@"offset_Y = %f,  delta = %f,  alpha = %f, %f",self.myTableView.contentOffset.y, delta, alpha, (TopViewHeight-64));
+//    NSLog(@"offset_Y = %f,  delta = %f,  alpha = %f, %f",self.myTableView.contentOffset.y, delta, alpha, (TopViewHeight-64));
     if (alpha>=1) {
         alpha = 0.99;
     }
     // 设置导航条的背景图片
     self.navigationBar.alpha = alpha;
     
+}
+
+- (UIScrollView *)scrollView{
+    if (!_scrollView) {
+        _scrollView = [[UIScrollView alloc] init];
+        _scrollView.backgroundColor = [UIColor redColor];
+        _scrollView.pagingEnabled = YES;
+    }
+    return _scrollView;
 }
 
 
