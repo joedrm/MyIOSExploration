@@ -1,18 +1,18 @@
 //
-//  ViewController.m
-//  UITableView支持不同类型的Cell
+//  ChatViewController.m
+//  UITableView常用功能实现及性能优化
 //
-//  Created by wdy on 2016/10/24.
-//  Copyright © 2016年 com.wdy.MyIOSExploration. All rights reserved.
+//  Created by fang wang on 17/3/15.
+//  Copyright © 2017年 wdy. All rights reserved.
 //
 
 
 /*
-    在某些业务场景下，同一个UITableView需要支持多种UITableViewCell。类似于即时通信的聊天对话列表
-    参考文章：https://github.com/la0fu/MultipleCells
+ 在某些业务场景下，同一个UITableView需要支持多种UITableViewCell。类似于即时通信的聊天对话列表
+ 参考文章：https://github.com/la0fu/MultipleCells
  */
 
-#import "ViewController.h"
+#import "ChatViewController.h"
 #import "ImageCell.h"
 #import "ItemModel.h"
 #import "TextCell.h"
@@ -20,14 +20,14 @@
 #import "MixCell.h"
 #import "BaseCell.h"
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ChatViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *ItemModels;
 
 @end
 
-@implementation ViewController
+@implementation ChatViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

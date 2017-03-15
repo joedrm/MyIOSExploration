@@ -48,6 +48,8 @@
  https://blog.cnbluebox.com/blog/2015/09/18/howtolayoutview/ 如何做好IOS View的布局
  http://www.cnblogs.com/langji/p/5505803.html  关于UIView布局
  
+ https://my.oschina.net/w11h22j33/blog/208574  iOS中AutoLayout自动布局流程及相关方法
+ 
  第三方库：
  https://github.com/netyouli/WHC_AutoLayoutKit 
  */

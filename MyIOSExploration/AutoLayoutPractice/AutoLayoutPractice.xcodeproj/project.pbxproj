@@ -12,6 +12,8 @@
 		2019B0BF1E6D49EB003FD161 /* AutoLayoutMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019B0BE1E6D49EB003FD161 /* AutoLayoutMianViewController.m */; };
 		2019B0C31E6D4B15003FD161 /* AutoresizingTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019B0C21E6D4B15003FD161 /* AutoresizingTestViewController.m */; };
 		2019B0C71E6D4D3B003FD161 /* LayoutGuideTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019B0C61E6D4D3B003FD161 /* LayoutGuideTestViewController.m */; };
+		20D78D401E792CFB0000D5A1 /* LayoutConstraintBasicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D3F1E792CFB0000D5A1 /* LayoutConstraintBasicVC.m */; };
+		20D78D441E7935430000D5A1 /* VFLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D431E7935430000D5A1 /* VFLViewController.m */; };
 		20D9957F1E4AEB9E00520561 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D9957E1E4AEB9E00520561 /* main.m */; };
 		20D995821E4AEB9E00520561 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D995811E4AEB9E00520561 /* AppDelegate.m */; };
 		20D995881E4AEB9E00520561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D995861E4AEB9E00520561 /* Main.storyboard */; };
@@ -43,6 +45,10 @@
 		2019B0C21E6D4B15003FD161 /* AutoresizingTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoresizingTestViewController.m; sourceTree = "<group>"; };
 		2019B0C51E6D4D3B003FD161 /* LayoutGuideTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutGuideTestViewController.h; sourceTree = "<group>"; };
 		2019B0C61E6D4D3B003FD161 /* LayoutGuideTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutGuideTestViewController.m; sourceTree = "<group>"; };
+		20D78D3E1E792CFB0000D5A1 /* LayoutConstraintBasicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutConstraintBasicVC.h; sourceTree = "<group>"; };
+		20D78D3F1E792CFB0000D5A1 /* LayoutConstraintBasicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintBasicVC.m; sourceTree = "<group>"; };
+		20D78D421E7935430000D5A1 /* VFLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFLViewController.h; sourceTree = "<group>"; };
+		20D78D431E7935430000D5A1 /* VFLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFLViewController.m; sourceTree = "<group>"; };
 		20D9957A1E4AEB9E00520561 /* AutoLayoutPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D9957E1E4AEB9E00520561 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20D995801E4AEB9E00520561 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +102,24 @@
 			path = "LayoutGuide的使用";
 			sourceTree = "<group>";
 		};
+		20D78D3D1E792CD80000D5A1 /* NSLayoutConstraint基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				20D78D3E1E792CFB0000D5A1 /* LayoutConstraintBasicVC.h */,
+				20D78D3F1E792CFB0000D5A1 /* LayoutConstraintBasicVC.m */,
+			);
+			path = "NSLayoutConstraint基本使用";
+			sourceTree = "<group>";
+		};
+		20D78D411E7935350000D5A1 /* VFL实现自动布局 */ = {
+			isa = PBXGroup;
+			children = (
+				20D78D421E7935430000D5A1 /* VFLViewController.h */,
+				20D78D431E7935430000D5A1 /* VFLViewController.m */,
+			);
+			path = "VFL实现自动布局";
+			sourceTree = "<group>";
+		};
 		20D995711E4AEB9E00520561 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +146,8 @@
 				20D995811E4AEB9E00520561 /* AppDelegate.m */,
 				2019B0BD1E6D49EB003FD161 /* AutoLayoutMianViewController.h */,
 				2019B0BE1E6D49EB003FD161 /* AutoLayoutMianViewController.m */,
+				20D78D411E7935350000D5A1 /* VFL实现自动布局 */,
+				20D78D3D1E792CD80000D5A1 /* NSLayoutConstraint基本使用 */,
 				2019B0C41E6D4D2C003FD161 /* LayoutGuide的使用 */,
 				2019B0C01E6D4ABB003FD161 /* Autoresizing布局 */,
 				20D995861E4AEB9E00520561 /* Main.storyboard */,
@@ -276,6 +302,8 @@
 			files = (
 				2019B0C31E6D4B15003FD161 /* AutoresizingTestViewController.m in Sources */,
 				20D995821E4AEB9E00520561 /* AppDelegate.m in Sources */,
+				20D78D441E7935430000D5A1 /* VFLViewController.m in Sources */,
+				20D78D401E792CFB0000D5A1 /* LayoutConstraintBasicVC.m in Sources */,
 				2019B0BF1E6D49EB003FD161 /* AutoLayoutMianViewController.m in Sources */,
 				20D9957F1E4AEB9E00520561 /* main.m in Sources */,
 				2019B0C71E6D4D3B003FD161 /* LayoutGuideTestViewController.m in Sources */,

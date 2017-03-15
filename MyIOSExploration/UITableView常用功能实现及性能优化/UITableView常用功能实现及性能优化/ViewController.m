@@ -28,12 +28,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"UITableView常用功能实现及性能优化";
+    self.titleArr = @[
+                      @"支持不同类型的Cell"
+                      ];
     
-}
-
-- (void)viewDidLayoutSubviews{
-
-    [super viewDidLayoutSubviews];
+    
+    self.vcArr = @[
+                   @"ChatViewController"
+                   
+                   ];
 }
 
 @end

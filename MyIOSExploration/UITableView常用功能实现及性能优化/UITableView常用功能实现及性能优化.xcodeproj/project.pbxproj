@@ -19,6 +19,14 @@
 		16CACFAD1E593BFF004514D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CACFA31E593BFF004514D6 /* ViewController.m */; };
 		16CACFB41E593C84004514D6 /* PlaceHolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CACFB31E593C84004514D6 /* PlaceHolderViewController.m */; };
 		16CACFB81E593EF3004514D6 /* MutiCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CACFB71E593EF3004514D6 /* MutiCellViewController.m */; };
+		20D78D311E79297C0000D5A1 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D241E79297C0000D5A1 /* BaseCell.m */; };
+		20D78D321E79297C0000D5A1 /* dancing-minion-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D78D251E79297C0000D5A1 /* dancing-minion-icon.png */; };
+		20D78D331E79297C0000D5A1 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D271E79297C0000D5A1 /* ImageCell.m */; };
+		20D78D341E79297C0000D5A1 /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D291E79297C0000D5A1 /* ItemModel.m */; };
+		20D78D351E79297C0000D5A1 /* MixCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D2B1E79297C0000D5A1 /* MixCell.m */; };
+		20D78D361E79297C0000D5A1 /* shy-minion-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D78D2C1E79297C0000D5A1 /* shy-minion-icon.png */; };
+		20D78D371E79297C0000D5A1 /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D2E1E79297C0000D5A1 /* TextCell.m */; };
+		20D78D3B1E7929AE0000D5A1 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D3A1E7929AE0000D5A1 /* ChatViewController.m */; };
 		20FF2DB61E441CF800DCE2B3 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DB51E441CF800DCE2B3 /* WDYLibrary.framework */; };
 		20FF2DB71E441CF800DCE2B3 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF2DB51E441CF800DCE2B3 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -57,6 +65,21 @@
 		16CACFB61E593EF3004514D6 /* MutiCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutiCellViewController.h; sourceTree = "<group>"; };
 		16CACFB71E593EF3004514D6 /* MutiCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutiCellViewController.m; sourceTree = "<group>"; };
 		16DBC0881D7D722B006F4784 /* UITableView常用功能实现及性能优化.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITableView常用功能实现及性能优化.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D78D231E79297C0000D5A1 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		20D78D241E79297C0000D5A1 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		20D78D251E79297C0000D5A1 /* dancing-minion-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dancing-minion-icon.png"; sourceTree = "<group>"; };
+		20D78D261E79297C0000D5A1 /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		20D78D271E79297C0000D5A1 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		20D78D281E79297C0000D5A1 /* ItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		20D78D291E79297C0000D5A1 /* ItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
+		20D78D2A1E79297C0000D5A1 /* MixCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixCell.h; sourceTree = "<group>"; };
+		20D78D2B1E79297C0000D5A1 /* MixCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixCell.m; sourceTree = "<group>"; };
+		20D78D2C1E79297C0000D5A1 /* shy-minion-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shy-minion-icon.png"; sourceTree = "<group>"; };
+		20D78D2D1E79297C0000D5A1 /* TextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextCell.h; sourceTree = "<group>"; };
+		20D78D2E1E79297C0000D5A1 /* TextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextCell.m; sourceTree = "<group>"; };
+		20D78D391E7929AE0000D5A1 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		20D78D3A1E7929AE0000D5A1 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		20D78D3C1E792A410000D5A1 /* TableViewPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewPrefixHeader.pch; sourceTree = "<group>"; };
 		20FF2DB51E441CF800DCE2B3 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,6 +102,7 @@
 				16CACF941E593BFF004514D6 /* AppDelegate.m */,
 				16CACFA21E593BFF004514D6 /* ViewController.h */,
 				16CACFA31E593BFF004514D6 /* ViewController.m */,
+				20D78D221E79297C0000D5A1 /* 支持不同类型的Cell */,
 				16CACFB51E593EDE004514D6 /* 多个可变cell的复杂界面 */,
 				16CACF9A1E593BFF004514D6 /* Cell高度计算 */,
 				16CACFB11E593C84004514D6 /* 占位视图 */,
@@ -87,6 +111,7 @@
 				16CACF951E593BFF004514D6 /* Assets.xcassets */,
 				16CACF961E593BFF004514D6 /* LaunchScreen.storyboard */,
 				16CACF981E593BFF004514D6 /* Main.storyboard */,
+				20D78D3C1E792A410000D5A1 /* TableViewPrefixHeader.pch */,
 			);
 			path = "UITableView常用功能实现及性能优化";
 			sourceTree = "<group>";
@@ -136,6 +161,27 @@
 				16DBC0881D7D722B006F4784 /* UITableView常用功能实现及性能优化.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		20D78D221E79297C0000D5A1 /* 支持不同类型的Cell */ = {
+			isa = PBXGroup;
+			children = (
+				20D78D231E79297C0000D5A1 /* BaseCell.h */,
+				20D78D241E79297C0000D5A1 /* BaseCell.m */,
+				20D78D251E79297C0000D5A1 /* dancing-minion-icon.png */,
+				20D78D261E79297C0000D5A1 /* ImageCell.h */,
+				20D78D271E79297C0000D5A1 /* ImageCell.m */,
+				20D78D281E79297C0000D5A1 /* ItemModel.h */,
+				20D78D291E79297C0000D5A1 /* ItemModel.m */,
+				20D78D2A1E79297C0000D5A1 /* MixCell.h */,
+				20D78D2B1E79297C0000D5A1 /* MixCell.m */,
+				20D78D2C1E79297C0000D5A1 /* shy-minion-icon.png */,
+				20D78D2D1E79297C0000D5A1 /* TextCell.h */,
+				20D78D2E1E79297C0000D5A1 /* TextCell.m */,
+				20D78D391E7929AE0000D5A1 /* ChatViewController.h */,
+				20D78D3A1E7929AE0000D5A1 /* ChatViewController.m */,
+			);
+			path = "支持不同类型的Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +248,8 @@
 				16CACFA51E593BFF004514D6 /* Assets.xcassets in Resources */,
 				16CACFAB1E593BFF004514D6 /* Info.plist in Resources */,
 				16CACFA61E593BFF004514D6 /* LaunchScreen.storyboard in Resources */,
+				20D78D321E79297C0000D5A1 /* dancing-minion-icon.png in Resources */,
+				20D78D361E79297C0000D5A1 /* shy-minion-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,12 +260,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D78D311E79297C0000D5A1 /* BaseCell.m in Sources */,
 				16CACFB41E593C84004514D6 /* PlaceHolderViewController.m in Sources */,
 				16CACFB81E593EF3004514D6 /* MutiCellViewController.m in Sources */,
+				20D78D351E79297C0000D5A1 /* MixCell.m in Sources */,
 				16CACFA91E593BFF004514D6 /* MyTableViewCell.m in Sources */,
 				16CACFA81E593BFF004514D6 /* AutoHeightViewController.m in Sources */,
+				20D78D371E79297C0000D5A1 /* TextCell.m in Sources */,
 				16CACFAC1E593BFF004514D6 /* main.m in Sources */,
+				20D78D341E79297C0000D5A1 /* ItemModel.m in Sources */,
 				16CACFA41E593BFF004514D6 /* AppDelegate.m in Sources */,
+				20D78D331E79297C0000D5A1 /* ImageCell.m in Sources */,
+				20D78D3B1E7929AE0000D5A1 /* ChatViewController.m in Sources */,
 				16CACFAD1E593BFF004514D6 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +385,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DSHJC97KG4;
-				INFOPLIST_FILE = "UITableView性能优化/Info.plist";
+				GCC_PREFIX_HEADER = "UITableView常用功能实现及性能优化/TableViewPrefixHeader.pch";
+				INFOPLIST_FILE = "UITableView常用功能实现及性能优化/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.UITableView----";
@@ -344,7 +399,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DSHJC97KG4;
-				INFOPLIST_FILE = "UITableView性能优化/Info.plist";
+				GCC_PREFIX_HEADER = "UITableView常用功能实现及性能优化/TableViewPrefixHeader.pch";
+				INFOPLIST_FILE = "UITableView常用功能实现及性能优化/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.UITableView----";
