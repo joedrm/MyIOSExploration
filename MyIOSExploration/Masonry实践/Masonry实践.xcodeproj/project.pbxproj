@@ -45,6 +45,13 @@
 		20AC98AF1DF177F100C761FA /* Case6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC98AE1DF177F100C761FA /* Case6ViewController.m */; };
 		20D514951E124A70000FBD5D /* Case9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D514941E124A70000FBD5D /* Case9ViewController.m */; };
 		20D514981E124AAB000FBD5D /* UIView+EqualSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D514971E124AAB000FBD5D /* UIView+EqualSpace.m */; };
+		20D78D091E790E3B0000D5A1 /* Case13ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D081E790E3B0000D5A1 /* Case13ViewController.m */; };
+		20D78D0C1E790E920000D5A1 /* Case13TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D0B1E790E920000D5A1 /* Case13TableViewCell.m */; };
+		20D78D101E7916160000D5A1 /* Case14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D0F1E7916160000D5A1 /* Case14ViewController.m */; };
+		20D78D131E79167C0000D5A1 /* Case14TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D121E79167C0000D5A1 /* Case14TableViewCell.m */; };
+		20D78D161E79173B0000D5A1 /* Case14StairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D151E79173B0000D5A1 /* Case14StairView.m */; };
+		20D78D201E791F410000D5A1 /* Case15ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78D1E1E791F410000D5A1 /* Case15ViewController.m */; };
+		20D78D211E791F410000D5A1 /* Case15ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D78D1F1E791F410000D5A1 /* Case15ViewController.xib */; };
 		EC62D413454CBDC385FDD2BB /* Pods_Masonry__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03401E1A5735B91FBAE4D716 /* Pods_Masonry__.framework */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +155,19 @@
 		20D514941E124A70000FBD5D /* Case9ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case9ViewController.m; sourceTree = "<group>"; };
 		20D514961E124AAB000FBD5D /* UIView+EqualSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EqualSpace.h"; sourceTree = "<group>"; };
 		20D514971E124AAB000FBD5D /* UIView+EqualSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EqualSpace.m"; sourceTree = "<group>"; };
+		20D78D071E790E3B0000D5A1 /* Case13ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case13ViewController.h; sourceTree = "<group>"; };
+		20D78D081E790E3B0000D5A1 /* Case13ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case13ViewController.m; sourceTree = "<group>"; };
+		20D78D0A1E790E920000D5A1 /* Case13TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case13TableViewCell.h; sourceTree = "<group>"; };
+		20D78D0B1E790E920000D5A1 /* Case13TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case13TableViewCell.m; sourceTree = "<group>"; };
+		20D78D0E1E7916160000D5A1 /* Case14ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case14ViewController.h; sourceTree = "<group>"; };
+		20D78D0F1E7916160000D5A1 /* Case14ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case14ViewController.m; sourceTree = "<group>"; };
+		20D78D111E79167C0000D5A1 /* Case14TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case14TableViewCell.h; sourceTree = "<group>"; };
+		20D78D121E79167C0000D5A1 /* Case14TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case14TableViewCell.m; sourceTree = "<group>"; };
+		20D78D141E79173B0000D5A1 /* Case14StairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case14StairView.h; sourceTree = "<group>"; };
+		20D78D151E79173B0000D5A1 /* Case14StairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case14StairView.m; sourceTree = "<group>"; };
+		20D78D1D1E791F410000D5A1 /* Case15ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case15ViewController.h; sourceTree = "<group>"; };
+		20D78D1E1E791F410000D5A1 /* Case15ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case15ViewController.m; sourceTree = "<group>"; };
+		20D78D1F1E791F410000D5A1 /* Case15ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Case15ViewController.xib; sourceTree = "<group>"; };
 		8A7511561C2659CBC1BF58CF /* Pods-Masonry实践.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masonry实践.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Masonry实践/Pods-Masonry实践.debug.xcconfig"; sourceTree = "<group>"; };
 		C53E5F2E72C3F686D1518DDB /* Pods-Masonry实践.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masonry实践.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Masonry实践/Pods-Masonry实践.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -274,6 +294,9 @@
 				20AC983A1DF10CFE00C761FA /* AppDelegate.m */,
 				20AC983C1DF10CFE00C761FA /* ViewController.h */,
 				20AC983D1DF10CFE00C761FA /* ViewController.m */,
+				20D78D171E791B4C0000D5A1 /* 给同一个属性添加多重约束，实现复杂关系 */,
+				20D78D0D1E7915DA0000D5A1 /* 自定义View实现intrinsicContentSize */,
+				20D78D061E790E200000D5A1 /* UITableViewCell中多个变高的Label */,
 				206E74041E2379180089FABC /* 自定义View更新布局 */,
 				206E74001E2375AB0089FABC /* 优先级 */,
 				206E73F81E23716A0089FABC /* 数组排列 */,
@@ -414,6 +437,40 @@
 			path = "横向或纵向实现多个View等间距";
 			sourceTree = "<group>";
 		};
+		20D78D061E790E200000D5A1 /* UITableViewCell中多个变高的Label */ = {
+			isa = PBXGroup;
+			children = (
+				20D78D071E790E3B0000D5A1 /* Case13ViewController.h */,
+				20D78D081E790E3B0000D5A1 /* Case13ViewController.m */,
+				20D78D0A1E790E920000D5A1 /* Case13TableViewCell.h */,
+				20D78D0B1E790E920000D5A1 /* Case13TableViewCell.m */,
+			);
+			path = "UITableViewCell中多个变高的Label";
+			sourceTree = "<group>";
+		};
+		20D78D0D1E7915DA0000D5A1 /* 自定义View实现intrinsicContentSize */ = {
+			isa = PBXGroup;
+			children = (
+				20D78D0E1E7916160000D5A1 /* Case14ViewController.h */,
+				20D78D0F1E7916160000D5A1 /* Case14ViewController.m */,
+				20D78D111E79167C0000D5A1 /* Case14TableViewCell.h */,
+				20D78D121E79167C0000D5A1 /* Case14TableViewCell.m */,
+				20D78D141E79173B0000D5A1 /* Case14StairView.h */,
+				20D78D151E79173B0000D5A1 /* Case14StairView.m */,
+			);
+			path = "自定义View实现intrinsicContentSize";
+			sourceTree = "<group>";
+		};
+		20D78D171E791B4C0000D5A1 /* 给同一个属性添加多重约束，实现复杂关系 */ = {
+			isa = PBXGroup;
+			children = (
+				20D78D1D1E791F410000D5A1 /* Case15ViewController.h */,
+				20D78D1E1E791F410000D5A1 /* Case15ViewController.m */,
+				20D78D1F1E791F410000D5A1 /* Case15ViewController.xib */,
+			);
+			path = "给同一个属性添加多重约束，实现复杂关系";
+			sourceTree = "<group>";
+		};
 		77F9C702A275CD4755434A9B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -544,6 +601,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D78D211E791F410000D5A1 /* Case15ViewController.xib in Resources */,
 				20AC98891DF14C2D00C761FA /* mario.png in Resources */,
 				20AC98461DF10CFE00C761FA /* LaunchScreen.storyboard in Resources */,
 				20AC98881DF14C2D00C761FA /* huoyin.jpeg in Resources */,
@@ -628,12 +686,17 @@
 			files = (
 				20AC989C1DF15A7100C761FA /* Case3ViewController.m in Sources */,
 				20AC983E1DF10CFE00C761FA /* ViewController.m in Sources */,
+				20D78D161E79173B0000D5A1 /* Case14StairView.m in Sources */,
 				20AC98A21DF15AE900C761FA /* Case5ViewController.m in Sources */,
 				2090DE731DF6934F00650BCC /* Case8ViewController.m in Sources */,
 				20AC983B1DF10CFE00C761FA /* AppDelegate.m in Sources */,
 				2090DE681DF6656600650BCC /* Case6Cell.m in Sources */,
+				20D78D091E790E3B0000D5A1 /* Case13ViewController.m in Sources */,
+				20D78D0C1E790E920000D5A1 /* Case13TableViewCell.m in Sources */,
 				2019B0D01E6D66D1003FD161 /* HorizontalScrollViewController.m in Sources */,
+				20D78D101E7916160000D5A1 /* Case14ViewController.m in Sources */,
 				20AC98861DF14C2D00C761FA /* Case4ViewController.m in Sources */,
+				20D78D201E791F410000D5A1 /* Case15ViewController.m in Sources */,
 				2090DE6B1DF6659C00650BCC /* Case6Model.m in Sources */,
 				2019B0CC1E6D6677003FD161 /* ScrollViewController.m in Sources */,
 				20D514981E124AAB000FBD5D /* UIView+EqualSpace.m in Sources */,
@@ -647,6 +710,7 @@
 				20AC98AB1DF1672800C761FA /* TesViewController.m in Sources */,
 				20AC98AF1DF177F100C761FA /* Case6ViewController.m in Sources */,
 				20AC98381DF10CFE00C761FA /* main.m in Sources */,
+				20D78D131E79167C0000D5A1 /* Case14TableViewCell.m in Sources */,
 				20AC98901DF14D5B00C761FA /* Case4Model.m in Sources */,
 				206E73FB1E23719D0089FABC /* ArrayButtonLayoutVC.m in Sources */,
 				206E74071E23793D0089FABC /* Case12ViewController.m in Sources */,
