@@ -9,6 +9,6 @@
 #ifndef CollectionPrefixHeader_pch
 #define CollectionPrefixHeader_pch
 
-
+#import <WDYLibrary/WDYLibrary.h>
 
 #endif /* CollectionPrefixHeader_pch */
