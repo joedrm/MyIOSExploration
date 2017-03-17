@@ -45,6 +45,7 @@
     /*
      UIViewAnimationOptions这个参数可以对动画的执行效果进行设置
      enum {
+     
          //这部分是基础属性的设置
          UIViewAnimationOptionLayoutSubviews            = 1 <<  0,//设置子视图随父视图展示动画
          UIViewAnimationOptionAllowUserInteraction      = 1 <<  1,//允许在动画执行时用户与其进行交互
@@ -56,11 +57,13 @@
          UIViewAnimationOptionAllowAnimatedContent      = 1 <<  7,//设置动画视图实时刷新
          UIViewAnimationOptionShowHideTransitionViews   = 1 <<  8,//设置视图切换时隐藏，而不是移除
          UIViewAnimationOptionOverrideInheritedOptions  = 1 <<  9,//
+     
          //这部分属性设置动画播放的线性效果
          UIViewAnimationOptionCurveEaseInOut            = 0 << 16,//淡入淡出 首末减速
          UIViewAnimationOptionCurveEaseIn               = 1 << 16,//淡入 初始减速
          UIViewAnimationOptionCurveEaseOut              = 2 << 16,//淡出 末尾减速
          UIViewAnimationOptionCurveLinear               = 3 << 16,//线性 匀速执行
+     
          //这部分设置UIView切换效果
          UIViewAnimationOptionTransitionNone            = 0 << 20,
          UIViewAnimationOptionTransitionFlipFromLeft    = 1 << 20,//从左边切入

@@ -19,6 +19,7 @@ PODS:
   - FMDB/standard (2.6.2)
   - GPUImage (0.1.7)
   - KVOController (1.2.0)
+  - lottie-ios (1.5.0)
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
   - MMPlaceHolder (1.9)
@@ -77,6 +78,7 @@ DEPENDENCIES:
   - FMDB
   - GPUImage
   - KVOController
+  - lottie-ios
   - Masonry
   - MJExtension
   - MMPlaceHolder
@@ -89,6 +91,7 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  lottie-ios: 8b959bce82f84e42d832d605f5bab9d9edba8ad2
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MMPlaceHolder: 40212b9dfe8760134b1b2fce3232f0d46200178f
@@ -97,6 +100,6 @@ SPEC CHECKSUMS:
   SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
   WDYBaseProject: 9d5ad302d056ff29ba0946e1366555043c09778b
 
-PODFILE CHECKSUM: 4371a0412f1a65bba8fdaa3372944e1f0517fdac
+PODFILE CHECKSUM: a8a5608e4421eac77cffb5acee128deadd97fed3
 
 COCOAPODS: 1.1.1

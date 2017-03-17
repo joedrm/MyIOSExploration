@@ -1,0 +1,17 @@
+//
+//  AnimDesignPrefixHeader.pch
+//  AnimationDesign(动画设计)
+//
+//  Created by fang wang on 17/3/17.
+//  Copyright © 2017年 animationDesign. All rights reserved.
+//
+
+#ifndef AnimDesignPrefixHeader_pch
+#define AnimDesignPrefixHeader_pch
+
+#import <WDYLibrary/WDYLibrary.h>
+#import <Lottie/Lottie.h>
+#import <WDYBaseProject/WDYMacros.h>
+
+
+#endif /* AnimDesignPrefixHeader_pch */

@@ -1,0 +1,6 @@
+framework module Pods_AnimationDesign______ {
+  umbrella header "Pods-AnimationDesign(动画设计)-umbrella.h"
+
+  export *
+  module * { export * }
+}

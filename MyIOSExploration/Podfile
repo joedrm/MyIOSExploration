@@ -64,4 +64,11 @@ target :'KVC&KVO实例详解' do
 end
 
 
+target :'AnimationDesign(动画设计)' do
+    platform :ios, '8.0'
+    pod 'lottie-ios'
+    pod 'WDYBaseProject','~> 1.0.1'
+    project 'AnimationDesign(动画设计)/AnimationDesign(动画设计).xcodeproj'
+end
+
 
