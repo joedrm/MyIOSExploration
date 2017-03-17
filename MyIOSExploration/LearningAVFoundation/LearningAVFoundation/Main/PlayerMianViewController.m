@@ -101,6 +101,7 @@
  开源框架：
  https://github.com/vimeo/VIMVideoPlayer
  https://github.com/mobileplayer/mobileplayer-ios
+ https://github.com/piemonte/PBJVideoPlayer
  
  开源APP
  https://github.com/Onix-Systems/ios-video-maker  一个上线的图片、视频编辑的APP，强烈推荐
