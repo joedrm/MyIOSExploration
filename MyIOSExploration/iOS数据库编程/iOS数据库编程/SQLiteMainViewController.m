@@ -41,4 +41,6 @@
  http://www.jianshu.com/p/4bc34f982fee  iOS - 关于移动端SQLite，你想知道的都有
  
  https://github.com/gaojunquan/JQFMDB FMDB的封装,操作简单,线程安全,扩展性强,直接操作model或dictionary
+ 
+ https://github.com/huangzhibiao/BGFMDB  FMDB 的封装
  */
