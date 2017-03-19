@@ -22,7 +22,18 @@ static NSString* identi = @"TransDemo3VC";
     UITableView* tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     
     // autoresizingMask 能保证在ViewController的view尺寸变化时能自适应，如屏幕旋转，热点，电话等
-    // 当然此处也可以使用AutoLayout来实现
+    /*
+     UIViewAutoresizingFlexibleLeftMargin 距离父控件的左边是可以伸缩的
+     UIViewAutoresizingFlexibleBottomMargin 距离父控件的底部是可以伸缩的
+     UIViewAutoresizingFlexibleRightMargin 距离父控件的右边是可以伸缩的
+     UIViewAutoresizingFlexibleTopMargin 距离父控件的顶边是可以伸缩的
+     
+     UIViewAutoresizingFlexibleHeight 高度会随着父控件的高度进行伸缩
+     UIViewAutoresizingFlexibleWidth 宽度会随着父控件的宽度进行伸缩
+     
+     
+     缺陷：仅仅能解决子空间和父控件之间的相对关系
+     */
     tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     tableView.delegate = self;

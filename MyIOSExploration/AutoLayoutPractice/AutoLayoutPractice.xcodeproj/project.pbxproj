@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16A4BA881E7E784D002EB6B8 /* PriorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A4BA861E7E784D002EB6B8 /* PriorityViewController.m */; };
+		16A4BA891E7E784D002EB6B8 /* PriorityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A4BA871E7E784D002EB6B8 /* PriorityViewController.xib */; };
+		16A4BA8E1E7E7A40002EB6B8 /* LayoutAnimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A4BA8C1E7E7A40002EB6B8 /* LayoutAnimateViewController.m */; };
+		16A4BA8F1E7E7A40002EB6B8 /* LayoutAnimateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A4BA8D1E7E7A40002EB6B8 /* LayoutAnimateViewController.xib */; };
 		2019B0B91E6D4991003FD161 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2019B0B81E6D4991003FD161 /* WDYLibrary.framework */; };
 		2019B0BA1E6D4991003FD161 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2019B0B81E6D4991003FD161 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2019B0BF1E6D49EB003FD161 /* AutoLayoutMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019B0BE1E6D49EB003FD161 /* AutoLayoutMianViewController.m */; };
@@ -37,6 +41,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16A4BA851E7E784D002EB6B8 /* PriorityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityViewController.h; sourceTree = "<group>"; };
+		16A4BA861E7E784D002EB6B8 /* PriorityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityViewController.m; sourceTree = "<group>"; };
+		16A4BA871E7E784D002EB6B8 /* PriorityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriorityViewController.xib; sourceTree = "<group>"; };
+		16A4BA8B1E7E7A40002EB6B8 /* LayoutAnimateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutAnimateViewController.h; sourceTree = "<group>"; };
+		16A4BA8C1E7E7A40002EB6B8 /* LayoutAnimateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutAnimateViewController.m; sourceTree = "<group>"; };
+		16A4BA8D1E7E7A40002EB6B8 /* LayoutAnimateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LayoutAnimateViewController.xib; sourceTree = "<group>"; };
 		2019B0B81E6D4991003FD161 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2019B0BC1E6D49C6003FD161 /* AutoLayoutPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutPrefixHeader.pch; sourceTree = "<group>"; };
 		2019B0BD1E6D49EB003FD161 /* AutoLayoutMianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutMianViewController.h; sourceTree = "<group>"; };
@@ -75,6 +85,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16A4BA811E7E76E3002EB6B8 /* 约束的优先级 */ = {
+			isa = PBXGroup;
+			children = (
+				16A4BA851E7E784D002EB6B8 /* PriorityViewController.h */,
+				16A4BA861E7E784D002EB6B8 /* PriorityViewController.m */,
+				16A4BA871E7E784D002EB6B8 /* PriorityViewController.xib */,
+			);
+			path = "约束的优先级";
+			sourceTree = "<group>";
+		};
+		16A4BA8A1E7E7A10002EB6B8 /* 约束动画 */ = {
+			isa = PBXGroup;
+			children = (
+				16A4BA8B1E7E7A40002EB6B8 /* LayoutAnimateViewController.h */,
+				16A4BA8C1E7E7A40002EB6B8 /* LayoutAnimateViewController.m */,
+				16A4BA8D1E7E7A40002EB6B8 /* LayoutAnimateViewController.xib */,
+			);
+			path = "约束动画";
+			sourceTree = "<group>";
+		};
 		19CE8C06CF8E8DFBEA5406A4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +176,8 @@
 				20D995811E4AEB9E00520561 /* AppDelegate.m */,
 				2019B0BD1E6D49EB003FD161 /* AutoLayoutMianViewController.h */,
 				2019B0BE1E6D49EB003FD161 /* AutoLayoutMianViewController.m */,
+				16A4BA8A1E7E7A10002EB6B8 /* 约束动画 */,
+				16A4BA811E7E76E3002EB6B8 /* 约束的优先级 */,
 				20D78D411E7935350000D5A1 /* VFL实现自动布局 */,
 				20D78D3D1E792CD80000D5A1 /* NSLayoutConstraint基本使用 */,
 				2019B0C41E6D4D2C003FD161 /* LayoutGuide的使用 */,
@@ -239,7 +271,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A4BA891E7E784D002EB6B8 /* PriorityViewController.xib in Resources */,
 				20D9958D1E4AEB9E00520561 /* LaunchScreen.storyboard in Resources */,
+				16A4BA8F1E7E7A40002EB6B8 /* LayoutAnimateViewController.xib in Resources */,
 				20D9958A1E4AEB9E00520561 /* Assets.xcassets in Resources */,
 				20D995881E4AEB9E00520561 /* Main.storyboard in Resources */,
 			);
@@ -304,6 +338,8 @@
 				20D995821E4AEB9E00520561 /* AppDelegate.m in Sources */,
 				20D78D441E7935430000D5A1 /* VFLViewController.m in Sources */,
 				20D78D401E792CFB0000D5A1 /* LayoutConstraintBasicVC.m in Sources */,
+				16A4BA881E7E784D002EB6B8 /* PriorityViewController.m in Sources */,
+				16A4BA8E1E7E7A40002EB6B8 /* LayoutAnimateViewController.m in Sources */,
 				2019B0BF1E6D49EB003FD161 /* AutoLayoutMianViewController.m in Sources */,
 				20D9957F1E4AEB9E00520561 /* main.m in Sources */,
 				2019B0C71E6D4D3B003FD161 /* LayoutGuideTestViewController.m in Sources */,
@@ -428,6 +464,7 @@
 				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AutoLayoutPractice/AutoLayoutPrefixHeader.pch";
 				INFOPLIST_FILE = AutoLayoutPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.AutoLayoutPractice.AutoLayoutPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,6 +479,7 @@
 				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AutoLayoutPractice/AutoLayoutPrefixHeader.pch";
 				INFOPLIST_FILE = AutoLayoutPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wdy.AutoLayoutPractice.AutoLayoutPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";

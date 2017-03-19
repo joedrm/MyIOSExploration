@@ -21,12 +21,20 @@
     self.title = @"AutoLayout 练习";
     self.titleArr = @[
                       @"Autoresizing布局",
-                      @"LayoutGuide的使用"
+                      @"LayoutGuide的使用",
+                      @"NSLayoutConstraint基本使用",
+                      @"VFL实现自动布局",
+                      @"约束的优先级",
+                      @"约束动画"
                       ];
     
     self.vcArr = @[
                    @"AutoresizingTestViewController",
-                   @"LayoutGuideTestViewController"
+                   @"LayoutGuideTestViewController",
+                   @"LayoutConstraintBasicVC",
+                   @"VFLViewController",
+                   @"PriorityViewController",
+                   @"LayoutAnimateViewController"
                    ];
 }
 
