@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16A4BA931E7E8020002EB6B8 /* CustomFlowLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A4BA921E7E8020002EB6B8 /* CustomFlowLayoutVC.m */; };
 		209F34701E2DAF240083C875 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F346F1E2DAF240083C875 /* main.m */; };
 		209F34731E2DAF240083C875 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F34721E2DAF240083C875 /* AppDelegate.m */; };
 		209F34791E2DAF240083C875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F34771E2DAF240083C875 /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16A4BA911E7E8020002EB6B8 /* CustomFlowLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFlowLayoutVC.h; sourceTree = "<group>"; };
+		16A4BA921E7E8020002EB6B8 /* CustomFlowLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFlowLayoutVC.m; sourceTree = "<group>"; };
 		2019B0C81E6D548D003FD161 /* CollectionPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionPrefixHeader.pch; sourceTree = "<group>"; };
 		209F346B1E2DAF240083C875 /* UICollectionView深入理解和实践.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UICollectionView深入理解和实践.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		209F346F1E2DAF240083C875 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16A4BA901E7E8003002EB6B8 /* 自定义流水布局 */ = {
+			isa = PBXGroup;
+			children = (
+				16A4BA911E7E8020002EB6B8 /* CustomFlowLayoutVC.h */,
+				16A4BA921E7E8020002EB6B8 /* CustomFlowLayoutVC.m */,
+			);
+			path = "自定义流水布局";
+			sourceTree = "<group>";
+		};
 		209F34621E2DAF240083C875 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +94,7 @@
 				209F34721E2DAF240083C875 /* AppDelegate.m */,
 				20B5A65B1E63C00200F97AD4 /* CollectionMainViewController.h */,
 				20B5A65C1E63C00200F97AD4 /* CollectionMainViewController.m */,
+				16A4BA901E7E8003002EB6B8 /* 自定义流水布局 */,
 				209F34771E2DAF240083C875 /* Main.storyboard */,
 				209F347A1E2DAF240083C875 /* Assets.xcassets */,
 				209F347C1E2DAF240083C875 /* LaunchScreen.storyboard */,
@@ -174,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B5A65D1E63C00200F97AD4 /* CollectionMainViewController.m in Sources */,
+				16A4BA931E7E8020002EB6B8 /* CustomFlowLayoutVC.m in Sources */,
 				209F34731E2DAF240083C875 /* AppDelegate.m in Sources */,
 				209F34701E2DAF240083C875 /* main.m in Sources */,
 			);
