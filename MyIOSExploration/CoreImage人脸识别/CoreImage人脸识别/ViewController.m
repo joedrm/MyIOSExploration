@@ -34,4 +34,12 @@
  https://github.com/yrq110/some-ios-tutorials-with-swift-CN/blob/master/Face%20Detection%20in%20iOS%20Using%20Core%20Image.md 
   使用Core Image的iOS人脸识别
  https://github.com/fuzheng0301/FaceRecognition 活体人脸识别，识别人脸，识别张嘴和摇头动作，并拍照
+ 
+ https://github.com/urmyfaith/CoreImageTransition
+ 
+ https://github.com/shu223/CoreImageTransition  CoreImage各种实现转场效果
+ 
+ https://github.com/shu223/AnimatedTransitionGallery
+ 
+ https://github.com/FlexMonkey/CoreImageTransitionExplorer
  */

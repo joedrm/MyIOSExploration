@@ -55,6 +55,7 @@
 
 
 /* 参考资料：
+ http://www.jianshu.com/p/9b788285b982  音视频开发Demo
  https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/03_Editing.html 官方文档
  http://blog.csdn.net/zyq522376829/article/details/52144394 官方文档翻译http://yoferzhang.com/post/20160724AVFoundation/
  https://github.com/tapharmonic/Learning-AV-Foundation  Sample code for Bob McCune's Learning AV Foundation book
@@ -62,6 +63,7 @@
  https://developer.apple.com/sample-code/wwdc/2015/
  https://www.amazon.com/Learning-Foundation-Hands-Mastering-Framework/dp/0321961803   Book <<Learning AV Foundation>> sell
  https://github.com/jkyin/Subtitle
+ https://github.com/rFlex/SCRecorder
  
  // iOS平台上编码之CMTime，CMTimeMake，CMTimeMakeWithSeconds的作用
  http://depthlove.github.io/2016/03/15/CMTime-CMTimeMake-CMTimeMakeWithSeconds-in-iOS-encode/

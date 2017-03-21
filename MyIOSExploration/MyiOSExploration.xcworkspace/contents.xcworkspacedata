@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ImageSliderEffect/ImageSliderEffect.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:C++ LearningTrip/C++ LearningTrip.xcodeproj">
    </FileRef>
    <FileRef

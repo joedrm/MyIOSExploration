@@ -21,7 +21,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    LOTAnimationView* animView = [LOTAnimationView animationNamed:@"BOOM01"];
+    LOTAnimationView* animView = [LOTAnimationView animationNamed:@"Watermelon"];
     animView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:animView];
     self.animView = animView;
