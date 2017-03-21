@@ -19,3 +19,5 @@ var t = null; // t的值是null
 // 下面的代码将报ReferenceError错误:
 // abc = 'hello world';
 // alert(abc);
+
+

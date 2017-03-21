@@ -2,54 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/demo/demo1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/demo/demo2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/demo/demo3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/demo/demo4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/demo/demo5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/demo/demo6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/src/next.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/src/prev.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/WDYLibrary/WDYLibrary/github.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/AppDelegate.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/AppDelegate.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/Assets.xcassets/AppIcon.appiconset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/Base.lproj/LaunchScreen.storyboard" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/Base.lproj/Main.storyboard" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/demo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/demo/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/lib/jquery-1.11.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/src/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/vmc.slider.effects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/vmc.slider.full.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/vmc.slider.full.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ImageSlider/vmc.slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/ViewController.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect/main.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffectUITests/ImageSliderEffectUITests.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffectUITests/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/html基本使用.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/变量.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/字符串.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/AnimationDesign(动画设计)/AnimationDesign(动画设计).xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/../MyIOSExploration/AnimationDesign(动画设计)/AnimationDesign(动画设计).xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/AnimationDesign(动画设计)/AnimationDesign(动画设计)/SimpleUsedViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/AnimationDesign(动画设计)/AnimationDesign(动画设计)/SimpleUsedViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/C++ LearningTrip/C++ LearningTrip.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/../MyIOSExploration/C++ LearningTrip/C++ LearningTrip.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/CoreImage人脸识别/CoreImage人脸识别/ViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/CoreImage人脸识别/CoreImage人脸识别/ViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/LearningAVFoundation/LearningAVFoundation/Main/PlayerMianViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/LearningAVFoundation/LearningAVFoundation/Main/PlayerMianViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/Mac开发学习/Mac开发学习.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/../MyIOSExploration/Mac开发学习/Mac开发学习.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/contents.xcworkspacedata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/Pods/Pods.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/../MyIOSExploration/Pods/Pods.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/WDYLibrary/WDYLibrary.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../MyIOSExploration/WDYLibrary/WDYLibrary.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/WDYLibrary/WDYLibrary/WDYLibraryHeader.pch" afterPath="$PROJECT_DIR$/../MyIOSExploration/WDYLibrary/WDYLibrary/WDYLibraryHeader.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/css资料.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/html资料.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/02.字符串.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/03.数组.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/04.对象.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/05.Map和Set.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/06.iterable遍历.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/07.函数.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/08.变量的作用域.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/JavaScript资料.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript/字符串.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/JavaScript/变量.js" afterPath="$PROJECT_DIR$/JavaScript/01.变量.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,31 +37,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="html基本使用.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="变量.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript/变量.js">
+      <file leaf-file-name="html资料.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML/html资料.md">
+          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="01.变量.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/01.变量.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="323">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -104,18 +83,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="字符串.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JavaScript/字符串.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="css资料.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/css资料.md">
           <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -129,11 +98,91 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04.对象.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/04.对象.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="05.Map和Set.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/05.Map和Set.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="06.iterable遍历.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/06.iterable遍历.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1751">
+              <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaScript资料.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/JavaScript资料.md">
+          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="07.函数.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript/07.函数.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="08.变量的作用域.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/08.变量的作用域.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,7 +207,18 @@
         <option value="$PROJECT_DIR$/ImageSlider/demo/index.html" />
         <option value="$PROJECT_DIR$/ImageSlider/vmc.slider.js" />
         <option value="$PROJECT_DIR$/JavaScript/基本语法.js" />
+        <option value="$PROJECT_DIR$/JavaScript/变量.js" />
         <option value="$PROJECT_DIR$/JavaScript/字符串.js" />
+        <option value="$PROJECT_DIR$/JavaScript/JavaScript资料.md" />
+        <option value="$PROJECT_DIR$/JavaScript/数组.js" />
+        <option value="$PROJECT_DIR$/JavaScript/对象.js" />
+        <option value="$PROJECT_DIR$/JavaScript/04.对象.js" />
+        <option value="$PROJECT_DIR$/JavaScript/Map和Set.js" />
+        <option value="$PROJECT_DIR$/JavaScript/05.Map和Set.js" />
+        <option value="$PROJECT_DIR$/HTML/html资料.md" />
+        <option value="$PROJECT_DIR$/JavaScript/06.iterable遍历.js" />
+        <option value="$PROJECT_DIR$/JavaScript/07.函数.js" />
+        <option value="$PROJECT_DIR$/JavaScript/08.变量的作用域.js" />
       </list>
     </option>
   </component>
@@ -169,10 +229,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="377" />
-    <option name="y" value="246" />
-    <option name="width" value="1046" />
-    <option name="height" value="538" />
+    <option name="x" value="62" />
+    <option name="y" value="96" />
+    <option name="width" value="1268" />
+    <option name="height" value="793" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -232,6 +292,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -240,7 +328,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -254,17 +342,20 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.字符串.js">
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/ImageSlider/demo/index.html">
+  <component name="RunManager" selected="Node.js.07.函数.js">
+    <configuration default="false" name="数组.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/JavaScript/03.数组.js" working-dir="$PROJECT_DIR$/JavaScript">
       <method />
     </configuration>
-    <configuration default="false" name="vmc.slider.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="vmc.slider.js" working-dir="$PROJECT_DIR$/ImageSlider">
+    <configuration default="false" name="04.对象.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="04.对象.js" working-dir="$PROJECT_DIR$/JavaScript">
       <method />
     </configuration>
-    <configuration default="false" name="基本语法.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/JavaScript/变量.js" working-dir="$PROJECT_DIR$/JavaScript">
+    <configuration default="false" name="05.Map和Set.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="05.Map和Set.js" working-dir="$PROJECT_DIR$/JavaScript">
       <method />
     </configuration>
-    <configuration default="false" name="字符串.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="字符串.js" working-dir="$PROJECT_DIR$/JavaScript">
+    <configuration default="false" name="06.iterable遍历.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="06.iterable遍历.js" working-dir="$PROJECT_DIR$/JavaScript">
+      <method />
+    </configuration>
+    <configuration default="false" name="07.函数.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="07.函数.js" working-dir="$PROJECT_DIR$/JavaScript">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -320,18 +411,24 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.vmc.slider.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.字符串.js" />
+    <configuration default="false" name="基本语法.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="$PROJECT_DIR$/JavaScript/01.变量.js" working-dir="$PROJECT_DIR$/JavaScript">
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.数组.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.04.对象.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.05.Map和Set.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.06.iterable遍历.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.07.函数.js" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.字符串.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.vmc.slider.js" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.07.函数.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.06.iterable遍历.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.05.Map和Set.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.04.对象.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.数组.js" />
       </list>
     </recent_temporary>
   </component>
@@ -351,27 +448,27 @@
       <workItem from="1489988784067" duration="933000" />
       <workItem from="1489989945624" duration="164000" />
       <workItem from="1489991287921" duration="3203000" />
-      <workItem from="1490068196771" duration="1201000" />
+      <workItem from="1490068196771" duration="15285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5501000" />
+    <option name="totallyTimeSpent" value="19585000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="377" y="246" width="1046" height="538" extended-state="0" />
-    <editor active="false" />
+    <frame x="62" y="96" width="1268" height="793" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20682926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14354451" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24393724" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497561" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39657632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -400,7 +497,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1490089448000" expanded="true" signature="59:47661" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="98:192" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47604" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47622" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47635" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47650" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -487,7 +591,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1490089448000" expanded="true" signature="59:47661" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="98:192" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47604" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47622" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47635" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47650" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -532,7 +643,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1490089448000" expanded="true" signature="59:47661" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="98:192" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47604" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47622" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47635" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47650" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -547,7 +665,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1490089448000" expanded="true" signature="59:47661" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="98:192" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47604" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47622" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47635" ph="..." />
+            <marker date="1490089448000" expanded="true" signature="47587:47650" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -629,7 +754,7 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
+          <first_editor relative-caret-position="238">
             <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             <folding />
           </first_editor>
@@ -643,29 +768,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="138">
+          <caret line="939" column="0" selection-start-line="939" selection-start-column="0" selection-end-line="939" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/变量.js">
+    <entry file="file://$PROJECT_DIR$/JavaScript/03.数组.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="5" />
+        <state relative-caret-position="2006">
+          <caret line="120" column="39" selection-start-line="120" selection-start-column="39" selection-end-line="120" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/02.字符串.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/01.变量.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/字符串.js">
+    <entry file="file://$PROJECT_DIR$/JavaScript/04.对象.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="340">
+          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/css资料.md">
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/html资料.md">
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/05.Map和Set.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/06.iterable遍历.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/JavaScript资料.md">
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/08.变量的作用域.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/07.函数.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
