@@ -46,6 +46,22 @@ console.log(xiaoming.age()); // 27
 // xiaowen.age();
 // console.log('xiaowen.age方法：' + xiaowen.age()); // TypeError: Cannot read property 'birth' of undefined
 
+// 错误三修复
+var xiaowen = {
+    name: '小明',
+    birth: 1990,
+    age: function () {
+        var that = this; // 在方法内部一开始就捕获this
+        function getAgeFromBirth() {
+            var y = new Date().getFullYear();
+            return y - that.birth; // 用that而不是this
+        }
+        return getAgeFromBirth();
+    }
+};
+xiaowen.age();
+console.log('错误三修复 xiaowen.age方法：' + xiaowen.age());
+
 /**
  * this 使用总结：
  *      1. this 是一个特殊变量，它始终指向当前对象，也就是xiaoming这个变量。所以，this.birth 可以拿到 xiaoming 的 birth 属性

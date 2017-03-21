@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/09.方法.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/10.高阶函数.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript/08.变量的作用域.js" afterPath="$PROJECT_DIR$/JavaScript/08.变量的作用域.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript/09.方法.js" afterPath="$PROJECT_DIR$/JavaScript/09.方法.js" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,30 +34,6 @@
             <state relative-caret-position="136">
               <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html资料.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/html资料.md">
-          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-                <folding />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -159,21 +135,31 @@
       <file leaf-file-name="08.变量的作用域.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript/08.变量的作用域.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
+            <state relative-caret-position="557">
               <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="09.方法.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="09.方法.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript/09.方法.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="555">
+              <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10.高阶函数.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript/10.高阶函数.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -211,6 +197,7 @@
         <option value="$PROJECT_DIR$/JavaScript/07.函数.js" />
         <option value="$PROJECT_DIR$/JavaScript/08.变量的作用域.js" />
         <option value="$PROJECT_DIR$/JavaScript/09.方法.js" />
+        <option value="$PROJECT_DIR$/JavaScript/10.高阶函数.js" />
       </list>
     </option>
   </component>
@@ -221,8 +208,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="531" />
-    <option name="y" value="31" />
+    <option name="x" value="587" />
+    <option name="y" value="49" />
     <option name="width" value="1364" />
     <option name="height" value="793" />
   </component>
@@ -334,10 +321,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.09.方法.js">
-    <configuration default="false" name="05.Map和Set.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="05.Map和Set.js" working-dir="$PROJECT_DIR$/JavaScript">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.10.高阶函数.js">
     <configuration default="false" name="06.iterable遍历.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="06.iterable遍历.js" working-dir="$PROJECT_DIR$/JavaScript">
       <method />
     </configuration>
@@ -348,6 +332,9 @@
       <method />
     </configuration>
     <configuration default="false" name="09.方法.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="09.方法.js" working-dir="$PROJECT_DIR$/JavaScript">
+      <method />
+    </configuration>
+    <configuration default="false" name="10.高阶函数.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="10.高阶函数.js" working-dir="$PROJECT_DIR$/JavaScript">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -408,19 +395,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.05.Map和Set.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.06.iterable遍历.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.07.函数.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.08.变量的作用域.js" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.09.方法.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.06.iterable遍历.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.07.函数.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.08.变量的作用域.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.09.方法.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.10.高阶函数.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.09.方法.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.08.变量的作用域.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.07.函数.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.06.iterable遍历.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.05.Map和Set.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.10.高阶函数.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.09.方法.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.08.变量的作用域.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.07.函数.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.06.iterable遍历.js" />
       </list>
     </recent_temporary>
   </component>
@@ -440,15 +427,15 @@
       <workItem from="1489988784067" duration="933000" />
       <workItem from="1489989945624" duration="164000" />
       <workItem from="1489991287921" duration="3203000" />
-      <workItem from="1490068196771" duration="19157000" />
+      <workItem from="1490068196771" duration="20676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23457000" />
+    <option name="totallyTimeSpent" value="24976000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="531" y="31" width="1364" height="793" extended-state="0" />
+    <frame x="587" y="49" width="1364" height="793" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13328369" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -456,7 +443,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28245363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3666191" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497561" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -490,12 +477,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490093986000" expanded="true" signature="59:48172" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="98:192" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48115" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48133" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48146" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48161" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="59:47936" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="98:192" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47879" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47897" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47910" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47925" ph="..." />
           </folding>
         </state>
       </provider>
@@ -584,12 +571,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490093986000" expanded="true" signature="59:48172" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="98:192" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48115" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48133" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48146" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48161" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="59:47936" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="98:192" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47879" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47897" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47910" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47925" ph="..." />
           </folding>
         </state>
       </provider>
@@ -636,12 +623,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490093986000" expanded="true" signature="59:48172" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="98:192" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48115" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48133" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48146" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48161" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="59:47936" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="98:192" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47879" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47897" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47910" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47925" ph="..." />
           </folding>
         </state>
       </provider>
@@ -658,12 +645,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490093986000" expanded="true" signature="59:48172" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="98:192" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48115" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48133" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48146" ph="..." />
-            <marker date="1490093986000" expanded="true" signature="48098:48161" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="59:47936" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="98:192" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47879" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47897" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47910" ph="..." />
+            <marker date="1490095549000" expanded="true" signature="47862:47925" ph="..." />
           </folding>
         </state>
       </provider>
@@ -794,28 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/css资料.md">
-      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/html资料.md">
       <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -835,14 +800,6 @@
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,9 +863,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/css资料.md">
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/08.变量的作用域.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
+        <state relative-caret-position="557">
           <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
@@ -916,11 +903,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/09.方法.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="555">
+          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/10.高阶函数.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
