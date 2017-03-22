@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
+    <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+    <link rel="stylesheet" media="(orientation: portrait)" href="portrait.css">
+    <link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
+    <style>
+        @media (min-width: 500px) and (max-width: 600px) {
+            h1 {
+                color: fuchsia;
+            }
+
+            #test-div{
+                background-color: black;
+            }
+
+            .desc:after {
+                content:" In fact, it's between 500px and 600px wide.";
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="test-div" style="height: 200px; height: 200px; background-color: #ff5470">
+
+
+    </div>
+
+</body>
+</html>
