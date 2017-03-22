@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</head>
+    <body>
+
+    <div id="test-div">
+        <ul>
+            <li><span>JavaScript</span></li>
+            <li><span>Python</span></li>
+            <li><span>Swift</span></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+
+        /**
+         * 添加DOM
+         * */
+        var ul = $('#test-div>ul');
+        // 添加新的DOM节点，除了通过jQuery的 html() 这种暴力方法外，还可以用 append() 方法
+        ul.append('<li><span>Java</span></li>');
+
+        var ps = document.createElement('li');
+        ps.innerHTML = '<span>Android</span>';
+
+        // 添加DOM对象
+        ul.append(ps);
+
+        // 添加jQuery对象
+        ul.append($('#scheme'));
+
+        // 添加函数对象
+        ul.append(function (index, html) {
+            return '<li><span>Language - '+index+'</span></li>';
+        })
+
+        // prepend()则把DOM添加到最前
+
+        // 删除节点
+        var li = $('#test-div>ul>li');
+        li.remove();  // 所有<li>全被删除
+
+    </script>
+    </body>
+</html>

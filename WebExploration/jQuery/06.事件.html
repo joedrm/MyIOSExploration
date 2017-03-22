@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <style>
+        #test-link{
+            color: blue;
+            font-size: 16px;
+        }
+
+    </style>
+
+    <!-- 初始化代码 -->
+    <script type="text/javascript">
+        // 写法一
+        /**
+         因为JavaScript在此执行的时候，<form>尚未载入浏览器，所以$('#testForm)返回[]，并没有绑定事件到任何DOM上。
+         所以我们自己的初始化代码必须放到document对象的ready事件中，保证DOM已完成初始化
+         * */
+        $(document).on('ready', function () {
+           $('#test-form').on('submit', function () {
+              alert('submit');
+           });
+        });
+
+        // 写法二
+        $(document).ready(function () {
+            // on('submit', function)也可以简化:
+            $('#testForm').submit(function () {
+                alert('submit!');
+            });
+        });
+
+        // 写法三：
+        // 如果你遇到$(function () {...})的形式，牢记这是document对象的ready事件处理函数
+        $(function () {
+            // init...
+        });
+    </script>
+</head>
+    <body>
+
+        <a id="test-link", href="">点我试试</a>;
+
+        <form id="test-form">
+
+
+        </form>
+        <script type="text/javascript">
+            var a = $('#test-link');
+            // on方法用来绑定一个事件，我们需要传入事件名称和对应的处理函数
+//            a.on('click', function () {
+//                alert('试试就试试！！！');
+//            });
+
+            // 简写  两者完全等价。我们通常用后面的写法
+            a.click(function () {
+                alert('hello');
+            })
+
+            /**
+             * jQuery能够绑定的事件主要包括:
+             *  鼠标事件:
+             *      click: 鼠标单击时触发；
+             *      dblclick：鼠标双击时触发；
+             *      mouseenter：鼠标进入时触发；
+             *      mouseleave：鼠标移出时触发；
+             *      mousemove：鼠标在DOM内部移动时触发；
+             *      hover：鼠标进入和退出时触发两个函数，相当于mouseenter加上mouseleave
+             *
+             *  键盘事件:
+             *      keydown：键盘按下时触发；
+             *      keyup：键盘松开时触发；
+             *      keypress：按一次键后触发。
+             *
+             *  其他事件:
+             *      focus：当DOM获得焦点时触发；
+             *      blur：当DOM失去焦点时触发；
+             *      change：当<input>、<select>或<textarea>的内容改变时触发；
+             *      submit：当<form>提交时触发；
+             *      ready：当页面被载入并且DOM树完成初始化后触发。
+             *
+             *   ready仅作用于document对象。由于ready事件在DOM完成初始化后触发，且只触发一次，所以非常适合用来写其他的初始化代码
+             * */
+
+            $(function () {
+                $('#testMouseMoveDiv').mousemove(function (e) {
+                    $('#testMouseMoveSpan').text('pageX = ' + e.pageX + ', pageY = ' + e.pageY);
+                });
+            });
+
+        </script>
+    </body>
+</html>

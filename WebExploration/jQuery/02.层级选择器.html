@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</head>
+<body>
+
+    <div class="testing">
+        <ul class="lang">
+            <li class="lang-javascript">JavaScript</li>
+            <li class="lang-python">Python</li>
+            <li class="lang-lua">Lua</li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+
+        // 找到 JavaScript
+        var js = $('ul.lang li.lang-javascript');
+        // 或者这样
+        var js1 = $('div.testing li.lang-javascript');
+
+        console.log(js);
+
+        // 选择所有的 <li>
+        $('ul.lang.li');
+
+        // 子选择器（Child Selector）
+        // 子选择器$('parent>child')类似层级选择器，但是限定了层级关系必须是父子关系，就是<child>节点必须是<parent>节点的直属子节点
+        $('ul.lang>li.lang-javascript');
+
+        // 过滤器（Filter）
+        // 过滤器一般不单独使用，它通常附加在选择器上，帮助我们更精确地定位元素
+        $('ul.lang li:first-child'); // 仅选出JavaScript
+        $('ul.lang li:last-child');// 仅选出Lua
+        $('ul.lang li:nth-child(2)'); // 选出第N个元素，N从1开始
+        $('ul.lang li:nth-child(even)'); // 选出序号为偶数的元素
+        $('ul.lang li:nth-child(odd)'); // 选出序号为奇数的元素
+
+        // 表单相关
+
+        // 选出可见的或隐藏的元素
+        $('div:visible'); // 所有可见的div
+        $('div:hidden'); // 所有隐藏的div
+    </script>
+
+</body>
+</html>

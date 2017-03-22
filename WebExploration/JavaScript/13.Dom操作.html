@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+    <style>
+        .test {
+            background-color: #ff5470;
+            width: 200px;
+            height: 300px;
+        }
+
+    </style>
+
+
+</head>
+    <body>
+        <div class="test">
+            <p id="p_id1">hello world!</p>
+            <p class="p_id">hello world!</p>
+            <p class="p_id">hello world!</p>
+        </div>
+
+        <p id="js">JavaScript</p>
+        <div id="list">
+            <p id="java">Java</p>
+            <p id="python">Python</p>
+            <p id="android">Android</p>
+        </div>
+
+        <script type="text/javascript">
+
+            /**
+             * 更新 Dom
+             * */
+            var p = document.getElementById("p_id1")
+            // innerHTML 不但可以修改一个DOM节点的文本内容，还可以直接通过HTML片段修改DOM节点内部的子树
+//            p.innerHTML = 'hahahhahhaha';
+            p.innerHTML = '<span style="color: blue">innerHTML修改DOM节点内部的子树</span>'
+//            修改innerText或textContent属性，这样可以自动对字符串进行HTML编码，保证无法设置任何HTML标签
+            p.innerText = 'ehhhhhhhhhhhhhh'
+
+            /**
+             * 插入DOM:
+             *      appendChild: 把一个子节点添加到父节点的最后一个子节点
+             *      insertBefore: 可以使用parentElement.insertBefore(newElement, referenceElement);，子节点会插入到referenceElement之前
+             * */
+            var
+                    js = document.getElementById("js");
+                    list = document.getElementById('list');
+            list.appendChild(js);
+
+            var
+                    ref = document.getElementById("python");
+                    haskell = document.createElement('p');
+            haskell.id = 'haskell';
+            haskell.innerText = 'Haskell';
+            list.insertBefore(haskell, ref);
+
+        </script>
+    </body>
+
+
+</html>
+
