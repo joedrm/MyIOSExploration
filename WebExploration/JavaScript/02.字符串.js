@@ -60,6 +60,6 @@ console.log(str2.indexOf('world')) ;
 str2.substring(0,5); // 从索引0开始到5（不包括5），返回'hello'
 str2.substring(6);   // 从索引7开始到结束，返回'world'
 
-console.log(str2.substring(0,5)); // hello
+u(str2.substring(0,5)); // hello
 console.log(str2.substring(6)); // world
 

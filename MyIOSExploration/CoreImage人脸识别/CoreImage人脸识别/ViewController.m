@@ -42,4 +42,9 @@
  https://github.com/shu223/AnimatedTransitionGallery
  
  https://github.com/FlexMonkey/CoreImageTransitionExplorer
+ 
+ http://1199game.com/2016/06/Beginning-Core-Image-in-iOS6/
+ 
+ http://colin1994.github.io/2016/10/21/Core-Image-Custom-Filter/  Core Image 之自定义 Filter~
+ http://colin1994.github.io/2016/10/21/Core-Image-OverView/
  */
