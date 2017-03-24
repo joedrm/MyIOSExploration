@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>伪类选择符</title>
+    <title>CSS选择器</title>
+
+    <style>
+
+        /* 伪类选择器
+        常用伪类选择器：
+            :link IE6+
+            :visited IE7+
+            :hover IE6中仅可用于链接
+            :active IE6/7中仅可用于链接
+            :enabled IE9+
+            :disabled IE9+
+            :checked IE9+
+            :first-child IE8+
+            :last-child IE9+
+            :nth-child(even) 可为 odd even 或数字 IE9+
+            :nth-last-child(n) n从 0 开始计算 IE9+
+            :only-child 仅选择唯一的元素 IE9+
+            :only-of-type IE9+
+            :first-of-type IE9+
+            :last-of-type IE9+
+            :nth-of-type(even) IE9+
+            :nth-last-of-type(2n) IE9+
+
+        不常用伪类选择器：
+            :empty 选中页面中无子元素的标签 IE9+
+            :root 选择 HTML 根标签 IE9+
+            :not() 参数为一般选择器 IE9+
+            :target 被锚点选中的目标元素 IE9+
+            :lang() 选中语言值为某类特殊值的元素 IE7+
+
+        NOTE：element:nth-of-type(n) 指父元素下第 n 个 element 元素，
+              element:nth-child(n) 指父元素下第 n 个元素且元素为 element，若不是，选择失败
+        */
+        /* 伪类属性定义有顺序要求！ */
+        a:link{
+            color: gray;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: green;
+        }
+        a:active{
+            color: orange;
+        }
+    </style>
 </head>
 <body>
 
+<br>
+<br>
+<div>
+    <a href="https:github.com/" title="Github">访问Github</a>
+</div>
 </body>
 </html>
