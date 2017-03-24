@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/SampleVideo_640x360.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/chengdu.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/盒模型.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/选择器.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/布局.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/表格.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/音视频标签.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/选择符/伪类选择符.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/选择符/元素选择符.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/选择符/关系选择符.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/选择符/属性选择符.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/html基本使用.html" afterPath="$PROJECT_DIR$/HTML/html基本使用.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/css资料.md" afterPath="$PROJECT_DIR$/CSS/css资料.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/选择器.html" afterPath="$PROJECT_DIR$/CSS/选择器.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/表格.html" afterPath="$PROJECT_DIR$/HTML/表格.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/音视频标签.html" afterPath="$PROJECT_DIR$/HTML/音视频标签.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript/JavaScript资料.md" afterPath="$PROJECT_DIR$/JavaScript/JavaScript资料.md" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,56 +34,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="css资料.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/css资料.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="选择器.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS/选择器.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
+            <state relative-caret-position="476">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="盒模型.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/盒模型.html">
+      <file leaf-file-name="关系选择符.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/选择符/关系选择符.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            <state relative-caret-position="459">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html资料.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/html资料.md">
+      <file leaf-file-name="属性选择符.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSS/选择符/属性选择符.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-221">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="伪类选择符.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/选择符/伪类选择符.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="元素选择符.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/选择符/元素选择符.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="表格.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML/表格.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaScript资料.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/JavaScript资料.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="47" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="47" />
+              <first_editor relative-caret-position="51">
+                <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -102,45 +118,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/test.html">
+      <file leaf-file-name="14.表单操作.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/14.表单操作.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html基本使用.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
+      <file leaf-file-name="13.Dom操作.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/13.Dom操作.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="132" column="106" selection-start-line="132" selection-start-column="106" selection-end-line="132" selection-end-column="106" />
-              <folding>
-                <element signature="n#style#0;n#h2#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#469#473#0" expanded="true" />
-                <element signature="e#474#478#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="表格.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HTML/表格.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1989">
-              <caret line="117" column="71" selection-start-line="117" selection-start-column="71" selection-end-line="117" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="音视频标签.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/音视频标签.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+            <state relative-caret-position="21">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -149,24 +141,14 @@
       <file leaf-file-name="布局.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/布局.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="-51">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="legacy.rnc" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/legacy.rnc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -220,20 +202,24 @@
         <option value="$PROJECT_DIR$/jQuery/07.动画.js" />
         <option value="$PROJECT_DIR$/jQuery/08.AJAX.html" />
         <option value="$PROJECT_DIR$/jQuery/10.underscore.html" />
-        <option value="$PROJECT_DIR$/JavaScript/JavaScript资料.md" />
         <option value="$PROJECT_DIR$/Node.js/Node.js资料.md" />
         <option value="$PROJECT_DIR$/jQuery/07.动画.html" />
-        <option value="$PROJECT_DIR$/CSS/css资料.md" />
         <option value="$PROJECT_DIR$/HTML/test.html" />
         <option value="$PROJECT_DIR$/JavaScript/02.字符串.js" />
         <option value="$PROJECT_DIR$/jQuery/09.扩展.html" />
         <option value="$PROJECT_DIR$/HTML/html基本使用.html" />
-        <option value="$PROJECT_DIR$/HTML/表格.html" />
         <option value="$PROJECT_DIR$/HTML/框架.html" />
         <option value="$PROJECT_DIR$/HTML/布局.html" />
-        <option value="$PROJECT_DIR$/HTML/音视频标签.html" />
-        <option value="$PROJECT_DIR$/CSS/选择器.html" />
         <option value="$PROJECT_DIR$/CSS/盒模型.html" />
+        <option value="$PROJECT_DIR$/HTML/表格.html" />
+        <option value="$PROJECT_DIR$/HTML/音视频标签.html" />
+        <option value="$PROJECT_DIR$/CSS/css资料.md" />
+        <option value="$PROJECT_DIR$/CSS/选择器.html" />
+        <option value="$PROJECT_DIR$/CSS/选择符/元素选择符.html" />
+        <option value="$PROJECT_DIR$/JavaScript/JavaScript资料.md" />
+        <option value="$PROJECT_DIR$/CSS/选择符/关系选择符.html" />
+        <option value="$PROJECT_DIR$/CSS/选择符/属性选择符.html" />
+        <option value="$PROJECT_DIR$/CSS/选择符/伪类选择符.html" />
       </list>
     </option>
   </component>
@@ -244,8 +230,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="487" />
-    <option name="y" value="33" />
+    <option name="x" value="553" />
+    <option name="y" value="47" />
     <option name="width" value="1530" />
     <option name="height" value="793" />
   </component>
@@ -325,7 +311,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HTML" />
+              <option name="myItemId" value="Node.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,13 +353,7 @@
       <recent name="$PROJECT_DIR$/HTML" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.选择器.html">
-    <configuration default="false" name="html基本使用.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/HTML/html基本使用.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="表格.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/HTML/表格.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.属性选择符.html">
     <configuration default="false" name="布局.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/HTML/布局.html">
       <method />
     </configuration>
@@ -367,6 +361,12 @@
       <method />
     </configuration>
     <configuration default="false" name="选择器.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/选择器.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="关系选择符.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/选择符/关系选择符.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="属性选择符.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/选择符/属性选择符.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -427,19 +427,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.html基本使用.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.表格.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.布局.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.音视频标签.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.选择器.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.布局.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.音视频标签.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.选择器.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.关系选择符.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.属性选择符.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.选择器.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.音视频标签.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.布局.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.表格.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.html基本使用.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.属性选择符.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.关系选择符.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.选择器.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.音视频标签.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.布局.html" />
       </list>
     </recent_temporary>
   </component>
@@ -463,18 +463,18 @@
       <workItem from="1490146945639" duration="26468000" />
       <workItem from="1490235594494" duration="598000" />
       <workItem from="1490251686965" duration="726000" />
-      <workItem from="1490320979345" duration="15003000" />
+      <workItem from="1490320979345" duration="20836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67896000" />
+    <option name="totallyTimeSpent" value="73729000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="487" y="33" width="1530" height="793" extended-state="0" />
-    <editor active="true" />
+    <frame x="553" y="47" width="1530" height="793" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12657389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12657389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -510,16 +510,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ImageSlider/lib/jquery-1.11.2.min.js" />
-    <entry file="file://$PROJECT_DIR$/ImageSlider/demo/style.css" />
-    <entry file="file://$PROJECT_DIR$/ImageSlider/demo/index.html" />
     <entry file="file://$PROJECT_DIR$/ImageSlider/src/style.css" />
     <entry file="file://$PROJECT_DIR$/ImageSlider/vmc.slider.effects.js" />
     <entry file="file://$PROJECT_DIR$/ImageSlider/vmc.slider.full.js" />
@@ -761,44 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/JavaScript资料.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="49" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="49" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/14.表单操作.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/13.Dom操作.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/legacy.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
@@ -829,18 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="132" column="106" selection-start-line="132" selection-start-column="106" selection-end-line="132" selection-end-column="106" />
-          <folding>
-            <element signature="n#style#0;n#h2#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#469#473#0" expanded="true" />
-            <element signature="e#474#478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -857,10 +797,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/盒模型.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1123">
+          <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#h2#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#469#473#0" expanded="true" />
+            <element signature="e#474#478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/音视频标签.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        <state relative-caret-position="545">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -868,8 +828,8 @@
     <entry file="file://$PROJECT_DIR$/CSS/css资料.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <first_editor relative-caret-position="51">
+            <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
             <folding />
           </first_editor>
           <second_editor />
@@ -887,26 +847,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/选择器.html">
+    <entry file="file://$PROJECT_DIR$/HTML/表格.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/盒模型.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="511">
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/布局.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="-51">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -916,10 +868,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/表格.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript/14.表单操作.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="71" selection-start-line="117" selection-start-column="71" selection-end-line="117" selection-end-column="71" />
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/13.Dom操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/选择器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/JavaScript资料.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="51">
+            <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/选择符/元素选择符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/选择符/关系选择符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/选择符/伪类选择符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/选择符/属性选择符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
           <folding />
         </state>
       </provider>

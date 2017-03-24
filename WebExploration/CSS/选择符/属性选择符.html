@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择符</title>
+</head>
+
+    <style>
+        /* E[att] */
+        a[class]{
+            color: #ff5470;
+        }
+
+        /* E[att="val"]
+            选择具有 att 属性且属性值等于 val 的 E 元素。
+         */
+        a[class="hexo"]{
+            color: aquamarine;
+        }
+
+        /* E[att~="val"]
+            选择具有 att 属性且属性值为以 val 开头的字符串的 E 元素。
+        */
+        li[class^='a']{
+            color: blueviolet;
+        }
+
+        /* E[att$="val"]
+            选择具有 att 属性且属性值为以 val 结尾的字符串的 E 元素。
+        */
+        li[class$='a']{
+            color: gold;
+        }
+
+        /* E[att*="val"]
+            选择具有 att 属性且属性值为包含 val 的字符串的E元素
+        */
+        li[class*='o']{
+            color: peru;
+        }
+
+        /* E[att|="val"]
+            择具有 att 属性，其值是以 val 开头并用连接符 "-" 分隔的字符串的E元素；如果值仅为 val，也将被选择。
+        */
+        li[class|='test3']{
+            color: #ff5470;
+        }
+
+    </style>
+
+<body>
+
+    <h3>E[att]</h3>
+    <ul>
+        <li><a href="?" class="external">外部链接</a></li>
+        <li><a href="?">内部链接</a></li>
+        <li><a href="?" class="external">外部链接</a></li>
+        <li><a href="?">内部链接</a></li>
+    </ul>
+
+    <br/>
+    <hr/>
+    <br/>
+    <h3>E[att="val"]</h3>
+    <ul>
+        <li><a href="?" class="hexo">外部链接</a></li>
+        <li><a href="?">内部链接</a></li>
+        <li><a href="?" class="hexo">外部链接</a></li>
+        <li><a href="?">内部链接</a></li>
+    </ul>
+
+    <br/>
+    <hr/>
+    <br/>
+    <h3>E[att~="val"]  E[att$="val"]  E[att*="val"]</h3>
+    <ul>
+        <li class="abc">列表项目</li>
+        <li class="acb">列表项目</li>
+        <li class="boc">列表项目</li>
+        <li class="bca">列表项目</li>
+        <li class="cab">列表项目</li>
+        <li class="cba">列表项目</li>
+    </ul>
+    <!-- E[att~="val"] 会选中 class = abc/acb 因为匹配到了 class 属性，且属性值以 a 开头-->
+    <!-- E[att$="val"] 会选中 class = bca/cba 因为匹配到了 class 属性，且属性值以 a 结尾-->
+    <!-- E[att*="val"] 会选中 class = boc 因为匹配到了 class 属性，包含 o 的字符串 -->
+
+
+    <br/>
+    <hr/>
+    <br/>
+    <h3>E[att|="val"]</h3>
+    <ul>
+        <li class="test1-abc">列表项目</li>
+        <li class="test2-abc">列表项目</li>
+        <li class="test3">列表项目</li>
+        <li class="test3-abc">列表项目</li>
+        <li class="test4-abc">列表项目</li>
+        <li class="test5-abc">列表项目</li>
+        <li class="test6-abc">列表项目</li>
+    </ul>
+</body>
+</html>
