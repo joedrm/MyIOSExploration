@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!--HTML音频
+        autostart - 设置加载该网页后其声音是否将立即开始。 可以具有true或false值。
+        loop - 设定其声音是否将永久重播。可以具有true或false值。
+        volume - 可以具有从1到100的任何值。
+    -->
+    <embed height="60" width="144" type="audio/midi" src="audio.mp3" volume="60" loop="false" autostart="false"/>
+
+    <br/>
+    <hr/>
+    <!--H5音频
+    目前最大的 音频 标签支持3种类型的音频文件：
+        mp3 - MIME-type audio/mpeg
+        wav - MIME-type audio/wav
+        ogg - MIME-type audio/ogg
+
+        autoplay 设置加载该网页后其声音是否将立即开始
+    -->
+    <audio controls loop="true" autoplay="false">
+        <source src="chengdu.mp3" type="audio/mpeg">
+        <source src="chengdu.mp3" type="audio/ogg">
+    </audio>
+
+    <br/>
+    <hr/>
+    <!--视频
+        两种方式：
+            第一种方法将是使用 <嵌入(embed)/>标签。这个标签并不需要一个结束/完成标签。它的工作原理，主要是，同为相片的标签。
+            第二种使用链接插入一个视频文件。
+    -->
+    <embed src="SampleVideo_640x360.mp4" autostart="true" height="360" width="640"/>
+
+    <br/>
+    <a href="SampleVideo_640x360.mp4" title="下载影片">下载Movie</a>
+
+    <!--嵌入标签的属性
+        autostart - 设置在页面加载之后是否该文件就会自动运行。 可以具有true或false值。
+        hidden - 设置其按钮是否隐藏。 可以具有true或false值。
+        volume - 可以具有从0到100的任何值
+        loop- 设置在完成之后是否该文件将被重播。 可以具有true或false值。
+        playcount - 这确立着文件将多少次被重播。 例如 playcount playcount="2" 意味着它会被重播两次，之后将停止。
+    -->
+    <br/>
+    <!--<object width="425" height="344" data="https://www.youtube.com/v/F9Bo89m2f6g&hl=en&fs=1"></object><br/>-->
+    <!--<embed src="https://www.youtube.com/v/F9Bo89m2f6g&hl=en&fs=1" allowfullscreen="true" width="425" height="344"><br/>-->
+    <!--<iframe width="425" height="344" src="https://www.youtube.com/v/F9Bo89m2f6g&hl=en&fs=1" frameborder="0" allowfullscreen></iframe>-->
+
+    <br/>
+    <hr/>
+    <!--HTML5视频标签
+    目前最大的 HTML5视频标签, 支持3种类型的视频文件：
+        mp4 - MIME-type video/mp4
+        webm - MIME-type video/webm
+        ogg - MIME-type video/ogg
+    -->
+    <video width="320" height="480" controls>
+        <source src="SampleVideo_640x360.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>

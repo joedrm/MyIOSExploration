@@ -6,8 +6,139 @@
 </head>
 <body>
 
-<div>
+    <!--标签-->
+    <p>我是标签</p>
+    <h2>我是h2标题</h2>
+    <i>我是斜体</i>
+    <b>我是加粗</b>
 
+    <!--属性-->
+    <p id="boldparagraph">标签的id属性</p>
+    <input type="text" name="TextField" placeholder="name属性">
+    <h2 title="我是一个title属性">一个随机标题</h2>
+    <h2 align="center" style="background-color: #ff5470">center属性</h2>
+
+    <!--段落 <p>-->
+    <p>段落是在文本编辑的一个基体单元。 对于一个段落的标签是 &lt;p&gt;.</p>
+    <p>它在文字的上下把一个空行，使之明显，而浏览器将照样采取它。</p>
+    <!--段落的对齐方式： justify  center  right-->
+    <p align="center">段落是在文本编辑里的一个基体单元。 对于一个段落的标签是 <p>. 它在文字的上下把一个空行，使之明显，而浏览器将照样采取它。</p>
+
+    <!--标题和饰顶-->
+    <h1 align="center">我是饰顶</h1>
+    <h2>我是h2标题</h2>
+    <h3>我是h3标题</h3>
+    <h4>我是h4标题</h4>
+    <h5>我是h5标题</h5>
+    <h6>我是h6标题</h6>
+
+    <!--换行符 <br/>-->
+    <p>
+        你好！<br/>
+        <br/>
+        <br/>
+        在这地方将会结束此行而它将回到另一个行,<br/>
+        让一个空白从段落到其它类似的一个 <br/>
+        <!--这里是分割线标签-->
+        <hr/>
+        <p> hello world! </p>
+
+    </p>
+
+    <hr />
+    <!--列表：
+            <ul> - 未排序的列表, bullets
+            <ol> - 有序的列表, numbers
+            <dl> - 定义列表
+    -->
+    <!--用你所要的任何号码启动你的列表-->
+    <ol start="2">
+        <li>未排序的列表</li>
+        <li>有序的列表</li>
+        <li>定义列表</li>
+    </ol>
+    <!--a/A/i/I-->
+    <ol type="a">
+        <li>未排序的列表</li>
+        <li>有序的列表</li>
+        <li>定义列表</li>
+    </ol>
+    <!--未排序列表:
+        三种类型： squares, bullets, and circles.
+        大多数浏览器所给予的标准值是bullets。
+    -->
+    <ul type="disc">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <!--定义列表-->
+    <dl>
+        <dd>iOS</dd>
+        <dd>Java</dd>
+        <dd>Android</dd>
+        <dd>Python</dd>
+    </dl>
+
+    <hr />
+    <!--文本格式-->
+    <p>实例 <b>粗体文本</b></p>
+    <p>实例 <em>强调文本</em></p>
+    <p>实例 <strong>强粗文本</strong></p>
+    <p>实例 <i>斜体文本</i></p>
+    <p>实例 <sup>超描述文本</sup></p>
+    <p>实例 <sub>部分描述子文本</sub></p>
+    <p>实例 <del>删除线文本</del></p>
+    <p>实例 <code>代码文本</code></p>
+
+    <hr/>
+    <!--字体和基础字体标签-->
+    <p>
+        <font size="5">这是字体的尺寸</font><br/>
+        <font color="red">这是字体的颜色</font><br/>
+        <!--字体脸部-->
+        <font face="Bookman Old Style, Book Antiqua, Garamond">
+            这个段拥有以字体面部属性格式化的它自己的字体。
+        </font>
+    </p>
+    <p>
+        <font size="7" face="Georgia, Arial" color="red">
+            C
+        </font>
+        自定义你的字体以达到所需的外观。
+    </p>
+
+
+    <hr/>
+    <!--链接：href
+        软禁 - 专门从页面放置（锚）>
+        局部 - 向来自同一个域的其他网页
+        全球 - 向其他的域，在此网站外部
+    -->
+    <!--target=
+            "_blank" 打开一个新窗口
+            "_self"	在同一个窗口中打开一个页面
+            "_parent" 在链接的上级框架中打开一个新页
+            "_top" 在取消所有框架的同一浏览器里打开新页
+    -->
+    <a href="https://github.com/" target="_blank" title="Github">Github</a><br/>
+    <!--锚: 被用来链接在同一页的两区段-->
+    <a href="#top">跳到页首</a><br/>
+    <a href="#text">了解文字链接</a><br/>
+    <a href="#email">了解电子邮件地址</a><br/>
+
+
+    <hr/>
+    <!-- 图片 -->
+    <img src="http://octhkpl4l.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt="我的二维码" width="200px" height="200px">
+    <!--图像的高度和宽度-->
+    <img src="http://octhkpl4l.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt="我的二维码" width="100px" height="100px">
+    <!--图片的对齐-->
+    <img align="right" src="http://octhkpl4l.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt="我的二维码" width="100px" height="100px">
+    <!--以链接使用图片-->
+    <a href="https://github.com/" title="Github">
+        <img src="http://octhkpl4l.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg" alt="我的二维码" width="100px" height="100px">
+    </a>
 
 </div>
 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3> 表格的使用 </h3>
+
+    <hr/>
+    <!-- 几个基本属性：
+        type - 建立了文本域的类型。例如：文本，发送或密码。
+        name - 提供对于在稍后的日期进一步参考的域名称。
+        size - 设置字域的大小。
+        maxlenght - 字符可键入的最大值。
+
+        method - 我们将使用“发送”的方法。这与不显示用户的细节插入信息的表单发送。
+        action - 这将被用于指定信息将被发送的URL。
+    -->
+    <form method="post" action="mailto:wf_pinbo@163.com">
+        Name:<input type="text" size="10" maxlength="40" name="name"/><br/>
+        Password:<input type="password" size="10" maxlength="10" name="password"/><br/>
+
+        <br/>
+        <input type="submit" value="Send"/>
+    </form>
+
+
+
+    <hr/>
+    <!--单选按钮-->
+    <form method="post" action="mailto:wf_pinbo@163.com">
+
+        <p>你喜欢穿什么样的鞋子？</p>
+
+        <label>Color:</label><br/>
+        <input type="radio" name="color" value="dark"/>Dark<br/>
+        <input type="radio" name="color" value="light"/>Dark<br/>
+
+        <br/>
+        <label>Size:</label><br/>
+        <input type="radio" name="color" value="small"/>Small<br/>
+        <input type="radio" name="color" value="average"/>Average<br/>
+        <input type="radio" name="color" value="big"/>Big<br/>
+
+        <!--复选框-->
+        <br/>
+        <input type="checkbox" name="shoes" value="black"/>简单的黑色<br/>
+        <input type="checkbox" name="shoes" value="white"/>简单的白色<br/>
+        <input type="checkbox" name="shoes" value="gray"/>简单的灰色<br/>
+        <input type="checkbox" name="shoes" value="black&white"/>黑色和白色<br/>
+        <input type="submit" value="提交的电子邮件"/>
+    </form>
+
+
+
+    <hr/>
+    <!--下拉式”菜单-->
+    <form method="post" action="mailto:wf_pinbo@163.com">
+
+        <p>教育程度？</p>
+        <select name="教育">
+            <option>挑选</option>
+            <option>高中</option>
+            <option>学院</option>
+            <option>博士学位</option>
+        </select>
+        <br/>
+        <input type="submit" value="提交的电子邮件"/>
+    </form>
+
+
+
+    <hr/>
+    <!--上载表单-->
+    <input type="hidden" name="MAX_FILE_SIZE" value="100"/><input name="file" type="file"/>
+
+
+
+    <hr/>
+    <!--文本区域, 注解-->
+    <form method="post" action="mailto:wf_pinbo@163.com">
+
+        <textarea rows="5" cols="20" wrap="物理上的" name="介绍">自我介绍
+        </textarea><br />
+        <input type="submit" value="提交"/>
+    </form>
+
+
+
+
+    <hr/>
+    <!--<table>表格
+        <tr> : 表格的行
+        <td> : 表格的列
+    -->
+    <table border="1">
+        <tr>
+            <td>Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 1</td>
+            <td>Row 2 Cell 2</td>
+        </tr>
+    </table>
+
+
+
+    <hr/>
+    <!--不对称表格
+        rowspan：横跨一个以上的行而使用
+        colspan：横跨一个以上的列
+
+        cellspacing：制定其边界尺寸
+        cellpadding：制定其边界与内容之间的距离
+    -->
+    <table border="1" cellpadding="10" cellspacing="0" bgcolor="#add8e6">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <!--从这里横跨 3 行-->
+        <tr>
+            <td rowspan="3">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+
+        <tr>
+            <td>Row 3 Cell 2</td>
+            <td>Row 3 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">Row 4 Cell 1</td>
+        </tr>
+    </table>
+
+
+
+    <hr/>
+    <!--不对称表格
+        rowspan：横跨一个以上的行而使用
+        colspan：横跨一个以上的列
+    -->
+</body>
+</html>
