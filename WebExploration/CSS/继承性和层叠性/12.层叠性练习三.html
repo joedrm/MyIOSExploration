@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        #box1 div.spec2 p, #box1 #box2 p{ /* selector1 */
+            color: blue;
+        }
+
+        #box1 #box3{  /* selector2 */
+            color: green;
+        }
+
+        /*
+        分析:
+            1. 并集选择器(分组选择器)要拆开算,不能合着算, 所以 selector1 需要拆开为两个选择器:
+                 #box1 .spec2 p{  权重为: 1 1 2
+
+                 }
+                 #box1 #box2 p{   权重为: 2 0 1
+
+                 }
+               选择器 selector2 权重为: 2 0 1 , 就显示最后面的
+         结果: green
+        */
+
+    </style>
+
+</head>
+<body>
+    <div class="spec1" id="box1">
+        <div class="spec2" id="box2">
+            <div class="spec3" id="box3">
+                <p> 猜猜我是什么颜色</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交集选择器</title>
+
+    <style type="text/css">
+
+        /* 交集选择器
+            IE7 开始兼容, IE6 不兼容
+            一般是以标签开头 比如: h3.special
+        */
+        h3.special{
+            color: red;
+        }
+
+        h3.special.jiaoji{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h3>我是标题</h3>
+    <h3 class="special jiaoji">我是标题</h3>
+    <h3 class="special">我是标题</h3>
+
+    <p class="special">我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+
+</body>
+</html>

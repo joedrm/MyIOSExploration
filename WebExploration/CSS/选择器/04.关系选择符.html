@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <title>关系选择符</title>
     <style>
-        /* 包含选择符
+        /* 包含选择符 也称后代选择器
+            描述的是祖先结构
             包含选择符将会命中所有符合条件的后代，包括儿子，孙子，孙子的孙子
         */
         .contain ul{
             color: red;
         }
 
+        /* 以下写法都是对的 */
+        /*.div1 .div3 p{*/
+            /*color: red;*/
+        /*}*/
+
+        /*div div div p{*/
+            /*color: red;*/
+        /*}*/
+
+        /*div .div2 div div p{*/
+            /*color: red;*/
+        /*}*/
+
+        /*div .div2 div p{*/
+            /*color: red;*/
+        /*}*/
+
+        /* 以下两种写法是错误的 */
+        /*.div2 .div1 .div3 .div4{*/
+            /*color: red;*/
+        /*}*/
+
+        /*div div .div4 div p{*/
+            /*color: red;*/
+        /*}*/
+
         /* 子选择符(E>F)
             子选择符只能命中子元素，而不能命中孙辈
+            IE6 不兼容, IE7 兼容
         */
         .parent>ul{
             background-color: darkgreen;
@@ -24,6 +52,7 @@
         /* 相邻选择符(E+F)
             与 兄弟选择符(E~F) 相同的是，相邻选择符也是选择同级的元素F；
             不同的是，相邻选择符只会命中符合条件的那个毗邻的兄弟元素（即紧挨着E元素之后的第一个F元素）
+            IE6 不兼容, IE7 开始兼容
          */
         .adjacent p + p{
             color: #f00;
@@ -53,6 +82,18 @@
             <li>Swift</li>
         </ul>
     </div>
+
+    <div class="div1">
+        <div class="div2">
+            <div class="div3">
+                <div class="div4">
+                    <p>我是什么颜色呢?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <br/>
     <hr/>

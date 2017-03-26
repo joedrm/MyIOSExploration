@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10.层叠性练习</title>
+
+    <style type="text/css">
+
+        #box1 .spec2 p{ /* selector1 */
+             color: red;
+         }
+
+        div div #box3 p{ /* selector2 */
+            color: green;
+        }
+
+        div.spec1 div.spec2 div.spec3{ /* selector3 */
+            color: blue;
+        }
+
+        /*
+        分析:
+                1. 首先看 p 标签是否被直接选中, 这一步淘汰掉 selector3
+                2. 比选中 p 标签的选择器权重 selector1 = 111 , selector2 = 103
+        结果: 显示的是 selector1
+        */
+    </style>
+</head>
+<body>
+
+    <div class="spec1" id="box1">
+        <div class="spec2" id="box2">
+            <div class="spec3" id="box3">
+                <p> 文字</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

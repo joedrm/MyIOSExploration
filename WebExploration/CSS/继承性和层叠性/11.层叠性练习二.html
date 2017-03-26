@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11.层叠性练习二</title>
+
+    <style type="text/css">
+
+        div p{ /* selector1 */
+            color: red;
+        }
+
+        #box{ /* selector2 */
+            color: blue;
+        }
+
+        /*
+        分析:
+            1. selector1 和 selector2 都没有直接选中,权重都是0
+            2. 就近原则,selector1 比 selector2 描述的近.
+        结果: red
+        */
+
+    </style>
+</head>
+<body>
+
+    <div id="box">
+        <p id="para" class="spec">
+            <span>文字</span>
+        </p>
+    </div>
+
+</body>
+</html>

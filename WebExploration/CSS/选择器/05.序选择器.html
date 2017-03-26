@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        /*ul li:first-child{*/
+            /*color: red;*/
+        /*}*/
+
+        /*ul li:last-child{*/
+            /*color: blue;*/
+        /*}*/
+        /*
+            但是以上写法在IE8 以下浏览器都不兼容, 所以有以下写法
+        */
+        ul li.first{
+            color: red;
+        }
+
+        ul li.last{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li class="first">项目</li>
+        <li>项目</li>
+        <li>项目</li>
+        <li>项目</li>
+        <li>项目</li>
+        <li class="last">项目</li>
+    </ul>
+
+</body>
+</html>

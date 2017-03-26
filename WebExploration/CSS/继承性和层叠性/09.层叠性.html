@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层叠性</title>
+
+    <style type="text/css">
+        /*
+         层叠性: 处理 CSS 冲突
+            下面的例子demo1中,我们可以分别数一下  id选择器的数量   类选择器的数量  标签选择器的数量
+                               第一个:         1               1              1
+                               第二个:         1               0              3
+                               第三个:         0               3              4
+            最终结果是: red
+
+            1. 当选择器,选择上了某个元素的时候(这一句比较重要),需要统计权重, 权重的从大到下的顺序: id选择器 > 类选择器 > 标签选择器
+            2. 实际上能进位, 255个标签 = 一个类名, 但是这样没有实际意义
+            3. 如果权重一样,谁在后面就显示谁的(以后出现为准)
+            4. 如果没有直接选中(即继承来的),权重为0  开始数权重之前,一定要看看是不是真的选中了文字所在的标签, 参考demo3
+            5. 如果权重都是0, 就不需要标签数量, 也不需要看谁在下面, 就按就近原则,就是谁描述的近就是显示谁的, 参考demo3
+            6. 所有的权重计算, 没有任何兼容问题, 即 IE6 也支持
+        */
+
+        /* demo1 */
+        #box1 .hezi2 p{   /* 111 */
+            color: red;
+        }
+        div div #box3 p{  /* 103 */
+            color: green;
+        }
+        div.hezi1 div.hezi2 div.hezi3 p{  /* 034 */
+            color: blue;
+        }
+
+        /* demo2 */
+        .nav ul li{ /*102*/
+            color: red;
+        }
+        /* 这里是不起作用的:
+            因为上面的权重是 102 大于这里的 010
+         */
+        .teshu{     /*010*/
+            color: blue;
+        }
+        /* 这里才是是正确的写法 */
+        .nav ul li.teshu{
+            color: blue;
+        }
+
+        /* demo3
+            结果是: green
+        */
+        /*#div1 #div2 #div3{ !* 因为没有直接选中'p'标签,所以这里的权重为0 *!*/
+            /*color: red;*/
+        /*}*/
+        /*p { !* 直接选中了'p'标签,权重为001 *!*/
+            /*color: green;*/
+        /*}*/
+
+        /* 还是demo3
+            如果权重都是0,就按就近原则,最终的结果为: red
+        */
+        #div3{ /* div3 描述得比 #div1 #div2 更接近 p 标签 */
+            color: red;
+        }
+        #div1 #div2{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- demo1 -->
+    <div class="hezi1" id="box1">
+        <div class="hezi2" id="box2">
+            <div class="hezi3" id="box3">
+                <p> 猜猜我是什么颜色</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--demo2-->
+    <div class="nav">
+        <ul>
+            <li class="teshu">文字</li>
+            <li>文字</li>
+            <li>文字</li>
+            <li>文字</li>
+            <li>文字</li>
+            <li>文字</li>
+        </ul>
+    </div>
+
+    <!--demo3-->
+    <div class="box" id="div1">
+        <div class="box" id="div2">
+            <div class="box" id="div3">
+                <p> 猜猜我是什么颜色?</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

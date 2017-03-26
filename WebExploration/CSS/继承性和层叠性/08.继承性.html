@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08.继承性和层叠性</title>
+
+    <style type="text/css">
+
+        /*继承性: 有些属性有继承性,如color,有些没有继承性,如border,从自己开始,到最小的子标签
+            能继承:
+                color
+                text- 开头的
+                line- 开头的
+                font- 开头的,
+            关于文字样式的都能继承,如果页面的文字 都是灰色,字体都是14,可以利用继承性
+
+            不能继承:
+        */
+        /*div{*/
+            /*color: blue;*/
+            /*border: 2px solid red;*/
+        /*}*/
+
+        /*
+            以下属性都可以继承
+        */
+        body{
+            color: red;
+            font-style: italic;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--<div>-->
+        <!--<p>我是段落</p>-->
+        <!--<p>我是段落</p>-->
+        <!--<p>我是段落</p>-->
+        <!--<p>我是段落</p>-->
+    <!--</div>-->
+
+    <div>
+        <div>我是文字
+            <div>
+                <div>我是文字
+                    <div>
+                        <ul>
+                            <li>我是文字</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
