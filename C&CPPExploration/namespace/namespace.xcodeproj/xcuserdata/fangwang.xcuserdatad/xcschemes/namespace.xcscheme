@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20D78CF61E77CF840000D5A1"
-               BuildableName = "C++ LearningTrip"
-               BlueprintName = "C++ LearningTrip"
-               ReferencedContainer = "container:C++ LearningTrip.xcodeproj">
+               BlueprintIdentifier = "20AE9B1E1E88A86D00C90A8B"
+               BuildableName = "namespace"
+               BlueprintName = "namespace"
+               ReferencedContainer = "container:namespace.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20D78CF61E77CF840000D5A1"
-            BuildableName = "C++ LearningTrip"
-            BlueprintName = "C++ LearningTrip"
-            ReferencedContainer = "container:C++ LearningTrip.xcodeproj">
+            BlueprintIdentifier = "20AE9B1E1E88A86D00C90A8B"
+            BuildableName = "namespace"
+            BlueprintName = "namespace"
+            ReferencedContainer = "container:namespace.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20D78CF61E77CF840000D5A1"
-            BuildableName = "C++ LearningTrip"
-            BlueprintName = "C++ LearningTrip"
-            ReferencedContainer = "container:C++ LearningTrip.xcodeproj">
+            BlueprintIdentifier = "20AE9B1E1E88A86D00C90A8B"
+            BuildableName = "namespace"
+            BlueprintName = "namespace"
+            ReferencedContainer = "container:namespace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20D78CF61E77CF840000D5A1"
-            BuildableName = "C++ LearningTrip"
-            BlueprintName = "C++ LearningTrip"
-            ReferencedContainer = "container:C++ LearningTrip.xcodeproj">
+            BlueprintIdentifier = "20AE9B1E1E88A86D00C90A8B"
+            BuildableName = "namespace"
+            BlueprintName = "namespace"
+            ReferencedContainer = "container:namespace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>C++ LearningTrip.xcscheme</key>
+		<key>namespace.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>43</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>20D78CF61E77CF840000D5A1</key>
+		<key>20AE9B1E1E88A86D00C90A8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
