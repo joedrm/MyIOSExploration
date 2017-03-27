@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>同一个标签多个类有冲突</title>
+
+    <style type="text/css">
+        /*同一个标签，携带了多个类名，有冲突
+            和在标签中的挂类名的书序无关，只和css的顺序有关
+        最终结果为：selector2，因为 selector2 在 selector1 后面
+        */
+        .spec1{ /* selector1 */
+            color: red;
+        }
+        .spec2{ /* selector2 */
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="spec1 spec2">文字</p>
+    <p class="spec2 spec2">文字</p>
+</body>
+</html>

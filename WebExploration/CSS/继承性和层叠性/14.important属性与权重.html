@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14.important属性与权重</title>
+
+    <style type="text/css">
+
+        /* -------------- demo1 -------------- */
+        p{  /* selector1 */
+            color: red !important; /* 只写了这一个!important，所以就字体颜色属性提升权重 */
+            font-size: 100px; /* 这条属性没有写!important，所以没有提升权重 */
+        }
+
+        .spec1{ /* selector2 */
+            color: blue;
+            font-size: 50px;
+        }
+
+        #p1{  /* selector3 */
+            color: green;
+            font-size: 20px;
+        }
+
+        /* -------------- demo2 -------------- */
+        div#div1{  /* selector4 */
+            color: brown !important;
+        }
+
+        li#li1{  /* selector5 */
+            color: gray;
+        }
+
+        /* -------------- demo3 -------------- */
+        div#div2{
+            color: orange;
+        }
+
+        ul#ul2{
+            color: gold;
+        }
+        /*
+        !important: 来给一个属性提高权重。这个属性的权重就是无穷大。
+
+                1. !important 提升的是一个属性，而不是一个选择器，
+                    如 demo1，只是 selector1 的 red 权重提高了，而 font-size 的权重并没有提升
+                    所以最终结果：字体颜色是 red（听 important 的）；字号是 50px（听 id 的）
+
+                2. !important 无法提升继承的权重，该是 0 还是 0
+                    如 demo2 中，由于 div 是通过继承性来影响文字颜色的，所以 !important 无法提升它的权重，权重依然是0。
+                    干不过 selector5 标签，因为 selector5 的 li 标签是实实在在选中了，所以字颜色是 gray （以 selector5 为准）。
+
+                3. !important 不影响就近原则,
+                    如 demo3 important 是不影响就近原则的
+
+        注意：! important做站的时候，不允许使用。因为会让css写的很乱
+        */
+
+    </style>
+</head>
+<body>
+
+    <!--demo1-->
+    <p id="p1" class="spec1">文字</p>
+
+    <!--demo2-->
+    <div id="div1">
+        <ul id="ul1">
+            <li id="li1">!important无法提升继承的权重</li>
+        </ul>
+    </div>
+
+    <!--demo3-->
+    <div id="div2">
+        <ul id="ul2">
+            <li id="li2">!important无法提升继承的权重</li>
+        </ul>
+    </div>
+
+</body>
+</html>
