@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        div{
+            width: 300px;
+            height: 300px;
+            _background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+</body>
+</html>
+
+<!--
+
+1. IE6 / IE7 不支持小于 12px 的盒子
+    解决办法：将盒子的字号设置小（小鱼盒子的高），如 0px
+    height: 4px
+    font-size: 0px
+
+2. 浏览器hack：就是使用浏览器提供的后门，针对某一种浏览器去做兼容
+    IE6留了一个后门，z只要给css设置属性之前，加上下划线，这个只是IE6专有的属性，
+        如: _backgroundColor: green
+
+3. 结合上面两条，解决微型盒子兼容的终极办法：
+    height: 8px
+    _font-size: 0px
+
+4. IE6 是不支持 overflow: hidden 来清楚浮动的，但是 溢出盒子的内容隐藏的功能IE6是支持的
+    解决办法：以毒攻毒，追加一条：_zoom: 1
+    overflow: hidden
+    _zoom: 1
+    _zoom 能触发浏览器的 hasLayout 机制，而且只有 IE6 有这个机制
+    但是高级浏览器不认识 _zoom 属性
+
+-->

@@ -2,29 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/16.标准文档流.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/17.块级元素和行级元素互换.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/19.浮动元素相互贴靠.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/23.清楚浮动方法三：隔墙法.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/24.清楚浮动方法四：内墙法.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/盒模型/15.padding.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/盒模型/16.border.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/project.pbxproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/ImageSliderEffect.xcscheme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/ImageSliderEffect.xcscheme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/25.清除浮动示例一.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/26.清除浮动示例二.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/27.溢出隐藏(overflow: hidden).html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/28.清除浮动方法五：overflow: hidden.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/29.清除浮动示例三.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/30.浏览器兼容问题.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/31.overflow: hidden的IE6兼容.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/32.margin的塌陷现象.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/33.margin属性.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CSS/浮动/23.清楚浮动方法三：隔墙法.html" afterPath="$PROJECT_DIR$/CSS/浮动/23.清除浮动方法三：隔墙法.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CSS/浮动/24.清楚浮动方法四：内墙法.html" afterPath="$PROJECT_DIR$/CSS/浮动/24.清除浮动方法四：内墙法.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/CALayer及核心动画/CALayer及核心动画/CAShapeLayer各种实例/CAShapeLayerViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/CALayer及核心动画/CALayer及核心动画/CAShapeLayer各种实例/CAShapeLayerViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/contents.xcworkspacedata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/Runtime消息机制/Runtime消息机制/ViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/Runtime消息机制/Runtime消息机制/ViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/Talk About iOS Performance Optimization/Talk About iOS Performance Optimization/OptimizationMainVC.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/Talk About iOS Performance Optimization/Talk About iOS Performance Optimization/OptimizationMainVC.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/WDYLibrary/WDYLibrary/WDYLibraryHeader.pch" afterPath="$PROJECT_DIR$/../MyIOSExploration/WDYLibrary/WDYLibrary/WDYLibraryHeader.pch" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html" afterPath="$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html" afterPath="$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,101 +39,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="15.padding.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/盒模型/15.padding.html">
+      <file leaf-file-name="24.清除浮动方法四：内墙法.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/24.清除浮动方法四：内墙法.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1153">
-              <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+            <state relative-caret-position="48">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="16.border.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/盒模型/16.border.html">
+      <file leaf-file-name="27.溢出隐藏(overflow: hidden).html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/27.溢出隐藏(overflow: hidden).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="17.块级元素和行级元素互换.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/17.块级元素和行级元素互换.html">
+      <file leaf-file-name="28.清除浮动方法五：overflow: hidden.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/28.清除浮动方法五：overflow: hidden.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+            <state relative-caret-position="357">
+              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="18.脱离标准流之浮动.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html">
+      <file leaf-file-name="31.overflow: hidden的IE6兼容.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/31.overflow: hidden的IE6兼容.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71">
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="253">
+              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="19.浮动元素相互贴靠.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/19.浮动元素相互贴靠.html">
+      <file leaf-file-name="29.清除浮动示例三.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/29.清除浮动示例三.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="782">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20.浮动元素&quot;自围&quot;.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html">
+      <file leaf-file-name="30.浏览器兼容问题.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/30.浏览器兼容问题.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+            <state relative-caret-position="610">
+              <caret line="44" column="3" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="21.清除浮动方法一：设置高度.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html">
+      <file leaf-file-name="32.margin的塌陷现象.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/32.margin的塌陷现象.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="270">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="23.清楚浮动方法三：隔墙法.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/23.清楚浮动方法三：隔墙法.html">
+      <file leaf-file-name="33.margin属性.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/33.margin属性.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="610">
+              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="24.清楚浮动方法四：内墙法.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/24.清楚浮动方法四：内墙法.html">
+      <file leaf-file-name="25.清除浮动示例一.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/25.清除浮动示例一.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+            <state relative-caret-position="99">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="22.清除浮动方法二：clear: both.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html">
+      <file leaf-file-name="26.清除浮动示例二.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/26.清除浮动示例二.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="31" selection-start-line="27" selection-start-column="12" selection-end-line="30" selection-end-column="31" />
+            <state relative-caret-position="68">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -163,20 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HTML/test.html" />
-        <option value="$PROJECT_DIR$/JavaScript/02.字符串.js" />
-        <option value="$PROJECT_DIR$/jQuery/09.扩展.html" />
-        <option value="$PROJECT_DIR$/HTML/html基本使用.html" />
-        <option value="$PROJECT_DIR$/HTML/框架.html" />
-        <option value="$PROJECT_DIR$/HTML/布局.html" />
-        <option value="$PROJECT_DIR$/CSS/盒模型.html" />
-        <option value="$PROJECT_DIR$/HTML/表格.html" />
-        <option value="$PROJECT_DIR$/HTML/音视频标签.html" />
-        <option value="$PROJECT_DIR$/CSS/css资料.md" />
-        <option value="$PROJECT_DIR$/CSS/选择器.html" />
-        <option value="$PROJECT_DIR$/JavaScript/JavaScript资料.md" />
-        <option value="$PROJECT_DIR$/CSS/选择符/属性选择符.html" />
-        <option value="$PROJECT_DIR$/CSS/选择符/伪类选择符.html" />
         <option value="$PROJECT_DIR$/CSS/选择符/元素选择符.html" />
         <option value="$PROJECT_DIR$/CSS/选择符/后代选择器.html" />
         <option value="$PROJECT_DIR$/CSS/选择符/关系选择符.html" />
@@ -204,7 +182,6 @@
         <option value="$PROJECT_DIR$/CSS/浮动/16.标准文档流.html" />
         <option value="$PROJECT_DIR$/CSS/浮动/17.块级元素和行级元素互换.html" />
         <option value="$PROJECT_DIR$/CSS/浮动/19.浮动元素相互贴靠.html" />
-        <option value="$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html" />
         <option value="$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html" />
         <option value="$PROJECT_DIR$/CSS/浮动/21.清楚浮动.html" />
         <option value="$PROJECT_DIR$/CSS/浮动/21.清除浮动.html" />
@@ -213,7 +190,22 @@
         <option value="$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html" />
         <option value="$PROJECT_DIR$/CSS/浮动/23.清楚浮动方法三：隔墙法.html" />
         <option value="$PROJECT_DIR$/CSS/盒模型/16.border.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html" />
         <option value="$PROJECT_DIR$/CSS/浮动/24.清楚浮动方法四：内墙法.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/25.清楚浮动示例一.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/25.清除浮动示例一.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/26.清除浮动示例二.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/23.清除浮动方法三：隔墙法.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/24.清除浮动方法四：内墙法.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/27.溢出隐藏(overflow: hidden).html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/28.overflow: hidden偏方.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/28.清除浮动方法五：overflow: hidden.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/31.overflow: hidden的IE6兼容.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/30.浏览器兼容问题.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/32.margin的塌陷现象.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/29.清除浮动示例三.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/33.margin属性.html" />
       </list>
     </option>
   </component>
@@ -224,10 +216,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="24" />
-    <option name="width" value="1438" />
-    <option name="height" value="840" />
+    <option name="y" value="23" />
+    <option name="width" value="1452" />
+    <option name="height" value="858" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -314,24 +305,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="浮动" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -349,29 +322,30 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/技术/大前端/传智web/02. CSS/day03/CSS第3天案例和笔记" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CSS/浮动" />
+      <recent name="$PROJECT_DIR$/HTML" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CSS/继承性和层叠性" />
       <recent name="$PROJECT_DIR$/HTML" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/HTML" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.24.清楚浮动方法四：内墙法.html">
-    <configuration default="false" name="20.浮动元素&quot;自围&quot;.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/20.浮动元素&quot;自围&quot;.html">
+  <component name="RunManager" selected="JavaScript Debug.33.margin属性.html">
+    <configuration default="false" name="29.清除浮动示例三.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/29.清除浮动示例三.html">
       <method />
     </configuration>
-    <configuration default="false" name="21.清除浮动方法一：设置高度.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/21.清除浮动方法一：设置高度.html">
+    <configuration default="false" name="30.浏览器兼容问题.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/30.浏览器兼容问题.html">
       <method />
     </configuration>
-    <configuration default="false" name="22.清除浮动方法二：clear: both.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/22.清除浮动方法二：clear: both.html">
+    <configuration default="false" name="31.overflow: hidden的IE6兼容.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/31.overflow: hidden的IE6兼容.html">
       <method />
     </configuration>
-    <configuration default="false" name="23.清楚浮动方法三：隔墙法.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/23.清楚浮动方法三：隔墙法.html">
+    <configuration default="false" name="32.margin的塌陷现象.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/32.margin的塌陷现象.html">
       <method />
     </configuration>
-    <configuration default="false" name="24.清楚浮动方法四：内墙法.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/24.清楚浮动方法四：内墙法.html">
+    <configuration default="false" name="33.margin属性.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/33.margin属性.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -432,19 +406,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.20.浮动元素&quot;自围&quot;.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.21.清除浮动方法一：设置高度.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.22.清除浮动方法二：clear: both.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.23.清楚浮动方法三：隔墙法.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.24.清楚浮动方法四：内墙法.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.29.清除浮动示例三.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.30.浏览器兼容问题.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.31.overflow: hidden的IE6兼容.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.32.margin的塌陷现象.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.33.margin属性.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.24.清楚浮动方法四：内墙法.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.23.清楚浮动方法三：隔墙法.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.22.清除浮动方法二：clear: both.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.21.清除浮动方法一：设置高度.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.20.浮动元素&quot;自围&quot;.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.33.margin属性.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.32.margin的塌陷现象.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.31.overflow: hidden的IE6兼容.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.30.浏览器兼容问题.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.29.清除浮动示例三.html" />
       </list>
     </recent_temporary>
   </component>
@@ -471,18 +445,18 @@
       <workItem from="1490320979345" duration="21017000" />
       <workItem from="1490442032202" duration="11874000" />
       <workItem from="1490578972427" duration="14613000" />
-      <workItem from="1490664919017" duration="16004000" />
+      <workItem from="1490664919017" duration="26034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116401000" />
+    <option name="totallyTimeSpent" value="126431000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="24" width="1438" height="840" extended-state="0" />
+    <frame x="0" y="23" width="1452" height="858" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23712067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1453529" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -521,64 +495,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jQuery/07.动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/04.DOM操作.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="66" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/02.字符串.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/10.underscore.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/09.扩展.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/legacy.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/框架.html" />
-    <entry file="file://$PROJECT_DIR$/HTML/音视频标签.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/表格.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2516">
@@ -856,42 +772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/浮动/19.浮动元素相互贴靠.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="31" selection-start-line="27" selection-start-column="12" selection-end-line="30" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -912,18 +796,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/23.清楚浮动方法三：隔墙法.html">
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="320">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/24.清楚浮动方法四：内墙法.html">
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/23.清除浮动方法三：隔墙法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/24.清除浮动方法四：内墙法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/26.清除浮动示例二.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/25.清除浮动示例一.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/27.溢出隐藏(overflow: hidden).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/31.overflow: hidden的IE6兼容.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/28.清除浮动方法五：overflow: hidden.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/30.浏览器兼容问题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="44" column="3" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/32.margin的塌陷现象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/29.清除浮动示例三.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/33.margin属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
           <folding />
         </state>
       </provider>

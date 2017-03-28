@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>26.清除浮动示例二</title>
+
+    <style type="text/css">
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .content{
+            width: 900px;
+            margin: 0 auto;
+            background-color: yellow;
+        }
+
+        .content .ad{
+            float: left;
+            width: 100px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .content .news{
+            float: left;
+            width: 600px;
+        }
+        /*
+            至此会发现 父容器content 的背景颜色 yellow 没有显示出来，
+            原因是 子元素都设置了浮动之后，不能撑出父容器content 的高度
+        */
+
+        /*
+            使用内墙发之后，至此父容器content才有了高度，而且高度是根据子元素高度自适应，背景颜色 yellow也显示出来
+        */
+        .cl{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="ad"></div>
+        <div class="news">
+            内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+            内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+            内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+            内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+            内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+            内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+        </div>
+        <div class="cl"></div>
+    </div>
+
+</body>
+</html>

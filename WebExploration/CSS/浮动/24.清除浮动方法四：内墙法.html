@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>24.清楚浮动方法四：内墙法</title>
+    <title>24.清除浮动方法四：内墙法</title>
 
     <style type="text/css">
         /*
-            清楚浮动方法三：内墙法
+            清除浮动方法三：内墙法
             和隔墙法的区别？
-
+                既可以 清除浮动，还能将父元素的高度撑出来，让父元素完整地包住子元素
+                而 隔墙法 不能办到，因为隔墙法的子元素都是浮动，浮动的子元素是不能撑出父元素的高度
         */
 
         *{
             margin: 0px;
             padding: 0px;
+        }
+
+        .box1{
+            background-color: blueviolet;
         }
 
         li{
@@ -26,6 +31,7 @@
         .cl{
             clear: both;
         }
+
         .h16{
             height: 16px;
         }
@@ -40,6 +46,10 @@
             <li>CSS</li>
             <li>JavaScript</li>
         </ul>
+        <!-- 内墙法
+            既可以清除浮动，还能将父元素的高度撑出来
+            此时 box1 的高度就有了
+         -->
         <div class="cl h16"></div>
     </div>
 

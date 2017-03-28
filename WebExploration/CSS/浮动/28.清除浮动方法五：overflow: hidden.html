@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>28.overflow: hidden偏方</title>
+
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box1{
+            /*height: 400px;*/
+            width: 400px;
+            border: 5px solid #5dffa8;
+            /*  overflow: hidden 直接给 自己撑出了高度*/
+            overflow: hidden;
+        }
+        .p1{
+            float: left;
+            width: 100px;
+            height: 150px;
+            background-color: red;
+        }
+
+        .p2{
+            float: left;
+            width: 100px;
+            height: 300px;
+            background-color: yellow;
+        }
+
+        .p3{
+            float: left;
+            width: 100px;
+            height: 190px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p class="p1"></p>
+        <p class="p2"></p>
+        <p class="p3"></p>
+    </div>
+</body>
+</html>

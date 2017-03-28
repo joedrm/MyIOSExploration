@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>32.margin的塌陷现象</title>
+
+    <style type="text/css">
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .p1{
+            width: 300px;
+            height: 300px;
+            background-color: #5dffa8;
+            margin-bottom: 30px;
+        }
+
+        .p2{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin-top: 50px;
+        }
+
+        /*
+            运行之后会发现，两个盒子之间 和 间距 还是 30px
+            结论：标准文档流中，竖直方向 上的 margin 是不叠加的，以较大的为准，所以间距是 50px
+                30px 称为塌陷在 50px中，称为塌陷现象。
+                而水平方向是没有这个现象。
+            注意：不是标准流中（即都浮动了） 没有塌陷现象。
+        */
+
+    </style>
+</head>
+<body>
+
+    <p class="p1"></p>
+    <p class="p2"></p>
+</body>
+</html>

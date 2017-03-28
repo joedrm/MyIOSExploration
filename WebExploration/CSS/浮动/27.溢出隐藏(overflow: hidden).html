@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>27.溢出隐藏(overflow: hidden)</title>
+
+    <style type="text/css">
+
+        /*
+          设置 overflow: hidden 把溢出盒子的内容隐藏，也可以清楚盒子外面的文字
+          但是可以做偏方：
+            当一个父元素不能被 浮动的子元素撑出高度的时候，将父元素设置为 overflow: hidden 之后
+            父元素就可以被撑出高度了
+        */
+        div{
+            width: 300px;
+            height: 200px;
+            background-color: navajowhite;
+            border: 3px solid red;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>溢出隐藏(overflow: hidden)溢出隐藏(overflow: hidden)溢出隐藏(overflow: hidden)溢出隐藏(overflow: hidden)
+        溢出隐藏(overflow: hidden)溢出隐藏(overflow: hidden)溢出隐藏(overflow: hidden)溢出隐藏(overflow: hidden)
+        <img src="http://octhkpl4l.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg?imageView2/2/w/80/h/80"/>
+    </div>
+
+
+
+</body>
+</html>

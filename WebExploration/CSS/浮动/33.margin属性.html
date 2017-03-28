@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin 属性</title>
+
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* 上下为0， 左右为auto 也是居中
+                1. 但是使用这个：0 auto时必须要设置 width。
+                2. 只有标准流中，0 auto才会居中。
+                3. 当一个盒子浮动了、绝对定位、相对定位了，就不能使用 0 auto。
+                4. 0 auto是居中盒子，并不是内部文本居中。文本居中使用：text-algn: center。
+        */
+        div.div1{
+            width: 100px;
+            height: 100px;
+            background-color: #5dffa8;
+
+            /*同时设置 margin-left 和 margin-right 盒子就会居中*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+
+            margin: 0 auto;
+        }
+
+        /*******************************************/
+        /* 设置 子元素 与 父元素 的间距的做法*/
+        /* 做法一 利用margin
+
+            这个例子中，p 设置 margin-top 踹 父元素时，父元素只有设置 边框后才有效果
+            即：border: 1px solid black;
+
+            但是，开发中我们一般不会使用 margin 来实现 子元素 与 父元素 的间距
+            margin 是 用来描述 兄弟控件 之间的间距
+
+        */
+        /*
+        div.div2{
+            width: 400px;
+            height: 400px;
+            background-color: #5dffa8;
+            border: 1px solid black;
+        }
+        p{
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: #ff5470;
+        }*/
+
+        /*做法二*/
+        div.div2{
+            width: 400px;
+            /* 当设置了 padding-top 之后，需要 将原来的 height - padding-top
+                即：400px - 20px = 380px
+             */
+            height: 380px;
+            padding-top: 20px;
+            background-color: #5dffa8;
+        }
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: #ff5470;
+        }
+
+        /*******************************************/
+        /*
+          关于 margin 浏览器兼容问题
+        */
+
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+
+    <div class="div2">
+        <p></p>
+    </div>
+</body>
+</html>
