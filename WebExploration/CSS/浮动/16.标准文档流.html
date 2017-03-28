@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标准文档流</title>
+
+    <style type="text/css">
+
+        h1{
+            width: 200px;
+            height:100px;
+            background-color: yellow;
+        }
+
+        span{
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    标准文档流：等级森严
+        有哪些性质？
+        1. 空白折叠现象
+        2. 高矮不齐，底部对齐，不管是文字还是图片
+        3. 自动换行，一行显示不完，会换行显示
+
+    HTML 标签分类：
+        文本级：p、span、a、b、i、u、em
+        容器级：div、h系列、li、dt、dd
+
+    CSS 的标签分类 和上面很相似，
+    标准文档流分为两种元素：
+        基本所有 文本级 标签都是 行内元素，
+        所有的 容器级 标签都是 块级元素，
+        除了 p 是 文本级，但是 p 是 块级元素
+
+    块级元素：
+        特点：霸占一行，可设置宽高，不设置宽度时为父块的宽度
+
+    行内元素：
+        特点：不能设置宽高，默认是文字的宽度
+    -->
+    <h1>块级元素</h1>
+    <h1>块级元素</h1>
+
+    <span>行内元素</span>
+    <span>行内元素</span>
+</body>
+</html>

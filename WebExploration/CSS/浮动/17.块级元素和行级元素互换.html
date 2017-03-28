@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17.块级元素和行级元素互换</title>
+    <style type="text/css">
+
+        /*
+            display：显示模式
+            一旦给一个块级元素标签设置了
+            display: inline 就会变成 行内元素标签
+
+            display 一般写在第一行
+        */
+        div{
+            display: inline;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        /*
+            display: block 让行内元素变为块级元素
+        */
+        span{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>我是一个Div</div>
+    <div>我是一个Div</div>
+
+    <span>我是一个span标签</span>
+    <br />
+    <span>我是一个span标签</span>
+</body>
+</html>

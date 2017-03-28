@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>padding</title>
+
+    <style type="text/css">
+
+        /*
+           1. padding 区域是有背景颜色，
+        */
+        div#div1{
+            height: 100px;
+            width: 100px;
+            padding: 30px;
+            border: red solid 5px;
+            background-color: antiquewhite;
+        }
+
+        /* 2. 小属性
+            可以单独设置每一个方向，这种属性叫小属性。
+            如果不写其中一个，比如不写 padding-left 就没有 padding-left
+        */
+        div#div2{
+            height: 200px;
+            width: 200px;
+            padding-left: 30px; /*左*/
+            padding-right: 50px; /*右*/
+            padding-bottom: 20px; /*底部*/
+            padding-top: 40px; /*顶部*/
+            border: red solid 5px;
+        }
+
+        /* 3.综合属性
+            3.1 中间空格隔开，顺序是：上 右 下 左，
+                 如 padding: 40px 50px 30px 80px;
+        */
+        div#div3{
+            height: 200px;
+            width: 200px;
+            padding: 20px 50px 20px 50px;
+            border: red solid 5px;
+        }
+
+        /* 3.1 综合属性，如果只写三个值的时候，
+            如 padding: 20px 50px 30px;
+                        上    右    下   ？(这时的左边和右边一样，也是 50px)
+        */
+        div#div4{
+            height: 200px;
+            width: 200px;
+            padding: 20px 50px 30px;
+            border: red solid 5px;
+        }
+
+        /* 3.1 综合属性，如果只写两个值的时候，
+            如 padding: 20px 50px;
+                        上    右    ？(和上一样，20px)   ？(和右一样，50px)
+        */
+        div#div5{
+            height: 200px;
+            width: 200px;
+            padding: 20px 30px;
+            border: red solid 5px;
+        }
+
+        /*
+            4. 小属性可以层叠大属性，但是 小属性 写在 大属性 前面是没有效果，比如这样：
+                padding-left: 50px;
+                padding: 20px;
+                上面这样是没有效果的。
+        */
+        div#div6{
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+            padding-left: 50px;  /*这里的小属性层叠掉上面设置的大属性 */
+            border: red solid 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+        padding 区域是有背景颜色，
+    </div>
+
+    <div id="div2">
+        可以单独设置每一个方向，这种属性叫小属性。
+        如果不写其中一个，比如不写 padding-left 就没有 padding-left
+    </div>
+
+    <div id="div3">
+        综合属性，如果只写三个值的时候，
+        如 padding: 20px 50px 30px;
+        上    右    下   ？(这时的左边和右边一样，也是 50px)
+    </div>
+
+    <div id="div4">
+        综合属性，如果只写三个值的时候，
+        如 padding: 20px 50px 30px;
+        上    右    下   ？(这时的左边和右边一样，也是 50px)
+    </div>
+
+    <div id="div5">
+        综合属性，如果只写两个值的时候，
+        如 padding: 20px 50px;
+        上    右    ？(和上一样，20px)   ？(和右一样，50px)
+    </div>
+
+    <div id="div6">
+        小属性层叠大属性
+    </div>
+</body>
+</html>

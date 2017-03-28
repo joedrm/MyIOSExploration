@@ -45,6 +45,10 @@
          https://github.com/NianJi/NJCycleScrollView  可循环的scrollView
  
  
+ 话题三：内存优化
+ 参考资料：https://github.com/Magic-Unique/HXImage/blob/master/description.md 关于UIImage的内存问题与解决方案
+ 
+ 
  AsyncDisplayKit
  https://gold.xitu.io/post/58bea6ca570c3500622e0ca9  AsyncDisplayKit介绍（一）原理和思路
  https://bawn.github.io/2016/12/AsyncDisplayKit/

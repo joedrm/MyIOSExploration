@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22.清除浮动(clear both)</title>
+
+    <style type="text/css">
+        /* 问题：能不能不设置高度，就把浮动清楚了呢？
+           解决：可以，使用 clear: both 属性
+           意思是清楚别人对我的影响
+
+           但是，此方法有一个致命的问题？
+           margin 失效了
+          */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box2{
+            clear: both;  /* 这里是给 第二个盒子设置 clear: both 属性 */
+            margin-top: 10px; /* 这里设置 margin 是没有效果的*/
+            background-color: antiquewhite;
+        }
+
+        li{
+            float: left;
+            width: 90px;
+            height: 40px;
+            background-color: gold;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <ul>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</div>
+
+<div class="box2">
+    <ul>
+        <li>Android</li>
+        <li>iOS</li>
+        <li>Python</li>
+        <li>PHP</li>
+    </ul>
+</div>
+
+</body>
+</html>

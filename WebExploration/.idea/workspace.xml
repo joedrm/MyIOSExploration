@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../PHPExploration/README.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/继承性和层叠性/08.继承性.html" afterPath="$PROJECT_DIR$/CSS/继承性和层叠性/08.继承性.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/16.标准文档流.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/17.块级元素和行级元素互换.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/19.浮动元素相互贴靠.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/23.清楚浮动方法三：隔墙法.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/浮动/24.清楚浮动方法四：内墙法.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/盒模型/15.padding.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/盒模型/16.border.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/ImageSliderEffect.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/ImageSliderEffect.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/ImageSliderEffect/ImageSliderEffect.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/CALayer及核心动画/CALayer及核心动画/CAShapeLayer各种实例/CAShapeLayerViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/CALayer及核心动画/CALayer及核心动画/CAShapeLayer各种实例/CAShapeLayerViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/contents.xcworkspacedata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/Runtime消息机制/Runtime消息机制/ViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/Runtime消息机制/Runtime消息机制/ViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/Talk About iOS Performance Optimization/Talk About iOS Performance Optimization/OptimizationMainVC.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/Talk About iOS Performance Optimization/Talk About iOS Performance Optimization/OptimizationMainVC.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/WDYLibrary/WDYLibrary/WDYLibraryHeader.pch" afterPath="$PROJECT_DIR$/../MyIOSExploration/WDYLibrary/WDYLibrary/WDYLibraryHeader.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,116 +47,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="08.继承性.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/08.继承性.html">
+      <file leaf-file-name="15.padding.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/盒模型/15.padding.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="1153">
+              <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="09.层叠性.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/09.层叠性.html">
+      <file leaf-file-name="16.border.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/盒模型/16.border.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+            <state relative-caret-position="221">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01.变量.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript/01.变量.js">
+      <file leaf-file-name="17.块级元素和行级元素互换.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/17.块级元素和行级元素互换.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="544">
+              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="08.AJAX.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/08.AJAX.html">
+      <file leaf-file-name="18.脱离标准流之浮动.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="-71">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="10.层叠性练习一.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/10.层叠性练习一.html">
+      <file leaf-file-name="19.浮动元素相互贴靠.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/19.浮动元素相互贴靠.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="493">
+              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="11.层叠性练习二.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/11.层叠性练习二.html">
+      <file leaf-file-name="20.浮动元素&quot;自围&quot;.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="21.清除浮动方法一：设置高度.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="30" />
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="12.层叠性练习三.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/12.层叠性练习三.html">
+      <file leaf-file-name="23.清楚浮动方法三：隔墙法.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/23.清楚浮动方法三：隔墙法.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="14">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="13.同一个标签多个类有冲突.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/13.同一个标签多个类有冲突.html">
+      <file leaf-file-name="24.清楚浮动方法四：内墙法.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/24.清楚浮动方法四：内墙法.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            <state relative-caret-position="629">
+              <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="14.important属性与权重.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/14.important属性与权重.html">
+      <file leaf-file-name="22.清除浮动方法二：clear: both.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="510">
+              <caret line="30" column="31" selection-start-line="27" selection-start-column="12" selection-end-line="30" selection-end-column="31" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="day02 - 选择器.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/note/day02 - 选择器.md">
-          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="340">
-                <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
-                <folding />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -156,20 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JavaScript/13.Dom操作.html" />
-        <option value="$PROJECT_DIR$/JavaScript/14.表单操作.html" />
-        <option value="$PROJECT_DIR$/jQuery/01.选择器.html" />
-        <option value="$PROJECT_DIR$/jQuery/02.层级选择器.html" />
-        <option value="$PROJECT_DIR$/jQuery/03.查找和过滤.html" />
-        <option value="$PROJECT_DIR$/jQuery/DOM操作.html" />
-        <option value="$PROJECT_DIR$/jQuery/04.DOM操作.html" />
-        <option value="$PROJECT_DIR$/jQuery/05.修改DOM结构.html" />
-        <option value="$PROJECT_DIR$/jQuery/06.事件.html" />
-        <option value="$PROJECT_DIR$/jQuery/07.动画.js" />
-        <option value="$PROJECT_DIR$/jQuery/08.AJAX.html" />
-        <option value="$PROJECT_DIR$/jQuery/10.underscore.html" />
-        <option value="$PROJECT_DIR$/Node.js/Node.js资料.md" />
-        <option value="$PROJECT_DIR$/jQuery/07.动画.html" />
         <option value="$PROJECT_DIR$/HTML/test.html" />
         <option value="$PROJECT_DIR$/JavaScript/02.字符串.js" />
         <option value="$PROJECT_DIR$/jQuery/09.扩展.html" />
@@ -203,10 +196,24 @@
         <option value="$PROJECT_DIR$/CSS/选择符/09.层叠性.html" />
         <option value="$PROJECT_DIR$/CSS/选择器/02.交集选择器.html" />
         <option value="$PROJECT_DIR$/CSS/继承性和层叠性/13.同一个标签多个类有冲突.html" />
-        <option value="$PROJECT_DIR$/CSS/继承性和层叠性/14.important属性与权重.html" />
         <option value="$PROJECT_DIR$/CSS/选择器/04.关系选择符.html" />
         <option value="$PROJECT_DIR$/CSS/继承性和层叠性/08.继承性.html" />
         <option value="$PROJECT_DIR$/CSS/继承性和层叠性/09.层叠性.html" />
+        <option value="$PROJECT_DIR$/CSS/继承性和层叠性/14.important属性与权重.html" />
+        <option value="$PROJECT_DIR$/CSS/盒模型/15.padding.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/16.标准文档流.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/17.块级元素和行级元素互换.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/19.浮动元素相互贴靠.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/21.清楚浮动.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/21.清除浮动.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/21.清除浮动(设置高度).html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/22.清除浮动(clear both).html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/23.清楚浮动方法三：隔墙法.html" />
+        <option value="$PROJECT_DIR$/CSS/盒模型/16.border.html" />
+        <option value="$PROJECT_DIR$/CSS/浮动/24.清楚浮动方法四：内墙法.html" />
       </list>
     </option>
   </component>
@@ -217,10 +224,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
-    <option name="y" value="23" />
-    <option name="width" value="1434" />
-    <option name="height" value="808" />
+    <option name="x" value="-11" />
+    <option name="y" value="24" />
+    <option name="width" value="1438" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -275,8 +282,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -305,76 +310,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="note" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Node.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jQuery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="CSS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -393,12 +328,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="继承性和层叠性" />
+              <option name="myItemId" value="浮动" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,20 +358,20 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.09.层叠性.html">
-    <configuration default="false" name="12.层叠性练习三.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/继承性和层叠性/12.层叠性练习三.html">
+  <component name="RunManager" selected="JavaScript Debug.24.清楚浮动方法四：内墙法.html">
+    <configuration default="false" name="20.浮动元素&quot;自围&quot;.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/20.浮动元素&quot;自围&quot;.html">
       <method />
     </configuration>
-    <configuration default="false" name="13.同一个标签多个类有冲突.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/继承性和层叠性/13.同一个标签多个类有冲突.html">
+    <configuration default="false" name="21.清除浮动方法一：设置高度.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/21.清除浮动方法一：设置高度.html">
       <method />
     </configuration>
-    <configuration default="false" name="14.important属性与权重.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/继承性和层叠性/14.important属性与权重.html">
+    <configuration default="false" name="22.清除浮动方法二：clear: both.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/22.清除浮动方法二：clear: both.html">
       <method />
     </configuration>
-    <configuration default="false" name="04.关系选择符.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/选择器/04.关系选择符.html">
+    <configuration default="false" name="23.清楚浮动方法三：隔墙法.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/23.清楚浮动方法三：隔墙法.html">
       <method />
     </configuration>
-    <configuration default="false" name="09.层叠性.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/继承性和层叠性/09.层叠性.html">
+    <configuration default="false" name="24.清楚浮动方法四：内墙法.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/24.清楚浮动方法四：内墙法.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -495,19 +432,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.12.层叠性练习三.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.13.同一个标签多个类有冲突.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.14.important属性与权重.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.04.关系选择符.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.09.层叠性.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.20.浮动元素&quot;自围&quot;.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.21.清除浮动方法一：设置高度.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.22.清除浮动方法二：clear: both.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.23.清楚浮动方法三：隔墙法.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.24.清楚浮动方法四：内墙法.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.09.层叠性.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.04.关系选择符.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.14.important属性与权重.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.13.同一个标签多个类有冲突.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.12.层叠性练习三.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.24.清楚浮动方法四：内墙法.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.23.清楚浮动方法三：隔墙法.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.22.清除浮动方法二：clear: both.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.21.清除浮动方法一：设置高度.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.20.浮动元素&quot;自围&quot;.html" />
       </list>
     </recent_temporary>
   </component>
@@ -534,17 +471,18 @@
       <workItem from="1490320979345" duration="21017000" />
       <workItem from="1490442032202" duration="11874000" />
       <workItem from="1490578972427" duration="14613000" />
+      <workItem from="1490664919017" duration="16004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100397000" />
+    <option name="totallyTimeSpent" value="116401000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="23" width="1434" height="808" extended-state="6" />
+    <frame x="-11" y="24" width="1438" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21019109" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23712067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -552,7 +490,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -583,71 +521,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JavaScript/12.面向对象.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/01.选择器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/03.查找和过滤.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/02.层级选择器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/05.修改DOM结构.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/07.动画.js" />
-    <entry file="file://$PROJECT_DIR$/jQuery/06.事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node.js/Node.js资料.md" />
-    <entry file="file://$PROJECT_DIR$/JavaScript/03.数组.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="120" column="39" selection-start-line="120" selection-start-column="39" selection-end-line="120" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/05.Map和Set.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/07.动画.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
@@ -750,19 +623,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/css资料.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/选择符/10.层叠性二.html" />
     <entry file="file://$PROJECT_DIR$/CSS/选择器/01.元素选择符.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,7 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,7 +657,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -805,14 +666,12 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="56" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -822,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,7 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-629">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,13 +716,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/08.继承性.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="442">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding />
         </state>
@@ -879,11 +732,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="1490602881000" expanded="true" signature="550:581" ph="{...}" />
-              <marker date="1490602881000" expanded="true" signature="595:716" ph="{...}" />
-              <marker date="1490602881000" expanded="true" signature="2476:2494" ph="{...}" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -892,13 +741,9 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="340">
+          <first_editor relative-caret-position="3247">
             <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
-            <folding>
-              <marker date="1490602881000" expanded="true" signature="550:581" ph="{...}" />
-              <marker date="1490602881000" expanded="true" signature="595:716" ph="{...}" />
-              <marker date="1490602881000" expanded="true" signature="2476:2494" ph="{...}" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -914,23 +759,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/08.AJAX.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="935">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/09.层叠性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/10.层叠性练习一.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
+        <state relative-caret-position="136">
           <caret line="8" column="39" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="39" />
           <folding />
         </state>
@@ -946,7 +783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/12.层叠性练习三.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="476">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
@@ -962,8 +799,131 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/14.important属性与权重.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="543">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/css资料.md">
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/09.层叠性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/16.标准文档流.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/17.块级元素和行级元素互换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/19.浮动元素相互贴靠.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="31" selection-start-line="27" selection-start-column="12" selection-end-line="30" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/盒模型/16.border.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/盒模型/15.padding.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1153">
+          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/23.清楚浮动方法三：隔墙法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/浮动/24.清楚浮动方法四：内墙法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
           <folding />
         </state>
       </provider>

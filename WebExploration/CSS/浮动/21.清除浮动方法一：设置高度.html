@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21.清除浮动方法一：设置高度</title>
+
+    <style type="text/css">
+
+        /* 设置高度来清除浮动 */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div{
+
+            height: 80px;
+            background-color: antiquewhite;
+        }
+
+        li{
+            float: left;
+            width: 90px;
+            height: 40px;
+            background-color: gold;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        /*
+            清除浮动的三个方法：
+                1. 给要浮动的元素的祖先元素设置高度，有高度的容器，才会关注浮动
+                    但是实际开发过程中，很少设置高度，因为可以被内容撑高
+                2. 使用 clear: both 属性
+        */
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+            <li>Android</li>
+            <li>iOS</li>
+            <li>Python</li>
+            <li>PHP</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border</title>
+    <style type="text/css">
+
+        /*
+         border 的综合属性：style比较稳定属性如下：dotted solid dashed;
+        */
+        /*div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }*/
+
+        /*
+            border 大属性也是可以拆开的
+        */
+        /*div{
+            width: 200px;
+            height: 200px;
+            border-width: 10px;
+            border-color: aqua;
+            border-style: solid;
+        }*/
+
+        /*
+            也可按要素拆开
+         */
+        /*div{
+            width: 200px;
+            height: 200px;
+            border-width: 10px 20px 5px 15px;
+            border-color: red green blue gray;
+            border-style: solid dashed dotted double;
+        }*/
+
+        /* 还可以按方向拆开 */
+        /*div{
+            width: 200px;
+            height: 200px;
+            border-top: 10px solid red;
+            border-right: 10px solid green;
+            border-bottom: 10px solid blue;
+            border-left: 10px solid gray;
+        }*/
+
+        /* 把可以把每个方向每个要素拆开 */
+        div{
+            width: 200px;
+            height: 200px;
+
+            border-top-width: 10px;
+            border-top-color: red;
+            border-top-style: solid;
+
+            border-right-width: 10px;
+            border-right-color: red;
+            border-right-style: solid;
+
+            border-bottom-width: 10px;
+            border-bottom-color: red;
+            border-bottom-style: solid;
+
+            border-left-width: 10px;
+            border-left-color: red;
+            border-left-style: solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div>border 属性示例</div>
+
+</body>
+</html>

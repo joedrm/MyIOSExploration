@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>24.清楚浮动方法四：内墙法</title>
+
+    <style type="text/css">
+        /*
+            清楚浮动方法三：内墙法
+            和隔墙法的区别？
+
+        */
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li{
+            float: left;
+            width: 90px;
+            height: 40px;
+            background-color: gold;
+            text-align: center;
+        }
+        .cl{
+            clear: both;
+        }
+        .h16{
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <ul>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <div class="cl h16"></div>
+    </div>
+
+    <div class="box2">
+        <ul>
+            <li>Android</li>
+            <li>iOS</li>
+            <li>Python</li>
+            <li>PHP</li>
+        </ul>
+    </div>
+
+</body>
+</html>

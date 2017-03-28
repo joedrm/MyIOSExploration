@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18.脱离标准流之浮动</title>
+
+    <style type="text/css">
+        /*
+        脱离标准流之浮动
+            目的：由于块级元素可以设置宽高，但是不能并排，
+                 而行内元素能并排，不可以设置宽高。
+                 所以，要脱离标准文档流，让标签既能并排，又可以设置宽高
+            手段：
+                浮动
+                绝对定位
+                相对定位
+        */
+
+        /*
+        浮动：
+            两个元素 并排了，并且都可以设置宽度和高度
+        浮动要学好，需要知道三要素：
+            脱标
+            贴靠
+            自围
+        使用原则：一定要成对浮动，不能单独一个标签设置浮动
+        */
+        /* demo1 */
+        .div1{
+            float: left;
+            width: 300px;
+            height: 400px;
+            background-color: yellowgreen;
+        }
+
+        .div2{
+            float: left;
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+        }
+
+        /* demo2
+            selector1：设置了向左浮动
+            selector2：没有设置浮动
+            box2 会直接显示在 box1 的底部， 因为 box2 没有脱离标准文档流
+        */
+        .box1{  /* selector1 */
+            float: left;
+            width: 50px;
+            height: 50px;
+            background-color: #ff5470;
+        }
+
+        .box2{  /* selector2 */
+            width: 80px;
+            height: 80px;
+            background-color: antiquewhite;
+        }
+
+        /* demo3
+            标签只要设置了浮动，就不需要转成块级标签，就可以设置宽高。
+            所以标签就不用区分行内和块级了。
+         */
+        span{
+            float: left;
+            /*display: block; 这里就不需要设置了 */
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <!--demo1-->
+    <div class="div1"></div>
+    <div class="div2"></div>
+
+    <!--demo2-->
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <!--demo3-->
+    <span>我说span标签</span>
+    <span>我说span标签</span>
+    <span>我说span标签</span>
+    <span>我说span标签</span>
+
+
+</body>
+</html>

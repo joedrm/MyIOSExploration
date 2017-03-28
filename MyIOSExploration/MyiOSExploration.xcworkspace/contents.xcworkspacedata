@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ImageSliderEffect/ImageSliderEffect.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Mac&#x5f00;&#x53d1;&#x5b66;&#x4e60;/Mac&#x5f00;&#x53d1;&#x5b66;&#x4e60;.xcodeproj">
    </FileRef>
    <FileRef
