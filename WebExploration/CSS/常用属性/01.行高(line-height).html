@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行高(line-height)</title>
+
+    <style type="text/css">
+
+        /*
+        为了保证字在行里面居中显示, 行高 字号 一般是偶数,它们的差就是偶数,可以被 2 整除
+        单行文字居中显示,让 line-height = 内容的height
+        多行文本需要设置盒子的padding 来处理文字居中
+
+        font: 14px/30px "宋体";
+        等价于:
+            line-height: 30px;
+            font-size: 14px;
+            font-family: "宋体";
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        p{
+            width: 500px;
+            height: 190px;
+            border: 1px solid red;
+            margin: 100px;
+            /*line-height: 30px;*/
+            /*font-size: 14px;*/
+            /*font-family: "宋体";*/
+            /*
+                上面的三居等价于下面一句
+            */
+            font: 14px/30px "宋体";
+            padding-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高
+        行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高
+        行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高</p>
+
+</body>
+</html>
