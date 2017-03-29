@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位</title>
+
+    <style type="text/css">
+        /*
+        相对定位: 就是微调元素位置的。
+            让 元素 相对 自己原来的位置，进行位置调整
+
+        关键特点：不脱标，老家留坑，形影分离
+            相对定位不脱标，真实位置是在老家，只不过影子出去了，可以到处飘
+
+        相对定位有坑，所以一般不用于做“压盖”效果。页面中，效果极小。就两个作用：
+            1） 微调元素
+            2） 做绝对定位的参考，子绝父相（讲绝对定位的时候说）
+
+        相对定位的定位值
+            可以用left、right来描述盒子右、左的移动；
+            可以用top、bottom来描述盒子的下、上的移动。
+
+        */
+        div{
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1{
+            background-color: red;
+        }
+
+        .box2{
+            background-color: yellowgreen;
+
+            /* 相对于自己原来的位置来定位
+                让自己的影子向右移动 100px，向下移动150px
+                而自己真实的位置 还是在原来的地方
+             */
+            position: relative;
+            left: 400px;
+            top: 50px;
+        }
+
+        .box3{
+            background-color: #5dffa8;
+        }
+
+        /*****************************************/
+        /* 相对定位的作用： 微调元素
+         */
+        .txt{
+            font-size: 20px;
+        }
+
+        .btn{
+            position: relative;
+            top: -5px;  /* 向上移动 5px */
+            left: 0px;  /* 左边不变 */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+    <br/>
+    <hr/>
+    <p>
+         <input type="text" class="txt"/>
+        <input type="button" value="我是一个按钮！" class="btn">
+    </p>
+</body>
+</html>

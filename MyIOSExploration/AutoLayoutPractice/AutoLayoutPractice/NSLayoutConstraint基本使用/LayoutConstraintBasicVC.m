@@ -111,6 +111,8 @@
     
     // 添加左边约束
     NSLayoutConstraint* redView_leftCon = [NSLayoutConstraint constraintWithItem:redView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1.0 constant:20];
+    // 给约束添加优先级
+//    redView_leftCon.priority = UILayoutPriorityDefaultHigh;
     [self.view addConstraint:redView_leftCon];
     
     // 添加顶部约束

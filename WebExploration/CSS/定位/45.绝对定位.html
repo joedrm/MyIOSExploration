@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+
+    <style type="text/css">
+
+        /*
+        absolute: 绝对定位
+
+        绝对定位的盒子，是脱离标准文档流的。所以，所有的标准文档流的性质，绝对定位之后都不遵守了。
+        绝对定位之后，标签就不区分所谓的行内元素、块级元素了，不需要display:block;就可以设置宽、高了：
+
+        绝对定位的参考点，如果用top描述，那么定位参考点就是页面的左上角，而不是浏览器的左上角；
+        如果用bottom描述，那么就是浏览器首屏窗口尺寸，对应的页面的左下角；
+
+        */
+        div{
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1{
+            background-color: red;
+        }
+
+        .box2{
+            background-color: yellowgreen;
+            position: absolute;
+            left: 400px;
+            top: 50px;
+        }
+
+        .box3{
+            background-color: #5dffa8;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

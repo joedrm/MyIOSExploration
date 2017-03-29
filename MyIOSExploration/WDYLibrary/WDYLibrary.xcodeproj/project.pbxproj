@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		207C4E351E7FE6F90099DDC2 /* github.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C4E341E7FE6F90099DDC2 /* github.m */; };
+		20B99F2A1E8BB211004D1B3D /* Github in Resources */ = {isa = PBXBuildFile; fileRef = 20B99F291E8BB211004D1B3D /* Github */; };
 		20D514A81E12640A000FBD5D /* WDYLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D514A61E12640A000FBD5D /* WDYLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20D514B61E12657D000FBD5D /* UIView+SetRect.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D514B41E12657D000FBD5D /* UIView+SetRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20D514B71E12657D000FBD5D /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D514B51E12657D000FBD5D /* UIView+SetRect.m */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		207C4E341E7FE6F90099DDC2 /* github.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = github.m; sourceTree = "<group>"; };
+		20B99F291E8BB211004D1B3D /* Github */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Github; sourceTree = "<group>"; };
 		20D514A31E12640A000FBD5D /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D514A61E12640A000FBD5D /* WDYLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYLibrary.h; sourceTree = "<group>"; };
 		20D514A71E12640A000FBD5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				20D514B31E126561000FBD5D /* Extentions */,
 				20D514A61E12640A000FBD5D /* WDYLibrary.h */,
 				20D514BC1E12676B000FBD5D /* WDYLibraryHeader.pch */,
-				207C4E341E7FE6F90099DDC2 /* github.m */,
+				20B99F291E8BB211004D1B3D /* Github */,
 				20D514A71E12640A000FBD5D /* Info.plist */,
 			);
 			path = WDYLibrary;
@@ -166,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B99F2A1E8BB211004D1B3D /* Github in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +179,6 @@
 			files = (
 				20D514BB1E1266E4000FBD5D /* BaseTestDataTableVC.m in Sources */,
 				20E4BB0B1E163960003DB263 /* BaseViewController.m in Sources */,
-				207C4E351E7FE6F90099DDC2 /* github.m in Sources */,
 				20D514B71E12657D000FBD5D /* UIView+SetRect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

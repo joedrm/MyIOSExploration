@@ -58,9 +58,12 @@
  
  https://my.oschina.net/w11h22j33/blog/208574  iOS中AutoLayout自动布局流程及相关方法
  
+ http://www.pluto-y.com/ios-layout-guides-autolayout/  iOS适配之旅——Autolayout时代
+ 
  第三方库：
  https://github.com/netyouli/WHC_AutoLayoutKit 
  
+ https://github.com/PureLayout/PureLayout  轻量级布局框架，没有再加入一套自己的语法，而是以Category的形式辅助苹果已有的NSLayoutConstraint那套东西，体积小，写起来更底层同时也不乏可读性。
  http://www.cnblogs.com/kenshincui/p/6441179.html iOS开发tips-UIScrollView的Autlayout布局
  */
 

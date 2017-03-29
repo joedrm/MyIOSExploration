@@ -2,3 +2,4 @@
 - [廖雪峰JavaScript教程(排版更好一些)](http://www.shouce.ren/api/view/a/13866)
 - [airen/jsStudy](https://github.com/airen/jsStudy) 拿来练手的案例
 - [javascript手册](http://www.itshipin.com/book/javascript/)
+- [JavaScript半知半解](http://www.kancloud.cn/dennis/tgjavascript)

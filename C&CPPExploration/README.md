@@ -7,6 +7,7 @@
 - [C++基础教程](http://c.biancheng.net/cpp/biancheng/cpp/rumen/)
 - [W3School C++ 教程](https://wizardforcel.gitbooks.io/w3school-cpp/content/)
 - [《深入理解C指针》笔记](https://laoshuterry.gitbooks.io/noteofcpointer/content/Chapter01.html)
+- [吕涛C语言开发系列](http://www.kancloud.cn/digest/lvtao_program_c/222966)
 
 ## 算法
 - [算法练习](https://github.com/loyinglin/Codeforces)

@@ -1,15 +1,10 @@
 #用之前一定要注意License
 #也最好先看看Github页面
 
-
-
-
-
-
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - -系统基础库
 {
-#pragma mark Category/Util
+    #pragma mark Category/Util
     sstoolkit       '一套Category类型的库,附带很多自定义控件 功能不错～' //Addon已lu View没动，文档很好值得参考
     cocoa-helpers   '一些Cocoa的扩展 3年前的工程' //东西不多，已lu
     CoconutKit      '一系列扩展和一些自定东西' //大部分是自定义的View和Controller等过程 已lu
@@ -40,9 +35,9 @@
     sskeychain      '访问keychain 支持iOS Mac'
     // tapkulibrary 这里面也有不少category
     // three20      也有
-    
-    
-#pragma mark 基础功能
+
+
+    #pragma mark 基础功能
     mediaextract    '纯C的一些常用媒体文件的解析读取'
     objection       '一个估计是java写多了的人搞的。。注解依赖注入之类的'
     HTKit           '一票乱七八糟的东西'
@@ -58,8 +53,8 @@
     MTMigration     '版本升时执行一次'
     MTControl       'jQuery风格touch事件绑定'
     storage         '快速、县城安全的I/O存储操作'
-    
-#pragma mark 框架/封装
+
+    #pragma mark 框架/封装
     three20         'facebook的开源库 很多东西'
     nimbus          'three20替代品 增强型库,添加了很多默认没有的功能，很杂很多'
     BeeFramework    '一款MVC框架 附带调试工具'
@@ -72,8 +67,8 @@
     KZPropertyMapper '一个Model的封装,类JSON'
     BlockInjection  '为某个方法注入一个Block 类似AOP'
     NSObject-ObjectMap 'JSON和XML包装到Object'
-    
-#pragma mark 功能/封装
+
+    #pragma mark 功能/封装
     MKStoreKit      'iAP用的库'
     CargoBay        '一个包装iAP StoreKit的库'
     QuincyKit       '处理crach信息的库 只有上架应用才能用 支持Mac'
@@ -93,7 +88,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - - 网络
 {
-#pragma mark 基础
+    #pragma mark 基础
     AFNetworking        '很棒的HTTP库 用的人最多
     AFIncrementalStore  '把AFNetworking持久化
     asi-http-request    '一个HTTP库
@@ -108,17 +103,17 @@
     XMPPFramework       'XMPP客户端的库～ 支持Mac
     CocoaHTTPServer     '一个轻量的HTTP Server 支持Mac
     SocketRocket        'WebSocket客户端～'
-    
-    
-#pragma mark JSON
+
+
+    #pragma mark JSON
     JSONKit         '两个文件,性能在第三方中最好
     json-framework  'SBJson 用得广泛的JSON
     TouchJSON       '又一个JSON库
     yajl-objc       '一个JSON库 可以支持流解析 支持Mac
     JSONModel       '一个构建JSON Model的工具和库
-    
-    
-#pragma mark XML/Html
+
+
+    #pragma mark XML/Html
     MWFeedParser    'Feed/Atom解析
     RSSKit          'RSS Atom解析
     ElementParser   '提供Html和XML的解析
@@ -132,8 +127,8 @@
     MMMarkdown      '一个渲染Markdown到HTML的小引擎
     Ashton          '在NSAttrbuteString和Html之间转换
     XMLParser       'XML解析成json～'
-    
-#pragma mark 功能性
+
+    #pragma mark 功能性
     EGOImageLoading '下载使用网络图片的库
     SDWebImage      '在UIImage加的分类,用于获取网络图片
     GroundControl   '一个通过远程plist改变配置的库
@@ -143,8 +138,8 @@
     Harpy           '新版本更新提醒
     ShareKit2       '同ShareKit 有些新东西
     DataKit         '以类似CoreData的Model 来获取网络资源
-    
-#pragma mark SDK
+
+    #pragma mark SDK
     facebook-ios-sdk 'Facebook的API 挺多东西
     MGTwitterEngine '一套Twtter库
     Twitter-OAuth-iPhone 'Twitter的OAuth功能
@@ -156,7 +151,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - - 音频
 {
-    
+
     novocaine           '一个声音库 录音放音 页面上有CoreAudio的教程链接'
     TheAmazingAudioEngine '一个声音库 包装了CoreAudio'
     AudioStreamer       '音频流播放库 支持Mac'
@@ -178,7 +173,7 @@
     modizer             '!!!超强大的App 可以读取和演奏各种mod音乐 合成 解压 下载 自带庞大音乐库'
     octave              '一个免费的音效库 包括48个UI音效'
     RBDMuteSwitch       '在iOS5上检测是否静音'
-        
+
     sfArkLib            '转换sfArk和sf2的库 很简单'
     sfArkXTm            '简单解压sfArk的一个cpp'
     unsfark             '和上面sfArkXTm一样，是老一点的纯C版本'
@@ -201,7 +196,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - - 图像
 {
-#pragma mark GPU OpenGL
+    #pragma mark GPU OpenGL
     GPUImage        '很棒的GPU图像处理'
     XBImageFilters  '一个GPU实时处理的库 类似GPUImage'
     CeedGL          '一个OpenGL的包装 用起来更方便'
@@ -214,8 +209,8 @@
     EarthView       '显示3D地形图 用OpenGL'
     CoreAR          '一个挺有意思的AR'
     VRToolKit       '一个虚拟现实的库'
-    
-#pragma mark 图像处理
+
+    #pragma mark 图像处理
     NYXImagesKit        '一套图像处理的库 加在UIImage上'
     ios-image-filters   'UIImage扩展 类似PS的功能 用CoreImage'
     vImageCategory      'UIImage扩展 简单的一些处理'
@@ -246,8 +241,8 @@
     DSGraphicsKit       '支持图片常见处理 视图控制3D等'
     uiimage-from-animated-gif '显示gif'
     cam                 '一个AVFoundation的封装、照相等功能'
-    
-#pragma mark 颜色
+
+    #pragma mark 颜色
     uicolor-utilities   'UIColor扩展和色板'
     color               '一系列UIColor扩展'
     ColorUtils          '一个UIColor扩展'
@@ -266,8 +261,8 @@
     Colours-for-iOS     '提供不少常用色 和几个方法'
     ColorArt            '类似iTunes的 取一幅图画的主要背景颜色等 (这是个Mac功能 需要尝试iOS)'
 
-    
-#pragma mark 绘图库
+
+    #pragma mark 绘图库
     iOSPlot             '画饼图/折线图的库 用CA'
     Core-Animation-Pie-Chart '用CA画饼图 示例'
     ADGraphView         '一个CG绘画库 股票曲线演示'
@@ -284,15 +279,15 @@
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - - 动画/效果
 {
-#pragma mark CA
+    #pragma mark CA
     CA360                       '一套完整的CA动画Demo'
     Core-Animation-Fun-House    '一套CA动画展示Demo'
     Core-Animation-Demos        '一套CA动画Demo'
     EnterTheMatrix              'CA动画演示Demo'
     ftutils                     '一套CA的Util库 有一些常用动画'
     Dazzle                      '用CA实现的各种有趣的粒子效果'
-    
-#pragma mark 动画曲线
+
+    #pragma mark 动画曲线
     NSBKeyframeAnimation        '那些jQuery带的动画速率曲线'
     CAAnimation-EasingEquations '一些CA没有的动画曲线'
     UIView-EasingFunctions      'UIView的动画曲线~~'
@@ -301,7 +296,7 @@
     Parallax                    'iOS7的景深背景动画效果 一般..'
     MTAnimation                 '25种动画曲线~~~'
 
-#pragma mark 常见动画
+    #pragma mark 常见动画
     BCGenieEffect               '和Mac里最小化的效果～～'
     iCarousel                   '一套类似CoverFlow的动画,非常棒,可选多样式! 可用于Mac'
     OpenFlow                    '类似CoverFlow的效果 挺老的工程 支持Mac'
@@ -331,15 +326,15 @@
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - - 控件
 {
-    
-#pragma mark HUD
+
+    #pragma mark HUD
     MBProgressHUD               '一个HUD 用得很广泛 无阴影 全屏模态'
     MBProgressHUD-fock-matej    '和MBHUD一样 但有更新 添加了BLock iOS6'
     ATMHud                      '很不错的HUD 有阴影和动画~'
     SVProgressHUD               '一个HUD 类似MBProgressHUD 有一些进度等'
     ETActivityIndicatorView     'Windows7风格风火轮'
 
-#pragma mark Slider
+    #pragma mark Slider
     JMSlider                    '一个很小清新的Slider 用CA画的'
     iOS-Custom-Controls         '按住可以出Pop的UISlider'
     MTZTiltReflectionSlider     '一个模仿iOS6 Music的Slider'
@@ -349,14 +344,14 @@
     LARSBar                     '显示声音dB的Slider'
     OBSlider                    '模拟iPhone音乐进度的表现'
     TLTiltSlider                '仿iOS6 音量Slider,有金属光泽动画'
-    
-#pragma mark Progress
+
+    #pragma mark Progress
     KOAProgressBar      '自定义ProgressBar'
     DDProgressView      '平面风格的Progress进度条'
     WNProgressView      '一些有趣风格的ProgressView'
     YLProgressBar       '一些不错样式的ProgessBar'
-    
-#pragma mark 侧滑
+
+    #pragma mark 侧滑
     ViewDeck                    'Facebook样的侧滑控件'
     ECSlidingViewController     '一个很简单的侧滑控件'
     JASidePanels                '一套不错样式的侧滑控件'
@@ -367,8 +362,8 @@
     CLCascade                   '类似Twitter iPad版的侧滑控件'
     SlideViewController         '侧滑菜单 类似FB的界面'
     MMDrawerController          '一个侧滑控件,没研究过,但Follow挺多'
-    
-#pragma mark Popover
+
+    #pragma mark Popover
     CMPopTipView        '把PopView带入的iPhone'
     FPPopover           '一个PopOver 支持iPhone'
     WEPopover           '一个仿Popover API库 支持iPhone'
@@ -385,27 +380,27 @@
     ADPopupView         '在UIVIew上弹出自己画的界面 挺丑 但可以看看实现'
     KLExpandingSelect   '四叶草风格弹出菜单'
     StackMenu           'Mac的Stack弹出菜单'
-    
-#pragma mark 下拉刷新
+
+    #pragma mark 下拉刷新
     MSPullToRefreshController   '一个不错的上下拉刷新的控件 里面是彩虹'
     EGOTableViewPullRefresh     '下拉刷新,很早的一个控件了2年没更新了'
     PullToRefresh               '下拉刷新'
     SVPullToRefresh             '下拉刷新 扩展了UIScrollView 很方便简单'
     HybridRefreshGestureRecognizer '一个离类似TweetBot的下拉刷新样式'
-    
-    
-#pragma mark 状态栏
+
+
+    #pragma mark 状态栏
     MTStatusBarOverlay  '状态栏的控件,但很久没更新了'
 
-    
-#pragma mark GridView
+
+    #pragma mark GridView
     AQGridView      '类似TableView但有横向分类,就像Android Launcher'
     GMGridView      '又一个GridView 很不错,自带横纵排序编辑等功能'
     KKGridView      '又一个GridView 已经Deperacted 直接用系统的就好'
     A3GridTableView '又一个GridView 貌似支持类似图标样的上栏'
     LIExposeController '一个类似GridView的东西'
-    
-#pragma mark Alert
+
+    #pragma mark Alert
     BlockAlertsAnd-ActionSheets '一个Block支持的Alert控件 支持自定义 不错~'
     MJPopupViewController       '用不同左右动画弹出AlertView'
     WCAlertView                 '一些不错的自定义AlertView'
@@ -416,22 +411,22 @@
     MBMenuController            '一个自定义AlertSheetVC'
     JLActionSheet               '另一个自定义AlertSheet'
     ASDepthModal                '实现简单的3维景深的模态视图 提供背景模糊'
-    
-#pragma mark Segment
+
+    #pragma mark Segment
     SVSegmentedControl  '一个分段选择控件 类似Mac10.7测试版中的UI 很棒~'
     URBSegmentedControl '一个灵活的分段控件 可以上下'
     MCSegmentedControl  '一个系统分段的子类 可以自定义颜色'
     AKSegmentedControl  '完全自定义的分段控件 风格不错'
     HMSegmentedControl  'Chrome风格的Tabbar分段'
-    
-#pragma mark Switch
+
+    #pragma mark Switch
     DCRoundSwitch   '仿UISwicher 可以自定义 很棒'
     TTSwitch        '一个可以完全自定义的UISwich～～'
     KLSwitch        'iOS7风格的Switch 高仿'
     MBSwitch        'iOS7风格的Switch 效果多'
     SevenSwitch     'iOS风格Switch 效果很多～'
-    
-#pragma mark Button
+
+    #pragma mark Button
     CoolButtons         '用CA画的带Glow的button 仿照系统'
     MAConfirmButton     '一个类似AppStore下载的按钮 可以动画颜色大小等'
     FTWButton           '一个UIControl实例的Button 可以看到如何自定义控件 有不错的动画效果'
@@ -440,9 +435,9 @@
     BPBarButtonItem     '一个BarItem的不错的on the fly 生成'
     BButton             '一种自定义Button 样式类似Twitter的Bootstrap 用CA画的'
     OBShapedButton      '用CA绘制的特殊形状button,可以检测path touch'
-    
-    
-#pragma mark Scroll/Table
+
+
+    #pragma mark Scroll/Table
     LRSlidingTableViewCell  '一个简单的左右滑动Cell 类似Twitter'
     TISwipeableTableView    'UITable的左右滑动 类似Twitter'
     TDBadgedCell            '在TableCell右侧添加badge 有不同风格'
@@ -456,16 +451,16 @@
     MHPagingScrollView      '一个可以Page的ScrollView 但可以看到左右的预览 类似WP7'
     KLScrollSelect          '一个竖屏滚动的选择瀑布流'
     RNRippleTableView       'Cell梳子抖动'
-    
-#pragma mark Notification
+
+    #pragma mark Notification
     EKNotifView         '很简单的下方Notif实现'
     MKInfoPanelDemo     '一个从上方滑下的Notif控件 类似TwieetBot'
     TSMessages          '在导航栏显示一个下拉Notif 效果不错'
     YRDropdownView      '类似Tweetbot警告的下伸控件'
     NoticeView          '类似Tweetbot的下伸控件'
     AJNotificationView  '效果很不错的上部Notif提示'
-    
-#pragma mark Label/Text
+
+    #pragma mark Label/Text
     MarqueeLabel        'UILabel跑马灯效果'
     CoreTextHyperlinkView '用CoreText画的 可以带Link的Text'
     MTAnimatedLabel     '类似滑动解锁的闪动Label'
@@ -479,8 +474,8 @@
     ARLabel             '自动字体大小'
     LEffectLabel        '渐变动画颜色的Label,类似滑动解锁'
     BBCyclingLabel      '在Label发生改变时,有动画效果'
-    
-#pragma mark 界面切换/导航
+
+    #pragma mark 界面切换/导航
     APExtendedPageController    '类似Chrome左右滑动切换视图的控件'
     MBSpacialViewController     '2D上下左右导航的奇怪视图'
     MHTabBarController          '一个类似Android的上方Tabbar'
@@ -500,7 +495,7 @@
     RNSwipeViewController       '滑动界面显示另一个界面 类似下拉状态栏查看天气'
     RESideMenu                  'iOS7风格侧滑'
 
-#pragma mark 知名效果Demo
+    #pragma mark 知名效果Demo
     KLNoteViewController        '一个类似Evernote的Stack界面 绿色的'
     REComposeViewController     '一个类似系统Twitter分享界面~'
     DETweetComposeViewController '一个iOS4实现的 类似iOS5的twitter分享'
@@ -518,8 +513,8 @@
     MBSliderView                '滑动解锁'
     DKLiveBlur                  '雅虎天气风格的动态模糊'
     ios-realtimeblur            'iOS7 模糊效果'
-    
-#pragma mark 其他
+
+    #pragma mark 其他
     SMPageControl               '一个仿UIPageControl的API类 可以自定义小点点～'
     REActivityViewController    '开的ActivityView实现'
     DCControls                  '不错的扇形滑动控件 平面风格'
@@ -548,7 +543,7 @@
     ios-fontawesome             '一套用字体实现的Icon'
     WTGlyphFontSet              '另一套用字体实现的Icon'
 
-#pragma mark 高级功能
+    #pragma mark 高级功能
 
     PAPasscode                  '类似系统的输入密码界面'
     KKPasscodeLock              '又一个类似系统输入密码界面'
@@ -573,9 +568,9 @@
     TITokenField                '一个高仿Mail和短信 选择联系人的控件'
     DAAppsViewController        '一个仿AppStore的列表界面 输入appId集合'
     WUEmoticonsKeyboard         '输入表情的自定义键盘'
-    
-    
-#pragma mark 套装
+
+
+    #pragma mark 套装
     UI7Kit                      '一套iOS7风格的控件,可以再iOS5、6上用'
     FlatUIKit                   '一套扁平风格的UI Flat'
     iOS-boilerplate             '一些常见功能实现的例子:HUD Table滑动,打开URL用WebView等'
@@ -683,7 +678,7 @@
     slate       'Mac上查看当前窗口信息的菜单插件'
     nu          '一个包装,用nu语言来写东西？'
     appledoc    '用来生成Apple格式的文档和网页'
-    
+
     macgap      '包装以可以用类似js的写法来调用函数, 例如 macgap.sound.play("./my/sound.mp3")'
     Quicksilver '这个..Mac上知名的快速启动'
     mogenerator '生成CoreData的Code'
@@ -694,7 +689,7 @@
     terminal-notifier '通过终端发送Notification'
     ShiftIt     '管理桌面窗口 状态栏插件'
     textmate    '这个不用说了。。～～～'
-    
+
     textmate-missingdrawer 'Textmate插件 一个侧边栏'
     AckMate     'Textmate插件 运行ack？'
     clicktoflash 'Webkit插件 屏蔽Flash'
@@ -703,7 +698,7 @@
     Rebel       '一些AppKit的扩展'
     Textual     '轻量的IRC客户端'
     objectiveresource '据说是RoR的东西'
-    
+
     vico        '一个开发用文本编辑器'
     pomodoro    '一个时间管理的App'
     visor       'Terminal的插件'
@@ -711,7 +706,7 @@
     Pixen       '像素画 的工具'
     DataKit     '不知道什么好想是与数据和网络连接的？'
     Color-Picker-Pro '取色器 状态栏插件'
-    
+
     Picker      '在状态栏的系统取色器'
     SNRHUDKit   'Mac版的HUD'
     ConnectionKit 'FTP和WebDAV'
@@ -721,8 +716,8 @@
     XVim            'Xcode的插件 支持绑定VIM快捷键'
     QuickCast   '一个录屏分享的App'
     zephyros    '窗口管理 for hackers'
-    
-    
+
+
     cocoapods-xcode-plugin 'cocoapod 插件'
     ColorSense-for-Xcode 'Xcode的插件 支持动态调整UIColor'
     KSImageNamed-Xcode 'Xcode的插件 支持显示工程里的UIImage'
@@ -742,7 +737,7 @@
     d3                  'js构建可视化html/svg'
     jquery              ''
     three.js            'js 3D Library'
-    
+
 }
 
 
