@@ -32,6 +32,7 @@
  awesome
  https://github.com/ameizi/awesome-ios-animation
  http://www.jianshu.com/p/9fed46a83ad9
+ https://github.com/CRAnimation/CRAnimation  CRAnimation Pod仓库中整理了各种封装好的动效代码
  
  Swift 知名动画框架
  https://github.com/lkzhao/Hero
