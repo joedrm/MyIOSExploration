@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>37.background-color属性</title>
+
+    <style type="text/css">
+        /* 背景颜色属性表示方法：
+            1. 用英语单词来表示, 能够用英语单词来表述的颜色，都是简单颜色。
+                红色：background-color: red;
+            2. 用rgb方法来表示,
+                rgb表示三原色“红”red、“绿”green、“蓝”blue。
+                光学显示器，每个像素都是由三原色的发光原件组成的，靠明亮度不同调成不同的颜色的。
+                用逗号隔开，r、g、b的值，每个值的取值范围0~255，一共256个值。
+                如果此项的值，是255，那么就说明是纯色：
+                    绿色：background-color: rgb(0, 255, 0);
+                    蓝色：background-color: rgb(0, 0, 255);
+            3. 十六进制表示法, 红色：background-color: #ff0000;
+                所有用 # 开头的值，都是16进制的。
+
+
+
+         */
+        div{
+            width: 200px;
+            height: 40px;
+            border: 1px solid #ff0000;
+            margin-bottom: 20px;
+        }
+
+        .box1{
+            background-color: #5dffa8;
+        }
+
+        .box2{
+            background-color: rgb(255, 11,0);
+        }
+
+        .box3{
+            background-color: #ffff00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+</body>
+</html>

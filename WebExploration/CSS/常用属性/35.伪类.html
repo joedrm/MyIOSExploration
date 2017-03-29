@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类</title>
+
+    <style type="text/css">
+        /*
+        伪类概念：
+            也就是说，同一个标签，根据用户的某种状态不同，有不同的样式。这就叫做“伪类”。
+            类就是工程师加的，比如div属于box类，很明确，就是属于box类。
+            但是a属于什么类？不明确。因为要看用户有没有点击、有没有触碰。所以，就叫做“伪类”。
+            伪类用冒号来表示。
+
+        a 标签 根据交互呈现的四种状态
+        这四种状态，在css中，必须按照固定的顺序写：
+            a:link 、a:visited 、a:hover 、a:active
+        如果不按照顺序，那么将失效。“爱恨准则”love hate。必须先爱，后恨
+
+       */
+        a:link{  /* 用户没有点击过这个链接的样式。 */
+            color: blue;
+        }
+
+        a:visited{  /* 用户访问过了这个链接的样式。 */
+            color: gray;
+        }
+
+        a:hover{ /* 用户鼠标悬停的时候链接的样式。 */
+            color: red;
+        }
+
+        a:active{ /* 用户用鼠标点击这个链接，但是不松手，此刻的样式。 */
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="http://www.jianshu.com/">点击链接，查看我的博客</a>
+</body>
+</html>

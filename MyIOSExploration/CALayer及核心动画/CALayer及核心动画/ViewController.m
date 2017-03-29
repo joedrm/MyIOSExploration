@@ -61,6 +61,8 @@ IOS动画总结:
  
  https://github.com/warrenm/AHEasing  很不错动画函数库
  
+ https://github.com/JustKeepRunning/Animations  动画总结
+ 
  
  动画实例：
  https://github.com/shu223/PulsingHalo  雷达效果

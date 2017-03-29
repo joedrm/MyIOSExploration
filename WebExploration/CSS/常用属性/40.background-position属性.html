@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background-position属性</title>
+
+    <style type="text/css">
+
+        /* background-position属性：背景定位属性
+                如：background-position: 100px 100px;向右偏移100px，向下偏移100px
+                background-position:向右移动量 向下移动量;
+                定位属性可以是负数
+
+           background-position: 描述左右的词儿；描述上下的词儿。
+                描述左右的词儿： left、 center、right
+                描述上下的词儿： top 、center、bottom
+                右下角: background-position: right bottom;
+                左下角: background-position: left bottom;
+
+        */
+        .box1{
+            width: 900px;
+            height: 900px;
+            background-image: url("http://octhkpl4l.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg");
+            background-repeat: no-repeat;
+
+            /* 向右偏移100px，向下偏移100px */
+            background-position: 100px 100px;
+            border: 1px solid red;
+        }
+
+        .box2{
+            width: 900px;
+            height: 900px;
+            background-image: url("http://octhkpl4l.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg");
+            background-repeat: no-repeat;
+
+            /* 居中显示 */
+            background-position: center;
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+    </div>
+
+    <div class="box2">
+    </div>
+</body>
+</html>

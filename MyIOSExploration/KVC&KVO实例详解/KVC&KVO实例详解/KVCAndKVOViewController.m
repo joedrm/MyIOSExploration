@@ -44,4 +44,6 @@
  http://www.imlifengfeng.com/blog/?p=498  KVO详解
  
  https://gold.xitu.io/post/58be0b40128fe1006451f586 如何优雅地使用 KVO
+ 
+ https://github.com/JustKeepRunning/LXD_KeyValueObserveDemo  
  */

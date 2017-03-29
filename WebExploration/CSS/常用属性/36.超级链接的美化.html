@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>36.超级链接的美化</title>
+
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        div{
+            width: 960px;
+            height: 40px;
+            border: 1px solid red;
+            margin: 100px auto;
+        }
+
+        .nav ul{
+            list-style: none;
+        }
+
+        .nav ul li{
+            float: left;
+            width: 120px;
+            height: 40px;
+            text-align: center; /* 设置水平居中 */
+            line-height: 40px;  /* 等于盒子的高度。垂直居中 */
+        }
+
+        .nav ul li a{
+            display: block; /* 转块标签 之后，a 和 li 一样的宽高 */
+            width: 120px;
+            height: 40px;
+        }
+
+        /* 标准版  */
+
+        /*.nav ul li a:link, .nav ul li a:visited{*/
+            /*color: white;*/
+            /*background-color: yellowgreen;*/
+        /*}*/
+
+        /*.nav ul li a:hover{*/
+            /*background-color: #ff5470;*/
+            /*font-weight: bold;*/
+            /*color: yellow;*/
+        /*}*/
+
+        /*
+        a 标签在使用的时候，非常的难。因为不仅仅要控制a这个盒子，也要控制它的伪类。
+            1. 我们一定要将a标签写在前面，:link、:visited、:hover、:active这些伪类写在后面。
+            2. a 标签中，描述盒子； 伪类中描述文字的样式、背景。
+            3. 所有的 a 不继承text、font这些东西。因为a自己有一个伪类的权重。
+        */
+
+        /*************************************************************/
+
+        /* 简化版
+        最标准的，就是把link、visited、hover都要写。但是前端开发工程师在大量的实践中，发现不写link、visited浏览器也挺兼容。
+        所以这些“老油条”们，就把a标签简化了：a:link、a:visited都是可以省略的，简写在a标签里面。
+            也就是说，a标签涵盖了link、visited的状态。
+        */
+        .nav ul li a{
+            display: block; /* 转块标签 之后，a 和 li 一样的宽高 */
+            width: 120px;
+            height: 40px;
+            color: white;
+            text-decoration: none;
+            background-color: yellowgreen;
+        }
+        .nav ul li a:hover{
+            background-color: #ff5470;
+            font-weight: bold;
+            color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#">栏目一</a></li>
+            <li><a href="#">栏目二</a></li>
+            <li><a href="#">栏目三</a></li>
+            <li><a href="#">栏目四</a></li>
+            <li><a href="#">栏目五</a></li>
+            <li><a href="#">栏目六</a></li>
+            <li><a href="#">栏目七</a></li>
+            <li><a href="#">栏目八</a></li>
+        </ul>
+    </div>
+</body>
+</html>

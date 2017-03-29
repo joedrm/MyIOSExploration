@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>38.background-image属性</title>
+
+    <style type="text/css">
+
+        /* background-image:用于给盒子加上背景图片
+                如：background-image:url(images/wuyifan.jpg);
+                url()表示网址，uniform resouces locator 同意资源定位符
+                images/wuyifan.jpg 就是相对路径。
+                背景天生是会被平铺满的。
+                padding的区域有背景图。
+
+           background-repeat属性: 设置背景图是否重复的，重复方式的。
+                background-repeat:no-repeat;   不重复
+                background-repeat:repeat-x;    横向重复
+                background-repeat:repeat-y;    纵向重复
+        */
+        div{
+            height: 700px;
+            width: 700px;
+            background-image: url("http://octhkpl4l.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1.jpg");
+            background-repeat: no-repeat;
+            border: 1px solid green;
+            margin: 100px auto;
+            padding: 100px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>文字</div>
+
+
+
+</body>
+</html>

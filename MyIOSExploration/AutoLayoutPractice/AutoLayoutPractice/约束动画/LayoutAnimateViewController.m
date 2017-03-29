@@ -19,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    /* 关于约束动画可以参考这两篇文章：
+     http://sindrilin.com/animate/2016/03/19/Layout%E5%8A%A8%E7%94%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E4%BD%BF%E7%94%A8
+     http://sindrilin.com/animate/2016/02/28/Layout%E5%8A%A8%E7%94%BB%E5%88%9D%E4%BD%93%E9%AA%8C
+     
+     */
 }
 
 - (void)didReceiveMemoryWarning {

@@ -38,4 +38,6 @@
  http://www.jianshu.com/p/67a6004f6930#  组件化架构漫谈
  
  https://github.com/lightory/HHRouter 
+ 
+ https://github.com/wujunyang/jiaModuleDemo 一个针对iOS模块化开发的解决方案(不断完善优化中)
  */

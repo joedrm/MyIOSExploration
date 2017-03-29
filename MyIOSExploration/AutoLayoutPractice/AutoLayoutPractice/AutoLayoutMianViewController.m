@@ -60,6 +60,8 @@
  
  第三方库：
  https://github.com/netyouli/WHC_AutoLayoutKit 
+ 
+ http://www.cnblogs.com/kenshincui/p/6441179.html iOS开发tips-UIScrollView的Autlayout布局
  */
 
 
