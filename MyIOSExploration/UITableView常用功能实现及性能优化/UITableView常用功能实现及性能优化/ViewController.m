@@ -49,4 +49,6 @@
  
  优雅地分离tableview回调：http://www.cocoachina.com/ios/20161008/17687.html；https://github.com/haltNoShut/YFAssistantTableView
 
+ https://github.com/knightsj/SJStaticTableView  基于MVVM，用于快速搭建设置页，个人信息页的框架
+ 
  */

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>以盒子为参考点</title>
+
+    <style type="text/css">
+        /*
+        以盒子为参考点：
+        一个绝对定位的元素，如果父辈元素中出现了也定位了的元素，那么将以父辈这个元素，为参考点。
+        */
+
+        /******************************************/
+        /*
+           情况一：子元素是绝对定位，父元素是相对定位，"子绝父相"
+         */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 400px;
+            height: 400px;
+            border: 1px solid red;
+            margin: 100px;
+            position: relative;
+        }
+        .p1{
+            width: 100px;
+            height: 100px;
+            top: 40px;
+            left: 40px;
+            background-color: red;
+            position: absolute;
+        }
+        /******************************************/
+        /*
+          情况二：要听最近的已经定位的祖先元素的，不一定是父亲，可能是爷爷：
+
+          <div class="box1">   →  相对定位
+                <div class="box2">  →  没有定位
+                    <p></p>   → 绝对定位，将以box1为参考，因为box2没有定位，box1就是最近的父辈元素
+                </div>
+          </div>
+
+
+            <div class="box1">   →  相对定位
+                <div class="box2">  → 相对定位
+                    <p></p>   → 绝对定位，将以box2为参考，因为box2是自己最近的父辈元素
+                </div>
+            </div>
+        */
+        .box2{
+            width: 400px;
+            height: 400px;
+            border: 1px solid red;
+            margin: 100px;
+            padding: 100px;
+            margin: 100px;
+            position: relative;
+        }
+        .box3{
+            width: 300px;
+            height: 300px;
+            border: 1px solid green;
+        }
+        .p2{
+            width: 100px;
+            height: 100px;
+            top: 40px;
+            left: 40px;
+            background-color: red;
+            position: absolute;
+        }
+
+        /******************************************/
+        /*
+          情况三：不一定是相对定位，任何定位，都可以作为参考点
+
+          <div>  → 绝对定位
+              <p></p>  → 绝对定位，将以div作为参考点。因为父亲定位了。
+          </div>
+        */
+        .box4{
+            width: 400px;
+            height: 400px;
+            border: 1px solid red;
+            margin: 100px;
+            position: absolute;
+        }
+        .p3{
+            width: 100px;
+            height: 100px;
+            top: 40px;
+            left: 40px;
+            background-color: red;
+            position: absolute;
+        }
+
+        /******************************************/
+        /*
+         总结：
+            子绝父绝、子绝父相、子绝父固，都是可以给儿子定位的。但是，工程上子绝、父绝，没有一个盒子在标准流里面了，所以页面就不稳固，没有任何实战用途。
+            工程上，“子绝父相”有意义，父亲没有脱标，儿子脱标在父亲的范围里面移动。
+
+            <div class=”box1”>  → 绝对定位
+                <div class=”box2”>  → 相对定位
+                    <div class=”box3”>  → 没有定位
+                        <p></p>  → 绝对定位，以box2为参考定位。
+                    </div>
+                </div>
+            </div>
+        */
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <p class="p1"></p>
+    </div>
+
+    <br/>
+    <hr/>
+    <div class="box2">
+        <div class="box3">
+            <p class="p2"></p>
+        </div>
+    </div>
+
+    <br/>
+    <hr/>
+    <div class="box4">
+        <p class="p3"></p>
+    </div>
+</body>
+</html>

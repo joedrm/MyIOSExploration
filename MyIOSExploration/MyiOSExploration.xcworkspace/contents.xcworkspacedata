@@ -50,7 +50,7 @@
       location = "group:A GUIDE TO IOS ANIMATION 2.0(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;)/A GUIDE TO IOS ANIMATION 2.0(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;).xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;)/IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;).xcodeproj">
+      location = "group:/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;)/&#x300a;IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;&#x300b;&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CALayer&#x53ca;&#x6838;&#x5fc3;&#x52a8;&#x753b;/CALayer&#x53ca;&#x6838;&#x5fc3;&#x52a8;&#x753b;.xcodeproj">
@@ -78,6 +78,9 @@
    </FileRef>
    <FileRef
       location = "group:AutoLayoutPractice/AutoLayoutPractice.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:&#x300a;iOS Auto Layout&#x5f00;&#x53d1;&#x79d8;&#x7c4d;&#x300b;&#x9605;&#x8bfb;&#x7b14;&#x8bb0;/&#x300a;iOS Auto Layout&#x5f00;&#x53d1;&#x79d8;&#x7c4d;&#x300b;&#x9605;&#x8bfb;&#x7b14;&#x8bb0;.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:translucent&#x5c5e;&#x6027;&#x8bbe;&#x7f6e;&#x7684;&#x95ee;&#x9898;/translucent&#x5c5e;&#x6027;&#x8bbe;&#x7f6e;&#x7684;&#x95ee;&#x9898;.xcodeproj">

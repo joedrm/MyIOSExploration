@@ -13,3 +13,4 @@
 - [算法练习](https://github.com/loyinglin/Codeforces)
 - [The-Art-Of-Programming-By-July](https://github.com/julycoding/The-Art-Of-Programming-By-July)
 - [joy0304/JOYAlgorithm](https://github.com/joy0304/JOYAlgorithm) C++实现算法题练习
+- [nonstriater/Learn-Algorithms](https://github.com/nonstriater/Learn-Algorithms) 算法学习笔记

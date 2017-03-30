@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位的盒子居中</title>
+
+    <style type="text/css">
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+            绝对定位之后，所有标准流的规则，都不适用了。所以margin:0 auto;失效。
+
+                width: 600px;
+                height: 60px;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                margin-left: -300px;   → 宽度的一半
+
+            非常简单，当做公式记忆下来。就是left:50%; margin-left:负的宽度的一半。
+        */
+
+        div{
+            width: 400px;
+            height: 50px;
+            background-color: #5dffa8;
+            padding: 50px;
+            left: 50%;
+            position: absolute;
+            margin-left: -250px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+</body>
+</html>

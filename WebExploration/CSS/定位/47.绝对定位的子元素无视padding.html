@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>47.绝对定位的子元素无视padding</title>
+
+    <style type="text/css">
+
+        /*
+            绝对定位的儿子，无视参考的那个盒子的padding，不受父元素的padding的影响
+
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            border: 10px solid red;
+            padding: 100px;
+            position: relative;
+        }
+
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        hello world!hello world!hello world!hello world!hello world!hello world!hello world!
+        hello world!hello world!hello world!hello world!hello world!hello world!hello world!
+        hello world!hello world!hello world!hello world!hello world!hello world!hello world!
+        <p>这是一个p标签</p>
+    </div>
+</body>
+</html>

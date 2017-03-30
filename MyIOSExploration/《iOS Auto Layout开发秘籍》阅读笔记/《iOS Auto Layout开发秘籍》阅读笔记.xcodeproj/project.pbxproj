@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2098E0111E8CB8A200135898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0101E8CB8A200135898 /* main.m */; };
+		2098E0141E8CB8A200135898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0131E8CB8A200135898 /* AppDelegate.m */; };
+		2098E01A1E8CB8A200135898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2098E0181E8CB8A200135898 /* Main.storyboard */; };
+		2098E01C1E8CB8A200135898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2098E01B1E8CB8A200135898 /* Assets.xcassets */; };
+		2098E01F1E8CB8A200135898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2098E01D1E8CB8A200135898 /* LaunchScreen.storyboard */; };
+		2098E02A1E8CB8A200135898 /* _iOS_Auto_Layout_________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0291E8CB8A200135898 /* _iOS_Auto_Layout_________UITests.m */; };
+		2098E0361E8CB8F400135898 /* AutoLayoutNoteMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0351E8CB8F400135898 /* AutoLayoutNoteMainVC.m */; };
+		2098E0381E8CB90200135898 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2098E0371E8CB90200135898 /* WDYLibrary.framework */; };
+		2098E0391E8CB90200135898 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2098E0371E8CB90200135898 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2098E0261E8CB8A200135898 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2098E0041E8CB8A200135898 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2098E00B1E8CB8A200135898;
+			remoteInfo = "《iOS Auto Layout开发秘籍》阅读笔记";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2098E03A1E8CB90200135898 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2098E0391E8CB90200135898 /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2098E00C1E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "《iOS Auto Layout开发秘籍》阅读笔记.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2098E0101E8CB8A200135898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2098E0121E8CB8A200135898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2098E0131E8CB8A200135898 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2098E0191E8CB8A200135898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2098E01B1E8CB8A200135898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2098E01E1E8CB8A200135898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2098E0201E8CB8A200135898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2098E0251E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "《iOS Auto Layout开发秘籍》阅读笔记UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2098E0291E8CB8A200135898 /* _iOS_Auto_Layout_________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_iOS_Auto_Layout_________UITests.m"; sourceTree = "<group>"; };
+		2098E02B1E8CB8A200135898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2098E0341E8CB8F400135898 /* AutoLayoutNoteMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutNoteMainVC.h; sourceTree = "<group>"; };
+		2098E0351E8CB8F400135898 /* AutoLayoutNoteMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutNoteMainVC.m; sourceTree = "<group>"; };
+		2098E0371E8CB90200135898 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2098E03B1E8CB91900135898 /* iOSAutoLayoutNote.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSAutoLayoutNote.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2098E0091E8CB8A200135898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2098E0381E8CB90200135898 /* WDYLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2098E0221E8CB8A200135898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2098E0031E8CB8A200135898 = {
+			isa = PBXGroup;
+			children = (
+				2098E0371E8CB90200135898 /* WDYLibrary.framework */,
+				2098E00E1E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记 */,
+				2098E0281E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记UITests */,
+				2098E00D1E8CB8A200135898 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2098E00D1E8CB8A200135898 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2098E00C1E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记.app */,
+				2098E0251E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2098E00E1E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E0121E8CB8A200135898 /* AppDelegate.h */,
+				2098E0131E8CB8A200135898 /* AppDelegate.m */,
+				2098E0341E8CB8F400135898 /* AutoLayoutNoteMainVC.h */,
+				2098E0351E8CB8F400135898 /* AutoLayoutNoteMainVC.m */,
+				2098E0181E8CB8A200135898 /* Main.storyboard */,
+				2098E01B1E8CB8A200135898 /* Assets.xcassets */,
+				2098E01D1E8CB8A200135898 /* LaunchScreen.storyboard */,
+				2098E0201E8CB8A200135898 /* Info.plist */,
+				2098E00F1E8CB8A200135898 /* Supporting Files */,
+			);
+			path = "《iOS Auto Layout开发秘籍》阅读笔记";
+			sourceTree = "<group>";
+		};
+		2098E00F1E8CB8A200135898 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2098E0101E8CB8A200135898 /* main.m */,
+				2098E03B1E8CB91900135898 /* iOSAutoLayoutNote.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2098E0281E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2098E0291E8CB8A200135898 /* _iOS_Auto_Layout_________UITests.m */,
+				2098E02B1E8CB8A200135898 /* Info.plist */,
+			);
+			path = "《iOS Auto Layout开发秘籍》阅读笔记UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2098E00B1E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2098E02E1E8CB8A200135898 /* Build configuration list for PBXNativeTarget "《iOS Auto Layout开发秘籍》阅读笔记" */;
+			buildPhases = (
+				2098E0081E8CB8A200135898 /* Sources */,
+				2098E0091E8CB8A200135898 /* Frameworks */,
+				2098E00A1E8CB8A200135898 /* Resources */,
+				2098E03A1E8CB90200135898 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "《iOS Auto Layout开发秘籍》阅读笔记";
+			productName = "《iOS Auto Layout开发秘籍》阅读笔记";
+			productReference = 2098E00C1E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2098E0241E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2098E0311E8CB8A200135898 /* Build configuration list for PBXNativeTarget "《iOS Auto Layout开发秘籍》阅读笔记UITests" */;
+			buildPhases = (
+				2098E0211E8CB8A200135898 /* Sources */,
+				2098E0221E8CB8A200135898 /* Frameworks */,
+				2098E0231E8CB8A200135898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2098E0271E8CB8A200135898 /* PBXTargetDependency */,
+			);
+			name = "《iOS Auto Layout开发秘籍》阅读笔记UITests";
+			productName = "《iOS Auto Layout开发秘籍》阅读笔记UITests";
+			productReference = 2098E0251E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2098E0041E8CB8A200135898 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = iOSAutoLayoutNote;
+				TargetAttributes = {
+					2098E00B1E8CB8A200135898 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2Y3JSHFEC2;
+						ProvisioningStyle = Automatic;
+					};
+					2098E0241E8CB8A200135898 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2Y3JSHFEC2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2098E00B1E8CB8A200135898;
+					};
+				};
+			};
+			buildConfigurationList = 2098E0071E8CB8A200135898 /* Build configuration list for PBXProject "《iOS Auto Layout开发秘籍》阅读笔记" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2098E0031E8CB8A200135898;
+			productRefGroup = 2098E00D1E8CB8A200135898 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2098E00B1E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记 */,
+				2098E0241E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2098E00A1E8CB8A200135898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2098E01F1E8CB8A200135898 /* LaunchScreen.storyboard in Resources */,
+				2098E01C1E8CB8A200135898 /* Assets.xcassets in Resources */,
+				2098E01A1E8CB8A200135898 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2098E0231E8CB8A200135898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2098E0081E8CB8A200135898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2098E0361E8CB8F400135898 /* AutoLayoutNoteMainVC.m in Sources */,
+				2098E0141E8CB8A200135898 /* AppDelegate.m in Sources */,
+				2098E0111E8CB8A200135898 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2098E0211E8CB8A200135898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2098E02A1E8CB8A200135898 /* _iOS_Auto_Layout_________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2098E0271E8CB8A200135898 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2098E00B1E8CB8A200135898 /* 《iOS Auto Layout开发秘籍》阅读笔记 */;
+			targetProxy = 2098E0261E8CB8A200135898 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2098E0181E8CB8A200135898 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2098E0191E8CB8A200135898 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2098E01D1E8CB8A200135898 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2098E01E1E8CB8A200135898 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2098E02C1E8CB8A200135898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2098E02D1E8CB8A200135898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2098E02F1E8CB8A200135898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				GCC_PREFIX_HEADER = "《iOS Auto Layout开发秘籍》阅读笔记/iOSAutoLayoutNote.pch";
+				INFOPLIST_FILE = "《iOS Auto Layout开发秘籍》阅读笔记/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.-iOS-Auto-Layout---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2098E0301E8CB8A200135898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				GCC_PREFIX_HEADER = "《iOS Auto Layout开发秘籍》阅读笔记/iOSAutoLayoutNote.pch";
+				INFOPLIST_FILE = "《iOS Auto Layout开发秘籍》阅读笔记/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.-iOS-Auto-Layout---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2098E0321E8CB8A200135898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				INFOPLIST_FILE = "《iOS Auto Layout开发秘籍》阅读笔记UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.-iOS-Auto-Layout---------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "《iOS Auto Layout开发秘籍》阅读笔记";
+			};
+			name = Debug;
+		};
+		2098E0331E8CB8A200135898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
+				INFOPLIST_FILE = "《iOS Auto Layout开发秘籍》阅读笔记UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.-iOS-Auto-Layout---------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "《iOS Auto Layout开发秘籍》阅读笔记";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2098E0071E8CB8A200135898 /* Build configuration list for PBXProject "《iOS Auto Layout开发秘籍》阅读笔记" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2098E02C1E8CB8A200135898 /* Debug */,
+				2098E02D1E8CB8A200135898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2098E02E1E8CB8A200135898 /* Build configuration list for PBXNativeTarget "《iOS Auto Layout开发秘籍》阅读笔记" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2098E02F1E8CB8A200135898 /* Debug */,
+				2098E0301E8CB8A200135898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2098E0311E8CB8A200135898 /* Build configuration list for PBXNativeTarget "《iOS Auto Layout开发秘籍》阅读笔记UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2098E0321E8CB8A200135898 /* Debug */,
+				2098E0331E8CB8A200135898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2098E0041E8CB8A200135898 /* Project object */;
+}

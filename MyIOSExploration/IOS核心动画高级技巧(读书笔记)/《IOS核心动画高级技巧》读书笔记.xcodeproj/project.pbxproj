@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16EB8E0E1E12A067008DE6FF /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; };
+		16EB8E0F1E12A067008DE6FF /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2098E0851E8CEAD800135898 /* ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2098E03E1E8CEAD800135898 /* ball.jpg */; };
+		2098E0861E8CEAD800135898 /* CAMediaTimingFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0401E8CEAD800135898 /* CAMediaTimingFunctionVC.m */; };
+		2098E0871E8CEAD800135898 /* TimerAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0431E8CEAD800135898 /* TimerAnimationVC.m */; };
+		2098E0881E8CEAD800135898 /* BoardViewLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0461E8CEAD800135898 /* BoardViewLayerVC.m */; };
+		2098E0891E8CEAD800135898 /* anchorPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 2098E0481E8CEAD800135898 /* anchorPoint.png */; };
+		2098E08A1E8CEAD800135898 /* LayerGeometryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E04A1E8CEAD800135898 /* LayerGeometryVC.m */; };
+		2098E08B1E8CEAD800135898 /* VisualEffectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E04D1E8CEAD800135898 /* VisualEffectVC.m */; };
+		2098E08C1E8CEAD800135898 /* CubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0501E8CEAD800135898 /* CubeView.m */; };
+		2098E08D1E8CEAD800135898 /* CubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2098E0511E8CEAD800135898 /* CubeView.xib */; };
+		2098E08E1E8CEAD800135898 /* TransformVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0531E8CEAD800135898 /* TransformVC.m */; };
+		2098E08F1E8CEAD800135898 /* CAGradientLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0561E8CEAD800135898 /* CAGradientLayerVC.m */; };
+		2098E0901E8CEAD800135898 /* CAReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0581E8CEAD800135898 /* CAReplicatorLayerVC.m */; };
+		2098E0911E8CEAD800135898 /* CAShapeLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E05A1E8CEAD800135898 /* CAShapeLayerVC.m */; };
+		2098E0921E8CEAD800135898 /* CATextLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E05C1E8CEAD800135898 /* CATextLayerVC.m */; };
+		2098E0931E8CEAD800135898 /* CATransformLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E05E1E8CEAD800135898 /* CATransformLayerVC.m */; };
+		2098E0941E8CEAD800135898 /* CATransformLayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2098E05F1E8CEAD800135898 /* CATransformLayerVC.xib */; };
+		2098E0951E8CEAD800135898 /* LayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0611E8CEAD800135898 /* LayerLabel.m */; };
+		2098E0961E8CEAD800135898 /* ImplicitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0641E8CEAD800135898 /* ImplicitViewController.m */; };
+		2098E0971E8CEAD800135898 /* CAAnimationGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0671E8CEAD800135898 /* CAAnimationGroupVC.m */; };
+		2098E0981E8CEAD800135898 /* CABasicAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0691E8CEAD800135898 /* CABasicAnimationVC.m */; };
+		2098E0991E8CEAD800135898 /* CAKeyframeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E06B1E8CEAD800135898 /* CAKeyframeAnimationVC.m */; };
+		2098E09A1E8CEAD800135898 /* CATransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E06D1E8CEAD800135898 /* CATransitionVC.m */; };
+		2098E09B1E8CEAD800135898 /* name01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2098E06E1E8CEAD800135898 /* name01.jpeg */; };
+		2098E09C1E8CEAD800135898 /* name02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2098E06F1E8CEAD800135898 /* name02.jpeg */; };
+		2098E09D1E8CEAD800135898 /* name03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2098E0701E8CEAD800135898 /* name03.jpeg */; };
+		2098E09E1E8CEAD800135898 /* name04.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2098E0711E8CEAD800135898 /* name04.jpeg */; };
+		2098E09F1E8CEAD800135898 /* AnimationTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0741E8CEAD800135898 /* AnimationTimeVC.m */; };
+		2098E0A01E8CEAD800135898 /* AnimationTimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2098E0751E8CEAD800135898 /* AnimationTimeVC.xib */; };
+		2098E0A11E8CEAD800135898 /* door.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2098E0761E8CEAD800135898 /* door.jpg */; };
+		2098E0A21E8CEAD800135898 /* ship.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2098E0771E8CEAD800135898 /* ship.jpeg */; };
+		2098E0A31E8CEAD800135898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0791E8CEAD800135898 /* AppDelegate.m */; };
+		2098E0A41E8CEAD800135898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2098E07A1E8CEAD800135898 /* Assets.xcassets */; };
+		2098E0A51E8CEAD800135898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2098E07B1E8CEAD800135898 /* LaunchScreen.storyboard */; };
+		2098E0A61E8CEAD800135898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2098E07D1E8CEAD800135898 /* Main.storyboard */; };
+		2098E0A71E8CEAD800135898 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2098E07F1E8CEAD800135898 /* Info.plist */; };
+		2098E0A81E8CEAD800135898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0811E8CEAD800135898 /* main.m */; };
+		2098E0A91E8CEAD800135898 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2098E0821E8CEAD800135898 /* test.jpg */; };
+		2098E0AA1E8CEAD800135898 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098E0841E8CEAD800135898 /* ViewController.m */; };
+		2FD3CC1B22F305E1C2835C13 /* Pods_IOS______________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D6A42DAAB6928F68339782 /* Pods_IOS______________.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20D5153A1E12878F000FBD5D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16EB8E0F1E12A067008DE6FF /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2098E03E1E8CEAD800135898 /* ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ball.jpg; sourceTree = "<group>"; };
+		2098E03F1E8CEAD800135898 /* CAMediaTimingFunctionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingFunctionVC.h; sourceTree = "<group>"; };
+		2098E0401E8CEAD800135898 /* CAMediaTimingFunctionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMediaTimingFunctionVC.m; sourceTree = "<group>"; };
+		2098E0421E8CEAD800135898 /* TimerAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerAnimationVC.h; sourceTree = "<group>"; };
+		2098E0431E8CEAD800135898 /* TimerAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerAnimationVC.m; sourceTree = "<group>"; };
+		2098E0451E8CEAD800135898 /* BoardViewLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardViewLayerVC.h; sourceTree = "<group>"; };
+		2098E0461E8CEAD800135898 /* BoardViewLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardViewLayerVC.m; sourceTree = "<group>"; };
+		2098E0481E8CEAD800135898 /* anchorPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anchorPoint.png; sourceTree = "<group>"; };
+		2098E0491E8CEAD800135898 /* LayerGeometryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerGeometryVC.h; sourceTree = "<group>"; };
+		2098E04A1E8CEAD800135898 /* LayerGeometryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerGeometryVC.m; sourceTree = "<group>"; };
+		2098E04C1E8CEAD800135898 /* VisualEffectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualEffectVC.h; sourceTree = "<group>"; };
+		2098E04D1E8CEAD800135898 /* VisualEffectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualEffectVC.m; sourceTree = "<group>"; };
+		2098E04F1E8CEAD800135898 /* CubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeView.h; sourceTree = "<group>"; };
+		2098E0501E8CEAD800135898 /* CubeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeView.m; sourceTree = "<group>"; };
+		2098E0511E8CEAD800135898 /* CubeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CubeView.xib; sourceTree = "<group>"; };
+		2098E0521E8CEAD800135898 /* TransformVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformVC.h; sourceTree = "<group>"; };
+		2098E0531E8CEAD800135898 /* TransformVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformVC.m; sourceTree = "<group>"; };
+		2098E0551E8CEAD800135898 /* CAGradientLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerVC.h; sourceTree = "<group>"; };
+		2098E0561E8CEAD800135898 /* CAGradientLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerVC.m; sourceTree = "<group>"; };
+		2098E0571E8CEAD800135898 /* CAReplicatorLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAReplicatorLayerVC.h; sourceTree = "<group>"; };
+		2098E0581E8CEAD800135898 /* CAReplicatorLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAReplicatorLayerVC.m; sourceTree = "<group>"; };
+		2098E0591E8CEAD800135898 /* CAShapeLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerVC.h; sourceTree = "<group>"; };
+		2098E05A1E8CEAD800135898 /* CAShapeLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerVC.m; sourceTree = "<group>"; };
+		2098E05B1E8CEAD800135898 /* CATextLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATextLayerVC.h; sourceTree = "<group>"; };
+		2098E05C1E8CEAD800135898 /* CATextLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATextLayerVC.m; sourceTree = "<group>"; };
+		2098E05D1E8CEAD800135898 /* CATransformLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformLayerVC.h; sourceTree = "<group>"; };
+		2098E05E1E8CEAD800135898 /* CATransformLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransformLayerVC.m; sourceTree = "<group>"; };
+		2098E05F1E8CEAD800135898 /* CATransformLayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CATransformLayerVC.xib; sourceTree = "<group>"; };
+		2098E0601E8CEAD800135898 /* LayerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerLabel.h; sourceTree = "<group>"; };
+		2098E0611E8CEAD800135898 /* LayerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerLabel.m; sourceTree = "<group>"; };
+		2098E0631E8CEAD800135898 /* ImplicitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImplicitViewController.h; sourceTree = "<group>"; };
+		2098E0641E8CEAD800135898 /* ImplicitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImplicitViewController.m; sourceTree = "<group>"; };
+		2098E0661E8CEAD800135898 /* CAAnimationGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationGroupVC.h; sourceTree = "<group>"; };
+		2098E0671E8CEAD800135898 /* CAAnimationGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationGroupVC.m; sourceTree = "<group>"; };
+		2098E0681E8CEAD800135898 /* CABasicAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationVC.h; sourceTree = "<group>"; };
+		2098E0691E8CEAD800135898 /* CABasicAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationVC.m; sourceTree = "<group>"; };
+		2098E06A1E8CEAD800135898 /* CAKeyframeAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationVC.h; sourceTree = "<group>"; };
+		2098E06B1E8CEAD800135898 /* CAKeyframeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationVC.m; sourceTree = "<group>"; };
+		2098E06C1E8CEAD800135898 /* CATransitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionVC.h; sourceTree = "<group>"; };
+		2098E06D1E8CEAD800135898 /* CATransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionVC.m; sourceTree = "<group>"; };
+		2098E06E1E8CEAD800135898 /* name01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name01.jpeg; sourceTree = "<group>"; };
+		2098E06F1E8CEAD800135898 /* name02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name02.jpeg; sourceTree = "<group>"; };
+		2098E0701E8CEAD800135898 /* name03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name03.jpeg; sourceTree = "<group>"; };
+		2098E0711E8CEAD800135898 /* name04.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name04.jpeg; sourceTree = "<group>"; };
+		2098E0731E8CEAD800135898 /* AnimationTimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTimeVC.h; sourceTree = "<group>"; };
+		2098E0741E8CEAD800135898 /* AnimationTimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTimeVC.m; sourceTree = "<group>"; };
+		2098E0751E8CEAD800135898 /* AnimationTimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationTimeVC.xib; sourceTree = "<group>"; };
+		2098E0761E8CEAD800135898 /* door.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = door.jpg; sourceTree = "<group>"; };
+		2098E0771E8CEAD800135898 /* ship.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ship.jpeg; sourceTree = "<group>"; };
+		2098E0781E8CEAD800135898 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2098E0791E8CEAD800135898 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2098E07A1E8CEAD800135898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2098E07C1E8CEAD800135898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2098E07E1E8CEAD800135898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2098E07F1E8CEAD800135898 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2098E0801E8CEAD800135898 /* IOS_Core_Anim_Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOS_Core_Anim_Header.pch; sourceTree = "<group>"; };
+		2098E0811E8CEAD800135898 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2098E0821E8CEAD800135898 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		2098E0831E8CEAD800135898 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2098E0841E8CEAD800135898 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		20D5151D1E12876F000FBD5D /* 《IOS核心动画高级技巧》读书笔记.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "《IOS核心动画高级技巧》读书笔记.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		366793615153AFFC01EE6716 /* Pods-IOS核心动画高级技巧(读书笔记).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS核心动画高级技巧(读书笔记).release.xcconfig"; path = "../Pods/Target Support Files/Pods-IOS核心动画高级技巧(读书笔记)/Pods-IOS核心动画高级技巧(读书笔记).release.xcconfig"; sourceTree = "<group>"; };
+		85D6A42DAAB6928F68339782 /* Pods_IOS______________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_IOS______________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5D303A30F8CD6032F1DB64 /* Pods-IOS核心动画高级技巧(读书笔记).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS核心动画高级技巧(读书笔记).debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IOS核心动画高级技巧(读书笔记)/Pods-IOS核心动画高级技巧(读书笔记).debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20D5151A1E12876F000FBD5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EB8E0E1E12A067008DE6FF /* WDYLibrary.framework in Frameworks */,
+				2FD3CC1B22F305E1C2835C13 /* Pods_IOS______________.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2098E03C1E8CEAD800135898 /* 《IOS核心动画高级技巧》读书笔记 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E03D1E8CEAD800135898 /* 10.缓冲 */,
+				2098E0411E8CEAD800135898 /* 11.基于定时器的动画 */,
+				2098E0441E8CEAD800135898 /* 2.寄宿图 */,
+				2098E0471E8CEAD800135898 /* 3.图层几何学 */,
+				2098E04B1E8CEAD800135898 /* 4.视觉效果 */,
+				2098E04E1E8CEAD800135898 /* 5.变换 */,
+				2098E0541E8CEAD800135898 /* 6.专有图层 */,
+				2098E0621E8CEAD800135898 /* 7.隐式动画 */,
+				2098E0651E8CEAD800135898 /* 8.显式动画 */,
+				2098E0721E8CEAD800135898 /* 9.图层时间 */,
+				2098E0781E8CEAD800135898 /* AppDelegate.h */,
+				2098E0791E8CEAD800135898 /* AppDelegate.m */,
+				2098E07A1E8CEAD800135898 /* Assets.xcassets */,
+				2098E07B1E8CEAD800135898 /* LaunchScreen.storyboard */,
+				2098E07D1E8CEAD800135898 /* Main.storyboard */,
+				2098E07F1E8CEAD800135898 /* Info.plist */,
+				2098E0801E8CEAD800135898 /* IOS_Core_Anim_Header.pch */,
+				2098E0811E8CEAD800135898 /* main.m */,
+				2098E0821E8CEAD800135898 /* test.jpg */,
+				2098E0831E8CEAD800135898 /* ViewController.h */,
+				2098E0841E8CEAD800135898 /* ViewController.m */,
+			);
+			path = "《IOS核心动画高级技巧》读书笔记";
+			sourceTree = "<group>";
+		};
+		2098E03D1E8CEAD800135898 /* 10.缓冲 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E03E1E8CEAD800135898 /* ball.jpg */,
+				2098E03F1E8CEAD800135898 /* CAMediaTimingFunctionVC.h */,
+				2098E0401E8CEAD800135898 /* CAMediaTimingFunctionVC.m */,
+			);
+			path = "10.缓冲";
+			sourceTree = "<group>";
+		};
+		2098E0411E8CEAD800135898 /* 11.基于定时器的动画 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E0421E8CEAD800135898 /* TimerAnimationVC.h */,
+				2098E0431E8CEAD800135898 /* TimerAnimationVC.m */,
+			);
+			path = "11.基于定时器的动画";
+			sourceTree = "<group>";
+		};
+		2098E0441E8CEAD800135898 /* 2.寄宿图 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E0451E8CEAD800135898 /* BoardViewLayerVC.h */,
+				2098E0461E8CEAD800135898 /* BoardViewLayerVC.m */,
+			);
+			path = "2.寄宿图";
+			sourceTree = "<group>";
+		};
+		2098E0471E8CEAD800135898 /* 3.图层几何学 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E0481E8CEAD800135898 /* anchorPoint.png */,
+				2098E0491E8CEAD800135898 /* LayerGeometryVC.h */,
+				2098E04A1E8CEAD800135898 /* LayerGeometryVC.m */,
+			);
+			path = "3.图层几何学";
+			sourceTree = "<group>";
+		};
+		2098E04B1E8CEAD800135898 /* 4.视觉效果 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E04C1E8CEAD800135898 /* VisualEffectVC.h */,
+				2098E04D1E8CEAD800135898 /* VisualEffectVC.m */,
+			);
+			path = "4.视觉效果";
+			sourceTree = "<group>";
+		};
+		2098E04E1E8CEAD800135898 /* 5.变换 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E04F1E8CEAD800135898 /* CubeView.h */,
+				2098E0501E8CEAD800135898 /* CubeView.m */,
+				2098E0511E8CEAD800135898 /* CubeView.xib */,
+				2098E0521E8CEAD800135898 /* TransformVC.h */,
+				2098E0531E8CEAD800135898 /* TransformVC.m */,
+			);
+			path = "5.变换";
+			sourceTree = "<group>";
+		};
+		2098E0541E8CEAD800135898 /* 6.专有图层 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E0551E8CEAD800135898 /* CAGradientLayerVC.h */,
+				2098E0561E8CEAD800135898 /* CAGradientLayerVC.m */,
+				2098E0571E8CEAD800135898 /* CAReplicatorLayerVC.h */,
+				2098E0581E8CEAD800135898 /* CAReplicatorLayerVC.m */,
+				2098E0591E8CEAD800135898 /* CAShapeLayerVC.h */,
+				2098E05A1E8CEAD800135898 /* CAShapeLayerVC.m */,
+				2098E05B1E8CEAD800135898 /* CATextLayerVC.h */,
+				2098E05C1E8CEAD800135898 /* CATextLayerVC.m */,
+				2098E05D1E8CEAD800135898 /* CATransformLayerVC.h */,
+				2098E05E1E8CEAD800135898 /* CATransformLayerVC.m */,
+				2098E05F1E8CEAD800135898 /* CATransformLayerVC.xib */,
+				2098E0601E8CEAD800135898 /* LayerLabel.h */,
+				2098E0611E8CEAD800135898 /* LayerLabel.m */,
+			);
+			path = "6.专有图层";
+			sourceTree = "<group>";
+		};
+		2098E0621E8CEAD800135898 /* 7.隐式动画 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E0631E8CEAD800135898 /* ImplicitViewController.h */,
+				2098E0641E8CEAD800135898 /* ImplicitViewController.m */,
+			);
+			path = "7.隐式动画";
+			sourceTree = "<group>";
+		};
+		2098E0651E8CEAD800135898 /* 8.显式动画 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E0661E8CEAD800135898 /* CAAnimationGroupVC.h */,
+				2098E0671E8CEAD800135898 /* CAAnimationGroupVC.m */,
+				2098E0681E8CEAD800135898 /* CABasicAnimationVC.h */,
+				2098E0691E8CEAD800135898 /* CABasicAnimationVC.m */,
+				2098E06A1E8CEAD800135898 /* CAKeyframeAnimationVC.h */,
+				2098E06B1E8CEAD800135898 /* CAKeyframeAnimationVC.m */,
+				2098E06C1E8CEAD800135898 /* CATransitionVC.h */,
+				2098E06D1E8CEAD800135898 /* CATransitionVC.m */,
+				2098E06E1E8CEAD800135898 /* name01.jpeg */,
+				2098E06F1E8CEAD800135898 /* name02.jpeg */,
+				2098E0701E8CEAD800135898 /* name03.jpeg */,
+				2098E0711E8CEAD800135898 /* name04.jpeg */,
+			);
+			path = "8.显式动画";
+			sourceTree = "<group>";
+		};
+		2098E0721E8CEAD800135898 /* 9.图层时间 */ = {
+			isa = PBXGroup;
+			children = (
+				2098E0731E8CEAD800135898 /* AnimationTimeVC.h */,
+				2098E0741E8CEAD800135898 /* AnimationTimeVC.m */,
+				2098E0751E8CEAD800135898 /* AnimationTimeVC.xib */,
+				2098E0761E8CEAD800135898 /* door.jpg */,
+				2098E0771E8CEAD800135898 /* ship.jpeg */,
+			);
+			path = "9.图层时间";
+			sourceTree = "<group>";
+		};
+		20D515141E12876F000FBD5D = {
+			isa = PBXGroup;
+			children = (
+				16EB8E0D1E12A067008DE6FF /* WDYLibrary.framework */,
+				2098E03C1E8CEAD800135898 /* 《IOS核心动画高级技巧》读书笔记 */,
+				20D5151E1E12876F000FBD5D /* Products */,
+				377F25396AFB9F1452D743B2 /* Pods */,
+				48D1E81064164E4841A696B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20D5151E1E12876F000FBD5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20D5151D1E12876F000FBD5D /* 《IOS核心动画高级技巧》读书笔记.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		377F25396AFB9F1452D743B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB5D303A30F8CD6032F1DB64 /* Pods-IOS核心动画高级技巧(读书笔记).debug.xcconfig */,
+				366793615153AFFC01EE6716 /* Pods-IOS核心动画高级技巧(读书笔记).release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		48D1E81064164E4841A696B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85D6A42DAAB6928F68339782 /* Pods_IOS______________.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20D5151C1E12876F000FBD5D /* 《IOS核心动画高级技巧》读书笔记 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D515341E12876F000FBD5D /* Build configuration list for PBXNativeTarget "《IOS核心动画高级技巧》读书笔记" */;
+			buildPhases = (
+				FBDBD19C718AAB426A73D318 /* [CP] Check Pods Manifest.lock */,
+				20D515191E12876F000FBD5D /* Sources */,
+				20D5151A1E12876F000FBD5D /* Frameworks */,
+				20D5151B1E12876F000FBD5D /* Resources */,
+				20D5153A1E12878F000FBD5D /* Embed Frameworks */,
+				93842FF6691861458E3252BB /* [CP] Embed Pods Frameworks */,
+				4D65707D9C29688DB44EDF39 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "《IOS核心动画高级技巧》读书笔记";
+			productName = "IOS核心动画高级技巧(读书笔记)";
+			productReference = 20D5151D1E12876F000FBD5D /* 《IOS核心动画高级技巧》读书笔记.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20D515151E12876F000FBD5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wdy;
+				TargetAttributes = {
+					20D5151C1E12876F000FBD5D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DSHJC97KG4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 20D515181E12876F000FBD5D /* Build configuration list for PBXProject "《IOS核心动画高级技巧》读书笔记" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20D515141E12876F000FBD5D;
+			productRefGroup = 20D5151E1E12876F000FBD5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20D5151C1E12876F000FBD5D /* 《IOS核心动画高级技巧》读书笔记 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20D5151B1E12876F000FBD5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2098E0A01E8CEAD800135898 /* AnimationTimeVC.xib in Resources */,
+				2098E0A11E8CEAD800135898 /* door.jpg in Resources */,
+				2098E09C1E8CEAD800135898 /* name02.jpeg in Resources */,
+				2098E0851E8CEAD800135898 /* ball.jpg in Resources */,
+				2098E09D1E8CEAD800135898 /* name03.jpeg in Resources */,
+				2098E0941E8CEAD800135898 /* CATransformLayerVC.xib in Resources */,
+				2098E09E1E8CEAD800135898 /* name04.jpeg in Resources */,
+				2098E0A91E8CEAD800135898 /* test.jpg in Resources */,
+				2098E0A61E8CEAD800135898 /* Main.storyboard in Resources */,
+				2098E0A71E8CEAD800135898 /* Info.plist in Resources */,
+				2098E0A51E8CEAD800135898 /* LaunchScreen.storyboard in Resources */,
+				2098E08D1E8CEAD800135898 /* CubeView.xib in Resources */,
+				2098E0A21E8CEAD800135898 /* ship.jpeg in Resources */,
+				2098E0891E8CEAD800135898 /* anchorPoint.png in Resources */,
+				2098E0A41E8CEAD800135898 /* Assets.xcassets in Resources */,
+				2098E09B1E8CEAD800135898 /* name01.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D65707D9C29688DB44EDF39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-IOS核心动画高级技巧(读书笔记)/Pods-IOS核心动画高级技巧(读书笔记)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93842FF6691861458E3252BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-IOS核心动画高级技巧(读书笔记)/Pods-IOS核心动画高级技巧(读书笔记)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBDBD19C718AAB426A73D318 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20D515191E12876F000FBD5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2098E0911E8CEAD800135898 /* CAShapeLayerVC.m in Sources */,
+				2098E0931E8CEAD800135898 /* CATransformLayerVC.m in Sources */,
+				2098E0921E8CEAD800135898 /* CATextLayerVC.m in Sources */,
+				2098E0901E8CEAD800135898 /* CAReplicatorLayerVC.m in Sources */,
+				2098E0A31E8CEAD800135898 /* AppDelegate.m in Sources */,
+				2098E09F1E8CEAD800135898 /* AnimationTimeVC.m in Sources */,
+				2098E0861E8CEAD800135898 /* CAMediaTimingFunctionVC.m in Sources */,
+				2098E0871E8CEAD800135898 /* TimerAnimationVC.m in Sources */,
+				2098E08E1E8CEAD800135898 /* TransformVC.m in Sources */,
+				2098E08B1E8CEAD800135898 /* VisualEffectVC.m in Sources */,
+				2098E0991E8CEAD800135898 /* CAKeyframeAnimationVC.m in Sources */,
+				2098E08C1E8CEAD800135898 /* CubeView.m in Sources */,
+				2098E0961E8CEAD800135898 /* ImplicitViewController.m in Sources */,
+				2098E0951E8CEAD800135898 /* LayerLabel.m in Sources */,
+				2098E0971E8CEAD800135898 /* CAAnimationGroupVC.m in Sources */,
+				2098E09A1E8CEAD800135898 /* CATransitionVC.m in Sources */,
+				2098E0AA1E8CEAD800135898 /* ViewController.m in Sources */,
+				2098E08A1E8CEAD800135898 /* LayerGeometryVC.m in Sources */,
+				2098E08F1E8CEAD800135898 /* CAGradientLayerVC.m in Sources */,
+				2098E0981E8CEAD800135898 /* CABasicAnimationVC.m in Sources */,
+				2098E0A81E8CEAD800135898 /* main.m in Sources */,
+				2098E0881E8CEAD800135898 /* BoardViewLayerVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2098E07B1E8CEAD800135898 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2098E07C1E8CEAD800135898 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2098E07D1E8CEAD800135898 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2098E07E1E8CEAD800135898 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20D515321E12876F000FBD5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		20D515331E12876F000FBD5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20D515351E12876F000FBD5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB5D303A30F8CD6032F1DB64 /* Pods-IOS核心动画高级技巧(读书笔记).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
+				GCC_PREFIX_HEADER = "《IOS核心动画高级技巧》读书笔记/IOS_Core_Anim_Header.pch";
+				INFOPLIST_FILE = "《IOS核心动画高级技巧》读书笔记/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.IOS--------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20D515361E12876F000FBD5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366793615153AFFC01EE6716 /* Pods-IOS核心动画高级技巧(读书笔记).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DSHJC97KG4;
+				GCC_PREFIX_HEADER = "《IOS核心动画高级技巧》读书笔记/IOS_Core_Anim_Header.pch";
+				INFOPLIST_FILE = "《IOS核心动画高级技巧》读书笔记/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.IOS--------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20D515181E12876F000FBD5D /* Build configuration list for PBXProject "《IOS核心动画高级技巧》读书笔记" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D515321E12876F000FBD5D /* Debug */,
+				20D515331E12876F000FBD5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D515341E12876F000FBD5D /* Build configuration list for PBXNativeTarget "《IOS核心动画高级技巧》读书笔记" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D515351E12876F000FBD5D /* Debug */,
+				20D515361E12876F000FBD5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20D515151E12876F000FBD5D /* Project object */;
+}

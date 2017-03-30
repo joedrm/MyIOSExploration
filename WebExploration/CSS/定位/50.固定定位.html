@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位</title>
+
+    <style type="text/css">
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        固定定位，就是相对浏览器窗口定位。页面如何滚动，这个盒子显示的位置不变。
+        固定定位脱标！
+        */
+        div{
+            width: 500px;
+            height: 1200px;
+            background-color: aliceblue;
+        }
+
+        p{
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            left: 100px;
+            top: 100px;
+            background-color: #191D3A;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p></p>
+    <div></div>
+</body>
+</html>

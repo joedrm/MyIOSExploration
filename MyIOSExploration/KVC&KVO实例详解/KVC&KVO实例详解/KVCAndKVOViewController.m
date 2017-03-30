@@ -46,4 +46,6 @@
  https://gold.xitu.io/post/58be0b40128fe1006451f586 如何优雅地使用 KVO
  
  https://github.com/JustKeepRunning/LXD_KeyValueObserveDemo  
+ 
+ http://www.iosxxx.com/blog/2017-03-27-iOS%E7%9A%84nstimer%E4%B8%8Ekvo%E7%9A%84%E8%87%AA%E9%87%8A%E6%94%BE.html iOS的NSTimer与KVO的自释放
  */

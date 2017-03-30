@@ -15,6 +15,8 @@
 @property (nonatomic, strong) UIView *yellowView;
 @property (nonatomic, strong) UIView *blackView;
 @property (nonatomic, strong) UIView *grayView;
+
+@property (nonatomic, strong) NSLayoutConstraint* blackView_leftCon;
 @end
 
 @implementation PriorityViewController
@@ -33,9 +35,15 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
-
+    // xib 实现
     [self.blueView removeFromSuperview];
-    [self.blackView removeFromSuperview];
+    
+    // 代码实现
+//    [self.blackView removeFromSuperview];
+    self.blackView_leftCon.constant = 0.0f;
+    [UIView animateWithDuration:2.0 animations:^{
+        [self.view layoutIfNeeded];
+    }];
 }
 
 
@@ -43,22 +51,34 @@
 
 - (void)test{
 
-    UIView* yellowView = [[UIView alloc] init];
+    UILabel* yellowView = [[UILabel alloc] init];
     yellowView.backgroundColor = [UIColor yellowColor];
     yellowView.translatesAutoresizingMaskIntoConstraints = NO;
+    yellowView.text = @"A";
+    yellowView.font = [UIFont systemFontOfSize:18];
+    yellowView.textColor = [UIColor whiteColor];
+    yellowView.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:yellowView];
     self.yellowView = yellowView;
     
     
-    UIView* blackView = [[UIView alloc] init];
+    UILabel* blackView = [[UILabel alloc] init];
     blackView.backgroundColor = [UIColor blackColor];
+    blackView.text = @"B";
+    blackView.font = [UIFont systemFontOfSize:18];
+    blackView.textColor = [UIColor whiteColor];
+    blackView.textAlignment = NSTextAlignmentCenter;
     blackView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:blackView];
     self.blackView = blackView;
     
-    UIView* grayView = [[UIView alloc] init];
+    UILabel* grayView = [[UILabel alloc] init];
     grayView.backgroundColor = [UIColor redColor];
+    grayView.text = @"C";
+    grayView.font = [UIFont systemFontOfSize:18];
+    grayView.textColor = [UIColor whiteColor];
     grayView.translatesAutoresizingMaskIntoConstraints = NO;
+    grayView.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:grayView];
     self.grayView = grayView;
     
@@ -120,6 +140,7 @@
                                                                               toItem:yellowView
                                                                            attribute:NSLayoutAttributeHeight multiplier:1.0 constant:0];
     [self.view addConstraint:blackView_leftCon];
+    self.blackView_leftCon = blackView_leftCon;
     [self.view addConstraint:blackView_topCon];
     [self.view addConstraint:blackView_widthCon];
     [self.view addConstraint:blackView_heightCon];
