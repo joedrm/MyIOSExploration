@@ -23,6 +23,10 @@
             width: 100%;
             height: 50px;
             background-color: #191D3A;
+            /* 因为后面定位的会压盖住最先定位的
+                所以需要在这里将 z-index 设置无限大，防止被压盖
+             */
+            z-index: 99999999999;
         }
 
         div.inner_c{
@@ -56,6 +60,16 @@
             background-color: gold;
         }
 
+        .button{
+            display: block;
+            width: 100px;
+            height: 40px;
+            background-color: orange;
+            position: relative;
+            top: 2px;
+            left: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -72,6 +86,7 @@
             </ul>
         </div>
     </div>
+    <input type="button" class="button" value="我是按钮"/>
     <p>哈哈哈哈</p>
     <p>sdfsdf</p>
     <p>sdfssdfasdfdf</p>
