@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index属性</title>
+
+    <style type="text/css">
+        /*
+        z-index:
+            1 z-index值表示谁压着谁。数值大 的压盖住 数值小 的。
+            2 只有定位了的元素，才能有z-index值。也就是说，不管相对定位、绝对定位、固定定位，都可以使用z-index值。而浮动的东西不能用。
+            3 z-index值没有单位，就是一个正整数。默认的z-index值是0。
+            4 如果大家都没有z-index值，或者z-index值一样，那么谁写在HTML后面，谁在上面能压住别人。定位了的元素，永远能够压住没有定位的元素。
+            5 从父现象：父亲怂了，儿子再牛逼也没用。
+        */
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            top: 100px;
+            left: 100px;
+            background-color: #5dffa8;
+            position: absolute;
+            z-index: 988;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            top: 180px;
+            left: 180px;
+            background-color: yellowgreen;
+            position: absolute;
+            z-index: 444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

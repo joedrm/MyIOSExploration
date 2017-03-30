@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>51.固定定位用途：顶部导航栏</title>
+
+    <style type="text/css">
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url("../images/dibanzhuan.jpg");
+            /* 因为导航栏nav是固定定位，会挡住顶部50px的区域，所以需要挤出50px，让内容区域完整显示 */
+            padding-top: 50px;
+        }
+
+        div.nav{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 50px;
+            background-color: #191D3A;
+        }
+
+        div.inner_c{
+            width: 1000px;
+            height: 50px;
+            margin: 0 auto;
+            /*background-color: yellow;*/
+        }
+
+        div.inner_c ul{
+            list-style: none;
+        }
+
+        div.inner_c ul li{
+            float: left;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        div.inner_c ul li a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            width: 200px;
+            height: 50px;
+        }
+
+        div.inner_c ul li a:hover{
+            background-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="nav"> <!-- 这个div是负责固定定位 -->
+        <div class="inner_c"> <!-- 这个div是负责版心 -->
+            <ul>
+                <li><a href="#">网页栏目</a></li>
+                <li><a href="#">网页栏目</a></li>
+                <li><a href="#">网页栏目</a></li>
+                <li><a href="#">网页栏目</a></li>
+                <li><a href="#">网页栏目</a></li>
+            </ul>
+        </div>
+    </div>
+    <p>哈哈哈哈</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfssdfasdfdf</p>
+    <p>sdfsdasdfadsff</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+    <p>sdfsdf</p>
+</body>
+</html>

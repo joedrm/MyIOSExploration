@@ -2,80 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/《IOS核心动画高级技巧》读书笔记.xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/IOS核心动画高级技巧(读书笔记).xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记.xcodeproj/project.pbxproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/《IOS核心动画高级技巧》读书笔记.xcscheme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/IOS核心动画高级技巧(读书笔记).xcscheme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/10.缓冲/CAMediaTimingFunctionVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/10.缓冲/CAMediaTimingFunctionVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/10.缓冲/ball.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/11.基于定时器的动画/TimerAnimationVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/11.基于定时器的动画/TimerAnimationVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/2.寄宿图/BoardViewLayerVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/2.寄宿图/BoardViewLayerVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/3.图层几何学/LayerGeometryVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/3.图层几何学/LayerGeometryVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/3.图层几何学/anchorPoint.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/4.视觉效果/VisualEffectVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/4.视觉效果/VisualEffectVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/5.变换/CubeView.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/5.变换/CubeView.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/5.变换/CubeView.xib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/5.变换/TransformVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/5.变换/TransformVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAGradientLayerVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAGradientLayerVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAReplicatorLayerVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAReplicatorLayerVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAShapeLayerVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAShapeLayerVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CATextLayerVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CATextLayerVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CATransformLayerVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CATransformLayerVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CATransformLayerVC.xib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/LayerLabel.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/LayerLabel.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/7.隐式动画/ImplicitViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/7.隐式动画/ImplicitViewController.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CAAnimationGroupVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CAAnimationGroupVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CABasicAnimationVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CABasicAnimationVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CAKeyframeAnimationVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CAKeyframeAnimationVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CATransitionVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CATransitionVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/name01.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/name02.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/name03.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/name04.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/9.图层时间/AnimationTimeVC.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/9.图层时间/AnimationTimeVC.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/9.图层时间/AnimationTimeVC.xib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/9.图层时间/door.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/9.图层时间/ship.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/AppDelegate.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/AppDelegate.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/Base.lproj/LaunchScreen.storyboard" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/Base.lproj/Main.storyboard" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/IOS_Core_Anim_Header.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/ViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/ViewController.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/main.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/test.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/定位/51.固定定位用途：顶部导航栏.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/定位/52.z-index属性.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/contents.xcworkspacedata" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/定位/50.固定定位.html" afterPath="$PROJECT_DIR$/CSS/定位/50.固定定位.html" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,31 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="45.绝对定位.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/定位/45.绝对定位.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="46.绝对定位：以盒子为参考点.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS/定位/46.绝对定位：以盒子为参考点.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
+            <state relative-caret-position="424">
               <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="48.绝对定位示例.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/定位/48.绝对定位示例.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -131,71 +41,80 @@
       <file leaf-file-name="49.绝对定位的盒子居中.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS/定位/49.绝对定位的盒子居中.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="285">
               <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="50.固定定位.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="50.固定定位.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS/定位/50.固定定位.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="45.绝对定位.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/定位/45.绝对定位.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="574">
+              <caret line="118" column="17" selection-start-line="53" selection-start-column="4" selection-end-line="118" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="51.固定定位用途：顶部导航栏.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/定位/51.固定定位用途：顶部导航栏.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html基本使用.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
+      <file leaf-file-name="52.z-index属性.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSS/定位/52.z-index属性.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="表格.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/表格.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
-              <folding />
-            </state>
+      <file leaf-file-name="bg.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/images/bg.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dibanzhuan.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/images/dibanzhuan.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zimubiao.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/images/zimubiao.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="47.绝对定位的子元素无视padding.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS/定位/47.绝对定位的子元素无视padding.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="404">
               <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01.变量.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript/01.变量.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02.字符串.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript/02.字符串.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -216,8 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CSS/盒模型/15.padding.html" />
-        <option value="$PROJECT_DIR$/CSS/浮动/16.标准文档流.html" />
         <option value="$PROJECT_DIR$/CSS/浮动/17.块级元素和行级元素互换.html" />
         <option value="$PROJECT_DIR$/CSS/浮动/19.浮动元素相互贴靠.html" />
         <option value="$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html" />
@@ -267,6 +184,8 @@
         <option value="$PROJECT_DIR$/CSS/定位/48.绝对定位示例.html" />
         <option value="$PROJECT_DIR$/CSS/定位/49.绝对定位的盒子居中.html" />
         <option value="$PROJECT_DIR$/CSS/定位/50.固定定位.html" />
+        <option value="$PROJECT_DIR$/CSS/定位/51.固定定位用途：顶部导航栏.html" />
+        <option value="$PROJECT_DIR$/CSS/定位/52.z-index属性.html" />
       </list>
     </option>
   </component>
@@ -277,7 +196,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="36" />
+    <option name="y" value="27" />
     <option name="width" value="1376" />
     <option name="height" value="856" />
   </component>
@@ -396,24 +316,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="定位" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -442,13 +344,7 @@
       <recent name="$PROJECT_DIR$/HTML" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.50.固定定位.html">
-    <configuration default="false" name="45.绝对定位.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/定位/45.绝对定位.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="46.绝对定位：以盒子为参考点.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/定位/46.绝对定位：以盒子为参考点.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.52.z-index属性.html">
     <configuration default="false" name="47.绝对定位的子元素无视padding.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/定位/47.绝对定位的子元素无视padding.html">
       <method />
     </configuration>
@@ -456,6 +352,12 @@
       <method />
     </configuration>
     <configuration default="false" name="50.固定定位.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/定位/50.固定定位.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="51.固定定位用途：顶部导航栏.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/定位/51.固定定位用途：顶部导航栏.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="52.z-index属性.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/定位/52.z-index属性.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -516,19 +418,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.45.绝对定位.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.46.绝对定位：以盒子为参考点.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.47.绝对定位的子元素无视padding.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.49.绝对定位的盒子居中.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.50.固定定位.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.47.绝对定位的子元素无视padding.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.49.绝对定位的盒子居中.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.50.固定定位.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.51.固定定位用途：顶部导航栏.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.52.z-index属性.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.50.固定定位.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.49.绝对定位的盒子居中.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.47.绝对定位的子元素无视padding.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.46.绝对定位：以盒子为参考点.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.45.绝对定位.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.52.z-index属性.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.51.固定定位用途：顶部导航栏.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.50.固定定位.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.49.绝对定位的盒子居中.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.47.绝对定位的子元素无视padding.html" />
       </list>
     </recent_temporary>
   </component>
@@ -559,15 +461,15 @@
       <workItem from="1490711157376" duration="1532000" />
       <workItem from="1490752735900" duration="14678000" />
       <workItem from="1490775850201" duration="3476000" />
-      <workItem from="1490838596185" duration="7149000" />
+      <workItem from="1490838596185" duration="9494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153266000" />
+    <option name="totallyTimeSpent" value="155611000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1376" height="856" extended-state="0" />
+    <frame x="36" y="27" width="1376" height="856" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19409594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -609,27 +511,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/浮动/23.清除浮动方法三：隔墙法.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-207">
@@ -735,17 +616,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/images/bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/images/bg3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/images/bg2.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -755,11 +626,6 @@
         <state relative-caret-position="102">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/images/zimubiao.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS/常用属性/36.超级链接的美化.html">
@@ -982,16 +848,8 @@
         <state relative-caret-position="391">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/定位/45.绝对定位.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,22 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/定位/47.绝对定位的子元素无视padding.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/定位/46.绝对定位：以盒子为参考点.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/定位/48.绝对定位示例.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1035,18 +877,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/images/bg2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/images/bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/images/zimubiao.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/images/dibanzhuan.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/定位/49.绝对定位的盒子居中.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="285">
           <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/定位/47.绝对定位的子元素无视padding.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/定位/46.绝对定位：以盒子为参考点.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/定位/45.绝对定位.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="118" column="17" selection-start-line="53" selection-start-column="4" selection-end-line="118" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/定位/51.固定定位用途：顶部导航栏.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS/定位/50.固定定位.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="506">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/定位/52.z-index属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding />
         </state>
       </provider>
