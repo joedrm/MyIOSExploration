@@ -2,6 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj/project.pbxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/《IOS核心动画高级技巧》读书笔记.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/IOS核心动画高级技巧(读书笔记).xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/fangwang.xcuserdatad/xcschemes/《IOS核心动画高级技巧》读书笔记.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/IOS核心动画高级技巧(读书笔记).xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记.xcodeproj/xcuserdata/wdy.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/10.缓冲/CAMediaTimingFunctionVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/10.缓冲/CAMediaTimingFunctionVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/10.缓冲/ball.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/11.基于定时器的动画/TimerAnimationVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/11.基于定时器的动画/TimerAnimationVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/2.寄宿图/BoardViewLayerVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/2.寄宿图/BoardViewLayerVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/3.图层几何学/LayerGeometryVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/3.图层几何学/LayerGeometryVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/3.图层几何学/anchorPoint.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/4.视觉效果/VisualEffectVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/4.视觉效果/VisualEffectVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/5.变换/CubeView.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/5.变换/CubeView.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/5.变换/CubeView.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/5.变换/TransformVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/5.变换/TransformVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAGradientLayerVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAGradientLayerVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAReplicatorLayerVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAReplicatorLayerVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAShapeLayerVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CAShapeLayerVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CATextLayerVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CATextLayerVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CATransformLayerVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CATransformLayerVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/CATransformLayerVC.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/LayerLabel.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/6.专有图层/LayerLabel.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/7.隐式动画/ImplicitViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/7.隐式动画/ImplicitViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CAAnimationGroupVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CAAnimationGroupVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CABasicAnimationVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CABasicAnimationVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CAKeyframeAnimationVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CAKeyframeAnimationVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CATransitionVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/CATransitionVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/name01.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/name02.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/name03.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/8.显式动画/name04.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/9.图层时间/AnimationTimeVC.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/9.图层时间/AnimationTimeVC.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/9.图层时间/AnimationTimeVC.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/9.图层时间/door.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/9.图层时间/ship.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/AppDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/AppDelegate.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/Base.lproj/LaunchScreen.storyboard" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/Base.lproj/Main.storyboard" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/IOS_Core_Anim_Header.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/ViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/ViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/main.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS核心动画高级技巧(读书笔记)/《IOS核心动画高级技巧》读书笔记/test.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/contents.xcworkspacedata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/定位/50.固定定位.html" afterPath="$PROJECT_DIR$/CSS/定位/50.固定定位.html" />
     </list>
     <ignored path="WebExploration.iws" />
@@ -68,8 +141,8 @@
       <file leaf-file-name="50.固定定位.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CSS/定位/50.固定定位.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="544">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -486,12 +559,12 @@
       <workItem from="1490711157376" duration="1532000" />
       <workItem from="1490752735900" duration="14678000" />
       <workItem from="1490775850201" duration="3476000" />
-      <workItem from="1490838596185" duration="7002000" />
+      <workItem from="1490838596185" duration="7149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153119000" />
+    <option name="totallyTimeSpent" value="153266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1376" height="856" extended-state="0" />
@@ -972,8 +1045,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS/定位/50.固定定位.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="544">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>

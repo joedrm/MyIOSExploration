@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:&#x300a;IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;&#x300b;&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;/&#x300a;IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;&#x300b;&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Mac&#x5f00;&#x53d1;&#x5b66;&#x4e60;/Mac&#x5f00;&#x53d1;&#x5b66;&#x4e60;.xcodeproj">
    </FileRef>
    <FileRef
@@ -48,9 +51,6 @@
    </FileRef>
    <FileRef
       location = "group:A GUIDE TO IOS ANIMATION 2.0(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;)/A GUIDE TO IOS ANIMATION 2.0(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;).xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/fangwang/Documents/MyIOSExploration/MyIOSExploration/IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;(&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;)/&#x300a;IOS&#x6838;&#x5fc3;&#x52a8;&#x753b;&#x9ad8;&#x7ea7;&#x6280;&#x5de7;&#x300b;&#x8bfb;&#x4e66;&#x7b14;&#x8bb0;.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CALayer&#x53ca;&#x6838;&#x5fc3;&#x52a8;&#x753b;/CALayer&#x53ca;&#x6838;&#x5fc3;&#x52a8;&#x753b;.xcodeproj">
