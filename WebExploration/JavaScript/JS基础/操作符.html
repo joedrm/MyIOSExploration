@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作符</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+//    Infinity
+
+    var a = 5;
+    var b = 10
+//    var message = "the sum of 5 and 10 is " + a + b;
+    var message = "the sum of 5 and 10 is " + (a + b);
+    console.log(message);
+
+    /**
+     * 字符串比较时，实际上比较的是字符编码，2的字符编码是50，3的字符编码是51
+     * */
+    var result = "23" < "3"
+    console.log(result);  // true
+
+    /**
+     * 如果一个操作数是数值，则将另一个操作数转化为数值，然后执行数值比较
+     * 此时，"23" 会被转化为 数值：23
+     * */
+    var result1 = "23" < 3;
+    console.log(result1); // false
+
+    /**
+     * 由于字母 a 不能转换为合理的数值，因此被直接转换为 NaN，
+     * 而任何操作数与 NaN 比较，结果都是 false
+     * */
+    var result2 = "a" < 3;
+    console.log(result2); // false
+
+    /**
+     * 和 NaN 比较时，都会返回 false
+     * */
+    var result3 = NaN < 3;
+    var result4 = NaN > 3;
+    console.log(result3); // false
+    console.log(result4); // false
+
+
+    /**
+     * 全等 和 不全等：
+     * 全等: 两个操作符在未经转换的情况下就相等，就返回 true
+     * */
+    var result5 = ("55" == 55);  // true 因为转换后相等
+    var result6 = ("55" === 55); // false 因为不同的数据类型不相等
+    console.log(result5);
+    console.log(result6);
+
+    /**
+     *
+     * */
+    var result7= (null == undefined); // true 因为他们是类似的值
+    var result8= (null === undefined); // false 因为他们是不同类型的值
+    console.log(result7);
+    console.log(result8);
+
+    /**
+     * with 的使用
+     * */
+    var qs = location.search.substring(1);
+    var homename = location.hostname;
+    var  url = location.href;
+    // with 的使用
+    with (location){
+        var qs = search.substring(1);
+        var homename = hostname;
+        var  url = href;
+    }
+
+
+</script>
+</body>
+</html>

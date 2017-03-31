@@ -8,25 +8,35 @@
     -->
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
-    <table>
-        <tbody>
-            <tr>Python</tr>
-            <tr>Java</tr>
-            <tr>Android</tr>
-            <tr>PHP</tr>
-            <tr>JavaScript</tr>
-            <tr>iOS</tr>
-        </tbody>
-    </table>
+    <style type="text/css">
+        div#box1{
+            width: 200px;
+            height: 200px;
+            background-color: #5dffa8;
+        }
 
-    <div id="abc"></div>
+    </style>
 </head>
 
-<script type="text/javascript">
-    var div = $('#abc');
-    console.log(div);
-</script>
 <body>
+
+<div id="abc"></div>
+<div id="box1"></div>
+
+<script type="text/javascript">
+
+    var div = $('#abc');
+    var box1 = $('#box1');
+
+    box1.css('color','red');
+
+//    box1.style.backgroundColor = "red"
+//    box1.style.width = "300px"
+//    box1.style.height = "300px"
+
+    console.log(div);
+
+</script>
 
 </body>
 </html>

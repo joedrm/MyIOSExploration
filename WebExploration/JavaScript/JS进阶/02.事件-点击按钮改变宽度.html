@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        #box1{
+            width: 200px;
+            height: 200px;
+            background-color: #5dffa8;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box1"></div>
+<button id="btn">我是按钮！</button>
+
+
+
+<script type="text/javascript">
+
+    /**
+     * 事件三要素：
+     *  事件源.事件 = 处理函数
+     *  事件源是按钮(btn)，事件是点击按钮(onClick)，处理函数(function)是改变宽度
+     */
+
+    var box1 = document.getElementById("box1");
+    var btn = document.getElementById("btn");
+
+    btn.onclick = function () {
+        box1.style.width = "400px";
+        box1.style.height = "400px"
+        box1.style.backgroundColor = "red";
+    }
+
+    /**
+     * 隐藏的三种方法：
+     *  display: none 隐藏不占位置
+     *  overflow 超出部分隐藏
+     * */
+
+</script>
+
+</body>
+</html>
