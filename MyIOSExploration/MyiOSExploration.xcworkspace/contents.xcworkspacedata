@@ -77,6 +77,9 @@
       location = "group:Masonry&#x5b9e;&#x8df5;/Masonry&#x5b9e;&#x8df5;.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:PureLayout/PureLayout/PureLayout.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:AutoLayoutPractice/AutoLayoutPractice.xcodeproj">
    </FileRef>
    <FileRef

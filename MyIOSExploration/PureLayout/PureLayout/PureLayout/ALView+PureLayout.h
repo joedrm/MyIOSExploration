@@ -33,15 +33,16 @@ PL__ASSUME_NONNULL_BEGIN
 
 #pragma mark ALView+PureLayout
 
-/**
- A category on UIView/NSView that provides a simple yet powerful interface for creating Auto Layout constraints.
- */
+
 @interface ALView (PureLayout)
 
 
 #pragma mark Factory & Initializer Methods
 
-/** Creates and returns a new view that does not convert the autoresizing mask into constraints. */
+/** 
+ 类方法 创建 一个 不包含 autoresizing mask 的 View，并返回
+ */
+
 + (instancetype)newAutoLayoutView;
 
 /** Initializes and returns a new view that does not convert the autoresizing mask into constraints. */
