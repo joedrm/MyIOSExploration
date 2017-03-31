@@ -405,6 +405,7 @@
 				20D78CEA1E7792580000D5A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20D78CEB1E7792580000D5A1 /* Build configuration list for PBXNativeTarget "Mac开发学习UITests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				20D78CED1E7792580000D5A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

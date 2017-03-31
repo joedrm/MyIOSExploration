@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DB05D3CF0C70DF312B88F3C11A80DA3969FE5016",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DB05D3CF0C70DF312B88F3C11A80DA3969FE5016" : 9223372036854775807,
+    "E6248D77DBBC6B1D6F6059D14C6A0B9ED1677585" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "183CA15A-641C-4CA3-A3D8-A49286CB2685",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DB05D3CF0C70DF312B88F3C11A80DA3969FE5016" : "MyIOSExploration\/",
+    "E6248D77DBBC6B1D6F6059D14C6A0B9ED1677585" : "MyIOSExploration\/MyIOSExploration\/PureLayout%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyiOSExploration",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyIOSExploration\/MyiOSExploration.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wangdongyang\/MyIOSExploration.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DB05D3CF0C70DF312B88F3C11A80DA3969FE5016"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PureLayout\/PureLayout",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E6248D77DBBC6B1D6F6059D14C6A0B9ED1677585"
+    }
+  ]
+}
