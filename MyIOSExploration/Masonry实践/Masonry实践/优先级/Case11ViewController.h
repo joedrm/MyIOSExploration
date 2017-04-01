@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface Case11ViewController : BaseViewController
+@interface Case11ViewController : BaseTestViewController
 
 @end

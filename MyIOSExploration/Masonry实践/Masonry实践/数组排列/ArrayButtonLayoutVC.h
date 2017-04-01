@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface ArrayButtonLayoutVC : BaseViewController
+@interface ArrayButtonLayoutVC : BaseTestViewController
 
 @end

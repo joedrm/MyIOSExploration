@@ -30,3 +30,4 @@ function addSomeNumber(num) {
 var result = addSomeNumber(100);
 console.log(result); // 300
 
+

@@ -1,0 +1,18 @@
+//
+//  OCPrefixHeader.pch
+//  Objective-C 拾遗
+//
+//  Created by fang wang on 17/4/1.
+//  Copyright © 2017年 wdy. All rights reserved.
+//
+
+#ifndef OCPrefixHeader_pch
+#define OCPrefixHeader_pch
+
+
+#import <WDYLibrary/WDYLibrary.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* OCPrefixHeader_pch */
