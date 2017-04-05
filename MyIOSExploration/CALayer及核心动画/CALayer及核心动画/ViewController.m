@@ -50,7 +50,7 @@ IOS动画总结:
  https://github.com/jhurray/JHChainableAnimations
  https://github.com/adad184/MMTweenAnimation
  https://github.com/Raizlabs/RZTransitions
- https://github.com/bryanoltman/CAAnimation-EasingEquations
+ https://github.com/bryanoltman/CAAnimation-EasingEquations   **** CoreAnimation很强大的分类
  https://github.com/GirlCunt/AnimationDemo
  https://github.com/tapharmonic/Core-Animation-Demos  ***
  https://github.com/AugustRush/ARAnimation  ARAnimation is an Core Animation library to make you animations easily.

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .father{
+            width: 600px;
+            border: 1px solid greenyellow;
+        }
+
+        .xiongda {
+            width: 200px;
+            height: 100px;
+            background-color: #ff5470;
+            float: left;
+        }
+
+        .xionger{
+            width: 200px;
+            height: 100px;
+            background-color: #ffff00;
+            float: left;
+            border: 1px solid #000;
+
+        }
+
+        .clearfix:before, .clearfix:after{
+            display: table;
+            content: "";
+        }
+
+        .clearfix:after{
+            clear: both;
+        }
+
+        .clearfix{
+            zoom: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="father clearfix" >
+    <div class="xiongda"></div>
+    <div class="xionger"></div>
+</div>
+
+</body>
+</html>
