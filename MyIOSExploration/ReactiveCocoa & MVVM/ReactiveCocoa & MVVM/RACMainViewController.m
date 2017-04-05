@@ -64,6 +64,8 @@
  
  https://github.com/ValiantCat/FRPCheatSheeta  函数式编程框架：ReactiveCocoa,RXSwift速查表
  
+ https://github.com/wujunyang/MVVMReactiveCocoaDemo  ReactiveCocoa的知识点及MVVM模式运用（不断更新中....）
+ 
  
  MVVM
  https://github.com/coderyi/MVVMDemo
