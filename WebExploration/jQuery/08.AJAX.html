@@ -63,6 +63,17 @@
         }).done(function (data) {
             // 此处的 data 已经被解析为 JSON 对象了
         });
+
+        $.ajax({
+            url:"ss",
+            type: "get",
+            async: false,
+            success: function (response) {
+                console.log("response: " + response);
+            }
+        });
+
+
     </script>
     </body>
 </html>

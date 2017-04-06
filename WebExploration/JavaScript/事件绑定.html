@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+</head>
+<body>
+
+<input type="button" value="点我啊" id="btn">
+
+<script type="text/javascript">
+
+    // 第一种方式
+//    document.getElementById("btn").onclick = function () {
+//        alert("hello");
+//    };
+
+    // 第二种方式
+    // 绑定事件的另一种方法是用 addEventListener() 或 attachEvent() 来绑定事件监听函数。
+    //  addEventListener() IE8以下不支持。
+    //  attachEvent()  IE标准
+    /***
+     * event : （必需）事件名，支持所有DOM事件。
+     * function：（必需）指定要事件触发时执行的函数。
+     * useCapture：（可选）指定事件是否在捕获或冒泡阶段执行。true，捕获。false，冒泡。默认false。
+     */
+    // element.addEventListener(event, function, useCapture)
+
+    document.getElementById("btn").addEventListener("click", showAlert);
+    function showAlert() {
+        alert("hello");
+    }
+
+    // IE标准
+    /***
+     * event : （必需）事件名，支持所有DOM事件。
+     * function：（必需）指定要事件触发时执行的函数。
+     */
+    // element.attachEvent(event, function)
+    document.getElementById("id").attachEvent("onClick", showAlert);
+
+
+    /**
+     * 事件监听的优点:
+     *      1、可以绑定多个事件。
+     *      2、可以解除相应的绑定
+     */
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click", hello1);
+    btn.addEventListener("click", hello2);
+    // 解除绑定
+    btn.removeEventListener("click", hello1);
+    function hello1() {
+        alert("hello1")
+    }
+    function hello2() {
+        alert("hello2")
+    }
+
+    /**
+     * 封装事件监听
+     * */
+    // 绑定监听事件
+    function addEventHandler(target, type, fun) {
+        if (target.addEventListener){
+            target.addEventListener(type, fun);
+        }else {
+            target.attachEvent(type, fun);
+        }
+    }
+
+    // 移除监听事件
+    function removeEventHandler(target,type,fn){
+        if(target.removeEventListener){
+            target.removeEventListener(type,fn);
+        }else{
+            target.detachEvent("on"+type,fn);
+        }
+    }
+    var btn2 = document.getElementById("btn");
+    addEventHandler(btn2,"click", hello1);
+    addEventHandler(btn2, "click", hello1);
+    removeEventHandler(btn2, "click", hello1);
+
+
+</script>
+</body>
+</html>

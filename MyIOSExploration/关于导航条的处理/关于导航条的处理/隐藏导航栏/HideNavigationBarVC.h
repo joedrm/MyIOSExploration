@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface HideNavigationBarVC : BaseViewController
+@interface HideNavigationBarVC : BaseTestViewController
 
 @end

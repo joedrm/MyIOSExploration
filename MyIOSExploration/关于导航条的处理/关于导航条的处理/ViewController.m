@@ -40,6 +40,8 @@
  参考资料：
  https://github.com/rickytan/RTRootNavigationController
  
+ 平滑的在切换界面时隐藏/显示导航栏
+ https://github.com/Cloudox/SmoothNavDemo
  */
 
 

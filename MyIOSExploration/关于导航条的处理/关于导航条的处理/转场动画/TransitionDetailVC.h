@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface TransitionDetailVC : BaseViewController
+@interface TransitionDetailVC : BaseTestViewController
 @property (weak, nonatomic) UIImageView *itemImageView;
 @end

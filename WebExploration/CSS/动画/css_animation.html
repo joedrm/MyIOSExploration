@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+
+    <style>
+        @-webkit-keyframes example {
+            0% {
+                -webkit-transform: translateY(-300px) scaleY(1.2);
+                background: orangered;
+
+            }
+            35% {
+                -webkit-transform: translateY(-300px) scaleY(1.2);
+                background: yellow;
+            }
+            /* 和开始时同样的位置，即让球等待一会儿再下落 0% */
+            65% {
+                -webkit-transform: translateY(0px) scaleY(1.2);
+                background: cornflowerblue;
+            }
+            /* 当动画播放到65%时，球再开始下落 */
+            67% {
+                -webkit-transform: translateY(10px) scaleY(0.8);
+            }
+            85% {
+                -webkit-transform: translateY(-100px) scaleY(1.2);
+            }
+            100% {
+                -webkit-transform: translateY(0px);
+            }
+        }
+
+        #demo1 {
+            position: absolute;
+            left: 30%;
+            top: 50%;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            -webkit-animation: example 1s ease 2 alternate;
+        }
+    </style>
+</head>
+<body>
+
+<div id="demo1">
+
+</div>
+
+</body>
+</html>

@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface DisableInteractivePopVC : BaseViewController
+@interface DisableInteractivePopVC : BaseTestViewController
 
 @end

@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface PushRemoveViewController : BaseViewController
+@interface PushRemoveViewController : BaseTestViewController
 
 @end

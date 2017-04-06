@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件委托</title>
+</head>
+<body>
+
+<ul id="list">
+    <li id="item1">Java</li>
+    <li id="item2">Python</li>
+    <li id="item3">PHP</li>
+</ul>
+
+<script type="text/javascript">
+    // 事件委托就是利用冒泡的原理，把事件加到父元素或祖先元素上，触发执行效果。
+    // 下面的是传统的写法
+    var item1 = document.getElementById("item1");
+    var item2 = document.getElementById("item2");
+    var item3 = document.getElementById("item3");
+//    item1.onclick = function(){
+//        alert("hello item1");
+//    }
+//    item2.onclick = function(){
+//        alert("hello item2");
+//    }
+//    item3.onclick = function(){
+//        alert("hello item3");
+//    }
+
+
+//    document.addEventListener("click", function (event) {
+//        var target = event.target;
+//        if(target == item1){
+//            alert("hello item1");
+//        }else if(target == item2){
+//            alert("hello item2");
+//        }else if(target == item3){
+//            alert("hello item3");
+//        }
+//    });
+
+    /**
+     * 传统的事件绑定无法对动态添加的元素而动态的添加事件。
+     * 事件委托可以为新添加的DOM元素动态的添加事件。
+     * 参考文章：http://blog.xieliqun.com/2016/08/12/event-delegate/
+     *          http://www.diguage.com/archives/71.html
+     * */
+    var list = document.getElementById("list");
+    document.addEventListener("click",function(event){
+        var target = event.target;
+        if(target.nodeName == "LI"){
+            alert(target.innerHTML);
+        }
+    })
+    var node = document.createElement("li");
+    var textnode = document.createTextNode("item4");
+    node.appendChild(textnode);
+    list.appendChild(node);
+
+</script>
+</body>
+</html>

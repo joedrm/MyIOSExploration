@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface CustomNavigationBarVC : BaseViewController
+@interface CustomNavigationBarVC : BaseTestViewController
 
 @end

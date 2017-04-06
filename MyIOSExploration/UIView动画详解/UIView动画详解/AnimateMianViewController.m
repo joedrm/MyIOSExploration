@@ -43,5 +43,5 @@
 /*
  https://github.com/daltoniam/DCAnimationKit  
  https://github.com/minggo620/iOSViewAnimation
- 
+ https://github.com/Cloudox/Motion-Design-for-iOS  翻译自《Motion Design for iOS》，讲解iOS动画设计指南
  */

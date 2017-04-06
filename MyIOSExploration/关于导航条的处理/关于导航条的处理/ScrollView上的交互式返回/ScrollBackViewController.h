@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ScrollBackViewController : BaseViewController
+@interface ScrollBackViewController : BaseTestViewController
 
 @end
