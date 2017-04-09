@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        .search{
+            width: 300px;
+            margin: 100px auto;
+            background-color: aqua;
+            position: relative;
+        }
+
+        .search input{
+            width: 200px;
+            height: 30px;
+            /*background-color: red;*/
+        }
+
+        .search label{
+            font-size: 12px;
+            position: absolute;
+            height: 30px;
+            color: #ccc;
+            top: 10px;
+            left: 20px;
+            /*background-color: #191D3A;*/
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            function $(id) {
+                return document.getElementById(id);
+            }
+
+            // $("txt").oninput 不适配 IE6/7/8
+            // .onpropertychange 适配 IE9 以下
+            $("txt").oninput  = $("txt").onpropertychange = function () {
+
+                if (this.value == ""){
+                    $("message").style.display = "block";
+                }else {
+                    $("message").style.display = "none";
+                }
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+<div class="search">
+
+    <input type="text" id="txt">
+    <label for="txt" id="message">请输入你要搜索的商品</label>
+
+</div>
+
+</body>
+</html>

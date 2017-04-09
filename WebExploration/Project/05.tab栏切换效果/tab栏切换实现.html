@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        .box{
+            width: 400px;
+            margin: 100px auto;
+            border: 1px solid #ccc;
+        }
+
+        .top{
+            width: 100%;
+            height: 30px;
+            text-align: center;
+        }
+
+        .bottom div{
+            width: 100%;
+            height: 250px;
+            border-top: 1px solid #ccc;
+            background-color: yellow;
+            display: none;
+        }
+
+        .changeColor{
+            background-color: #C81623;
+        }
+
+        .bottom .showDiv{
+            display: block;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var btns = document.getElementsByTagName("button");
+            var divs = document.getElementById("divs").getElementsByTagName("div");
+
+            for (var i = 0; i < btns.length; i ++){
+                btns[i].index = i;
+                btns[i].onclick = function () {
+
+                    for(var j = 0; j < btns.length; j ++){
+                        btns[j].className = "";
+                        divs[j].className = "";
+                    }
+                    this.className = "changeColor";
+                    divs[this.index].className = "showDiv";
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="box">
+    <div class="top">
+        <button class="changeColor">Javascript</button>
+        <button>HTML5</button>
+        <button>CSS3</button>
+        <button>Android</button>
+        <button>Python</button>
+    </div>
+
+    <div class="bottom" id="divs">
+        <div class="showDiv">模块一</div>
+        <div>模块二</div>
+        <div>模块三</div>
+        <div>模块四</div>
+        <div>模块五</div>
+    </div>
+</div>
+
+</body>
+</html>

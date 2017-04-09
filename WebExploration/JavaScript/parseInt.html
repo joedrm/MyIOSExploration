@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        console.log(parseInt(19.11));
+        console.log(parseInt(19.99));
+
+        console.log(parseInt('25px'));
+
+
+        // parseInt(值, 进制)
+        // 把 10 以 二进制 转换为电脑默认的十进制
+        console.log(parseInt(10, 2));  // 2
+
+        // 把 17 以 八进制 转换为电脑默认的十进制
+        console.log(parseInt(17, 8)) // 7*(8的0次方)+1*(8的1次方) = 15
+
+        // 面试题
+        var a = "15.15abc";
+        var b = "10.15";
+        var c = "10.0abc";
+        var result = parseInt(a) + Number(b) + parseFloat(c);
+
+        console.log("a = "+parseInt(a)+"; b = "+Number(b)+"; c = "+parseFloat(c));// a = 15; b = 10.15; c = 10.0
+        console.log(result); // 35.15
+
+    </script>
+
+</body>
+</html>

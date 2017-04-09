@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            height: 70px;
+            width: 360px;
+            padding-top: 360px;
+            margin: 100px auto;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            background-image: url("images/01big.jpg");
+            background-repeat: no-repeat;
+        }
+        #box ul{
+            overflow: hidden;
+            border-top: 1px solid #cccccc;
+        }
+        #box li{
+            float: left;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            // 函数的封装
+            var box = document.getElementById('box');
+            function fun(liid, bgImage) {
+                var obj = document.getElementById(liid);
+                obj.onmouseover = function () {
+                    box.style.backgroundImage = bgImage;
+                }
+            }
+
+            fun("li01", "url(images/01big.jpg)");
+            fun("li02", "url(images/02big.jpg)");
+            fun("li03", "url(images/03big.jpg)");
+            fun("li04", "url(images/04big.jpg)");
+            fun("li05", "url(images/05big.jpg)");
+        }
+    </script>
+</head>
+<body>
+
+<div id="box">
+    <ul>
+        <li id="li01"><img src="images/01.jpg" alt=""></li>
+        <li id="li02"><img src="images/02.jpg" alt=""></li>
+        <li id="li03"><img src="images/03.jpg" alt=""></li>
+        <li id="li04"><img src="images/04.jpg" alt=""></li>
+        <li id="li05"><img src="images/05.jpg" alt=""></li>
+    </ul>
+</div>
+</body>
+</html>

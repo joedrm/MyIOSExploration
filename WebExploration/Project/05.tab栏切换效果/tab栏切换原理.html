@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .changeColor{
+            background-color: red;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var btns = document.getElementsByTagName("button");
+
+            for (var i = 0; i < btns.length; i ++){
+
+                // 自定义属性
+                /**
+                 * 因为变量提升的原因:
+                 *      当调用 btns[i].onclick 的时候,此时得到i的值始终是 i = btns.length - 1
+                 *      所以,需要提前将 i 的值绑定到每一个 按钮 上.
+                 *      即为每一个按钮添加一个 index 属性,并让 index = i
+                 */
+                btns[i].index = i;
+
+                btns[i].onclick = function () {
+
+                    alert(this.index);
+
+                    for(var i = 0; i < btns.length; i ++){
+                        btns[i].className = "";
+                    }
+                    this.className = "changeColor";
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+<button>Javascript</button>
+<button>HTML5</button>
+<button>CSS3</button>
+<button>Android</button>
+<button>Python</button>
+
+</body>
+</html>
