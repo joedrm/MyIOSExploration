@@ -1,0 +1,3 @@
+- [riskers/blog Issues移动端适配方案(下) #18](https://github.com/riskers/blog/issues/18)
+- [使用Flexible实现手淘H5页面的终端适配](http://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
+- [用vue 和 SUI-Mobile 写了一个移动端demo](https://github.com/eteplus/vue-sui-demo)

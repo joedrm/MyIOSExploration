@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=640">
+    <script src="../01.屏幕适配/mobile-util.js"></script>
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-text-size-adjust: none;
+        }
+        html {
+            background-color: red;
+            background-image: url("ass.jpg");
+            background-repeat: inherit;
+        }
+        body {
+            width: 640px;
+            margin: 0 auto;
+            line-height: 1.4;
+            background-color: red;
+        }
+
+        div.app{
+            width: 100%;
+            height: 100px;
+            background-color: #2aabd2;
+        }
+
+        @media screen and (orientation: portrait) {
+            /*竖屏 css*/
+        }
+        @media screen and (orientation: landscape) {
+            /*横屏 css*/
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+            if (window.orientation === 180 || window.orientation === 0) {
+                alert('竖屏状态！');
+            }
+            if (window.orientation === 90 || window.orientation === -90 ){
+                alert('横屏状态！');
+            }
+        }, false);
+        //移动端的浏览器一般都支持window.orientation这个参数，通过这个参数可以判断出手机是处在横屏还是竖屏状态。
+    </script>
+</head>
+<body>
+
+<!--<div class="app"></div>-->
+
+</body>
+</html>
