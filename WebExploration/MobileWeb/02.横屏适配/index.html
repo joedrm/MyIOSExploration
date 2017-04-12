@@ -13,29 +13,39 @@
             -webkit-text-size-adjust: none;
         }
         html {
-            background-color: red;
-            background-image: url("ass.jpg");
-            background-repeat: inherit;
+            background-color: #f7f7f7;
         }
         body {
             width: 640px;
             margin: 0 auto;
             line-height: 1.4;
-            background-color: red;
+            background-color: #fff;
         }
 
         div.app{
             width: 100%;
-            height: 100px;
-            background-color: #2aabd2;
+            height: 100%;
+            background-color: #000;
+            /* 设置子元素居中 */
+            display: -webkit-box;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
-        @media screen and (orientation: portrait) {
-            /*竖屏 css*/
+        .sub{
+            width: 100%;
+            height: 400px;
+            margin: 0;
         }
-        @media screen and (orientation: landscape) {
-            /*横屏 css*/
+
+        .sub img{
+            width: 100%;
+            /*height: 100%;*/
         }
+
     </style>
 
     <script type="text/javascript">
@@ -52,7 +62,11 @@
 </head>
 <body>
 
-<!--<div class="app"></div>-->
+<div class="app">
+    <div class="sub">
+        <img src="ass.jpg" alt="">
+    </div>
+</div>
 
 </body>
 </html>
