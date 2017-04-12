@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var x = document.getElementById("x");
+
+            // 父亲节点
+//            x.onclick = function () {
+//                // button 的 父亲
+//                this.parentNode.style.display = "none";
+//            }
+
+            // 兄弟节点
+            x.onclick = function () {
+                // 下一个兄弟
+                // nextSibling IE6/7/8认识
+//                this.nextSibling.style.display = "none";
+                // 其它的浏览器认识
+//                this.nextElementSibling.style.display = "none";
+
+
+                // 上一个兄弟
+                // previousSibling IE6/7/8认识
+//                this.previousSibling.style.display = 'none';
+                // 其它的浏览器认识
+//                this.previousElementSibling.style.display = "none";
+
+
+                // 兼容写法
+                var div = this.previousElementSibling || this.previousSibling;
+                div.style.display = "none";
+            }
+
+            // 全部的子节点 childNodes
+            var box = document.getElementById("ul");
+            var child = box.childNodes;
+            console.log(child.length); // 7 这里包含了空格
+
+            // 只取出元素节点
+            var child2 = box.childNodes;
+            for (var i = 0; i <child2.length; i ++){
+                if (child2[i].nodeType == 1){
+                    console.log(child2[i]);
+                    child2[i].style.backgroundColor = "red";
+                }
+            }
+
+            // children: 选出所有的元素节点
+            var box = document.getElementById("ul2");
+            var childrens = box.children;
+            console.log(childrens.length); // 3
+        }
+    </script>
+</head>
+<body>
+
+<div id="box">
+    <img src="../images/1.jpg" alt="">
+    <button id="x">点击隐藏</button>
+    <span>下一个兄弟👬下一个兄弟👬下一个兄弟👬下一个兄弟👬下一个兄弟👬下一个兄弟👬</span>
+</div>
+
+<ul id="ul">
+    <li>123</li>
+    <li>123</li>
+    <li>123</li>
+</ul>
+
+<ul id="ul2">
+    <li>Javascript</li>
+    <li>HTML</li>
+    <li>CSS</li>
+</ul>
+</body>
+</html>

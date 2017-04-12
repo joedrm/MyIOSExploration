@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 500px;
+            height: 500px;
+            background-color: #3cba1a;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var box = document.getElementById("box");
+            var appBox = document.createElement('div');
+            appBox.style.backgroundColor = "red";
+            appBox.style.width = "200px";
+            appBox.style.height = "200px";
+
+            // 插入子节点
+            box.appendChild(appBox);
+
+            // 也是插入子节点，insertBefore(要插入的节点，参照节点)
+            //              insertBefore(insertBox, appBox)
+            // 如果第二个参数为 null 时， 默认把节点添加到最后面
+            var insertBox = document.createElement("div");
+            insertBox.style.backgroundColor = "black";
+            insertBox.style.width = "50px";
+            insertBox.style.height = "50px";
+            box.insertBefore(insertBox, appBox);
+        }
+
+    </script>
+</head>
+<body>
+
+<div id="box">
+
+</div>
+
+</body>
+</html>

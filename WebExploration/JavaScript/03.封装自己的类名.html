@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        div{
+            background-color: #cccccc;
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            // 封装自己的类名
+            function getClass(classname) {
+                // 如果浏览器支持，直接获得 class
+                if (document.getElementsByClassName){
+                    return document.getElementsByClassName(classname);
+                }
+                // 如果浏览器不支持，自己封装
+                var arr = [];
+                // 把所有的盒子去过来
+                var dom = document.getElementsByTagName("*");
+                for (var i = 0; i < dom.length; i ++){
+                    // 将含有多个class的盒子按空格分割开
+                    var txtArr = dom[i].className.split(" ");
+                    for (var j = 0; j < txtArr.length; j ++){
+                        if (txtArr[j] == classname){
+                            // 最终加入数组的是含有 classname 的 盒子
+                            arr.push(dom[i]);
+                        }
+                    }
+                }
+                return arr;
+            }
+            // 测试代码
+            console.log(getClass("test").length);
+            var test = getClass("test");
+            for(var i =0; i < test.length; i++){
+                test[i].style.backgroundColor = "red"
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="demo"></div>
+<div class="div"></div>
+<div></div>
+<div></div>
+<div></div>
+<div class="test one"></div>
+<div class="demo"></div>
+<div></div>
+<div class="test demo"></div>
+<div class="demo test one"></div>
+</body>
+</html>

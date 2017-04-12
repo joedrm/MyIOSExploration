@@ -66,6 +66,7 @@
  
  https://github.com/wujunyang/MVVMReactiveCocoaDemo  ReactiveCocoa的知识点及MVVM模式运用（不断更新中....）
  
+ https://github.com/Jerry4me/JRReactiveCocoa  RAC基本用法及MVVM的小demo
  
  MVVM
  https://github.com/coderyi/MVVMDemo

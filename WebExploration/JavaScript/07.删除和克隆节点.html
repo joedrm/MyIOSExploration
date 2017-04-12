@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07.删除和克隆节点</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #test{
+            background-color: #1b6d85;
+            width: 200px;
+            height: 200px;
+        }
+        #btn, #btn2{
+            width: 100px;
+            height: 30px;
+            background-color: #ccc;
+            color: red;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var box = document.getElementById("test");
+            var span = document.getElementById("span1");
+            var btn = document.getElementById("btn");
+            var btn2 = document.getElementById("btn2");
+
+            // 移除子节点
+            btn.onclick = function () {
+                box.removeChild(span);
+            }
+
+            // true：深层复制，
+            // false：浅层复制
+            btn2.onclick = function () {
+                var copyNode = span.cloneNode(true);
+                copyNode.style.backgroundColor = "blue";
+                copyNode.style.width = "100px";
+                copyNode.style.height = "100px";
+                box.appendChild(copyNode);
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+<div id="test">
+    <span id="span1">hello!</span>
+</div>
+
+<button id="btn2">克隆节点</button>
+<button id="btn">移除节点</button>
+</body>
+</html>
