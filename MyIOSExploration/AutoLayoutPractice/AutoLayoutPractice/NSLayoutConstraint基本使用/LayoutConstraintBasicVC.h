@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface LayoutConstraintBasicVC : BaseViewController
+@interface LayoutConstraintBasicVC : BaseTestViewController
 
 @end

@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface VFLViewController : BaseViewController
+@interface VFLViewController : BaseTestViewController
 
 @end

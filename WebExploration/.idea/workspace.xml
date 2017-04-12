@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/03.封装自己的类名.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/04.类添加id.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/05.访问关系.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/06.创建和插入节点.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/07.删除和克隆节点.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CSS/images/1.jpg" afterPath="$PROJECT_DIR$/images/1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CSS/images/banner.jpg" afterPath="$PROJECT_DIR$/images/banner.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CSS/images/bg.png" afterPath="$PROJECT_DIR$/images/bg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CSS/images/bg2.png" afterPath="$PROJECT_DIR$/images/bg2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CSS/images/bg3.png" afterPath="$PROJECT_DIR$/images/bg3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CSS/images/dibanzhuan.jpg" afterPath="$PROJECT_DIR$/images/dibanzhuan.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CSS/images/zimubiao.jpg" afterPath="$PROJECT_DIR$/images/zimubiao.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/JavaScript/JS进阶/01.初步体验.html" afterPath="$PROJECT_DIR$/JavaScript/01.初步体验.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/JavaScript/JS进阶/02.事件-点击按钮改变宽度.html" afterPath="$PROJECT_DIR$/JavaScript/02.事件-点击按钮改变宽度.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/ReactiveCocoa &amp; MVVM/ReactiveCocoa &amp; MVVM/RACMainViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/ReactiveCocoa &amp; MVVM/ReactiveCocoa &amp; MVVM/RACMainViewController.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/JavaScriptNote/引用类型/Array类型.js" afterPath="$PROJECT_DIR$/JavaScript/JS基础/Array类型.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/JavaScriptNote/引用类型/Function类型.js" afterPath="$PROJECT_DIR$/JavaScript/JS基础/Function类型.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/定位/51.固定定位用途：顶部导航栏.html" afterPath="$PROJECT_DIR$/CSS/定位/51.固定定位用途：顶部导航栏.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/常用属性/39.一像素图片的妙用.html" afterPath="$PROJECT_DIR$/CSS/常用属性/39.一像素图片的妙用.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/常用属性/41.拼出自己的名字.html" afterPath="$PROJECT_DIR$/CSS/常用属性/41.拼出自己的名字.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/常用属性/42.通栏banner.html" afterPath="$PROJECT_DIR$/CSS/常用属性/42.通栏banner.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/常用属性/43.background-attachment属性.html" afterPath="$PROJECT_DIR$/CSS/常用属性/43.background-attachment属性.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileWeb/02.横屏适配/index.html" afterPath="$PROJECT_DIR$/MobileWeb/02.横屏适配/index.html" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,33 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="50.固定定位.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/定位/50.固定定位.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="51.固定定位用途：顶部导航栏.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/定位/51.固定定位用途：顶部导航栏.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="978">
-              <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/1.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="45.绝对定位.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS/定位/45.绝对定位.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,12 +57,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="07.删除和克隆节点.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="07.删除和克隆节点.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript/07.删除和克隆节点.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/01.百度换肤/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Array类型.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/JS基础/Array类型.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1445">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Function类型.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript/JS基础/Function类型.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -312,52 +299,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JD项目" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScriptNote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -377,11 +318,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JavaScript/JS基础" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/JavaScript" />
       <recent name="$PROJECT_DIR$/MobileWeb/02.横屏适配" />
       <recent name="$PROJECT_DIR$/MobileWeb/01.屏幕适配" />
-      <recent name="$PROJECT_DIR$/Project" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Project/03.输入框点击隐藏文字/images" />
@@ -526,12 +467,12 @@
       <workItem from="1491788890251" duration="2445000" />
       <workItem from="1491813755265" duration="19000" />
       <workItem from="1491882110279" duration="9297000" />
-      <workItem from="1491961647649" duration="12976000" />
+      <workItem from="1491961647649" duration="13846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263879000" />
+    <option name="totallyTimeSpent" value="264749000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -546,7 +487,7 @@
     <frame x="197" y="23" width="1463" height="877" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23162274" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23162274" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5029455" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -585,20 +526,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JavaScriptNote/引用类型/Function类型.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/JS基础/07.函数.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/常用属性/39.一像素图片的妙用.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -676,13 +603,6 @@
         <state relative-caret-position="476">
           <caret line="28" column="31" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/01.百度换肤/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1016,9 +936,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/07.删除和克隆节点.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/01.百度换肤/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/JS基础/Array类型.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1445">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/JS基础/Function类型.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

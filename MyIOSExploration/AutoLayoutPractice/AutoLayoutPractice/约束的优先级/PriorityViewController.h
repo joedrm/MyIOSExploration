@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface PriorityViewController : BaseViewController
+@interface PriorityViewController : BaseTestViewController
 
 @end

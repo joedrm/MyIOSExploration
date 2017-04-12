@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface LayoutAnimateViewController : BaseViewController
+@interface LayoutAnimateViewController : BaseTestViewController
 
 @end

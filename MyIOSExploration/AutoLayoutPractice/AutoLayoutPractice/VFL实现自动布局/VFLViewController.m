@@ -161,19 +161,21 @@
     UILabel* redView = [[UILabel alloc] init];
     redView.backgroundColor = [UIColor redColor];
     redView.translatesAutoresizingMaskIntoConstraints = NO;
+    redView.text = @"test5:  redView";
     [self.view addSubview:redView];
     
     
     UILabel* blueView = [[UILabel alloc] init];
     blueView.backgroundColor = [UIColor blueColor];
     blueView.translatesAutoresizingMaskIntoConstraints = NO;
+    blueView.text = @"test5:  blueView";
     [self.view addSubview:blueView];
     
     NSDictionary* dict = NSDictionaryOfVariableBindings(redView, blueView);
     NSDictionary* metrics = @{@"space" : @20};
     
     // 最终 blueView == 250 获胜，redView 占据剩下的空间
-    NSString* herFormat = @"H:|-0-[redView(==250@700)]-0-[blueView(==250@701)]-0-|";
+    NSString* herFormat = @"H:|-0-[redView(==100@702)]-0-[blueView(==100@703)]-0-|";
     NSArray* arr = [NSLayoutConstraint constraintsWithVisualFormat:herFormat options:NSLayoutFormatAlignAllTop | NSLayoutFormatAlignAllBottom
                                                            metrics:metrics views:dict];
     [self.view addConstraints:arr];
