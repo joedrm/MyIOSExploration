@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/JavaScriptNote/引用类型/Array类型.js" afterPath="$PROJECT_DIR$/JavaScript/JS基础/Array类型.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/JavaScriptNote/引用类型/Function类型.js" afterPath="$PROJECT_DIR$/JavaScript/JS基础/Function类型.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="" />
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,16 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="45.绝对定位.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/定位/45.绝对定位.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-765">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="05.访问关系.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript/05.访问关系.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,6 +38,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
               <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MobileWeb/02.横屏适配/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -89,15 +85,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Function类型.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Function类型.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript/JS基础/Function类型.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+            <state relative-caret-position="124">
+              <caret line="174" column="35" selection-start-line="174" selection-start-column="35" selection-end-line="174" selection-end-column="35" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ass.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MobileWeb/02.横屏适配/ass.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -116,16 +119,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
               <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/JD项目/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -299,6 +292,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02.横屏适配" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -332,10 +357,7 @@
       <recent name="$PROJECT_DIR$/Boya项目/images" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.07.删除和克隆节点.html">
-    <configuration default="false" name="03.封装自己的类名.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/JavaScript/03.封装自己的类名.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.Function类型.js">
     <configuration default="false" name="04.类添加id.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/JavaScript/04.类添加id.html">
       <method />
     </configuration>
@@ -346,6 +368,9 @@
       <method />
     </configuration>
     <configuration default="false" name="07.删除和克隆节点.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/JavaScript/07.删除和克隆节点.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="Function类型.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="Function类型.js" working-dir="$PROJECT_DIR$/JavaScript/JS基础">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -410,19 +435,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tab栏切换实现.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.03.封装自己的类名.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.04.类添加id.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.05.访问关系.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.06.创建和插入节点.html" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.07.删除和克隆节点.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.04.类添加id.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.05.访问关系.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.06.创建和插入节点.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.07.删除和克隆节点.html" />
+      <item index="6" class="java.lang.String" itemvalue="Node.js.Function类型.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.07.删除和克隆节点.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.06.创建和插入节点.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.05.访问关系.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.04.类添加id.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.03.封装自己的类名.html" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.Function类型.js" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.07.删除和克隆节点.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.06.创建和插入节点.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.05.访问关系.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.04.类添加id.html" />
       </list>
     </recent_temporary>
   </component>
@@ -467,12 +492,12 @@
       <workItem from="1491788890251" duration="2445000" />
       <workItem from="1491813755265" duration="19000" />
       <workItem from="1491882110279" duration="9297000" />
-      <workItem from="1491961647649" duration="13846000" />
+      <workItem from="1491961647649" duration="14306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264749000" />
+    <option name="totallyTimeSpent" value="265209000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,13 +510,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="197" y="23" width="1463" height="877" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23162274" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5029455" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4970545" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.4970545" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2279587" sideWeight="0.51338583" order="2" side_tool="true" content_ui="tabs" />
@@ -526,13 +551,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CSS/常用属性/39.一像素图片的妙用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/03.输入框点击隐藏文字/images/left.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -678,14 +696,6 @@
           <folding>
             <element signature="e#1715#2604#1" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileWeb/02.横屏适配/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,11 +972,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/JS基础/Function类型.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        <state relative-caret-position="124">
+          <caret line="174" column="35" selection-start-line="174" selection-start-column="35" selection-end-line="174" selection-end-column="35" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileWeb/02.横屏适配/ass.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileWeb/02.横屏适配/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
