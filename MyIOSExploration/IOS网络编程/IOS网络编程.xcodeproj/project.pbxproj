@@ -13,7 +13,23 @@
 		2067DCAA1E56920D00416DC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2067DCA81E56920D00416DC6 /* Main.storyboard */; };
 		2067DCAC1E56920D00416DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2067DCAB1E56920D00416DC6 /* Assets.xcassets */; };
 		2067DCAF1E56920D00416DC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2067DCAD1E56920D00416DC6 /* LaunchScreen.storyboard */; };
+		208CF8A61EA0BFA20055DBCB /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CF8A51EA0BFA20055DBCB /* WDYLibrary.framework */; };
+		208CF8A71EA0BFA20055DBCB /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 208CF8A51EA0BFA20055DBCB /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		208CF8A81EA0BFA20055DBCB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				208CF8A71EA0BFA20055DBCB /* WDYLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2067DC9C1E56920C00416DC6 /* IOS网络编程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS网络编程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,7 @@
 		2067DCAB1E56920D00416DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2067DCAE1E56920D00416DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2067DCB01E56920D00416DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208CF8A51EA0BFA20055DBCB /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				208CF8A61EA0BFA20055DBCB /* WDYLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 		2067DC931E56920C00416DC6 = {
 			isa = PBXGroup;
 			children = (
+				208CF8A51EA0BFA20055DBCB /* WDYLibrary.framework */,
 				2067DC9E1E56920C00416DC6 /* IOS网络编程 */,
 				2067DC9D1E56920C00416DC6 /* Products */,
 			);
@@ -89,6 +108,7 @@
 				2067DC981E56920C00416DC6 /* Sources */,
 				2067DC991E56920C00416DC6 /* Frameworks */,
 				2067DC9A1E56920C00416DC6 /* Resources */,
+				208CF8A81EA0BFA20055DBCB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -110,7 +130,7 @@
 				TargetAttributes = {
 					2067DC9B1E56920C00416DC6 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VRGWDFH359;
+						DevelopmentTeam = 2Y3JSHFEC2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -271,7 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				INFOPLIST_FILE = "IOS网络编程/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.networking.IOS----";
@@ -283,7 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VRGWDFH359;
+				DEVELOPMENT_TEAM = 2Y3JSHFEC2;
 				INFOPLIST_FILE = "IOS网络编程/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdy.networking.IOS----";
@@ -310,6 +330,7 @@
 				2067DCB51E56920D00416DC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

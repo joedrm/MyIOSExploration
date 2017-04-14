@@ -34,42 +34,44 @@
     <textarea id="test-textarea">Hello</textarea>
 
     <script type="text/javascript">
-        // text()和html()方法分别获取节点的文本和原始HTML文本
-        $('#test li[name=book]').text();// 'Java & JavaScript'
-        $('#test li[name=book]').html('<span style="color: red">JavaScript</span>');
+        $(function () {
+            // text()和html()方法分别获取节点的文本和原始HTML文本
+            $('#test li[name=book]').text();// 'Java & JavaScript'
+            $('#test li[name=book]').html('<span style="color: red">JavaScript</span>');
 
-        // 一个jQuery对象可以包含0个或任意个DOM对象，它的方法实际上会作用在对应的每个DOM节点上
-        $('#test li').text('JS'); // 都变成 JS
+            // 一个jQuery对象可以包含0个或任意个DOM对象，它的方法实际上会作用在对应的每个DOM节点上
+            $('#test li').text('JS'); // 都变成 JS
 
-        // 修改CSS
-        $('#test-css li.dy>span').css('background-color', '#ffd351').css('color', 'red');
-        var test_div = $('#test_div');
-        test_div.css('color'); // '#000033', 获取CSS属性
-        test_div.css('color', '#336699');// 设置CSS属性
-        test_div.css('color', '');// 清除CSS属性
+            // 修改CSS
+            $('#test-css li.dy>span').css('background-color', '#ffd351').css('color', 'red');
+            var test_div = $('#test_div');
+            test_div.css('color'); // '#000033', 获取CSS属性
+            test_div.css('color', '#336699');// 设置CSS属性
+            test_div.css('color', '');// 清除CSS属性
 
-        // 显示和隐藏DOM
-        test_div.hide(); // 隐藏
-        test_div.show(); // 显示
+            // 显示和隐藏DOM
+            test_div.hide(); // 隐藏
+            test_div.show(); // 显示
 
-        // 获取DOM信息
-        $(window).width();
-        $(window).height();
+            // 获取DOM信息
+            $(window).width();
+            $(window).height();
 
-        // 表单操作 提供val()方法获取和设置对应的value
-        var
-                input = $('#test-input'),
-                select = $('#test-select'),
-                textarea = $('#test-textarea');
+            // 表单操作 提供val()方法获取和设置对应的value
+            var
+                    input = $('#test-input'),
+                    select = $('#test-select'),
+                    textarea = $('#test-textarea');
 
-        input.val(); // 'test'
-        input.val('abc@example.com'); // 文本框的内容已变为abc@example.com
+            input.val(); // 'test'
+            input.val('abc@example.com'); // 文本框的内容已变为abc@example.com
 
-        select.val(); // 'BJ'
-        select.val('SH'); // 选择框已变为Shanghai
+            select.val(); // 'BJ'
+            select.val('SH'); // 选择框已变为Shanghai
 
-        textarea.val(); // 'Hello'
-        textarea.val('Hi'); // 文本区域已更新为'Hi'
+            textarea.val(); // 'Hello'
+            textarea.val('Hi'); // 文本区域已更新为'Hi'
+        })
 
     </script>
 </body>

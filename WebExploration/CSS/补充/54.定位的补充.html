@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #demo{
+            width:300px;
+            margin:10px auto;
+            padding:10px;
+            background:#eee;
+            text-align:left;
+        }
+        #demo ul{
+            list-style: none;
+        }
+        #demo li{
+            position:relative;
+            height:25px;
+            padding-right:80px;
+            line-height:25px;
+            white-space:nowrap;
+        }
+        #demo li a{
+            display:inline-block;
+            overflow:hidden;
+            height:100%;
+            white-space:normal;
+            word-wrap:break-word;
+            word-break:break-all;
+        }
+        #demo li time{
+            position:absolute;
+            padding-left:10px;
+            color:#8c8c8c;
+        }
+
+        #center_box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 150px;
+            height: 40px;
+            margin: -20px 0 0 -75px;
+            padding: 0 10px;
+            background: #ff0000;
+            line-height: 2.4;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="demo">
+    <ul>
+        <li>
+            <a href="?" title="这是一个长到令人发指的随便什么标题">这是一个长到令人发指的随便什么标题</a>
+            <time>2009.11.23</time>
+        </li>
+        <li>
+            <a href="?">这是一个随便什么标题</a>
+            <time>2009.11.23</time>
+        </li>
+        <li>
+            <a href="?">这是一个更长的随便什么标题</a>
+            <time>2009.11.23</time>
+        </li>
+        <li>
+            <a href="?">这是一个更长更长的随便什么标题</a>
+            <time>2009.11.23</time>
+        </li>
+    </ul>
+</div>
+
+<div id="center_box">
+
+</div>
+
+</body>
+</html>

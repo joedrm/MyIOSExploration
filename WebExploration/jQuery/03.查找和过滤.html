@@ -18,31 +18,36 @@
 
     <script type="text/javascript">
 
-        var ul = $('ul.lang'); // 获得<ul>
-        var dy = ul.find('.dy'); // 获得JavaScript, Python, Scheme
-        var swf = ul.find('#swift');  // 获得Swift
-        var hsk = ul.find('[name=haskell]'); // 获得Haskell
+        $(function () {
+            var ul = $('ul.lang'); // 获得<ul>
+            var dy = ul.find('.dy'); // 获得JavaScript, Python, Scheme
+            var swf = ul.find('#swift');  // 获得Swift
+            var hsk = ul.find('[name=haskell]'); // 获得Haskell
 
-        var parent = swf.parent(); // 获得Swift的上层节点<ul>
-        var a = swf.parent('div.red'); // 从Swift的父节点开始向上查找，直到找到某个符合条件的节点并返回
+            var parent = swf.parent(); // 获得Swift的上层节点<ul>
+            var a = swf.parent('div.red'); // 从Swift的父节点开始向上查找，直到找到某个符合条件的节点并返回
 
-        var lang = $('ul.lang li'); // 拿到JavaScript, Python, Swift, Scheme和Haskell
-        var a = lang.filter('.dy'); // 拿到JavaScript, Python, Scheme
-        // 传入一个函数，要特别注意函数内部的this被绑定为DOM对象，不是jQuery对象
-        lang.filter(function () {
-            return this.innerHTML.indexOf('S') === 0;
+            var lang = $('ul.lang li'); // 拿到JavaScript, Python, Swift, Scheme和Haskell
+            var a = lang.filter('.dy'); // 拿到JavaScript, Python, Scheme
+            // 传入一个函数，要特别注意函数内部的this被绑定为DOM对象，不是jQuery对象
+            lang.filter(function () {
+                console.log('this.innerHTML.indexOf = '+this.innerHTML.indexOf('S'));
+                return this.innerHTML.indexOf('S') === 0;
+            })
+
+            // map 方法
+            var arr = lang.map(function () {
+                return this.innerHTML;
+            }).get(); // 用get()拿到包含string的Array：['JavaScript', 'Python', 'Swift', 'Scheme', 'Haskell']
+            console.log(arr);
+
+            // first()、last()和slice()方法可以返回一个新的jQuery对象，把不需要的DOM节点去掉
+            var lang2 = $('ul.lang li')
+            var js = lang2.first();// JavaScript，相当于$('ul.lang li:first-child')
+            var haskell = lang.last();// Haskell, 相当于$('ul.lang li:last-child')
+            var sub = lang2.slice(2, 4); // Swift, Scheme, 参数和数组的slice()方法一致
         })
 
-        // map 方法
-        var arr = lang.map(function () {
-            return this.innerHTML;
-        }).get(); // 用get()拿到包含string的Array：['JavaScript', 'Python', 'Swift', 'Scheme', 'Haskell']
-
-        // first()、last()和slice()方法可以返回一个新的jQuery对象，把不需要的DOM节点去掉
-        var lang2 = $('ul.lang li')
-        var js = lang2.first();// JavaScript，相当于$('ul.lang li:first-child')
-        var haskell = lang.last();// Haskell, 相当于$('ul.lang li:last-child')
-        var sub = lang2.slice(2, 4); // Swift, Scheme, 参数和数组的slice()方法一致
 
     </script>
 </html>

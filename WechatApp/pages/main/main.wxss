@@ -1,0 +1,26 @@
+.flex-wrp{
+  margin-top: 60rpx;
+  display:block;
+}
+.flex-item{
+  width: 200rpx;
+  height: 200rpx;
+  font-size: 26rpx;
+}
+.flex-item-V{
+  margin: 0 auto;
+  width: 300rpx;
+  height: 200rpx;
+}
+
+.bc_green{
+    background-color: green;
+}
+
+.bc_red{
+    background-color: red;
+}
+
+.bc_blue{
+    background-color: blue;
+}

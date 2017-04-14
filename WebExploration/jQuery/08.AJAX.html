@@ -10,6 +10,20 @@
 
     <script type="text/javascript">
 
+        $(function () {
+            $.ajax({
+                url:"https://www.v2ex.com/api/topics/hot.json",
+                type: "get",
+                async: false,
+                success: function (response) {
+                    console.log("response: " + response);
+                },
+                fail: function (error) {
+                    console.log("error: " + error);
+                }
+            });
+        })
+
         /**
          * jQuery在全局对象jQuery（也就是$）绑定了ajax()函数，可以处理AJAX请求。ajax(url, settings)函数需要接收一个URL和一个可选的settings对象，常用的选项如下：
          *      async：是否异步执行AJAX请求，默认为true，千万不要指定为false；
@@ -28,11 +42,11 @@
         var jqxhr = $.ajax('/api/categories', {
             dataType: 'json'
         }).done(function (data) {
-            ajaxLog('成功, 收到的数据: ' + JSON.stringify(data));
+            console.log('成功, 收到的数据: ' + JSON.stringify(data));
         }).fail(function (xhr, status) {
-            ajaxLog('失败: ' + xhr.status + ', 原因: ' + status);
+            console.log('失败: ' + xhr.status + ', 原因: ' + status);
         }).always(function () {
-            ajaxLog('请求完成: 无论成功或失败都会调用');
+            console.log('请求完成: 无论成功或失败都会调用');
         });
 
         /***

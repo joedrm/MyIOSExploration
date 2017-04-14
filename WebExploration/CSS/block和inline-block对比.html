@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>display:inline、block、inline-block的区别</title>
+</head>
+<style>
+
+    /**
+    参考资料：https://www.w3cplus.com/css/inline-blocks.html
+    */
+    div, span {
+        background-color: green;
+        margin: 5px;
+        border: 1px solid #333;
+        padding: 5px;
+        height: 52px;
+        color: #fff;
+    }
+
+    .b {
+        display: block;
+    }
+
+    .i {
+        display: inline;
+    }
+
+    div.ib {
+        display: inline-block;
+    }
+
+    div.ib {
+        display: inline;
+    }
+
+    a.ib {
+        display: inline-block;
+    }
+
+    a.ib {
+        display: block;
+    }
+
+    span.v {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        vertical-align: middle;
+        height: 100%;
+    }
+</style>
+<body>
+<div>div display:block</div>
+<div class="i">div display:inline</div>
+<div class="ib">div display:inline-block</div>
+<span>span display:inline</span>
+<span class="b">span display:block</span>
+<span><a class="ib">a display:block</a></span><br />
+<div><span class="v"></span>vertical-align:middle</div>
+</body>
+</html>
+
+
