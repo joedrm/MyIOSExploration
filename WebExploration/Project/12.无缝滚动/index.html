@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{list-style: none}
+        img{vertical-align: top} /* 取消图片底部3像素的距离 */
+        .box{
+            width: 600px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: pink;
+            overflow: hidden;
+            position: relative;
+        }
+        .box ul li{
+            float: left;
+        }
+        .box ul{
+            width: 400%;
+            position: absolute;
+            top: 0px;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box" id="scroll">
+    <ul>
+        <li><img src="images/01.jpg" alt=""></li>
+        <li><img src="images/02.jpg" alt=""></li>
+        <li><img src="images/03.jpg" alt=""></li>
+        <li><img src="images/04.jpg" alt=""></li>
+        <li><img src="images/01.jpg" alt=""></li>
+        <li><img src="images/02.jpg" alt=""></li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    var scroll = document.getElementById("scroll");
+    var ul = scroll.children[0];
+    var num = 0;
+    var timer = null;
+    timer = setInterval(autoPlay, 5);
+    function autoPlay() {
+        num--;
+//        if (num <= -1200){
+//            ul.style.left = 0;
+//            num = 0;
+//        }else {
+//            ul.style.left = num + "px";
+//        }
+        num <= -1200 ? num = 0 : num;
+        ul.style.left = num + "px";
+    }
+    
+    scroll.onmouseover = function () {
+        clearInterval(timer);
+    }
+
+    scroll.onmouseout = function () {
+        timer = setInterval(autoPlay, 5);
+    }
+
+</script>
+
+</body>
+</html>

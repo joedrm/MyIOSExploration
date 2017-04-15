@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .clock {
+            width: 600px;
+            height: 600px;
+            margin:50px auto;
+            background: url(images/clock.jpg) no-repeat;
+            position: relative;
+        }
+        .clock div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+        .h {
+            background: url(images/hour.png) no-repeat center center;
+        }
+        .m {
+            background: url(images/minute.png) no-repeat center center;
+        }
+        .s {
+            background: url(images/second.png) no-repeat center center;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var hour = document.getElementById('hour');
+            var minute = document.getElementById('minute');
+            var second = document.getElementById('second');
+
+            var s = 0; m = 0; h = 0;
+            setInterval(function () {
+                var date = new Date();
+                ms = date.getMilliseconds(); // 现在的毫秒数
+                s = date.getSeconds() + ms / 1000;
+                m = date.getMinutes() + s / 60;
+                h = date.getHours()%12 + m / 60;
+
+                //旋转角度
+                // 一圈  360 °     一共有 60 秒       每秒  6 °   现在是 s秒
+                second.style.WebkitTransform = 'rotate(' +s*6 +'deg)';
+                minute.style.WebkitTransform = 'rotate(' +m*6 +'deg)';
+                hour.style.WebkitTransform = 'rotate(' +h*30 +'deg)';
+
+            }, 1000);
+        }
+    </script>
+
+</head>
+<body>
+<div class="clock">
+    <div class="h" id="hour"></div>
+    <div class="m" id="minute"></div>
+    <div class="s" id="second"></div>
+</div>
+</body>
+</html>

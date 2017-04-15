@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #box{
+            font-size: 20px;
+            color: blue;
+            margin: 100px auto;
+            width: 400px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var demo = document.getElementById("box");
+            var endTime = new Date("2017/5/12 18:30:00");
+            setInterval(clock, 1000);
+            function clock() {
+                var nowDate = new Date();
+                // 相差秒数
+                var second = parseInt((endTime.getTime() - nowDate.getTime()) / 1000 );
+                console.log(second);
+
+                // 天数
+                var day = parseInt(second / 3600 / 24);
+                var hour = parseInt(second / 3600 % 24);
+                var minite = parseInt(second / 60 % 60);
+                var miao = parseInt(second % 60);
+
+                day < 10 ? day = "0"+day : day;
+                hour < 10 ? hour = "0"+hour : hour;
+                minite < 10 ? minite = "0"+minite : minite;
+                miao < 10 ? miao = "0"+miao : miao;
+
+                demo.innerHTML = "距离抢购时间:" + day + "天" + hour + "小时" + minite + "分" + miao + "秒"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div id="box"></div>
+
+</body>
+</html>

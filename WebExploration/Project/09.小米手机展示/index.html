@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        .xiaomi{
+            height: 400px;
+            width: 512px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .xiaomi span{
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 200px;
+            cursor: pointer;
+        }
+        .up{
+            top: 0;
+        }
+        .down{
+            bottom: 0;
+        }
+        #pic{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            function $(id) {
+                return document.getElementById(id);
+            }
+            var num = 0;
+            var timer = null;
+            $('picUp').onmouseover = function () {
+                // alert(11);
+                clearInterval(timer);
+                timer = setInterval(function () {
+                    num -= 3;
+                    num >= -1070 ? $('pic').style.top = num + "px" : clearInterval(timer);
+                }, 30);
+            }
+
+            $('picDown').onmouseover = function () {
+                clearInterval(timer);
+                timer = setInterval(function () {
+                    num ++;
+                    num < 0 ? $('pic').style.top = num + "px" : clearInterval(timer);
+                }, 30);
+            }
+            $('picUp').parentNode.onmouseout = function () {
+                clearInterval(timer);
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="xiaomi">
+    <img src="mi.png" alt="" id="pic">
+    <span class="up" id="picUp"></span>
+    <span class="down" id="picDown"></span>
+</div>
+
+</body>
+</html>

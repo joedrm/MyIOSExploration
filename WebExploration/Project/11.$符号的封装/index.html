@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="demo"></div>
+<div></div>
+<div></div>
+<div class="one"></div>
+<div class="one"></div>
+<div class="one"></div>
+<div></div>
+<div></div>
+<div></div>
+<div id="last"></div>
+
+
+<script type="text/javascript">
+
+    /**
+     * $('#demo') ---> str.charCode(0) ----> #
+     * $('.one')  ---> str.substr(1) ----> one
+     * */
+    function $(str) {
+
+        var s = str.charAt(0);
+        var ss = str.substr(1);
+
+        switch (s)
+        {
+            case "#":
+                return document.getElementById(ss);
+            break;
+            case ".":
+                return getClass(ss);
+            default:
+                return document.getElementsByTagName(str);
+        }
+    }
+
+    function getClass(classname)   //  类的写法
+    {
+        //判断支持否
+        if(document.getElementsByClassName)
+        {
+            return document.getElementsByClassName(classname);
+        }
+        var arr = []; //用于返回 数组
+        var dom = document.getElementsByTagName("*");
+        for(var i=0;i<dom.length;i++)  // 遍历所有的 盒子
+        {
+            var txtarr = dom[i].className.split(" "); // 分割类名 并且 转换为数组
+            //  ["demo","test"];
+            for(var j=0;j<txtarr.length;j++)  // 遍历 通过类名分割的数组
+            {
+                if(txtarr[j] == classname)
+                {
+                    arr.push(dom[i]); // 我们要的是 div
+                }
+            }
+        }
+        return arr;
+    }
+
+    // 测试
+    $("#demo").style.backgroundColor = "purple";
+    $("#last").style.backgroundColor = "purple";
+    var test = $(".one");
+    for(var i=0;i<test.length;i++)
+    {
+        test[i].style.backgroundColor = "blue";
+    }
+</script>
+
+</body>
+</html>

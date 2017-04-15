@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            position: absolute;
+            top:100px;
+            left:0;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+
+</head>
+<body>
+<button id="btn">开始</button>
+<div class="box" id="bOX"></div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+    /***
+     * 公式:
+     *  leader = leader  + (target - leader ) / 10
+        leader 初始 0
+        target 结束位置  100
+        leader = 10;   步长  10
+                19          19
+     * */
+    var btn = document.getElementById("btn");
+    var box = document.getElementById("bOX");
+    var timer = null;
+    var leader = 0;
+    var target = 500;
+    btn.onclick = function () {
+
+        timer = setInterval(function () {
+
+            leader = leader + (target - leader) / 10;
+            box.style.left = leader + 'px';
+
+        }, 30);
+    }
+
+
+</script>

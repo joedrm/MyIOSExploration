@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            margin: 100px auto;
+            width: 600px;
+            height: auto;
+            border: 1px solid #333;
+            padding: 30px 0;
+        }
+
+        textarea {
+            width: 450px;
+            resize: none; /*防止用户拖动 右下角*/
+        }
+
+        .box li {
+            width: 450px;
+            line-height: 30px;
+            border-bottom: 1px dashed #ccc;
+            margin-left: 80px;
+        }
+        .box ul a{
+            float: right;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var btn = document.getElementsByTagName("button")[0];
+            var text = document.getElementsByTagName("textarea")[0];
+            var ul = document.createElement("ul");
+            btn.parentNode.appendChild(ul);
+            btn.onclick = function () {
+                if (text.value == "") {
+                    alert("输入的内容不能为空!");
+                    return false;
+                }
+                var lis = document.createElement("li");
+                lis.innerHTML = text.value + '<a href="javascrpt:;">删除</a>';
+
+                var lisArr = ul.children;
+                if (lisArr.length == 0){
+                    ul.appendChild(lis);
+                }else {
+                    ul.insertBefore(lis, lisArr[0]);
+                }
+                text.value = "";
+
+                var as = document.getElementsByTagName('a');
+                for (var i = 0; i < as.length; i ++){
+                    as[i].onclick = function () {
+                        // 点击 删除 是删除 a 的父节点 li
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="box">
+    微博发布:
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>发布</button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var text = "hello world 你好啊!";
+
+    function getStringLenght(text) {
+
+        var len = 0;
+        var c = 0
+        for (var i = 0; i < text.length; i ++){
+            c = text.charCodeAt(i);
+            if (c > 0 && c <= 127){
+                len ++;
+            }else {
+                len += 2;
+            }
+        }
+        return len;
+    }
+    var result = getStringLenght(text);
+    console.log(result);
+</script>
+
+</body>
+</html>

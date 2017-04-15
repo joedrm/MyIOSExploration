@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol{list-style:none;}
+
+        .slider{
+            width: 490px;
+            height: 170px;
+            margin: 150px auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+            position: relative;
+        }
+        .inner{
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .inner ul{
+            width: 1000%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .inner ul li{
+            float: left;
+        }
+
+        .slider ol{
+            position: absolute;
+            left: 50%;
+            margin-left: -80px;
+            bottom: 10px;
+        }
+        .slider ol li{
+            float: left;
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            background-color: white;
+            text-align: center;
+            line-height: 18px;
+            cursor: pointer;
+        }
+        .slider ol .current{
+            background-color: orange;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="slider" id="jd">
+    <div class="inner">
+        <ul>
+            <li><a href="#"><img src="images/01.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/02.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/03.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/04.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/05.jpg" alt=""></a></li>
+        </ul>
+    </div>
+
+    <ol>
+        <li class="current">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+
+    <script type="text/javascript">
+
+        var jd = document.getElementById('jd');
+        var ul = jd.children[0].children[0];
+        var ol = jd.children[1];
+        var olLis = ol.children;
+        var     leader = 0,
+                target = 0;
+
+        for (var i = 0; i < olLis.length; i ++){
+            olLis[i].index = i;
+            olLis[i].onmouseover = function () {
+                for(var j = 0; j < olLis.length; j ++){
+                    olLis[j].className = '';
+                }
+                this.className = "current";
+                // 目标位置 = 当前的索引号 * 一个盒子的宽度
+                target = -this.index * 490;
+            }
+        }
+        setInterval(function () {
+            leader = leader + (target - leader)/10;
+            ul.style.left = leader + 'px';
+        }, 30)
+    </script>
+</div>
+</body>
+</html>

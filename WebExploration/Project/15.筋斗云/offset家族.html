@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{padding: 0; margin: 0}
+        #demo {
+            width: 300px;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        /********************************/
+        #father{
+             margin: 50px;
+             width: 500px;
+             height: 500px;
+             background-color: red;
+         }
+        #son{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+
+        /********************************/
+        #superBox{
+            width: 700px;
+            height: 700px;
+            background-color: orange;
+            position: relative;
+            margin-left: 100px;
+        }
+
+        #box{
+            margin: 50px;
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+        #subBox{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: absolute;
+            left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="demo">
+    nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
+    nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
+    nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
+    nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
+    nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
+    nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
+    nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
+    nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
+</div>
+
+<div id="father">
+    <div id="son"></div>
+</div>
+
+<div id="superBox">
+    <div id="box">
+        <div id="subBox"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    /**
+     得到对象的宽度和高度(自己的，与他人无关)
+         div {
+            width:220px;
+            border-left:2px solid red;
+            padding:10px;
+         }
+     offsetWidth =  width  + border  +  padding
+     div.offsetWidth =  300 + 2 + 20
+
+     为什么不用 div.style.width ?
+        因为东西 只能得到行内的数值
+     * */
+    var div = document.getElementById("demo");
+    console.log(div.offsetWidth); // 322
+
+    /***
+     offsetLeft offsetTop: 返回距离上级盒子（最近的带有定位）左边的位置
+
+     如果父级都没有定位则以body 为准
+     这里的父级指的是所有上一级 不仅仅指的是 父亲 还可以是 爷爷 曾爷爷 曾曾爷爷。。。。
+
+     offsetLeft 从父级的padding 开始算    父亲的border 不算
+     总结一下：  就是子盒子到定位的父盒子边框到边框的距离
+     * */
+    var son = document.getElementById("son");
+    console.log(son.offsetLeft); // 50
+
+    var subBox = document.getElementById("subBox");
+    console.log(subBox.offsetLeft); // 50
+</script>
+</body>
+</html>
