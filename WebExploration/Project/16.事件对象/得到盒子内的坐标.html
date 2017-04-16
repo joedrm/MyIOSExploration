@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{margin: 0; padding: 0}
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: #3cba1a;
+            margin: 100px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="demo"></div>
+
+<script type="text/javascript">
+
+    var div = document.getElementById("demo");
+//    div.onclick = function (event) {
+//        var eve = event || window.event;
+//        var x = eve.clientX - this.offsetLeft;
+//        var y = eve.clientY - this.offsetTop;
+//        this.innerHTML = x + "px" + ";"+ y + "px";
+//        console.log(this.innerHTML);
+//    }
+
+    div.onmousemove = function (event) {
+        var eve = event || window.event;
+        var x = eve.clientX - this.offsetLeft;
+        var y = eve.clientY - this.offsetTop;
+        this.innerHTML = x + "px" + ";"+ y + "px";
+//        console.log(this.innerHTML);
+    }
+</script>
+</body>
+</html>

@@ -48,9 +48,15 @@
             left: 100px;
         }
 
+        /********************************/
+        #gf {
+            position: relative;
+        }
     </style>
 </head>
 <body>
+
+<!--offsetWidth-->
 <div id="demo">
     nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
     nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
@@ -62,6 +68,7 @@
     nihao nihao nihao nihao nihao nihao nihao nihao nihao nihao
 </div>
 
+<!--offsetLeft-->
 <div id="father">
     <div id="son"></div>
 </div>
@@ -72,15 +79,23 @@
     </div>
 </div>
 
+
+<!--offsetParent-->
+<div id="gf">
+    <div id="fa">
+        <div id="so"></div>
+    </div>
+</div>
+
 <script type="text/javascript">
 
     /**
      得到对象的宽度和高度(自己的，与他人无关)
-         div {
-            width:220px;
-            border-left:2px solid red;
-            padding:10px;
-         }
+             div {
+                width:220px;
+                border-left:2px solid red;
+                padding:10px;
+             }
      offsetWidth =  width  + border  +  padding
      div.offsetWidth =  300 + 2 + 20
 
@@ -104,6 +119,34 @@
 
     var subBox = document.getElementById("subBox");
     console.log(subBox.offsetLeft); // 50
+
+    /**
+     返回改对象的父级 （带有定位） 不一定是亲的爸爸
+     前面学过一个返回父亲(亲的)    parentNode   有所区别
+
+     如果当前元素的父级元素没有进行CSS定位（position为absolute或relative），offsetParent为body。
+     2、如果当前元素的父级元素中有CSS定位（position为absolute或relative），offsetParent取最近的那个父级元素。
+     * */
+    var so = document.getElementById("so");
+    console.log(so.parentNode);   // fa
+    console.log(so.offsetParent); // gf
+    console.log(so.tagName); //tagName标签的名字  DIV
+
+
+    /***
+     offsetTop style.top 的区别:
+     一、最大区别在于  offsetLeft  可以返回没有定位盒子的距离左侧的位置。
+        而 style.top 不可以  只有定位的盒子 才有 left  top right
+
+     二、offsetTop 返回的是数字，而 style.top 返回的是字符串，除了数字外还带有单位：px。
+         style.left = 300px      parseInt（300px）    结果  300
+         parseInt（style.left） + parseInt（style.left）
+     三、offsetTop 只读，而 style.top 可读写。
+     四、如果没有给 HTML 元素指定过 top 样式，则 style.top 返回的是空字符串。
+     五、最重要的区别  style.left 只能得到 行内样式     offsetLeft 随便
+     * */
+
+
 </script>
 </body>
 </html>

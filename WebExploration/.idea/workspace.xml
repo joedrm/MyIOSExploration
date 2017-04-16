@@ -2,32 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/08.时钟/images/clock.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/08.时钟/images/hour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/08.时钟/images/minute.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/08.时钟/images/second.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/09.小米手机展示/mi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/12.无缝滚动/images/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/12.无缝滚动/images/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/12.无缝滚动/images/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/12.无缝滚动/images/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/14.焦点图/images/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/14.焦点图/images/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/14.焦点图/images/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/14.焦点图/images/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/14.焦点图/images/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/06.微博发布/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/07.倒计时器/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/08.时钟/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/09.小米手机展示/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/10.获取字符串的长度/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/11.$符号的封装/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/12.无缝滚动/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/13.缓动动画/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/14.焦点图/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/15.筋斗云/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/15.筋斗云/offset家族.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/17.京东商品放大镜/images/0001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/17.京东商品放大镜/images/001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/16.事件对象/16.事件对象.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/16.事件对象/得到盒子内的坐标.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/17.京东商品放大镜/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/18.水平进度条/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/13.缓动动画/index.html" afterPath="$PROJECT_DIR$/Project/13.缓动动画/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/15.筋斗云/index.html" afterPath="$PROJECT_DIR$/Project/15.筋斗云/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/15.筋斗云/offset家族.html" afterPath="$PROJECT_DIR$/Project/15.筋斗云/offset家族.html" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,50 +36,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/10.获取字符串的长度/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/11.$符号的封装/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/12.无缝滚动/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/13.缓动动画/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+            <state relative-caret-position="377">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rss.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/images/rss.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cloud.gif" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/images/cloud.gif">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/14.焦点图/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="94" column="10" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
+            <state relative-caret-position="156">
+              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,8 +72,48 @@
       <file leaf-file-name="offset家族.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/offset家族.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+            <state relative-caret-position="700">
+              <caret line="117" column="30" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="16.事件对象.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/16.事件对象/16.事件对象.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="得到盒子内的坐标.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/16.事件对象/得到盒子内的坐标.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/17.京东商品放大镜/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Project/18.水平进度条/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="63" column="48" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -114,34 +122,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="340">
+              <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/06.微博发布/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/14.焦点图/images/02.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/14.焦点图/images/01.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -162,11 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JavaScript/JS基础/操作符.html" />
-        <option value="$PROJECT_DIR$/JavaScript/JS基础/01.变量.js" />
-        <option value="$PROJECT_DIR$/JavaScriptNote/Array类型.js" />
-        <option value="$PROJECT_DIR$/JD项目/css/index.css" />
-        <option value="$PROJECT_DIR$/JD项目/css/base.css" />
         <option value="$PROJECT_DIR$/JD项目/index.html" />
         <option value="$PROJECT_DIR$/CSS/补充/53.清除浮动方法五：伪类.html" />
         <option value="$PROJECT_DIR$/JavaScriptNote/引用类型/Array类型.js" />
@@ -209,10 +188,15 @@
         <option value="$PROJECT_DIR$/Project/10.获取字符串的长度/index.html" />
         <option value="$PROJECT_DIR$/Project/11.$符号的封装/index.html" />
         <option value="$PROJECT_DIR$/Project/12.无缝滚动/index.html" />
-        <option value="$PROJECT_DIR$/Project/13.缓动动画/index.html" />
         <option value="$PROJECT_DIR$/Project/14.焦点图/index.html" />
-        <option value="$PROJECT_DIR$/Project/15.筋斗云/offset家族.html" />
+        <option value="$PROJECT_DIR$/Project/13.缓动动画/index.html" />
         <option value="$PROJECT_DIR$/Project/15.筋斗云/index.html" />
+        <option value="$PROJECT_DIR$/Project/16.事件对象.html" />
+        <option value="$PROJECT_DIR$/Project/15.筋斗云/offset家族.html" />
+        <option value="$PROJECT_DIR$/Project/16.事件对象/16.事件对象.html" />
+        <option value="$PROJECT_DIR$/Project/16.事件对象/得到盒子内的坐标.html" />
+        <option value="$PROJECT_DIR$/Project/17.京东商品放大镜/index.html" />
+        <option value="$PROJECT_DIR$/Project/18.水平进度条/index.html" />
       </list>
     </option>
   </component>
@@ -222,6 +206,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="114" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="725" />
@@ -279,7 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,6 +284,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -315,35 +300,35 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project/16.事件对象" />
+      <recent name="$PROJECT_DIR$/Project/15.筋斗云" />
+      <recent name="$PROJECT_DIR$/Project" />
+      <recent name="$PROJECT_DIR$/Project/09.小米手机展示" />
+      <recent name="$PROJECT_DIR$/JavaScript/JS基础" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project/17.京东商品放大镜" />
       <recent name="$PROJECT_DIR$/Project/14.焦点图" />
       <recent name="$PROJECT_DIR$/Project/12.无缝滚动" />
       <recent name="$PROJECT_DIR$/Project/08.时钟" />
       <recent name="$PROJECT_DIR$/MobileWeb/02.横屏适配" />
-      <recent name="$PROJECT_DIR$/Project/03.输入框点击隐藏文字/images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Project" />
-      <recent name="$PROJECT_DIR$/Project/09.小米手机展示" />
-      <recent name="$PROJECT_DIR$/JavaScript/JS基础" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/JavaScript" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.offset家族.html">
-    <configuration default="false" name="index.html (5)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/11.$符号的封装/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/12.无缝滚动/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/13.缓动动画/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/14.焦点图/index.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="offset家族.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/15.筋斗云/offset家族.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/15.筋斗云/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="16.事件对象.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/16.事件对象/16.事件对象.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="得到盒子内的坐标.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/16.事件对象/得到盒子内的坐标.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/18.水平进度条/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -408,19 +393,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tab栏切换实现.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (5)" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.offset家族.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.offset家族.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.16.事件对象.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.得到盒子内的坐标.html" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.offset家族.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (5)" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.得到盒子内的坐标.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.16.事件对象.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.offset家族.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -469,11 +454,12 @@
       <workItem from="1492046957386" duration="3103000" />
       <workItem from="1492147384542" duration="6956000" />
       <workItem from="1492218622669" duration="16474000" />
+      <workItem from="1492302302789" duration="9371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292160000" />
+    <option name="totallyTimeSpent" value="301531000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,7 +471,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="725" extended-state="0" />
+    <frame x="114" y="23" width="1280" height="725" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20492454" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
@@ -527,59 +513,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CSS/定位/45.绝对定位.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/04.类添加id.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/03.封装自己的类名.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/05.访问关系.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/01.百度换肤/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/JS基础/Array类型.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/JS基础/Function类型.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2924">
           <caret line="174" column="35" selection-start-line="174" selection-start-column="35" selection-end-line="174" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -607,7 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,7 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,7 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-697">
           <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,7 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="39" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,7 +759,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/11.$符号的封装/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="1292">
           <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
           <folding />
         </state>
@@ -848,7 +767,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/12.无缝滚动/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
+        <state relative-caret-position="1122">
           <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
           <folding />
         </state>
@@ -864,42 +783,84 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/14.焦点图/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="94" column="10" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/06.微博发布/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="1190">
           <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/offset家族.html">
+    <entry file="file://$PROJECT_DIR$/Project/14.焦点图/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="156">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/13.缓动动画/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+        <state relative-caret-position="377">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/images/rss.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/images/cloud.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/16.事件对象/16.事件对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/offset家族.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="117" column="30" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/16.事件对象/得到盒子内的坐标.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/17.京东商品放大镜/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/18.水平进度条/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="63" column="48" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="48" />
           <folding />
         </state>
       </provider>

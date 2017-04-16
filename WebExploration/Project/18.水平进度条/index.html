@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .scroll {
+            width: 400px;
+            height: 8px;
+            background-color: #ccc;
+            margin-left: 20px;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .bar {
+            width: 10px;
+            height: 22px;
+            background-color: #369;
+            position: absolute;
+            left: 0px;
+            top: -7px;
+            cursor: pointer;
+        }
+        .mask{
+            height: 8px;
+            position: absolute;
+            background-color: #369;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="scroll" id="scroll">
+    <div class="bar"></div>
+    <div class="mask"></div>
+</div>
+
+<div id="demo"></div>
+
+<script type="text/javascript">
+
+    var scroll = document.getElementById("scroll");
+    var bar = scroll.children[0];
+    var mask = scroll.children[1];
+    var demo = document.getElementById("demo");
+    // 鼠标按下 就会调用
+    // 拖到的原理: 鼠标按下 接着 移动鼠标
+    bar.onmousedown = function (event) {
+        var ev = event || window.event;
+        var left = ev.clientX - this.offsetLeft;
+
+        console.log(left+"px"+";"+ev.clientX+";"+this.offsetLeft+"px")
+        var that = this;
+        document.onmousemove = function (event) {
+            var ev1 = event || window.event;
+            that.style.left = ev1.clientX - left + "px";
+
+            var val = parseInt(that.style.left);
+            if(val < 0)
+            {
+                that.style.left = 0;
+            } else if(val > 390)
+            {
+                that.style.left = "390px";
+            }
+            mask.style.width = that.style.left;
+            demo.innerHTML = "已经走了:"+ parseInt(parseInt(that.style.left) / 390 * 100) + "%";
+            window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+        }
+        document.onmouseup = function () {
+            document.onmousemove = null;
+        }
+    }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

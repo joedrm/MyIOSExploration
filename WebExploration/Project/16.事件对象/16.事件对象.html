@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    /**
+     * event  就是事件的对象    指向的是 事件  是   onclick
+     * 再触发DOM上的某个事件时，会产生一个事件对象event，这个对象中包含着所有与事件有关的信息。
+     * 所有浏览器都支持event对象，但支持的方式不同。
+     * */
+    document.onclick = function (event) {
+
+        /**
+         * 普通浏览器支持 event
+         * IE 678 支持 window.event
+         *      console.log(window.event.clientX);
+         * */
+        console.log(event.clientX);
+        console.log(event.clientY);
+
+        /*
+        * 兼容性写法
+        * */
+        var eve = event || window.event;
+        console.log(eve.clientX);
+        console.log(eve.clientY);
+
+        /**
+         pageX  clientX  screenX 区别:
+
+                screen X   screenY
+                是以我们的电脑屏幕 为基准点   测量
+
+                pageX  pageY
+                以我们的  文档  绝对定位）的基准点 对齐
+                IE 678 不认识
+
+                 clientX   clientY
+                 以 可视区域 为基准点   类似于    固定定位
+         * */
+        console.log(eve.pageX);
+        console.log(eve.screenX);
+    }
+
+</script>
+</body>
+</html>
