@@ -37,3 +37,4 @@ build
 DerivedData/
 
 # End of https://www.gitignore.io/api/xcode,macos
+*.xml
