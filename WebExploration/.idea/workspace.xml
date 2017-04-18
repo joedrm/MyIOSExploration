@@ -2,6 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppleLogo.imageset/AppleLogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppleLogo.imageset/AppleLogo@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppleLogo.imageset/AppleLogo@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppleLogo.imageset/Contents.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/Contents.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/实例一：两个View动态居中/CenterTwoViewsVC.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/实例一：两个View动态居中/CenterTwoViewsVC.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppIcon.appiconset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/AutoLayoutMianViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/AutoLayoutMianViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS网络编程/IOS网络编程/NetworingMainViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/IOS网络编程/IOS网络编程/NetworingMainViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/17.京东商品放大镜/index.html" afterPath="$PROJECT_DIR$/Project/17.京东商品放大镜/index.html" />
     </list>
     <ignored path="WebExploration.iws" />
@@ -25,16 +38,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="offset家族.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/offset家族.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1989">
-              <caret line="117" column="30" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="得到盒子内的坐标.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/16.事件对象/得到盒子内的坐标.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,10 +51,24 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/17.京东商品放大镜/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="-1542">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="001.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/17.京东商品放大镜/images/001.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0001.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/17.京东商品放大镜/images/0001.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -68,7 +85,7 @@
       <file leaf-file-name="html基本使用.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1394">
+            <state relative-caret-position="340">
               <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding />
             </state>
@@ -78,7 +95,7 @@
       <file leaf-file-name="表格.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/表格.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1967">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -88,7 +105,7 @@
       <file leaf-file-name="布局.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/布局.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-301">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -108,18 +125,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/18.水平进度条/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+            <state relative-caret-position="221">
+              <caret line="59" column="70" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -203,8 +210,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="y" value="140" />
+    <option name="y" value="23" />
     <option name="width" value="1375" />
     <option name="height" value="848" />
   </component>
@@ -281,6 +287,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="18.水平进度条" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -312,11 +350,8 @@
       <recent name="$PROJECT_DIR$/MobileWeb/02.横屏适配" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration default="false" name="offset家族.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/15.筋斗云/offset家族.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/15.筋斗云/index.html">
       <method />
     </configuration>
     <configuration default="false" name="16.事件对象.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/16.事件对象/16.事件对象.html">
@@ -326,6 +361,9 @@
       <method />
     </configuration>
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/18.水平进度条/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/17.京东商品放大镜/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -391,18 +429,18 @@
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tab栏切换实现.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.offset家族.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.16.事件对象.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.得到盒子内的坐标.html" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.16.事件对象.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.得到盒子内的坐标.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.得到盒子内的坐标.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.16.事件对象.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.offset家族.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.得到盒子内的坐标.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.16.事件对象.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.offset家族.html" />
       </list>
     </recent_temporary>
   </component>
@@ -453,11 +491,12 @@
       <workItem from="1492218622669" duration="16474000" />
       <workItem from="1492302302789" duration="9371000" />
       <workItem from="1492393910222" duration="2699000" />
+      <workItem from="1492502940156" duration="4291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304230000" />
+    <option name="totallyTimeSpent" value="308521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,10 +508,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="140" width="1375" height="848" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1375" height="848" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19054653" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19054653" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5029455" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -511,20 +550,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MobileWeb/02.横屏适配/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileWeb/02.横屏适配/effect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MobileWeb/02.横屏适配/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-340">
@@ -641,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,7 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,14 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/18.水平进度条/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/音视频标签.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -834,7 +847,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/表格.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1967">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -842,7 +855,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/布局.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -858,16 +871,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/html基本使用.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1394">
+        <state relative-caret-position="340">
           <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/17.京东商品放大镜/images/0001.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/17.京东商品放大镜/images/001.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/18.水平进度条/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="59" column="70" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/17.京东商品放大镜/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="-1542">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>

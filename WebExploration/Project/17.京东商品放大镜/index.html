@@ -5,28 +5,134 @@
     <title>Title</title>
 
     <style type="text/css">
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .box{
+
+        img {
+            vertical-align: top;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
             width: 350px;
             height: 350px;
+            border: 1px solid #ccc;
+            position: relative;
+            margin: 100px;
         }
+
+        .big {
+            width: 450px;
+            height: 450px;
+            position: absolute;
+            top: 0;
+            left: 360px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            display: none;
+        }
+
+        .mask {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 0, 0.45);
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: move;
+            display: none;
+        }
+
+        .small {
+            position: relative;
+        }
+
+        .big img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
     </style>
 </head>
 <body>
 
-<div class="box">
+<div class="box" id="fdj">
 
     <div class="small">
         <img src="images/001.jpg" alt="">
         <div class="mask"></div>
     </div>
     <idv class="big">
-
+        <img src="images/0001.jpg" alt="">
     </idv>
 </div>
 
+<script type="text/javascript">
+    var fdj = document.getElementById("fdj");
+    var small = fdj.children[0];
+    var big = fdj.children[1];
+    var mask = small.children[1];
+    var bigImg = big.children[0];
+
+    small.onmouseover = function () {
+        mask.style.display = "block";
+        big.style.display = "block";
+    }
+
+    small.onmouseout = function () {
+        mask.style.display = "none";
+        big.style.display = "none";
+    }
+
+    // 鼠标在 small 内移动
+    var x = 0;
+    var y = 0;
+    small.onmousemove = function (event) {
+        var event = event || window.event;
+        x = event.clientX - this.offsetParent.offsetLeft - mask.offsetWidth*0.5;
+        y = event.clientY - this.offsetParent.offsetTop - mask.offsetHeight*0.5;
+        console.log("x = "+x+"; y = "+y);
+
+        if (x < 0){
+            x = 0;
+        }else if (x > small.offsetWidth - mask.offsetWidth){
+            x = small.offsetWidth - mask.offsetWidth;
+        }
+
+        if(y<0)
+        {
+            y = 0;
+        }
+        else if(y > small.offsetHeight - mask.offsetHeight)
+        {
+            y = small.offsetHeight - mask.offsetHeight;
+        }
+//        if (y<0){
+//            y = 0;
+//        }else if (y > 250){
+//            y = 250;
+//        }
+
+        console.log("x = "+x+"; y = "+y);
+        mask.style.left = x + "px";
+        mask.style.top = y + "px";
+
+        /*计算  ：  夫子 一顿吃 2个馒头    娇子  一顿 4个馒头
+         问  夫子今天吃了 3个馒头  娇子应该吃几个？  */
+        /*计算出他们的倍数   4 / 2    2倍
+         3 * 2  == 6个  */
+        /* 大图盒子 /  小图盒子  倍数
+         我们 再小图移动的距离 *  倍数  ==  大图的位置*/
+        bigImg.style.left =  -x *  big.offsetWidth /small.offsetWidth + "px";
+        bigImg.style.top =  -y *  big.offsetHeight /small.offsetHeight + "px";
+    }
+</script>
 </body>
 </html>

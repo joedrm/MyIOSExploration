@@ -25,7 +25,8 @@
                       @"NSLayoutConstraint基本使用",
                       @"VFL实现自动布局",
                       @"约束的优先级",
-                      @"约束动画"
+                      @"约束动画",
+                      @"两个居中的View"
                       ];
     
     self.vcArr = @[
@@ -34,7 +35,8 @@
                    @"LayoutConstraintBasicVC",
                    @"VFLViewController",
                    @"PriorityViewController",
-                   @"LayoutAnimateViewController"
+                   @"LayoutAnimateViewController",
+                   @"CenterTwoViewsVC"
                    ];
 }
 
