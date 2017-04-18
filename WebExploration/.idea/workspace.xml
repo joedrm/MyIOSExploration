@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppleLogo.imageset/AppleLogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppleLogo.imageset/AppleLogo@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppleLogo.imageset/AppleLogo@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppleLogo.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/实例一：两个View动态居中/CenterTwoViewsVC.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/实例一：两个View动态居中/CenterTwoViewsVC.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/fangwang.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/Assets.xcassets/AppIcon.appiconset/Contents.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/AutoLayoutMianViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/AutoLayoutPractice/AutoLayoutPractice/AutoLayoutMianViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS网络编程/IOS网络编程/NetworingMainViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/IOS网络编程/IOS网络编程/NetworingMainViewController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/17.京东商品放大镜/index.html" afterPath="$PROJECT_DIR$/Project/17.京东商品放大镜/index.html" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +38,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/17.京东商品放大镜/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1542">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="413">
+              <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -491,12 +478,12 @@
       <workItem from="1492218622669" duration="16474000" />
       <workItem from="1492302302789" duration="9371000" />
       <workItem from="1492393910222" duration="2699000" />
-      <workItem from="1492502940156" duration="4291000" />
+      <workItem from="1492502940156" duration="4653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308521000" />
+    <option name="totallyTimeSpent" value="308883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -897,8 +884,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/17.京东商品放大镜/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1542">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="413">
+          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
           <folding />
         </state>
       </provider>
