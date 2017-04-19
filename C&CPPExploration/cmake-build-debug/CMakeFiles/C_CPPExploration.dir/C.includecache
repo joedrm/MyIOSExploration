@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/fangwang/Documents/MyIOSExploration/C&CPPExploration/main.c
+stdio.h
+-
+stdio.h
+-
+stdlib.h
+-
+
