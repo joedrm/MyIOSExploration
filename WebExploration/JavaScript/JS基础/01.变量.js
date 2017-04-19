@@ -75,7 +75,20 @@ function getColor() {
 console.log(getColor()); //blue
 
 
+// 反例
+/**
+ * 第一个alert会弹 出”undefined”是因为myname被当做了函数的局部变量（尽管是之后声明的），
+ * 所有的变量声明当被悬置到函数的顶部了。因此，为了避免这种混 乱，
+ * 最好是预先声明你想使用的全部变量。
+ * */
+myname = "global"; // 全局变量
 
+function func() {
+    console.log(myname); // "undefined"
+    var myname = "local";
+    console.log(myname); // "local"
+}
+func();
 
 
 
