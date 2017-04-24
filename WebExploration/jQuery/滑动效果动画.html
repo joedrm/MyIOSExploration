@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            display: none;
+            margin-left: 100px;
+        }
+        button, input{
+            width: 80px;
+            height: 30px;
+            margin: 20px 0 30px 20px;
+        }
+    </style>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+//            $(".divItem").css({
+//                "width": '300px',
+//                "height": "300px",
+//                "background-color": "blue",
+//                "display": "none"
+//            });
+
+            // 属性选择器
+            $('input[type="button"]').click(function () {
+//                $('.divitem').slideDown(2000);
+                /**
+                 * 第一个参数: 动画时长,可以使字符串 或者 数字
+                 * 第二个参数: 动画效果, swing/linear
+                 * 第三个参数: 动画执行完成后要执行的 函数
+                 */
+//                $('.divItem').slideDown(2000,"swing", function () {
+//                    alert("hello");
+//                });
+                $('.divItem').slideDown(2000,"linear", function () {
+                    alert("hello");
+                });
+            });
+
+            $("button:first").click(function () {
+                $('.divItem').slideUp(2000);
+            });
+            $('button').eq(1).click(function () {
+                $('.divItem').slideToggle();
+            });
+
+            $('button').eq(2).click(function () {
+                $('.divItem').fadeIn();
+            });
+            $('button').eq(3).click(function () {
+                $('.divItem').fadeOut();
+            });
+            $('button').eq(4).click(function () {
+                $('.divItem').fadeToggle();
+            });
+            $('button').eq(5).click(function () {
+                $('.divItem').fadeTo(1000, 0.5);
+            });
+
+            // 自定义动画
+            $('button:eq(6)').click(function () {
+                $('.divItem').css("display", "block");
+//                $(".divItem").animate({
+//                    'width':"500px",
+//                    'height':"400px",
+//                    "background": "red"
+//                }, 2000);
+
+                $(".divItem").animate({
+                    'width':"500px",
+                    'height':"400px",
+                    "background": "red"
+                }, 2000, 'swing', function () {
+                    alert("自定义动画执行完毕");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="下拉"/>
+<button>上拉</button>
+<button>上拉下拉切换</button>
+<button>淡入</button>
+<button>淡出</button>
+<button>淡入淡出切换</button>
+<button>透明度</button>
+<button>自定义</button>
+<div class="divItem"></div>
+
+</body>
+</html>

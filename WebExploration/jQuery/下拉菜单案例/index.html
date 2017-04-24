@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        ul {
+            list-style: none
+        }
+
+        .wrap {
+            width: 330px;
+            height: 30px;
+            margin: 100px auto;
+            background-image: url("imgs/bg.jpg");
+            padding-left: 10px;
+        }
+
+        .wrap li {
+            float: left;
+            width: 100px;
+            height: 30px;
+            position: relative;
+            margin-right: 10px;
+        }
+
+        .wrap li a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            line-height: 30px;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            background-image: url("imgs/libg.jpg");
+        }
+
+        .wrap li ul {
+            position: absolute;
+            display: none;
+            background-color: black;
+            width: 100px;
+        }
+
+        .wrap li ul li {
+            text-align: center;
+            color: #ffffff;
+            font-size: 13px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+    </style>
+
+    <script src="../jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // 方法一
+            /*
+            $(".wrap li").mouseenter(function () {
+                $(this).children('ul').show();
+            });
+            $('.wrap li').mouseleave(function () {
+                $(this).children('ul').hide();
+            });
+
+            // 方法二
+            $(".wrap li").hover(function () {
+                //alert("1");
+                $(this).children("ul").show();
+            }, function () {
+                $(this).children("ul").hide();
+            });
+
+            // 方法三
+            $(".wrap li").hover(function () {
+                alert("1");
+                var $this = $(this).children("ul");
+                var isShow = $this.css("display");
+                if(isShow === "block") {
+                    $this.hide();
+                } else {
+                    $this.show();
+                }
+            });
+            */
+
+
+            // 方法四
+//            $(".wrap li").hover(function () {
+//                $(this).children("ul").slideToggle();
+//            });
+
+
+            // 优化
+            // mouseenter事件 是 鼠标经过时触发的事件
+            $(".wrap li").mouseenter(function () {
+                $(this).children('ul').stop().slideDown(1000);
+            });
+            // mouseleave事件 是 鼠标离开时触发的事件
+            $('.wrap li').mouseleave(function () {
+                $(this).children('ul').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="wrap">
+    <ul>
+        <li>
+            <a href="#">Javasript</a>
+            <ul>
+                <li>基本语法</li>
+                <li>面向对象</li>
+                <li>Dom操作</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">HTML</a>
+            <ul>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">CSS</a>
+            <ul>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

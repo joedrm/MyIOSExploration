@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        .backgroud{
+            background: black;
+            color: #fff;
+        }
+    </style>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('li').css("font-size", "18px");
+            $('li').css({
+//                "background":"red",
+                "color":"white"
+            });
+
+            var fontSize = $('li').css("font-size");
+            console.log(fontSize);
+
+            // 添加类样式
+            $('li').addClass('backgroud');
+
+            // 移除样式
+            // 不加参数会移除所有的样式
+            // 指定的样式不存在,不删除任何样式
+            $('li').eq(2).removeClass();
+            $('li').eq(2).removeClass('backgroud');
+
+            // 切换样式
+
+        });
+    </script>
+</head>
+<body>
+
+<button >切换样式</button>
+
+<ul>
+    <li>操作样式</li>
+    <li>操作样式</li>
+    <li>操作样式</li>
+    <li>操作样式</li>
+    <li>操作样式</li>
+</ul>
+
+</body>
+</html>
