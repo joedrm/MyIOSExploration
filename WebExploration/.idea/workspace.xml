@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/下拉菜单案例/imgs/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/下拉菜单案例/imgs/libg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/jquery-3.2.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/下拉菜单案例/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/动画补充.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/操作样式.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/滑动效果动画.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/操作属性值内容.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebExploration.iws" />
@@ -33,16 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="07.动画.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/07.动画.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-340">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="动画补充.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery/动画补充.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,7 +40,7 @@
       <file leaf-file-name="滑动效果动画.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery/滑动效果动画.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="-677">
               <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding />
             </state>
@@ -66,18 +50,38 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery/下拉菜单案例/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="109" column="15" selection-start-line="109" selection-start-column="15" selection-end-line="109" selection-end-column="15" />
+            <state relative-caret-position="360">
+              <caret line="111" column="13" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="操作样式.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="操作样式.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery/操作样式.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="187">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="操作属性值内容.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jQuery/操作属性值内容.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="05.修改DOM结构.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jQuery/05.修改DOM结构.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -88,26 +92,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="7380" column="4" selection-start-line="7380" selection-start-column="4" selection-end-line="7380" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HTML5.js" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="08.AJAX.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery/08.AJAX.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -126,11 +110,21 @@
       <file leaf-file-name="04.DOM操作.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery/04.DOM操作.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="136">
               <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
               <folding>
                 <marker date="1492218293000" expanded="true" signature="1159:1169" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="07.动画.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jQuery/07.动画.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,8 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JavaScript/parseInt.html" />
-        <option value="$PROJECT_DIR$/Project/02.淘宝鼠标展示/index.html" />
         <option value="$PROJECT_DIR$/Project/03.输入框点击隐藏文字/index.html" />
         <option value="$PROJECT_DIR$/CSS/定位/49.绝对定位的盒子居中.html" />
         <option value="$PROJECT_DIR$/Project/04.仿淘宝的搜索框/index.html" />
@@ -203,6 +195,8 @@
         <option value="$PROJECT_DIR$/jQuery/滑动效果动画.html" />
         <option value="$PROJECT_DIR$/jQuery/下拉菜单案例/index.html" />
         <option value="$PROJECT_DIR$/jQuery/操作样式.html" />
+        <option value="$PROJECT_DIR$/jQuery/操作属性/值/内容.html" />
+        <option value="$PROJECT_DIR$/jQuery/操作属性值内容.html" />
       </list>
     </option>
   </component>
@@ -352,10 +346,7 @@
       <recent name="$PROJECT_DIR$/JavaScript/JS基础" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.操作样式.html">
-    <configuration default="false" name="55.实现水平居中垂直居中.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/补充/55.实现水平居中垂直居中.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.操作属性值内容.html">
     <configuration default="false" name="动画补充.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/jQuery/动画补充.html">
       <method />
     </configuration>
@@ -366,6 +357,9 @@
       <method />
     </configuration>
     <configuration default="false" name="操作样式.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/jQuery/操作样式.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="操作属性值内容.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/jQuery/操作属性值内容.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -430,19 +424,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tab栏切换实现.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.55.实现水平居中垂直居中.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.动画补充.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.滑动效果动画.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.操作样式.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.动画补充.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.滑动效果动画.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.操作样式.html" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.操作属性值内容.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.操作样式.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.操作属性值内容.html" />
         <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.滑动效果动画.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.动画补充.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.55.实现水平居中垂直居中.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.操作样式.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.滑动效果动画.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.动画补充.html" />
       </list>
     </recent_temporary>
   </component>
@@ -498,12 +492,12 @@
       <workItem from="1492658118575" duration="2563000" />
       <workItem from="1492676366371" duration="659000" />
       <workItem from="1492740092796" duration="3340000" />
-      <workItem from="1492934986374" duration="7367000" />
+      <workItem from="1492934986374" duration="9141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326438000" />
+    <option name="totallyTimeSpent" value="328212000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,7 +509,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="725" extended-state="1" />
+    <frame x="0" y="23" width="1280" height="725" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24225576" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
@@ -557,20 +551,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Project/06.微博发布/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/14.焦点图/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/13.缓动动画/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -740,13 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/05.修改DOM结构.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2685">
@@ -837,14 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/07.动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/08.AJAX.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -877,9 +842,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/滑动效果动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-677">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/下拉菜单案例/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="111" column="13" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/05.修改DOM结构.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/04.DOM操作.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
+        <state relative-caret-position="136">
           <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
           <folding>
             <marker date="1492218293000" expanded="true" signature="1159:1169" placeholder="..." />
@@ -887,18 +876,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/下拉菜单案例/index.html">
+    <entry file="file://$PROJECT_DIR$/jQuery/07.动画.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="109" column="15" selection-start-line="109" selection-start-column="15" selection-end-line="109" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/滑动效果动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="17">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -913,8 +894,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/操作样式.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="187">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/操作属性/值/内容.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/操作属性值内容.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
