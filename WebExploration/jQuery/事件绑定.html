@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            margin: 100px auto;
+        }
+
+        ul{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            // 以前的写法
+//            $('button').click(function () {
+//                alert('我是按钮的click事件');
+//            }).mouseenter(function () {
+//                alert('我是按钮的click事件');
+//            });
+
+            // jQuery 第一种写法, 可以绑定事件
+//            $('button').bind('click mouseenter', function () {
+//                alert('我是按钮的click事件');
+//            });
+
+            // jQuery 第二种写法
+//            $('button').bind({
+//                'click': function () {
+//                    alert('我是按钮的click事件');
+//                },
+//                'mouseenter': function () {
+//                    alert('我是按钮的click事件');
+//                }
+//            });
+
+            // 传参数
+//            $('button').bind('click','我是参数', function (value) {
+//                alert(value.data);
+//            });
+
+            // 只是触发一次
+            $('button').one('click', function () {
+                alert('只是触发一次事件');
+            });
+
+            /** 需求: 给所有的 li 绑定事件*/
+            // 初次写法
+//            $('li').bind('click',function () {
+//                alert($(this).html());
+//            });
+
+            // delegate 绑定方式,  推荐使用
+//            $('ul').delegate('li', 'click', function () {
+//                alert($(this).html());
+//            });
+
+            /** on 绑定事件, 墙裂推荐, 集上面所有优点于一身 */
+            $('ul').on('click', 'li', function () {
+                alert($(this).html());
+            });
+
+            /** on 绑定事件 */
+            $('div').on('click', 'h1:eq(1)', function () {
+                alert($(this).html());
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+<button>绑定事件</button>
+<ul>
+    <li>我是li1</li>
+    <li>我是li2</li>
+    <li>我是li3</li>
+    <li>我是li4</li>
+    <li>我是li5</li>
+    <li>我是li6</li>
+    <li>我是li7</li>
+    <li>我是li8</li>
+    <li>我是li9</li>
+    <li>我是li10</li>
+</ul>
+<div>
+    <p>我是p元素</p>
+    <h1>我是h1元素</h1>
+    <h1>我是h1元素</h1>
+</div>
+</body>
+</html>

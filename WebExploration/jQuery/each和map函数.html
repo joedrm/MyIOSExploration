@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            /** each 函数的使用 */
+//            $('li').each(function (index, e) {
+//                var oriText = $(e).text();
+//                $(e).text(oriText + index);
+//            });
+
+            // 和上面作用是一样的
+            $.each($('li'), function (i, e) {
+                var oriText = $(e).text();
+                $(e).text(oriText + index);
+            });
+
+            /** map 函数的使用
+             * 全局的map函数 fun 参数顺序是: object, index
+             *
+             * 而jQuery对象的map函数 和 全局刚好相反的,
+             *
+             * Query对象的map函数 fun 参数顺序是: index, element
+             *
+             * */
+            var temp1 = $.map($('li'), function (element, index) {
+                return $(element).text()+index;
+            });
+
+            var temp2 =$('li').each(function (index, element){
+                return $(element).text()+index;
+            })
+
+        });
+    </script>
+</head>
+<body>
+<ul>
+    <li>我是li标签</li>
+    <li>我是li标签</li>
+    <li>我是li标签</li>
+    <li>我是li标签</li>
+    <li>我是li标签</li>
+</ul>
+</body>
+</html>

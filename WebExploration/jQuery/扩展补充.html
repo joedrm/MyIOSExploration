@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+
+        /** 添加扩展的方法 */
+        //方法一:全局添加
+//        $.log = function () {
+//            console.log(new  Date());
+//        };
+
+        // 方法二: 原型上添加
+        $.fn.log = function () {
+            console.log($(this).text());
+        };
+        $(function () {
+           $('div').log();
+        });
+    </script>
+</head>
+<body>
+
+<div>
+    hello world!
+</div>
+</body>
+</html>

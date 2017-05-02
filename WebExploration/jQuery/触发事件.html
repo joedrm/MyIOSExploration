@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            /***
+             * trigger : 会触发浏览器的默认行为
+             *          如 下面按钮的 submit 行为
+             * triggerHandler: 不会触发浏览器的默认行为
+             *
+             * 触发事件 不能使用 on 这种绑定事件的方式
+             *  因为 on 绑定事件 是利用事件冒泡在父元素绑定事件, 而子元素实际上并没有绑定事件
+             */
+
+            $('form').on('click', '#subBtn', function () {
+                var txtName = $('#txtName').val();
+                if (txtName === '1') {
+                    alert('提交成功');
+                } else {
+//                   $('#txtName').val('').focus();
+
+                    /** 这里是没有作用的  */
+//                    $('#txtName').val('').trigger('focus');
+//                    $('#txtName').val('').triggerHandler('focus');
+                }
+            });
+
+            $('#subBtn').click(function () {
+                var txtName = $('#txtName').val();
+                if (txtName === '1') {
+                    alert('提交成功');
+                } else {
+                    $('#txtName').val('').trigger('focus');
+//                    $('#txtName').val('').triggerHandler('focus');
+                }
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+
+<label for="txtName">用户名</label><input type="text" id="txtName"/>
+<input type="submit" value="提交" id="subBtn">
+</body>
+</html>

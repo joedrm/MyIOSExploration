@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #move{
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box{
+            background-color: #ccc;
+            width: 200px;
+            height: 50px;
+            margin-top: 20px;
+        }
+    </style>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btn').click(function (event) {
+
+                /** 响应方法的参数 */
+                console.log(event.data);
+
+                /** event 为事件对象 */
+                console.log(event);
+
+                /** 获取事件的类型 */
+                console.log(event.type); // click
+
+                /** 获取鼠标按键的类型, 左1 / 中2 / 右3 */
+                console.log(event.which);
+            });
+
+            /** 控件随鼠标移动 */
+//            $(document).on('mousemove', function (event) {
+//                $('#move').css({
+//                    'position':'absolute',
+//                    'top': event.pageY,
+//                    'left': event.pageX
+//                });
+//
+//            });
+
+            /** 取消浏览器的默认行为 */
+            $('.link').on('click', function (e) {
+
+                /** 取消默认操作*/
+                e.preventDefault();
+
+                /** 阻止事件冒泡 */
+                e.stopImmediatePropagation();
+
+                /** 判断是否是点击了自己 而不是 父元素 div */
+                if (e.target == this){
+                    console.log('点击了自己');
+                }
+            });
+
+            $('.box').on('click', function () {
+                alert('父盒子被点击了!');
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+<input type="button" value="事件对象" id="btn">
+
+<div id="move"></div>
+
+<div class="box"><a href="www.baidu.com" class="link">点我啊</a></div>
+</body>
+</html>

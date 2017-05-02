@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+
+        }
+
+        .comment {
+            color: red;
+
+            /* 去掉间隙 */
+            font-size: 0;
+
+            /* 设置字符间距 去 间隙 */
+            /*letter-spacing: -13px;*/
+
+            /* 设置单词 间距 去 间隙 */
+            /*word-spacing: -13px;*/
+
+            margin: 100px auto;
+        }
+
+        .comment li {
+            /*float: left;*/
+            display: inline-block;
+            font-size: 40px;
+        }
+    </style>
+
+    <script src="../jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var     wjx_sel = '★',
+                    wjx_none = '☆';
+
+            $('.comment').on('mouseenter', 'li', function () {
+
+                /** prevAll() 拿到前面所有的兄弟节点 */
+//                $(this).text(wjx_sel).prevAll().text(wjx_none);
+
+                /** nextAll() 拿到后面所有的兄弟节点*/
+//                $(this).nextAll().text(wjx_none);
+
+                // 上面 执行的jQuery 的链式编程断掉了
+                // 解决办法
+                /** end() 结束当前调用的链, 恢复上一级调用的链 */
+                $(this).text(wjx_sel).prevAll().text(wjx_sel).end().nextAll().text(wjx_none);
+
+            }).on('click', 'li', function () {
+
+                // 第二步:记录用户点击的那个五角星, 给点击的li标签添加样式类
+                $(this).addClass('clicked').siblings().removeClass('clicked');
+
+            }).on('mouseleave', function () {
+
+                // 鼠标移开的时候, 给所有的li标签添加一个空心的五角星
+                $('.comment li').text(wjx_none);
+
+                // 第三步: 当鼠标离开评分控件的时候,把click(包括自己)之前的五角星全部变成实心的,后面变成空心的
+                $('.clicked').text(wjx_sel).prevAll().text(wjx_sel).end().nextAll().text(wjx_none);
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+<ul class="comment">
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+</ul>
+
+</body>
+</html>

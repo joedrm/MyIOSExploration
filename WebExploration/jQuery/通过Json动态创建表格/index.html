@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过Json动态创建表格</title>
+
+    <style>
+        * { padding: 0; margin: 0; }
+        table {
+            /*边框折叠*/
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #c0c0c0;
+        }
+
+        th,td {
+            border: 1px solid #d0d0d0;
+            color: #404060;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #09c;
+            font: bold 16px "微软雅黑";
+            color: #fff;
+        }
+
+        td {
+            font: 14px "微软雅黑";
+        }
+        tbody tr {
+            background-color: #f0f0f0;
+        }
+        tbody tr:hover {
+            cursor: pointer;
+            background-color: #fafafa;
+        }
+    </style>
+
+    <script src="../jquery-3.2.1.js"></script>
+    <script>
+        var data = [{
+            name: "新浪",
+            url: "http://www.sina.com.cn/",
+            type: "新浪首页"
+        },{
+            name: "网易",
+            url: "http://www.163.com/",
+            type: "网易新闻"
+        },{
+            name: "博客",
+            url: "https://wangdongyang.github.io/",
+            type: "我的博客"
+        }];
+
+
+        $(function () {
+            //第一种：动态创建表格的方式，使用拼接html的方式 （推荐）
+//            var strHTML = '';
+//            for ( var i = 0; i < data.length; i ++ ){
+//                var temp = data[i];
+//                strHTML += '<tr>';
+//                strHTML +=      '<td>' + temp.name + '</td>';
+//                strHTML +=      '<td>' + temp.url + '</td>';
+//                strHTML +=      '<td>' + temp.type + '</td>';
+//                strHTML += '</tr>';
+//            }
+//            $('#J_TbData').html(strHTML);
+
+
+            //第二种： 动态创建表格的方式，使用动态创建dom对象的方式
+            //清空所有的子节点
+            $("#J_TbData").empty();
+
+            //自杀
+            // $("#J_TbData").remove();
+
+            for( var i = 0; i < data.length; i++ ) {
+                //动态创建一个tr行标签,并且转换成jQuery对象
+                var $trTemp = $("<tr></tr>");
+
+                //往行里面追加 td单元格
+                $trTemp.append("<td>"+ data[i].name +"</td>");
+                $trTemp.append("<td>"+ data[i].url +"</td>");
+                $trTemp.append("<td>"+ data[i].type +"</td>");
+                // $("#J_TbData").append($trTemp);
+                $trTemp.appendTo("#J_TbData");
+            }
+        });
+    </script>
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <th>标题</th>
+        <th>url</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody id="J_TbData">
+
+    </tbody>
+</table>
+
+
+<span></span>
+
+</body>
+</html>

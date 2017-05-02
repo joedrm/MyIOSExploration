@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{margin:0;padding:0;}
+        .main{
+            width: 1000px;
+            margin:0 auto;
+            /*margin-top: 20px;*/
+        }
+    </style>
+
+    <script src="../jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            var topHeight = $('.top').height();
+            $(window).scroll(function () {
+                var docScrollTop = $(document).scrollTop();
+                if (docScrollTop >= topHeight){
+                    $('.nav').css({
+                       'position': 'fixed',
+                        'top': '0px'
+                    });
+
+                    $('.main').css('margin-top', $('.nav').height());
+                }else {
+                    $('.nav').css({
+                        'position': 'static'
+                    });
+                    $('.main').css('margin-top', 0);
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+<div class="top">
+    <img src="images/top.png" />
+</div>
+<div class="nav">
+    <img src="images/nav.png" />
+
+</div>
+<div class="main">
+    <img src="images/main.png" />
+</div>
+</body>
+</html>
