@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/两侧跟随广告案例/images/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/两侧跟随广告案例/images/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/固定导航栏案例/images/main.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/固定导航栏案例/images/nav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/固定导航栏案例/images/top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/each和map函数.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/两侧跟随广告案例/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/事件对象.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/事件绑定.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/五角星打分案例/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/固定导航栏案例/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/扩展补充.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/省市选择案例/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/触发事件.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery/通过Json动态创建表格/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="" />
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -293,38 +276,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jQuery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jQuery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="省市选择案例" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -505,12 +456,12 @@
       <workItem from="1492676366371" duration="659000" />
       <workItem from="1492740092796" duration="3340000" />
       <workItem from="1492934986374" duration="9141000" />
-      <workItem from="1493688180552" duration="12376000" />
+      <workItem from="1493688180552" duration="12482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="340588000" />
+    <option name="totallyTimeSpent" value="340694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,9 +474,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="725" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24225576" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24225576" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
