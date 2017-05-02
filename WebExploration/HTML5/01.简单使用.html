@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单使用</title>
+
+    <style type="text/css">
+        .myprogress{
+            -webkit-appearance: none;
+        }
+
+        .myprogress::-webkit-progress-bar{
+            background-color: #0099cc;
+        }
+
+    </style>
+</head>
+<body>
+
+<input type="text" list="input_list">
+<datalist id="input_list">
+    <option value="123"></option>
+    <option value="456"></option>
+</datalist>
+
+
+<br />
+
+<progress></progress>
+
+<br />
+
+<progress value="20" max="100" class="myprogress"></progress>
+
+
+
+</body>
+</html>

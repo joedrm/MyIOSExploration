@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="list">
+    <!-- <li data-age="18">zhangsan1</li> -->
+</ul>
+<div id="info"></div>
+<script>
+    // 键是ID 值是信息
+    var data = {
+        01: {
+            name: "张三1",
+            age: 18
+        },
+        02: {
+            name: "张三2",
+            age: 19
+        },
+        03: {
+            name: "张三3",
+            age: 20
+        }
+    };
+    // jQuery操作一定要做变量本地化
+    var list = document.getElementById('list');
+    for (var id in data) {
+        var item = data[id];
+        var liElement = document.createElement('li');
+        // liElement.innerHTML = item.name;
+        liElement.appendChild(document.createTextNode(item.name));
+        liElement.setAttribute('data-age', item.age);
+        liElement.setAttribute('data-id', item.id);
+        list.appendChild(liElement); // 变量本地化
+        // 此处才将元素加到界面上
+        liElement.addEventListener('click', function () {
+            // alert(this.name);
+            // this 是当前点击的元素
+            // alert(this.getAttribute('data-age'));
+            console.log(this.dataset['age']);
+        });
+    }
+</script>
+</body>
+
+</html>

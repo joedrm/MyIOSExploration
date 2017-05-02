@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        polygon {
+            fill: green !important;
+        }
+    </style>
+</head>
+<body>
+
+<!--推荐使用 iframe-->
+<!--<iframe src="demo.svg" frameborder="0"></iframe>-->
+
+
+<!--<object data="demo.svg" type=""></object>-->
+<!--<embed src="demo.svg" type="">-->
+<svg data-src="demo.svg"></svg>
+
+<script src="../jQuery/jquery-3.2.1.js"></script>
+<script>
+    window.addEventListener('load', function () {
+        var svg = document.getElementsByTagName('svg');
+        for (var i = 0; i < svg.length; i++) {
+            var src = $(svg[i]).data('src');
+            // 向服务器发送请求 得到svg
+            $.get(src, function (data) {
+                var el = data.documentElement;
+                $(document.body).append($(el));
+            });
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<audio src="yedegangqinqu.mp3" controls="controls"></audio>-->
+
+<audio src="yedegangqinqu.mp3" id="audio"></audio>
+
+<button id="play">播放</button>
+<button id="pause">暂停</button>
+<button id="stop">停止</button>
+
+<br />
+
+<!--<video src="http://cloud.video.taobao.com/play/u/1748679248/p/1/e/6/t/9/26093141.mp4" controls="controls"></video>-->
+<video controls="controls" poster="toy.png" autoplay="autoplay">
+    <source src="movie.mp4" type="video/mp4">
+</video>
+
+<!--
+兼容方案:
+
+html5media 插件
+-->
+<script type="text/javascript">
+
+    var play = document.getElementById('play');
+    var pause = document.getElementById('pause');
+    var stop = document.getElementById('stop');
+    var audio = document.getElementById('audio');
+
+    play.addEventListener('click', function () {
+
+        audio.play();
+    });
+
+    pause.addEventListener('click', function () {
+
+        audio.pause();
+    });
+
+    stop.addEventListener('click', function () {
+
+        audio.stop();
+    });
+
+</script>
+</body>
+</html>
