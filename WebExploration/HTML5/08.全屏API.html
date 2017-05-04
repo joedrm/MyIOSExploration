@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /*通用部分*/
+
+        body {
+            font: 12px/1.5 tahoma, arial, 宋体;
+            width: 1024px;
+            background: #fff;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        a:link,
+        a:visited {
+            color: #3e3e3e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: green;
+        }
+
+        a:active {
+            color: silver;
+        }
+
+        a:focus {
+            outline: none;
+        }
+
+        /*头部部分*/
+
+        header {
+            padding: 20px 30px;
+        }
+
+        /*导航部分*/
+
+        nav > ul {
+            list-style: none;
+            margin: 0 auto;
+            position: relative;
+            height: 42px;
+            padding: 0 5px;
+            border-radius: 5px;
+            background-color: #c0c0c0;
+        }
+
+        nav > ul > li {
+            float: left;
+            height: 100%;
+        }
+
+        nav > ul > li a:link,
+        nav > ul > li a:visited {
+            background: none repeat scroll 0 0 transparent;
+            font-family: 微软雅黑;
+            font-size: 16px;
+            font-weight: lighter;
+            line-height: 18px;
+            padding: 12px 20px;
+            text-decoration: none;
+            white-space: nowrap;
+            display: block;
+            color: white;
+        }
+
+        nav > ul > li a:hover {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+
+        /*正文部分*/
+
+        main {
+            position: relative;
+        }
+
+        main > section {
+            margin-right: 220px;
+            padding: 15px;
+            padding-right: 20px;
+        }
+
+        main > section > article {
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        main > aside {
+            width: 220px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        /*脚注部分*/
+
+        footer {
+            border-top: 1px solid #d1d7dc;
+            margin: 0 auto;
+            padding: 0 10px;
+            position: relative;
+            height: 80px;
+            color: #b0b0b0;
+            font: 12px/1.5 tahoma, arial, 宋体;
+            text-align: left !important;
+        }
+
+        footer .toy {
+            height: 70px;
+            width: 70px;
+            right: 10px;
+            top: 10px;
+            position: absolute;
+        }
+
+        .links {
+            list-style: none;
+            border-bottom: 1px solid #d3d3d3;
+            margin: 20px 90px 5px 0;
+            padding: 0;
+            padding-bottom: 8px;
+            height: 18px;
+        }
+
+        .links > li {
+            display: inline-block;
+        }
+
+        .links > li + li::before {
+            content: '| '
+        }
+
+        .copyright {
+            line-height: 20px;
+            margin-top: 8px;
+        }
+
+        .copyright span {
+            margin: 0 0 0 50px;
+        }
+
+        .copyright i {
+            font-style: normal;
+            color: #3e3e3e;
+        }
+    </style>
+    <script>
+        // 告诉浏览器这是一个标签 html5shiv.js
+        document.createElement('header');
+    </script>
+</head>
+
+<body>
+<header>
+    <h1>网页标题</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">文件</a></li>
+        <li><a href="#">编辑</a></li>
+        <li><a href="#">视图</a></li>
+        <li><a href="#">项目</a></li>
+        <li><a href="#">生成</a></li>
+        <li><a href="#">调试</a></li>
+        <li><a href="#">团队</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <article>
+            <h3 id="title_1">文章1的标题</h3>
+            <p id="content_1">
+                文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、文章1的正文、
+            </p>
+        </article>
+    </section>
+    <aside>
+        <section class="widget">
+            <h4>最近文章</h4>
+            <ul>
+                <li><a href="#">母猪的产后护理</a></li>
+                <li><a href="#">XXX从入门到精通</a></li>
+                <li><a href="#">钢铁是怎样炼成</a></li>
+            </ul>
+        </section>
+        <section class="widget">
+            <h4>文章归档</h4>
+            <ul>
+                <li><a href="#">2014年7月</a></li>
+                <li><a href="#">2014年6月</a></li>
+                <li><a href="#">2014年5月</a></li>
+                <li><a href="#">2014年4月</a></li>
+            </ul>
+        </section>
+    </aside>
+</main>
+<footer>
+    <ul class="links">
+        <li><a href="javascript:;">关于我们</a></li>
+        <li><a href="javascript:;">服务条款</a></li>
+        <li><a href="javascript:;">会员服务</a></li>
+        <li><a href="javascript:;">法律声明</a></li>
+        <li><a href="javascript:;">隐私声明</a></li>
+        <li><a href="javascript:;">广告服务</a></li>
+        <li><a href="javascript:;">联系我们</a></li>
+        <li><a href="javascript:;">站点地图</a></li>
+        <li><a href="javascript:;">信息举报</a></li>
+        <li><a href="javascript:;">广告服务</a></li>
+        <li><a href="javascript:;">联系我们</a></li>
+        <li><a href="javascript:;">站点地图</a></li>
+        <li><a href="javascript:;">信息举报</a></li>
+    </ul>
+    <div class="copyright"><i>京ICP备XXXXXXXX号</i> <span>Copyright © 2015 Itcast.cn  版权所有。 </span></div>
+    <span class="toy"> <a id="img_full" href="http://www.micua.com"><img src="toy.png" alt="hello!"></a> </span>
+</footer>
+<script>
+    /**
+     JavaScript中可以通过调用requestFullScreen()方式实现指定元素的全屏显示
+     > var element = document.querySelector('...');
+     > element.requestFullScreen();
+     * */
+    (function () {
+        // var img = document.querySelector('#img_full');
+        // img.addEventListener('click', function(e) {
+        //   if (document.body.webkitRequestFullScreen)
+        //     document.body.webkitRequestFullScreen();
+        //   else
+        //     console.log('不支持');
+        //   e.preventDefault();
+        // });
+        //
+        // 注册点击时间
+        var h3 = document.querySelector('#title_1');
+        var p = document.querySelector('#content_1');
+        h3.addEventListener('click', function (e) {
+            if (p.webkitRequestFullScreen)
+                p.webkitRequestFullScreen();
+            else
+                console.log('不支持');
+            e.preventDefault();
+        });
+    })()
+</script>
+</body>
+</html>

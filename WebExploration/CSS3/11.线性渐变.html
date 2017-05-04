@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3渐变</title>
+    <style>
+        body, ul, li, dl, dt, dd, h1, h2, h3, h4, h5 {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #F7F7F7;
+        }
+
+        .wrapper {
+            width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            padding: 20px 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        header h3 {
+            line-height: 1;
+            font-weight: normal;
+            font-size: 28px;
+        }
+
+        .main {
+            /*overflow: hidden;*/
+        }
+
+        .main:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        .main .item {
+            width: 210px;
+            height: 210px;
+            margin: 0 30px 30px 0;
+            display: flex;
+            position: relative;
+            background-color: #FFF;
+            float: left;
+            box-shadow: 2px 2px 5px #CCC;
+        }
+
+        .main .item:after {
+            content: attr(data-brief);
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 210px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #FFF;
+            font-family: '微软雅黑';
+            font-size: 18px;
+            background-color: rgba(170, 170, 170, 0);
+            z-index: -1;
+            transition: all 0.3s ease-in;
+        }
+
+        .main .item:hover:after {
+            background-color: rgba(170, 170, 170, 0.6);
+            z-index: 100;
+        }
+
+        .main .item:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        /*.main .item:nth-last-child(-n+5) {
+            margin-bottom: 0;
+        }*/
+
+        /* 以上是骨架样式 */
+        .linear-gradient {
+            width: 180px;
+            height: 50px;
+            margin: auto;
+        }
+
+        /*标准写法*/
+        .item:nth-child(1) .linear-gradient {
+            background-image: linear-gradient(yellow, green);
+        }
+
+        /*多个颜色渐变*/
+        .item:nth-child(2) .linear-gradient {
+            background-image: linear-gradient(yellow, green, red, blue);
+        }
+
+        /*用角度确定方向*/
+        .item:nth-child(3) .linear-gradient {
+            background-image: linear-gradient(0deg, yellow, green);
+        }
+
+        /*用角度确定方向 正上方为0度 顺时针旋转*/
+        .item:nth-child(4) .linear-gradient {
+            background-image: linear-gradient(90deg, yellow, green);
+        }
+
+        /*用角度确定方向 180deg 正上方为0度 顺时针旋转*/
+        .item:nth-child(5) .linear-gradient {
+            background-image: linear-gradient(180deg, yellow, green);
+        }
+
+        /*用关键字来确定方向*/
+        .item:nth-child(6) .linear-gradient {
+            background-image: linear-gradient(to top, yellow, green);
+        }
+
+        /*用关键字来确定方向*/
+        .item:nth-child(7) .linear-gradient {
+            background-image: linear-gradient(to left top, yellow, green);
+        }
+
+        /*用关键字来确定方向*/
+        .item:nth-child(8) .linear-gradient {
+            background-image: linear-gradient(135deg, yellow, green);
+        }
+
+        /*控制渐变*/
+        .item:nth-child(9) .linear-gradient {
+            background-image: linear-gradient(to left, yellow 20%, green 40%, blue);
+        }
+
+        /*
+            0 - 20
+            20 - 40
+            40 - 100
+        */
+
+        .item:nth-child(10) .linear-gradient {
+            background-image: linear-gradient(to left, yellow 50%, green 50%);
+        }
+
+        /*
+            0 - 50
+            50 - 50
+            50 - 100
+        */
+
+        .item:nth-child(11) .linear-gradient {
+            background-image: linear-gradient(to left, yellow 50%, green 40%, blue 50%);
+        }
+
+        /*
+            0 - 50
+            40 - 50
+            50 - 100
+        */
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h3>CSS3线性渐变</h3>
+    </header>
+    <div class="main">
+        <div class="item" data-brief="">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+        <div class="item">
+            <div class="linear-gradient"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

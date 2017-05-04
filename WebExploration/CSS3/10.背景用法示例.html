@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*		.clip-img {
+                    width: 130px;
+                    height: 130px;
+                    margin: 200px auto;
+                    position: relative;
+                    background-image: url(images/bg.jpg);
+                }
+
+                .clip-img::after,
+                .clip-img::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    padding: 30px;
+                    box-sizing: border-box;
+                }
+
+                .clip-img::after {
+                    background-color: red;
+                    background-clip: content-box;
+                    background-origin: padding-box;
+                    left: 100px;
+                    background-image: url(images/bg.jpg);
+                    background-repeat: no-repeat;
+                }
+
+                .clip-img::before {
+                    background-clip: content-box;
+                    background-color: #FFF;
+                }*/
+
+        .clip-img {
+            width: 130px;
+            height: 130px;
+            margin: 100px auto;
+            position: relative;
+            background: url(bg.jpg) no-repeat;
+        }
+
+        .before, .after {
+            /*display: block;*/
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            /*border: 1px solid blue;*/
+            box-sizing: border-box;
+            /*通过box-sizing来设置宽度的计算方式 content部分为70px*/
+        }
+
+        .before {
+            z-index: 10;
+            top: 50px;
+            left: -50px;
+            background: url(bg.jpg) no-repeat;
+            background-clip: content-box;
+            /*确定背景区域为内容部分，不包含padding和border*/
+            background-origin: padding-box;
+            /*设置背景图的定位原点，默认为padding-box*/
+        }
+
+        .after {
+            /*right: -100px;*/
+            background-color: #FFF;
+            background-clip: content-box;
+        }
+
+    </style>
+</head>
+<body>
+<div class="clip-img">
+    <span class="before"></span>
+    <span class="after"></span>
+</div>
+</body>
+</html>

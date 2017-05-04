@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# version 1.0.1
+
+CACHE:
+  index.html
+  script.js
+  style.css
+
+NETWORK:
+  *

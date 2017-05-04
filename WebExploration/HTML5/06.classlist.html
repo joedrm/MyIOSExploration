@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 class="class1 class2   class3"></h1>
+<script>
+    // var h1 = document.getElementsByTagName('h1')[0];
+    // var list = h1.className.split(' ');
+    // ['class1','class2','class3']
+    // list.push('class4');
+    // h1.className=list.join(' ');
+
+    var h1 = document.getElementsByTagName('h1')[0];
+    // 通过dom对象的classList
+    var list = h1.classList;
+    // 通过classList封装了一些针对增加删除 切换的方法
+    // add('newclass'); remove('oldclass'); toggle('cl') // 存在则删除，不存在添加
+    // contains()
+</script>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <ul class="nav navbar-nav">
+                <li class="item red"><a href="">Home</a></li>
+                <li class="active"><a href="">Link</a></li>
+                <li class="item red"><a href="">Link</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /.navbar-collapse -->
+</div>
+<script>
+
+    /**
+     1. 新 H5 中 DOM 对象多了一个 classList 属性，是一个数组
+     2. add 添加一个新的类名
+     3. remove 删除一个的类名
+     4. contains 判断是否包含一个指定的类名
+     5. toggle 切换一个class element.toggle('class-name',[add_or_remove])
+     6. toggle函数的第二个参数true为添加 false删除
+     */
+
+    // // 1. 获取所有LI元素
+    // var lis = document.querySelectorAll('.nav > li');
+    // // 2. 遍历 给每个元素注册事件 click
+    // for (var i = 0; i < lis.length; i++) {
+    //   var item = lis[i];
+    //   item.addEventListener('mouseover', function(e) {
+    //     // 3. 重置
+    //     for (var i = 0; i < lis.length; i++) {
+    //       lis[i].classList.remove('active');
+    //     }
+    //     // 4. 事件执行中我们将当期触发事件的元素active
+    //     this.classList.add('active');
+    //     console.log(this.classList);
+    //     e.preventDefault();
+    //   });
+    // }
+
+
+    var link = document.querySelector('.navbar-brand');
+    link.addEventListener('click', function (e) {
+        // 判断当前ClassList中有没有active
+        var exist = this.classList.contains('active');
+        // toggle函数的第二个参数true为添加 false删除
+        this.classList.toggle('active', !exist);
+        e.preventDefault();
+    });
+</script>
+</body>
+</html>

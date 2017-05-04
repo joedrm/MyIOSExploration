@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3伸缩布局</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: '微软雅黑';
+            background-color: #F7F7F7;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrapper {
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        .wrapper > section {
+            min-height: 300px;
+            margin-bottom: 30px;
+            box-shadow: 1px 1px 4px #DDD;
+            background-color: #FFF;
+        }
+
+        .wrapper > header {
+            text-align: center;
+            line-height: 1;
+            padding: 20px;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .wrapper section > header {
+            line-height: 1;
+            padding: 10px;
+            font-size: 22px;
+            color: #333;
+            background-color: #EEE;
+        }
+
+        .wrapper .wrap-box {
+            padding: 20px;
+        }
+
+        .wrapper .brief {
+            min-height: auto;
+        }
+
+        .wrapper .flex-img {
+            width: 100%;
+        }
+
+        /*全局设置*/
+        section ul {
+            display: flex;
+            min-height: 600px;
+        }
+
+        section li {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            margin: 10px;
+            background-color: pink;
+        }
+
+        .flex-start ul {
+            align-items: flex-start;
+        }
+
+        .flex-end ul {
+            align-items: flex-end;
+        }
+
+        .center ul {
+            align-items: center;
+        }
+
+        .baseline ul {
+            align-items: baseline;
+        }
+
+        .baseline ul li:last-child {
+            line-height: 100px;
+        }
+
+        .stretch ul {
+            align-items: stretch;
+        }
+
+        .stretch li {
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>CSS3-伸缩布局详解</header>
+    <!-- 简介 -->
+    <section class="brief">
+        <header>align-items</header>
+        <div class="wrap-box">
+            <p>调整侧轴方向对齐方式，包括flex-start、flex-end、center、baseline、stretch</p>
+        </div>
+    </section>
+    <!-- 分隔线 -->
+    <section class="flex-start">
+        <header>flex-start</header>
+        <div class="wrap-box">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </section>
+    <section class="flex-end">
+        <header>flex-end</header>
+        <div class="wrap-box">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </section>
+    <section class="center">
+        <header>center</header>
+        <div class="wrap-box">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </section>
+    <section class="baseline">
+        <header>baseline</header>
+        <div class="wrap-box">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </section>
+    <section class="stretch">
+        <header>stretch</header>
+        <div class="wrap-box">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </section>
+</div>
+</body>
+</html>

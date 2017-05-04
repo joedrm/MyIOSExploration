@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景</title>
+
+    <style>
+
+        /*background-clip属性*/
+        .bg_clip{
+            width: 200px;
+            height: 200px;
+            padding: 50px;
+            margin: 50px auto;
+            border: 5px solid red;
+            background-color: #31b0d5;
+            /*
+            content-box: 以内容为界限
+            border-box: 以边框为界限
+            padding-box: 以padding为界限
+            */
+            background-clip: content-box;
+            /*background-clip: border-box;*/
+            /*background-clip: padding-box;*/
+        }
+
+        /*
+            background-origin 修改了背景的原点
+            content-box: 以内容为原点
+            border-box: 以边框为原点
+            padding-box: 以padding为原点 默认
+        */
+        .bg_origin{
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+            margin: 50px auto;
+            border: 10px dashed red;
+            background-color: #31b0d5;
+            background-image: url('../images/dibanzhuan.jpg');
+            background-repeat: no-repeat;
+            /*background-origin: border-box;*/
+            background-origin: content-box;
+            background-clip: content-box;
+        }
+
+        /* background-size 属性
+
+        */
+        .bg_size1{
+            width: 200px;
+            height: 400px;
+            padding: 50px;
+            margin: 50px auto;
+            border: 10px dashed red;
+            background-color: #31b0d5;
+            background-image: url('../images/dibanzhuan.jpg');
+            background-repeat: no-repeat;
+            /*background-size: 100% 100%;*/
+            /* 宽度占满, 高度自动(自适应) */
+            /*background-size: 100% auto;*/
+            /*
+                cover 会使“最大”边，进行缩放，另一边同比缩放，铺满容器，超出部分会溢出。
+                contain 会使“最小”边，进行缩放，另一边同比缩放，不一定铺满容器，会完整显示图片。
+
+                background-size 与 background-clip无关
+                background-size 与 background-origin 保持一致
+             */
+            background-size: cover;
+        }
+        .bg_size2{
+            width: 200px;
+            height: 400px;
+            padding: 50px;
+            margin: 50px auto;
+            border: 10px dashed red;
+            background-color: #31b0d5;
+            background-image: url('../images/dibanzhuan.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg_clip"></div>
+
+<div class="bg_origin"></div>
+
+<div class="bg_size1"></div>
+<div class="bg_size2"></div>
+</body>
+</html>

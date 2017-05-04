@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        aside {
+            height: 100%;
+            width: 220px;
+            float: left;
+            background-color: #ccc;
+        }
+
+        aside ul {
+            font-size: 20px;
+            line-height: 2;
+            list-style: none;
+        }
+
+        aside ul li {
+            cursor: pointer;
+        }
+
+        article {
+            margin-left: 220px;
+            padding: 20px;
+            height: 100%;
+            overflow: scroll;
+            background-color: #f5f5f5;
+            font-size: 15px;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+
+<aside>
+    <ul id="list"></ul>
+</aside>
+<article>
+    <p id="content"></p>
+</article>
+
+<script src="data.js"></script>
+<script>
+    /**
+     界面上的所有JS操作不会被浏览器记住，就无法回到之前的状态
+     在HTML5中可以通过window.history操作访问历史状态，让一个页面可以有多个历史状态
+
+     1. window.history.forward(); // 前进
+     2. window.history.back(); // 后退
+     3. window.history.go(); // 刷新
+     4. 通过JS可以加入一个访问状态
+     4. history.pushState(放入历史中的状态数据, 设置title(现在浏览器不支持)， 改变历史状态)
+     * */
+    (function () {
+        var listElement = document.querySelector('#list');
+        for (var title in  data) {
+            var liElement = document.createElement('li');
+            liElement.innerHTML = '⭐️  ' + title;
+            liElement.setAttribute('data-title', title);
+            listElement.appendChild(liElement);
+        }
+
+        var liElements = document.querySelectorAll('#list>li');
+        var content = document.querySelector('#content');
+        for (var i = 0; i < liElements.length; i++) {
+            liElements[i].addEventListener('click', function () {
+
+                var title = this.dataset['title'];
+                content.innerHTML = data[title];
+
+                // 操作历史记录
+                if (window.history && history.pushState) {
+                    // 添加一个新的历史记录
+                    history.pushState(title, 'title没有任何浏览器支持', '?t=' + title);
+                } else {
+                    console.log('浏览器不支持');
+                }
+            });
+        }
+
+        // 当我们在伪造的访问历史中前进或后退时会执行一个popstate事件
+        window.addEventListener('popstate', function (e) {
+            content.innerHTML = data[e.state];
+        });
+
+        // window.location = "https://www.baidu.com";
+        // 第一次请求过来 获取地址栏中的t参数
+        // window.location可以拿到当前网页中跟地址相关的信息
+        var search = window.location.search; // ?t=jkaljdksfla
+        // 如果地址栏中的地址有中文，会以URL编码方式呈现
+        // decodeURI 可以转换到之前中文
+        var title = search.split('=')[1]; // ['?t','jkaljdksfla']
+        if (title) {
+            // 有值 decodeURI作用就是从URL编码转换到之前的状态
+            console.log(decodeURI(title));
+            content.innerHTML = data[decodeURI(title)];
+        }
+    })();
+</script>
+</body>
+</html>

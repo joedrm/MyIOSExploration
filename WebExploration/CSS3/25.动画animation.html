@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .animation {
+            width: 40px;
+            height: 40px;
+            background-color: blue;
+            margin: 100px auto;
+            animation-name: change;
+            animation-duration: 2s;
+            /*动画结束后的状态*/
+            animation-fill-mode: forwards;
+            /*动画重复次数
+                infinite 无限重复
+            */
+            animation-iteration-count: infinite;
+            /*动画延时*/
+            /*animation-delay: 1s;*/
+            /*动画的播放与暂停*/
+            /*animation-play-state: paused;*/
+            /*动画反方向*/
+            animation-direction: alternate;
+            /*动画曲线*/
+            animation-timing-function: ease;
+        }
+
+        /*定义动画系列*/
+        @keyframes change {
+            0% {
+                width: 40px;
+                height: 40px;
+            }
+            50% {
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                width: 150px;
+                height: 150px;
+            }
+            100% {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="animation"></div>
+</body>
+</html>

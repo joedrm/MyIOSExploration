@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3文本</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: '微软雅黑';
+            background-color: #F7F7F7;
+        }
+
+        .wrapper {
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        .wrapper > section {
+            min-height: 300px;
+            margin-bottom: 30px;
+            box-shadow: 1px 1px 4px #DDD;
+            background-color: #FFF;
+        }
+
+        .wrapper > header {
+            text-align: center;
+            line-height: 1;
+            padding: 20px;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .wrapper section > header {
+            line-height: 1;
+            padding: 10px;
+            font-size: 22px;
+            color: #333;
+            background-color: #EEE;
+        }
+
+        .wrapper .wrap-box {
+            padding: 20px;
+        }
+
+        section:nth-child(2) span {
+            color: #CCC;
+            font-size: 40px;
+            text-shadow: 2px 2px 8px #000;
+        }
+
+        section:nth-child(3) .box {
+            width: 100px;
+            height: 200px;
+            border: 1px solid #CCC;
+            /*word-break: break-all;*/
+            word-wrap: break-word;
+        }
+
+        section:nth-child(3) .white-space {
+            width: 100px;
+            height: 200px;
+            border: 1px solid #CCC;
+            white-space: pre;
+        }
+
+        section:nth-child(3) .pre {
+            white-space: pre;
+        }
+
+        section:nth-child(3) .pre-wrap {
+            white-space: pre-wrap;
+        }
+
+        section:nth-child(3) .pre-line {
+            white-space: pre-line;
+        }
+
+        section:nth-child(3) .nowrap {
+            white-space: nowrap;
+        }
+
+        section:nth-child(4) p {
+            width: 200px;
+            border: 1px solid #CCC;
+            text-overflow: ellipsis;
+            /*white-space: nowrap;*/
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>CSS3-文本</header>
+    <section>
+        <header>文字阴影</header>
+        <div class="wrap-box">
+            <p>文字阴影 text-shadow: 2px 2px 8px #000;</p>
+            <span>文字阴影</span>
+
+        </div>
+    </section>
+    <section>
+        <header>文本换行</header>
+        <div class="wrap-box">
+            <p class="box">
+                我是一些字 http://huaban.com/
+            </p>
+            <p class="box2 white-space pre">
+                我是一些文字 我用的pre值
+                一些文字
+            </p>
+            <p class="box2 white-space pre-wrap">
+                我是一些文字 我用的pre-wrap值
+                一些文字
+            </p>
+
+            <p class="box2 white-space pre-line"> 我是一些文字
+                我用的pre-line
+
+
+                一些文字
+            </p>
+
+            <p class="box2 white-space nowrap">
+                我是一些文字
+                我用的nowrap
+                一些文字
+                <br>我要强制不换行
+            </p>
+        </div>
+    </section>
+    <section>
+        <header>文字溢出</header>
+        <div class="wrap-box">
+            <p>文字阴影文字阴影
+                文字阴影文字阴影文字阴影
+                文字阴影文字阴影文字阴影
+                文字阴影文字阴影文字阴影
+                文字阴影文字阴影文字阴影
+            </p>
+        </div>
+    </section>
+</div>
+</body>
+</html>

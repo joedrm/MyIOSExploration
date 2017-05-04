@@ -1,0 +1,14 @@
+/*
+* @Author: iceStone
+* @Date:   2015-12-04 16:39:37
+* @Last Modified by:   iceStone
+* @Last Modified time: 2015-12-04 16:44:13
+*/
+
+
+/*::before 是元素一开始的时候，在元素内部;*/
+
+body::before {
+  content: 'css注入的内容';
+  font-size: 80px;
+}

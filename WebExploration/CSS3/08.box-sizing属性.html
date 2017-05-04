@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+            border: 10px solid black;
+            padding: 50px;
+        }
+
+        /*
+            border-box
+        */
+        .border-box{
+            background-color: red;
+            box-sizing: border-box;
+        }
+        .content-box{
+            background-color: green;
+            box-sizing: content-box;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="border-box"></div>
+<div class="content-box"></div>
+
+</body>
+</html>

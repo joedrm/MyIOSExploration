@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea id="txt_value" cols="80" rows="10"></textarea>
+<input type="button" value="SET" id="btn_set">
+<input type="button" value="GET" id="btn_get">
+<script>
+    var btnSet = document.querySelector('#btn_set');
+    var btnGet = document.querySelector('#btn_get');
+    var txtValue = document.querySelector('#txt_value');
+    btnGet.addEventListener('click', function () {
+        // txtValue.value = sessionStorage.getItem('key1');
+        if (window.sessionStorage)
+            txtValue.value = sessionStorage.getItem('key1')
+        // txtValue.value = sessionStorage['key1'];
+    });
+    btnSet.addEventListener('click', function () {
+        // sessionStorage.setItem('key1', txtValue.value);
+        sessionStorage['key1'] = txtValue.value;
+    });
+</script>
+</body>
+</html>

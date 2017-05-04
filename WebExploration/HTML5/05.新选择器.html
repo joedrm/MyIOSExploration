@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li class="item">item1</li>
+    <li class="item">item2</li>
+    <li class="item">item3</li>
+    <li class="item">item4</li>
+    <li class="item">item5</li>
+    <li class="item">item6</li>
+    <li class="item">item7</li>
+    <li class="item">item8</li>
+    <li class="item">item9</li>
+    <li class="item">item10</li>
+</ul>
+
+<script src="../jQuery/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+
+    /**
+     JS 多了一个原始支持，类似jqueryDOM选择器
+
+     document.getElementById() 需要给DOM元素设置ID
+     document.querySelector(selector) 可以通过CSS选择器的语法找到DOM元素
+
+     document.getElementsByTagName()
+     document.querySelectorAll('.item')
+
+     $('.item').on
+
+     1. document.querySelector(selector);
+     2. 返回第一个满足选择器条件的元素 一个dom对象
+     3. document.querySelectorAll('.item');
+     4. 返回所有满足该条件的元素 一个元素类型是dom类型的数组
+     5. $('.item')
+     6. 返回一个jQuery对象（dom元素的数组）
+     7. 本质上jquery方式和qs方式都是获取DOM数组， 只不过jquery会多一些其他成员
+     8. DOM数组的每一个成员注册事件不能像jquery一样直接注册， 必须分别给每个元素注册
+     9. h5就是将我们经常需要的操作又包装一层
+
+     */
+
+    var first_item = document.querySelector('.item');
+    console.log('first_item: '+first_item); // first_item: [object HTMLLIElement]
+
+    var items = document.querySelectorAll('.item');
+    console.log('items: '+items);
+//    items.addEventListener('click', function () { // 这里是不能注入事件的,因为 items 是一个普通的数组
+//        console.log('111111');
+//    });
+    // 而应该是这样写才对
+    for (var i = 0; i < items.length; i ++){
+        items[i].addEventListener('click', function () {
+            console.log('111111');
+        });
+    }
+
+
+    // jQuery 的实现
+//    var $items = $('.item');
+//    console.log('$items: '+$items);
+//    $items.on('click', function () { // 这里可以注入事件
+//       console.log('111111');
+//    });
+
+</script>
+</body>
+</html>

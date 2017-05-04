@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>26.转换transform</title>
+
+    <style>
+        div{
+            width: 130px;
+            height: 130px;
+            margin: 50px auto;
+            line-height: 150px;
+            text-align: center;
+            color: red;
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .rotate_45:hover{
+            transition: all 1s;
+            transform: rotate(45deg);
+        }
+        .rotate_-90:hover{
+            transition: all 1s;
+            transform: rotate(-90deg);
+        }
+        .scale_big:hover{
+            transition: all 1s;
+            transform: scale(2,2);
+        }
+        .scale_small:hover{
+            transition: all 1s;
+            transform: scale(0.5,0.5);
+        }
+        .skew:hover{
+            transition: all 1s;
+            transform: skew(45deg);
+        }
+        .translate:hover{
+            transition: all 1s;
+            transform: translate(400px);
+        }
+        .translate_rotate:hover{
+            transition: all 1s;
+            transform: translate(400px) rotate(90deg);
+        }
+        .transform_x:hover{
+            transition: all 1s;
+            transform: rotateX(45deg);
+        }
+        .transform_y:hover{
+            transition: all 1s;
+            transform: rotateY(45deg);
+        }
+        .transform_z:hover{
+            transition: all 1s;
+            transform: rotateZ(45deg);
+        }
+
+        .transform_origin {
+            transform-origin: 0 0;
+        }
+        .transform_origin:hover{
+            transition: all 1s;
+            transform: rotateZ(360deg);
+
+        }
+    </style>
+    
+</head>
+<body>
+<div class="rotate_45">顺时针旋转45度</div>
+<div class="rotate_-90">逆时针旋转90度</div>
+
+<div class="scale_big">放大</div>
+<div class="scale_small">缩小</div>
+
+<div class="skew">倾斜</div>
+
+<div class="translate">移动</div>
+
+<div class="translate_rotate">移动时旋转</div>
+
+<div class="transform_x">x轴旋转</div>
+<div class="transform_y">y轴旋转</div>
+<div class="transform_z">z轴旋转</div>
+
+<div class="transform_origin">旋转锚点</div>
+</body>
+</html>
