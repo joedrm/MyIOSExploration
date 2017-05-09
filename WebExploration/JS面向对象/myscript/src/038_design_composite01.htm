@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script>
+			
+			// 组合模式 
+			/*
+			 * 场景模拟：
+			 *  -> 公司 
+			 *			-> 财务部门
+			 *						-> 张一
+			 *						-> 张二
+			 *						-> 张三
+			 *			-> 销售部门
+			 *						-> 张四
+			 *						-> 张五
+			 *						-> 张六
+			 *	
+			 *		实际的任务具体是落实到人上去实施的 也就是说只有人才具有具体的方法实现
+			 *			
+			 */			
+			 
+			 
+			 var Org = function(name){
+			 	 this.name = name ; 
+				 this.depts = [] ;
+			 };
+			 Org.prototype = {
+			 	constructor:Org , 
+				addDepts:function(child){
+					this.depts.push(child);
+					return this ;
+				} , 
+				getDepts:function(){
+					return this.depts;
+				}
+			 };
+			 
+			 
+			 var Dept = function(name){
+			 	 this.name = name ; 
+				 this.persons = [] ;
+			 };
+			 Dept.prototype = {
+			 	constructor:Dept , 
+				addPersons: function(child){
+					this.persons.push(child);
+					return this ;
+				} , 
+				getPersons:function(){
+					return this.persons;
+				}
+			 };
+			 
+			 var Person = function(name){
+			 	 this.name = name ; 
+			 };
+			 Person.prototype = {
+			 	constructor : Person ,
+				hardworking : function(){
+					document.write(this.name + '...努力工作!');
+				} ,
+				sleeping : function(){
+					document.write(this.name + '...努力睡觉!');
+				}
+			 };
+			 
+			 
+			 var p1 = new Person('张1');
+			 var p2 = new Person('张2');
+			 var p3 = new Person('张3');
+			 var p4 = new Person('张4');
+			 var p5 = new Person('张5');
+			 var p6 = new Person('张6');
+			 
+			 var dept1 = new Dept('开发部门');
+			 dept1.addPersons(p1).addPersons(p2).addPersons(p3);
+			 var dept2 = new Dept('销售部门');
+			 dept2.addPersons(p4).addPersons(p5).addPersons(p6);
+			 
+			 var org = new Org('bjsxt');
+			 org.addDepts(dept1).addDepts(dept2);
+			 
+			 // 需求： 具体的让一个人（张3）去努力工作
+			 //org.getDepts()
+			 org.hardworking('开发部门');
+			 for(var i = 0 ,depts = org.getDepts(); i<depts.length;i++ ){
+					for(var j = 0 ,persons = depts[i].getPersons(); j < persons.length ; j++){
+						if(persons[j].name === '张6'){
+							persons[j].hardworking();
+						}
+					}
+			 }
+			
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

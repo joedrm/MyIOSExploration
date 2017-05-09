@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8 src=../jquery/jquery-1.8.0.min.js></script>
+		<script>
+			
+
+				// 桥接模式: 主要作用就是把抽象和现实分离开来，使他们可以完全独立变化
+				
+				// 应用场景：事件监听回调机制 (用户点击一个按钮,向服务器端发送信息)
+				
+				// 当页面加载完毕之后执行函数体 window.onload
+				/*
+				 // classic 
+				 
+				$(function(){
+					
+					// 1前台业务逻辑
+					var inp = document.getElementById('inp');
+					// 用事件注册的方式 在元素上添加事件
+					BH.EventUtil.addHandler(inp,'click',sendReq);
+					//--------------------------------------------------
+					// 2后台业务逻辑
+					function sendReq(){// 处理后台的函数
+						//ajax 
+						//1 后台服务器的地址
+						//2 是一个对象或者一个字符串(参数)
+						//$.post('URL',{msg:this.value},function(result){
+							// CallBack....
+						//});
+						alert('发送了指定的数据到后台：' + this.value);
+					}
+				});			
+				*/
+				
+				
+				
+				// 利用桥模式 分开俩个业务逻辑单元
+				$(function(){
+					
+					// 1前台业务逻辑 : 这一段代码处理前台的事件注册和绑定的
+					var inp = document.getElementById('inp');
+					// 用事件注册的方式 在元素上添加事件
+					BH.EventUtil.addHandler(inp,'click',bridgeHadler);
+					
+					// 利用桥模式分开					
+					function bridgeHadler(){
+						var msg = this.value;
+						sendReq(msg);
+					}
+					
+					// 2后台业务逻辑  ：这一段代码处理后台发送请求的
+					function sendReq(msg){// 处理后台的函数
+						//ajax 
+						//1 后台服务器的地址
+						//2 是一个对象或者一个字符串(参数)
+						//$.post('URL',{msg:this.value},function(result){
+							// CallBack....
+						//});
+						alert('发送了指定的数据到后台：' + msg);
+					}
+					
+					//单元测试的时候
+					sendReq('我也是数据..');
+				});					
+				
+				
+		</script>
+	</head>
+	<body>
+		<input id=inp type=button value="我是数据.."  />
+	</body>
+</html>

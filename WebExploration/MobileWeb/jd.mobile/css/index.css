@@ -1,0 +1,342 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.jd_layout {
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    height: 1000px;
+}
+
+.jd_header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 999;
+}
+
+.jd_header .jd_header_box {
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(201, 21, 35, 0.85);
+    height: 40px;
+}
+
+.jd_header .jd_header_box .icon_logo {
+    background-position: 0 -103px;
+    width: 60px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 2px;
+}
+
+.jd_header form {
+    width: 100%;
+    height: 40px;
+    padding-left: 75px;
+    padding-right: 55px;
+    padding-top: 5px;
+    position: relative;
+}
+
+.jd_header form .icon_search {
+    background-position: -60px -109px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 85px;
+    top: 10px;
+}
+
+.jd_header form input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 30px;
+}
+
+.jd_header .login {
+    display: block;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*轮播图 banner*/
+.jd_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.jd_banner ul:first-child {
+    width: 800%;
+}
+
+.jd_banner ul:first-child li {
+    width: 12.5%;
+    float: left;
+}
+
+.jd_banner ul:first-child li img {
+    width: 100%;
+    display: block;
+}
+
+.jd_banner ul:last-child {
+    width: 118px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -59px;
+    bottom: 10px;
+}
+
+.jd_banner ul:last-child li {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    float: left;
+}
+
+.jd_banner ul:last-child li:first-child {
+    margin-left: 0;
+}
+
+.jd_banner ul:last-child li.now {
+    background: #fff;
+}
+
+/*导航栏*/
+.jd_nav {
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 3.125%;
+    background: #fff;
+    padding-top: 11px;
+}
+
+.jd_nav ul {
+    width: 100%;
+}
+
+.jd_nav ul li {
+    width: 25%;
+    height: 69px;
+    float: left;
+}
+
+.jd_nav ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.jd_nav ul li a img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.jd_nav ul li p {
+    color: #666;
+    font-size: 12px;
+}
+
+/*商品模块*/
+.jd_product {
+    margin: 0 5px;
+}
+
+/*公共的商品盒子*/
+.jd_product .jd_product_box {
+    box-shadow: 0 0 1px 1px #e0e0e0;
+    margin-top: 8px;
+    background-color: #fff;
+}
+
+.jd_product .jd_product_box .product_top {
+    height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+
+.jd_product .jd_product_box .product_top .no_bot {
+    height: 32px;
+}
+
+.jd_product .jd_product_box .product_top h3 {
+    font-size: 15px;
+    color: #666;
+    padding-left: 15px;
+    font-weight: inherit;
+    line-height: 32px;
+}
+
+.jd_product .jd_product_box .product_top h3::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 12px;
+    background-color: #d8505c;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+
+.jd_product .jd_product_box .product_bot {
+
+}
+
+/*秒杀模块*/
+.jd_secondKill{
+
+}
+.jd_secondKill .jd_secondKill_left{
+    float: left;
+}
+.jd_secondKill .jd_secondKill_left .sk_icon{
+    background: url('../imgs/seckill-icon.png') no-repeat;
+    background-size: 16px 20px;
+    width: 16px;
+    height: 20px;
+    float: left;
+    display: block;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+.jd_secondKill .jd_secondKill_left .sk_name{
+    font-size: 15px;
+    color: #d8505c;
+    font-weight: inherit;
+    float: left;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.jd_secondKill .jd_secondKill_left .sk_time{
+    float: left;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+
+.jd_secondKill .jd_secondKill_left .sk_time .num{
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    float: left;
+    line-height: 15px;
+    margin-left: 3px;
+}
+.jd_secondKill .jd_secondKill_left .sk_time .str{
+    display: block;
+    width: 4px;
+    height: 15px;
+    text-align: center;
+    float: left;
+    line-height: 15px;
+    margin-left: 3px;
+}
+
+.jd_secondKill .jd_secondKill_right{
+    float: right;
+}
+.jd_secondKill .jd_secondKill_right a{
+    line-height: 32px;
+    margin-right: 10px;
+}
+/*������Ʒ*/
+.jd_secondKill .product_bot{
+    width: 100%;
+}
+.jd_secondKill .product_bot ul{
+    width: 100%;
+    padding: 10px 0;
+}
+.jd_secondKill .product_bot ul li{
+    width: 33.333%;
+    float: left;
+}
+.jd_secondKill .product_bot ul li a{
+    width: 100%;
+}
+
+.jd_secondKill .product_bot ul li a .img_box{
+    width: 100%;
+    border-right: 1px solid #e0e0e0;
+}
+.jd_secondKill .product_bot ul li:last-child a .img_box{
+    border-right:none;
+}
+.jd_secondKill .product_bot ul li a .img_box img{
+    width: 64%;
+    display: block;
+    margin: 0 auto;
+}
+
+.jd_secondKill .product_bot ul li a .now_price{
+    color: #d8505c;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 3px;
+}
+.jd_secondKill .product_bot ul li a .old_price{
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-top: 3px;
+    text-align: center;
+    color: #888;
+}
+/*��ֵ��*/
+.jd_product .jd_pd .product_bot{
+    width: 100%;
+}
+/*���ߵĴ�ͼƬa*/
+.jd_product .jd_pd .product_bot .p_left{
+    width: 50%;
+    float: left;
+}
+/*���ߵĴ�ͼƬa*/
+.jd_product .jd_pd .product_bot .p_right{
+    width: 50%;
+    float: right;
+}
+/*���߿�*/
+.jd_product .jd_pd .product_bot .b_left{
+    border-left: 1px solid #e0e0e0;
+}
+/*�ұ߿�*/
+.jd_product .jd_pd .product_bot .b_right{
+    border-right: 1px solid #e0e0e0;
+}
+/*�±߿�*/
+.jd_product .jd_pd .product_bot .b_bottom{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.jd_product .jd_pd .product_bot a img{
+    width: 100%;
+    display: block;
+}
+

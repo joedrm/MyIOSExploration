@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		
+		<script type=text/javascript charset=utf-8>
+					
+					
+					// 原型 prototype
+					
+					//构造函数方式
+					/*
+					function Person(name , age){
+						this.name = name ; 
+						this.age  = age ; 
+						//this.sayName = function(){alert('我是姓名!')};
+						this.sayName = sayName ; 
+					}
+					// 定义了一次函数
+					function sayName(){
+						alert(this.name);
+					}
+					var p1 = new Person('z3',20);
+					var p2 = new Person('z4',21);
+					p1.sayName();
+					p2.sayName();
+					alert(p1.sayName == p2.sayName);     // false 
+					//alert(p1.name == p2.name);		 // false 
+					*/
+					
+					// prototype 创建每一个函数都有一个prototype属性,这个属性其实是一个指针,而这个指针总指向一个对象
+					// 这个对象的用途就是将特定的属性和方法包含在内,起到一个所有实例所共享的作用
+					
+					
+					function Person(){
+						
+					}
+					var obj = Person.prototype;
+					//alert(typeof obj);
+					obj.name = 'z3';
+					obj.age  = 20 ; 
+					obj.sayName = function(){alert(this.name);};
+					var p1 = new Person();
+					var p2 = new Person();
+					//alert(p1.age);
+					//alert(p2.age);
+					//p1.sayName();
+					//p2.sayName();
+					//alert(p1.sayName == p2.sayName)
+					
+					// 构造函数  原型对象 实例对象
+					
+					//构造函数.prototype =  原型对象
+					//原型对象.constructor = 构造函数
+					//alert(obj.constructor);
+					//实例对象.prototype = 原型对象
+					//alert(p1.prototype);
+					//alert(obj.isPrototypeOf(p1));
+					
+
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

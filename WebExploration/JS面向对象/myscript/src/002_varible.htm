@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+					
+				//关于全局变量和局部变量的简单说明 
+					
+				/*
+				var a = 3 ;		// number	全局变量 
+				
+				//变量一共有两种： 全局变量 局部变量
+				
+				function test(){
+					//var b = 2 ;		//局部变量
+					c = 5 ;				//全局变量
+					alert(a);
+				}
+				
+				test();
+				alert(c);
+				//alert(b);
+				*/
+				
+				
+				//javascript是弱类型变量的脚本语言 ,根据赋值决定变量的类型 
+				
+				
+				// Number类型 整数和小数
+				
+				var a1 = 10 ; 
+				var a2 = 10.5 ;
+				var a3 = NaN; 		//not a number
+				var a4 = 1/0 ;		//正无穷
+				var a5 = 070;		//8进制 和16进制(0xA)
+				//alert(a4);
+				//alert(a5);
+				
+				/*				
+				var a6 = 0.1 ; 
+				var a7 = 0.2 ;
+				if(a6+ a7 == 03){
+					alert('等于0.3');
+				} else {
+					alert('不等于0.3');
+				}
+				*/
+				var a8 = parseInt("aaabbcc"); //不是一个数
+				//alert(a8);
+				
+				var a9 = parseInt("12bbcc");
+				//alert(a9);
+				
+				
+				//undefined 数据类型 他的值只有一个：undefined 表示变量声明了,但是没有被赋值
+				var b1  ;
+				//alert(b1);
+				
+				//Null 空值
+				var b2 =  null ;
+				//alert(b2);
+				
+				//String 
+				var str1 = "我是字符串1";
+				var str2 = '我是字符串2';
+				
+				// Boolean 
+				var flag1 = false ; 
+				var flag2 = true ; 
+				
+				
+				// 引用数据类型
+				var arr = [1,2,3];		//数组类型
+				var dates = new Date();	//日期类型
+				var obj = {};			//空对象
+				
+				
+				// typeof 操作符  用来判断数据类型的
+				
+				var a = 10 ;
+				var b = 10.3 ; 
+				var c = true ; 
+				var d = 'abcd';
+				var e = new Date();
+				var f = NaN ;
+				var g = [1,2,3];
+				var h = undefined ;
+				var i = null;		//表示一个空对象的引用
+				alert(typeof i);
+				
+				
+				
+				
+				
+				
+			
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

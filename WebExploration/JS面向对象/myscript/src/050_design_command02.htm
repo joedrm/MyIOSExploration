@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>	
+				
+				//命令模式是一种封装方法调用的方式
+				//命令模式的目的：把调用命令的调用者 和 执行命令的接受者
+				//要执行一件事情：1(命令1)  2(命令2)  3(命令3)
+				//命令模式 必须实现接口 (execute)
+				//命令模式分类：简单命令模式、复杂命令模式(事物)、用闭包去封装命令模式(更加灵活的调用命令)
+				// 客户、调用者、接受者
+				// 客户创建命令 ，调用这个执行命令 ，接受者在命令执行时进行相应的操作
+				
+				//用命令模式实现简单的小游戏
+				// 页面上有4个按钮（up、down、left、right） 目标对象（元素div..） 还有一个关键的按钮（回退按钮）
+				// 我现在有一个元素 up、down、left、right4个命令 ，应该有一个集合去记录所有的命令 相应的执行命令
+				
+				/**
+				 *  game implementation code
+				 */
+				// 有一个命令接口 俩个方法 一个是执行命令 还有一个是回退命令 
+				var ReversibleCommandInterface = new BH.Interface('ReversibleCommandInterface',['execute','undo']);
+				
+				//命令对象的类 参数传递的是接受者(cursor)
+				// 把命令对象叫做调用者
+				var MoveUp = function(cursor){
+					this.cursor = cursor;
+				};
+				MoveUp.prototype = {
+					constructor:MoveUp , 
+					execute:function(){
+						//真正的接受者调用自己的move方法(x轴,y轴)
+						this.cursor.move(0,-10);
+					},
+					undo:function(){
+						this.cursor.move(0,10);
+					}
+				};
+
+				var MoveDown = function(cursor){
+					this.cursor = cursor;
+				};
+				MoveDown.prototype = {
+					constructor:MoveDown , 
+					execute:function(){
+						//真正的接受者调用自己的move方法(x轴,y轴)
+						this.cursor.move(0,10);
+					},
+					undo:function(){
+						this.cursor.move(0,-10);
+					}
+				};
+				
+				var MoveLeft = function(cursor){
+					this.cursor = cursor;
+				};
+				MoveLeft.prototype = {
+					constructor:MoveLeft , 
+					execute:function(){
+						//真正的接受者调用自己的move方法(x轴,y轴)
+						this.cursor.move(-10,0);
+					},
+					undo:function(){
+						this.cursor.move(10,0);
+					}
+				};
+	
+				var MoveRight = function(cursor){
+					this.cursor = cursor;
+				};
+				MoveRight.prototype = {
+					constructor:MoveRight , 
+					execute:function(){
+						//真正的接受者调用自己的move方法(x轴,y轴)
+						this.cursor.move(10,0);
+					},
+					undo:function(){
+						this.cursor.move(-10,0);
+					}
+				};												
+				
+				//接受者（也就是操作具体方法的对象） // HTML5 + ECMA5
+				//Cursor
+				
+				var Cursor = function(width,height,parent){
+					//宽高代表外层div （canvas画布）
+					this.width = width ; 
+					this.height = height;
+					//移动的元素的具体位置
+					this.position = {
+						x: width/2, 
+						y: height/2
+					};
+					// HTML5 新特性 ： canvas(画布的意义)
+					//创建一个画布,定义画布的宽高
+					this.canvas = document.createElement('canvas');
+					this.canvas.width = this.width;	
+					this.canvas.height = this.height;
+					parent.appendChild(this.canvas);
+					
+					//canvas 上下文元素(画布的核心对象)
+					this.ctx = this.canvas.getContext('2d');
+					this.ctx.fillStyle = 'red'; //填充颜色
+					this.move(0,0); //初始化位置 
+				};
+				
+				Cursor.prototype = {
+					constructor:Cursor , 
+					move:function(x,y){
+						this.position.x += x ;
+						this.position.y += y ;
+						this.ctx.clearRect(0,0,this.width,this.height); //clear this canvas 每次重画之前要清空画布
+						this.ctx.fillRect(this.position.x , this.position.y ,20,20);//画出方块
+					}
+				};
+				
+				//应该有一个命令集合[数组]：目的就是为了当执行每一个命令之前 把该命令加入到集合中 （push、pop）
+				//命令对象在执行真的操作之前　应该把该命令加入到集合中　也就是在原始命令类上加一些新的特性　：特别适合（装饰者模式）
+				
+				//使用装饰者模式 完成这件事情
+				//当前是一个装饰类 装饰命令对象类的实例 两个参数（原始的命令对象[被装饰者]  , 命令集合[数组] ）
+				var UndoDercorator = function(command,undoStack){
+					this.command = command ; 
+					this.undoStack = undoStack;
+				};
+				UndoDercorator.prototype = {
+					constructor:UndoDercorator,
+					execute:function(){
+						//在执行真正命令之前 把命令加入命令集合中
+						this.undoStack.push(this.command);
+						this.command.execute();
+					},
+					undo:function(){
+						this.command.undo();
+					}
+				};
+				
+				//完善一下HTML元素即可(四个按钮[命令按钮]、回退按钮)
+				
+				// 命令按钮类
+				var CommandButton = function(label , command , parent){
+					//检验接口
+					BH.Interface.ensureImplements(command,ReversibleCommandInterface);
+					//实例化按钮 并放到父元素上
+					this.element = document.createElement('button');
+					this.element.innerHTML = label ;
+					parent.appendChild(this.element);
+					//添加事件
+					BH.EventUtil.addHandler(this.element,'click',function(){
+						command.execute(); //执行相应的命令
+					});
+				};
+				
+				
+				//回退按钮类
+				var UndoButton = function(label, parent , undoStack){
+					this.element = document.createElement('button');
+					this.element.innerHTML = label ;
+					parent.appendChild(this.element);
+					//添加事件
+					BH.EventUtil.addHandler(this.element,'click',function(){
+						if(undoStack.length === 0 ){
+							alert('已经没有命令了，是最后一步回退操作!');
+							return;
+						}
+						// 把最后一次命令拿出来 然后直接执行回退操作
+						var lastCommand = undoStack.pop();
+						lastCommand.undo();
+					});					
+				}
+				
+				
+				
+				window.onload= function(){
+					
+					var body = document.getElementsByTagName('body')[0];
+					var cursor = new Cursor(400,400,body); //接受者对象实例化出来了
+					var undoStack = [] ; //命令集合
+					
+					//客户:创建命令
+					var upCommand = new UndoDercorator(new MoveUp(cursor),undoStack);
+					var downCommand = new UndoDercorator(new MoveDown(cursor),undoStack);
+					var leftCommand = new UndoDercorator(new MoveLeft(cursor),undoStack);
+					var rightCommand = new UndoDercorator(new MoveRight(cursor),undoStack);
+					
+					var upbtn = new CommandButton('up',upCommand,body);
+					var downbtn = new CommandButton('down',downCommand,body);
+					var leftbtn = new CommandButton('left',leftCommand,body);
+					var rightbtn = new CommandButton('right',rightCommand,body);
+					var undobtn = new UndoButton('undo',body,undoStack);
+					
+					
+				};
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

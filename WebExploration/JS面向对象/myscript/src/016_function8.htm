@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+			
+			
+			/*
+			var name = "xiao A";
+			var obj = {
+			      name : "xiao B" ,
+			      getName: function(){
+					return function(){
+						return this.name;
+					}
+				}
+			};
+			//alert(obj.getName()());			
+			var k = obj.getName();  //全局作用域
+			//alert(typeof k); // function类型
+			alert(k());
+			*/
+
+			/*
+			var name = "xiao A";
+			var obj = {
+			      name : "xiao B" ,
+			      getName: function(){
+				  	// this总是指向调用者
+					var o = this;
+					
+					return function(){
+						return o.name;
+					}
+				}
+			};
+			//alert(obj.getName()());	
+			
+			var k = obj.getName();
+			alert(k());
+			*/
+			
+			
+			// 闭包：一个函数 可以访问另外一个函数作用域中的变量
+			// 封闭性 : private 起到一个保护变量的作用
+			// 1 
+			function f(x){		// 2 
+						var temp = x ; 		//局部变量	 //temp已经没有被使用	
+						return function(x){		// 3 (function 有了一个执行域 var obj)
+							temp += x ;		//  又被使用了						
+							alert(temp);						
+					     }
+			}				
+			var a = f(50);
+			//alert(a);
+			
+			a(5);				
+			a(10);
+			a(20);			
+			
+			
+
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

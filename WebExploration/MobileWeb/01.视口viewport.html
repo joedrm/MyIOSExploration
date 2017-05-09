@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--
+    - 视口的作用：在移动浏览器中，当页面宽度超出设备，浏览器内部虚拟的一个页面容器，将页面容器缩放到设备这么大，然后展示
+    - 目前大多数手机浏览器的视口（承载页面的容器）宽度都是980；
+    - 视口的宽度可以通过meta标签设置
+    - 此属性为移动端页面视口设置，当前值表示在移动端页面的宽度为设备的宽度，并且不缩放（缩放级别为1）
+      + width:视口的宽度
+      + initial-scale：初始化缩放
+      + user-scalable:是否允许用户自行缩放（值：yes/no; 1/0）
+      + minimum-scale:最小缩放，一般设置了用户不允许缩放，就没必要设置最小和最大缩放
+      + maximum-scale:最大缩放
+
+     快捷键: meta:vp
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-sacle=1.0, user-scalable=no">
+
+    meta:vp
+    <title>viewport</title>
+
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1024px;
+            height: 2000px;
+            background-color: #f40;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">床前明月光</div>
+</body>
+</html>

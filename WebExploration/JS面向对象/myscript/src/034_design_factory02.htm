@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<!-- 引入的核心js公共文件 -->
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>
+			
+			// 细粒度 和 粗粒度  
+			
+			// 万事万物都是Object  ： 卖车的商店 -> 卖车 -> 生产车 -> Factory
+			
+			// 搭建一个工厂的环境		
+			// 卖车的商店
+			function CarShop(){};
+			CarShop.prototype = {
+				constructor : CarShop ,
+				sellCar:function(type){
+					// 销售人员...
+					var car = CarFactory.createCar(type);
+					// 保险、相关的售后服务
+					return car ;
+				}
+			};
+			
+			//生产车的工厂 目的就是为了生产车
+			//单体模式
+			var CarFactory = {
+					createCar:function(type){
+							var car ; // 声明一个变量
+							switch(type){
+								case 'Benz': car = new Benz(); break;
+								case 'Bmw' : car = new Bmw();  break;
+								case 'Audi': car = new Audi(); break;
+								default: 'not buy it ';
+							}
+							//检验接口实现
+							BH.Interface.ensureImplements(car ,CarInterface);
+							return car ;						
+					}
+			};
+			
+			
+			
+			
+			
+			// 接口对象的实例
+			var CarInterface = new BH.Interface('CarInterface' ,['start','run']);
+			
+			// SuperClass  implements CarInterface 
+			function BaseCar(){};
+			BaseCar.prototype = {
+				constructor:BaseCar , 
+				start:function(){
+					alert(this.constructor.name + ' ..start');
+				},
+				run:function(){
+					alert(this.constructor.name + ' ..run');
+				}
+			};
+			
+			
+			// Class benz bmw audi (都是车)
+			// 注意关键问题：子类先继承父类 子类在扩展子类自己特有的方法
+			
+			function Benz(){}; 
+			BH.extend(Benz,BaseCar); 
+			Benz.prototype.driveBenz = function(){alert('Benz..drive')}; 
+			//Benz.prototype.run = function(){alert('Benz..run')};
+			
+			function Bmw(){};
+			BH.extend(Bmw,BaseCar);
+			Bmw.prototype.driveBmw = function(){alert('Bmw..drive')};
+			//Bmw.prototype.run = function(){alert('Bmw..run')};	
+			
+			function Audi(){};
+			BH.extend(Audi,BaseCar);
+			Audi.prototype.driveAudi = function(){alert('Audi..drive')};
+			//Audi.prototype.run = function(){alert('Audi..run')};	
+			
+			
+			
+			var shop = new CarShop();		
+			var car = shop.sellCar('Benz');
+			car.start();
+			car.run();
+			car.driveBenz();
+
+			var car2 = shop.sellCar('Bmw');
+			car2.start();
+			car2.run();	
+			car2.driveBmw();		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

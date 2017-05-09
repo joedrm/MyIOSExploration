@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+			
+			// 3种方式定义函数 
+			/*
+			// 1 function语句式
+			function test1(){
+				alert('我是test1');
+			}
+			//test1();
+			
+			// 2函数的直接量 ECMAScript
+			var test2 = function(){
+				alert('我是test2');
+			}
+			//test2();
+			
+			// 3function构造函数式
+			var test3 = new Function("a" , "b" ,"return a+b;");
+			//alert(test3(10,20));
+			*/
+			
+			
+			//效率对比
+			/*
+			var d1 = new Date();
+			var t1 = d1.getTime();
+			for(var i =0 ; i <100000;i++){
+				//function test1(){;}		//function语句的形式
+				var test2 = new Function();
+			}
+			var d2 = new Date();
+			var t2 = d2.getTime();
+			alert(t2 -t1); 			
+			*/
+			
+			// 解析顺序问题 对于function语句式的函数，javascript解析器会优先的解释
+			/*
+			test1();
+			function test1(){
+				alert('1111');
+			}
+			*/
+			
+			//alert(test2); //表示变量声明了 但是没有被赋值
+			
+			//test2();
+			/*
+			var test2 = function(){
+				alert('2222');
+			}
+			*/
+			
+			/*
+			// 4 2 3 3 5 6
+			function f(){return 1;} 				// 函数1 	
+			alert(f());		//返回值为4 说明第1个函数被第4个函数覆盖	
+			var f = new Function("return 2;");		// 函数2 
+			alert(f());		//返回值为2 说明第4个函数被第2个函数覆盖
+			var f = function(){return 3;}			// 函数3 
+			alert(f());	       //返回值为3 说明第2个函数被第3个函数覆盖	
+			function f(){return 4;} 				// 函数4 
+			alert(f());		//返回值为3 说明第4个函数被第3个函数覆盖
+			var f = new Function("return 5"); 		// 函数5 
+			alert(f());	//返回值为5 说明第3个函数被第5个函数覆盖	
+			var f = function(){return 6 ;}			// 函数6 
+			alert(f());		//返回值为6 说明第5个函数被第6个函数覆盖			
+			*/
+			
+			
+			
+			//函数作用域的概念
+			/*
+			var k = 1 ; 
+			function t1(){
+				var k = 2 ; //局部变量 k
+				//function test(){return k ;} 	//function语句
+				//var test = function(){ return k};	//函数直接量
+				//var test = new Function('return k;');	// 构造函数的方式
+				alert(test());
+			}
+			t1();			
+			*/
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>	
+			
+			
+				//代理模式（proxy）：代理也是对象，他的目的就是为了节制（控制）对本体对象的访问
+				
+				var LibraryInterface = new BH.Interface('LibraryInterface' ,['addbook','findbook','checkoutbook','returnbook']);
+				
+				var Book = function(id , title , author){
+					this.id = id;
+					this.title = title ; 
+					this.author = author;
+				};
+				
+				//图书馆(本体对象 , 实例化图书馆需要消耗很多的资源)
+				var Library = function(books){
+					this.books = books;
+				};
+				Library.prototype = {
+					constructor:Library , 
+					addbook:function(book){
+						this.books[book.id] = book;
+					},
+					findbook:function(id){
+						if(this.books[id]){
+							return this.books[id];
+						}
+						return null;
+					},
+					checkoutbook:function(id){
+						//电脑登记..交押金
+						return this.findbook(id);
+					},
+					returnbook:function(book){
+						//电脑登记(...已还)
+						//计算费用(计算余额)
+						this.books[book.id] = book;
+					}
+				};
+				
+				//图书馆的代理对象
+				var LibraryProxy = function(books){
+					alert('产生代理对象，但是并没有产生真正的本体对象!');
+					this.books = books;
+					this.library = null; //定义一个空对象
+				};
+				LibraryProxy.prototype = {
+					constructor:LibraryProxy ,
+					initializeLibrary:function(){
+						if(this.library == null){
+							alert('真正的本体对象!');
+							this.library = new Library(this.books);
+						}
+					},
+					addbook:function(book){
+						this.initializeLibrary();
+						//实际上具体做事情的还是本体对象自己本身
+						this.library.addbook(book);
+					},
+					findbook:function(id){
+						this.initializeLibrary();
+						return this.library.findbook(id);
+					},
+					checkoutbook:function(id){
+						this.initializeLibrary();
+						return this.findbook(id);
+					},
+					returnbook:function(book){
+						this.initializeLibrary();
+						this.library.returnbook(book);
+					}
+				};				
+				
+				//实例化的是代理对象：推迟本体对象实例化的时间，什么时候具体去做事情了，再去实例化它
+				// hibernate： get(全查询出来)   load(返回代理对象)
+				var proxy = new LibraryProxy({
+					"01":new Book('01','java','z3'),
+					"02":new Book('02','js','z4')
+				});
+				
+				alert(proxy.findbook('01').title);
+			
+				
+				
+				
+				
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

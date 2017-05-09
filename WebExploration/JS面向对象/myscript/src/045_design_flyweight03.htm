@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>	
+				
+				//享元模式：优化的设计模式  web日历(.........)
+				// 年对象、月份对象、天对象
+				var CalendarInterface = new BH.Interface('CalendarInterface' , ['display']);
+				
+				
+				var CalendarYear = function(year , parent){
+					this.year = year ; 
+					this.element = document.createElement('div');
+					this.element.style = 'none';
+					parent.appendChild(this.element);
+					
+					// 判断是否是闰年
+					var isLeapYear = function(y){
+						return (y>0) && !(y%4) && ((y%100)||!(y%400));
+					};
+					this.months = [] ; // 年对象里应该包含月份
+					//承装当前年所有月份到底都是多少天
+					this.numDays = [31,isLeapYear(this.year)?29:28,31,30,31,30,31,31,30,31,30,31];
+					for(var i = 0 ; i<12;i++){
+						this.months[i] = new CalendarMonth(i ,this.numDays[i] ,this.element);
+					}
+				};
+				CalendarYear.prototype = {
+					constructor:CalendarYear ,
+					display:function(){
+						for(var i = 0 ; i < this.months.length;i++){
+							this.months[i].display();
+						}
+						//显示出来月份
+						this.element.style.display = 'block';
+					}
+				};
+				
+				
+				var CalendarMonth = function(monthNum , numDays ,parent){
+					this.monthNum = monthNum ;
+					this.element = document.createElement('div');
+					this.element.style = 'none';
+					parent.appendChild(this.element);
+					this.days = [] ; // 月份里应该包含一个天的数组
+					for(var i = 0 ; i < numDays ; i++){
+						this.days[i] = new CalendarDay(i+1 ,this.element );
+					}
+				};
+				CalendarMonth.prototype = {
+					constructor : CalendarMonth , 
+					display:function(){
+						for(var i = 0 ; i < this.days.length;i++){
+							this.days[i].display();
+						}
+						//显示出来天
+						this.element.style.display = 'block';
+					}					
+				};
+				
+				var CalendarDay = function(date , parent){
+					this.date = date ; 
+					this.element = document.createElement('div');
+					this.element.style = 'none';
+					parent.appendChild(this.element);					
+				};
+				CalendarDay.prototype = {
+					constructor :CalendarDay , 
+					display:function(){
+						this.element.style.display = 'inline-block'; // 让他别给我换行
+						this.element.innerHTML = this.date ;
+					}
+				};
+				
+				
+				window.onload = function(){
+					
+					var mydiv = document.getElementById('mydiv');
+					var myyear1 = new CalendarYear(2016 , mydiv);
+					//365个天对象
+					myyear1.display();
+					
+				}
+				
+		
+		</script>	
+	</head>
+	<body>
+		
+			<div id=mydiv ></div>
+	</body>
+</html>

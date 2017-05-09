@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>
+				
+				
+				//责任链模式 responsibility
+				//目的：发出者 和接受者之间的耦合	
+				/**
+				 * 	发送者知道链中的第一个接受者，它向这个接受者发出请求
+					每一个接受者都对请求进行分析，要么处理它，要么往下传递
+					每一个接受者知道的其他对象只有一个，即它的下家对象
+					如果没有任何接受者处理请求，那么请求将从链上离开，不同的实现对此有不同的反应。
+				 */
+				
+				//做项目 ->：项目经理 ：->task  项目组[小A,小B,小C,小D]
+				
+				//任务的类(发送者)
+				var Assign = function(task){
+					this.task = task ;
+				};
+				
+				// 接受任务的类
+				var WorkFlow = function(assign){
+					this.assign = assign;
+				};
+				
+				WorkFlow.prototype = {
+					constructor:WorkFlow,
+					//分析当前的任务到底谁能去执行
+					filterHandler:function(es){
+						for(var i = 0 ,len = es.length; i <len;i++ ){
+								//如果当前的任务正好是你这个人比较擅长的 那就之间执行
+								if(this.assign.task === es[i].cando){
+									return es[i].todo();
+								}
+						}
+						return ;
+					}
+				};
+				
+				//处理者
+				var Executor = function(name,cando){
+					this.name = name ; 	//接受者的姓名
+					this.cando = cando;	//擅长的任务
+				};
+				Executor.prototype = {
+					constructor:Executor,
+					todo:function(){
+						document.write(this.name + '开发:' + this.cando);
+					}
+				};
+				
+				//实例化4个处理对象
+				var e1 = new Executor('小A','javascript编程');
+				var e2 = new Executor('小B','css编程');
+				var e3 = new Executor('小C','java编程');
+				var e4 = new Executor('小D','sql编程');
+				
+				//实例化任务对象
+				var assign = new Assign('java编程');
+				//处理任务的类实例
+				var wf = new WorkFlow(assign);
+				wf.filterHandler([e1,e2,e3,e4]);
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

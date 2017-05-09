@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+			
+			
+				function Map(){
+					
+					// private 
+					var obj = {} ;// 空的对象容器,承装键值对
+					
+					// put 方法
+					this.put = function(key , value){
+							obj[key] = value ;		// 把键值对绑定到obj对象上
+					}
+					
+					// size 方法 获得map容器的个数
+					this.size = function(){
+							var count = 0 ; 
+							for(var attr in obj){
+								count++;
+							}
+							return count ; 
+					}
+					
+					// get 方法 根据key 取得value
+					this.get = function(key){
+						if(obj[key] || obj[key] === 0 || obj[key] === false){
+							return obj[key];
+						} else {
+							return null;
+						}
+					}
+					
+					//remove 删除方法
+					this.remove = function(key){
+						if(obj[key] || obj[key] === 0 || obj[key] === false){
+							delete obj[key];						
+						}
+					}
+					
+					// eachMap 变量map容器的方法
+					this.eachMap = function(fn){
+							for(var attr in obj){
+								fn(attr, obj[attr]);
+							}
+					}
+					
+					
+				}
+			
+				//模拟java里的Map
+				var m = new  Map();
+				m.put('01' , 'abc');
+				m.put('02' , false) ;
+				m.put('03' , true);
+				m.put('04' , new Date());
+				
+				//alert(m.size());
+				
+				//alert(m.get('02'));
+				//m.remove('03');
+				//alert(m.get('03'));
+				
+				m.eachMap(function(key , value){
+					 alert(key +" ："+ value);
+				});
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

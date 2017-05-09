@@ -2,60 +2,166 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/01.属性选择器.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/02.伪类.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/03.伪元素.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/04.文本.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/05.边框圆角.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/06.边框阴影.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/07.边框图片.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/08.box-sizing属性.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/09.背景.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/10.背景用法示例.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/11.线性渐变.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/12.伸缩布局:flex-direction.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/13.伸缩布局:justify-content.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/14.伸缩布局:align-items.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/15.伸缩布局:flex-wrap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/16.伸缩布局:align-content.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/17.伸缩布局:flex调整子盒子比例.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/18.伸缩布局:align-self.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/19.伸缩布局:order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/20.伸缩布局示例:简单导航栏.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/21.伸缩布局示例:经典网页布局.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/22.径向渐变.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/23.渐变示例.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/24.过度transition.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/25.动画animation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/26.转换transform.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/27.实例:跳动的心.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/28.Web字体.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/29.媒体查询.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/css/font-awesome.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS3/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/05.新选择器.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/06.classlist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/07.访问历史.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/08.全屏API.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/09.cache/cache.manifest" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/09.cache/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/09.cache/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/09.cache/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/10.web存储.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/11.文件Api.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML5/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/arrow2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/c1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/c2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/c3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/c4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/close1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/f_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/grid_view.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/list_view.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/social.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/tick1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/zoom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/banner_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/banner_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/buy-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/buy-pro1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/delete_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/delete_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/detail01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/detail02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/focus-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/header-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/icon-updown-arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/none.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nv-fy.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/safe_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/scroll-to-top-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/seckill-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/seckill_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/shop-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/sprites.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/sprits_btm_new.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/font/MiFie-Web-Font.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/font/MiFie-Web-Font.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/font/MiFie-Web-Font.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/c_06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_01_2000x410.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_01_640x340.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_02_2000x410.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_02_640x340.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_03_2000x410.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_03_640x340.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_04_2000x410.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_04_640x340.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/css/component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/css/etalage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/cbpViewModeSwitch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/classie1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/easyResponsiveTabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/jquery-1.11.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/jquery.etalage.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/jquery.flexisel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/jquery.wmuSlider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/simplejavascriptinheritance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/cart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/product.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/实现自己的each方法遍历多维数组.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LESS/_p.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LESS/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/01.视口viewport.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/02.rem.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/category.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/css/category.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/font/MiFie-Web-Font.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap-theme.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/html5shiv/html5shiv-printshiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/html5shiv/html5shiv-printshiv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/html5shiv/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/html5shiv/html5shiv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/jquery/jquery.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/respond/respond.matchmedia.addListener.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/respond/respond.matchmedia.addListener.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/respond/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/respond/respond.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/note.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/space.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQuery/jquery-3.2.1.js" afterPath="$PROJECT_DIR$/jQuery/jquery-3.2.1.js" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,103 +185,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="24.过度transition.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/24.过度transition.html">
+      <file leaf-file-name="017_oop1.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/017_oop1.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="-867">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="25.动画animation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/25.动画animation.html">
+      <file leaf-file-name="005_object.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/005_object.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="-425">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="26.转换transform.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/26.转换transform.html">
+      <file leaf-file-name="006_objtest.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/006_objtest.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="-796">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="05.边框圆角.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/05.边框圆角.html">
+      <file leaf-file-name="007_objtest2.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/007_objtest2.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5372">
-              <caret line="316" column="7" selection-start-line="316" selection-start-column="7" selection-end-line="316" selection-end-column="7" />
+            <state relative-caret-position="-255">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="27.实例:跳动的心.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/27.实例:跳动的心.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="28.Web字体.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/28.Web字体.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="29.媒体查询.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CSS3/29.媒体查询.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="font-awesome.css.map" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/css/font-awesome.css.map">
+      <file leaf-file-name="025_oop9.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/025_oop9.htm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="sourcemapFileViewerProvider">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="font-awesome.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/css/font-awesome.css">
+      <file leaf-file-name="024_oop8.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/024_oop8.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="323">
+              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bg.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/bg.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="041_design_adapter.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/041_design_adapter.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-96">
+              <caret line="47" column="47" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="001_helloworld.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/001_helloworld.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="002_varible.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/002_varible.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="003_statement.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/003_statement.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -184,9 +290,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -196,22 +302,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jQuery/固定导航栏案例/index.html" />
-        <option value="$PROJECT_DIR$/jQuery/两侧跟随广告案例/index.html" />
-        <option value="$PROJECT_DIR$/jQuery/jQuery事件补充.html" />
-        <option value="$PROJECT_DIR$/jQuery/事件解绑.html" />
-        <option value="$PROJECT_DIR$/jQuery/触发事件.html" />
-        <option value="$PROJECT_DIR$/jQuery/事件对象.html" />
-        <option value="$PROJECT_DIR$/jQuery/五角星打分案例/index.html" />
-        <option value="$PROJECT_DIR$/jQuery/each和map函数.html" />
-        <option value="$PROJECT_DIR$/jQuery/扩展补充.html" />
-        <option value="$PROJECT_DIR$/jQuery/通过Json动态创建表格/index.html" />
-        <option value="$PROJECT_DIR$/jQuery/省市选择案例/index.html" />
-        <option value="$PROJECT_DIR$/HTML5/简单使用.html" />
-        <option value="$PROJECT_DIR$/HTML5/data属性的使用.html" />
-        <option value="$PROJECT_DIR$/HTML5/03.多媒体.html" />
-        <option value="$PROJECT_DIR$/HTML5/04.svg文件的使用.html" />
-        <option value="$PROJECT_DIR$/HTML5/10.web存储.html" />
         <option value="$PROJECT_DIR$/HTML5/11.文件Api.html" />
         <option value="$PROJECT_DIR$/HTML5/05.新选择器.html" />
         <option value="$PROJECT_DIR$/HTML5/06.classlist.html" />
@@ -247,6 +337,22 @@
         <option value="$PROJECT_DIR$/CSS3/27.实例:跳动的心.html" />
         <option value="$PROJECT_DIR$/CSS3/28.Web字体.html" />
         <option value="$PROJECT_DIR$/CSS3/29.媒体查询.html" />
+        <option value="$PROJECT_DIR$/Project/weijinsuo/css/main.js" />
+        <option value="$PROJECT_DIR$/MobileWeb/01.视口viewport.html" />
+        <option value="$PROJECT_DIR$/Project/weijinsuo/font/main.css" />
+        <option value="$PROJECT_DIR$/Project/weijinsuo/js/main.js" />
+        <option value="$PROJECT_DIR$/Project/weijinsuo/css/main.css" />
+        <option value="$PROJECT_DIR$/Project/weijinsuo/index.html" />
+        <option value="$PROJECT_DIR$/LESS/index.less" />
+        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/css/base.css" />
+        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/index.html" />
+        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/css/category.html" />
+        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/category.html" />
+        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/css/index.css" />
+        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/css/category.css" />
+        <option value="$PROJECT_DIR$/JS面向对象/shoppingmall/css/style.css" />
+        <option value="$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/basic.js" />
+        <option value="$PROJECT_DIR$/JS面向对象/实现自己的each方法遍历多维数组.js" />
       </list>
     </option>
   </component>
@@ -256,7 +362,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="150" />
+    <option name="y" value="47" />
     <option name="width" value="1280" />
     <option name="height" value="725" />
   </component>
@@ -314,7 +421,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,12 +449,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CSS3" />
+              <option name="myItemId" value="Vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JS面向对象" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JS面向对象" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shoppingmall" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,34 +503,34 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JS面向对象" />
+      <recent name="$PROJECT_DIR$/Project/weijinsuo/css" />
       <recent name="$PROJECT_DIR$/CSS3" />
       <recent name="$PROJECT_DIR$/Project/16.事件对象" />
       <recent name="$PROJECT_DIR$/Project/15.筋斗云" />
-      <recent name="$PROJECT_DIR$/Project" />
-      <recent name="$PROJECT_DIR$/Project/09.小米手机展示" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/CSS3" />
-      <recent name="$PROJECT_DIR$/HTML5" />
-      <recent name="$PROJECT_DIR$/HTML5/cache" />
-      <recent name="$PROJECT_DIR$/jQuery/两侧跟随广告案例" />
-      <recent name="$PROJECT_DIR$/jQuery/固定导航栏案例" />
+      <recent name="$PROJECT_DIR$/JS面向对象/shoppingmall" />
+      <recent name="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs" />
+      <recent name="$PROJECT_DIR$/MobileWeb" />
+      <recent name="$PROJECT_DIR$/LESS" />
+      <recent name="$PROJECT_DIR$/Project/weijinsuo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.29.媒体查询.html">
-    <configuration default="false" name="25.动画animation.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS3/25.动画animation.html">
+  <component name="RunManager" selected="Node.js.实现自己的each方法遍历多维数组.js">
+    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/MobileWeb/jd.mobile/index.html">
       <method />
     </configuration>
-    <configuration default="false" name="26.转换transform.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS3/26.转换transform.html">
+    <configuration default="false" name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/MobileWeb/01.屏幕适配/index.html">
       <method />
     </configuration>
-    <configuration default="false" name="27.实例:跳动的心.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS3/27.实例:跳动的心.html">
+    <configuration default="false" name="category.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/MobileWeb/jd.mobile/category.html">
       <method />
     </configuration>
-    <configuration default="false" name="28.Web字体.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS3/28.Web字体.html">
+    <configuration default="false" name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/JS面向对象/shoppingmall/index.html">
       <method />
     </configuration>
-    <configuration default="false" name="29.媒体查询.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS3/29.媒体查询.html">
+    <configuration default="false" name="实现自己的each方法遍历多维数组.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="实现自己的each方法遍历多维数组.js" working-dir="$PROJECT_DIR$/JS面向对象">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -456,19 +595,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tab栏切换实现.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.25.动画animation.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.26.转换transform.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.27.实例:跳动的心.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.28.Web字体.html" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.29.媒体查询.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.category.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+      <item index="6" class="java.lang.String" itemvalue="Node.js.实现自己的each方法遍历多维数组.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.29.媒体查询.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.28.Web字体.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.27.实例:跳动的心.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.26.转换transform.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.25.动画animation.html" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.实现自己的each方法遍历多维数组.js" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.category.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -528,11 +667,13 @@
       <workItem from="1493688180552" duration="17410000" />
       <workItem from="1493796279596" duration="7388000" />
       <workItem from="1493855797104" duration="23560000" />
+      <workItem from="1493942849799" duration="23366000" />
+      <workItem from="1494294083830" duration="2818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="376570000" />
+    <option name="totallyTimeSpent" value="402754000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,29 +685,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="725" extended-state="6" />
+    <frame x="150" y="47" width="1280" height="725" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20810167" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23113582" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5029455" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2279587" sideWeight="0.51338583" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03042328" sideWeight="0.4970545" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05732484" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -609,383 +750,393 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HTML5/09.cache/style.css">
+    <entry file="file://$PROJECT_DIR$/Project/weijinsuo/img/slide_01_2000x410.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/weijinsuo/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/weijinsuo/note.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3111">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/weijinsuo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="148" column="39" selection-start-line="148" selection-start-column="39" selection-end-line="148" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/weijinsuo/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6045">
+          <caret line="276" column="0" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LESS/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LESS/_p.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/09.cache/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/09.cache/cache.manifest">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/10.web存储.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/11.文件Api.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/05.新选择器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/06.classlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="47" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/07.访问历史.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/08.全屏API.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="225" column="35" selection-start-line="225" selection-start-column="35" selection-end-line="225" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/01.属性选择器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/02.伪类.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/03.伪元素.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/04.文本.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/border.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/banner.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/bg2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/bg3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/zimubiao.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/dibanzhuan.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/10.背景用法示例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/09.背景.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/08.box-sizing属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/07.边框图片.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/06.边框阴影.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2703">
-          <caret line="159" column="43" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/11.线性渐变.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/12.伸缩布局:flex-direction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="87" column="26" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/13.伸缩布局:justify-content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/14.伸缩布局:align-items.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/15.伸缩布局:flex-wrap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="75" column="23" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/16.伸缩布局:align-content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1336">
-          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/17.伸缩布局:flex调整子盒子比例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1567">
-          <caret line="139" column="30" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/18.伸缩布局:align-self.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="114" column="31" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/19.伸缩布局:order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/20.伸缩布局示例:简单导航栏.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/23.渐变示例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2111">
-          <caret line="184" column="45" selection-start-line="184" selection-start-column="45" selection-end-line="184" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/22.径向渐变.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="70" column="39" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/21.伸缩布局示例:经典网页布局.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/25.过渡详解.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/24.过度transition.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/25.动画animation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/26.转换transform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/05.边框圆角.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5372">
-          <caret line="316" column="7" selection-start-line="316" selection-start-column="7" selection-end-line="316" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/27.实例:跳动的心.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/css/font-awesome.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/28.Web字体.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/29.媒体查询.html">
+    <entry file="file://$PROJECT_DIR$/MobileWeb/02.rem.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileWeb/01.视口viewport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/sprites.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileWeb/01.屏幕适配/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileWeb/jd.mobile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="138" column="24" selection-start-line="138" selection-start-column="24" selection-end-line="138" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileWeb/jd.mobile/css/category.html" />
+    <entry file="file://$PROJECT_DIR$/MobileWeb/jd.mobile/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="305" column="34" selection-start-line="305" selection-start-column="34" selection-end-line="305" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileWeb/jd.mobile/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileWeb/jd.mobile/css/category.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileWeb/jd.mobile/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/shoppingmall/css/etalage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/shoppingmall/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/shoppingmall/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26401">
+          <caret line="1553" column="23" selection-start-line="1553" selection-start-column="23" selection-end-line="1553" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/basic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <marker date="1494076432000" expanded="true" signature="0:2" placeholder="//..." />
+            <marker date="1494076432000" expanded="true" signature="872:874" placeholder="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/实现自己的each方法遍历多维数组.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/033_design_factory01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/037_design_bridge02.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/036_design_bridge01.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/035_design_factory03.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/009_function1.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/commons/001.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/commons/CommonUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/012_function4.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/013_function5.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/015_function7.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/016_function8.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/014_function6.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/011_function3.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/010_function2.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1153">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/018_oop2.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/017_oop1.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/005_object.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/006_objtest.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-796">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/007_objtest2.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/025_oop9.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/024_oop8.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/041_design_adapter.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="47" column="47" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/.tmp_001_helloworld.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/001_helloworld.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/002_varible.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/003_statement.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

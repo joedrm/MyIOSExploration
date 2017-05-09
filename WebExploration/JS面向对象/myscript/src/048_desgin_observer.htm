@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>	
+				
+				//观察者模式：对程序中某一个对象的进行实时的观察，当该对象状态发生改变的时候 进行通知
+				//观察者、被观察者
+				//经典案例：订报纸 ：（报社[发布者]、订阅者）
+				
+				//发布者(被观察者)
+				var Publish = function(name){
+					this.name = name ;
+					this.subscribers = [];//接受所有的订阅者(每一个元素是函数类型fn)数组
+				};
+				
+				//Publish类的实例对象去发布消息的方法
+				Publish.prototype.deliver = function(news){
+					var publish = this ;
+					this.subscribers.forEach(function(fn){
+						fn(news,publish);	//把新消息发给一个订阅者
+					});
+					return this ; //链式编程
+				};
+				
+				//具体的一个订阅者去订阅报纸的方法
+				Function.prototype.subscribe = function(publish){
+					var sub = this; //取得具体订阅者这个人 z3
+					// [z4,z5,z6,z7,z3]
+					//some方法：循环便利数组的每一个元素，执行一个函数，如果其中有一个返回true,那么整体返回true
+					var alreadyExists = publish.subscribers.some(function(item){
+						return item === sub ; 
+					});
+					//如果当前出版社里不存在这个人 则将其加入其中
+					if(!alreadyExists){
+						 publish.subscribers.push(this);
+					}
+					return this; //链式编程		
+				};
+				
+				//具体的一个订阅者去取消订阅报纸的方法
+				Function.prototype.unsubscribe = function(publish){
+					var sub = this ; //躯体这个人的引用 z3
+					// [z4,z5,z6,z7,z3]
+					// filter (过滤函数:循环便利数组的每一个元素，执行一个函数如果不匹配，则删除该元素)
+					publish.subscribers = publish.subscribers.filter(function(item){
+						return item !== sub ;
+					});
+					return this; //链式编程
+				};
+				
+				 
+				window.onload = function(){
+					
+					//实例化发布者对象(报社对象、被观察者)
+					var pub1 = new Publish('第一报社');
+					var pub2 = new Publish('第二报社');
+					var pub3 = new Publish('第三报社');
+					
+					//观察者(订阅者)
+					var sub1 = function(news){
+						document.getElementById('sub1').innerHTML += arguments[1].name + ':' + news + '\n'; 
+					};
+					var sub2 = function(news){
+						document.getElementById('sub2').innerHTML += arguments[1].name + ':' + news + '\n';
+					};
+					
+					//执行订阅方法
+					sub1.subscribe(pub1).subscribe(pub2).subscribe(pub3);
+					sub2.subscribe(pub1).subscribe(pub2);
+					//事件绑定
+					
+					BH.EventUtil.addHandler(document.getElementById('pub1'),'click' , function(){
+							pub1.deliver(document.getElementById('text1').value);
+					});
+					BH.EventUtil.addHandler(document.getElementById('pub2'),'click' , function(){
+							pub2.deliver(document.getElementById('text2').value);
+					});					
+					BH.EventUtil.addHandler(document.getElementById('pub3'),'click' , function(){
+							pub3.deliver(document.getElementById('text3').value);
+					});					
+					sub1.unsubscribe(pub1); //取消订阅
+				};
+				
+		
+		</script>
+	</head>
+	<body>
+				<input id="pub1" type="button" value="第一报社" /><input id="text1" value="" /><br>
+				<input id="pub2" type="button" value="第二报社" /><input id="text2" value="" /><br>
+				<input id="pub3" type="button" value="第三报社" /><input id="text3" value="" /><br>
+				
+				
+				<textarea id="sub1" rows="5" cols="30" ></textarea>
+				<textarea id="sub2" rows="5" cols="30" ></textarea>
+				
+	</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+			
+			// 简单原型
+			
+			/*
+			function Person(){
+				
+			}
+			
+			Person.prototype = {
+				//constructor : Person ,	//必须得表示原型对象的构造器
+				name: 'z3' , 
+				age : 20 , 
+				job : '程序员' ,
+				say : function(){
+					alert('我是原型的函数!');
+				}
+			};
+			
+			// ECMA5 给原型对象重新设置构造器的方法 Object.defineProperty();
+			// FF4+ ie8+ 
+			// 3个参数  参数1 ：重设构造器的对象   参数2：设置什么属性  参数3：options配置项
+			Object.defineProperty(Person.prototype , 'constructor' , {
+				 enumerable : false , 
+				 value : Person 
+			});
+			
+			*/
+			
+			/*
+			var p1 = new Person();
+			//alert(p1.name);
+			//p1.say();
+			alert(Person.prototype.constructor); // Person
+			
+			// 枚举对象的keys
+			for( attr in p1){
+				alert(attr);
+			}
+			*/
+			
+			
+			//原型的动态特性　
+			
+			/*
+			function Person(){
+				
+			}
+			var p1 = new Person();
+			//原型对象的构造器默认为Person
+			Person.prototype.say = function(){alert('我是方法!')};
+			p1.say();
+			*/
+			
+			/*
+			function Person(){
+				
+			}
+			var p1 = new Person();  // {}
+			//--------------------------------------
+			
+			Person.prototype = {
+				constructor : Person ,	//必须得表示原型对象的构造器
+				say : function(){
+					alert('我是原型的函数!');
+				}
+			};	
+			
+			//p1.say(); // error 应为 原型对象里面没有任何属性和方法
+			// 注意简单原型使用的顺序(实例对象必须在原型对象之后创建)
+			var p2 = new Person();
+			p2.say();
+			*/
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

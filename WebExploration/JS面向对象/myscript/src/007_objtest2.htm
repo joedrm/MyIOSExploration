@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		
+		<script type=text/javascript charset=utf-8>
+			
+			
+			var arr = [2,1,2,10,2,3,5,5,1,10,13];	//object
+			
+			
+			// js对象的特性 : 在js对象中 key 是永远不会重复的 
+			/*
+			var obj = new Object();
+			obj.name = 'z3';
+			obj.age = 20 ;
+			//alert(obj.name);
+			obj.name = 'w5';
+			alert(obj.name);
+			*/
+			
+			// 1 把数组转成一个js的对象
+			// 2 把数组中的值,变成js对象当中的key
+			// 3 把这个对象 再还原成数组
+			
+			// 把数组转成对象
+			function toObject(arr){
+				var obj = {} ; // 私有的对象
+				var j ;
+				for(var i=0 , j= arr.length ; i<j; i++){
+						obj[arr[i]] = true ;
+				}
+				return obj ;
+			}
+			
+			// 把这个对象转成数组
+			function keys(obj){
+				var arr = [] ; // 私有对象
+				for(var attr in obj){
+					if(obj.hasOwnProperty(attr)){		//YUI底层代码
+						arr.push(attr);
+					}
+				}
+				return arr ;
+			}
+			
+			//综合的方法 去掉数组中的重复项
+			function uniq(newarr){
+				return keys(toObject(newarr));
+			}
+			
+			alert(uniq(arr));
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

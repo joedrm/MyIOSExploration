@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+			
+			
+				//简单的一个函数: function关键字+函数的名字 (没有返回值类型) 
+			
+				//参数列表相当于函数的入口, return 相当于函数的出口
+				/*
+				function  test(a ,b){
+					//alert(a+b);
+					//alert(111);
+					return a+b;
+				}
+				var c = test(10 , 20);
+				//alert(c);
+				alert(typeof test);		//函数也是一种数据类型 (function类型)
+				*/
+				
+				function test1(aa){
+					aa();
+				}
+				function test2(){
+					alert('执行啦');
+				}
+				test1(function(){ alert('我也执行啦!')});
+				
+				
+				// 在js中函数是可以嵌套定义的 (尽量不要这样去定义)
+				function test3(){
+					function test4(){
+						alert('我是test4!');
+					}
+					test4();
+				}
+				
+				test3();
+				
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

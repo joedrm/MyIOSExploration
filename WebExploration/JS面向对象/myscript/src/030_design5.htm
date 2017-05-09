@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf8>
+			
+					/*
+					// 惰性单体（和闭包单体有一些相似的地方） 
+					// 命名空间
+					var Ext = {} ;
+					Ext.Base = (function(){
+						// 私用变量 控制返回的单体对象
+						var uniqInstance ; // undefined
+						// 需要一个构造器 init 初始化单体对象的方法
+						function init(){
+								// 私用成员变量 
+								var a1 = 10 ; 
+								var a2 = true ; 
+								var fn1 = function(){alert('fn1')};
+								var fn2 = function(){alert('fn2')};	
+								return {
+									attr1 : a1 , 
+									arrt2 : a2 , 
+									method1 : function(){
+										return fn1();
+									},
+									method2 : function(){
+										return fn2();
+									}
+								};						
+						}
+						return {
+							getInstance : function(){
+								if(!uniqInstance){ //如果不存在 创建单体实例
+									uniqInstance = init();
+								}
+								return uniqInstance ;
+							}
+						};
+					})();
+					
+					alert(Ext.Base.getInstance().attr1);
+					Ext.Base.getInstance().method1();
+					*/
+					// 分支单体 （判断程序的分支 <浏览器差异的检测>）
+					/*
+					var Ext = {} ;
+					var def =  false ;
+					Ext.More = (function(){
+						var objA = {		// 火狐浏览器 内部的一些配置
+								attr1:'FF属性1'
+								// 属性1 
+								// 属性2 
+								// 方法1 
+								// 方法2
+						} ;
+						var objB = {		// IE浏览器 内部的一些配置
+								attr1:'IE属性1'
+								// 属性1 
+								// 属性2 
+								// 方法1 
+								// 方法2							
+						} ;
+						return (def) ?objA:objB;
+					})();
+					alert(Ext.More.attr1);
+					*/
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

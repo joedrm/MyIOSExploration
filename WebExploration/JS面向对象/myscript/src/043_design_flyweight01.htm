@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>	
+				
+				
+				//享元模式：优化的设计模式 (优化：时间[代码的运行时间]、空间[web浏览器内存])
+				//享元模式：内在数据static (出厂商、型号、出厂日期)  外在数据(拥有者、车牌号、最近登记日期)
+				
+				
+				//出厂商、型号、出厂日期、拥有者、车牌号、最近登记日期
+				var Car = function(make ,model , year , owner , tag , renewDate ){
+					this.make = make ; 
+					this.model = model ; 
+					this.year = year ; 
+					this.owner = owner ; 
+					this.tag = tag ;
+					this.renewDate = renewDate;
+				};
+				Car.prototype = {
+					constructor:Car  , 
+					getMake :function(){
+						return this.make;
+					},
+					getModel:function(){
+						return this.model;
+					},
+					getYear:function(){
+						return this.year;
+					},
+					renewRegistration:function(newRenewDate){
+						this.renewDate = newRenewDate;
+					}
+				};
+				
+				
+				
+				var arr = [] ;
+				
+				var stime = new Date().getTime();
+				for(var i = 0 ; i < 5000000; i ++){
+					// runtime: 734ms  web: 570
+					arr.push(new Car('上海大众','迈腾','2012-02-03','bhx','bj0011','2013-04-01'));
+				}
+				var etime = new Date().getTime();
+				alert(etime - stime);
+				
+		
+		</script>	
+	</head>
+	<body>
+	</body>
+</html>

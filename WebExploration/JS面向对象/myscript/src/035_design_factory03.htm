@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<!-- 引入的核心js公共文件 -->
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>
+			
+			// 细粒度 和 粗粒度  
+			
+			// 万事万物都是Object  ： 
+			// 你要买什么车? 去什么商店 -> 商店  -> 卖车 -> 生产车 -> Factory
+			
+			// 搭建一个工厂的环境		
+			// 卖车的商店可能有 奥迪4s店 奔驰4s店 宝马4s店
+			
+			// Super Shop  卖车
+			// abstract Class  == ? Java的抽象类 ()
+			
+			/* this CarShop is a abstract   */
+			function CarShop(){};
+			CarShop.prototype = {
+				constructor : CarShop ,
+				sellCar:function(type){
+					// 销售人员...
+					//var car = CarFactory.createCar(type);
+					// 保险、相关的售后服务
+					//return car ;
+					this.abstractSellCar(type);
+				} ,
+				abstractSellCar: function(){
+					throw new Error('this method is abstract...');
+				}
+			};
+			
+			// Benz 4s 店 
+			function BenzCarShop(){};
+			BH.extend(BenzCarShop,CarShop);
+			BenzCarShop.prototype = {
+				constructor:BenzCarShop ,
+				sellCar:function(type){
+					var car ; // 声明一个变量
+					var types = ['Benz'];	//所有benz类型的汽车
+					for(t in types){
+						// 如果我的商店里有你想要汽车型号
+						if(types[t] === type){
+							car = CarFactory.createCar(type);
+						} else { 
+							alert('没有你要的型号!');
+						}
+					}
+					return car ;
+				}
+			};
+			
+			// 宝马  4s 店 
+			function BmwCarShop(){};
+			BH.extend(BmwCarShop,CarShop);
+			BmwCarShop.prototype = {
+				constructor:BmwCarShop ,
+				sellCar:function(type){
+					var car ; // 声明一个变量
+					var types = ['Bmw'];	//所有bmw类型的汽车
+					for(t in types){
+						// 如果我的商店里有你想要汽车型号
+						if(types[t] === type){
+							car = CarFactory.createCar(type);
+						} else { 
+							alert('没有你要的型号!');
+						}
+					}
+					return car ;
+				}					
+			};		
+			
+				
+			
+			//生产车的工厂 目的就是为了生产车
+			//单体模式 动态工厂模式
+			var CarFactory = {
+					createCar:function(type){
+							// var car = new Benz();
+							// 利用eval动态创建传入类型的实例对象
+							var car = eval('new '+type+'()');
+							//检验接口实现
+							BH.Interface.ensureImplements(car ,CarInterface);
+							return car ;						
+					}
+			};
+			
+			
+			
+			
+			
+			// 接口对象的实例
+			var CarInterface = new BH.Interface('CarInterface' ,['start','run']);
+			
+			// SuperClass  implements CarInterface 
+			function BaseCar(){};
+			BaseCar.prototype = {
+				constructor:BaseCar , 
+				start:function(){
+					alert(this.constructor.name + ' ..start');
+				},
+				run:function(){
+					alert(this.constructor.name + ' ..run');
+				}
+			};
+			
+			
+			// Class benz bmw audi (都是车)
+			// 注意关键问题：子类先继承父类 子类在扩展子类自己特有的方法
+			
+			function Benz(){}; 
+			BH.extend(Benz,BaseCar); 
+			Benz.prototype.driveBenz = function(){alert('Benz..drive')}; 
+			//Benz.prototype.run = function(){alert('Benz..run')};
+			
+			function Bmw(){};
+			BH.extend(Bmw,BaseCar);
+			Bmw.prototype.driveBmw = function(){alert('Bmw..drive')};
+			//Bmw.prototype.run = function(){alert('Bmw..run')};	
+			
+			function Audi(){};
+			BH.extend(Audi,BaseCar);
+			Audi.prototype.driveAudi = function(){alert('Audi..drive')};
+			//Audi.prototype.run = function(){alert('Audi..run')};	
+			
+			
+			/*
+			var shop = new CarShop();		
+			var car = shop.sellCar('Benz');
+			car.start();
+			car.run();
+			car.driveBenz();
+
+			var car2 = shop.sellCar('Bmw');
+			car2.start();
+			car2.run();	
+			car2.driveBmw();	
+			*/
+			
+			var shop1 = new BenzCarShop();
+			var car1 = shop1.sellCar('Benz');
+			car1.run();
+			
+			var shop2 = new BmwCarShop();
+			var car2 = shop2.sellCar('Bmw');
+			car2.run();
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+				
+				//Object 所有类的基础类 
+				
+				//var obj = new Object();
+				var obj = {} ;		// 实例化对象
+				// 给对象设置属性
+				obj.name = '张3';
+				obj.age  = 20 ; 
+				//obj.sex  = '男';
+				obj["birthday"] = '1980-08-07';
+				obj.say = function(){
+					alert('hello world!');					
+				}
+				
+				// 访问对象的属性或方法
+				//alert(obj.name);
+				//alert(obj.age);
+				//obj.say();
+				
+				// delete 操作符 删除对象的属性或方法的
+				/*
+				delete obj.age ;
+				delete obj.say ;
+				
+				alert(obj.name);
+				alert(obj.age);
+				alert(obj.sex);
+				obj.say();
+				*/
+				
+				// 如何去变量一个js对象  for in 语句式
+				/*
+				for(var attribute in obj) {
+					alert(attribute +" : "+ obj[attribute]);
+				}
+				*/
+				//Constructor保存对象的创建函数
+				//alert(obj.constructor);
+				//var arr = [] ; 
+				//alert(arr.constructor);
+				
+				//hasOwnProperty(propertyName) 用于检测给定属性在对象中是否存在
+				//alert(obj.hasOwnProperty('sex'));
+				
+				//isPrototypeOf(Object) 检测原型 
+				
+				//检测给定的属性是否能被for in 所枚举出来 
+				//alert(obj.propertyIsEnumerable('say'));
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

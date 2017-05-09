@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+			
+			/*
+			var obj = new Object(); // var obj = {};
+			obj.name = 'z3';
+			obj.sex  = '男';
+			obj.sayName = function(){alert('我是张三!')};
+			*/
+			// 类的概念
+			
+			// 第一种形式 工厂模型 
+			/*
+			function createPerson(name , sex , age){
+				var obj = new Object();
+				obj.name = name ; 
+				obj.sex = sex ;
+				obj.age = age ;
+				obj.sayName = function(){
+					alert(this.name);
+				}
+				return obj;
+			}
+			
+			var p1 = createPerson('z3' , '男' , 20);
+			var p2 = createPerson('z4' , '女' , 25);
+			
+			//alert(p1.sex);
+			p1.sayName();
+			*/
+			
+			// 第二中形式 构造函数式  new Array new Date
+			
+			
+			// 函数的第一个字母大写 (类的模版)
+			function Person(name , age , sex){
+				this.name = name ;
+				this.age  = age ; 
+				this.sex  = sex ;
+				this.sayName = function(){
+					alert(this.name);
+				}
+			}
+			
+			//构造一个对象 new关键字 传递参数 执行模版代码 返回对象
+			
+			/*
+			var p1 = new Person('小1' , 20 , '男');
+			var p2 = new Person('小2' , 21 , '女');
+			//alert(p1.name);
+			//p1.sayName();
+			//alert(p1 == p2); //类的概念:根据模版创建出不同的实例对象 
+			
+			//alert(p1.constructor == Person);
+			//alert(p2.constructor == Person);
+		
+			alert(p1 instanceof Person);	
+			alert(p1 instanceof Object);		
+			*/
+			
+			
+			//创建对象的方式:
+			// 1当作构造函数去使用 ：
+			var p1 = new Person('小1' , 20 , '男');
+			// 2作为普通的函数去调用
+			Person('小2' , 25 , '男');		//在全局环境里定义属性并复制 直接定义在window上
+			//alert(name);
+			// 3在另一个对象的作用域中调用
+			var o = new Object();  
+			// call  applly
+			Person.call(o,'小4' , 12 , '女');
+			alert(o.name);
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>		
+				
+				//装饰者模式：就是在保证不改变原有对象的基础上，去扩展一些想要的方法或去求
+				// 实现同样的借口
+				// 需要有子类
+				/*
+				var CarInterface = new BH.Interface('CarInterface' , ['getPrice' , 'assemble']);
+				var Car = function(car){
+					//就是为了让子类继承的 （让子类 多一个父类的引用）
+					this.car = car ; 
+					//检查接口
+					BH.Interface.ensureImplements(this , CarInterface);
+				};
+				Car.prototype = {
+					constructor :Car,
+					getPrice:function(){
+						return 200000 ; 
+					},
+					assemble:function(){
+						document.write('组装汽车...');
+					}
+				};
+				
+				//新的需求：light、icebox .......
+				
+				var LightDecorator = function(car){ //原始对象
+					//借用构造函数继承
+					LightDecorator.superClass.constructor.call(this , car);
+				};
+				BH.extend(LightDecorator , Car);  //原型继承 
+				
+				LightDecorator.prototype = {
+					constructor:LightDecorator , 
+					getPrice:function(){
+						return  this.car.getPrice() + 10000; 
+					},
+					assemble:function(){
+						document.write('组装车灯...');
+					}					
+				};
+				
+				var IceBoxDecorator = function(car){
+					//借用构造函数继承
+					IceBoxDecorator.superClass.constructor.call(this , car);					
+				};
+				BH.extend(IceBoxDecorator , Car);  //原型继承 
+				
+				IceBoxDecorator.prototype = {
+					constructor:IceBoxDecorator , 
+					getPrice:function(){
+						return  this.car.getPrice() + 20000; 
+					},
+					assemble:function(){
+						document.write('组装车载冰箱...');
+					}					
+				};				
+				
+				
+				
+				var car  = new Car();
+				alert(car.getPrice());
+				car.assemble();
+				
+				car = new LightDecorator(car);
+				alert(car.getPrice());
+				car.assemble();		
+				
+				car = new IceBoxDecorator(car);
+				alert(car.getPrice());
+				car.assemble();					
+				
+				*/
+				
+				
+				//装饰者 不仅可以用在类上， 还可以用在函数上
+				
+				/*
+				//返回一个当前时间的字符串表示形式
+				function getDate(){
+					return (new Date()).toString();
+				};
+				
+				// 包装函数 (装饰者函数)
+				function upperCaseDecorator(fn){
+					return function(){
+						return fn.apply(this, arguments).toUpperCase();
+					}
+				};
+				
+				alert(getDate());
+				
+				var getDecoratorDate = upperCaseDecorator(getDate);
+				
+				alert(getDecoratorDate());
+				*/
+				
+				
+					
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

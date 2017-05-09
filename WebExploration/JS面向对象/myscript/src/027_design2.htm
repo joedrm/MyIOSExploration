@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+			
+			
+			
+			// 第二种实现接口的方式 属性检测的方式
+			
+			/**
+			 * 	interface Composite {
+			 * 		function add(obj);
+			 * 		function remove(obj);
+			 *		function uopdate(obj);
+			 *  }
+			 *  
+			 *  interface FormItem {
+			 *  	function select(obj);
+			 *  }
+			 *  
+			 */		
+			 
+			 // CompositeImpl implements Composite , FormItem
+			 var CompositeImpl = function(){
+			 	// 显示的再类的内部 接受所实现的接口
+				// 一般来说是一个规范 我们项目经理:在类的内部定义一个数组(名字要固定)
+				this.implementsInterfaces = ['Composite' ,'FormItem' ];
+			 }	
+			 
+			 
+			CompositeImpl.prototype.add = function(obj){
+				// do something ...
+				alert('add...');
+			}
+			CompositeImpl.prototype.remove = function(obj){
+				// do something ...
+			}			
+			CompositeImpl.prototype.update = function(obj){
+				// do something ...
+			}			
+			CompositeImpl.prototype.select = function(obj){
+				// do something ...
+			}		
+			
+			
+			// 检测CompositeImpl类的对象的
+			function CheckCompositeImpl(instance){
+				//判断当前对象是否实现了所有的接口
+				if(!IsImplements(instance,'Composite','FormItem')){
+					throw new Error('Object does not implement a required interface!');
+				}
+			}
+			
+			// 公用的具体的检测方法(核心方法) 返回值类型 boolean
+			// 这个方法的主要目地：就是判断 实例对象 有没有实现相关的接口
+			function IsImplements(object){
+				// arguments 对象 获得函数的实际参数
+				for(var i = 1 ; i < arguments.length;i++){
+					//接受所实现的每一个接口的名字
+					var interfaceName = arguments[i];
+					//判断此方法到底成功 还是失败啊
+					var interfaceFound = false ;
+					for(var j = 0 ; j <object.implementsInterfaces.length;j++){
+							if(object.implementsInterfaces[j] == interfaceName)	{
+								interfaceFound = true ;
+								break;
+							}
+					}
+					if(!interfaceFound){
+						return false ; 
+					}
+				}
+				return true ; 
+			}
+			
+			
+			var c1 = new CompositeImpl();
+			CheckCompositeImpl(c1);
+			c1.add();
+			
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

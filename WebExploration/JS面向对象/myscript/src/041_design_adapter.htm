@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>
+			
+			//适配器： 日常生活中: PS2 接口 （圆口）
+			   // 新电脑(usb)      <----- ps2-to-usb  ------>     鼠标和键盘(圆口的)
+			   
+			   // 程序中：简单的适配器
+			   
+			   /*
+			   var obj = {					// 鼠标和键盘(圆口)
+			   	str1:'111' , 
+				str2:'222' ,
+				str3:'333'
+			   };
+			   
+			   // 适配器方法
+			   function adapter(obj){
+					interfaceMethod(obj.str1,obj.st2,obj.st3);
+			   }
+			   
+			   // 新电脑 usb
+			   function interfaceMethod(x, y , z){
+			   			// 复杂的操作
+			   };
+			   */
+			  
+			  
+			  // 企业开发中：javascript库(extjs , jquery , yui , prototype ... ded ...)
+			  // YAHOO 
+			  // Prototype
+			  
+			  // YAHOO (我们用雅虎的框架，但是Prototype程序员该怎么写代码，还怎么写就行啦!)
+			  //模拟：根据id 获得指定的dom元素
+			  //Prototype $ function  (不需要传递任何的形参：一个id 写一个参数 多个id 多个参数)
+			  function $(){
+			  		var elements = [] ;
+			  		for(var i = 0 ; i < arguments.length; i++){
+						var element = arguments[i];
+						if(typeof element == 'string')
+							element = document.getElementById(element);
+						if(arguments.length ==1)
+							return element ;
+						elements.push(element);
+					}
+					return elements;
+			  }
+			  
+			  
+			  // YUI get function (传递了一个参数 :类型不是字符串 就是数组)
+			  var YAHOO = {};
+			  YAHOO.get = function(el){
+			  		if(typeof el == 'string'){
+						return document.getElementById(el);
+					} 
+					if(el instanceof Array){
+						var elements = [] ;
+						for(var i = 0 ; i < el.length ; i++){
+							elements[elements.length] = YAHOO.get(el[i]);
+						}
+						return elements;
+					}
+					if(el){
+						return el ; 
+					}
+					return null;
+			  };
+			  
+			  
+			  
+			  YAHOO.get =  YUIToPrototypeAdapter ;
+			  
+			  function YUIToPrototypeAdapter(){
+			  		//对于YUI开发人员来说 永远传递一个参数
+					if(arguments.length == 1){
+						var e = arguments[0];
+						return  $.apply(window,e instanceof Array?e:[e]);
+					} else {
+						return $.apply(window ,arguments);
+					}
+			  }
+			  
+			  
+			  
+			  window.onload = function(){
+			  		/*
+					// prototype开发人员习惯的写法
+					var domarr = $('inp1','inp2');	
+					alert(domarr);
+					*/
+					/*
+					// YUI开发人员习惯的写法
+					var domarr = YAHOO.get(['inp1','inp2']);	
+					alert(domarr); 
+					*/
+					
+					
+					// YUI  我是一个prototype 用项目经理的说法
+					var domarr = YAHOO.get(['inp1']);
+					alert(domarr); 
+			 };
+			  
+			  
+			  
+			   
+			
+		</script>
+	</head>
+	<body>
+			<input id="inp1" />
+			<input id="inp2" />
+	</body>
+</html>

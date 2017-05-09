@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8 src=../commons/CommonUtil.js></script>
+		<script type=text/javascript charset=utf-8>
+			
+				// 门面模式的概念:简化API接口 最经典的就是事件
+				
+				// 做一件事情： 必须要调用2个函数分别是 a , b  
+				/*
+				function a(x){
+					// do something
+				}
+				
+				function b(y){
+					// do something
+				}
+				
+				function ab(x , y){
+					a(x);
+					b(y);
+				}
+				*/
+				
+				// 现在有一个简单的需求： 获得页面上的元素 给得到的元素设置css样式
+				
+				// 需求发生变化：同时设置几个元素的css样式
+				
+				window.onload= function(){
+					// 给一个元素设置一个样式
+					//var element = document.getElementById('div1');
+					//element.style.color = 'red';
+					
+					// 给多个元素设置同样的样式
+					//setStyle(['div1','div2','div3'],'color' , 'blue');
+					
+					// 给多个元素设置多种样式
+					setCss(['div1','div2','div3'],{
+						position:'absolute' ,
+						background:'green' ,
+						fontSize: '18px' ,
+						left:'100px'
+					});
+					
+				};
+				
+				
+				//简单的门面模式
+				function setStyle(elementsId,prop,val){
+					for(var i=0;i<elementsId.length;i++){
+						document.getElementById(elementsId[i]).style[prop] = val ;
+					}
+				}
+				
+				//门面模式的css方法
+				function setCss(elementsId,options){
+					for(var prop in options){
+						if(!options.hasOwnProperty(prop)) continue;
+						setStyle(elementsId,prop,options[prop]);
+					}
+				}
+				
+				
+			
+		</script>
+	</head>
+	<body>
+		
+		<div id="div1" >我是div1</div>
+		<div id="div2" >我是div2</div>	
+		<div id="div3" >我是div3</div>			
+	</body>
+</html>

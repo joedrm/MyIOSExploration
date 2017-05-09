@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    color: #0f0f0f;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+input, textarea{
+    border: none;
+    resize: none;
+    outline: none; /* 清除选中效果 */
+    -webkit-appearance: none; /* 清除浏览器默认样式 */
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: '.';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+[class^="icon_"]{
+    background: url("../imgs/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+			
+				// js中怎么去实现继承：采用原型链的概念 
+				
+				// 构造函数 原型对象 实例对象
+				
+				// 1 构造函数.prototype = 原型对象
+				// 2 原型对象.constructor = 构造函数(模版)
+				// 3 原型对象.isPrototypeOf(实例对象)  判断实例对象的原型 是不是当前对象
+				// 4 构造函数 实例对象  (类和实例)
+				
+				// 父类构造函数 sup
+				function Sup(name){
+					this.name = name;					
+				}
+				
+				// 父类的原型对象
+				Sup.prototype = {
+					constructor : Sup , 
+					sayName : function(){
+						alert(this.name);
+					}
+				};
+				
+				// 子类构造函数 sub
+				function Sub(age){
+					this.age = age ;
+				}
+				
+				//如果我们让子类的原型对象 等于父类的实例 ,结果会怎么样呢?(实现了js的继承)
+				//1 显然此时的原型对象将包含一个指向另一个原型的指针
+				// sup的实例对象 和 sup的原型对象 有一个关系
+				//2 相应的另一个原型中也包含着一个指向另一个构造函数的指针
+				// 子类的原型对象的构造器变成了 父类的构造器
+				Sub.prototype = new Sup('张三'); 
+				//alert(Sub.prototype.constructor);
+				var sub1 = new Sub();
+				//alert(sub1.name);
+				sub1.sayName();
+				
+				
+
+				
+				
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

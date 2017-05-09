@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<script type=text/javascript charset=utf-8>
+			
+				// isPrototypeOf(new instance); 判断原型的方法
+			
+			
+				// ECMA5: Object.getPrototypeOf():根据实例对象获得原型对象
+				
+				function Person(){
+					
+				}
+				
+				Person.prototype.name = 'z3'; 
+				Person.prototype.age  = 20 ; 
+				Person.prototype.sayName  = function(){alert('我是原型对象的方法!')}; 
+				
+				/*
+				var p1 = new Person();
+				alert(p1.name); // z3 
+				var prototypeObj = Object.getPrototypeOf(p1);
+				alert(prototypeObj == Person.prototype);
+				*/
+				
+				/* 每次代码读取一个对象的属性的时候: 首先会进行一次搜索:搜索实例对象里name的属性,看看有没有
+				 * 如果没有,再去p2的实例所对应的原型对象里去搜索name属性 如果有就返回 没有返回undefined
+				 */
+				/*
+				var p2 = new Person();
+				p2.name = 'w5';		// 实例对象的name
+				delete p2.name ; 
+				alert(p2.name);		// 就想获得原型对象的name属性
+				*/
+				
+				// 判断一个对象属性 是属于原型属性 还是属于实例属性
+				/*
+				var p3 = new Person();
+				p3.name = 'z6';
+				alert(p3.name);
+				alert(p3.hasOwnProperty('name'));
+				*/
+				
+				
+				//in 操作符  ： for-in 
+				
+				// in 操作符 判断属性是否存在于 实例对象和原型对象中
+				/*
+				var p1 = new Person();
+				alert('name' in p1); // true
+				var p2 = new Person();
+				p2.name = 'w3';
+				alert('name' in p2); // true
+				*/
+				// 就是判断一个属性 是否存在原型中
+				// 在原型对象中 是否存在这个属性 第一个参数:当前对象 ，第二个参数:要判断的属性
+				/*
+				function hasPrototypeProperty(object , name){
+					return !object.hasOwnProperty(name) && name in object ;
+				}
+				
+				var p3 = new Person();
+				p3.name = 'xiao A';
+				alert(hasPrototypeProperty(p3,'name'));
+				*/
+				
+				
+				// ECMA5新特性 Object.keys();
+				// 拿到当前对象里的所有keys 返回一个数组
+				
+				var p1 = new Person();
+				p1.name = 'z3';
+				p1.age = 20 ; 
+				
+				var attributes = Object.keys(p1);
+				//alert(attributes);
+				
+				var attributes2 = Object.keys(Person.prototype);
+				//alert(attributes2);
+				
+				// ECMA5 constructor属性： 该属性是不能被枚举的[eable = false]
+				// Object.getOwnPropertyNames 枚举对象所有的属性 ：不管该内部属性能否被枚举
+				var attributes3 = Object.getOwnPropertyNames(Person.prototype);
+				alert(attributes3);
+				
+				
+				
+				
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
