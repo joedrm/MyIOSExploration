@@ -1,168 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/arrow2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/banner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/c1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/c2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/c3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/c4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/close1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/f_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/grid_view.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/list_view.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/menu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/pic9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/s8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/social.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/tick1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/images/zoom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/banner_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/banner_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/buy-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/buy-pro1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/cp6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/delete_down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/delete_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/detail01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/detail02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/focus-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/header-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/icon-updown-arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/l8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nav7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/none.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/nv-fy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/safe_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/scroll-to-top-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/seckill-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/seckill_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/shop-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/sprites.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs/sprits_btm_new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/font/MiFie-Web-Font.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/font/MiFie-Web-Font.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/font/MiFie-Web-Font.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/c_06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_01_2000x410.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_01_640x340.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_02_2000x410.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_02_640x340.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_03_2000x410.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_03_640x340.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_04_2000x410.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/img/slide_04_640x340.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/css/component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/css/etalage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/cbpViewModeSwitch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/classie1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/easyResponsiveTabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/jquery-1.11.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/jquery.etalage.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/jquery.flexisel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/jquery.wmuSlider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/js/simplejavascriptinheritance.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/basic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/cart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/product.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS面向对象/实现自己的each方法遍历多维数组.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LESS/_p.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LESS/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/01.视口viewport.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/02.rem.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/category.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/css/category.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileWeb/jd.mobile/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/font/MiFie-Web-Font.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/html5shiv/html5shiv-printshiv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/html5shiv/html5shiv-printshiv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/html5shiv/html5shiv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/html5shiv/html5shiv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/jquery/jquery.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/respond/respond.matchmedia.addListener.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/respond/respond.matchmedia.addListener.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/respond/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/lib/respond/respond.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/note.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/weijinsuo/space.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="" />
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -258,28 +97,28 @@
       <file leaf-file-name="001_helloworld.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/001_helloworld.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="207">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="002_varible.htm" pinned="false" current-in-tab="false">
+      <file leaf-file-name="002_varible.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/002_varible.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-1272">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="003_statement.htm" pinned="false" current-in-tab="true">
+      <file leaf-file-name="003_statement.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/003_statement.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -362,8 +201,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="150" />
-    <option name="y" value="47" />
+    <option name="x" value="115" />
+    <option name="y" value="36" />
     <option name="width" value="1280" />
     <option name="height" value="725" />
   </component>
@@ -482,6 +321,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shoppingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JS面向对象" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myscript" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -668,12 +525,12 @@
       <workItem from="1493796279596" duration="7388000" />
       <workItem from="1493855797104" duration="23560000" />
       <workItem from="1493942849799" duration="23366000" />
-      <workItem from="1494294083830" duration="2818000" />
+      <workItem from="1494294083830" duration="2867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="402754000" />
+    <option name="totallyTimeSpent" value="402803000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -685,7 +542,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="150" y="47" width="1280" height="725" extended-state="0" />
+    <frame x="115" y="36" width="1280" height="725" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23113582" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
@@ -1117,25 +974,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/003_statement.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/001_helloworld.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="207">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/002_varible.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/003_statement.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1272">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
