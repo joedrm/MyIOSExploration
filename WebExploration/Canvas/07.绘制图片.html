@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+</div>
+
+<img src="" alt="" id="imgDemo">
+
+<script>
+    (function () {
+        var canvas = document.querySelector('#cavsElem');
+        var ctx = canvas.getContext('2d');
+
+        canvas.width = 600;
+        canvas.height = 600;
+        canvas.style.border = "1px solid #000";
+
+        var img = new Image();
+        img.src = 'a.jpg';
+        img.onload = function () {
+
+            var imageW = img.width;
+            var imageH = img.height;
+
+            // 100, 100  = {x, y}
+            // 293, 220  = {width, height}
+            ctx.drawImage(img, 100, 100, 200, 200*imageH/imageW);
+        };
+    })();
+</script>
+</body>
+</html>

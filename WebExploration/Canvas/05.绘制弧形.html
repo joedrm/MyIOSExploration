@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+</div>
+
+<script>
+    var canvas = document.getElementById('cavsElem');
+    var ctx = canvas.getContext('2d');
+    canvas.width = 600;
+    canvas.height = 600;
+    canvas.style.border = '1px solid black';
+
+    ctx.moveTo(300, 300);
+    // 默认是顺时针
+    //    ctx.arc(300, 300, 100, 0*Math.PI/180, 30*Math.PI/180);
+    ctx.arc(300, 300, 200, 0*Math.PI/180, 30*Math.PI/180, true);
+    ctx.closePath();
+    ctx.stroke()
+
+    ctx.fill();
+</script>
+</body>
+</html>

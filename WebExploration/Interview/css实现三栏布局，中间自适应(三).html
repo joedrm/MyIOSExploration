@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- 方法三：绝对定位法。左右两栏采用绝对定位，分别固定于页面的左右两侧，中间的主体栏用左右margin值撑开距离。 -->
+
+
+
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .left , .right{
+            top: 0;
+            height: 100%;
+            width: 200px;
+            position: absolute;
+        }
+        .right{
+            right: 0;
+            background-color: red;
+        }
+        .left{
+            left: 0;
+            background-color: #ccc;
+        }
+        .middle{
+            margin: 0 200px;
+            height: 100%;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="left">left</div>
+
+<!--这种方法没有严格限定中间这栏放置何处-->
+
+<div class="middle">middle</div>
+
+<div class="right">right</div>
+</body>
+</html>

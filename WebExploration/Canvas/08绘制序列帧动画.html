@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>08Canvas案例-绘制序列帧动画</title>
+	</head>
+<body>
+
+	<div id="container">
+		<canvas id="cavsElem">
+			你的浏览器不支持canvas，请升级浏览器
+		</canvas>
+	</div>
+	<button id="btn-dir-left">←</button>
+	<button id="btn-dir-right">→</button>
+	<button id="btn-dir-up">↑</button>
+	<button id="btn-dir-down">↓</button>
+
+	<script>
+		(function(){
+			var canvas = document.querySelector( '#cavsElem' );
+			var ctx = canvas.getContext( '2d' );
+
+			canvas.width = 600;
+			canvas.height = 600;
+			canvas.style.border = "1px solid #000";
+			//direction: 方向。
+			var dirIndex =  0;//设置 方向的索引
+
+			//加载图片
+			var img = new Image();
+			img.src = 'DMMban.png';
+			//绘制精灵图片
+			img.onload = function() {
+				var frameIndex = 0;
+				setInterval(function(){
+					//清除 之前的 图片墨迹。
+					ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+					// 如果通过代码重新设置 canvas画布的宽高，那么canvas画布里面的所有的内容都被清空。
+					canvas.width = canvas.width;
+
+					ctx.drawImage( 
+						img
+						, frameIndex * 40 //截取原始图片的 x坐标
+						, dirIndex * 65	  //截取原始图片的 y坐标
+						, 40			  //截取原始图片的 宽度
+						, 65			  // 截取的高度
+						, 200			  //图片在canvas画布上的x坐标
+						, 200			  //图片在canvas画布上的y坐标
+						, 80			  //绘制图片的宽度
+						, 65 *2			  //绘制图片的高度
+					 );
+
+					frameIndex++;// 添加到下一帧
+					frameIndex %= 4; // 取余数   7 %4 = 3   3%4 =3  4%4 =0
+					// frameIndex = frameIndex % 4;
+				}, 2000 / 10);// 10 帧，100毫秒绘制一动作
+			};
+
+
+			//==================绑定事件==============
+			//绑定按钮的点击事件
+			var btnLeft = document.getElementById('btn-dir-left');
+			btnLeft.onclick = function() {
+				//小哥哥朝着左方向
+				dirIndex = 1;
+			};
+
+			var btnRight = document.getElementById('btn-dir-right');
+			btnRight.onclick = function() {
+				//小哥哥朝着左方向
+				dirIndex = 2;
+			};
+
+			var btnUp = document.getElementById("btn-dir-up");
+			btnUp.onclick = function() {
+				//小哥哥朝着左方向
+				dirIndex = 3;
+			};
+
+			var btnDown = document.getElementById('btn-dir-down');
+			btnDown.onclick = function() {
+				//小哥哥朝着左方向
+				dirIndex = 0;
+			};
+
+		}());
+	</script>
+</body>
+</html>

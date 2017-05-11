@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--
+    父元素和子元素同时左浮动，然后父元素相对左移动50%，
+    再然后子元素相对右移动50%，或者子元素相对左移动-50%也就可以了。
+    -->
+
+    <style type="text/css">
+        .p{
+            position:relative;
+            left:50%;
+            float:left;
+            background-color: red;
+        }
+        .c{
+            position:relative;
+            float:left;
+            right:50%;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="p">
+
+    <h1 class="c">Test Float Element Center</h1>
+
+</div>
+</body>
+</html>

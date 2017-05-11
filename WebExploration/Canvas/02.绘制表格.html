@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02.绘制表格</title>
+</head>
+<body>
+
+<canvas id="cavcElem">
+
+</canvas>
+
+<script>
+    (function () {
+        var canvas = document.querySelector('#cavcElem');
+        var ctx = canvas.getContext('2d');
+        canvas.width = 600;
+        canvas.height = 600;
+        canvas.style.border = '1px solid black';
+
+        ctx.lineWidth = 0.5;
+
+        var rectH = 10;
+        var rectW = 10;
+        for (var i = 0; i < canvas.width/rectH; i ++){
+            ctx.moveTo(0, i * rectH);
+            ctx.lineTo(canvas.width, i * rectH);
+
+            ctx.moveTo(i * rectW, 0);
+            ctx.lineTo(i * rectW, canvas.height);
+        }
+        ctx.stroke();
+
+    })();
+</script>
+</body>
+</html>

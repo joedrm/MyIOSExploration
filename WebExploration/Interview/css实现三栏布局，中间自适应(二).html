@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type='text/css'>
+        .left, .right {
+            height: 300px;
+            width: 200px;
+        }
+
+        .right {
+            float: right;
+            background-color: red;
+        }
+
+        .left {
+            float: left;
+            background-color: #080808;
+        }
+
+        .middle {
+            height: 300px;
+            margin: 0 200px;
+            /*//没有这行，当宽度缩小到一定程度的时候，中间的内容可能换行*/
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="middle">middle</div>
+
+<div class="left">left</div>
+
+<div class="right">right</div>
+</body>
+</html>

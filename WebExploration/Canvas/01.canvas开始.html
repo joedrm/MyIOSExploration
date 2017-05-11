@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- 注意:
+    设置canvas标签的宽高是通过canvas标签的属性进行设置。
+	不要用css去设置 -->
+<canvas id="demo">
+    ie9 以上才支持 canvas
+    你的浏览器不支持canvas，请升级浏览器
+</canvas>
+
+<script>
+    // 拿到canvas标签
+    var canvar = document.getElementById('demo');
+    canvar.style.border = '1px solid red';
+    canvar.width = 600;
+    canvar.height = 600;
+
+    // 千万不能这样写
+//    canvar.style.width = '600px';
+//    canvar.style.height = '600px';
+
+    // 得到上下文
+    var ctx = canvar.getContext('2d');
+    // 开始绘制
+    ctx.moveTo(100, 100);
+    ctx.lineTo(200, 100);
+    ctx.lineTo(100, 200);
+    ctx.closePath();
+
+    ctx.strokeStyle = 'blue';
+    ctx.lineWidth = 4;
+    // 描边
+    ctx.stroke();
+
+    // 填充
+    ctx.fillStyle = 'red';
+    ctx.fill();
+</script>
+
+</body>
+</html>

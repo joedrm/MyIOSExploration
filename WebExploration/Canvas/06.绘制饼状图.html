@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06Canvas案例-绘制圆弧</title>
+</head>
+<body>
+
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+</div>
+
+<script>
+    (function(){
+        var canvas = document.querySelector( '#cavsElem' );
+        var ctx = canvas.getContext( '2d' );
+
+        canvas.width = 900;
+        canvas.height = 700;
+        canvas.style.border = "1px solid #000";
+
+        var data = [{
+            "value": .2,
+            "color": "red",
+            "title": "应届生"
+        },{
+            "value": .3,
+            "color": "blue",
+            "title": "社会招生"
+        },{
+            "value": .4,
+            "color": "green",
+            "title": "老学员推荐"
+        },{
+            "value": .1,
+            "color": "#ccc",
+            "title": "公开课"
+        }];
+
+        var tempAngle = -90;//绘制到哪个角度了，起始角度是-90度。
+
+        //设置角度的中间变量
+        var x0 = 400, y0 = 400;
+        var radius = 200;
+        // 从-90度开始绘制
+        for( var i = 0; i < data.length; i++ ) {
+            ctx.beginPath();//因为设置不同的颜色，所以每次绘制完起一个新状态
+            ctx.moveTo(x0,y0);
+            //当前扇形的角度
+            var angle = data[i].value * 360;
+
+            ctx.fillStyle = data[i].color;
+            //开始从 tempAngle绘制
+            var startAngle  = tempAngle * Math.PI / 180;
+            //从tempAngle绘制到 我们自己的angle区域
+            var endAngle = (tempAngle + angle) * Math.PI / 180;
+
+            //参数： x0，y0 圆心坐标，  radius：半径
+            // startAngle：开始绘制的弧度
+            // endAngle：结束绘制的弧度！！
+            ctx.arc(x0, y0, radius, startAngle, endAngle);
+
+            //绘制文字：
+            var txt = data[i].value * 100 + '%';
+
+            var x, y;
+            // 计算出文字的要放的角度
+            var txtAngle = tempAngle + 1/2 * angle;
+
+            //计算文字的 坐标
+            x = x0 + Math.cos( txtAngle * Math.PI / 180 ) * (radius + 20);
+            y = y0 + Math.sin( txtAngle * Math.PI / 180 ) * (radius + 20);
+
+            //如果文字在圆形的左侧，那么让文字 对齐方式为 文字结尾对齐当前坐标。
+            if( txtAngle > 90 && txtAngle < 270 ) {
+                ctx.textAlign = 'end';
+            }
+
+            //把文字绘制到 扇形区域的 旁边
+            ctx.fillText(txt, x, y);
+
+            ctx.fill();
+
+            tempAngle += angle;//下一次绘制的起始角度
+        }
+
+    }());
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box"></div>
+
+<script>
+
+    // 特性检测
+    var  box = document.getElementById('box');
+//    if (box.addEventListener){
+//        box.addEventListener();
+//    }else {
+//        box.attachEvent();
+//    }
+    /***
+     * 上面的代码 会自动为 box 添加一个 addEventListener 方法,增加了内存的开销
+     */
+    // 优化
+//    if ('addEventListener' in window){
+//        box.addEventListener();
+//    }else {
+//        box.attachEvent();
+//    }
+
+    // 验证一个对象是不是数组
+
+    /***
+     * JavaScript有五种方法可以确定一个值到底是什么类型，分别是:
+     * typeof运算符，
+     * constructor法，
+     * instanceof运算符，
+     * Object.prototype.toString
+     * Array.isArray法: ECMA5以后才可以使用 ie9+
+     */
+    var arr = [];
+//    var isArray = Object.prototype.toString.call(arr) == '[object Array]';
+    // 加上正则
+    var isArray = Object.prototype.toString.call(arr).replace(/^\[object (.+)\]$/, '$1').toLowerCase();
+
+    console.log(isArray); // true
+
+</script>
+</body>
+</html>

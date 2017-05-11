@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+</div>
+
+<script>
+    var canvas = document.getElementById('cavsElem');
+    var ctx = canvas.getContext('2d');
+    canvas.width = 600;
+    canvas.height = 600;
+    canvas.style.border = '1px solid black';
+
+    ctx.rect(100, 100, 200, 100);
+    ctx.strokeStyle = 'red';
+    ctx.stroke();
+
+    ctx.strokeRect(100, 210, 200, 100);
+
+    //填充矩形
+    ctx.fillRect(100, 420, 100, 60);
+</script>
+
+</body>
+</html>
