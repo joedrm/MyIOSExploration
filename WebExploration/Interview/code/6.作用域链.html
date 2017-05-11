@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		var s1 = 'global';
+		var a = 100
+		function f1(){
+			var s1 = 'local';
+			var s2 = 'js';
+			// console.log(s1);
+			// console.log(s2);
+			// console.log(a);
+			// console.log(x);
+			function f2(){
+				var s2 = 'inner';
+				console.log(s1); //local
+				console.log(s2); //inner
+				console.log(a); //100
+				console.log(y); //报错
+			}
+			f2()
+		}	
+
+		f1();
+
+	</script>
+</body>
+</html>

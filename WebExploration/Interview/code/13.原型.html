@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		// var obj = {
+		// 	name : 'js',
+		// 	age : 21
+		// }
+
+		// console.log (obj);
+		// console.log(obj.__proto__);
+		// console.log(obj.__proto__.__proto__);
+
+		// var p1 = {
+		// 	name : 'andy',
+		// 	age : 18
+		// }
+
+		// p1.__proto__.say = function(){
+		// 	console.log(this.name + this.age);
+		// }
+
+		// p1.say();
+		
+		function Person(name, age) {
+			this.name = name;
+			this.age = age;
+		}
+
+
+		Person.prototype.say = function(){
+			console.log(this.name + this.age);
+		}
+
+		var p1 = new Person('andy',18);
+		p1.say();
+
+	</script>
+</body>
+</html>

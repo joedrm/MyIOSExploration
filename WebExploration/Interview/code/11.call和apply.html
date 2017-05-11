@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		//传统的对象调用方法，
+		// var dog = {
+		// 	name : '京巴',
+		// 	age : 5,
+		// 	say : function(){
+		// 		console.log(this.name + this.age);
+		// 	}
+		// }
+
+		// dog.say(); //对象在前，方法在后，中间是 点
+
+		//有一种新的思维
+		//先有一个函数
+		function say(a,b,c){
+			console.log(a,b,c);
+			console.log(this.name + this.age);
+		}
+		//接下来有两个对象
+		var dog = {
+			name : '京巴',
+			age : 5
+		}
+		var cat = {
+			name : 'tom',
+			age : 10
+		}
+
+		//将函数借给dog和cat
+		// dog.say = say; //这是复制
+		// cat.say =say; //这是复制
+
+		say.call(dog,1,2,3); //函数在前，对象在参数中，中间通过call
+		say.apply(cat,[1,2,3]);
+
+
+	</script>
+</body>
+</html>

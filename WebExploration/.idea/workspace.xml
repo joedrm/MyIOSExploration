@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Canvas/DMMban.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Canvas/a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Canvas/01.canvas开始.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Canvas/02.绘制表格.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Canvas/03.基于状态的绘图.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Canvas/04.绘制矩形.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Canvas/05.绘制弧形.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Canvas/06.绘制饼状图.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Canvas/07.绘制图片.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Canvas/08绘制序列帧动画.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/JS数组去重.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/css实现三栏布局，中间自适应(一).html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/css实现三栏布局，中间自适应(三).html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/css实现三栏布局，中间自适应(二).html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/js对象的深度克隆.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/js操作获取和设置cookie.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/s常用设计模式的实现思路，单例，工厂，代理，装饰，观察者模式等.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/下面程序执行后弹出什么样的结果.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/如何居中一个浮动元素.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/将字符串反转输出.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/编写一个b继承a的方法.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/编写一个布局，页面宽度自适应，最小宽度300px，左边百分之35，右宽百分之65.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/菜鸟老鸟都受益的面试题.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/菜鸟老鸟都受益的面试题2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/wdy.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/wdy.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PHPExploration/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../PHPExploration/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PHPExploration/01.变量.php" afterPath="$PROJECT_DIR$/../PHPExploration/01.变量.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/01.百度换肤/index.html" afterPath="$PROJECT_DIR$/Project/01.百度换肤/index.html" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,20 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="js操作获取和设置cookie.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview/js操作获取和设置cookie.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="JS数组去重.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interview/JS数组去重.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
+            <state relative-caret-position="731">
               <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
@@ -84,43 +50,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="菜鸟老鸟都受益的面试题2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="菜鸟老鸟都受益的面试题2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interview/菜鸟老鸟都受益的面试题2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
+            <state relative-caret-position="207">
               <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="s常用设计模式的实现思路，单例，工厂，代理，装饰，观察者模式等.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview/s常用设计模式的实现思路，单例，工厂，代理，装饰，观察者模式等.js">
+      <file leaf-file-name="1.变量提升.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interview/code/1.变量提升.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="77" column="77" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#39#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="下面程序执行后弹出什么样的结果.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview/下面程序执行后弹出什么样的结果.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="207">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="如何居中一个浮动元素.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview/如何居中一个浮动元素.html">
+      <file leaf-file-name="2.变量提升典型面试题.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interview/code/2.变量提升典型面试题.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3.立即调用函数表达式.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interview/code/3.立即调用函数表达式.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="4.作用域.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Interview/code/4.作用域.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -175,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CSS3/23.渐变示例.html" />
         <option value="$PROJECT_DIR$/CSS3/24.过度 transition.html" />
         <option value="$PROJECT_DIR$/CSS3/25.过渡详解.html" />
         <option value="$PROJECT_DIR$/CSS3/24.过度transition.html" />
@@ -226,6 +199,7 @@
         <option value="$PROJECT_DIR$/Interview/JS数组去重.js" />
         <option value="$PROJECT_DIR$/Interview/菜鸟老鸟都受益的面试题.js" />
         <option value="$PROJECT_DIR$/Interview/菜鸟老鸟都受益的面试题2.html" />
+        <option value="$PROJECT_DIR$/Interview/code/2.变量提升典型面试题.html" />
       </list>
     </option>
   </component>
@@ -293,7 +267,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,36 +285,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JS面向对象" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,6 +302,13 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Interview" />
+      <recent name="$PROJECT_DIR$/JS面向对象" />
+      <recent name="$PROJECT_DIR$/Project/weijinsuo/css" />
+      <recent name="$PROJECT_DIR$/CSS3" />
+      <recent name="$PROJECT_DIR$/Project/16.事件对象" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Canvas" />
       <recent name="$PROJECT_DIR$/JS面向对象/shoppingmall" />
@@ -363,18 +316,8 @@
       <recent name="$PROJECT_DIR$/MobileWeb" />
       <recent name="$PROJECT_DIR$/LESS" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/JS面向对象" />
-      <recent name="$PROJECT_DIR$/Project/weijinsuo/css" />
-      <recent name="$PROJECT_DIR$/CSS3" />
-      <recent name="$PROJECT_DIR$/Project/16.事件对象" />
-      <recent name="$PROJECT_DIR$/Project/15.筋斗云" />
-    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.菜鸟老鸟都受益的面试题2.html">
-    <configuration default="false" name="css实现三栏布局，中间自适应(二).html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Interview/css实现三栏布局，中间自适应(二).html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.2.变量提升典型面试题.html">
     <configuration default="false" name="css实现三栏布局，中间自适应(三).html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Interview/css实现三栏布局，中间自适应(三).html">
       <method />
     </configuration>
@@ -385,6 +328,9 @@
       <method />
     </configuration>
     <configuration default="false" name="菜鸟老鸟都受益的面试题2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Interview/菜鸟老鸟都受益的面试题2.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="2.变量提升典型面试题.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Interview/code/2.变量提升典型面试题.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -449,19 +395,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tab栏切换实现.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.css实现三栏布局，中间自适应(二).html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.css实现三栏布局，中间自适应(三).html" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.JS数组去重.js" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.菜鸟老鸟都受益的面试题.js" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.菜鸟老鸟都受益的面试题2.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.css实现三栏布局，中间自适应(三).html" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.JS数组去重.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.菜鸟老鸟都受益的面试题.js" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.菜鸟老鸟都受益的面试题2.html" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.2.变量提升典型面试题.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.菜鸟老鸟都受益的面试题2.html" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.菜鸟老鸟都受益的面试题.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.JS数组去重.js" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.css实现三栏布局，中间自适应(三).html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.css实现三栏布局，中间自适应(二).html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.2.变量提升典型面试题.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.菜鸟老鸟都受益的面试题2.html" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.菜鸟老鸟都受益的面试题.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.JS数组去重.js" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.css实现三栏布局，中间自适应(三).html" />
       </list>
     </recent_temporary>
   </component>
@@ -527,11 +473,12 @@
       <workItem from="1494386938127" duration="4988000" />
       <workItem from="1494410401967" duration="879000" />
       <workItem from="1494461471432" duration="3967000" />
+      <workItem from="1494517679872" duration="120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="417792000" />
+    <option name="totallyTimeSpent" value="417912000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,9 +491,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="725" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24543288" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24543288" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -608,34 +555,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/015_function7.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/016_function8.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/014_function6.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/011_function3.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/010_function2.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1153">
@@ -809,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
           <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,7 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,9 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#clone#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,7 +818,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Interview/s常用设计模式的实现思路，单例，工厂，代理，装饰，观察者模式等.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
+        <state relative-caret-position="1275">
           <caret line="77" column="77" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
@@ -965,7 +870,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Interview/JS数组去重.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
+        <state relative-caret-position="731">
           <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
@@ -983,8 +888,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Interview/菜鸟老鸟都受益的面试题2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="207">
           <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/code/1.变量提升.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/code/2.变量提升典型面试题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/code/3.立即调用函数表达式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/code/4.作用域.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

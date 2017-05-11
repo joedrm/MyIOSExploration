@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>javascript</li>
+			<li>node.js</li>
+		</ul>
+	<script>
+		
+		/*
+		var lis = document.getElementsByTagName('li');
+
+		for (var i = 0; i < lis.length; i++) {
+			lis[i].onclick = function(){
+				alert(this.innerHTML);
+			}
+		}*/
+
+		var ul = document.getElementsByTagName('ul')[0];
+
+		ul.onclick = function(e){
+			//使用事件对象，
+			var evt = e || window.event;
+			//通过事件对象，获取事件源
+			var tg = evt.target || evt.srcElement;
+			console.log(tg);
+			if (tg.nodeName== 'LI') {
+				alert(tg.innerHTML);
+			}
+			
+		}
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//需求，在f1的外部，如何读取f1中的 a
+
+		function f1(){
+			var a = 9999;
+			function f2(){
+				console.log(a);
+			}
+			return f2; //将这个f2函数返回
+		}
+		var f = f1(); //实际上，此时f就相当于是 f2函数
+		
+		f();
+		
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		// var obj = {
+		// 	name : 'andy',
+		// 	age : 18
+		// }
+
+		// console.log(obj.name);
+		// console.log(obj.__proto__);
+		// console.log(obj.toString);
+
+
+		var animal = {
+			name : 'animal',
+			sex : 'male'
+		}
+
+		var dog = {
+			name : '哈士奇',
+			age : 5
+		}
+
+		dog.__proto__ = animal;
+
+		console.log(dog.name);
+		console.log(dog.age);
+		console.log(dog.sex);
+		console.log(dog.toString);
+		console.log(dog.aaaaaa);
+
+	</script>
+</body>
+</html>

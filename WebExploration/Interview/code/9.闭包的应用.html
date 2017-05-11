@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		//定义一个构造器
+
+		function F1(name, age){
+			this.name = name;
+			this.age = age;
+			var attr = 'private';
+			function get(){
+				return attr;
+			}
+			function set(val) {
+				attr = val;
+			}
+			return {
+				get : get,
+				set : set
+			}
+		}
+		var f = F1();
+		console.log( f.get() );
+		f.set('泰牛');
+		console.log( f.get() );
+
+
+	</script>
+</body>
+</html>

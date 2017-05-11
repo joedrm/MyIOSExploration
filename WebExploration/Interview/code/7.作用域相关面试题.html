@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+    
+    //网易面试题
+    var tt = 'aa'; //全局变量
+
+    function test(){ //函数test
+        alert(tt); // aa
+        tt = 'dd'; 
+        alert(tt); // dd
+    }
+
+    test();
+</script>
+</body>
+</html>

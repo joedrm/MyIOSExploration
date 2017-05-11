@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		var a = 100; //全局变量，全局作用域
+
+		function f1(){
+			var s1 = 'js'; //局部变量，局部作用域
+			console.log(a);
+		}
+
+		// f1();
+		// console.log(s1);
+
+		{
+			let num = 100;
+			console.log(num);
+		}
+		console.log(num);
+
+		// for (var i = 0; i < 10; i++) {
+		// }
+		// console.log(i);
+
+
+		// for (let j = 0; j < 10; j++) {
+		// }
+		// console.log(j);
+
+	</script>
+</body>
+</html>
