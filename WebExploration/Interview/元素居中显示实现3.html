@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /**
+        利用 flex 布局
+		实际使用时应考虑兼容性
+        */
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            display: flex;
+            align-items: center; 		/* 垂直居中 */
+            justify-content: center;	/* 水平居中 */
+
+        }
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;		/* 方便看效果 */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div></div>
+</div>
+
+</body>
+</html>
