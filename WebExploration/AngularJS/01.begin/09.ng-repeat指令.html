@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+
+    </style>
+</head>
+<body ng-app="myApp">
+
+<ul ng-controller="ListController">
+    <!--
+        ng-class: 会根据当前设置对象的属性和属性值来决定是否添加特定类名
+    -->
+    <li ng-repeat="item in data" data-id="{{item.id}}" ng-class="{red:$even, green:$odd}">
+        <span>{{$first ? "开始" : ""}}</span>
+        <strong>{{item.name}}</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span>{{item.age}}</span>
+        <span>{{$last ? "没有了" : ""}}</span>
+    </li>
+</ul>
+
+<script src="bower_components/angular/angular.js"></script>
+<script>
+
+    angular.module('myApp', []).controller('ListController', ['$scope', function ($scope) {
+        $scope.data = [];
+        for (var i = 0; i < 10; i ++){
+            $scope.data[$scope.data.length] = {
+                id: i,
+                name: '小明'+i,
+                age: 12 + i
+            }
+        }
+    }]);
+</script>
+
+</body>
+</html>

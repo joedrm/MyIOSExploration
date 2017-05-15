@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ng-bind-html指令</title>
+</head>
+
+<body ng-app="myApp" ng-init="insertHtml='<span>hello world</span>'">
+
+<!--
+ng-bind 在绑定的值包含html时会转义,目的:为了安全,防止跨站脚步攻击
+-->
+
+<strong ng-bind-html="insertHtml"></strong>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script>
+
+
+    /***
+     使用 ng-bing-html 指令需要依赖 ngSanitize 指令
+     */
+    angular.module('mgApp', ['ngSanitize']);
+
+</script>
+
+</body>
+</html>

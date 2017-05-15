@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过滤器</title>
+</head>
+<body ng-app="app">
+
+<h1>{{100000 | currency}}</h1>
+
+<h1>{{1288323623006 | date:"yyyy-MM-dd HH:mm:ss"}}</h1>
+
+<h1>{{1288323623006 | date:"fullDate"}}</h1>
+
+<div ng-controller="DemoController">
+
+    <!--{{p1 | json}}-->
+    <input type="text" ng-model="p1.name">
+    
+    <br/>
+
+    <!-- 展示json数据,8个空格缩进-->
+    <pre>{{p1 | json:8}}</pre>
+
+    <p>{{text}}</p>
+
+    <p>{{123}}</p>
+</div>
+
+<div>
+    <!--
+    limitTo: limit(限制个数): begin(开始位置)
+    -->
+    <p>{{'good morning everyone' | limitTo: 5}}</p>
+
+
+</div>
+
+
+<script src="bower_components/angular/angular.js"></script>
+
+<script>
+
+    angular.module("app", []).controller('DemoController', ["$scope", "$filter", function ($scope, $filter) {
+
+        $scope.p1 = {
+            name: "张三",
+            age: 19,
+            gender: false,
+            zhengfang: {
+                name: "张三",
+                age: 19,
+                gender: false
+            },
+            ceshi: [
+                {
+                    name: "张三",
+                    age: 19,
+                    gender: false
+                },
+                {
+                    name: "张三",
+                    age: 19,
+                    gender: false
+                }
+            ]
+        }
+
+        $scope.text = $filter('limitTo')('hahahahahahahaha', 10, 5);
+    }]);
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11.ng-repeat指令补充</title>
+
+    <style>
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body ng-app="myApp">
+
+<input type="text" ng-model="lastname">
+<ul ng-controller="ListController">
+    <li ng-repeat="name in students track by $index" ng-class="{red:name.startsWith(lastname)}">{{name}}</li>
+</ul>
+
+<script src="bower_components/angular/angular.js"></script>
+<script>
+
+    angular.module('myApp', []).controller('ListController', ['$scope', function ($scope) {
+        /**
+         * 当数组里面有重复的元素时,需要加上 track by + 不重复的值; 如: track by $index
+         * @type {string[]}
+         */
+        $scope.students = ["张无忌",'郭靖','洪七公','老顽童','李莫愁', '郭靖', '郭靖'];
+
+    }]);
+</script>
+
+</body>
+</html>

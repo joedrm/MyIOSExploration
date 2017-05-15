@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>列表筛选</title>
+</head>
+
+<body ng-app="app">
+  <div ng-controller="ListController">
+    <input type="text" ng-model="search">
+    <ul>
+      <li ng-repeat="todo in todos | filter:{completed:true}">
+        <span>{{todo.id}}</span>
+        <strong>{{todo.text}}</strong>
+        <span>{{todo.completed}}</span>
+      </li>
+    </ul>
+  </div>
+  <script src="node_modules/angular/angular.js"></script>
+  <script>
+    angular.module('app', [])
+      .controller('ListController', ['$scope', function($scope) {
+        $scope.search = '';
+        $scope.todos = [{
+          id: 0.123,
+          text: '学习',
+          completed: true
+        }, {
+          id: 0.22,
+          text: '睡觉',
+          completed: false
+        }, {
+          id: 0.232,
+          text: '打豆豆',
+          completed: true
+        }, {
+          id: 0.2321,
+          text: '打豆豆1',
+          completed: true
+        }, {
+          id: 0.2322,
+          text: '打豆豆2',
+          completed: false
+        }, {
+          id: 0.2323,
+          text: '打豆豆3',
+          completed: true
+        }, {
+          id: 0.2323,
+          text: '回答一下到底是true/false',
+          completed: false
+        }];
+      }]);
+  </script>
+</body>
+
+</html>

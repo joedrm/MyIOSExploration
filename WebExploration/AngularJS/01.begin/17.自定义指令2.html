@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义指令</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+<body ng-app="demoApp">
+
+<div breadcrumb></div>
+
+<breadcrumb></breadcrumb>
+
+<script src="bower_components/angular/angular.js"></script>
+<script>
+
+    var demo = angular.module('demoApp', []);
+    demo.directive('breadcrumb', [function () {
+        /**
+         * 返回一个指令对象
+         */
+        return {
+            /**
+             * 指定当前的指令的类型:
+             * E : element; A: attribute; C: class; M: comment
+             */
+            restrict: 'EA',
+            templateUrl: 'tmpls/breadcrumb.html',
+            replace: true,
+        };
+    }]);
+
+</script>
+</body>
+</html>

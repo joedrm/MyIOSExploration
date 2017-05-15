@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>过滤器</title>
+</head>
+
+<body ng-app="app">
+  <!-- <h1>{{100000 | currency}}</h1>
+	<h1>{{1288323623006 | date:'fullDate'}}</h1> -->
+  <div ng-controller="DemoController">
+    <input type="text" ng-model="p1.name">
+    <pre>{{p1 | json:8}}</pre>
+    <p>{{text}}</p>
+  </div>
+  <!-- <div>
+    <p>{{'itcast.cn,itcast.com,itheima.com' | limitTo:10:10}}</p>
+  </div> -->
+  <h1>{{1112123.141592635 | number:10}}</h1>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="angular-locale_zh-cn.js"></script>
+  <script>
+    angular.module('app', [])
+      .controller('DemoController', ['$scope', '$filter', function($scope, $filter) {
+        $scope.p1 = {
+          name: '张三',
+          age: 19,
+          gender: false,
+          zhengfang: {
+            name: '张三',
+            age: 19,
+            gender: false
+          },
+          ceshi: [{
+            name: '张三',
+            age: 19,
+            gender: false
+          }, {
+            name: '张三',
+            age: 19,
+            gender: false
+          }, {
+            name: '张三',
+            age: 19,
+            gender: false
+          }]
+        };
+        // 如果在控制器中需要用到一个不存在的对象，都尝试使用注入的方式
+        $scope.text = $filter('limitTo')('hahahahahahah', '10', 5);
+      }]);
+  </script>
+</body>
+
+</html>

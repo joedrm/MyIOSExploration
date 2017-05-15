@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>路由模块使用</title>
+</head>
+
+<body ng-app="app">
+  <ul>
+    <li><a href="#/a">A</a></li>
+    <li><a href="#/b">B</a></li>
+    <li><a href="#/c">C</a></li>
+  </ul>
+  <div ng-view></div>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script id="a_tmpl" type="text/ng-template">
+    <!-- 只有type="text/javascript"的script节点才会被当做JS执行 -->
+    <!-- script中的内容就算不能执行，也不可以显示在界面上 -->
+    <h1>{{title}}</h1>
+  </script>
+  <script>
+    var app = angular.module('app', ['ngRoute']);
+    app.config(['$routeProvider', function($routeProvider) {
+      $routeProvider
+      // 某一类特定地址
+        .when('/students/:name?', {
+          controller: 'StudentsController',
+          templateUrl: 'a_tmpl'
+        })
+        .when('/a', {
+          controller: 'AController',
+          templateUrl: 'a_tmpl'
+        })
+        .when('/b', {
+          controller: 'BController',
+          templateUrl: 'a_tmpl'
+        })
+        .when('/c', {
+          controller: 'CController',
+          templateUrl: 'a_tmpl'
+        })
+        // 别的请求
+        .otherwise({
+          // 跳转到一个地址
+          redirectTo: '/a'
+        });
+    }]);
+
+    app.controller('StudentsController', ['$scope', '$routeParams', function($scope, $routeParams) {
+      $scope.title = '你好' + $routeParams['name'] + '这是A控制器';
+    }]);
+
+    app.controller('AController', ['$scope', function($scope) {
+      $scope.title = '这是A控制器';
+    }]);
+
+    app.controller('BController', ['$scope', function($scope) {
+      $scope.title = '这是B控制器';
+    }]);
+
+    app.controller('CController', ['$scope', function($scope) {
+      $scope.title = '这是C控制器';
+    }]);
+  </script>
+</body>
+
+</html>

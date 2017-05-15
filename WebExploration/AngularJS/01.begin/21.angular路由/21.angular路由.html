@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular路由</title>
+</head>
+<body ng-app="app">
+
+<ul>
+    <li><a href="#/a">A</a></li>
+    <li><a href="#/b">B</a></li>
+    <li><a href="#/c">C</a></li>
+</ul>
+
+<div ng-view></div>
+
+
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
+
+<script>
+
+    var app = angular.module('app', ['ngRoute']);
+    app.config(['$routeProvider', function ($routeProvider) {
+
+        $routeProvider
+                .when('/a', {
+                    controller:'AController',
+                    templateUrl:'./views/a.html'
+                })
+                .when('/b', {
+                    controller:'BController',
+                    templateUrl:'./views/b.html'
+                })
+                .when('/c', {
+                    controller:'CController',
+                    templateUrl:'./views/c.html'
+                });
+    }]);
+
+    app.controller('AController', ['$scope', function ($scope) {
+        $scope.title = "这是A控制器";
+    }]);
+
+    app.controller('BController', ['$scope', function ($scope) {
+        $scope.title = "这是B控制器";
+    }]);
+
+    app.controller('CController', ['$scope', function ($scope) {
+        $scope.title = "这是C控制器";
+    }]);
+
+</script>
+</body>
+</html>

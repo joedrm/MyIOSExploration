@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义指令</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+<body ng-app="demoApp">
+
+<!--
+ 使用模板自定义的按钮
+-->
+<my-button>
+
+</my-button>
+
+<script src="bower_components/angular/angular.js"></script>
+<script>
+
+    var demo = angular.module('demoApp', []);
+
+    /**
+     * 第一个参数: 指令的名字
+     * 第二个参数: 是一个数组, 数组最后一个元素是一个函数
+     * 指令的名字 应该使用 驼峰命名法
+     */
+    demo.directive('myButton', function () {
+        /**
+         * 返回一个指令对象
+         */
+        return {
+            template:"<input type='button' value='hello' class='btn btn-lg btn-primary btn btn-block'/>"
+        };
+    });
+
+</script>
+
+</body>
+</html>

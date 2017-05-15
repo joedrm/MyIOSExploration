@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Controller</title>
+</head>
+<body ng-app="myModule" ng-controller="HelloController">
+
+<script src="bower_components/angular/angular.js"></script>
+<script>
+
+    var module = angular.module('myModule', []);
+
+    /**
+     angular 在执行控制器函数时，
+     会根据参数的名字（$scope）去自动的注入对象
+     根据参数名称传递对应对象，所以必须要写正确的参数名称
+     * */
+    module.controller('HelloController', function ($scope) {
+
+    });
+
+    /**
+     由于压缩代码会改变参数名称，注册控制的标准方式就是通过第二个参数传递数组的方式（
+     数组的成员最后一个就是原本的控制器函数，前面的成员都是需要注入的对象名称）
+     * */
+    module.controller('HelloController', ["$scope", function (a) {
+        console.log(a);
+    }])
+
+</script>
+</body>
+</html>

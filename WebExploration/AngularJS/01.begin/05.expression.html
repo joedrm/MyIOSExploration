@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /* ng-cloak指令就是在NG执行完毕过后自动移除 */
+
+        [ng-cloak],
+        .ng-cloak {
+            display: none;
+        }
+    </style>
+</head>
+<body ng-app class="ng-cloak">
+{{ true ? 'true':'false' }}
+
+<script src="bower_components/angular/angular.js"></script>
+<script>
+
+
+</script>
+
+</body>
+</html>

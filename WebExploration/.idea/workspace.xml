@@ -2,9 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/元素居中显示实现1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/元素居中显示实现2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interview/元素居中显示实现3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/xiaohuangren.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/01.hello.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/02.module.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/03.controller.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/04.controller2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/05.expression.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/06.ng-app指令.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/07.ng-bind指令.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/08.ng-bind-html指令.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/09.ng-repeat指令.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/10.ng-class指令.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/11.ng-repeat指令补充.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/12.ng-src指令.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/13.ng-switch指令.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/14.ng-show指令.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/15.ng-checked指令.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/16.自定义指令.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/17.自定义指令2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/18.自定义指令3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/19.过滤器.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/20.过滤器2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/21.angular路由.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/tmpls/breadcrumb.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/views/a.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/views/b.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/01.begin/views/c.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/angular-locale_zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/app-readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/css/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/custom-filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/filters.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/js/controllers/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/js/services/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/route.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/views/a.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/views/b.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/views/c.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebExploration.iws" />
@@ -29,48 +71,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="29.清除浮动示例三.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/29.清除浮动示例三.html">
+      <file leaf-file-name="18.自定义指令3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/18.自定义指令3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state relative-caret-position="204">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="30.浏览器兼容问题.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/30.浏览器兼容问题.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="42" column="23" selection-start-line="41" selection-start-column="31" selection-end-line="42" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="31.overflow: hidden的IE6兼容.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/31.overflow: hidden的IE6兼容.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="32.margin的塌陷现象.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/32.margin的塌陷现象.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="33.margin属性.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/浮动/33.margin属性.html">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -79,51 +91,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="08.继承性.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/继承性和层叠性/08.继承性.html">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app/js/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-507">
+            <state relative-caret-position="-398">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-357">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css_animation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/动画/css_animation.html">
+      <file leaf-file-name="19.过滤器.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/19.过滤器.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-405">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1190">
+              <caret line="70" column="9" selection-start-line="39" selection-start-column="0" selection-end-line="70" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="元素居中显示实现2.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Interview/元素居中显示实现2.html">
+      <file leaf-file-name="20.过滤器2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/20.过滤器2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="21.angular路由.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/21.angular路由.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="元素居中显示实现3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview/元素居中显示实现3.html">
+      <file leaf-file-name="a.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/views/a.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="元素居中显示实现1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview/元素居中显示实现1.html">
+      <file leaf-file-name="b.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/views/b.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <state relative-caret-position="0">
+              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/views/c.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -146,35 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CSS3/26.转换transform.html" />
-        <option value="$PROJECT_DIR$/CSS3/27.实例:跳动的心.html" />
-        <option value="$PROJECT_DIR$/CSS3/28.Web字体.html" />
-        <option value="$PROJECT_DIR$/CSS3/29.媒体查询.html" />
-        <option value="$PROJECT_DIR$/Project/weijinsuo/css/main.js" />
-        <option value="$PROJECT_DIR$/MobileWeb/01.视口viewport.html" />
-        <option value="$PROJECT_DIR$/Project/weijinsuo/font/main.css" />
-        <option value="$PROJECT_DIR$/Project/weijinsuo/js/main.js" />
-        <option value="$PROJECT_DIR$/Project/weijinsuo/css/main.css" />
-        <option value="$PROJECT_DIR$/Project/weijinsuo/index.html" />
-        <option value="$PROJECT_DIR$/LESS/index.less" />
-        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/css/base.css" />
-        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/index.html" />
-        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/css/category.html" />
-        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/category.html" />
-        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/css/index.css" />
-        <option value="$PROJECT_DIR$/MobileWeb/jd.mobile/css/category.css" />
-        <option value="$PROJECT_DIR$/JS面向对象/shoppingmall/css/style.css" />
-        <option value="$PROJECT_DIR$/JS面向对象/shoppingmall/scripts/basic.js" />
-        <option value="$PROJECT_DIR$/JS面向对象/实现自己的each方法遍历多维数组.js" />
-        <option value="$PROJECT_DIR$/Canvas/01.canvas开始.html" />
-        <option value="$PROJECT_DIR$/Canvas/02.绘制表格.html" />
-        <option value="$PROJECT_DIR$/Canvas/03.基于状态的绘图.html" />
-        <option value="$PROJECT_DIR$/Canvas/04.绘制就把图形.html" />
-        <option value="$PROJECT_DIR$/Canvas/05.绘制矩形.html" />
-        <option value="$PROJECT_DIR$/Canvas/05.绘制弧形.html" />
-        <option value="$PROJECT_DIR$/Canvas/06.绘制饼状图.html" />
-        <option value="$PROJECT_DIR$/Canvas/07.绘制图片.html" />
-        <option value="$PROJECT_DIR$/Canvas/08绘制序列帧动画.html" />
         <option value="$PROJECT_DIR$/Interview/编写一个b继承a的方法.js" />
         <option value="$PROJECT_DIR$/Interview/下面程序执行后弹出什么样的结果?.html" />
         <option value="$PROJECT_DIR$/Interview/下面程序执行后弹出什么样的结果.html" />
@@ -197,6 +212,35 @@
         <option value="$PROJECT_DIR$/CSS/浮动/24.清除浮动方法四：内墙法.html" />
         <option value="$PROJECT_DIR$/Interview/元素居中显示实现2.html" />
         <option value="$PROJECT_DIR$/Interview/元素居中显示实现3.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/hello.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/module.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/controller.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/controller2.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/expression.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/06.ng-app指令.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/07.ng-bind指令.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/08.ng-bind-html指令.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/09.ng-repeat指令.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/10.ng-class指令.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/11.ng-repeat指令补充.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/12.ng-src指令.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/13.ng-switch指令.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/14.ng-show指令.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/15.ng-checked.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/15.ng-checked指令.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/16.自定义指令.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/tmpls/breadcrumb.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/17.自定义指令2.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/18.自定义指令3.html" />
+        <option value="$PROJECT_DIR$/AngularJS/todomvc-app-template/index.html" />
+        <option value="$PROJECT_DIR$/AngularJS/todomvc-app-template/js/app.js" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/19.过滤器.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/20.过滤器2.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/a.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/b.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/c.html" />
+        <option value="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/21.angular路由.html" />
       </list>
     </option>
   </component>
@@ -263,7 +307,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,9 +326,115 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todomvc-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todomvc-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todomvc-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todomvc-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,37 +447,38 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/vmcSlider" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="editor.config.accepted" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AngularJS" />
+      <recent name="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由" />
+      <recent name="$PROJECT_DIR$/AngularJS/01.begin" />
+      <recent name="$PROJECT_DIR$/Canvas" />
+      <recent name="$PROJECT_DIR$/JS面向对象/shoppingmall" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AngularJS/01.begin/views" />
+      <recent name="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由" />
       <recent name="$PROJECT_DIR$/Interview" />
       <recent name="$PROJECT_DIR$/JS面向对象" />
       <recent name="$PROJECT_DIR$/Project/weijinsuo/css" />
-      <recent name="$PROJECT_DIR$/CSS3" />
-      <recent name="$PROJECT_DIR$/Project/16.事件对象" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Canvas" />
-      <recent name="$PROJECT_DIR$/JS面向对象/shoppingmall" />
-      <recent name="$PROJECT_DIR$/MobileWeb/jd.mobile/imgs" />
-      <recent name="$PROJECT_DIR$/MobileWeb" />
-      <recent name="$PROJECT_DIR$/LESS" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.元素居中显示实现3.html">
-    <configuration default="false" name="29.清除浮动示例三.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/29.清除浮动示例三.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/AngularJS/todomvc-app-template/index.html">
       <method />
     </configuration>
-    <configuration default="false" name="31.overflow: hidden的IE6兼容.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/31.overflow: hidden的IE6兼容.html">
+    <configuration default="false" name="19.过滤器.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/AngularJS/01.begin/19.过滤器.html">
       <method />
     </configuration>
-    <configuration default="false" name="32.margin的塌陷现象.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS/浮动/32.margin的塌陷现象.html">
+    <configuration default="false" name="20.过滤器2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/AngularJS/01.begin/20.过滤器2.html">
       <method />
     </configuration>
-    <configuration default="false" name="元素居中显示实现2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Interview/元素居中显示实现2.html">
+    <configuration default="false" name="21.angular路由.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/AngularJS/01.begin/21.angular路由/21.angular路由.html">
       <method />
     </configuration>
-    <configuration default="false" name="元素居中显示实现3.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Interview/元素居中显示实现3.html">
+    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/AngularJS/todomvc-app/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -392,19 +543,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tab栏切换实现.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.29.清除浮动示例三.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.31.overflow: hidden的IE6兼容.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.32.margin的塌陷现象.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.元素居中显示实现2.html" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.元素居中显示实现3.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.19.过滤器.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.20.过滤器2.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.21.angular路由.html" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.元素居中显示实现3.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.元素居中显示实现2.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.32.margin的塌陷现象.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.31.overflow: hidden的IE6兼容.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.29.清除浮动示例三.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.21.angular路由.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.20.过滤器2.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.19.过滤器.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -470,12 +621,13 @@
       <workItem from="1494386938127" duration="4988000" />
       <workItem from="1494410401967" duration="879000" />
       <workItem from="1494461471432" duration="3967000" />
-      <workItem from="1494517679872" duration="2184000" />
+      <workItem from="1494517679872" duration="24585000" />
+      <workItem from="1494853554840" duration="320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="419976000" />
+    <option name="totallyTimeSpent" value="442697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -488,9 +640,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="725" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29308975" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -552,311 +704,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CSS/定位/51.固定定位用途：顶部导航栏.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/定位/49.绝对定位的盒子居中.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/定位/48.绝对定位示例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/定位/47.绝对定位的子元素无视padding.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/定位/46.绝对定位：以盒子为参考点.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/常用属性/36.超级链接的美化.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/02.淘宝鼠标展示/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/01.百度换肤/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/编写一个布局，页面宽度自适应，最小宽度300px，左边百分之35，右宽百分之65.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/js对象的深度克隆.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/js操作获取和设置cookie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/s常用设计模式的实现思路，单例，工厂，代理，装饰，观察者模式等.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="77" column="77" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/下面程序执行后弹出什么样的结果.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/如何居中一个浮动元素.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/将字符串反转输出.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/编写一个b继承a的方法.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS面向对象/myscript/src/017_oop1.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/JS数组去重.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/菜鸟老鸟都受益的面试题.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/菜鸟老鸟都受益的面试题2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/code/1.变量提升.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/code/2.变量提升典型面试题.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/code/3.立即调用函数表达式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/code/4.作用域.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interview/css实现三栏布局，中间自适应(一).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/定位/44.相对定位.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/定位/45.绝对定位.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-663">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/16.标准文档流.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/17.块级元素和行级元素互换.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/18.脱离标准流之浮动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="67" column="22" selection-start-line="66" selection-start-column="12" selection-end-line="67" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/19.浮动元素相互贴靠.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/20.浮动元素&quot;自围&quot;.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/21.清除浮动方法一：设置高度.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/22.清除浮动方法二：clear: both.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/23.清除浮动方法三：隔墙法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/24.清除浮动方法四：内墙法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/浮动/25.清除浮动示例一.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/浮动/26.清除浮动示例二.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-337">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,7 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="42" column="23" selection-start-line="41" selection-start-column="31" selection-end-line="42" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-507">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,7 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-405">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -944,15 +785,303 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Interview/元素居中显示实现2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/01.hello.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/02.module.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/03.controller.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="30" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/04.controller2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/06.ng-app指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/05.expression.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/10.ng-class指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/11.ng-repeat指令补充.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/09.ng-repeat指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/08.ng-bind-html指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/12.ng-src指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/07.ng-bind指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/13.ng-switch指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/15.ng-checked指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/14.ng-show指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/css实现三栏布局，中间自适应(一).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/css实现三栏布局，中间自适应(三).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/css实现三栏布局，中间自适应(二).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/js对象的深度克隆.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/js操作获取和设置cookie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-367">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/下面程序执行后弹出什么样的结果.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/16.自定义指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="35" column="9" selection-start-line="16" selection-start-column="0" selection-end-line="35" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/tmpls/breadcrumb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/17.自定义指令2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app-template/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app-template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="92" selection-start-line="17" selection-start-column="92" selection-end-line="17" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/18.自定义指令3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/19.过滤器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="9" selection-start-line="39" selection-start-column="0" selection-end-line="70" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/20.过滤器2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/views/a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/views/b.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/views/c.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/21.angular路由.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app-template/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app/js/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-398">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

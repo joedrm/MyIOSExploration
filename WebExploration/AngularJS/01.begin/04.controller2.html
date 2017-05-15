@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="login">
+<head>
+    <meta charset="UTF-8">
+    <title>控制器的职责</title>
+</head>
+<body>
+
+<table border="1" ng-controller="LoginController">
+    <tr>
+        <td>用户名</td>
+        <td>
+            <input type="text" ng-model="user.username">
+        </td>
+    </tr>
+    <tr>
+        <td>密码</td>
+        <td>
+            <input type="password" ng-model="user.password">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" ng-click="login()" value="登陆">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>{{message}}</td>
+    </tr>
+</table>
+
+<script src="bower_components/angular/angular.js"></script>
+<script>
+
+    // 创建模块
+    var module = angular.module('login', []);
+    // 为模块创建控制器
+    module.controller('LoginController', ["$scope", function ($scope) {
+
+        $scope.user = {
+            username: '',
+            password:''
+        };
+        $scope.login = function () {
+            console.log($scope.user);
+        };
+        $scope.message = '请输入用户名';
+
+        // 官方的API中提供了一个$scope.$watch方法，
+        $scope.$watch('user.username', function(now, old) {
+            // 当user.username发生变化时触发这个函数
+            // console.log('now is ' + now);
+            // console.log('old is ' + old);
+            if (now) {
+                if (now.length < 7) {
+                    $scope.message = '输入格式不合法';
+                } else {
+                    $scope.message = '';
+                }
+            } else {
+                $scope.message = '请输入用户名';
+            }
+        });
+    }])
+
+</script>
+
+</body>
+</html>

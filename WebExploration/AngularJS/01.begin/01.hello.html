@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Begin</title>
+</head>
+
+<!--
+所有需要ng管理的代码必须被包裹在一个有 ng-app 指令的元素中
+ng-app 是 ng 的入口，表示当前元素的所有指令都会被angular管理（对每一个指令进行分析和操作）
+-->
+<body ng-app>
+
+<div >
+    <h2>使用NG实现双边数据绑定</h2>
+
+    <!--
+        ng-model 是双向数据绑定的指令，效果就是将当前元素的value属性和模型中的user.name建立绑定关系
+    -->
+    <input type="text" placeholder="请输入用户名" ng-model="user.name">
+    <p>用户名 <strong>{{user.name}}</strong></p>
+</div>
+
+<!--
+ng-init="user.word='你好!'"  初始化数据
+-->
+<div ng-init="user.word='你好!'">
+    <h2>使用NG实现双边数据绑定</h2>
+    <input type="text" placeholder="请输入用户名" ng-model="user.word">
+    <p>打招呼 <strong>{{user.word}}</strong></p>
+</div>
+
+<!-- 使用 bower 来下载angular.js -->
+<script src="bower_components/angular/angular.js"></script>
+
+<!--
+   使用百度的 CDN 来载入 angular.js
+   地址: http://cdn.code.baidu.com/
+-->
+<!--<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>-->
+
+<script>
+
+
+
+</script>
+
+</body>
+</html>

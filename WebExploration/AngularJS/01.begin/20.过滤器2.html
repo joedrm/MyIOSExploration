@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过滤器2</title>
+</head>
+<body ng-app="app">
+
+<div ng-controller="ListController">
+    <ul>
+        <!--
+        全文检索 包含 true 的内容
+        -->
+        <!--<li ng-repeat="todo in todos | filter:true">-->
+        <!--<li ng-repeat="todo in todos | filter:'学习'">-->
+        <!--
+            对象的形式, 属性 completed 为 true 的选项
+        -->
+        <li ng-repeat="todo in todos | filter:{completed:true}">
+            <span>{{todo.id}}</span>
+            <span>{{todo.text}}</span>
+            <span>{{todo.completed}}</span>
+        </li>
+    </ul>
+
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+
+<script>
+
+    angular.module("app", []).controller('ListController', ["$scope", function ($scope) {
+
+        $scope.todos = [
+            {
+                id: 123,
+                text: '学习',
+                completed: true
+            },
+            {
+                id: 124,
+                text: '睡觉',
+                completed: false
+            },
+            {
+                id: 125,
+                text: '运动',
+                completed: true
+            },
+            {
+                id: 126,
+                text: '吃饭',
+                completed: true
+            },
+            {
+                id: 127,
+                text: '考试',
+                completed: false
+            },
+            {
+                id: 128,
+                text: '学习',
+                completed: true
+            }
+        ]
+
+    }]);
+</script>
+</body>
+</html>
