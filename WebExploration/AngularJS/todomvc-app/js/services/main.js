@@ -5,11 +5,11 @@
  * @Last Modified time: 2016-02-16 17:52:08
  */
 
-(function(angular) {
+(function (angular) {
 
   // 注册一个新模块
   angular.module('app.services.main', [])
-    .service('MainService', ['$window', function($window) {
+    .service('MainService', ['$window', function ($window) {
       var storage = $window.localStorage;
       var todos = storage['my_todo_list'] ? JSON.parse(storage['my_todo_list']) : [];
 
@@ -25,18 +25,18 @@
         return id;
       }
 
-      this.save = function() {
+      this.save = function () {
         storage['my_todo_list'] = JSON.stringify(todos);
       }
 
       // 控制私有字段的访问权限
-      this.get = function() {
+      this.get = function () {
         return todos;
       };
 
       // 业务逻辑都必须出现在服务中（专门定义业务逻辑）
       // 添加todo
-      this.add = function(text) {
+      this.add = function (text) {
         todos.push({
           // 自动增长？
           id: getId(),
@@ -48,7 +48,7 @@
       };
 
       // 处理删除
-      this.remove = function(id) {
+      this.remove = function (id) {
         for (var i = 0; i < todos.length; i++) {
           if (todos[i].id === id) {
             todos.splice(i, 1);
@@ -59,7 +59,7 @@
       };
 
       // 清空已完成
-      this.clearCompleted = function() {
+      this.clearCompleted = function () {
         var result = [];
         for (var i = 0; i < todos.length; i++) {
           if (!todos[i].completed) {
@@ -73,7 +73,7 @@
       };
 
       // 是否有已经完成的
-      this.existCompleted = function() {
+      this.existCompleted = function () {
         for (var i = 0; i < todos.length; i++) {
           if (todos[i].completed) {
             return true;
@@ -83,12 +83,12 @@
       };
 
       // 更新
-      this.update = function(id, target) {
+      this.update = function (id, target) {
         this.save();
       };
 
       var now = true;
-      this.toggleAll = function() {
+      this.toggleAll = function () {
         for (var i = 0; i < todos.length; i++) {
           todos[i].completed = now;
         }

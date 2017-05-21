@@ -82,4 +82,7 @@
  https://github.com/lianleven/LYHTTPClient  缓存用的是YYCache，基于AFNetworking的封装
  
  https://github.com/guowilling/SRDownloadManager  多线程文件下载管理
+ 
+ 
+ http://www.itwendao.com/article/detail/221283.html  iOS 使用 socket 即时通信（非第三方库）
  */

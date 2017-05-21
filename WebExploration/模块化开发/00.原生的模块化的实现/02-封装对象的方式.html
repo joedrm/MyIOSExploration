@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>封装函数的方式</title>
+  <script>
+    // calc.js
+    // 计算模块
+    // var calculator = {
+    //   // 成员一：加法运算
+    //   add: function(a, b) {
+    //     return parseFloat(a) + parseFloat(b);
+    //   },
+    //   subtract: function(a, b) {
+    //     return parseFloat(a) - parseFloat(b);
+    //   },
+    //   multiply: function(a, b) {
+    //     return parseFloat(a) * parseFloat(b);
+    //   },
+    //   divide: function(a, b) {
+    //     return parseFloat(a) / parseFloat(b);
+    //   }
+    // };
+    //
+    var math = {};
+    math.calculator = {};
+    math.calculator.add = function(a, b) {
+      return a + b;
+    };
+    math.convertor = {};
+    // math.calculator.add();
+    // 传统编程语言中的命名空间的概念
+    // 从代码层面就已经有了模块的感觉
+    // 还是污染全局（不是问题）
+    // 高内聚，低耦合
+    // 模块内部相关性强，模块之间没有过多相互牵连
+    // 没有私有空间，
+    //
+
+    //  ==========================
+
+    window.onload = function() {
+      var ta = document.getElementById('txt_a');
+      var tb = document.getElementById('txt_b');
+      var tres = document.getElementById('txt_res');
+      var btn = document.getElementById('btn');
+      var op = document.getElementById('sel_op');
+
+      btn.onclick = function() {
+        switch (op.value) {
+          case '+':
+            tres.value = calculator.add(ta.value, tb.value);
+            break;
+          case '-':
+            tres.value = calculator.subtract(ta.value, tb.value);
+            break;
+          case 'x':
+            tres.value = calculator.multiply(ta.value, tb.value);
+            break;
+          case '÷':
+            tres.value = calculator.divide(ta.value, tb.value);
+            break;
+        }
+      };
+    };
+  </script>
+</head>
+
+<body>
+  <input type="text" id="txt_a">
+  <select id="sel_op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="x">x</option>
+    <option value="÷">÷</option>
+  </select>
+  <input type="text" id="txt_b">
+  <input type="button" id="btn" value=" = ">
+  <input type="text" id="txt_res">
+  <!-- 需要实现计算的功能，于是乎抽象了一个计算的模块 -->
+</body>
+
+</html>

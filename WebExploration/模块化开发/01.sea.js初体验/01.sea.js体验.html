@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../node_modules/sea.js/sea.js"></script>
+
+    <script>
+
+        /**
+         seajs.use: 一般是入口文件, 只会使用一次
+         require : 一般用于模块与模块之间
+         */
+        seajs.use('./01.calculator.js', function (calculator) {
+            console.log(calculator);
+
+
+            var ta = document.getElementById('txt_a');
+            var tb = document.getElementById('txt_b');
+            var tres = document.getElementById('txt_res');
+            var btn = document.getElementById('btn');
+            var op = document.getElementById('sel_op');
+
+            btn.onclick = function() {
+                switch (op.value) {
+                    case '+':
+                        tres.value = calculator.add(ta.value, tb.value);
+                        break;
+                    case '-':
+                        tres.value = calculator.subtract(ta.value, tb.value);
+                        break;
+                    case 'x':
+                        tres.value = calculator.multiply(ta.value, tb.value);
+                        break;
+                    case '÷':
+                        tres.value = calculator.divide(ta.value, tb.value);
+                        break;
+                }
+            };
+        });
+    </script>
+
+
+</head>
+<body>
+<input type="text" id="txt_a">
+<select id="sel_op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="x">x</option>
+    <option value="÷">÷</option>
+</select>
+<input type="text" id="txt_b">
+<input type="button" id="btn" value=" = ">
+<input type="text" id="txt_res">
+</body>
+</html>

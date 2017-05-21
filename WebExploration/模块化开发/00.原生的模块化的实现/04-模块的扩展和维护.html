@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>封装函数的方式</title>
+  <script>
+    // calc_v2015.js
+    // 计算模块
+    (function(calculator) {
+
+      function convert(input) {
+        return parseInt(input);
+      }
+
+      calculator.add = function(a, b) {
+        return convert(a) + convert(b);
+      }
+
+      window.calculator = calculator;
+
+    })(window.calculator || {});
+
+    // 新增需求
+    // calc_v2016.js
+    (function(calculator) {
+      function convert(input) {
+        return parseInt(input);
+      }
+      // calculator 如果存在的话，我就是扩展，不存在我就是新加
+      calculator.remain = function(a, b) {
+        return convert(a) % convert(b);
+      }
+      window.calculator = calculator;
+    })(window.calculator || {});
+    // 开闭原则，对新增开放，对修改关闭；
+    //
+    // http://api.douban.com/v2/movie
+    // http://api.douban.com/movie
+
+
+    //  ==========================
+
+    window.onload = function() {
+      var ta = document.getElementById('txt_a');
+      var tb = document.getElementById('txt_b');
+      var tres = document.getElementById('txt_res');
+      var btn = document.getElementById('btn');
+      var op = document.getElementById('sel_op');
+
+      btn.onclick = function() {
+        switch (op.value) {
+          case '+':
+            tres.value = calculator.add(ta.value, tb.value);
+            break;
+          case '-':
+            tres.value = calculator.subtract(ta.value, tb.value);
+            break;
+          case 'x':
+            tres.value = calculator.multiply(ta.value, tb.value);
+            break;
+          case '÷':
+            tres.value = calculator.divide(ta.value, tb.value);
+            break;
+          case '%':
+            tres.value = calculator.remain(ta.value, tb.value);
+            break;
+        }
+      };
+    };
+  </script>
+</head>
+
+<body>
+  <input type="text" id="txt_a">
+  <select id="sel_op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="x">x</option>
+    <option value="÷">÷</option>
+    <option value="%">%</option>
+  </select>
+  <input type="text" id="txt_b">
+  <input type="button" id="btn" value=" = ">
+  <input type="text" id="txt_res">
+  <!-- 需要实现计算的功能，于是乎抽象了一个计算的模块 -->
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-(function(angular) {
+(function (angular) {
   'use strict';
 
 
@@ -6,17 +6,15 @@
   var myApp = angular.module('app', ['ngRoute', 'app.controllers.main']);
 
   // 路由配置
-  myApp.config(['$routeProvider', function($routeProvider) {
+  myApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
     // /asdasda {status:asdasda}
       .when('/:status?', {
         controller: 'MainController',
         templateUrl: 'main_tmpl'
       })
-      .otherwise({ redirectTo: '/' });
+      .otherwise({redirectTo: '/'});
   }]);
-
-
 
 
   // // 2. 注册一个主要的控制器（属于某个模块），用于往视图（view）中暴露数据

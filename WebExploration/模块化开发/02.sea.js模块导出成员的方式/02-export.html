@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Seajs体验</title>
+  <script src="node_modules/seajs/dist/sea.js"></script>
+  <script>
+    // 在Seajs中模块的引入需要相对路径完整写法
+    seajs.use('./02-calculator.js', function(e) {
+      // var p = new Person();
+      console.log(e);
+    });
+  </script>
+</head>
+
+<body>
+  <input type="text" id="txt_a">
+  <select id="sel_op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="x">x</option>
+    <option value="÷">÷</option>
+  </select>
+  <input type="text" id="txt_b">
+  <input type="button" id="btn" value=" = ">
+  <input type="text" id="txt_res">
+</body>
+
+</html>

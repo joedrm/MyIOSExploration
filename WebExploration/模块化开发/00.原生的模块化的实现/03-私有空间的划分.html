@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>封装函数的方式</title>
+  <script>
+    // calc.js
+    // 计算模块
+    var calculator = (function() {
+      // 这里形成一个单独的私有的空间
+      // var name = '';
+
+      // 私有成员的作用，
+      // 将一个成员私有化，
+      // 抽象公共方法（其他成员中都会用到的）
+
+      // 私有的转换逻辑
+      function convert(input){
+        return parseInt(input);
+      }
+
+      function add(a, b) {
+        return convert(a) + convert(b);
+      }
+
+      function subtract(a, b) {
+        return convert(a) - convert(b);
+      }
+
+      function multiply(a, b) {
+        return convert(a) * convert(b);
+      }
+
+      function divide(a, b) {
+        return convert(a) / convert(b);
+      }
+
+      return {
+        add: add,
+        subtract: subtract,
+        multiply: multiply,
+        divide: divide
+      }
+    })();
+
+    //  ==========================
+
+    window.onload = function() {
+      var ta = document.getElementById('txt_a');
+      var tb = document.getElementById('txt_b');
+      var tres = document.getElementById('txt_res');
+      var btn = document.getElementById('btn');
+      var op = document.getElementById('sel_op');
+
+      btn.onclick = function() {
+        switch (op.value) {
+          case '+':
+            tres.value = calculator.add(ta.value, tb.value);
+            break;
+          case '-':
+            tres.value = calculator.subtract(ta.value, tb.value);
+            break;
+          case 'x':
+            tres.value = calculator.multiply(ta.value, tb.value);
+            break;
+          case '÷':
+            tres.value = calculator.divide(ta.value, tb.value);
+            break;
+        }
+      };
+    };
+  </script>
+</head>
+
+<body>
+  <input type="text" id="txt_a">
+  <select id="sel_op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="x">x</option>
+    <option value="÷">÷</option>
+  </select>
+  <input type="text" id="txt_b">
+  <input type="button" id="btn" value=" = ">
+  <input type="text" id="txt_res">
+  <!-- 需要实现计算的功能，于是乎抽象了一个计算的模块 -->
+</body>
+
+</html>

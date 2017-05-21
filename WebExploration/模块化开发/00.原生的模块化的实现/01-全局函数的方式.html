@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>全局函数的形式</title>
+  <script>
+    // calc.js
+    // 计算模块
+    // 成员一：加法运算
+    function add(a, b) {
+      return parseFloat(a) + parseFloat(b);
+    }
+
+    function subtract(a, b) {
+      return parseFloat(a) - parseFloat(b);
+    }
+
+    function multiply(a, b) {
+      return parseFloat(a) * parseFloat(b);
+    }
+
+    function divide(a, b) {
+      return parseFloat(a) / parseFloat(b);
+    }
+    // 早期的开发过程中就是将重复使用的代码封装到函数中
+    // 再将一系列的函数放到一个文件中，称之为模块
+    // 约定的形式定义的模块，存在命名冲突，可维护性也不高的问题
+    // 仅仅从代码角度来说：没有任何模块的概念
+    //  ==========================
+
+    window.onload = function() {
+      var ta = document.getElementById('txt_a');
+      var tb = document.getElementById('txt_b');
+      var tres = document.getElementById('txt_res');
+      var btn = document.getElementById('btn');
+      var op = document.getElementById('sel_op');
+
+      btn.onclick = function() {
+        switch (op.value) {
+          case '+':
+            tres.value = add(ta.value, tb.value);
+            break;
+          case '-':
+            tres.value = subtract(ta.value, tb.value);
+            break;
+          case 'x':
+            tres.value = multiply(ta.value, tb.value);
+            break;
+          case '÷':
+            tres.value = divide(ta.value, tb.value);
+            break;
+        }
+      };
+    };
+  </script>
+</head>
+
+<body>
+  <input type="text" id="txt_a">
+  <select id="sel_op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="x">x</option>
+    <option value="÷">÷</option>
+  </select>
+  <input type="text" id="txt_b">
+  <input type="button" id="btn" value=" = ">
+  <input type="text" id="txt_res">
+  <!-- 需要实现计算的功能，于是乎抽象了一个计算的模块 -->
+</body>
+
+</html>
