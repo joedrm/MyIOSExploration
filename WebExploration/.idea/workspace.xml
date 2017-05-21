@@ -2,61 +2,312 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/components/auto-focus.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/components/http.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/components/version/interpolate-filter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/components/version/version-directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/components/version/version.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/datas/in_theaters.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/datas/top250.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/index-async.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/load.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/movie_detail/controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/movie_detail/view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/movie_list/controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/豆瓣电影/app/movie_list/view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/00.原生的模块化的实现/01-全局函数的方式.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/00.原生的模块化的实现/02-封装对象的方式.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/00.原生的模块化的实现/03-私有空间的划分.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/00.原生的模块化的实现/04-模块的扩展和维护.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/00.原生的模块化的实现/05-第三方依赖.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/00.原生的模块化的实现/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/01.sea.js初体验/01.calculator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/01.sea.js初体验/01.convertor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/01.sea.js初体验/01.sea.js体验.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/02.sea.js模块导出成员的方式/02-calculator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/02.sea.js模块导出成员的方式/02-export.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/03.sea.js异步加载包的方式/03-async-require.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/03.sea.js异步加载包的方式/03-module1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/03.sea.js异步加载包的方式/03-module2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/04.sea.js使用第三方依赖/04-dependences.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/04.sea.js使用第三方依赖/04-main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/04.sea.js使用第三方依赖/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/05.sea.js配置/calc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/模块化开发/05.sea.js配置/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/wdy.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../MyIOSExploration/MyiOSExploration.xcworkspace/xcuserdata/wdy.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/IOS网络编程/IOS网络编程/NetworingMainViewController.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/IOS网络编程/IOS网络编程/NetworingMainViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyIOSExploration/KVC&amp;KVO实例详解/KVC&amp;KVO实例详解/KVO监听数组/KVOObserveArrayVC.m" afterPath="$PROJECT_DIR$/../MyIOSExploration/KVC&amp;KVO实例详解/KVC&amp;KVO实例详解/KVO监听数组/KVOObserveArrayVC.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/todomvc-app/js/app.js" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/todomvc-app/js/controllers/main.js" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/js/controllers/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/todomvc-app/js/services/main.js" afterPath="$PROJECT_DIR$/AngularJS/todomvc-app/js/services/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/004_arrayECMA5.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/004_arrayECMA5.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/005_object.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/005_object.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/006_objtest.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/006_objtest.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/007_objtest2.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/007_objtest2.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/008_objectsingloten.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/008_objectsingloten.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/009_function1.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/009_function1.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/010_function2.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/010_function2.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/011_function3.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/011_function3.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/012_function4.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/012_function4.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/013_function5.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/013_function5.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/014_function6.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/014_function6.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/015_function7.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/015_function7.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS面向对象/myscript/src/016_function8.htm" afterPath="$PROJECT_DIR$/JS面向对象/myscript/src/016_function8.htm" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/03.controller.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/04.controller2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/05.expression.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/07.ng-bind指令.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/08.ng-bind-html指令.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/09.ng-repeat指令.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/10.ng-class指令.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/11.ng-repeat指令补充.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/13.ng-switch指令.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/14.ng-show指令.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/15.ng-checked指令.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/xiaohuangren.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/01.hello.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/01.hello.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/02.module.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/02.module.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/06.ng-app指令.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/06.ng-app指令.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/12.ng-src指令.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/12.ng-src指令.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/16.自定义指令.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/16.自定义指令.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/17.自定义指令2.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/17.自定义指令2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/18.自定义指令3.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/18.自定义指令3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/19.过滤器.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/19.过滤器.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/20.过滤器2.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/20.过滤器2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/21.angular路由.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/21.angular路由/21.angular路由.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-route/.bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-route/.bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-route/LICENSE.md" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-route/LICENSE.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-route/README.md" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-route/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-route/angular-route.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-route/angular-route.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-route/angular-route.min.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-route/angular-route.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-route/angular-route.min.js.map" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-route/angular-route.min.js.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-route/bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-route/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-route/index.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-route/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-route/package.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-route/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-sanitize/.bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-sanitize/.bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-sanitize/LICENSE.md" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-sanitize/LICENSE.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-sanitize/README.md" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-sanitize/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-sanitize/angular-sanitize.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-sanitize/angular-sanitize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-sanitize/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-sanitize/angular-sanitize.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-sanitize/angular-sanitize.min.js.map" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-sanitize/angular-sanitize.min.js.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-sanitize/bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-sanitize/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-sanitize/index.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-sanitize/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular-sanitize/package.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular-sanitize/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/.bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/.bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/LICENSE.md" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/LICENSE.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/README.md" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/angular-csp.css" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/angular-csp.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/angular.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/angular.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/angular.min.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/angular.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/angular.min.js.gzip" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/angular.min.js.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/index.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/angular/package.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/angular/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/.bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/.bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/CHANGELOG.md" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/CHANGELOG.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/Gemfile" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/Gemfile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/Gemfile.lock" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/Gemfile.lock" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/Gruntfile.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/Gruntfile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/ISSUE_TEMPLATE.md" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/ISSUE_TEMPLATE.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/LICENSE" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/README.md" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/css/bootstrap-theme.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/css/bootstrap-theme.min.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/css/bootstrap.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/css/bootstrap.min.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/dist/js/npm.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/dist/js/npm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/grunt/.jshintrc" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/grunt/.jshintrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/grunt/bs-commonjs-generator.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/grunt/bs-commonjs-generator.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/grunt/bs-lessdoc-parser.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/grunt/bs-lessdoc-parser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/grunt/bs-raw-files-generator.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/grunt/bs-raw-files-generator.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/grunt/change-version.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/grunt/change-version.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/grunt/configBridge.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/grunt/configBridge.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/grunt/npm-shrinkwrap.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/grunt/npm-shrinkwrap.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/grunt/sauce_browsers.yml" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/grunt/sauce_browsers.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/.jscsrc" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/.jscsrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/.jshintrc" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/.jshintrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/affix.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/affix.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/alert.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/alert.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/button.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/button.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/carousel.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/carousel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/collapse.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/collapse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/dropdown.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/dropdown.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/modal.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/modal.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/popover.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/popover.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/scrollspy.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/scrollspy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/tab.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/tab.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/tooltip.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/tooltip.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/js/transition.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/js/transition.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/.csscomb.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/.csscomb.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/.csslintrc" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/.csslintrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/alerts.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/alerts.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/badges.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/badges.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/bootstrap.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/breadcrumbs.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/breadcrumbs.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/button-groups.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/button-groups.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/buttons.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/buttons.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/carousel.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/carousel.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/close.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/close.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/code.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/code.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/component-animations.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/component-animations.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/dropdowns.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/dropdowns.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/forms.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/forms.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/glyphicons.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/glyphicons.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/grid.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/grid.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/input-groups.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/input-groups.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/jumbotron.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/jumbotron.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/labels.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/labels.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/list-group.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/list-group.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/media.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/media.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/alerts.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/alerts.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/background-variant.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/background-variant.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/border-radius.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/border-radius.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/buttons.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/buttons.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/center-block.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/center-block.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/clearfix.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/clearfix.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/forms.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/forms.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/gradients.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/gradients.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/grid-framework.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/grid-framework.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/grid.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/grid.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/hide-text.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/hide-text.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/image.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/image.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/labels.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/labels.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/list-group.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/list-group.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/nav-divider.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/nav-divider.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/nav-vertical-align.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/nav-vertical-align.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/opacity.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/opacity.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/pagination.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/pagination.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/panels.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/panels.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/progress-bar.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/progress-bar.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/reset-filter.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/reset-filter.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/reset-text.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/reset-text.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/resize.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/resize.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/responsive-visibility.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/size.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/size.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/tab-focus.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/tab-focus.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/table-row.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/table-row.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/text-emphasis.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/text-emphasis.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/text-overflow.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/text-overflow.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/mixins/vendor-prefixes.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/modals.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/modals.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/navbar.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/navbar.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/navs.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/navs.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/normalize.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/normalize.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/pager.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/pager.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/pagination.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/pagination.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/panels.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/panels.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/popovers.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/popovers.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/print.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/print.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/progress-bars.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/progress-bars.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/responsive-embed.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/responsive-embed.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/responsive-utilities.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/responsive-utilities.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/scaffolding.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/scaffolding.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/tables.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/tables.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/theme.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/theme.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/thumbnails.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/thumbnails.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/tooltip.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/tooltip.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/type.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/type.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/utilities.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/utilities.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/variables.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/variables.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/less/wells.less" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/less/wells.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/nuget/MyGet.ps1" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/nuget/MyGet.ps1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/nuget/bootstrap.less.nuspec" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/nuget/bootstrap.less.nuspec" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/nuget/bootstrap.nuspec" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/nuget/bootstrap.nuspec" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/package.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/package.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/.bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/.bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/AUTHORS.txt" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/AUTHORS.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/LICENSE.txt" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/README.md" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/bower.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/dist/core.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/dist/core.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/dist/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/dist/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/dist/jquery.min.map" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/dist/jquery.min.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/dist/jquery.slim.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/dist/jquery.slim.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/dist/jquery.slim.min.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/dist/jquery.slim.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/dist/jquery.slim.min.map" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/dist/jquery.slim.min.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/external/sizzle/LICENSE.txt" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/external/sizzle/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/external/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/external/sizzle/dist/sizzle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/external/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/external/sizzle/dist/sizzle.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/external/sizzle/dist/sizzle.min.map" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/external/sizzle/dist/sizzle.min.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/.eslintrc.json" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/.eslintrc.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/ajax.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/ajax/jsonp.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/ajax/load.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/ajax/parseXML.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/ajax/script.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/ajax/var/location.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/ajax/var/location.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/ajax/var/nonce.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/ajax/var/rquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/ajax/xhr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/attributes.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/attributes/attr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/attributes/classes.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/attributes/prop.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/attributes/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/attributes/val.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/callbacks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/DOMEval.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/DOMEval.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/access.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/init.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/nodeName.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/nodeName.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/parseHTML.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/ready-no-deferred.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/ready-no-deferred.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/ready.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/readyException.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/readyException.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/stripAndCollapse.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/stripAndCollapse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/support.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/core/var/rsingleTag.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/addGetHookIf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/adjustCSS.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/adjustCSS.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/curCSS.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/hiddenVisibleSelectors.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/showHide.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/showHide.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/var/cssExpand.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/var/getStyles.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/var/getStyles.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/var/isHiddenWithinTree.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/var/isHiddenWithinTree.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/var/rmargin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/var/rnumnonpx.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/css/var/swap.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/css/var/swap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/data.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/data.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/data/Data.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/data/Data.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/data/var/acceptData.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/data/var/acceptData.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/data/var/dataPriv.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/data/var/dataPriv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/data/var/dataUser.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/data/var/dataUser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/deferred.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/deferred/exceptionHook.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/deferred/exceptionHook.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/deprecated.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/dimensions.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/effects.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/effects.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/effects/Tween.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/effects/animatedSelector.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/event.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/event.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/event/ajax.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/event/alias.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/event/focusin.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/event/focusin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/event/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/event/trigger.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/event/trigger.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/exports/amd.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/exports/global.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/manipulation.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/manipulation/_evalUrl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/manipulation/buildFragment.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/manipulation/buildFragment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/manipulation/getAll.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/manipulation/getAll.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/manipulation/setGlobalEval.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/manipulation/setGlobalEval.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/manipulation/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/manipulation/var/rcheckableType.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/manipulation/var/rscriptType.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/manipulation/var/rscriptType.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/manipulation/var/rtagName.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/manipulation/var/rtagName.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/manipulation/wrapMap.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/manipulation/wrapMap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/offset.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/offset.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/queue.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/queue.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/queue/delay.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/selector-native.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/selector-native.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/selector-sizzle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/selector.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/selector.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/serialize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/traversing.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/traversing/findFilter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/traversing/var/dir.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/traversing/var/dir.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/traversing/var/rneedsContext.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/traversing/var/siblings.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/traversing/var/siblings.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/ObjectFunctionString.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/ObjectFunctionString.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/arr.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/arr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/class2type.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/concat.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/document.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/document.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/documentElement.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/documentElement.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/fnToString.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/fnToString.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/getProto.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/getProto.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/hasOwn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/indexOf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/pnum.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/push.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/rcssNum.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/rcssNum.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/rnothtmlwhite.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/rnothtmlwhite.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/slice.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/var/toString.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/bower_components/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/jquery/src/wrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/tmpls/breadcrumb.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/tmpls/breadcrumb.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/views/a.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/views/a.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/views/b.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/views/b.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/01.begin/views/c.html" afterPath="$PROJECT_DIR$/AngularJS/Angular基础演练/views/c.html" />
     </list>
     <ignored path="WebExploration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,7 +341,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AngularJS/豆瓣电影/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
@@ -100,8 +351,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/Gruntfile.js">
+        <entry file="file://$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/Gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
               <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
@@ -289,6 +550,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularJS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -484,12 +759,12 @@
       <workItem from="1494461471432" duration="3967000" />
       <workItem from="1494517679872" duration="24585000" />
       <workItem from="1494853554840" duration="478000" />
-      <workItem from="1495361773621" duration="4219000" />
+      <workItem from="1495361773621" duration="4452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="447074000" />
+    <option name="totallyTimeSpent" value="447307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,7 +784,7 @@
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5029455" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17377567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2279587" sideWeight="0.51338583" order="2" side_tool="true" content_ui="tabs" />
@@ -566,16 +841,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app/js/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AngularJS/todomvc-app/js/services/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -973,7 +1238,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularJS/01.begin/bower_components/bootstrap/Gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
@@ -985,6 +1250,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
