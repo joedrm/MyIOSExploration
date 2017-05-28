@@ -21,6 +21,8 @@
  
  http://www.cnblogs.com/-ljj/p/4470658.html
  
+ http://blog.csdn.net/linwenbang/article/details/49124195 Masonry的使用，动画，出现问题解决等
+ 
  */
 #import "ViewController.h"
 

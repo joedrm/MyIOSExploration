@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        #box {
+            background-color: #ccc;
+            width: 50px;
+            height: 50px;
+            left: 10px;
+            top: 40px;
+            position: absolute;
+            background-color: red;
+        }
+
+        #btn {
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="box">
+
+
+</div>
+
+<input type="button" value="点我啊！" id="btn">
+
+<script type="text/javascript">
+
+    var box = document.getElementById('box');
+
+    var btn = document.getElementById('btn');
+
+    var timer = null;
+    var leader = 0;
+    //    var target = 320;
+
+    function callJSFunction(target) {
+
+        timer = setInterval(function () {
+
+            leader = leader + (target - leader) / 10;
+            box.style.left = leader + 'px';
+
+        }, 20);
+    }
+
+    function callJSFunctionWithParam(param) {
+        timer = setInterval(function () {
+
+            var target = param['left'];
+            leader = leader + (target - leader) / 10;
+            box.style.left = leader + 'px';
+            box.style.backgroundColor = param['bgColor'];
+
+        }, 20);
+
+        return 'hello world';
+    }
+
+
+    btn.onclick = function () {
+        callJSFunction();
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     -webkit-tap-highlight-color: transparent;
+}
+body{
+     font-size: 14px;
+     font-family: "MicroSoft YaHei", sans-serif;
+     color: #333;
+}
+a{
+     text-decoration: none;
+     color: #ccc;
+}
+a:hover{
+     text-decoration: none;
+}
+ol,ul{
+     list-style: none;
+}
+input{
+     outline: none;
+     border:none;
+     -webkit-appearance: none;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hello</title>
+</head>
+<body>
+	hello,I am webView!you can alert or write something here!
+    <script type="text/javascript">
+    	function callJSFunction () {
+            <!--    如果调用成功就输出弹框        -->
+    		 alert("原生调用JS方法成功！！");
+    	}
+    	function callJSFunctionWithParam (param) {
+            <!--  如果调用成功就会输出传递的参数内容          -->
+            alert("your parma is: " + param[0] + " " + param[1] + " " + param[2])
+    	}
+	</script>
+    <!-- 添加一个按钮，id = "pid" -->
+    <button id="pid">click me</button>
+</body>
+</html>
