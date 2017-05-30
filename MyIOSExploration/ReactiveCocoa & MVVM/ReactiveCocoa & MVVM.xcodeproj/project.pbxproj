@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		02222644EA3E824F2EDB189F /* Pods_ReactiveCocoa___MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767EAE3F3CB4A46418A2243D /* Pods_ReactiveCocoa___MVVM.framework */; };
+		16325D571EDDBA77004DC1FD /* CombineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16325D551EDDBA77004DC1FD /* CombineViewController.m */; };
+		16325D581EDDBA77004DC1FD /* CombineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16325D561EDDBA77004DC1FD /* CombineViewController.xib */; };
+		16325D5D1EDDC181004DC1FD /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16325D5B1EDDC181004DC1FD /* FilterViewController.m */; };
+		16325D5E1EDDC181004DC1FD /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16325D5C1EDDC181004DC1FD /* FilterViewController.xib */; };
+		16325D631EDDC9DB004DC1FD /* RACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16325D611EDDC9DB004DC1FD /* RACLoginViewController.m */; };
+		16325D641EDDC9DB004DC1FD /* RACLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16325D621EDDC9DB004DC1FD /* RACLoginViewController.xib */; };
+		16325D671EDDCEF8004DC1FD /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16325D661EDDCEF8004DC1FD /* LoginViewModel.m */; };
 		16DF11311E6BBAE1001476E6 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DF11301E6BBAE1001476E6 /* WDYLibrary.framework */; };
 		16DF11321E6BBAE1001476E6 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16DF11301E6BBAE1001476E6 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16DF11361E6BBB4E001476E6 /* RACMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DF11351E6BBB4E001476E6 /* RACMainViewController.m */; };
@@ -55,6 +62,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16325D541EDDBA77004DC1FD /* CombineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombineViewController.h; sourceTree = "<group>"; };
+		16325D551EDDBA77004DC1FD /* CombineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombineViewController.m; sourceTree = "<group>"; };
+		16325D561EDDBA77004DC1FD /* CombineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CombineViewController.xib; sourceTree = "<group>"; };
+		16325D5A1EDDC181004DC1FD /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		16325D5B1EDDC181004DC1FD /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		16325D5C1EDDC181004DC1FD /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		16325D601EDDC9DB004DC1FD /* RACLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACLoginViewController.h; sourceTree = "<group>"; };
+		16325D611EDDC9DB004DC1FD /* RACLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACLoginViewController.m; sourceTree = "<group>"; };
+		16325D621EDDC9DB004DC1FD /* RACLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACLoginViewController.xib; sourceTree = "<group>"; };
+		16325D651EDDCEF8004DC1FD /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		16325D661EDDCEF8004DC1FD /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		16DF11301E6BBAE1001476E6 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DF11341E6BBB4E001476E6 /* RACMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACMainViewController.h; sourceTree = "<group>"; };
 		16DF11351E6BBB4E001476E6 /* RACMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACMainViewController.m; sourceTree = "<group>"; };
@@ -113,6 +131,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16325D531EDDBA3D004DC1FD /* 组合信号实例一 */ = {
+			isa = PBXGroup;
+			children = (
+				16325D541EDDBA77004DC1FD /* CombineViewController.h */,
+				16325D551EDDBA77004DC1FD /* CombineViewController.m */,
+				16325D561EDDBA77004DC1FD /* CombineViewController.xib */,
+			);
+			path = "组合信号实例一";
+			sourceTree = "<group>";
+		};
+		16325D591EDDC135004DC1FD /* RAC操作方法之过滤 */ = {
+			isa = PBXGroup;
+			children = (
+				16325D5A1EDDC181004DC1FD /* FilterViewController.h */,
+				16325D5B1EDDC181004DC1FD /* FilterViewController.m */,
+				16325D5C1EDDC181004DC1FD /* FilterViewController.xib */,
+			);
+			path = "RAC操作方法之过滤";
+			sourceTree = "<group>";
+		};
+		16325D5F1EDDC9A0004DC1FD /* MVVM实战：登录界面 */ = {
+			isa = PBXGroup;
+			children = (
+				16325D601EDDC9DB004DC1FD /* RACLoginViewController.h */,
+				16325D611EDDC9DB004DC1FD /* RACLoginViewController.m */,
+				16325D651EDDCEF8004DC1FD /* LoginViewModel.h */,
+				16325D661EDDCEF8004DC1FD /* LoginViewModel.m */,
+				16325D621EDDC9DB004DC1FD /* RACLoginViewController.xib */,
+			);
+			path = "MVVM实战：登录界面";
+			sourceTree = "<group>";
+		};
 		16DF112F1E6BBAC9001476E6 /* RAC常用类和基本使用 */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +246,9 @@
 				2090DE841DF6986400650BCC /* AppDelegate.m */,
 				16DF11341E6BBB4E001476E6 /* RACMainViewController.h */,
 				16DF11351E6BBB4E001476E6 /* RACMainViewController.m */,
+				16325D5F1EDDC9A0004DC1FD /* MVVM实战：登录界面 */,
+				16325D591EDDC135004DC1FD /* RAC操作方法之过滤 */,
+				16325D531EDDBA3D004DC1FD /* 组合信号实例一 */,
 				16DF11541E6C2263001476E6 /* RAC常见信号操作方法 */,
 				16DF114B1E6C08B3001476E6 /* RAC中常见的宏 */,
 				16DF11421E6BFCF7001476E6 /* RAC开发中常见用法 */,
@@ -324,11 +377,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2090DE901DF6986400650BCC /* LaunchScreen.storyboard in Resources */,
+				16325D641EDDC9DB004DC1FD /* RACLoginViewController.xib in Resources */,
 				16DF11471E6BFD2A001476E6 /* CommonApplyViewController.xib in Resources */,
 				16DF11531E6C0950001476E6 /* RACMacrosViewController.xib in Resources */,
 				2090DE8D1DF6986400650BCC /* Assets.xcassets in Resources */,
 				16DF113E1E6BF87D001476E6 /* data.plist in Resources */,
 				2090DE8B1DF6986400650BCC /* Main.storyboard in Resources */,
+				16325D581EDDBA77004DC1FD /* CombineViewController.xib in Resources */,
+				16325D5E1EDDC181004DC1FD /* FilterViewController.xib in Resources */,
 				16DF115C1E6C22BB001476E6 /* SignalOperateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,12 +455,16 @@
 				16DF113C1E6BF050001476E6 /* DelegateTestView.m in Sources */,
 				16DF11521E6C0950001476E6 /* RACMacrosViewController.m in Sources */,
 				16DF114A1E6BFE01001476E6 /* GreenView.m in Sources */,
+				16325D671EDDCEF8004DC1FD /* LoginViewModel.m in Sources */,
 				16DF11391E6BBBDD001476E6 /* BasicSimpleViewController.m in Sources */,
 				16DF11411E6BF8A9001476E6 /* TestModel.m in Sources */,
 				2090DE851DF6986400650BCC /* AppDelegate.m in Sources */,
 				16DF115B1E6C22BB001476E6 /* SignalOperateViewController.m in Sources */,
 				16DF11461E6BFD2A001476E6 /* CommonApplyViewController.m in Sources */,
 				2090DE821DF6986400650BCC /* main.m in Sources */,
+				16325D5D1EDDC181004DC1FD /* FilterViewController.m in Sources */,
+				16325D571EDDBA77004DC1FD /* CombineViewController.m in Sources */,
+				16325D631EDDC9DB004DC1FD /* RACLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

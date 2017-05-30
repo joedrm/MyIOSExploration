@@ -26,6 +26,10 @@
  http://www.cocoachina.com/industry/20140428/8248.html  GCD 深入理解（一）
  
  http://www.jianshu.com/p/938d68ed832c  iOS中保证线程安全的几种方式与性能对比
+ 
+ // GCD封装
+ http://www.jianshu.com/p/0630c903e1db
+ https://github.com/JustKeepRunning/LXDDispatchOperation
 
  */
 

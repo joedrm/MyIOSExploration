@@ -81,6 +81,7 @@ IOS动画总结:
  https://github.com/mengxianliang/XLCircleProgress  圆环进度指示器
  https://github.com/mengxianliang/XLDotLoading  新浪微博的红包加载动画
  https://github.com/jinht/ShopCarAnimation
+ https://github.com/JustKeepRunning/Animations
  
  Facebook-POP
  

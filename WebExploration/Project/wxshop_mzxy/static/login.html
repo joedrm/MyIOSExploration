@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-touch-fullscreen" content="yes"  />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no">
+	<title>移动端前端实训</title>
+	<link rel="apple-touch-icon-precomposed" href="images/haoroomsicon.jpg" />
+	<link rel="apple-touch-startup-image" href="images/haoroomsicon.jpg" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+<header class="u-header">
+  <div class="uc_return">
+            <div class="uc_return_l" onclick="window.history.back()"></div>
+            <div class="uc_return_c">登录</div>
+            <div class="uc_return_r"><a href="#">注册</a></div>
+   </div>
+  
+</header>
+
+<section class="logging">
+        <ul class="bgf pl12 outborder">
+            <li class="pt12 pb12 border_bottom">
+            <s></s>
+            <input name="mobile" type="number" placeholder="请输入您的手机号" id="login_userName">
+            <s class="warn" style="display:none;"></s>
+            </li>
+            <li class="pt12 pb12">
+            <s class="uc_logging_password"></s>
+            <input name="userpwd" type="password" placeholder="请输入您的密码" id="login_Password">
+            <s class="warn"  style="display:none;"></s>
+            </li>
+        </ul>
+        <div class="find_paw"><a href="#">忘记密码？</a></div>
+        <div class="btn_wrap" id="login_user">
+            <span class="btn">登 录</span>
+        </div>
+        <div class="quick_register">
+            <div><a href="#">快速注册&gt;</a></div>
+        </div>
+ </section>
+
+
+
+
+
+ <script src="script/libs/require.js"  data-main="script/views/enterjs/mainconfig"></script>
+</body>
+</html>

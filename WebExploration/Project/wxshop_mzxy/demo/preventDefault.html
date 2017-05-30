@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<a href="http://www.haorooms.com" id="testLink">haorooms博客</a> 
+<script type="text/javascript"> 
+function stopDefault( e ) { 
+if ( e && e.preventDefault ) 
+   e.preventDefault(); 
+    else 
+   window.event.returnValue = false; 
+
+    return false; 
+} 
+
+var test = document.getElementById('testLink'); 
+test.onclick = function(e) { 
+   alert('我的链接地址是：' + this.href + ', 但是我不会跳转。'); 
+   stopDefault(e); 
+} 
+</script>
+	
+</body>
+</html>

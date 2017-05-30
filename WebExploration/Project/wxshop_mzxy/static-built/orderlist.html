@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-touch-fullscreen" content="yes"  />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no">
+	<title>移动端前端实训</title>
+	<link rel="apple-touch-icon-precomposed" href="images/haoroomsicon.jpg" />
+	<link rel="apple-touch-startup-image" href="images/haoroomsicon.jpg" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+<nav id="nav">
+      <ul class="navlist">
+        <li id="n_0"><a href="index.html"><span></span></a></li>
+        <li id="n_1"><a href="#" ><span class="active"></span></a><div class="cartnums" style="display:none">0</div></li>
+        <li id="n_2"><a href="#" ><span></span></a></li>
+        <li id="n_3"><a href="productlist.html" ><span></span></a></li>
+     </ul>
+</nav>
+<section class="order_content">
+      <h4 class="add_operate"><a class="enter" href="#">管理收货地址</a></h4>
+      <div class="addresslist"> 
+               <h4 class="add_title">收货人地址</h4>
+                <ul class=" address_item">
+                    <li class="radio"><input  checked="checked" name="address_options" value="22" type="radio"></li>
+                    <li class="particular">上海市&nbsp;虹口区&nbsp;临潼路255号上海兴安得力软件有限公司</li>
+                    <li class="name"><b>姓名:</b> 章某某某&nbsp;&nbsp;&nbsp;<b>手机号码:</b>13566666666</li>
+                </ul>
+                <ul class=" address_item">
+                    <li class="radio"><input  name="address_options" value="11" type="radio"></li>
+                    <li class="particular">上海市&nbsp;虹口区&nbsp;临潼路255号上海兴安得力软件有限公司</li>
+                    <li class="name"><b>姓名:</b> 章某某某&nbsp;&nbsp;&nbsp;<b>手机号码:</b>13566666666</li>
+                </ul>
+              
+                <ul class="address_item new_address">
+                    <li class="radio"><input name="address_options"  id="use_new_address" value="0"  type="radio"></li>
+                    <li class="particular">使用新的收货地址</li>
+                </ul>  
+              
+              <ul  class="fill_in_content" id="address_form" style="display:none;">
+                        <li>
+                            <p class="title">收货人姓名:</p>
+                            <p><input value="" name="consignee" id="consignee" class="text" type="text"></p>
+                        </li>
+                        <li>
+                            <p class="title">所在地区:</p>
+                            <div id="region">
+                             <select name="sheng"></select>
+                            <select name="shi"></select>
+                            <select name="qu"></select>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="title">详细地址:</p>
+                            <p><input value="" name="address" id="address" class="text width1" type="text"></p>
+                        </li>
+                        <li>
+                            <p class="title">手机号码:</p>
+                            <p><input value="" id="phone_mob" name="phone_mob" class="text" type="number"></p>
+                        </li>
+                        <li>
+                            <p>
+                                <label>
+                                    <input value="1" id="save_address" name="save_address" type="checkbox">&nbsp;自动保存收货地址
+                                    <span class="explain">&nbsp;(&nbsp;选择后该地址将会保存到您的收货地址列表&nbsp;)&nbsp;</span>
+                                </label>
+                            </p>
+                        </li>
+                   </ul>
+
+      </div>
+         <div class="voiceslist">
+           <h4 class="add_title pb10 pt15">发票信息</h4>
+           <div class="pl20 pb10"><input type="checkbox" value="" class="ifvoicenot"  /> &nbsp;&nbsp;&nbsp;是否开发票</div>
+           <div class="voiceinfo pb15" style="display:none;">
+               <p>发票类型：</p>
+               <select class="thevioceselect"><option>普通发票</option><option>增值税发票</option></select>
+               <p class="mt15">发票抬头：</p>
+               <select class="voicetait"><option>个人</option><option>单位</option></select> <input type="text" value="" class="voiceinput" />
+           </div>
+         </div>
+      
+         <div class="shopslist pb15">
+           <h4 class="add_title pb10 pt15">商品清单</h4>
+           <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                <tr class="shoptitles">
+                    <td width="50%" class="tc">商品名称</td>
+                    <td width="25%" class="tc">数量</td>
+                    <td width="25%"  class="tc">小计</td>
+                </tr>
+                <tr class="shopproductlist">
+                    <td width="50%" class="tc"><a href="#">商品名称商品名称</a></td>
+                    <td width="25%" class="tc">3</td>
+                    <td width="25%"  class="tc">500000</td>
+                </tr>
+                <tr class="shopproductlist">
+                    <td width="50%" class="tc"><a href="#">商品名称商品名称商品名称商品名称</a></td>
+                    <td width="25%" class="tc">3</td>
+                    <td width="25%"  class="tc">500000</td>
+                </tr>
+           </table>
+         </div>
+      
+         <div class="shopslist pb15 mb50">
+           <h4 class="add_title pb10 pt15">给卖家留言</h4>
+           <textarea name="" rows="3"></textarea>
+         </div>
+      
+
+</section>
+
+ <section class="onthebottom">
+     <div class="totalprice">总价：<span class="green">￥200000</span></div>
+     <div class="jiesuanbtn" >提交订单</div>
+ </section>
+
+
+
+
+
+
+ <script src="script/libs/require.js"  data-main="script/views/enterjs/mainconfig"></script>
+</body>
+</html>

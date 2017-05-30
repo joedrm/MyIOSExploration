@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择框demo</title>
+	<script src="../static/script/libs/jquery.js"></script>
+</head>
+<body>
+<p>checkbox</p>
+
+       <input id="checkAll" type="checkbox"   />全选
+        <input name="subBox" type="checkbox" value="3" />项1
+        <input name="subBox" type="checkbox" />项2
+        <input name="subBox" type="checkbox" />项3
+        <input name="subBox" type="checkbox" />项4
+<br/>
+
+ <p>radio</p>     
+ <input type="radio" name="radio" id="radio1" value="1" />1  
+<input type="radio" name="radio" id="radio2" value="2" />2  
+<input type="radio" name="radio" id="radio3" value="3" />3  
+<input type="radio" name="radio" id="radio4" value="4" />4 
+<br/>
+
+<p>selcet</p>
+<select name="select" id="select_id" style="width: 100px;">  
+    <option value="1">11</option>  
+    <option value="2">22</option>  
+    <option value="3">33</option>  
+    <option value="4">44</option>  
+    <option value="5">55</option>  
+    <option value="6">66</option>  
+</select> 
+	
+</body>
+<script type="text/javascript" >
+        $(function() {
+
+           // $("#checkAll").on("click",function() {
+           //  console.log(this.checked);
+           //      $('input[name="subBox"]').attr("checked",this.checked); 
+           //  });
+           //  var $subBox = $("input[name='subBox']");
+           //  $subBox.on("click",function(){
+           //      $("#checkAll").attr("checked",$subBox.length == $("input[name='subBox']:checked").length ? true : false);
+           //  }); 
+
+		// var val = $("#checkAll").val();// 获取指定id的复选框的值  
+
+		// var isSelected = $("#checkAll").attr("checked");
+		//  判断id=checkAll的那个复选框是否处于选中状态，选中则isSelected=true;否则isSelected=false;  
+		// $("#checkAll").attr("checked", true);// or  
+		// $("#checkAll").attr("checked", 'checked');// 将id=checkbox_id3的那个复选框选中，即打勾  
+		// $("#checkAll").attr("checked", false);// or  
+		// $("#checkAll").attr("checked", '');// 将id=checkbox_id3的那个复选框不选中，即不打勾  
+		// $("input[name=subBox][value=3]").attr("checked", 'checked');// 将name=subBox, value=3 的那个复选框选中，即打勾  
+		// $("input[name=subBox][value=3]").attr("checked", '');// 将name=subBox, value=3 的那个复选框不选中，即不打勾  
+		 //$("input[type=checkbox][name=subBox]").get(2).checked = true;// 设置index = 2，即第三项为选中状态  
+		// $("input[type=checkbox]:checked").each(function(){ //由于复选框一般选中的是多个,所以可以循环输出选中的值  
+		//     alert($(this).val());  
+		// }); 
+		//console.dir(val);
+
+      // $("input[name=radio]:eq(0)").attr("checked",'checked'); //这样就是第一个选中咯。
+  //jquery中，radio的选中与否和checkbox是一样的。
+// $("#radio1").attr("checked","checked");
+// $("#radio1").removeAttr("checked");
+ // var aa= $("input[type='radio'][name='radio']:checked").length == 0 ? "没有任何单选框被选中" : "已经有选中";
+ // console.log(aa);
+// $('input[type="radio"][name="radio"]:checked').val(); // 获取一组radio被选中项的值  
+// $("input[type='radio'][name='radio'][value='2']").attr("checked", "checked");// 设置value = 2的一项为选中  
+// $("#radio2").attr("checked", "checked"); // 设置id=radio2的一项为选中  
+// $("input[type='radio'][name='radio']").get(1).checked = true; // 设置index = 1，即第二项为当前选中  
+// var isChecked = $("#radio2").attr("checked");// id=radio2的一项处于选中状态则isChecked = true, 否则isChecked = false;  
+// var isChecked = $("input[type='radio'][name='radio'][value='2']").attr("checked");// value=2的一项处于选中状态则isChecked = true, 否则isChecked = false;  
+
+
+
+
+ $("#select_id").change(function(){ 
+                         // 1.为Select添加事件，当选择其中一项时触发   
+ 	//console.dir(this.value);
+        //code...  
+    });  
+//     var checkValue = $("#select_id").val();                    // 2.获取Select选中项的Value  
+//     var checkText = $("#select_id :selected").text();          // 3.获取Select选中项的Text   
+   //   var checkIndex = $("#select_id").get(0).selectedIndex;      // 4.获取Select选中项的索引值,或者：$("#select_id").get(0).selectedIndex;  
+   //   console.dir(checkIndex);
+   // var maxIndex = $("#select_id :last").get(0).index;  // 5.获取Select最大的索引值,或者：$("#select_id :last").get(0).index;  
+   //  console.dir(maxIndex);
+//     /** 
+//      * jQuery设置Select的选中项 
+//      */  
+//   $("#select_id").get(0).selectedIndex = 5;                  // 1.设置Select索引值为1的项选中  
+   //  $("#select_id").val(4);                                    // 2.设置Select的Value值为4的项选中  
+//     /** 
+//      * jQuery添加/删除Select的Option项 
+//      */  
+    $("#select_id").append("<option value='新增'>新增option</option>");    // 1.为Select追加一个Option(下拉项)   
+    $("#select_id").prepend("<option value='请选择'>请选择</option>");   // 2.为Select插入一个Option(第一个位置)  
+//     $("#select_id").get(0).remove(1);                                      // 3.删除Select中索引值为1的Option(第二个)  
+//     $("#select_id :last").remove();                                        // 4.删除Select中索引值最大Option(最后一个)   
+//     $("#select_id [value='3']").remove();                                  // 5.删除Select中Value='3'的Option   
+//     $("#select_id").empty();             
+
+//    $("#select_id").find("option:selected").text(); // 获取select 选中的 text :
+
+//    $("#select_id").val(); // 获取select选中的 value:
+
+//      $("#select_id").get(0).selectedIndex; // 获取select选中的索引:
+
+//       //设置select 选中的value
+//     $("#select_id").attr("value","dddddd");
+//    $("#select_id").val("Normal");
+//     $("#select_id").get(0).value = value;
+
+//  //设置select 选中的text，通常可以在select回填中使用
+//numId=33 ;//设置text==33的选中！
+// var count=$("#select_id  option").length;
+//   for(var i=0;i<count;i++)  
+//      {           if($("#select_id").get(0).options[i].text == numId)  
+//         {  
+//             $("#select_id").get(0).options[i].selected = true;  
+//             break;  
+//         }  
+//     }
+
+
+
+
+
+
+        });
+	
+
+</script>
+
+</html>

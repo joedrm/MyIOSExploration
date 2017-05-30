@@ -1,0 +1,69 @@
+@charset "utf-8";
+.productul{
+	position: relative;
+	top:60px;
+	left:0;
+	width:99%;
+	overflow: hidden;margin:0px auto 5px auto;
+	ul{width:100%;}
+	li{min-height:125px;overflow: hidden; background-color: #fff;-webkit-box-shadow: 0 0 5px #ccc;-moz-box-shadow: 0 0 5px #ccc;box-shadow: 0 0 5px #ccc; border:1px solid #f2f2f2;margin: 10px;
+    a{
+      width:100%;display: block;overflow: hidden;
+      .triangle-topleft{
+      	width: 0; height: 0;border-top: 60px solid #1aa818; border-right: 60px solid transparent;position:relative;z-index:990;cursor: pointer;
+      }
+      .rexiao{border-top-color: #d50806;}
+      .xiangou{border-top-color: #ff7301;}
+      .zhuanshu{ border-top-color: #1aa818;}
+      .shuxing{position:relative;z-index:999;transform:rotate(-45deg);color:#fff;-ms-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); -o-transform:rotate(-45deg);font-size:14px;width:40px;height:40px;margin-top:-60px;display:block;padding-top:5px;padding-left:10px;cursor: pointer;}
+      .leftimages{width:100px;height:100px;margin-top:-35px; 
+      	img{width:100px;birder:0;}
+        canvas{width:100px;min-height:100px;background:#fff url("../images/loading.gif") center center no-repeat; background-size:15px auto; }
+
+      }
+      .productcontent{width:64%;width:calc(100% - 100px);margin-top:-40px;
+      	.ptitle{font-size:16px;color:#4a534e;font-weight: bold;display: block; font-family: "Microsoft YaHei";}
+        .pdes{font-size:13px;color:#999;margin-top:5px;display: block;}
+        .pprice{margin-top:10px;font-size:14px;color:#4a4a4a;}
+        }
+
+      }
+    }
+	}
+
+.recommendcontent{
+   width:99%; overflow: hidden;margin:5rem auto 0.5rem auto;
+   ul{
+    width:100%;
+    li{min-height:12.5rem;overflow: hidden; background-color: #fff;-webkit-box-shadow: 0 0 0.5rem #ccc;-moz-box-shadow: 0 0 0.5rem #ccc;box-shadow: 0 0 0.5rem #ccc; border:1px solid #f2f2f2;margin: 1rem;}
+    .buynumsli {min-height: 5rem;margin-top:-1rem;-moz-border-radius-bottomleft:1rem;border-bottom-left-radius:1rem;-moz-border-radius-bottomright:1rem;border-bottom-right-radius:1rem;
+      .buylabel{font-size:1.4rem;float:left;margin:1.5rem 0.2rem 0rem 1rem;font-family: "Microsoft YaHei";}
+      .buynuminput{float:left;overflow:hidden;margin:1.2rem 0 0 0.5rem;
+      }
+
+    }
+    .setyuanjiao{ -moz-border-radius-topleft:1rem;border-top-left-radius:1rem;-moz-border-radius-topright:1rem;border-top-right-radius:1rem;
+        .leftimages{width:30%;height:10rem;margin-top:0.5rem;min-width:10rem; 
+          img{width:100px;border:0;}
+          }
+        .productcontent{width:58%;margin-top:1rem;
+            .ptitle{font-size:1.6rem;color:#4a534e;font-weight: bold;display: block; font-family: "Microsoft YaHei";}
+            .pdes{font-size:1.3rem;color:#999;margin-top:0.5rem;display: block;}
+            .pprice{margin-top:1rem;font-size:1.4rem;color:#4a4a4a;}
+         }
+
+       }
+    }
+
+    .decorations{olor:#b6b6b6;overflow: hidden;background-color: #e7e7e7;-webkit-box-shadow: 0 0 0.5rem #ccc;-moz-box-shadow: 0 0 0.5rem #ccc;box-shadow: 0 0 0.5rem #ccc;border: 0.1rem solid #ccc;margin: 1rem;padding:1.5rem;-moz-border-radius: 1rem;border-radius: 1rem;margin-bottom: 5rem;
+       .dtitle{color:#939494;font-size:1.4rem;font-family: "Microsoft YaHei";font-weight:bold;margin-bottom:10px;}
+       p{text-indent: 2em;line-height:2.3rem;}
+       img{border:0;width:100%;}
+    }
+
+}
+
+.addcart{width: 100%;left: 0px;position: fixed;bottom: 0px;z-index: 10000;margin: 0 auto;display: block;
+   .addcartbtn{width:98%;background-color: #28c728;background-image: -webkit-gradient(linear,left top,left bottom,from(#18b218),to(#28c728));background-image: -webkit-linear-gradient(top,#18b218,#28c728);background-image: linear-gradient(to bottom,#18b218,#28c728);display: block;
+    text-align: center;height: 4rem;line-height: 4rem;border: 0.1rem solid #31b231;border-radius: 0.5rem;color: #fff;font-size: 1.6rem;cursor: pointer;margin:0 auto;}
+}

@@ -22,14 +22,18 @@
                       @"RAC常用类和基本使用",
                       @"RAC开发中常见用法",
                       @"RAC中常见的宏",
-                      @"RAC常见信号操作方法"
+                      @"RAC常见信号操作方法",
+                      @"组合信号实例一：combine",
+                      @"MVVM实战：登录界面"
                       ];
     
     self.vcArr = @[
                    @"BasicSimpleViewController",
                    @"CommonApplyViewController",
                    @"RACMacrosViewController",
-                   @"SignalOperateViewController"
+                   @"SignalOperateViewController",
+                   @"CombineViewController",
+                   @"RACLoginViewController"
                    ];
 }
 

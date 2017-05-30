@@ -1301,9 +1301,9 @@
 		0302A9095837E2C0F52FD78570F363CD /* NSObject+EasyCopy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+EasyCopy.m"; path = "WDYBaseProject/Classes/Category/NSObject/NSObject+EasyCopy.m"; sourceTree = "<group>"; };
 		030EA8C9793E29E04EA99C6F645E355B /* Pods-Quartz 2D实践-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Quartz 2D实践-umbrella.h"; sourceTree = "<group>"; };
 		03AC1428CA06D16AC2BE458D3633676D /* UIImage+SubImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SubImage.m"; path = "WDYBaseProject/Classes/Category/UIImage/UIImage+SubImage.m"; sourceTree = "<group>"; };
-		03B693408B264AEACA43C5B2A96659BF /* Pods_AnimationDesign______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AnimationDesign______.framework; path = "Pods-AnimationDesign(动画设计).framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B693408B264AEACA43C5B2A96659BF /* Pods_AnimationDesign______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_AnimationDesign______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC2BA61FCF5832C797971E2D0E6BC9 /* GPUImageExposureFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageExposureFilter.m; path = framework/Source/GPUImageExposureFilter.m; sourceTree = "<group>"; };
-		03D1D844A101ABD8D89A83748472266A /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GPUImage.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D1D844A101ABD8D89A83748472266A /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F828A0D895E94C73C0A241AD245F52 /* GPUImageChromaKeyFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageChromaKeyFilter.h; path = framework/Source/GPUImageChromaKeyFilter.h; sourceTree = "<group>"; };
 		0430F252C4A510EB0F1A0C2154F4CE13 /* Pods-ReactiveCocoa & MVVM-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactiveCocoa & MVVM-frameworks.sh"; sourceTree = "<group>"; };
 		0452D733022ED9FEF23492E5E4A5BFCF /* Pods-IOS核心动画高级技巧(读书笔记)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IOS核心动画高级技巧(读书笔记)-umbrella.h"; sourceTree = "<group>"; };
@@ -1347,7 +1347,7 @@
 		0C023A5E13C66474190E3734CB21783D /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
 		0CA9F8AFCC48A999B4A6C7CEFF1EF959 /* UIRefreshControl+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+RACCommandSupport.m"; path = "ReactiveCocoa/Objective-C/UIRefreshControl+RACCommandSupport.m"; sourceTree = "<group>"; };
 		0CB07D6619FC65313D3CF8D48B9214D1 /* EventLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventLogger.swift; path = ReactiveCocoa/Swift/EventLogger.swift; sourceTree = "<group>"; };
-		0CF703CC74F1BE36E215DD7ECA90F0BE /* Pods_AutoLayoutPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AutoLayoutPractice.framework; path = "Pods-AutoLayoutPractice.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CF703CC74F1BE36E215DD7ECA90F0BE /* Pods_AutoLayoutPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayoutPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D578CE1EDE601B89843F4B5D764F983 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6CAAE2E90A5DDC34DA5B093AED6ED2 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FBKVOController.m"; path = "FBKVOController/NSObject+FBKVOController.m"; sourceTree = "<group>"; };
 		0DBB2D1CA153A86EC201051FF80EE41A /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
@@ -1371,7 +1371,7 @@
 		11F7170BE86DA54CEA9E3E912A6F1B9A /* GPUImageHoughTransformLineDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageHoughTransformLineDetector.h; path = framework/Source/GPUImageHoughTransformLineDetector.h; sourceTree = "<group>"; };
 		12417E54B28034D2C65DA8723130A4C6 /* LOTGroupLayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTGroupLayerView.h; path = "lottie-ios/Classes/AnimatableLayers/LOTGroupLayerView.h"; sourceTree = "<group>"; };
 		126B99DFF86F17693E5641BCF20B940D /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		12B38CFAD4FA1275C5072374F58FD517 /* KVOController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KVOController.framework; path = KVOController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12B38CFAD4FA1275C5072374F58FD517 /* KVOController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVOController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C19DBA54FEA59C29B1819B35393B09 /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+Badge.h"; path = "WDYBaseProject/Classes/Category/UIBarButtonItem/UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
 		130B02C3BC70D0974B53E5AAD1EB384C /* UIView+Layer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Layer.h"; path = "WDYBaseProject/Classes/Category/UIView/UIView+Layer.h"; sourceTree = "<group>"; };
 		13124C77EDA5665D9DCB7A5263C578AF /* LOTAnimationTransitionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimationTransitionController.m; path = "lottie-ios/Classes/Private/LOTAnimationTransitionController.m"; sourceTree = "<group>"; };
@@ -1409,10 +1409,10 @@
 		1A11EB2899C7CEE80109A46B812C1B03 /* Pods-AutoLayoutPractice-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoLayoutPractice-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1A16669573DAC15B4B364ADC273D0F81 /* UIAlertView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+RACSignalSupport.h"; path = "ReactiveCocoa/Objective-C/UIAlertView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		1A371C60F5CB3F7BBD8FE564CFE1927A /* UIColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "WDYBaseProject/Classes/Category/UIColor/UIColor+HexString.m"; sourceTree = "<group>"; };
-		1A71ADB371B766FE013E58B6DE1B046B /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Masonry.modulemap; sourceTree = "<group>"; };
+		1A71ADB371B766FE013E58B6DE1B046B /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Masonry.modulemap; sourceTree = "<group>"; };
 		1A92E9438EC985339D199D724BE3542C /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
 		1ACDC37EA31347BD214441BB800FC742 /* UIFont+TTF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+TTF.m"; path = "WDYBaseProject/Classes/Category/UIFont/UIFont+TTF.m"; sourceTree = "<group>"; };
-		1B4817A8299F233F981CECD59D668BB0 /* Pods_Masonry__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Masonry__.framework; path = "Pods-Masonry实践.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B4817A8299F233F981CECD59D668BB0 /* Pods_Masonry__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Masonry__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDBE28352E8099EB9B24DA7C7B9D988 /* MMPlaceHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMPlaceHolder.m; path = MMPlaceHolder/MMPlaceHolder.m; sourceTree = "<group>"; };
 		1CE362F8A33E1BB4C53AA6A6168E2B15 /* GPUImage3x3TextureSamplingFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImage3x3TextureSamplingFilter.h; path = framework/Source/GPUImage3x3TextureSamplingFilter.h; sourceTree = "<group>"; };
 		1D075786E35142A0AF06C09213811593 /* NSNotificationCenter+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+RACSupport.h"; path = "ReactiveCocoa/Objective-C/NSNotificationCenter+RACSupport.h"; sourceTree = "<group>"; };
@@ -1421,9 +1421,9 @@
 		1D16BE656AA16104A1266ACC0FB37128 /* RACCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACCommand.h; path = "ReactiveCocoa/Objective-C/RACCommand.h"; sourceTree = "<group>"; };
 		1D1B8AADEF6090FC2D33D1CF0E2A6B13 /* GPUImageToneCurveFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageToneCurveFilter.h; path = framework/Source/GPUImageToneCurveFilter.h; sourceTree = "<group>"; };
 		1D779ACA945F38B5283577C1C1831FB0 /* NSString+Contains.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Contains.h"; path = "WDYBaseProject/Classes/Category/NSString/NSString+Contains.h"; sourceTree = "<group>"; };
-		1D7D39DA6F84030C4FDA645B3A6A7360 /* Pods_LearningAVFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LearningAVFoundation.framework; path = "Pods-LearningAVFoundation.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7D39DA6F84030C4FDA645B3A6A7360 /* Pods_LearningAVFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningAVFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAB4121DCB99D698B0F7FAC75DE9479 /* GPUImageChromaKeyFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageChromaKeyFilter.m; path = framework/Source/GPUImageChromaKeyFilter.m; sourceTree = "<group>"; };
-		1DB677AD6142F3E6ED4B85729776F29B /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FMDB.modulemap; sourceTree = "<group>"; };
+		1DB677AD6142F3E6ED4B85729776F29B /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FMDB.modulemap; sourceTree = "<group>"; };
 		1DD51E76AE246AA6248693A7A506069B /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		1E6493737706023603F3D6EE2875D401 /* LOTShapePath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapePath.m; path = "lottie-ios/Classes/Models/LOTShapePath.m"; sourceTree = "<group>"; };
 		1E909A850F5953D79DC112A57A9A43BA /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
@@ -1445,37 +1445,37 @@
 		2252A2053A3E926380C87F7930832BD1 /* GPUImageUnsharpMaskFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageUnsharpMaskFilter.m; path = framework/Source/GPUImageUnsharpMaskFilter.m; sourceTree = "<group>"; };
 		22808B56AB33EB367C20425559BE1856 /* GPUImageLanczosResamplingFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageLanczosResamplingFilter.h; path = framework/Source/GPUImageLanczosResamplingFilter.h; sourceTree = "<group>"; };
 		22B58C0730742AF3DED05FA302D4B783 /* RACTupleSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTupleSequence.h; path = "ReactiveCocoa/Objective-C/RACTupleSequence.h"; sourceTree = "<group>"; };
-		22FE01A6906FFEACEBE4B5539EFEE6D2 /* Pods-LearningAVFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LearningAVFoundation.modulemap"; sourceTree = "<group>"; };
-		236DD2502A36C409895E42DBDECC7A96 /* Pods_Quartz_2D__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Quartz_2D__.framework; path = "Pods-Quartz 2D实践.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FE01A6906FFEACEBE4B5539EFEE6D2 /* Pods-LearningAVFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LearningAVFoundation.modulemap"; sourceTree = "<group>"; };
+		236DD2502A36C409895E42DBDECC7A96 /* Pods_Quartz_2D__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quartz_2D__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		239A78DBD54C1F8A540691885D12C9E1 /* Atomic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = ReactiveCocoa/Swift/Atomic.swift; sourceTree = "<group>"; };
 		23A232078300E2E3E0E23D9EDD49863A /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		2471F7A674D7AD863FB232076D740F22 /* Result.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Result.modulemap; sourceTree = "<group>"; };
+		2471F7A674D7AD863FB232076D740F22 /* Result.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Result.modulemap; sourceTree = "<group>"; };
 		249B94E67A09F8553CB7F03756C9021E /* LOTAnimatablePointValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatablePointValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatablePointValue.h"; sourceTree = "<group>"; };
 		250B65D4DB897BBD9CB4CDECB1A545DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		253235EAE8C192B87A63E29B3D3054D4 /* GPUImageParallelCoordinateLineTransformFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageParallelCoordinateLineTransformFilter.h; path = framework/Source/GPUImageParallelCoordinateLineTransformFilter.h; sourceTree = "<group>"; };
 		257483A8888D42D679EF6BCF296D3997 /* LOTShapeGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeGroup.m; path = "lottie-ios/Classes/Models/LOTShapeGroup.m"; sourceTree = "<group>"; };
-		2589A2D4F1ED711CE9C77AC873A596FE /* Pods-AutoLayoutPractice.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AutoLayoutPractice.modulemap"; sourceTree = "<group>"; };
-		259A5D26CC7925C6A0107D877A763A3C /* MMPlaceHolder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MMPlaceHolder.modulemap; sourceTree = "<group>"; };
+		2589A2D4F1ED711CE9C77AC873A596FE /* Pods-AutoLayoutPractice.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AutoLayoutPractice.modulemap"; sourceTree = "<group>"; };
+		259A5D26CC7925C6A0107D877A763A3C /* MMPlaceHolder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MMPlaceHolder.modulemap; sourceTree = "<group>"; };
 		25DC613CC324C6CC636E166ABAFBE55D /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		2637DA5342E50A399A128E9FB7510C09 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		26DBF737B85A400100FCFC56C45FC15A /* Pods-AnimationDesign(动画设计).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AnimationDesign(动画设计).modulemap"; sourceTree = "<group>"; };
+		26DBF737B85A400100FCFC56C45FC15A /* Pods-AnimationDesign(动画设计).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AnimationDesign(动画设计).modulemap"; sourceTree = "<group>"; };
 		2702AC3FCE189C36349C906455040C0B /* CGGeometry+LOTAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CGGeometry+LOTAdditions.h"; path = "lottie-ios/Classes/Extensions/CGGeometry+LOTAdditions.h"; sourceTree = "<group>"; };
 		27134F162976CAF9FFA6A8A4775B551D /* GPUImageUIElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageUIElement.m; path = framework/Source/GPUImageUIElement.m; sourceTree = "<group>"; };
 		276684780FECB527AA7496D54ACF2D7B /* NSObject+KVOBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+KVOBlocks.h"; path = "WDYBaseProject/Classes/Category/NSObject/NSObject+KVOBlocks.h"; sourceTree = "<group>"; };
 		278B67368E2D9F876F2424ADAF76FCFE /* Pods-KVC&KVO实例详解-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KVC&KVO实例详解-frameworks.sh"; sourceTree = "<group>"; };
 		2852B30B88E9DB652429419F08128A71 /* UINavigationItem+Margin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationItem+Margin.m"; path = "WDYBaseProject/Classes/Category/UIBarButtonItem/UINavigationItem+Margin.m"; sourceTree = "<group>"; };
 		2899E026295C8D429E8F0837075A3DC6 /* UIButton+Block.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Block.m"; path = "WDYBaseProject/Classes/Category/UIButton/UIButton+Block.m"; sourceTree = "<group>"; };
-		28B614B6D723256E43D031D33E2AA22B /* Pods_ReactiveCocoa___MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReactiveCocoa___MVVM.framework; path = "Pods-ReactiveCocoa & MVVM.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B614B6D723256E43D031D33E2AA22B /* Pods_ReactiveCocoa___MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_ReactiveCocoa___MVVM.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C4439110D5052F23D89BF9D472F021 /* UIGestureRecognizer+ALActionBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+ALActionBlocks.h"; path = "WDYBaseProject/Classes/Category/UIControl/ALActionBlocks/UIGestureRecognizer+ALActionBlocks.h"; sourceTree = "<group>"; };
 		28E16D66F877D07EB15C82FF51F11C14 /* NSValue+Compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Compat.h"; path = "lottie-ios/Classes/MacCompatability/NSValue+Compat.h"; sourceTree = "<group>"; };
 		2926D43545FE5204A6F6B91BE28F2848 /* UIImage+Color.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "WDYBaseProject/Classes/Category/UIImage/UIImage+Color.m"; sourceTree = "<group>"; };
 		293BCE1FC162917143515DCA2EE1B22B /* BaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BaseModel.m; path = WDYBaseProject/Classes/BaseModel/BaseModel.m; sourceTree = "<group>"; };
-		294E095FD9717C8107D4C184628A4B7A /* Pods_GCD__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GCD__.framework; path = "Pods-GCD实践.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		294E095FD9717C8107D4C184628A4B7A /* Pods_GCD__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCD__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29581D1C69B2FF147F51D80D4E141B4C /* NewFeaturePagesHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NewFeaturePagesHelper.h; path = WDYBaseProject/Classes/NewFeatureComponent/NewFeaturePagesHelper.h; sourceTree = "<group>"; };
 		298B33138F9E1DABF6B68ECE782FF79F /* NSString+DictionaryValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+DictionaryValue.m"; path = "WDYBaseProject/Classes/Category/NSString/NSString+DictionaryValue.m"; sourceTree = "<group>"; };
 		29AFF09456F8158BBA640FD0697403AA /* GPUImageGaussianBlurPositionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageGaussianBlurPositionFilter.m; path = framework/Source/GPUImageGaussianBlurPositionFilter.m; sourceTree = "<group>"; };
 		29BDED007872D76A3388937C293173FD /* GPUImageLocalBinaryPatternFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageLocalBinaryPatternFilter.m; path = framework/Source/GPUImageLocalBinaryPatternFilter.m; sourceTree = "<group>"; };
-		29DB2A3C2F41CE6BB1908A7047337294 /* Pods_CALayer_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CALayer_____.framework; path = "Pods-CALayer及核心动画.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29DB2A3C2F41CE6BB1908A7047337294 /* Pods_CALayer_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_CALayer_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DC121858CE1321ED86BF928DE9E97C /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		2A2EED34A9F5F8B5D313BB34B4E0F096 /* UIImageView+ImageFitSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+ImageFitSize.h"; path = "WDYBaseProject/Classes/Category/UIImageView/UIImageView+ImageFitSize.h"; sourceTree = "<group>"; };
 		2A916BD8BFB0D78F93D7FCB23EA4A41A /* GPUImageExclusionBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageExclusionBlendFilter.h; path = framework/Source/GPUImageExclusionBlendFilter.h; sourceTree = "<group>"; };
@@ -1517,7 +1517,7 @@
 		3241F9BA51191C8037C416F618542BA4 /* GPUImageDifferenceBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageDifferenceBlendFilter.h; path = framework/Source/GPUImageDifferenceBlendFilter.h; sourceTree = "<group>"; };
 		32978989AEEBE9F1DB6120DCFBD47644 /* Pods-Quartz 2D实践-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Quartz 2D实践-resources.sh"; sourceTree = "<group>"; };
 		33E531BAF7FC4AFF027525B3BB8AE04C /* GPUImageAlphaBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageAlphaBlendFilter.m; path = framework/Source/GPUImageAlphaBlendFilter.m; sourceTree = "<group>"; };
-		342F9AC6E1813C0F86AA7E483ED9D1A0 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Result.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		342F9AC6E1813C0F86AA7E483ED9D1A0 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3485AA5899A4FB8F182450899B76896C /* GPUImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImage.h; path = framework/Source/GPUImage.h; sourceTree = "<group>"; };
 		34BD9FFA4A0B2D78705F439AA269A3FE /* GPUImageNormalBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageNormalBlendFilter.m; path = framework/Source/GPUImageNormalBlendFilter.m; sourceTree = "<group>"; };
 		34C3E297DC98A0465617A1C52B0FB9DF /* UIViewController+Current.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Current.m"; path = "WDYBaseProject/Classes/Category/UIViewController/UIViewController+Current.m"; sourceTree = "<group>"; };
@@ -1564,7 +1564,7 @@
 		3D04A437D0DC030D47B4815C4E01A256 /* GPUImagePolarPixellateFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImagePolarPixellateFilter.h; path = framework/Source/GPUImagePolarPixellateFilter.h; sourceTree = "<group>"; };
 		3D18191DBAAAF06E154EE3C16A7369CA /* NSObject+RACDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDescription.m"; path = "ReactiveCocoa/Objective-C/NSObject+RACDescription.m"; sourceTree = "<group>"; };
 		3D673EF48ED64D6A8DD270B7F4E483AF /* Pods-AnimationDesign(动画设计)-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimationDesign(动画设计)-resources.sh"; sourceTree = "<group>"; };
-		3DAB43B091CC5FA25BAAAC8F246C0F2F /* Pods_IOS______________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IOS______________.framework; path = "Pods-IOS核心动画高级技巧(读书笔记).framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAB43B091CC5FA25BAAAC8F246C0F2F /* Pods_IOS______________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_IOS______________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1C8A106537CC362D790D5C70DBBBAE /* NSUserDefaults+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+RACSupport.h"; path = "ReactiveCocoa/Objective-C/NSUserDefaults+RACSupport.h"; sourceTree = "<group>"; };
 		3E71F8807FCD58C76150C5939E47AA25 /* GPUImageErosionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageErosionFilter.h; path = framework/Source/GPUImageErosionFilter.h; sourceTree = "<group>"; };
 		3E88067E637F4B6068BB1CBB431A1E34 /* Pods-ReactiveCocoa & MVVM-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactiveCocoa & MVVM-dummy.m"; sourceTree = "<group>"; };
@@ -1573,7 +1573,7 @@
 		3F75CFF434CF0A3367A102BA9CD50DB4 /* UISlider+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISlider+RACSignalSupport.m"; path = "ReactiveCocoa/Objective-C/UISlider+RACSignalSupport.m"; sourceTree = "<group>"; };
 		3F9184EAA48ADB7113D85D39EE952997 /* NSString+NormalRegex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+NormalRegex.m"; path = "WDYBaseProject/Classes/Category/NSString/NSString+NormalRegex.m"; sourceTree = "<group>"; };
 		3F968A507CE325B8604BEE754D837741 /* UIControl+Delay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+Delay.m"; path = "WDYBaseProject/Classes/Category/UIControl/UIControl+Delay.m"; sourceTree = "<group>"; };
-		3FDE2C8559328BF23F5B26327DEDCAE3 /* GPUImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GPUImage.modulemap; sourceTree = "<group>"; };
+		3FDE2C8559328BF23F5B26327DEDCAE3 /* GPUImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GPUImage.modulemap; sourceTree = "<group>"; };
 		3FE73DAEC984B361D07805D7CA46A136 /* GPUImageRGBOpeningFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageRGBOpeningFilter.m; path = framework/Source/GPUImageRGBOpeningFilter.m; sourceTree = "<group>"; };
 		4038878F9CC2070F89A7B8376A747F6D /* GPUImageMedianFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageMedianFilter.m; path = framework/Source/GPUImageMedianFilter.m; sourceTree = "<group>"; };
 		40696DB20BF0F7F3E8167ABAFDC33876 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
@@ -1649,7 +1649,7 @@
 		4E1F9779CC825687F3582BC125CB6B0E /* NSOrderedSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSOrderedSet+RACSequenceAdditions.m"; path = "ReactiveCocoa/Objective-C/NSOrderedSet+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		4E363CA5D60EA6FCED19A3A5C3CA24BC /* UINavigationItem+Loading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+Loading.h"; path = "WDYBaseProject/Classes/Category/UIBarButtonItem/UINavigationItem+Loading.h"; sourceTree = "<group>"; };
 		4E49D1C7701539A3FA079031E47A36AD /* NSString+DictionaryValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+DictionaryValue.h"; path = "WDYBaseProject/Classes/Category/NSString/NSString+DictionaryValue.h"; sourceTree = "<group>"; };
-		4F1C079AD86C5A4EA18AB48BE2172435 /* WDYBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WDYBaseProject.framework; path = WDYBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1C079AD86C5A4EA18AB48BE2172435 /* WDYBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WDYBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1F9E129AAD1598546D789FBB1D49E6 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		4F340D4927CB1BA1E031C3647EB1FA0D /* GPUImageSaturationBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageSaturationBlendFilter.h; path = framework/Source/GPUImageSaturationBlendFilter.h; sourceTree = "<group>"; };
 		4F3A32CAEC0F1CD9E92E518EBCD29235 /* LOTShapeFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeFill.m; path = "lottie-ios/Classes/Models/LOTShapeFill.m"; sourceTree = "<group>"; };
@@ -1657,7 +1657,7 @@
 		4F7B8518C27EEA016224082EF9EBC44E /* GPUImageUnsharpMaskFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageUnsharpMaskFilter.h; path = framework/Source/GPUImageUnsharpMaskFilter.h; sourceTree = "<group>"; };
 		502ADFDAB19EC9C89413BC17A4B8D600 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5034939944E71279E5AA1F5F2CF5A5E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		503842E8B4A41BAFD1FF6160C72E04C4 /* ReactiveCocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReactiveCocoa.modulemap; sourceTree = "<group>"; };
+		503842E8B4A41BAFD1FF6160C72E04C4 /* ReactiveCocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ReactiveCocoa.modulemap; sourceTree = "<group>"; };
 		50988A8539EAC40BB41F410FA167D0CF /* NSURLConnection+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+RACSupport.h"; path = "ReactiveCocoa/Objective-C/NSURLConnection+RACSupport.h"; sourceTree = "<group>"; };
 		50C01D9AAF2DBE2B9AA528D71521F6DD /* GPUImageLightenBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageLightenBlendFilter.m; path = framework/Source/GPUImageLightenBlendFilter.m; sourceTree = "<group>"; };
 		50D9EEEA3DF97C60A75CD7DFB2741EE2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -1674,7 +1674,7 @@
 		52A913B774C91EBC02453134A1E100A4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		52E2129957E52C227504335F453E506C /* GPUImageCropFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageCropFilter.h; path = framework/Source/GPUImageCropFilter.h; sourceTree = "<group>"; };
 		52ED5839A3D9F9E116F54590C5103957 /* ModalPresentationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ModalPresentationViewController.m; path = WDYBaseProject/Classes/UIComponent/ModalPresentationViewController.m; sourceTree = "<group>"; };
-		52FCDC39D3E96847BFECEED10F4F865B /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FCDC39D3E96847BFECEED10F4F865B /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5326BB34B805339AD132AD96F6753FD9 /* UIControl+ActionBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+ActionBlock.m"; path = "WDYBaseProject/Classes/Category/UIControl/UIControl+ActionBlock.m"; sourceTree = "<group>"; };
 		533C3F0BDC6E14C944ED8D5FA211D9B1 /* GPUImageOverlayBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageOverlayBlendFilter.h; path = framework/Source/GPUImageOverlayBlendFilter.h; sourceTree = "<group>"; };
 		5344599263D0E9B0DC38ED158789CE62 /* BaseTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BaseTableViewCell.m; path = WDYBaseProject/Classes/TableViewComponent/BaseTableViewCell.m; sourceTree = "<group>"; };
@@ -1723,7 +1723,7 @@
 		5B5DBAFAA964BE418F905371D56394EC /* GPUImageGaussianBlurPositionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageGaussianBlurPositionFilter.h; path = framework/Source/GPUImageGaussianBlurPositionFilter.h; sourceTree = "<group>"; };
 		5B80BCC6AF6F1A93AD7393C7DC290D57 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BA9927960907DBDF366E75049C4C9D3 /* RACEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEvent.h; path = "ReactiveCocoa/Objective-C/RACEvent.h"; sourceTree = "<group>"; };
-		5BB3DC917D722EAAC5799550B614DE59 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB3DC917D722EAAC5799550B614DE59 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC8C85759D9DF8129CA281CCA0DFE03 /* RACStream+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACStream+Private.h"; path = "ReactiveCocoa/Objective-C/RACStream+Private.h"; sourceTree = "<group>"; };
 		5BC9529ADF5F0FBD7477E0B55128F07C /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
 		5BF18B46913B9D761A768E193C83DF1D /* Pods-GCD实践-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GCD实践-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -1742,7 +1742,7 @@
 		5ECC7FEBE23257BFA0310A8C820846C7 /* GPUImageLanczosResamplingFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageLanczosResamplingFilter.m; path = framework/Source/GPUImageLanczosResamplingFilter.m; sourceTree = "<group>"; };
 		5EE3DEFF1F0D0AF9BB2C231F898E32B3 /* Pods-AnimationDesign(动画设计)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimationDesign(动画设计)-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5F1A1B28DE0918B1138A8616A6F9BA0B /* GPUImageAlphaBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageAlphaBlendFilter.h; path = framework/Source/GPUImageAlphaBlendFilter.h; sourceTree = "<group>"; };
-		5F219ABA8033083C41C8E7179B9E598F /* KVOController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KVOController.modulemap; sourceTree = "<group>"; };
+		5F219ABA8033083C41C8E7179B9E598F /* KVOController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KVOController.modulemap; sourceTree = "<group>"; };
 		5F757127837FA50332DAE5F8FBCF5D2C /* NSURLConnection+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+RACSupport.m"; path = "ReactiveCocoa/Objective-C/NSURLConnection+RACSupport.m"; sourceTree = "<group>"; };
 		5FDEADBA1FDE73DC2B8B1FFDC1F58C25 /* ReactiveCocoa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveCocoa.xcconfig; sourceTree = "<group>"; };
 		5FE098722EFED56FFCAE23EDB9FC1724 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1767,17 +1767,17 @@
 		6292CCD76EAB9EB0BC5CF438346DCF1A /* RACDynamicSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicSequence.m; path = "ReactiveCocoa/Objective-C/RACDynamicSequence.m"; sourceTree = "<group>"; };
 		62945435547FBD9148F49BD65DC2E127 /* GPUImageHazeFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageHazeFilter.m; path = framework/Source/GPUImageHazeFilter.m; sourceTree = "<group>"; };
 		63030258DEB334BB190630D42EFF75E0 /* Pods-LearningAVFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LearningAVFoundation-dummy.m"; sourceTree = "<group>"; };
-		635B4F413F78F9275A74DB70347F25FF /* MJExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MJExtension.modulemap; sourceTree = "<group>"; };
+		635B4F413F78F9275A74DB70347F25FF /* MJExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MJExtension.modulemap; sourceTree = "<group>"; };
 		6370BFD75559B3BA27598565D348754B /* GPUImageSaturationBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageSaturationBlendFilter.m; path = framework/Source/GPUImageSaturationBlendFilter.m; sourceTree = "<group>"; };
 		638EB48C6FB48F7051B7E9F01208B9A6 /* Pods-ReactiveCocoa & MVVM-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReactiveCocoa & MVVM-umbrella.h"; sourceTree = "<group>"; };
 		63A14B43BC23F0CC3C6A8723BECBB605 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		63ADFD5126C8B27C6CDC224499C99783 /* NewFeatureHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NewFeatureHeader.h; path = WDYBaseProject/Classes/NewFeatureComponent/NewFeatureHeader.h; sourceTree = "<group>"; };
 		63B4AC716154062F26CBF7DCD0C883D9 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		63BEA560E552A6B0FDF164BE2A025590 /* UIBezierPath+Symbol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+Symbol.h"; path = "WDYBaseProject/Classes/Category/UIBezierPath/UIBezierPath+Symbol.h"; sourceTree = "<group>"; };
-		6426B87E60BED72AE036518296685397 /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJExtension.framework; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6426B87E60BED72AE036518296685397 /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643B27C4F44F83A14A2839B7DF4ACCE6 /* GPUImageSepiaFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageSepiaFilter.h; path = framework/Source/GPUImageSepiaFilter.h; sourceTree = "<group>"; };
 		6472B7D661E787992233E8AD86CE524C /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		64B3A8E080A1EDAFD14A137AFEBF873B /* WDYBaseProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WDYBaseProject.modulemap; sourceTree = "<group>"; };
+		64B3A8E080A1EDAFD14A137AFEBF873B /* WDYBaseProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WDYBaseProject.modulemap; sourceTree = "<group>"; };
 		64BED0688FE483E651DD1F4DD152DAA7 /* GPUImageStillCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageStillCamera.h; path = framework/Source/GPUImageStillCamera.h; sourceTree = "<group>"; };
 		650B21444DE8E5EC63FE59B4929A5E44 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		656E7B6ADF983B77B0459649F603990F /* UITableView+Common.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+Common.m"; path = "WDYBaseProject/Classes/Category/UITableView/UITableView+Common.m"; sourceTree = "<group>"; };
@@ -1843,13 +1843,13 @@
 		7235A31B2543535EDDE3DF89F42A8985 /* GPUImagePixellatePositionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImagePixellatePositionFilter.h; path = framework/Source/GPUImagePixellatePositionFilter.h; sourceTree = "<group>"; };
 		727428130CA5FED324C819C56AAF2274 /* MJExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJExtension-dummy.m"; sourceTree = "<group>"; };
 		72FA818FDF2F46879F31850F8A464A71 /* Pods-Masonry实践-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Masonry实践-umbrella.h"; sourceTree = "<group>"; };
-		73203498A8FCF16E143C389253DC9D2A /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73203498A8FCF16E143C389253DC9D2A /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73597E3A6139D30EFAD76F3AF663559D /* GPUImageScreenBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageScreenBlendFilter.m; path = framework/Source/GPUImageScreenBlendFilter.m; sourceTree = "<group>"; };
 		736144E25FFA6EFA6DA97BB76FD5435C /* RACDynamicPropertySuperclass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicPropertySuperclass.m; path = "ReactiveCocoa/Objective-C/RACDynamicPropertySuperclass.m"; sourceTree = "<group>"; };
 		73AC89413A083BB61A646110CDD15553 /* ADHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADHeader.h; path = WDYBaseProject/Classes/ADComponent/ADHeader.h; sourceTree = "<group>"; };
 		73E892227B33670650FE47BC93F623E2 /* TableViewHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TableViewHeader.h; path = WDYBaseProject/Classes/TableViewComponent/TableViewHeader.h; sourceTree = "<group>"; };
 		7414E62823BBF3A19605C3C52DAD1048 /* NSObject+RACKVOWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACKVOWrapper.m"; path = "ReactiveCocoa/Objective-C/NSObject+RACKVOWrapper.m"; sourceTree = "<group>"; };
-		743555783CC45C1D2244F3C3D4356CBB /* Pods-Masonry实践.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Masonry实践.modulemap"; sourceTree = "<group>"; };
+		743555783CC45C1D2244F3C3D4356CBB /* Pods-Masonry实践.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Masonry实践.modulemap"; sourceTree = "<group>"; };
 		7493F91D9930117C0D082BCA7D30D955 /* GPUImageKuwaharaRadius3Filter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageKuwaharaRadius3Filter.m; path = framework/Source/GPUImageKuwaharaRadius3Filter.m; sourceTree = "<group>"; };
 		749B41E47C194196283DB52D0448D35B /* UIApplication+KeyboardFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+KeyboardFrame.h"; path = "WDYBaseProject/Classes/Category/UIApplication/UIApplication+KeyboardFrame.h"; sourceTree = "<group>"; };
 		74E7907C3310086FF1ECAFE675F092F6 /* MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJProperty.m; path = MJExtension/MJProperty.m; sourceTree = "<group>"; };
@@ -1864,7 +1864,7 @@
 		769018F6BD93022957D7F8FC84EDCAF5 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
 		769B40C9925FD05A412154E85188315D /* NSTimer+Blocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+Blocks.h"; path = "WDYBaseProject/Classes/Category/NSTimer/NSTimer+Blocks.h"; sourceTree = "<group>"; };
 		76B7638D4BD2DED39E2BFEC175F5BEEF /* lottie-ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lottie-ios-prefix.pch"; sourceTree = "<group>"; };
-		76C81B29EE7C07B89107E9F49860CF8B /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Lottie.framework; path = "lottie-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C81B29EE7C07B89107E9F49860CF8B /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D2D1EA4EC613E78496885F272FEE69 /* LOTAnimatablePointValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatablePointValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatablePointValue.m"; sourceTree = "<group>"; };
 		770F31F2B65E2207F3323BB5826A7141 /* GPUImageColorBurnBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageColorBurnBlendFilter.m; path = framework/Source/GPUImageColorBurnBlendFilter.m; sourceTree = "<group>"; };
 		7732AB37BE2F6159C35933C9C85B910D /* UIViewController+NaviExtentions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+NaviExtentions.h"; path = "WDYBaseProject/Classes/Category/UIViewController/UIViewController+NaviExtentions.h"; sourceTree = "<group>"; };
@@ -1885,7 +1885,7 @@
 		7A67F24C02B77F28966C4E7B2C7D6662 /* GPUImageToonFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageToonFilter.h; path = framework/Source/GPUImageToonFilter.h; sourceTree = "<group>"; };
 		7A7436BDE7E0ACCDE07A4A6288925368 /* UIButton+Block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Block.h"; path = "WDYBaseProject/Classes/Category/UIButton/UIButton+Block.h"; sourceTree = "<group>"; };
 		7A889E2488559D020D1F8750FCCD7FD4 /* RACSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubject.m; path = "ReactiveCocoa/Objective-C/RACSubject.m"; sourceTree = "<group>"; };
-		7AAA43BD6390FC7894C1019282356946 /* Pods-CALayer及核心动画.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CALayer及核心动画.modulemap"; sourceTree = "<group>"; };
+		7AAA43BD6390FC7894C1019282356946 /* Pods-CALayer及核心动画.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CALayer及核心动画.modulemap"; sourceTree = "<group>"; };
 		7AB85809F8249E8FDAD4EC621C6B5C75 /* GPUImagePinchDistortionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImagePinchDistortionFilter.h; path = framework/Source/GPUImagePinchDistortionFilter.h; sourceTree = "<group>"; };
 		7AEF97C72712F4C01952BD7579D0D590 /* GPUImagePosterizeFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImagePosterizeFilter.h; path = framework/Source/GPUImagePosterizeFilter.h; sourceTree = "<group>"; };
 		7AFFFD38D84044A86E91738C04A1A2A1 /* RACCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCompoundDisposable.m; path = "ReactiveCocoa/Objective-C/RACCompoundDisposable.m"; sourceTree = "<group>"; };
@@ -1922,10 +1922,10 @@
 		80BD856936B2B13823D93803635645D5 /* RACReplaySubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACReplaySubject.h; path = "ReactiveCocoa/Objective-C/RACReplaySubject.h"; sourceTree = "<group>"; };
 		81D91F8E31CF6E943FF8165133FA1F25 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		81F6A61418AEB6F38805169564A0E2D9 /* lottie-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "lottie-ios.xcconfig"; sourceTree = "<group>"; };
-		82197EC629889E415CA5045A539872DD /* lookup_soft_elegance_1.png */ = {isa = PBXFileReference; includeInIndex = 1; name = lookup_soft_elegance_1.png; path = framework/Resources/lookup_soft_elegance_1.png; sourceTree = "<group>"; };
+		82197EC629889E415CA5045A539872DD /* lookup_soft_elegance_1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = lookup_soft_elegance_1.png; path = framework/Resources/lookup_soft_elegance_1.png; sourceTree = "<group>"; };
 		8247DFEFA97EBA966345CD339E9C4B67 /* CADisplayLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CADisplayLink.m; path = "lottie-ios/Classes/MacCompatability/CADisplayLink.m"; sourceTree = "<group>"; };
 		83058DC1EE638074DEE10E132048986E /* UIColor+Expanded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Expanded.h"; path = "lottie-ios/Classes/Extensions/UIColor+Expanded.h"; sourceTree = "<group>"; };
-		83884DCEE064C37B6B1E451821F3C9DF /* lookup.png */ = {isa = PBXFileReference; includeInIndex = 1; name = lookup.png; path = framework/Resources/lookup.png; sourceTree = "<group>"; };
+		83884DCEE064C37B6B1E451821F3C9DF /* lookup.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = lookup.png; path = framework/Resources/lookup.png; sourceTree = "<group>"; };
 		83966CFE4AF98AA665F8C2469B0A987B /* LOTShapeStroke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeStroke.m; path = "lottie-ios/Classes/Models/LOTShapeStroke.m"; sourceTree = "<group>"; };
 		83B49BE9C4F79C48DE76311F01A92A69 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+Badge.m"; path = "WDYBaseProject/Classes/Category/UIBarButtonItem/UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
 		83EC1786EC3D0EBA03516482D1B3CBE6 /* GPUImageOpeningFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageOpeningFilter.m; path = framework/Source/GPUImageOpeningFilter.m; sourceTree = "<group>"; };
@@ -1995,13 +1995,13 @@
 		912A38D02AA4B09576049C6A2B64D209 /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = ReactiveCocoa/Swift/Action.swift; sourceTree = "<group>"; };
 		913C9AC7F54528AB9DA62E328CF23EE6 /* GPUImageLookupFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageLookupFilter.h; path = framework/Source/GPUImageLookupFilter.h; sourceTree = "<group>"; };
 		9154884170E6162A8137A9493975B7D8 /* GPUImageHighPassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageHighPassFilter.h; path = framework/Source/GPUImageHighPassFilter.h; sourceTree = "<group>"; };
-		9162A4F47AEAFC7ED96A1E6EE341666F /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveCocoa.framework; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9168DF6C6A624124582CF9767A238DB9 /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACSignalProvider.d; path = "ReactiveCocoa/Objective-C/RACSignalProvider.d"; sourceTree = "<group>"; };
+		9162A4F47AEAFC7ED96A1E6EE341666F /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9168DF6C6A624124582CF9767A238DB9 /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACSignalProvider.d; path = "ReactiveCocoa/Objective-C/RACSignalProvider.d"; sourceTree = "<group>"; };
 		9177E8A1E75093516E55614EE7C55AED /* RACGroupedSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACGroupedSignal.h; path = "ReactiveCocoa/Objective-C/RACGroupedSignal.h"; sourceTree = "<group>"; };
 		91A9052B509077B56015CDA676555078 /* RACScheduler+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACScheduler+Subclass.h"; path = "ReactiveCocoa/Objective-C/RACScheduler+Subclass.h"; sourceTree = "<group>"; };
 		91B54E52305D6E79DE7F434DE2A38D0C /* NSValue+Compat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Compat.m"; path = "lottie-ios/Classes/MacCompatability/NSValue+Compat.m"; sourceTree = "<group>"; };
 		91E72986102773FB490C13CE045D0D5E /* MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJProperty.h; path = MJExtension/MJProperty.h; sourceTree = "<group>"; };
-		92171C291D29AEF7B893945443D92AA8 /* Pods-GCD实践.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GCD实践.modulemap"; sourceTree = "<group>"; };
+		92171C291D29AEF7B893945443D92AA8 /* Pods-GCD实践.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GCD实践.modulemap"; sourceTree = "<group>"; };
 		92359715242B02C0321A924906601CA2 /* GPUImageHighPassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageHighPassFilter.m; path = framework/Source/GPUImageHighPassFilter.m; sourceTree = "<group>"; };
 		92725652E9E976674B6F727E7D4AF1F8 /* NSNotificationCenter+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+RACSupport.m"; path = "ReactiveCocoa/Objective-C/NSNotificationCenter+RACSupport.m"; sourceTree = "<group>"; };
 		92C4A9F5BA7B012DE0D319A185472F95 /* GPUImageMovie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageMovie.h; path = framework/Source/GPUImageMovie.h; sourceTree = "<group>"; };
@@ -2012,7 +2012,7 @@
 		934C41247CFD883AE2C8D710AB7E1DA4 /* UITextField+Appearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Appearance.m"; path = "WDYBaseProject/Classes/Category/UITextField/UITextField+Appearance.m"; sourceTree = "<group>"; };
 		93970BD31AAC7CBA89A1AD47742C3447 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		939FAE7248D291DBAC5D9AC1076566A5 /* NSDictionary+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RACSequenceAdditions.h"; path = "ReactiveCocoa/Objective-C/NSDictionary+RACSequenceAdditions.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93CBA3FF3735C698BBEC071C6120BC12 /* Pods-ReactiveCocoa & MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactiveCocoa & MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		93E1A83CFC201D90345F4011910B65E2 /* LOTShapeLayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeLayerView.m; path = "lottie-ios/Classes/AnimatableLayers/LOTShapeLayerView.m"; sourceTree = "<group>"; };
 		93EFF53CAA6FF9FF2F5441B26D41A3D8 /* CocoaAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaAction.swift; path = ReactiveCocoa/Swift/CocoaAction.swift; sourceTree = "<group>"; };
@@ -2056,7 +2056,7 @@
 		9E4D1764835055C72EFEC9E92833275E /* Pods-AutoLayoutPractice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoLayoutPractice-umbrella.h"; sourceTree = "<group>"; };
 		9E5AA8A5CFD68FA75DBCE446CE5C50A2 /* GPUImageAverageColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageAverageColor.h; path = framework/Source/GPUImageAverageColor.h; sourceTree = "<group>"; };
 		9E5F82F4B8F0B52D67A6C1914CDC3AEC /* NSIndexSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+RACSequenceAdditions.h"; path = "ReactiveCocoa/Objective-C/NSIndexSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
-		9EB15F6C8CE1E97960FCEB522C41D8A5 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		9EB15F6C8CE1E97960FCEB522C41D8A5 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		9ECD7255ED6F148BAFBC62898C1EF21B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Result/Result.swift; sourceTree = "<group>"; };
 		9ED7EB712163DE86278D9E59FBFCFFAC /* RACUnarySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnarySequence.h; path = "ReactiveCocoa/Objective-C/RACUnarySequence.h"; sourceTree = "<group>"; };
 		9EE1DF9933051CEDFC5BCBEFD8BAA89D /* LOTMaskLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTMaskLayer.m; path = "lottie-ios/Classes/AnimatableLayers/LOTMaskLayer.m"; sourceTree = "<group>"; };
@@ -2084,7 +2084,7 @@
 		A632F71660D4FD7782EB5EB98CF5B77D /* UIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIColor.h; path = "lottie-ios/Classes/MacCompatability/UIColor.h"; sourceTree = "<group>"; };
 		A63818835C0952B9C4A0BCB4E2746BDD /* GPUImageiOSBlurFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageiOSBlurFilter.h; path = framework/Source/GPUImageiOSBlurFilter.h; sourceTree = "<group>"; };
 		A6DEBE56DEB8171AE352C28718CA8D3E /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FBKVOController.h"; path = "FBKVOController/NSObject+FBKVOController.h"; sourceTree = "<group>"; };
-		A7314E4A94D833A7628309E80D6FA019 /* Pods-IOS核心动画高级技巧(读书笔记).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-IOS核心动画高级技巧(读书笔记).modulemap"; sourceTree = "<group>"; };
+		A7314E4A94D833A7628309E80D6FA019 /* Pods-IOS核心动画高级技巧(读书笔记).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-IOS核心动画高级技巧(读书笔记).modulemap"; sourceTree = "<group>"; };
 		A79C48F46168118BAEAB27672C4D8348 /* GPUImageGrayscaleFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageGrayscaleFilter.m; path = framework/Source/GPUImageGrayscaleFilter.m; sourceTree = "<group>"; };
 		A80EF4B1A0444035052E59F03D5B2811 /* GPUImageHueFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageHueFilter.m; path = framework/Source/GPUImageHueFilter.m; sourceTree = "<group>"; };
 		A83983B05F15B69C82A4B8DFE36D880A /* LOTPlatformCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTPlatformCompat.h; path = "lottie-ios/Classes/MacCompatability/LOTPlatformCompat.h"; sourceTree = "<group>"; };
@@ -2110,7 +2110,7 @@
 		AD088D1A8EE2E27E2726E14645D372B8 /* GPUImagePixellatePositionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImagePixellatePositionFilter.m; path = framework/Source/GPUImagePixellatePositionFilter.m; sourceTree = "<group>"; };
 		AD460663F751976F5089A9C0E6FDCB0B /* RACCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCommand.m; path = "ReactiveCocoa/Objective-C/RACCommand.m"; sourceTree = "<group>"; };
 		AD4D95E314782E2186F4EFD3B5417AD3 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		AD4DA3A3B078986D101CCDE83D4D5787 /* Pods-ReactiveCocoa & MVVM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ReactiveCocoa & MVVM.modulemap"; sourceTree = "<group>"; };
+		AD4DA3A3B078986D101CCDE83D4D5787 /* Pods-ReactiveCocoa & MVVM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ReactiveCocoa & MVVM.modulemap"; sourceTree = "<group>"; };
 		AD98E89C9DE4445B107973CB1D508785 /* NSString+Contains.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Contains.m"; path = "WDYBaseProject/Classes/Category/NSString/NSString+Contains.m"; sourceTree = "<group>"; };
 		ADBB98D1A466B5883D68EBEA3D50ADC5 /* UIImageView+FaceAwareFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+FaceAwareFill.m"; path = "WDYBaseProject/Classes/Category/UIImageView/UIImageView+FaceAwareFill.m"; sourceTree = "<group>"; };
 		ADE5D30C867CBC9A3E2C89C2D8231133 /* GPUImageThresholdSketchFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageThresholdSketchFilter.m; path = framework/Source/GPUImageThresholdSketchFilter.m; sourceTree = "<group>"; };
@@ -2182,7 +2182,7 @@
 		BCC01AD0E82735E303576CA424A3B4AC /* RACChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACChannel.m; path = "ReactiveCocoa/Objective-C/RACChannel.m"; sourceTree = "<group>"; };
 		BCE5E9242CFB0EDC9A89D8E82D5C27B7 /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF2EC79FDC0AA36B8328CC4166A8099 /* LOTShapeRectangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeRectangle.h; path = "lottie-ios/Classes/Models/LOTShapeRectangle.h"; sourceTree = "<group>"; };
-		BCFCE8DE37558E6144F225A2FC98D860 /* lookup_miss_etikate.png */ = {isa = PBXFileReference; includeInIndex = 1; name = lookup_miss_etikate.png; path = framework/Resources/lookup_miss_etikate.png; sourceTree = "<group>"; };
+		BCFCE8DE37558E6144F225A2FC98D860 /* lookup_miss_etikate.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = lookup_miss_etikate.png; path = framework/Resources/lookup_miss_etikate.png; sourceTree = "<group>"; };
 		BD564A7B4C9AEEB758A4EE0F27C81223 /* GPUImageEmbossFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageEmbossFilter.m; path = framework/Source/GPUImageEmbossFilter.m; sourceTree = "<group>"; };
 		BD8C2AC468E0BEA833547B41BFB6D0BF /* UINavigationItem+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+Addition.h"; path = "WDYBaseProject/Classes/Category/UIBarButtonItem/UINavigationItem+Addition.h"; sourceTree = "<group>"; };
 		BDB2F70293AA0B9C950BD5888DB1AE3F /* GPUImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GPUImage.xcconfig; sourceTree = "<group>"; };
@@ -2209,7 +2209,7 @@
 		C237771E7617DC8E780852ABAE17681C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		C242BA13976B7125401A272A720114BC /* NSDictionary+URL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+URL.h"; path = "WDYBaseProject/Classes/Category/NSDictionary/NSDictionary+URL.h"; sourceTree = "<group>"; };
 		C24FCF5134A61FA0A26303554419DC38 /* GPUImageGaussianBlurFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageGaussianBlurFilter.m; path = framework/Source/GPUImageGaussianBlurFilter.m; sourceTree = "<group>"; };
-		C273B5FCAE97B0D622E5C752AA9E8F3A /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C273B5FCAE97B0D622E5C752AA9E8F3A /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2AF4B4B8CF1E199C371C0B51E3013A3 /* GPUImageVideoCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageVideoCamera.h; path = framework/Source/GPUImageVideoCamera.h; sourceTree = "<group>"; };
 		C3156ECEFD3F0C0F504E4A4F3A8C3248 /* GPUImageColorMatrixFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageColorMatrixFilter.m; path = framework/Source/GPUImageColorMatrixFilter.m; sourceTree = "<group>"; };
 		C34CBBB5B0030CCC1C3373F9DF1F424D /* GPUImageColorMatrixFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageColorMatrixFilter.h; path = framework/Source/GPUImageColorMatrixFilter.h; sourceTree = "<group>"; };
@@ -2220,7 +2220,7 @@
 		C48D1AB6FE4F8D4F8F4A198B423774F0 /* JRSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = WDYBaseProject/Classes/Category/SafeCategory/JRSwizzle.m; sourceTree = "<group>"; };
 		C4CC950EDF8DF5FFE77FDA9C295D5C63 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = ReactiveCocoa/Swift/Property.swift; sourceTree = "<group>"; };
 		C52F892C7B5FF8EC523461F3FB350FB3 /* GPUImageLineGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageLineGenerator.m; path = framework/Source/GPUImageLineGenerator.m; sourceTree = "<group>"; };
-		C547237E087E2E059FE056EF30BC270B /* Pods_KVC_KVO____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KVC_KVO____.framework; path = "Pods-KVC&KVO实例详解.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C547237E087E2E059FE056EF30BC270B /* Pods_KVC_KVO____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_KVC_KVO____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59EBB6E9DCAC12B297C9CACB212161A /* GPUImageGammaFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageGammaFilter.m; path = framework/Source/GPUImageGammaFilter.m; sourceTree = "<group>"; };
 		C62BC17FC7922A00D5C64CFE92CBAE86 /* GPUImageColorInvertFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageColorInvertFilter.h; path = framework/Source/GPUImageColorInvertFilter.h; sourceTree = "<group>"; };
 		C6BB022176456F7E8F5F7BD1DD31D127 /* RACDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDelegateProxy.m; path = "ReactiveCocoa/Objective-C/RACDelegateProxy.m"; sourceTree = "<group>"; };
@@ -2246,10 +2246,10 @@
 		C9DA43A90804A6687277609F7CE5D916 /* GPUImageHistogramEqualizationFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageHistogramEqualizationFilter.h; path = framework/Source/GPUImageHistogramEqualizationFilter.h; sourceTree = "<group>"; };
 		C9EE1656B979B071DA46F84A374EB23A /* UITableViewHeaderFooterView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewHeaderFooterView+RACSignalSupport.h"; path = "ReactiveCocoa/Objective-C/UITableViewHeaderFooterView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		CA0E93BF6B34640AAFB407B5C00BDF30 /* Pods-Quartz 2D实践-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Quartz 2D实践-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CA7002707BE47338567C3944C024B53A /* MMPlaceHolder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMPlaceHolder.framework; path = MMPlaceHolder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7002707BE47338567C3944C024B53A /* MMPlaceHolder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMPlaceHolder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADA4C3AB5F4973A1F52AE4E636DBE8A /* NSEnumerator+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEnumerator+RACSequenceAdditions.h"; path = "ReactiveCocoa/Objective-C/NSEnumerator+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		CAEF5570657BE1DE1D6F8302B1285656 /* RACArraySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACArraySequence.m; path = "ReactiveCocoa/Objective-C/RACArraySequence.m"; sourceTree = "<group>"; };
-		CAF019EC72632F2CF8277B6E25BEA28E /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDWebImage.modulemap; sourceTree = "<group>"; };
+		CAF019EC72632F2CF8277B6E25BEA28E /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SDWebImage.modulemap; sourceTree = "<group>"; };
 		CB01D6CBF31B93FA1327689EECA218FE /* GPUImageSoftEleganceFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageSoftEleganceFilter.m; path = framework/Source/GPUImageSoftEleganceFilter.m; sourceTree = "<group>"; };
 		CBF5C52C68ECD1D4C7BA4DCD994ABA54 /* UIFont+TTF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+TTF.h"; path = "WDYBaseProject/Classes/Category/UIFont/UIFont+TTF.h"; sourceTree = "<group>"; };
 		CC0AD9F349036BFC93976A54D0D58E8C /* TipsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TipsView.m; path = WDYBaseProject/Classes/Toast/TipsView.m; sourceTree = "<group>"; };
@@ -2257,7 +2257,7 @@
 		CCC719A72A655FA715412CFE66D5BA82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD0920D5A14797C78F3FBD3C10F62AA3 /* UIBezierPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIBezierPath.m; path = "lottie-ios/Classes/MacCompatability/UIBezierPath.m"; sourceTree = "<group>"; };
 		CD81DB3999F78305D57BDC9EE95EC586 /* RACSubscriber+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSubscriber+Private.h"; path = "ReactiveCocoa/Objective-C/RACSubscriber+Private.h"; sourceTree = "<group>"; };
-		CD94B903ADEAF79FB6F773D043EFF5B7 /* Pods-KVC&KVO实例详解.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KVC&KVO实例详解.modulemap"; sourceTree = "<group>"; };
+		CD94B903ADEAF79FB6F773D043EFF5B7 /* Pods-KVC&KVO实例详解.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KVC&KVO实例详解.modulemap"; sourceTree = "<group>"; };
 		CDEB5C22B7904B192B9B268E90F3ADA0 /* RTRootNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RTRootNavigationController.m; path = WDYBaseProject/Classes/Navigation/RTRootNavigationController.m; sourceTree = "<group>"; };
 		CE420B6041907729D705AC832633350A /* GPUImageContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageContext.h; path = framework/Source/iOS/GPUImageContext.h; sourceTree = "<group>"; };
 		CE7B7DF8DCEC05E9290342C16744D2A1 /* UIImage+Color.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "WDYBaseProject/Classes/Category/UIImage/UIImage+Color.h"; sourceTree = "<group>"; };
@@ -2347,7 +2347,7 @@
 		E0886D59692758D0149D6D08255EACD7 /* NSString+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSupport.h"; path = "ReactiveCocoa/Objective-C/NSString+RACSupport.h"; sourceTree = "<group>"; };
 		E0EBF1F1DEA67CFD96E9B8726BF3E500 /* GPUImageDirectionalNonMaximumSuppressionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageDirectionalNonMaximumSuppressionFilter.h; path = framework/Source/GPUImageDirectionalNonMaximumSuppressionFilter.h; sourceTree = "<group>"; };
 		E11FB1AFCAC40109EF18D6F18924E521 /* UIView+Nib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Nib.m"; path = "WDYBaseProject/Classes/Category/UIView/UIView+Nib.m"; sourceTree = "<group>"; };
-		E15AB2DA58CA063794669F13E63AC2FF /* lookup_soft_elegance_2.png */ = {isa = PBXFileReference; includeInIndex = 1; name = lookup_soft_elegance_2.png; path = framework/Resources/lookup_soft_elegance_2.png; sourceTree = "<group>"; };
+		E15AB2DA58CA063794669F13E63AC2FF /* lookup_soft_elegance_2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = lookup_soft_elegance_2.png; path = framework/Resources/lookup_soft_elegance_2.png; sourceTree = "<group>"; };
 		E185E8C0D21EAB12EA8669E5D09E4DDD /* RACChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACChannel.h; path = "ReactiveCocoa/Objective-C/RACChannel.h"; sourceTree = "<group>"; };
 		E23BC469546D662C1277C2F88A4E39A2 /* BaseTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseTableView.h; path = WDYBaseProject/Classes/TableViewComponent/BaseTableView.h; sourceTree = "<group>"; };
 		E28D4CC0A06DE2EFBC1333C0DFB2EF2C /* NewFeaturePagesHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NewFeaturePagesHelper.m; path = WDYBaseProject/Classes/NewFeatureComponent/NewFeaturePagesHelper.m; sourceTree = "<group>"; };
@@ -2391,9 +2391,9 @@
 		ED49F7E24248BB6705D6F3204C44B432 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
 		ED616539BBDA18B66735E5AFDB6F3FE2 /* LOTAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAsset.m; path = "lottie-ios/Classes/Models/LOTAsset.m"; sourceTree = "<group>"; };
 		EDA7FDC7296CF90CF4ADC3E916D9D561 /* GPUImagePixellateFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImagePixellateFilter.m; path = framework/Source/GPUImagePixellateFilter.m; sourceTree = "<group>"; };
-		EDB2D12127B651E5249E4C63BD98E921 /* lookup_amatorka.png */ = {isa = PBXFileReference; includeInIndex = 1; name = lookup_amatorka.png; path = framework/Resources/lookup_amatorka.png; sourceTree = "<group>"; };
+		EDB2D12127B651E5249E4C63BD98E921 /* lookup_amatorka.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = lookup_amatorka.png; path = framework/Resources/lookup_amatorka.png; sourceTree = "<group>"; };
 		EDC30A2DA137ED789C45AA268DC9AE94 /* Pods-Quartz 2D实践.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Quartz 2D实践.release.xcconfig"; sourceTree = "<group>"; };
-		EDDE58811F721ED5F0BCE0660D751782 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACCompoundDisposableProvider.d; path = "ReactiveCocoa/Objective-C/RACCompoundDisposableProvider.d"; sourceTree = "<group>"; };
+		EDDE58811F721ED5F0BCE0660D751782 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACCompoundDisposableProvider.d; path = "ReactiveCocoa/Objective-C/RACCompoundDisposableProvider.d"; sourceTree = "<group>"; };
 		EDE8C804BE87EEF94F1B1A8800F86F5F /* GPUImageScreenBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageScreenBlendFilter.h; path = framework/Source/GPUImageScreenBlendFilter.h; sourceTree = "<group>"; };
 		EE0C0E2E7BC3874FD511A5C9352B120E /* LOTAnimatableScaleValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableScaleValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableScaleValue.m"; sourceTree = "<group>"; };
 		EE0D5A25D18074924840B17F55BB1123 /* RACSubscriptionScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptionScheduler.h; path = "ReactiveCocoa/Objective-C/RACSubscriptionScheduler.h"; sourceTree = "<group>"; };
@@ -2446,7 +2446,7 @@
 		F575E7CCBFC03C3C648EB76E5F707860 /* UIView+Find.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Find.m"; path = "WDYBaseProject/Classes/Category/UIView/UIView+Find.m"; sourceTree = "<group>"; };
 		F5F4E7182348B39AA8D6B44B0889E853 /* GPUImageFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageFilter.m; path = framework/Source/GPUImageFilter.m; sourceTree = "<group>"; };
 		F616B475959080A74EA5F214F974DD05 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
-		F6293EAA308A04544D45E5AE40CF1F11 /* lottie-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "lottie-ios.modulemap"; sourceTree = "<group>"; };
+		F6293EAA308A04544D45E5AE40CF1F11 /* lottie-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "lottie-ios.modulemap"; sourceTree = "<group>"; };
 		F63B33B9A034A2B99D638638D80BA278 /* LOTAnimatableLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableLayer.m; path = "lottie-ios/Classes/AnimatableLayers/LOTAnimatableLayer.m"; sourceTree = "<group>"; };
 		F6900071AA0917CBBEF2CD0D5D289693 /* GPUImageRawDataInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageRawDataInput.h; path = framework/Source/GPUImageRawDataInput.h; sourceTree = "<group>"; };
 		F6A2008285A30BA287402B7C654EF705 /* RACSignalSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSignalSequence.h; path = "ReactiveCocoa/Objective-C/RACSignalSequence.h"; sourceTree = "<group>"; };
@@ -2471,7 +2471,7 @@
 		FB73359BB9F0026B4FB56ADB5EC88230 /* RACTestScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTestScheduler.h; path = "ReactiveCocoa/Objective-C/RACTestScheduler.h"; sourceTree = "<group>"; };
 		FB95B9831C214A8E641DA39A95D65B43 /* AppCommonHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppCommonHelper.h; path = WDYBaseProject/Classes/Utils/AppCommonHelper.h; sourceTree = "<group>"; };
 		FBD5A30D8D989D0EC786589371F87574 /* RACSubscriptingAssignmentTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptingAssignmentTrampoline.h; path = "ReactiveCocoa/Objective-C/RACSubscriptingAssignmentTrampoline.h"; sourceTree = "<group>"; };
-		FBDC1EE038E323B2F83584BAB84D4416 /* Pods-Quartz 2D实践.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Quartz 2D实践.modulemap"; sourceTree = "<group>"; };
+		FBDC1EE038E323B2F83584BAB84D4416 /* Pods-Quartz 2D实践.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Quartz 2D实践.modulemap"; sourceTree = "<group>"; };
 		FC16A73EAA67B6EF048E252CC4915AE1 /* GPUImageMultiplyBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageMultiplyBlendFilter.h; path = framework/Source/GPUImageMultiplyBlendFilter.h; sourceTree = "<group>"; };
 		FC221419A046FAB33695ED8825F6D649 /* LOTAnimatableShapeValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableShapeValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableShapeValue.m"; sourceTree = "<group>"; };
 		FC6ED9D8A3CC5B58337CAF520710CF1F /* UIScrollView+Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+Common.h"; path = "WDYBaseProject/Classes/Category/UIScrollView/UIScrollView+Common.h"; sourceTree = "<group>"; };
@@ -2899,7 +2899,6 @@
 				8D25A3FDDECD5D9627134E5DEF357539 /* UITextView+RACSignalSupport.m */,
 				29B783D30B30032273A0DF44337ED9DD /* Support Files */,
 			);
-			name = ReactiveCocoa;
 			path = ReactiveCocoa;
 			sourceTree = "<group>";
 		};
@@ -2992,7 +2991,6 @@
 				C83E9F34D017110AC1DD89EF0803C3F7 /* ResultType.swift */,
 				66952B86E670204A21051D27F12A3810 /* Support Files */,
 			);
-			name = Result;
 			path = Result;
 			sourceTree = "<group>";
 		};
@@ -3072,7 +3070,6 @@
 				440C233330D4148BF865CC36CBAA5AB5 /* ViewController+MASAdditions.m */,
 				C831CB4F7453ABD80ABD01C70E4693C8 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -3196,7 +3193,6 @@
 				3AE3514416391EF0DC310D11F83CD4B0 /* UIColor+Expanded.m */,
 				FDD19F9D39E8093354B9799D9018F1EE /* Support Files */,
 			);
-			name = "lottie-ios";
 			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
@@ -3224,7 +3220,6 @@
 				0D6CAAE2E90A5DDC34DA5B093AED6ED2 /* NSObject+FBKVOController.m */,
 				2447C95F419697402563ED3DDF167C8D /* Support Files */,
 			);
-			name = KVOController;
 			path = KVOController;
 			sourceTree = "<group>";
 		};
@@ -3254,7 +3249,6 @@
 				1C7C40005683C0C5F9A0590241D228D7 /* UIComponent */,
 				D6BB9AEF05388CEA6F74B649316F743B /* Utils */,
 			);
-			name = WDYBaseProject;
 			path = WDYBaseProject;
 			sourceTree = "<group>";
 		};
@@ -3721,7 +3715,6 @@
 				C5236AC1312337DD62D4B368B676A893 /* Resources */,
 				C06C0D5153E83E0598C21693CD3CFC9B /* Support Files */,
 			);
-			name = GPUImage;
 			path = GPUImage;
 			sourceTree = "<group>";
 		};
@@ -3807,7 +3800,6 @@
 				7A75D883FA21BCD587BC704DE5587F13 /* standard */,
 				993FA47F7B0BA256E1A574D9A4E123AD /* Support Files */,
 			);
-			name = FMDB;
 			path = FMDB;
 			sourceTree = "<group>";
 		};
@@ -4089,7 +4081,6 @@
 				C4FC2D2DE60C1A0EF030D86F52D0C552 /* Support Files */,
 				5667A52AE3BF94D6B43BBFD07DBB8857 /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -4119,7 +4110,6 @@
 				EFF453CEC4ACFDB73CA8813D960E4525 /* NSString+MJExtension.m */,
 				9D1E312B80D966B5568B21881F4C0B74 /* Support Files */,
 			);
-			name = MJExtension;
 			path = MJExtension;
 			sourceTree = "<group>";
 		};
@@ -4148,7 +4138,6 @@
 				1BDBE28352E8099EB9B24DA7C7B9D988 /* MMPlaceHolder.m */,
 				810DAB3017E3331CC3493357D7C01F19 /* Support Files */,
 			);
-			name = MMPlaceHolder;
 			path = MMPlaceHolder;
 			sourceTree = "<group>";
 		};
@@ -4324,7 +4313,6 @@
 				D36343DF69F65E5DA9F779A7B075BC9C /* Core */,
 				28439FEE2DC2A7CEC2AAADBB95CE4E00 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -6538,7 +6526,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CALayer_____;
+				PRODUCT_NAME = "Pods_CALayer_____";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6573,7 +6561,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AnimationDesign______;
+				PRODUCT_NAME = "Pods_AnimationDesign______";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6780,7 +6768,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KVC_KVO____;
+				PRODUCT_NAME = "Pods_KVC_KVO____";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7067,6 +7055,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -7134,7 +7123,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ReactiveCocoa___MVVM;
+				PRODUCT_NAME = "Pods_ReactiveCocoa___MVVM";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -7200,6 +7189,7 @@
 				PRODUCT_NAME = Result;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -7329,7 +7319,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AnimationDesign______;
+				PRODUCT_NAME = "Pods_AnimationDesign______";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7364,7 +7354,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_IOS______________;
+				PRODUCT_NAME = "Pods_IOS______________";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7398,6 +7388,7 @@
 				PRODUCT_NAME = ReactiveCocoa;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -7496,6 +7487,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -7528,7 +7520,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_IOS______________;
+				PRODUCT_NAME = "Pods_IOS______________";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7594,7 +7586,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CALayer_____;
+				PRODUCT_NAME = "Pods_CALayer_____";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7629,7 +7621,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KVC_KVO____;
+				PRODUCT_NAME = "Pods_KVC_KVO____";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7788,7 +7780,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ReactiveCocoa___MVVM;
+				PRODUCT_NAME = "Pods_ReactiveCocoa___MVVM";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-touch-fullscreen" content="yes"  />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no">
+        <title>移动端前端实训</title>
+        <link rel="apple-touch-icon-precomposed" href="images/haoroomsicon.jpg" />
+        <link rel="apple-touch-startup-image" href="images/haoroomsicon.jpg" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+    </head>
+    <body>
+        <nav id="nav">
+            <ul class="navlist">
+                <li id="n_0"><a href="index.html"><span></span></a></li>
+                <li id="n_1"><a href="cart.html" ><span></span></a><div class="cartnums" style="display:none">0</div></li>
+                <li id="n_2"><a href="#" ><span></span></a></li>
+                <li id="n_3"><a href="productlist.html" ><span class="active"></></span></a></li>
+            </ul>
+        </nav>
+        <section class="recommendcontent">
+            <ul>
+                <li class="setyuanjiao">
+                    <a class="leftimages fl mt15" id="productimg"><img src="images/product/product1.png" /></a>
+                    <a  class="productcontent fl mt15">
+                        <p class="ptitle pl10">广联达变更算量</p>
+                        <p class="pdes pl10">简介这里简介这里简介这里简介这里简介这里简介这里简介这里简介介这里简介</p>
+                        <p class="pprice pl10">价格：<span class="green">￥5000</span></p>
+                    </a>
+                </li>
+                <li class="buynumsli">
+                    <div class="buylabel">购买数量：</div>
+                    <div class="buynuminput">
+                        <div class="reduce"  id="reducenums"></div>
+                        <input type="number" id="cartnumbers" class="itnums" name="qty_item_1"  value="1"   />
+                        <div class="add"  id="addnums"></div>
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="decorations">
+                <div class="dtitle">详细说明</div>
+                <p>详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明</p>
+                <img src="images/product/product1.png" />
+                
+            </div>
+        </section>
+        <section class="addcart">
+            <input type="button" class="addcartbtn" value="加入购物车" />
+        </section>
+        <script src="script/libs/require.js"  data-main="script/views/enterjs/mainconfig"></script>
+    </body>
+</html>

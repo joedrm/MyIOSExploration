@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes"  />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no">
+    <title>移动端前端实训</title>
+    <link rel="apple-touch-icon-precomposed" href="images/haoroomsicon.jpg" />
+    <link rel="apple-touch-startup-image" href="images/haoroomsicon.jpg" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+  </head>
+  <body>
+    <nav id="nav">
+      <ul class="navlist">
+        <li id="n_0"><a href="index.html"><span></span></a></li>
+        <li id="n_1"><a href="cart.html" ><span></span></a><div class="cartnums" style="display:none">0</div></li>
+        <li id="n_2"><a href="#" ><span></span></a></li>
+        <li id="n_3"><a href="productlist.html" ><span class="active"></></span></a></li>
+      </ul>
+    </nav>
+    <section class="myorder">
+      
+      <div class="topcenter">
+        <div class="userhead"> <img id="myhead" src="images/morenhead.jpg"  /> </div>
+        <div class="nipic"><p>龙哥</p><p class="dingd">我的订单</p></div>
+      </div>
+      <ul class="buyer_stat">
+        <li class="btn_1  "><a href="orderstage1.html">待付款</a><span>待付款</span></li>
+        <li class="btn_2 "><a href="orderstage2.html">待发货</a><span>待发货</span></li>
+        <li class="btn_3 "><a href="orderstage3.html">待收货</a><span>待收货</span></li>
+        <li class="btn_4"><a href="orderstage4.html">已完成</a><span>已完成</span></li>
+      </ul>
+      
+      <div class="particular_wrap">
+        <dl class="order_detail">
+          <dt class="til_font">订单详情</dt>
+          <dt>订单状态</dt>
+          <dd>待发货 </dd>
+          <dt>订单号</dt>
+          <dd>201406091022451527</dd>
+          <dt>下单时间</dt>
+          <dd>2014-06-09 10:22:45</dd>
+        </dl>
+        
+        <div class="ware_line">
+          <div class="ware">
+            <div class="ware_list">
+              <div class="ware_pic"><img src="images/product/product1.png" height="50" width="50"></div>
+              <div class="ware_text">
+                <div class="ware_text1">
+                  <a href="#">广联达算量算计</a><br>
+                  <span></span>
+                </div>
+                <div class="ware_text2">
+                  <span>数量:<strong>3</strong></span>
+                  <span>价格:<strong>¥100.00</strong></span>
+                </div>
+              </div>
+            </div><div class="ware_list">
+            <div class="ware_pic"><img src="images/product/product1.png" height="50" width="50"></div>
+            <div class="ware_text">
+              <div class="ware_text1">
+                <a href="#">广联达计价软件</a><br>
+                <span></span>
+              </div>
+              <div class="ware_text2">
+                <span>数量:<strong>1</strong></span>
+                <span>价格:<strong>¥200.00</strong></span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="transportation">
+            总价:<b>¥500.00</b>
+          </div>
+          
+          <ul class="fapiao">
+            <li>发票类型：普通发票</li>
+            <li>发票抬头： 上海兴安得力软件有限公司</li>
+          </ul>
+          
+          <ul class="order_detail_list">
+            <li>支付方式:货到付款</li>
+            <li>下单时间:2014-06-09 10:22:48</li>
+          </ul>
+          
+        </div>
+      </div>
+      <dl>
+        <dt class="til_font">物流信息</dt>
+        <dt>收货地址</dt>
+        <dd>weqweqwe, &nbsp;15788888888, 天津市市辖县静海县qwe</dd>
+      </dl>
+    </div>
+    
+    
+    
+  </section>
+  <script src="script/libs/require.js"  data-main="script/views/enterjs/mainconfig"></script>
+</body>
+</html>

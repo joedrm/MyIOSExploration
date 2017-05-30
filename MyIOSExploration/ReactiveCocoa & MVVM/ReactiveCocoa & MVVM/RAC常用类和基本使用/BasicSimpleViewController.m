@@ -26,6 +26,7 @@
 
 #pragma mark - RACSingle 使用步骤：
 - (void)test1{
+    
     // 1. 创建信号（冷信号）
     RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {  // didSubscribe
         
@@ -242,11 +243,11 @@ RACReplaySubject 可以先发送信号，再订阅信号，RACSubject 就不可�
     }];
     
     // 2 把信号转换成连接类
+    // 确定源信号的订阅者，即 RACSubject
     // 使用注意:RACMulticastConnection通过RACSignal的-publish或者-muticast:方法创建.
     RACMulticastConnection* connection = [signal publish];
     
     // 3 订阅连接类中的信号
-    // 确定源信号的订阅者，即 RACSubject
     // 注意：订阅信号，也不能激活信号，只是保存订阅者到数组，必须通过连接,当调用连接，就会一次性调用所有订阅者的sendNext:
     [connection.signal subscribeNext:^(id x) {
         NSLog(@"订阅者1：%@",x);
@@ -295,42 +296,42 @@ RACReplaySubject 可以先发送信号，再订阅信号，RACSubject 就不可�
     
     // 拿到执行命令中产生的数据
     
-    // 2 执行命令
-//    RACSignal* signal = [command execute:@1];
-    
-    // 第一种方式
+// 第一种方式
+//    RACSignal* signal = [command execute:@1];// 2 执行命令
 //    [signal subscribeNext:^(id x) {
 //        NSLog(@"%@",x);
 //    }];
     
+    
     // 第二种方式
+    // executionSignals 信号源，信号中的信号，信号发送的数据就是一个信号
+    // 注意：必须在执行命令前订阅
 //    [command.executionSignals subscribeNext:^(id x) {
 //        
 //        NSLog(@"%@",x);
-//        
 //        RACSignal* signal = (RACSignal *)x;
 //        [signal subscribeNext:^(id x) {
 //            NSLog(@"%@",x); // 这里才是真正的拿到的数据
 //        }];
 //    }];
     
-    // // 5.监听命令是否执行完毕,默认会来一次，可以直接跳过，skip表示跳过第一次信号。
-    [[command.executing skip:1] subscribeNext:^(id x) {
-        if ([x boolValue]) {
-            // 正在执行
-            NSLog(@"正在执行");
-        }else{
-            // 执行完成
-            NSLog(@"执行完成");
-        }
-    }];
+    // 5.executing 监听命令是否执行完毕,默认会来一次，可以直接跳过，skip表示跳过第一次信号。
+//    [[command.executing skip:1] subscribeNext:^(id x) {
+//        if ([x boolValue]) {
+//            // 正在执行
+//            NSLog(@"正在执行");
+//        }else{
+//            // 执行完成
+//            NSLog(@"执行完成");
+//        }
+//    }];
 
-    // 第三种写法
-    // switchToLatest:用于signal of signals，获取signal of signals发出的最新信号,也就是可以直接拿到RACCommand中的信号
+    // 第三种写法，开发中最常用
+    // switchToLatest 获取最新发送的信号，只能用于信号中的信号
+    // switchToLatest: 用于signal of signals，获取 signal of signals 发出的最新信号,也就是可以直接拿到 RACCommand 中的信号
     [command.executionSignals.switchToLatest subscribeNext:^(id x) {
         NSLog(@"%@",x);
     }];
-    
     [command execute:@1];
     
     // 二、RACCommand使用注意:
@@ -351,6 +352,27 @@ RACReplaySubject 可以先发送信号，再订阅信号，RACSubject 就不可�
     // 六、使用场景,监听按钮点击，网络请求
 }
 
+
+// 模拟使用 switchToLatest
+- (void)test10{
+
+    RACSubject* signalOfSignals = [RACSubject subject];
+    RACSubject* signalA = [RACSubject subject];
+//    RACSubject* signalB = [RACSubject subject];
+    
+    // 获取信号中的最新信号
+    [signalOfSignals.switchToLatest subscribeNext:^(id x) {
+        NSLog(@"订阅到了数据：%@", x);
+    }];
+    
+    [signalOfSignals sendNext:signalA];
+    [signalA sendNext:@1];
+    
+    /* 打印结果：
+     
+     2017-05-30 15:54:13.589 ReactiveCocoa & MVVM[40404:1908681] 订阅到了数据：1
+     */
+}
 
 @end
 
