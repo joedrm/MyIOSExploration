@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="example1"></div>
+<div id="example2"></div>
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>
+
+<script type="text/babel">
+
+    // 方式一: 工厂方法(无状态)
+    function MyComponent1() {
+        return <h2>工厂方法创建的标签</h2>
+    }
+
+    // 方式二: ES6 语法创建
+    class MyComponent2 extends React.Component{
+        render(){
+            return <h2>ES6语法创建的组件标签</h2>
+        }
+    }
+
+    ReactDOM.render(<MyComponent1/>, document.getElementById('example1'));
+    ReactDOM.render(<MyComponent2/>, document.getElementById('example2'));
+
+</script>
+
+</body>
+</html>

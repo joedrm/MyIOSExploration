@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="example"></div>
+<div id="example2"></div>
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>
+
+
+<script type="text/babel">
+
+    var names = ['Jack', 'Sony', 'Jim'];
+//    let vDom = <ul>{names.map(function (name, index) {
+//        return <li>{name}</li>;
+//    })}</ul>;
+
+    let vDom = (
+            <ul>
+            {
+                names.map(function (name, index) {
+                    return <li>{name}</li>;
+                })
+            }
+            </ul>
+    );
+    ReactDOM.render(vDom, document.getElementById("example"));
+
+    // 使用箭头函数
+    ReactDOM.render(<ul>{names.map(name => <li>{name}</li>)}</ul>,
+            document.getElementById('example2'));
+</script>
+</body>
+</html>

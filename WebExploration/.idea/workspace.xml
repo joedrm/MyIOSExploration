@@ -2,255 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/images/arrow1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/images/arrow2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/images/error.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/images/header-bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/images/navbg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/images/onLoad.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/images/right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/images/totop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/btn_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/btn_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/checkbox.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/input/input_left-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/input/input_left-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/input/input_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/input/input_right-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/input/input_right-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/input/input_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/input/input_text_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/input/input_text_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/radio.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/select_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/select_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-bl-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-bl-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-bl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-bm-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-bm-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-bm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-br-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-br-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-br.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-ml-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-ml-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-ml.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-mm-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-mm-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-mm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-mr-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-mr-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-mr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-tl-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-tl-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-tl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-tm-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-tm-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-tm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-tr-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-tr-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/notneeded/textarea-tr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea-mm-focus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea-mm-hover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea-mm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea_bl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea_bm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea_br.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea_ml.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea_mr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea_tl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea_tm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/img/textarea/textarea_tr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/XPButtonUploadText_61x22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/swfupload.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/swfuploadbutton.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/haorooms.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/.sass-cache/8dcb7bca04207b66ad9a2cc4fdb504e95bae1a72/cartorder.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/.sass-cache/8dcb7bca04207b66ad9a2cc4fdb504e95bae1a72/content.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/.sass-cache/8dcb7bca04207b66ad9a2cc4fdb504e95bae1a72/usercenter.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/.sass-cache/97c16b0c546c5fded333effb39622979b7de53cf/basis.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/.sass-cache/97c16b0c546c5fded333effb39622979b7de53cf/test.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/.sass-cache/d9b4698ffad91d6e0152f6fb46943873b4a51d35/style.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/add.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/cart_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/del.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/goforword.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/haoroomsicon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/head_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/huodao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/morenhead.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/order_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/product/product1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/reduce.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/return.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/slide1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/slide2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/sliderbanner/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/sliderbanner/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/sliderbanner/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/sliderbanner/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/uc_logging_password.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/images/warn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/.sass-cache/8dcb7bca04207b66ad9a2cc4fdb504e95bae1a72/cartorder.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/.sass-cache/8dcb7bca04207b66ad9a2cc4fdb504e95bae1a72/content.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/.sass-cache/8dcb7bca04207b66ad9a2cc4fdb504e95bae1a72/usercenter.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/.sass-cache/97c16b0c546c5fded333effb39622979b7de53cf/basis.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/.sass-cache/97c16b0c546c5fded333effb39622979b7de53cf/test.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/.sass-cache/d9b4698ffad91d6e0152f6fb46943873b4a51d35/style.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/add.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/cart_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/del.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/goforword.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/haoroomsicon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/head_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/huodao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/morenhead.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/order_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/product/product1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/reduce.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/return.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/slide1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/slide2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/sliderbanner/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/sliderbanner/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/sliderbanner/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/sliderbanner/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/uc_logging_password.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/images/warn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/ajax_post.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/css/wp-syntax.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/js/Validform_v5.3.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/js/Validform_v5.3.2_min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/js/Validform_v5.3.2_ncr_min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/js/jquery-1.9.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/datePicker/datePicker-min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/datePicker/datePicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/datePicker/jquery.bgiframe.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/datePicker/jquery.datePicker-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/datePicker/jquery.datePicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/jqtransform.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/jquery.jqtransform-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/jqtransform/jquery.jqtransform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/passwordStrength/passwordStrength-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/passwordStrength/passwordStrength.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/Validform.swfupload.handler-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/Validform.swfupload.handler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/swfupload.queue-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/swfupload.queue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/swfuploadv2.2-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/swfuploadv2.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/thanks.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/plugin/swfupload/upload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo/valid.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_ajaxPost.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_andeither.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_autotip.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_btnSubmit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_callback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_datatype.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_datatype_errormsg.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_datatype_idcard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_datatype_maxmin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_eitheror.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_ignore.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_ignoreHidden.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_notable.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_postonce.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_recheck.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_regexp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_showAllError.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_tipmsg.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_username.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_normal_validformObject.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_tiptype_fixPosition.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_tiptype_onfocus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_tiptype_onfocusFadeIn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_tiptype_pop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_tiptype_sideNonePop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_tiptype_sidetip.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_tiptype_tipCustom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_usePlugin_datePickerCallback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_usePlugin_datePickerDefault.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_usePlugin_jqtransformAssign.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_usePlugin_jqtransformDefault.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_usePlugin_strengthAlways.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_usePlugin_strengthNeeded.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_usePlugin_uploadAtOnce.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/demo_usePlugin_uploadWhenValid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/document.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2/help.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2_min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/Validform_v5.3.2/Validform_v5.3.2_ncr_min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/imageTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/preventDefault.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/regExp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/select.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/stopPropagation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/demo/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/address.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/build.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/cart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/css/style.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/css/swiper.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/order_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/orderlist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/orderstage1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/orderstage2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/orderstage3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/orderstage4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/productlist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/sass/common/basis.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/sass/module/cartorder.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/sass/module/content.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/sass/module/usercenter.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/sass/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/script/libs/require.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/script/test.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/script/views/enterjs/mainconfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static-built/userinfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/address.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/cart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/css/style.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/css/swiper.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/order_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/orderlist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/orderstage1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/orderstage2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/orderstage3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/orderstage4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/productlist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/sass/common/basis.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/sass/module/cartorder.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/sass/module/content.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/sass/module/usercenter.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/sass/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/script/libs/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/script/libs/require.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/script/plugs/swiper.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/script/test.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/script/views/enterjs/mainconfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/script/views/js/commonobj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/script/views/js/diqu2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/static/userinfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/tools/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/wxshop_mzxy/tools/r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/01.helloworld.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/02.JSX的理解和使用.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/03.JSX_Demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/04.组件基础.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/js/babel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/js/react-dom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/js/react.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebExploration.iws" />
@@ -275,56 +33,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/18-link-hover/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/15-img-hover/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_p.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LESS/_p.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LESS/index.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="24.过度transition.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/24.过度transition.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="05.边框圆角.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS3/05.边框圆角.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -338,7 +46,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/JD项目/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-99">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -367,11 +75,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/wxshop_mzxy/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="react.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/React/js/react.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="01.helloworld.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/React/01.helloworld.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02.JSX的理解和使用.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/React/02.JSX的理解和使用.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03.JSX_Demo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/React/03.JSX_Demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04.组件基础.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/React/04.组件基础.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -394,10 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/14.ng-show指令.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/15.ng-checked.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/15.ng-checked指令.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/16.自定义指令.html" />
         <option value="$PROJECT_DIR$/AngularJS/01.begin/tmpls/breadcrumb.html" />
         <option value="$PROJECT_DIR$/AngularJS/01.begin/17.自定义指令2.html" />
         <option value="$PROJECT_DIR$/AngularJS/01.begin/18.自定义指令3.html" />
@@ -445,6 +199,10 @@
         <option value="$PROJECT_DIR$/Project/19.image-hover/css/normalize.css" />
         <option value="$PROJECT_DIR$/Project/19.image-hover/css/demo.css" />
         <option value="$PROJECT_DIR$/Project/19.wxshop/index.html" />
+        <option value="$PROJECT_DIR$/React/01.helloworld.html" />
+        <option value="$PROJECT_DIR$/React/02.JSX的理解和使用.html" />
+        <option value="$PROJECT_DIR$/React/03.JSX_Demo.html" />
+        <option value="$PROJECT_DIR$/React/04.组件基础.html" />
       </list>
     </option>
   </component>
@@ -454,10 +212,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="725" />
+    <option name="height" value="724" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -470,12 +227,42 @@
             <id>CSS</id>
           </State>
           <State>
+            <id>EJS</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
             <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Less</id>
+          </State>
+          <State>
+            <id>Meteor</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>Sass/SCSS</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+          <State>
+            <id>XML</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>CssInvalidFunction</id>
+            <id>TypeScriptUnresolvedVariable</id>
           </State>
         </selected-state>
       </profile-state>
@@ -531,20 +318,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebExploration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -553,7 +326,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -563,6 +336,13 @@
     <property name="editor.config.accepted" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/React" />
+      <recent name="$PROJECT_DIR$/Project" />
+      <recent name="$PROJECT_DIR$/Project/19.image-hover" />
+      <recent name="$PROJECT_DIR$/AngularJS" />
+      <recent name="$PROJECT_DIR$/模块化开发/02.sea.js模块导出成员的方式" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Project" />
       <recent name="$PROJECT_DIR$/响应式Web" />
@@ -570,28 +350,21 @@
       <recent name="$PROJECT_DIR$/模块化开发/sea.js初体验" />
       <recent name="$PROJECT_DIR$/AngularJS/01.begin/views" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Project" />
-      <recent name="$PROJECT_DIR$/Project/19.image-hover" />
-      <recent name="$PROJECT_DIR$/AngularJS" />
-      <recent name="$PROJECT_DIR$/模块化开发/02.sea.js模块导出成员的方式" />
-      <recent name="$PROJECT_DIR$/模块化开发" />
-    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.24.过度transition.html">
-    <configuration default="false" name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/响应式Web/BusinessNews-BootStrap-master/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html (4)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/19.image-hover/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html (5)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/18-link-hover/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/Project/15-img-hover/index.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.04.组件基础.html">
     <configuration default="false" name="24.过度transition.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS3/24.过度transition.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="01.helloworld.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/01.helloworld.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="02.JSX的理解和使用.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/02.JSX的理解和使用.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="03.JSX_Demo.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/03.JSX_Demo.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="04.组件基础.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/04.组件基础.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -656,19 +429,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tab栏切换实现.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (4)" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (5)" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.24.过度transition.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.24.过度transition.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.01.helloworld.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.02.JSX的理解和使用.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.03.JSX_Demo.html" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.04.组件基础.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.24.过度transition.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (5)" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (4)" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.04.组件基础.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.03.JSX_Demo.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.02.JSX的理解和使用.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.01.helloworld.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.24.过度transition.html" />
       </list>
     </recent_temporary>
   </component>
@@ -743,11 +516,12 @@
       <workItem from="1495709116163" duration="2342000" />
       <workItem from="1495940669876" duration="1383000" />
       <workItem from="1495964817476" duration="2107000" />
+      <workItem from="1496666608850" duration="4717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="457858000" />
+    <option name="totallyTimeSpent" value="462575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -759,14 +533,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="23" width="1280" height="725" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="724" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5029455" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5029455" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17377567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -824,24 +598,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AngularJS/moviecat/.gitattributes" />
-    <entry file="file://$PROJECT_DIR$/AngularJS/moviecat/.bowerrc" />
-    <entry file="file://$PROJECT_DIR$/AngularJS/moviecat/package.json" />
-    <entry file="file://$PROJECT_DIR$/AngularJS/moviecat/README.md" />
-    <entry file="file://$PROJECT_DIR$/AngularJS/Angular基础演练/bower_components/bootstrap/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularJS/豆瓣电影/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -849,11 +605,6 @@
             <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
       <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
@@ -864,6 +615,11 @@
           <second_editor>
             <js_state />
           </second_editor>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1027,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,7 +835,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/15-img-hover/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="2431">
           <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
           <folding />
         </state>
@@ -1107,17 +857,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/19.wxshop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/19.wxshop/index.html" />
     <entry file="file://$PROJECT_DIR$/CSS3/24.过度transition.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
+        <state relative-caret-position="544">
           <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
           <folding />
         </state>
@@ -1133,7 +876,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/JD项目/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1161,6 +904,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/React/babel.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/React/js/react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/React/01.helloworld.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/React/03.JSX_Demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/React/02.JSX的理解和使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/React/04.组件基础.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
