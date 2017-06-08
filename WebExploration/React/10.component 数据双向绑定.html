@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div id="box">
+
+</div>
+
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>
+
+<script type="text/babel">
+
+    class TwoWay extends React.Component{
+        constructor(props){
+            super(props);
+
+            this.state = {
+                msg:"你好吗?"
+            }
+        }
+
+        changeHandle(event){
+            let msg = event.target.value;
+            this.setState({
+                msg
+            })
+        }
+
+        render(){
+            return (
+                    <div>
+                    <input type="text" value={this.state.msg} onChange={this.changeHandle.bind(this)}/>
+                    <p>{this.state.msg}</p>
+                    </div>
+            )
+        }
+    }
+
+    ReactDOM.render(<TwoWay/>, document.getElementById("box"));
+
+</script>
+
+</body>
+</html>

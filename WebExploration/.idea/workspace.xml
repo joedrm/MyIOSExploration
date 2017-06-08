@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee06e37-a0eb-4d8a-aa41-118ee5a2e920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/01.helloworld.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/02.JSX的理解和使用.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/03.JSX_Demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/04.组件基础.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/js/babel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/js/react-dom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/React/js/react.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebExploration.iws" />
@@ -32,110 +25,7 @@
     <favorites_list name="WebExploration" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="05.边框圆角.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS3/05.边框圆角.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/JD项目/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/wxshop_mzxy/demo/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="r.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/wxshop_mzxy/tools/r.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/wxshop_mzxy/static/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="react.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/React/js/react.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01.helloworld.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/React/01.helloworld.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02.JSX的理解和使用.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/React/02.JSX的理解和使用.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="03.JSX_Demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/React/03.JSX_Demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="04.组件基础.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/React/04.组件基础.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -152,22 +42,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/tmpls/breadcrumb.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/17.自定义指令2.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/18.自定义指令3.html" />
-        <option value="$PROJECT_DIR$/AngularJS/todomvc-app-template/index.html" />
-        <option value="$PROJECT_DIR$/AngularJS/todomvc-app-template/js/app.js" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/19.过滤器.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/20.过滤器2.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/a.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/b.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/c.html" />
-        <option value="$PROJECT_DIR$/AngularJS/01.begin/21.angular路由/21.angular路由.html" />
-        <option value="$PROJECT_DIR$/AngularJS/todomvc-app/js/controllers/main.js" />
-        <option value="$PROJECT_DIR$/AngularJS/todomvc-app/js/services/main.js" />
-        <option value="$PROJECT_DIR$/AngularJS/todomvc-app/js/app.js" />
-        <option value="$PROJECT_DIR$/模块化开发/calculator.js" />
         <option value="$PROJECT_DIR$/模块化开发/01.convertor.js" />
         <option value="$PROJECT_DIR$/模块化开发/01.calculator.js" />
         <option value="$PROJECT_DIR$/JS面向对象/myscript/src/004_arrayECMA5.htm" />
@@ -203,6 +77,22 @@
         <option value="$PROJECT_DIR$/React/02.JSX的理解和使用.html" />
         <option value="$PROJECT_DIR$/React/03.JSX_Demo.html" />
         <option value="$PROJECT_DIR$/React/04.组件基础.html" />
+        <option value="$PROJECT_DIR$/React/05.props属性的使用.html" />
+        <option value="$PROJECT_DIR$/React/06.composing 组合组件.html" />
+        <option value="$PROJECT_DIR$/React/07.component refs event.html" />
+        <option value="$PROJECT_DIR$/React/08.component state.html" />
+        <option value="$PROJECT_DIR$/React/10.component 数据双向绑定.html" />
+        <option value="$PROJECT_DIR$/React/09.simple TodoList.html" />
+        <option value="$PROJECT_DIR$/React/11.simple TodoList优化.html" />
+        <option value="$PROJECT_DIR$/React/14.component Dom最小化重绘(domdiff).html" />
+        <option value="$PROJECT_DIR$/React/13.componentDidMount 操作.html" />
+        <option value="$PROJECT_DIR$/React/15.hello-react/src/App.js" />
+        <option value="$PROJECT_DIR$/React/15.hello-react/src/index.js" />
+        <option value="$PROJECT_DIR$/React/15.hello-react/src/component/App.css" />
+        <option value="$PROJECT_DIR$/React/15.hello-react/src/component/App.js" />
+        <option value="$PROJECT_DIR$/React/12.composing 生命周期.html" />
+        <option value="$PROJECT_DIR$/React/18.fatch 发送请求.html" />
+        <option value="$PROJECT_DIR$/React/19.axios 发送请求.html" />
       </list>
     </option>
   </component>
@@ -299,7 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -318,8 +207,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="React" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebExploration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="React" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="16.comment-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -336,35 +258,35 @@
     <property name="editor.config.accepted" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/React" />
-      <recent name="$PROJECT_DIR$/Project" />
-      <recent name="$PROJECT_DIR$/Project/19.image-hover" />
-      <recent name="$PROJECT_DIR$/AngularJS" />
-      <recent name="$PROJECT_DIR$/模块化开发/02.sea.js模块导出成员的方式" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/React/15.hello-react/src/component" />
       <recent name="$PROJECT_DIR$/Project" />
       <recent name="$PROJECT_DIR$/响应式Web" />
       <recent name="$PROJECT_DIR$/MobileWeb/携程布局" />
       <recent name="$PROJECT_DIR$/模块化开发/sea.js初体验" />
-      <recent name="$PROJECT_DIR$/AngularJS/01.begin/views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/React/16.comment-app" />
+      <recent name="$PROJECT_DIR$/React/15.hello-react" />
+      <recent name="$PROJECT_DIR$/React" />
+      <recent name="$PROJECT_DIR$/Project" />
+      <recent name="$PROJECT_DIR$/Project/19.image-hover" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.04.组件基础.html">
-    <configuration default="false" name="24.过度transition.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/CSS3/24.过度transition.html">
+  <component name="RunManager" selected="JavaScript Debug.18.fatch 发送请求.html">
+    <configuration default="false" name="08.component state.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/08.component state.html">
       <method />
     </configuration>
-    <configuration default="false" name="01.helloworld.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/01.helloworld.html">
+    <configuration default="false" name="09.simple TodoList.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/09.simple TodoList.html">
       <method />
     </configuration>
-    <configuration default="false" name="02.JSX的理解和使用.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/02.JSX的理解和使用.html">
+    <configuration default="false" name="13.componentDidMount 操作.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/13.componentDidMount 操作.html">
       <method />
     </configuration>
-    <configuration default="false" name="03.JSX_Demo.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/03.JSX_Demo.html">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/16.comment-app/static/index.html">
       <method />
     </configuration>
-    <configuration default="false" name="04.组件基础.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/04.组件基础.html">
+    <configuration default="false" name="18.fatch 发送请求.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebExploration/React/18.fatch 发送请求.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -429,19 +351,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tab栏切换实现.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.基本语法.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.24.过度transition.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.01.helloworld.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.02.JSX的理解和使用.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.03.JSX_Demo.html" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.04.组件基础.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.08.component state.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.09.simple TodoList.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.13.componentDidMount 操作.html" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.18.fatch 发送请求.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.04.组件基础.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.03.JSX_Demo.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.02.JSX的理解和使用.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.01.helloworld.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.24.过度transition.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.18.fatch 发送请求.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.13.componentDidMount 操作.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.09.simple TodoList.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.08.component state.html" />
       </list>
     </recent_temporary>
   </component>
@@ -517,11 +439,13 @@
       <workItem from="1495940669876" duration="1383000" />
       <workItem from="1495964817476" duration="2107000" />
       <workItem from="1496666608850" duration="4717000" />
+      <workItem from="1496752105636" duration="20477000" />
+      <workItem from="1496930206551" duration="7000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="462575000" />
+    <option name="totallyTimeSpent" value="483059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,29 +457,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="724" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="724" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861" sideWeight="0.48661417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5029455" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17377567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28548896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2279587" sideWeight="0.51338583" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03042328" sideWeight="0.4970545" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17377567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05732484" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753164" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -598,208 +522,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularJS/Angular基础演练/01.hello.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileWeb/01.视口viewport.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileWeb/02.rem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileWeb/携程布局/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileWeb/携程布局/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileWeb/携程布局/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" column="1" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileWeb/01.屏幕适配/mobile-util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileWeb/01.屏幕适配/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/响应式Web/BusinessNews-BootStrap-master/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/响应式Web/BusinessNews-BootStrap-master/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/响应式Web/BusinessNews-BootStrap-master/screenshot/snst_01.png" />
-    <entry file="file://$PROJECT_DIR$/响应式Web/BusinessNews-BootStrap-master/screenshot/snst_02.png" />
-    <entry file="file://$PROJECT_DIR$/响应式Web/BusinessNews-BootStrap-master/screenshot/snst_03.png" />
-    <entry file="file://$PROJECT_DIR$/响应式Web/BusinessNews-BootStrap-master/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/响应式Web/BusinessNews-BootStrap-master/information.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/响应式Web/BusinessNews-BootStrap-master/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/01.初步体验.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/02.事件-点击按钮改变宽度.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="36" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/25.动画animation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/事件绑定.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/事件委托.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/JS基础/10.高阶函数.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/08.时钟/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/07.倒计时器/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/13.缓动动画/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/15.筋斗云/offset家族.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -829,7 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2431">
           <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,7 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,7 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,9 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,37 +615,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/React/babel.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/React/babel.min.js" />
     <entry file="file://$PROJECT_DIR$/React/js/react.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/React/01.helloworld.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/React/03.JSX_Demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="308">
           <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding />
         </state>
@@ -942,19 +636,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/React/02.JSX的理解和使用.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="544">
           <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/React/04.组件基础.html">
+    <entry file="file://$PROJECT_DIR$/React/01.helloworld.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/Angular基础演练/01.hello.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-338">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/React/07.component refs event.html" />
+    <entry file="file://$PROJECT_DIR$/React/08.component state.html" />
+    <entry file="file://$PROJECT_DIR$/React/04.组件基础.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/React/10.component 数据双向绑定.html" />
+    <entry file="file://$PROJECT_DIR$/React/09.simple TodoList.html" />
+    <entry file="file://$PROJECT_DIR$/React/06.composing 组合组件.html" />
+    <entry file="file://$PROJECT_DIR$/React/05.props属性的使用.html" />
+    <entry file="file://$PROJECT_DIR$/React/11.simple TodoList优化.html" />
+    <entry file="file://$PROJECT_DIR$/React/13.componentDidMount 操作.html" />
+    <entry file="file://$PROJECT_DIR$/React/14.component Dom最小化重绘(domdiff).html" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/README.md" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/public/manifest.json" />
+    <entry file="file://$PROJECT_DIR$/React/npm-debug.log" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/static/index.css" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/static/index.html" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/src/registerServiceWorker.js" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/src/component/logo.svg" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/public/index.html" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/src/component/App.css" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/src/component/App.js" />
+    <entry file="file://$PROJECT_DIR$/React/16.comment-app/static/index.css" />
+    <entry file="file://$PROJECT_DIR$/React/16.comment-app/static/index.html" />
+    <entry file="file://$PROJECT_DIR$/React/12.composing 生命周期.html" />
+    <entry file="file://$PROJECT_DIR$/React/18.fatch 发送请求.html" />
+    <entry file="file://$PROJECT_DIR$/React/19.axios 发送请求.html" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/src/index.js" />
+    <entry file="file://$PROJECT_DIR$/React/15.hello-react/package.json" />
   </component>
 </project>

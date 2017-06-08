@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06.composing 组合组件</title>
+</head>
+<body>
+
+<div id="box"></div>
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>
+
+
+<script type="text/babel">
+
+    class Welcome extends React.Component {
+        render() {
+            return <h2>Welcome {this.props.name}!</h2>;
+        }
+    }
+
+    class App extends React.Component{
+        render(){
+            return (
+                    <div>
+                    {
+                        this.props.names.map(
+                            (name ,index) => <Welcome name={name} key={index}/>
+                        )
+                    }
+                    </div>
+            );
+        }
+    }
+    var names = ['Tom', 'Jack', "Bob"];
+    ReactDOM.render(<App names={names}/>, document.getElementById('box'));
+
+</script>
+
+</body>
+</html>

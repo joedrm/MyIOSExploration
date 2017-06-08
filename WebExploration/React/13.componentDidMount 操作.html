@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box"></div>
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>
+
+
+<script type="text/babel">
+
+    class AnimateMsg extends React.Component{
+        constructor(){
+            super();
+            this.state = {
+                opacity : 1.0
+            }
+        }
+
+        componentDidMount(){
+            this.timer = setInterval(() => {
+                let opacity = this.state.opacity;
+                opacity -=0.05;
+                if (opacity <= 0){
+                    opacity = 1.0;
+                }
+                this.setState({
+                    opacity
+                })
+            },100);
+
+            setTimeout(()=>{
+                ReactDOM.unmountComponentAtNode(document.getElementById("box"));
+            }, 5000)
+        }
+
+        // 组件将要移除时会调用
+        componentWillUnmount(){
+            // 移除定时器
+            clearInterval(this.timer);
+        }
+
+        render(){
+            // 外层的大括号是隔离js和标签, 内层是js对象
+            return <p style={{opacity: this.state.opacity}}>{this.props.msg}</p>
+        }
+    }
+
+    ReactDOM.render(<AnimateMsg msg='I Will Back!'/>, document.getElementById('box'));
+
+    /***
+     注意点:
+
+     1. 箭头函数的使用是让 this 指向当前组件
+        setInterval(() => {
+                // this 此处的 this 指向当前组件,如果没有使用箭头函数(() => ),this此时为空
+                let opacity = this.state.opacity;
+                opacity -=0.05;
+                if (opacity <= 0){
+                    opacity = 1.0;
+                }
+                this.setState({
+                    opacity
+                })
+            },100);
+
+     2. 在 render 里面书写 style 时要注意是两个花括号 {{}}
+
+        // 外层的大括号是隔离 js 和标签, 内层是 js 对象
+        return <p style={{opacity: this.state.opacity}}>{this.props.msg}</p>
+
+     */
+</script>
+</body>
+</html>

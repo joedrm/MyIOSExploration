@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="box">
+
+</div>
+
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>
+
+<script type="text/babel">
+
+    class TodoList extends React.Component{
+        render(){
+            return (
+                    <ul>
+                    {
+                        this.props.todos.map((name, index)=>{
+                            return <li key={index}>{name}</li>;
+                        })
+                    }
+                    </ul>
+            )
+        }
+    }
+
+    TodoList.PropTypes = {
+        todos: React.PropTypes.array.isRequired
+    }
+
+    class App extends React.Component{
+
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                todoList: ['吃饭', '睡觉', 'coding'],
+                inputTodo: ""
+            };
+        }
+
+        addTodo(){
+            console.log("addTodo");
+            var inputTodo = this.state.inputTodo;
+            if (inputTodo.trim()==""){
+                return;
+            }
+            var todoList = this.state.todoList;
+            todoList.unshift(inputTodo);
+            this.setState({
+                todoList
+            })
+            this.setState({
+                inputTodo:""
+            })
+        }
+
+        changeHandle(event){
+
+            let inputTodo = event.target.value;
+            this.setState({
+                inputTodo
+            })
+        }
+
+        render(){
+            return (
+                    <div>
+                        <input type="text" value={this.state.inputTodo} onChange={this.changeHandle.bind(this)}/>
+                        <button onClick={this.addTodo.bind(this)}># 3</button>
+                        <TodoList todos={this.state.todoList}></TodoList>
+                    </div>
+            )
+        }
+    }
+
+    ReactDOM.render(<App/>, document.getElementById('box'));
+
+
+    /** 常出错的地方:
+     *
+     * 1. 标签没有加 结束符("/"): <input type="text" ref="msg"/>  *** 注意后面要加上 / 结束符
+     * 2. 重新设置state的时候写法错误:
+            this.setState({
+                todoList
+            })
+     * 3. 标签里面嵌套对象的时候,需要加上 大括号 "{}"
+             <ul>
+             {  *** 注意这里要加上大括号
+
+                 this.props.todos.map((name, index)=>{
+                     return <li key={index}>{name}</li>;
+                 })
+             }
+             </ul>
+     * 4. 组件内部 render 标签的时候 最外层 需要套一个 div
+             <div>
+                 <input type="text" ref="msg"/>
+                 <button onClick={this.addTodo.bind(this)}># 3</button>
+                 <TodoList todos={this.state.todoList}></TodoList>
+             </div>
+     * */
+</script>
+
+</body>
+</html>
