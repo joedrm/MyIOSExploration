@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16BED9381EF4BD6000710817 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED9371EF4BD6000710817 /* WKWebViewController.m */; };
+		16BED93B1EF4BEE000710817 /* NSURLProtocol+WebKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED93A1EF4BEE000710817 /* NSURLProtocol+WebKitSupport.m */; };
+		16BED93E1EF4BF0B00710817 /* ReplacingImageURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED93D1EF4BF0B00710817 /* ReplacingImageURLProtocol.m */; };
 		16F8145F1ED6E0BB00D91574 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8145E1ED6E0BB00D91574 /* main.m */; };
 		16F814621ED6E0BB00D91574 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F814611ED6E0BB00D91574 /* AppDelegate.m */; };
 		16F814651ED6E0BB00D91574 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F814641ED6E0BB00D91574 /* JSViewController.m */; };
@@ -38,6 +41,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16BED9361EF4BD6000710817 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		16BED9371EF4BD6000710817 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		16BED9391EF4BEE000710817 /* NSURLProtocol+WebKitSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+WebKitSupport.h"; sourceTree = "<group>"; };
+		16BED93A1EF4BEE000710817 /* NSURLProtocol+WebKitSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+WebKitSupport.m"; sourceTree = "<group>"; };
+		16BED93C1EF4BF0B00710817 /* ReplacingImageURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplacingImageURLProtocol.h; sourceTree = "<group>"; };
+		16BED93D1EF4BF0B00710817 /* ReplacingImageURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplacingImageURLProtocol.m; sourceTree = "<group>"; };
 		16F8145A1ED6E0BB00D91574 /* JS与原生交互.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JS与原生交互.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F8145E1ED6E0BB00D91574 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16F814601ED6E0BB00D91574 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +83,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16BED9351EF4BD2200710817 /* WKWebView实现拦截请求 */ = {
+			isa = PBXGroup;
+			children = (
+				16BED9361EF4BD6000710817 /* WKWebViewController.h */,
+				16BED9371EF4BD6000710817 /* WKWebViewController.m */,
+				16BED93C1EF4BF0B00710817 /* ReplacingImageURLProtocol.h */,
+				16BED93D1EF4BF0B00710817 /* ReplacingImageURLProtocol.m */,
+				16BED9391EF4BEE000710817 /* NSURLProtocol+WebKitSupport.h */,
+				16BED93A1EF4BEE000710817 /* NSURLProtocol+WebKitSupport.m */,
+			);
+			path = "WKWebView实现拦截请求";
+			sourceTree = "<group>";
+		};
 		16F814511ED6E0BB00D91574 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +120,7 @@
 				16F814611ED6E0BB00D91574 /* AppDelegate.m */,
 				16F814631ED6E0BB00D91574 /* JSViewController.h */,
 				16F814641ED6E0BB00D91574 /* JSViewController.m */,
+				16BED9351EF4BD2200710817 /* WKWebView实现拦截请求 */,
 				16F814781ED6E3DC00D91574 /* JS端调用native端 */,
 				16F814791ED6E3DC00D91574 /* native端调用JS端 */,
 				16F814661ED6E0BC00D91574 /* Main.storyboard */,
@@ -218,12 +241,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F814651ED6E0BB00D91574 /* JSViewController.m in Sources */,
+				16BED93E1EF4BF0B00710817 /* ReplacingImageURLProtocol.m in Sources */,
 				16F814621ED6E0BB00D91574 /* AppDelegate.m in Sources */,
 				16F814871ED6FA0100D91574 /* PhotoPickerTool.m in Sources */,
 				16F8147F1ED6E47A00D91574 /* JSToNativeViewController.m in Sources */,
+				16BED93B1EF4BEE000710817 /* NSURLProtocol+WebKitSupport.m in Sources */,
 				16F814881ED6FA0100D91574 /* Student.m in Sources */,
 				16F8145F1ED6E0BB00D91574 /* main.m in Sources */,
 				16F8147C1ED6E3FD00D91574 /* NativeToJSViewController.m in Sources */,
+				16BED9381EF4BD6000710817 /* WKWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +406,7 @@
 				16F814731ED6E0BC00D91574 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
