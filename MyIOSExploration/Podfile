@@ -43,10 +43,10 @@ target :'CALayer及核心动画' do
 end
 
 
-target :'IOS核心动画高级技巧(读书笔记)' do
+target :'《IOS核心动画高级技巧》读书笔记' do
     platform :ios, '8.0'
     pod 'WDYBaseProject','~> 1.0.1'
-    project 'IOS核心动画高级技巧(读书笔记)/IOS核心动画高级技巧(读书笔记).xcodeproj'
+    project '《IOS核心动画高级技巧》读书笔记/《IOS核心动画高级技巧》读书笔记.xcodeproj'
 end
 
 target :'LearningAVFoundation' do
@@ -69,6 +69,12 @@ target :'AnimationDesign(动画设计)' do
     pod 'lottie-ios'
     pod 'WDYBaseProject','~> 1.0.1'
     project 'AnimationDesign(动画设计)/AnimationDesign(动画设计).xcodeproj'
+end
+
+target :'Realm学习和实践' do
+    platform :ios, '8.0'
+    pod 'Realm'
+    project 'Realm学习和实践/Realm学习和实践.xcodeproj'
 end
 
 

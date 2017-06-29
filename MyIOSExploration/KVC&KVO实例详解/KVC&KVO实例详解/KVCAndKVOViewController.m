@@ -48,4 +48,14 @@
  https://github.com/JustKeepRunning/LXD_KeyValueObserveDemo  
  
  http://www.iosxxx.com/blog/2017-03-27-iOS%E7%9A%84nstimer%E4%B8%8Ekvo%E7%9A%84%E8%87%AA%E9%87%8A%E6%94%BE.html iOS的NSTimer与KVO的自释放
+ 
+ https://github.com/okcomp/ImplementKVO 如何自己动手实现 KVO
+ https://knightsj.github.io/2017/05/15/%E4%BD%BF%E7%94%A8Block%E5%AE%9E%E7%8E%B0KVO/ 使用Block实现KVO
  */
+
+
+
+
+
+
+

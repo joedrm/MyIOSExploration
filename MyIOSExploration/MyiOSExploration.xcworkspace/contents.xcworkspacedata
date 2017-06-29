@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Realm&#x5b66;&#x4e60;&#x548c;&#x5b9e;&#x8df5;/Realm&#x5b66;&#x4e60;&#x548c;&#x5b9e;&#x8df5;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Testing with Xcode/Testing with Xcode.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:&#x5228;&#x6839;&#x95ee;&#x5e95;&#xff1a;Blocks&#x7bc7;/&#x5228;&#x6839;&#x95ee;&#x5e95;&#xff1a;Blocks&#x7bc7;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:JS&#x4e0e;&#x539f;&#x751f;&#x4ea4;&#x4e92;/JS&#x4e0e;&#x539f;&#x751f;&#x4ea4;&#x4e92;.xcodeproj">
    </FileRef>
    <FileRef

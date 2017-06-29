@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19C1F1EC3E9537614997617483552773"
+               BlueprintIdentifier = "0159C08A0F021197AACA441E3468908A"
                BuildableName = "Pods_AutoLayoutPractice.framework"
                BlueprintName = "Pods-AutoLayoutPractice"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19C1F1EC3E9537614997617483552773"
+            BlueprintIdentifier = "0159C08A0F021197AACA441E3468908A"
             BuildableName = "Pods_AutoLayoutPractice.framework"
             BlueprintName = "Pods-AutoLayoutPractice"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19C1F1EC3E9537614997617483552773"
-            BuildableName = "Pods_AutoLayoutPractice.framework"
-            BlueprintName = "Pods-AutoLayoutPractice"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

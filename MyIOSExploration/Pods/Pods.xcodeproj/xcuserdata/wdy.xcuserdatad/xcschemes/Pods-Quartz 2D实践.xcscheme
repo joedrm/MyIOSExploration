@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE246E8070E30CE0716DCDA5C60FD9B1"
+               BlueprintIdentifier = "94EDEB4C2110A9BD1A50AD256B55536E"
                BuildableName = "Pods_Quartz_2D__.framework"
                BlueprintName = "Pods-Quartz 2D&#x5b9e;&#x8df5;"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE246E8070E30CE0716DCDA5C60FD9B1"
+            BlueprintIdentifier = "94EDEB4C2110A9BD1A50AD256B55536E"
             BuildableName = "Pods_Quartz_2D__.framework"
             BlueprintName = "Pods-Quartz 2D&#x5b9e;&#x8df5;"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,0 +1,6 @@
+framework module Pods__IOS_____________ {
+  umbrella header "Pods-《IOS核心动画高级技巧》读书笔记-umbrella.h"
+
+  export *
+  module * { export * }
+}

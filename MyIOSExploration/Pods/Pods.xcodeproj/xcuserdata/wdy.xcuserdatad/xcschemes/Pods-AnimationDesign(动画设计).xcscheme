@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "721F59C575271334B2C291D01A630239"
+               BlueprintIdentifier = "CF7F1A6DE12B71247CC983BC6E0F6585"
                BuildableName = "Pods_AnimationDesign______.framework"
                BlueprintName = "Pods-AnimationDesign(&#x52a8;&#x753b;&#x8bbe;&#x8ba1;)"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "721F59C575271334B2C291D01A630239"
+            BlueprintIdentifier = "CF7F1A6DE12B71247CC983BC6E0F6585"
             BuildableName = "Pods_AnimationDesign______.framework"
             BlueprintName = "Pods-AnimationDesign(&#x52a8;&#x753b;&#x8bbe;&#x8ba1;)"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "721F59C575271334B2C291D01A630239"
-            BuildableName = "Pods_AnimationDesign______.framework"
-            BlueprintName = "Pods-AnimationDesign(&#x52a8;&#x753b;&#x8bbe;&#x8ba1;)"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
