@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16B35AA81F08EAEF00FCF13A /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B35AA71F08EAEF00FCF13A /* Tool.m */; };
+		16B35AAA1F08EB1200FCF13A /* ToolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B35AA91F08EB1200FCF13A /* ToolTest.m */; };
 		16C62B411EFE072600E496C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C62B401EFE072600E496C9 /* main.m */; };
 		16C62B441EFE072600E496C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C62B431EFE072600E496C9 /* AppDelegate.m */; };
 		16C62B471EFE072600E496C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C62B461EFE072600E496C9 /* ViewController.m */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16B35AA61F08EAEF00FCF13A /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		16B35AA71F08EAEF00FCF13A /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		16B35AA91F08EB1200FCF13A /* ToolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolTest.m; sourceTree = "<group>"; };
 		16C62B3C1EFE072600E496C9 /* Testing with Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Testing with Xcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C62B401EFE072600E496C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16C62B421EFE072600E496C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +113,8 @@
 				16C62B431EFE072600E496C9 /* AppDelegate.m */,
 				16C62B451EFE072600E496C9 /* ViewController.h */,
 				16C62B461EFE072600E496C9 /* ViewController.m */,
+				16B35AA61F08EAEF00FCF13A /* Tool.h */,
+				16B35AA71F08EAEF00FCF13A /* Tool.m */,
 				16C62B481EFE072600E496C9 /* Main.storyboard */,
 				16C62B4B1EFE072600E496C9 /* Assets.xcassets */,
 				16C62B4D1EFE072600E496C9 /* LaunchScreen.storyboard */,
@@ -129,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				16C62B591EFE072600E496C9 /* Testing_with_XcodeTests.m */,
+				16B35AA91F08EB1200FCF13A /* ToolTest.m */,
 				16C62B721EFE092800E496C9 /* WDYBaseTest.h */,
 				16C62B731EFE092800E496C9 /* WDYBaseTest.m */,
 				16C62B5B1EFE072600E496C9 /* Info.plist */,
@@ -284,6 +292,7 @@
 				16C62B471EFE072600E496C9 /* ViewController.m in Sources */,
 				16C62B441EFE072600E496C9 /* AppDelegate.m in Sources */,
 				16C62B411EFE072600E496C9 /* main.m in Sources */,
+				16B35AA81F08EAEF00FCF13A /* Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B35AAA1F08EB1200FCF13A /* ToolTest.m in Sources */,
 				16C62B5A1EFE072600E496C9 /* Testing_with_XcodeTests.m in Sources */,
 				16C62B741EFE092800E496C9 /* WDYBaseTest.m in Sources */,
 			);
@@ -520,6 +530,7 @@
 				16C62B6B1EFE072700E496C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16C62B6C1EFE072700E496C9 /* Build configuration list for PBXNativeTarget "Testing with XcodeTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +539,7 @@
 				16C62B6E1EFE072700E496C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16C62B6F1EFE072700E496C9 /* Build configuration list for PBXNativeTarget "Testing with XcodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +548,7 @@
 				16C62B711EFE072700E496C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

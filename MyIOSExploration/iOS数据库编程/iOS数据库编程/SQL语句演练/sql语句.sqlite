@@ -1,0 +1,22 @@
+
+-- 创建表
+-- CREATE TABLE IF NOT EXISTS t_school (id integer PRIMARY KEY AUTOINCREMENT, schoolname text NOT NULL, adress text DEFAULT 'beijin')
+
+-- 插入数据
+-- INSERT INTO t_stu(name) VALUES('zhangsan')
+
+--更新数据
+-- UPDATE t_stu SET name="lisi" WHERE id IS 6
+-- UPDATE t_stu SET name="lisi" WHERE id>9
+
+-- 删除数据
+-- DELETE FROM t_stu WHERE id=1
+
+-- 删除 id=5 并且 name= 'lisi'
+-- DELETE FROM t_stu WHERE name='lisi' AND id IS 5
+
+
+---------- 多表查询 ----------
+
+-- SELECT * FROM t_person AS p, t_weibo AS w WHERE person_id = p.id
+SELECT p.id, w.id, name, title, w.content FROM t_person AS p, t_weibo AS w WHERE person_id = p.id

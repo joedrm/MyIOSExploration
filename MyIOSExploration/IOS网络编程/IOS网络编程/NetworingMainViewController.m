@@ -20,12 +20,14 @@
     
     self.title = @"网络编程";
     self.titleArr = @[
+                      @"03.HTTPS基本使用"
                       ];
     
     self.vcArr = @[
+                   @"HTTPSViewController"
                    ];
     
-    [self getData];
+//    [self getData];
 }
 
 

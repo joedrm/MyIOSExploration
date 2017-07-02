@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "16B35AAE1F08F8A500FCF13A"
+               BuildableName = "SQLite3Tests.xctest"
+               BlueprintName = "SQLite3Tests"
+               ReferencedContainer = "container:iOS&#x6570;&#x636e;&#x5e93;&#x7f16;&#x7a0b;.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

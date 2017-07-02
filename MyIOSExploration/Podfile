@@ -77,4 +77,8 @@ target :'Realm学习和实践' do
     project 'Realm学习和实践/Realm学习和实践.xcodeproj'
 end
 
-
+target :'IOS网络编程' do
+    platform :ios, '8.0'
+    pod 'AFNetworking'
+    project 'IOS网络编程/IOS网络编程.xcodeproj'
+end

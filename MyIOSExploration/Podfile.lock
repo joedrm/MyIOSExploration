@@ -78,6 +78,7 @@ PODS:
     - WDYBaseProject/Macros
 
 DEPENDENCIES:
+  - AFNetworking
   - FMDB
   - GPUImage
   - KVOController
@@ -105,6 +106,6 @@ SPEC CHECKSUMS:
   SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
   WDYBaseProject: 9d5ad302d056ff29ba0946e1366555043c09778b
 
-PODFILE CHECKSUM: 2aa65dcb473dabc371f819ddb9b0be569b5b5efc
+PODFILE CHECKSUM: 7c7355a09e6ea4bc06b5e48590aea45dc688b58e
 
 COCOAPODS: 1.1.1

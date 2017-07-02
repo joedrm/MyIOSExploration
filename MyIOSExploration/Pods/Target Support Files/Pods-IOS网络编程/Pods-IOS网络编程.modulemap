@@ -1,0 +1,6 @@
+framework module Pods_IOS____ {
+  umbrella header "Pods-IOS网络编程-umbrella.h"
+
+  export *
+  module * { export * }
+}

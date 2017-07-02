@@ -59,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-IOS网络编程.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-KVC&amp;KVO实例详解.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -203,6 +208,11 @@
 			<true/>
 		</dict>
 		<key>AAED8227CBEE0536755C0CEA5DD41266</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AAF0137F6DEA7F14274820BE46F79EE0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
