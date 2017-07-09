@@ -108,6 +108,15 @@ IOS动画总结:
  
  https://github.com/lizelu/CATransitionDemo  iOS开发常用页面切换效果 ****
  
+ https://github.com/gao211326/GLTransitionAnimationDemo
+ http://www.jianshu.com/p/98d20b14adeb  iOS 自定义转场动画浅谈
+ 
+ http://www.cocoachina.com/ios/20160629/16856.html  快速集成自定义转场动画&手势驱动
+ 
+ https://github.com/alanwangmodify/WXSTransition
+ http://www.cocoachina.com/ios/20160628/16804.html  一行代码实现自定义转场动画
+ 
+ 
  
  动画设计
  http://charsdavy.github.io/2016/07/31/design-complex-animation-effect/  设计复杂的iOS动画效果

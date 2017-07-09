@@ -44,6 +44,17 @@
 
 
 /*
+ 
+ http://www.jianshu.com/p/187c53796a8a 下拉放大图片, 导航栏颜色渐变, 添加子控制器, 左右滑动同时切换按钮
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  http://itangqi.me/tags/UITableView/  聊一聊UITableView
  https://github.com/NianJi/NJEasyTable  能够缓存cell高度，避免重复计算,实现不同的Cell的显示
  

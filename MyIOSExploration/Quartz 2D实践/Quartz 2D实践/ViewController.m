@@ -32,6 +32,10 @@
  http://blog.csdn.net/u013282507/article/details/53121556   iOS 利用正余弦曲线实现波浪形的XLWaveProgress
  
  https://github.com/zekunyan/QuartzCodeExample-StarAimation  一个星星点赞动画
+ 
+ https://github.com/LSure/SureOFOCopy  仿新版ofo共享单车小黄人动态效果
+ 
+ http://blog.csdn.net/sqc3375177/article/details/25708447?utm_source=tuicool&utm_medium=referral   CoreGraphics QuartzCore CGContextTranslateCTM 用法
  */
 
 #import "ViewController.h"

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:&#x4eff;&#x670b;&#x53cb;&#x5708;&#x7684;&#x5b9e;&#x73b0;/&#x4eff;&#x670b;&#x53cb;&#x5708;&#x7684;&#x5b9e;&#x73b0;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Realm&#x5b66;&#x4e60;&#x548c;&#x5b9e;&#x8df5;/Realm&#x5b66;&#x4e60;&#x548c;&#x5b9e;&#x8df5;.xcodeproj">
    </FileRef>
    <FileRef

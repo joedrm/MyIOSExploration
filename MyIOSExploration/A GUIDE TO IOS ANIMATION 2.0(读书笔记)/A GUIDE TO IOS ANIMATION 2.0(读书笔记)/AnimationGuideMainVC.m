@@ -21,11 +21,11 @@
     
     self.title = @"A GUIDE TO IOS ANIMATION 2.0(读书笔记)";
     self.titleArr = @[
-                      
+                      @"Animate1"
                       ];
     
     self.vcArr = @[
-                   
+                   @"AnimationVC"
                    ];
 }
 

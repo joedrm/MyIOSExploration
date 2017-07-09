@@ -27,6 +27,10 @@
     
 }
 
+/*
+ http://liumh.com/2015/08/22/ios-nsmutablearray-kvo/  iOS如何为NSMutableArray添加KVO
+ */
+
 // 向数组添加数据
 - (IBAction)addObj:(UIButton *)sender {
     

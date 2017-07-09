@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161E53E11F11333D0044C4AC /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 161E53E01F11333D0044C4AC /* AnimationVC.m */; };
 		16D245801E5C9AFC00D3E697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D2457F1E5C9AFC00D3E697 /* main.m */; };
 		16D245831E5C9AFC00D3E697 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D245821E5C9AFC00D3E697 /* AppDelegate.m */; };
 		16D245891E5C9AFC00D3E697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D245871E5C9AFC00D3E697 /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		161E53DF1F11333D0044C4AC /* AnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationVC.h; sourceTree = "<group>"; };
+		161E53E01F11333D0044C4AC /* AnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVC.m; sourceTree = "<group>"; };
 		16D2457B1E5C9AFC00D3E697 /* A GUIDE TO IOS ANIMATION 2.0(读书笔记).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A GUIDE TO IOS ANIMATION 2.0(读书笔记).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D2457F1E5C9AFC00D3E697 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16D245811E5C9AFC00D3E697 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 				16D245821E5C9AFC00D3E697 /* AppDelegate.m */,
 				16D245991E5C9B6C00D3E697 /* AnimationGuideMainVC.h */,
 				16D2459A1E5C9B6C00D3E697 /* AnimationGuideMainVC.m */,
+				161E53DF1F11333D0044C4AC /* AnimationVC.h */,
+				161E53E01F11333D0044C4AC /* AnimationVC.m */,
 				16D245871E5C9AFC00D3E697 /* Main.storyboard */,
 				16D2458A1E5C9AFC00D3E697 /* Assets.xcassets */,
 				16D2458C1E5C9AFC00D3E697 /* LaunchScreen.storyboard */,
@@ -172,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D2459B1E5C9B6C00D3E697 /* AnimationGuideMainVC.m in Sources */,
+				161E53E11F11333D0044C4AC /* AnimationVC.m in Sources */,
 				16D245831E5C9AFC00D3E697 /* AppDelegate.m in Sources */,
 				16D245801E5C9AFC00D3E697 /* main.m in Sources */,
 			);
@@ -332,6 +338,7 @@
 				16D245941E5C9AFC00D3E697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

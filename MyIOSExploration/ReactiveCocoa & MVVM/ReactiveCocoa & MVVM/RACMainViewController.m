@@ -44,6 +44,8 @@
 
 /*
  参考资料：
+ https://github.com/wanglongshuai/MVVM-RAC-Demo  文章http://www.jianshu.com/p/3beb21d5def2
+ 
  https://github.com/shenAlexy/MVVM  MVVM架构的一次实践，重写iOS头条客户端
  
  https://github.com/wangtongke/WTKMVVMRAC   高仿电商项目，采用MVVM+ReactiveCocoa
@@ -72,8 +74,17 @@
  
  https://github.com/Jerry4me/JRReactiveCocoa  RAC基本用法及MVVM的小demo
  
+ http://www.cocoachina.com/ios/20170704/19714.html  iOS 关于MVVM With ReactiveCocoa设计模式的那些事
+ 
+ https://github.com/MakeItEasy/AFNetworking3-RACExtensions
+ 
  MVVM
  https://github.com/coderyi/MVVMDemo
  
  https://github.com/lizelu/MVVM
+ 
+
+ 
+ // A seamless framework for build app from MVC, MVVM, VIPER (etc.) design pattern in iOS world.
+ https://github.com/yizzuide/XFLegoVIPER
  */
