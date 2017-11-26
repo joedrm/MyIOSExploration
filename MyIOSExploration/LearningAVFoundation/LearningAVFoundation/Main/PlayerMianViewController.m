@@ -112,6 +112,7 @@
  https://github.com/xujingzhou/FunVideo
  https://github.com/xujingzhou/CustomVideo
  https://github.com/GrayJIAXU/520Linkee  实现了作为一个直播App的基本功能，比如本地视频流采集、播放、美颜、礼物、点赞出心等
+ http://ios.jobbole.com/92926/    https://github.com/hawk0620/ZPCamera  开源的相机app
  */
 
 

@@ -147,7 +147,8 @@ IOS动画总结:
                       @"播放器音量震动条",
                       @"粒子效果",
                       @"仿QQ粘性布局",
-                      @"CAShapeLayer各种实例"];
+                      @"CAShapeLayer各种实例",
+                      @"圆形进度条"];
     
     self.vcArr = @[@"CATransformVC",
                    @"CustomLayerVC",
@@ -162,7 +163,8 @@ IOS动画总结:
                    @"VoiceShakeViewController",
                    @"ParticleEffectViewController",
                    @"QQViewController",
-                   @"CAShapeLayerViewController"
+                   @"CAShapeLayerViewController",
+                   @"CircleProgressViewController"
                    ];
 }
 

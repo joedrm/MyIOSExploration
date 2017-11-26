@@ -28,6 +28,8 @@
 		165EEB0E1E096C1700C39F80 /* CAAnimationGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB0D1E096C1700C39F80 /* CAAnimationGroupVC.m */; };
 		165EEB121E0978B500C39F80 /* MyWheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB111E0978B500C39F80 /* MyWheelViewController.m */; };
 		165EEB151E0978D600C39F80 /* WheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 165EEB141E0978D600C39F80 /* WheelView.m */; };
+		166FCD721FCAA2E300678223 /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166FCD711FCAA2E300678223 /* CircleProgressView.m */; };
+		166FCD761FCAAD6D00678223 /* CircleProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166FCD751FCAAD6D00678223 /* CircleProgressViewController.m */; };
 		16D245481E5C859700D3E697 /* WDYLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D245471E5C859700D3E697 /* WDYLibrary.framework */; };
 		16D245491E5C859700D3E697 /* WDYLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16D245471E5C859700D3E697 /* WDYLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16DB1B2B1E06C6E7000147BB /* 钟表.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DB1B2A1E06C6E7000147BB /* 钟表.png */; };
@@ -99,6 +101,10 @@
 		165EEB111E0978B500C39F80 /* MyWheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWheelViewController.m; sourceTree = "<group>"; };
 		165EEB131E0978D600C39F80 /* WheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelView.h; sourceTree = "<group>"; };
 		165EEB141E0978D600C39F80 /* WheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelView.m; sourceTree = "<group>"; };
+		166FCD701FCAA2E300678223 /* CircleProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleProgressView.h; sourceTree = "<group>"; };
+		166FCD711FCAA2E300678223 /* CircleProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleProgressView.m; sourceTree = "<group>"; };
+		166FCD741FCAAD6D00678223 /* CircleProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleProgressViewController.h; sourceTree = "<group>"; };
+		166FCD751FCAAD6D00678223 /* CircleProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleProgressViewController.m; sourceTree = "<group>"; };
 		16D245471E5C859700D3E697 /* WDYLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDYLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DB1B2A1E06C6E7000147BB /* 钟表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "钟表.png"; sourceTree = "<group>"; };
 		16DB1B2C1E06C81F000147BB /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
@@ -229,6 +235,17 @@
 			path = "转盘动画";
 			sourceTree = "<group>";
 		};
+		166FCD731FCAAD4C00678223 /* 圆形进度条 */ = {
+			isa = PBXGroup;
+			children = (
+				166FCD701FCAA2E300678223 /* CircleProgressView.h */,
+				166FCD711FCAA2E300678223 /* CircleProgressView.m */,
+				166FCD741FCAAD6D00678223 /* CircleProgressViewController.h */,
+				166FCD751FCAAD6D00678223 /* CircleProgressViewController.m */,
+			);
+			path = "圆形进度条";
+			sourceTree = "<group>";
+		};
 		16DB1B291E06BF9D000147BB /* 隐式动画：时钟 */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +302,7 @@
 				16DD63F31E0649AA00926E50 /* AppDelegate.m */,
 				16DD63F51E0649AA00926E50 /* ViewController.h */,
 				16DD63F61E0649AA00926E50 /* ViewController.m */,
+				166FCD731FCAAD4C00678223 /* 圆形进度条 */,
 				20E907701E6818520046F86D /* CAShapeLayer各种实例 */,
 				16554C811E0F7D4E0095E722 /* 仿QQ粘性布局 */,
 				16554C781E0F71540095E722 /* 粒子效果 */,
@@ -517,6 +535,7 @@
 				16554C691E0E39060095E722 /* WheelButton.m in Sources */,
 				16DD63F71E0649AA00926E50 /* ViewController.m in Sources */,
 				165EEB151E0978D600C39F80 /* WheelView.m in Sources */,
+				166FCD721FCAA2E300678223 /* CircleProgressView.m in Sources */,
 				16554C891E0F7DFD0095E722 /* BageViewButton.m in Sources */,
 				16DD63F41E0649AA00926E50 /* AppDelegate.m in Sources */,
 				16554C761E0F6C7D0095E722 /* VoiceShakeViewController.m in Sources */,
@@ -526,6 +545,7 @@
 				16DB1B381E06DC4F000147BB /* HeartBeatEffectVC.m in Sources */,
 				16DD640A1E06848E00926E50 /* CATransformVC.m in Sources */,
 				16554C801E0F75640095E722 /* ParticleView.m in Sources */,
+				166FCD761FCAAD6D00678223 /* CircleProgressViewController.m in Sources */,
 				165EEB021E0964A100C39F80 /* CATransitionDemoVC.m in Sources */,
 				165EEB121E0978B500C39F80 /* MyWheelViewController.m in Sources */,
 				16F201431E082BDB00D3A869 /* CAKeyframeAnimationVC.m in Sources */,
