@@ -59,3 +59,14 @@
 }
 
 @end
+
+/*
+ 参考：
+ http://www.brighttj.com/ios/ios-implement-loop-progress.html
+ 
+ */
+
+
+
+
+
