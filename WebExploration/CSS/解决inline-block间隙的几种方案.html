@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解决inline-block间隙的几种方案</title>
+
+    <style>
+        /*
+        display有几种属性：
+        inline是内联对象，比如<a/> 、 <span/>标签等，可以“堆在一起”显示，宽高由内容决定，不能设置；
+        block是块对象，比如<div/>、<p/>标签等，要占一整行，但是宽高可以自定义；
+        为了弥补inline和block的不足，又扩充了inline-block属性；
+        inline-blcok可以将对象呈递为内联对象，而内容作为块对象呈递。
+        */
+        .parent{
+            background-color: red;
+            width: 100%;
+            height: 300px;
+            letter-spacing: -.333em;
+            font-size: 0;
+        }
+
+        .child{
+            width: 100px;
+            height: 300px;
+            display: inline;
+            display: inline-block;
+            letter-spacing: 0;
+            color: #00b500;
+            text-align: center;
+        }
+
+        .child span{
+            font-size: 22px;
+            color: #0f0f0f;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+<ul class="parent">
+    <li class="child" style="background-color:#fff;">
+        <span>item1</span>
+    </li>
+    <li class="child" style="background-color:blue;"><span>item2</span></li>
+    <li class="child" style="background-color:green;"><span>item3</span></li>
+    <li class="child" style="background-color:yellow;"><span>item4</span></li>
+    <li class="child" style="background-color:orange;"><span>item5</span></li>
+</ul>
+
+
+</body>
+</html>
