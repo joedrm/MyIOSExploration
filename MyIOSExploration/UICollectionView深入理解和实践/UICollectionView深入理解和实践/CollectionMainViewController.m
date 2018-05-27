@@ -20,9 +20,11 @@
     
     self.title = @"UICollectionView深入理解和实践";
     self.titleArr = @[
+                      @"case1：自定义分页"
                       ];
     
     self.vcArr = @[
+                   @"CustomPageVC"
                    
                    ];
 }

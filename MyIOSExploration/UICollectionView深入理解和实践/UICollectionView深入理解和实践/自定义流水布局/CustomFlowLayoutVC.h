@@ -8,6 +8,6 @@
 
 #import <WDYLibrary/WDYLibrary.h>
 
-@interface CustomFlowLayoutVC : BaseViewController
+@interface CustomFlowLayoutVC : UIViewController
 
 @end
