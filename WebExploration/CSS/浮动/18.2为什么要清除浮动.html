@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>为什么要清除浮动</title>
+
+
+    <style>
+
+        .topDiv {
+            width: 500px;
+            border: 2px solid black;
+        }
+        .floatDiv {
+            width: 100px;
+            height: 120px;
+            border: 2px dotted red;
+            color: red;
+            margin: 4px;
+            float: left;
+        }
+        .bottomDiv {
+            width: 500px;
+            height: 100px;
+            margin: 5px 0;
+            border: 2px dotted black;
+        }
+        .textDiv {
+            color: blue;
+            border: 2px solid blue;
+        }
+    
+    </style>
+</head>
+<body>
+    
+
+    <div class="topDiv">
+        <div class="floatDiv">我是floatDiv。。。float left</div>
+        <div class="textDiv">我是floatDiv。。。。为什么要清除浮动以及清除浮动影响的几种方式为什么要清除浮动以及清除浮动影响的几种方式为什么要清除浮动以及清除浮动影响的几种方式</div>
+    </div>
+    <div class="bottomDiv">我是bottomDiv。。。。任何元素浮动以后都会成为一个块级元素且脱离默认文档流（不完全脱离，会占据文本流位置，但不占据元素流位置），这就会造成一种现象，其父元素的“高度塌陷”，所以我们要清除浮动，那么清除浮动的方法有如下几种：
+            </div>
+
+    <p>这肯定不是我们想要的渲染效果，它可能存在如下问题：</p>
+    <ol>
+    <li>文字围绕浮动元素排版，但我们可能希望文字（<code>.textDiv</code>）排列在浮动元素下方，或者，我们并不希望<code>.textDiv</code>两边有浮动元素存在。</li>
+    <li>浮动元素排版超出了其父级元素（<code>.topDiv</code>），父元素的高度出现了塌缩，若没有文字高度的支撑，不考虑边框，父级元素高度会塌缩成零。</li>
+    <li>浮动元素甚至影响到了其父元素的兄弟元素（<code>.bottomDiv</code>）排版。因为浮动元素脱离了文档流，<code>.bottomDiv</code>在计算元素位置的时候会忽略其影响，紧接着上一个元素的位置继续排列。</li>
+    </ol>
+
+    <span>解决第一个问题，需要清除.textDiv周围的浮动，而解决第二个问题，因为父元素的兄弟元素位置只受父元素位置的影响，就需要一种方法将父级元素的高度撑起来，将浮动元素包裹在其中，避免浮动元素影响父元素外部的元素排列。</span>
+</body>
+</html>

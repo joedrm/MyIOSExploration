@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>floatDiv和.textDiv交换一下位置呢？</title>
+
+    <style>
+        .topDiv {
+            width: 500px;
+            border: 2px solid black;
+        }
+
+        .floatDiv {
+            width: 100px;
+            height: 120px;
+            border: 2px dotted red;
+            color: red;
+            margin: 4px;
+            float: left;
+        }
+
+        .bottomDiv {
+            width: 500px;
+            height: 100px;
+            margin: 5px 0;
+            border: 2px dotted black;
+        }
+
+        .textDiv {
+            color: blue;
+            border: 2px solid blue;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>无论.textDiv是否应用清除浮动，情况都是下面的样子：</p>
+
+    <div class="topDiv">
+        <div class="textDiv">floatDiv和.textDiv交换一下位置呢？floatDiv和.textDiv交换一下位置呢？</div>
+        <div class="floatDiv">float left</div>
+    </div>
+    <div class="bottomDiv">
+            floatDiv和.textDiv交换一下位置呢？
+            floatDiv和.textDiv交换一下位置呢？
+            floatDiv和.textDiv交换一下位置呢？
+            floatDiv和.textDiv交换一下位置呢？
+    </div>
+
+    <br/>
+    <p><code>.textDiv</code>的位置先确定了，于是浮动元素就紧接着<code>.textDiv</code>下方渲染在父元素的左侧。</p>
+    <p>然而，父元素的高度并没有被撑起来，没有将浮动影响“内化”，导致浮动影响到了接下来的元素排版。</p>
+
+    <p>看来，为达到撑起父元素高度的目的，使用<code>clear</code>清除浮动的方法还是有适用范围的。我们需要更加通用和可靠的方法。</p>
+
+</body>
+
+</html>

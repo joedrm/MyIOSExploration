@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>18.5.通用的清除浮动的方法</title>
+
+    <style>
+        .topDiv {
+            width: 500px;
+            border: 2px solid black;
+        }
+
+        .floatDiv {
+            width: 100px;
+            height: 100px;
+            border: 2px dotted red;
+            color: red;
+            margin: 4px;
+            float: left;
+        }
+
+        .bottomDiv {
+            width: 500px;
+            height: 100px;
+            margin: 5px 0;
+            border: 2px dotted black;
+        }
+
+        .textDiv {
+            color: blue;
+            border: 2px solid blue;
+        }
+
+        /* 方法一 */
+        /* .blankDiv {
+            clear: both;
+        } */
+
+        /* 方法二：利用伪类清除浮动 */
+        .clearfix:after {
+            content: '.';
+            height: 0;
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topDiv clearfix">
+        <div class="textDiv">通用的清除浮动的方法通用的清除浮动的方法通用的清除浮动的方法</div>
+        <div class="floatDiv">float left</div>
+        <!-- <div class="blankDiv"></div> -->
+    </div>
+    <div class="bottomDiv">通用的清除浮动的方法通用的清除浮动的方法通用的清除浮动的方法通用的清除浮动的方法......</div>
+</body>
+
+</html>

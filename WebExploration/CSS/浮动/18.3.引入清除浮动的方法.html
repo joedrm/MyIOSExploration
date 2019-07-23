@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>引入清除浮动的方法</title>
+
+    <style>
+
+        .topDiv {
+            width: 500px;
+            border: 2px solid black;
+        }
+        .floatDiv {
+            width: 100px;
+            height: 120px;
+            border: 2px dotted red;
+            color: red;
+            margin: 4px;
+            float: left;
+        }
+        .bottomDiv {
+            width: 500px;
+            height: 100px;
+            margin: 5px 0;
+            border: 2px dotted black;
+        }
+        .textDiv {
+            color: blue;
+            border: 2px solid blue;
+            clear: both;
+        }
+    
+    </style>
+</head>
+<body>
+    
+
+    <div class="topDiv">
+        <div class="floatDiv">我是floatDiv。。。float left</div>
+        <div class="textDiv">我是floatDiv。。。。为什么要清除浮动以及清除浮动影响的几种方式为什么要清除浮动以及清除浮动影响的几种方式为什么要清除浮动以及清除浮动影响的几种方式</div>
+    </div>
+    <div class="bottomDiv">我是bottomDiv。。。。任何元素浮动以后都会成为一个块级元素且脱离默认文档流（不完全脱离，会占据文本流位置，但不占据元素流位置），这就会造成一种现象，其父元素的“高度塌陷”，所以我们要清除浮动，那么清除浮动的方法有如下几种：
+            </div>
+
+    <P>解释一下：</P>
+    <p>通过上面的样式，<code>.textDiv</code>告诉浏览器，我的左边不允许有浮动的元素存在，请清除掉我左边的浮动元素。然而，因为浮动元素（<code>.floatDiv</code>）位置已经确定，浏览器在计算<code>.textDiv</code>的位置时，为满足其需求，将<code>.textDiv</code>渲染在浮动元素下方，保证了<code>.textDiv</code>左边没有浮动元素。同时可以看出，父元素的高度也被撑起来了，其兄弟元素的渲染也不再受到浮动的影响，这是因为<code>.textDiv</code>仍然在文档流中，它必须在父元素的边界内，父元素只有增加其高度才能达到此目的，可以说是一个意外收获。(<code>clear</code>的值为<code>both</code>也有相同的效果，通俗理解就是，哪边不允许有浮动元素，clear就是对应方向的值，两边都不允许就是<code>both</code>)</p>
+    
+</body>
+</html>
