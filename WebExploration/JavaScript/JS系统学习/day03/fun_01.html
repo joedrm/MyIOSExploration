@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    //有多少形式参数都可以，都罗列出来
+    function fun(a,b){
+        console.log(a + b);
+    }
+    fun(3,5);	//输出8
+    fun(8,11);	//输出19
+
+
+    function sum(a, b) {
+        return a + b;
+    }
+    // 因为我们只传了一个参数，b就没有传递，b被隐式的var了,所以值undefined。10+undefined就是NaN
+    console.log(sum(10)); // NaN
+
+    // 只有前两个参数被形参接收了，后面的参数无视了
+    console.log(sum(10, 20, 30, 40)); // 30
+
+</script>
+
+</body>
+</html>

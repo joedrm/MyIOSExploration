@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var num = 0;
+
+    function add(){
+        num++;
+    }
+
+    function remove(){
+        num--;
+    }
+
+    //这个函数返回a的平方加b的平方
+    function pingfanghe(a,b){
+        return  pingfang(a) + pingfang(b);
+        //返回m的平方
+        function pingfang(m){
+            return Math.pow(m,2)
+        }
+        }
+    // 现在相求4的平方，想输出16
+    pingfang(4);	//报错，因为全局作用域下，没有一个函数叫做pingfang
+
+
+</script>
+
+</body>
+</html>

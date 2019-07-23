@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    //下面定义的变量都是number类型
+    var a = 100;
+    var b = 234243245345;
+    var c = -345345435435;
+    var d = 345.3245234;
+    var e = .5e6;
+    var f = 0xff;
+    var g = 017;
+    var h = Infinity;
+    var i = NaN;
+
+    console.log(typeof a);
+    console.log(typeof b);
+    console.log(typeof c);
+    console.log(typeof d);
+    console.log(typeof e);
+    console.log(typeof f);
+    console.log(typeof g);
+    console.log(typeof h);
+    console.log(typeof i);
+
+
+    // string类型
+    var m1 = "哈哈";
+    var m2 = "123";
+    var m3 = "";		//空字符串，也是字符串
+    console.log(typeof m1);
+    console.log(typeof m2);
+    console.log(typeof m3);
+
+    // 变量是什么类型，和赋的值有关系，而和定义的时候是没有关系的。定义的时候，都是用var关键字定义的
+    var mm = 123;  //number
+    console.log(typeof mm);
+    mm = "哈哈";  //改为string是合法的
+    console.log(typeof mm);
+
+
+    // undefined类型
+    var nn;   //我只定义了，没有赋初值，所以就是undefined，类型也是undefined
+    console.log(nn);
+    console.log(typeof nn);
+
+    // 加号
+    console.log("你" + "好");
+    console.log(1 + "2");
+
+    var a = "1";
+    var b = "2";
+    console.log(a + b); // 12
+
+    var c = 1;
+    var d = 2;
+    console.log("c" + d);	//c2
+
+    // 多个加号，从左算到右
+    var e = 1;
+    var f = 2;
+    var g = 3;
+    console.log("e" + e + f + "g"); //e12g
+
+    var h = 1;
+    var i = 2;
+    var j = 3;
+    console.log(h + i + "j"); // 3j
+
+</script>
+
+</body>
+</html>

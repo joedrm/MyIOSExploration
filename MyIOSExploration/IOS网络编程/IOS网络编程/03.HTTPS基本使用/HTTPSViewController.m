@@ -23,7 +23,7 @@
 
 - (IBAction)session:(UIButton *)sender {
     
-    NSURL* url = [NSURL URLWithString:@"https://kyfw.12306.cn/otn"];
+    NSURL* url = [NSURL URLWithString:@"http://47.98.148.183/"];
     
     NSURLRequest* request = [NSURLRequest requestWithURL:url];
     
@@ -83,10 +83,12 @@
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     //设置对证书的处理方式
-    manager.securityPolicy.allowInvalidCertificates = YES;
-    manager.securityPolicy.validatesDomainName = NO;
+//    manager.securityPolicy.allowInvalidCertificates = YES;
+//    manager.securityPolicy.validatesDomainName = NO;
     
-    [manager GET:@"https://kyfw.12306.cn/otn" parameters:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    NSString* url = @"http://47.98.148.183/";//@"https://kyfw.12306.cn/otn"
+    
+    [manager GET:url parameters:@{@"username" : @"wdy", @"password" : @"123456"} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"success---%@",[[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding]);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"error---%@",error);

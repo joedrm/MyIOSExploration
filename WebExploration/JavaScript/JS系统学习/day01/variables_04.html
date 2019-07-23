@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量类型的转换</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var a = "123";
+    var b = parseInt(a);	//parseInt就把字符串123转为数字123了
+    console.log(b);         // 123
+    console.log(typeof b); // number
+
+
+    //下面的实例结果都是123，最后一个是-123：
+	parseInt("123")	//123
+    parseInt("123.6")	 //123
+    parseInt("123年都会很爱你")	 //123
+    parseInt("123年11月")		//123
+    parseInt("123px")		//123
+    parseInt("-123.99999999") //-123
+
+
+    var a = "123.67.88";
+    var b = parseFloat(a);
+    console.log(b); // 123.67
+
+    // number -> string
+    var a = 123;
+    var b = a + "";
+    console.log(b);
+    console.log(typeof b);
+
+</script>
+
+</body>
+</html>

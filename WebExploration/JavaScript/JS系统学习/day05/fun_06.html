@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闭包</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function outer() {
+
+        var a = 333;
+        function inner() {
+            console.log(a);
+        }
+        return inner; // 返回了inner的引用
+    }
+
+    var inn = outer();  // inn就是inner函数了
+    inn(); // 333	    // 执行inn，全局作用域下没有a的定义
+                        // 但是函数闭包，能够把定义函数的时候的作用域一起记忆住
+                        // 能够输出333
+
+
+</script>
+
+</body>
+</html>

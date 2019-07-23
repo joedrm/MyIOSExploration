@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域链</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function outer() {
+        var a = 1; // a的作用域就是outer
+        inner();
+        function inner() {
+            var b = 2; // b的作用域就是inner
+            console.log(a);	//能够正常输出1，a在本层没有定义，就是找上层
+            console.log(b);   //能够正常输出2
+        }
+    }
+    outer();
+    //console.log(a);		//报错 Uncaught ReferenceError: a is not defined，因为a的作用域outer
+
+
+    var b = 1;		//全局变量
+    function fn(){
+        var b = 5;      //就把外层的a给遮蔽了，这函数内部看不见外层的a了。
+        console.log(b);	//输出5，变量在当前作用域寻找，找到了a的定义值为5
+    }
+    fn();
+    console.log(b);     //输出1,变量在当前作用域寻找，找到了a的定义值为1
+
+</script>
+
+</body>
+</html>

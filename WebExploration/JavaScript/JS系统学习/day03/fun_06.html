@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p style="color: red; font-size: 22px"></p>
+
+<script type="text/javascript">
+
+    function fun() {
+        
+    }
+
+    console.log(typeof fun);
+
+    // function
+
+    // 定义了一个变量a，引用了一个 funciton
+    // 这个a变量存储的是这个匿名函数的内存地址
+    function a() {
+        alert("我是函数a， 我执行了");
+    }
+    // 就是把匿名函数的地址也给了b
+    var b = a;
+    // 给b添加一个属性
+    b.hello = 1;
+    // 输出a的haha属性，你会发现a也有这个属性了
+    console.log(a.hello); // 1
+
+    b.hello ++;
+    b.hello ++;
+    b.hello ++;
+    console.log(a.hello); // 4
+
+</script>
+
+</body>
+</html>

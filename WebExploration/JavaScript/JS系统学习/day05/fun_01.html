@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function f1() {
+        var a = 10;
+        console.log("我是函数里面的语句，我认识a值为" + a); // 我是函数里面的语句，我认识a值为10
+    }
+    f1();
+    //console.log("我是函数外面的语句，我不认识a" + a); //报错 Uncaught ReferenceError: a is not defined
+
+
+    var b = 10;
+    function f2() {
+        console.log("我是函数里面的语句，我认识b值为" + b);// 我是函数里面的语句，我认识b值为10
+    }
+    f2();
+    console.log("我是函数里面的语句，我认识b值为" + b);// 我是函数里面的语句，我认识b值为10
+
+</script>
+
+</body>
+</html>

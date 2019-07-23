@@ -1,0 +1,18 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "node学习",
+  "main": "01.hello_world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "我爱前端"
+  ],
+  "author": "Joe",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闭包的性质</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function outer() {
+
+        var count = 0;
+        function inner() {
+            count ++;
+            console.log(count);
+        }
+        return inner;
+    }
+
+    var inn1 = outer();
+    var inn2 = outer();
+
+    inn1(); // 1
+    inn1(); // 2
+    inn1(); // 3
+    inn1(); // 4
+
+    inn2(); // 1
+    inn2(); // 2
+
+    inn1(); // 5
+</script>
+</body>
+</html>

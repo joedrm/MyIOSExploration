@@ -1,0 +1,52 @@
+<!--suppress ALL -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字面量</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+    // // 以0开头就是八进制，以十进制来显示，结果：3*8 + 6 = 30
+    // console.log(036);
+
+    console.log(044);  //36
+    console.log(010);  //8
+    console.log(0o36); //30
+    console.log(0O36); //30
+
+
+    // //以0开头，按理说是八进制，但是后面的数字错了，所以以十进制显示，结果：88
+    // console.log(088);
+    //
+    // // 但是以0o开头、0O开头的数字，如果后面写错了，控制台报错！
+    // console.log(0o88);
+
+
+
+    // 十六进制
+    console.log(0xff); // 255
+    console.log(0x2b); // 43
+    console.log(0x11); // 17
+
+
+    // 小数的字面量
+    console.log(-3.1415926);	//-3.1415926
+    console.log(.315);			//.315 如果整数位数是0，可以不写
+    console.log(5e5);		    //500000
+    console.log(5.6e5);		//560000
+    console.log(1e-4);		    //0.0001
+    console.log(.1e-3);		//0.0001
+
+
+    // 无穷大
+    console.log(3e45645645645645);
+</script>
+
+</body>
+</html>

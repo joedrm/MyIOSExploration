@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var a = 1;		//全局变量
+    var b = 2;		//全局变量
+    function outer(){
+        var a = 3;		//遮蔽了外层的a，a局部变量
+        function inner(){
+            var b = 4;  //遮蔽了外层的b，b局部变量
+            console.log(a);   //① 输出3,a现在在当前层找不到定义的，所以就上一层寻找
+            console.log(b);   //② 输出4
+        }
+        inner();		//调用函数
+        console.log(a);	//③ 输出3
+        console.log(b); //④ 输出2 b现在在当前层找不到定义的，所以就上一层寻找
+    }
+    outer();		//执行函数，控制权交给了outer
+    console.log(a);	// ⑤ 输出1
+    console.log(b); // ⑥ 输出2
+
+
+</script>
+
+</body>
+</html>
