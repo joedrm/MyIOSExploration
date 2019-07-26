@@ -101,6 +101,9 @@
             参数四: 颜色
 
             模糊度和偏移量是相加计算的
+
+            box-shadow:         0px       0px      0px        10px     #000
+            box-shadow:投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色
         */
         .item:nth-child(1) .box-shadow{
             box-shadow: 2px 3px 15px #000;
@@ -120,7 +123,8 @@
         .item:nth-child(5) .box-shadow{
             box-shadow: 15px 15px 0px #000;
         }
-        /*给每一个方向上扩充 10px 此时每一个方向的偏移 = 0px + 10px */
+        /*给每一个方向上扩充 10px 此时每一个方向的偏移 = 0px + 10px 
+        */
         .item:nth-child(6) .box-shadow{
             box-shadow: 0px 0px 0px 10px #000;
         }
